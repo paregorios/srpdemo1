@@ -1,5 +1,6 @@
-* {
-    font-family: Verdana, Arial, Helvetica, clean sans-serif;
+*, label {
+    font-family: Verdana, Arial, Helvetica, clean, sans-serif;
+    font-size: 12px;
 }
 
 a {
@@ -24,7 +25,7 @@ h1 {
     font-size: 30px;
 }
 
-.popper>li>div, .popper>li>ol>li>div {
+.pop {
     position:absolute; z-index:10; visibility:hidden; 
     left:50px;
     border: 1px solid rgb(153,153,153);
@@ -32,29 +33,60 @@ h1 {
     min-height: 40px;
     background-color: white;
     padding: 10px;
-    max-width: 50%;
+    max-width: 70%;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #AAA;
 }
-
-.popper>li>div>h3, .popper>li>ol>li>div>h3 {
+.pop h3 {
     font-size: 16px;
     border-bottom: 1px solid rgb(153,153,153);
     font-family: "Helvetica Neue", sans-serif;
     font-weight: normal;
-    margin: 0px;
     margin-bottom: 10px;
-    padding:0px;
 }
 
-*:lang(syc) {
+.pop>ul {
+    position: relative !important;
+}
+
+.pop>ul>li {
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 15px !important;
+}
+.pop>ul>li>ul {
+    position: relative !important;
+    margin-left: 10px;
+}
+
+.pop>ul>li>ul>li {
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: circle inside !important;
+}
+
+.popper>li>div>h3>*:lang(syc) {
     font-size: 30px !important;
     line-height: 16px;
 }
-.popper>li>label:hover~div, .popper>li>ol>li>a:hover~div {
+.popper>li>label:hover~div, .popper>li>ol>li>a:hover~div, .popper>li>ol>li>label:hover~div {
     visibility:visible;
 } 
 
+.pop *:lang(syc) {
+    font-size: 150% !important;
+}
+
+.popfoot {
+    margin-top: 15px;
+    border-top: 1px solid rgb(153,153,153);
+    padding-top: 10px;
+    position: relative;
+}
+
+.popfoot>img {
+    float: left;
+}
 
 body {
     background-color: beige;
@@ -139,12 +171,21 @@ body {
                             border: 1px solid rgb(153,153,153);
                             background-color: rgb(204,204,204);
                             font-family: "HelveticaNeue-Condensed", "Helvetica Neue", sans-serif;
-
+                            font-size: 15px;
+                            opacity: .5;
                         }
                         
-                        #mainnav>ul>li.selected {
+                        #mainnav>ul>li.selected, #mainnav>ul>li.selected:hover {
                             background-color: white;
+                            opacity: 1;
                             border-bottom: 1px solid white;
+                            color: black;
+                        }
+                        
+                        #mainnav>ul>li:hover {
+                            color: rgb(0,102,204);
+                            opacity: 1;
+                            background-color: rgb(240,240,240);
                         }
                         
                         
@@ -154,10 +195,8 @@ body {
                         border-top: none;
                         min-height: 500px;
                         width: 940px;
-                                                 border-bottom-left-radius: 7px 7px;
+                        border-bottom-left-radius: 7px 7px;
                         border-bottom-right-radius: 7px 7px;
-
-
                     }
                     
                         #tabcontent {
