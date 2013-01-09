@@ -4,6 +4,7 @@
   xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
   <control>
     <recordId>74</recordId>
+    <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyName>syriaca.org</agencyName>
     </maintenanceAgency>
