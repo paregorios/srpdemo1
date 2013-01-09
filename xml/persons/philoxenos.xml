@@ -1,185 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="eac.xsl"?>
 <eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
-	xmlns="urn:isbn:1-931666-33-4" xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
-	xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
-	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
-	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:dbpprop="http://dbpedia.org/property/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:exf="http://www.exforms.org/exf/1-0">
-	<control>
-		<recordId>44</recordId>
-		<otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
-		<otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
-		<otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
-		<otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
-		<maintenanceStatus>new</maintenanceStatus>
-		<maintenanceAgency>
-			<agencyName>Syriac Reference Portal</agencyName>
-		</maintenanceAgency>
-		<maintenanceHistory>
-			<maintenanceEvent>
-				<eventType>created</eventType>
-				<eventDateTime standardDateTime="2013-01-09T22:26:46.118Z"/>
-				<agentType>human</agentType>
-				<agent>David Michelson</agent>
-			</maintenanceEvent>
-		</maintenanceHistory>
-
-		<sources>
-			<source>
-				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
-					428.</sourceEntry>
-			</source>
-			<source>
-				<sourceEntry>Barsoum, entry 40, pg. 226 (Arabic)/252 (Syriac)/262
-					(English).</sourceEntry>
-			</source>
-			
-			
-		</sources>
-	</control>
-	<cpfDescription>
-		<identity>
-			<entityType>person</entityType>
-			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
-				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
-					<part>Philoxenos of Mabbug</part>
-				</nameEntry>
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
-					<part>ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
-					<preferredForm>syriaca.org</preferredForm>
-				</nameEntry>
-				<authorizedForm>syriaca.org</authorizedForm>
-			</nameEntryParallel>
-			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
-				transliteration="GEDSH" xml:lang="eng">
-				<part>Philoxenos of Mabbug</part>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntry>
-			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
-				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
-					<part>Mar Philoxenus of Mabug</part>
-				</nameEntry>
-				<nameEntry scriptCode="Arab" xml:lang="ara">
-					<part>مار فيلكسينس المنبجي</part>
-				</nameEntry>
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
-					<part>ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
-				</nameEntry>
-				<nameEntry scriptCode="Syrj" xml:lang="syc">
-					<part>ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</part>
-				</nameEntry>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntryParallel>
-			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
-				<part>Philoxène de Mabbugh</part>
-			</nameEntry>
-			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
-				<part>Philoxenos‏ ‎Von Mabbug‏</part>
-			</nameEntry>
-		</identity>
-		<description>
-			<existDates>
-				<dateRange>
-					<fromDate notBefore="0450">ca. 440s?</fromDate>
-					<toDate standardDate="0523">523</toDate>
-				</dateRange>
-			</existDates>
-			<function>
-				<term>Metropolitan bishop</term>
-			</function>
-			<places>
-				<place>
-					<placeRole>Place of birth</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
-						>Garmakan/Beth Garmai</placeEntry>
-					<date notAfter="0450">ca. 440s?</date>
-				</place>
-				<place>
-					<placeRole>Place of study</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa/Antiochia ad Callirhoem</placeEntry>
-				</place>			
-			</places>
-			<biogHist>
-				<abstract>Metropolitan bp. of Mabbug (modern Membij/ancient Hierapolis) (485-519), ascetic theologian, christological polemicist, and sponsor of the Philoxenian NT.</abstract>
-				<p>Longer Description Here</p>
-				<chronList>
-					<chronItem>
-						<date standardDate="0338">338</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
-						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
-
-
-					</chronItem>
-					<chronItem>
-						<date standardDate="0346">346</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
-						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
-
-
-					</chronItem>
-					<chronItem>
-						<date standardDate="0350">350</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
-						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
-
-
-					</chronItem>
-					<chronItem>
-						<date standardDate="0359">359</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
-						<event>Ephrem leaves Nisibis</event>
-
-
-					</chronItem>
-					<chronItem>
-						<date standardDate="0359">359</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad
-							Tygrem/Amida</placeEntry>
-						<event>Ephrem goes to Amida</event>
-
-
-					</chronItem>
-					<chronItem>
-						<date standardDate="0363">363</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
-							>Edessa/Antiochia ad Callirhoem</placeEntry>
-						<event>Ephrem settles in Edessa</event>
-
-					</chronItem>
-				</chronList>
-			</biogHist>
-		</description>
-		<relations>
-			<cpfRelation xlink:type="simple" cpfRelationType="associative"
-				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
-				xlink:arcrole="isAssociatedWith">
-				<relationEntry>Yaʿqub of Nisibis</relationEntry>
-				<dateRange>
-					<fromDate standardDate="0308">308</fromDate>
-					<toDate standardDate="0338">338</toDate>
-				</dateRange>
-				<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-					>Nisibis/Antiochia</placeEntry>
-				<descriptiveNote>
-					<p>Yaʿqub was bishop during much of Ephrem's life in Nisibis. Ephrem referred to
-						him in his works.</p>
-				</descriptiveNote>
-			</cpfRelation>
-			<cpfRelation xlink:type="simple" cpfRelationType="associative"
-				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/CorporateBody"
-				xlink:arcrole="isAssociatedWith">
-				<relationEntry>School of Nisibis</relationEntry>
-			</cpfRelation>
-		</relations>
-	</cpfDescription>
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
+    xmlns="urn:isbn:1-931666-33-4" xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+    xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
+    xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpprop="http://dbpedia.org/property/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:exf="http://www.exforms.org/exf/1-0">
+    <control>
+        <recordId>44</recordId>
+        <otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
+        <otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
+        <otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
+        <otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
+        <maintenanceStatus>new</maintenanceStatus>
+        <maintenanceAgency>
+            <agencyName>Syriac Reference Portal</agencyName>
+        </maintenanceAgency>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2013-01-09T22:26:46.118Z"/>
+                <agentType>human</agentType>
+                <agent>David Michelson</agent>
+            </maintenanceEvent>
+        </maintenanceHistory>
+        
+        <sources>
+            <source>
+                <sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
+                    428.</sourceEntry>
+            </source>
+            <source>
+                <sourceEntry>Barsoum, entry 40, pg. 226 (Arabic)/252 (Syriac)/262
+                    (English).</sourceEntry>
+            </source>
+            
+            
+        </sources>
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityType>person</entityType>
+            <nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
+                <nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+                    <part>Philoxenos of Mabbug</part>
+                </nameEntry>
+                <nameEntry scriptCode="Syrc" xml:lang="syc">
+                    <part>ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
+                    <preferredForm>syriaca.org</preferredForm>
+                </nameEntry>
+                <authorizedForm>syriaca.org</authorizedForm>
+            </nameEntryParallel>
+            <nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
+                transliteration="GEDSH" xml:lang="eng">
+                <part>Philoxenos of Mabbug</part>
+                <alternativeForm>syriaca.org</alternativeForm>
+            </nameEntry>
+            <nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
+                <nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
+                    <part>Mar Philoxenus of Mabug</part>
+                </nameEntry>
+                <nameEntry scriptCode="Arab" xml:lang="ara">
+                    <part>مار فيلكسينس المنبجي</part>
+                </nameEntry>
+                <nameEntry scriptCode="Syrc" xml:lang="syc">
+                    <part>ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
+                </nameEntry>
+                <nameEntry scriptCode="Syrj" xml:lang="syc">
+                    <part>ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</part>
+                </nameEntry>
+                <alternativeForm>syriaca.org</alternativeForm>
+            </nameEntryParallel>
+            <nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
+                <part>Philoxène de Mabbugh</part>
+            </nameEntry>
+            <nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+                <part>Philoxenos‏ ‎Von Mabbug‏</part>
+            </nameEntry>
+        </identity>
+        <description>
+            <existDates>
+                <dateRange>
+                    <fromDate notBefore="0450">ca. 440s?</fromDate>
+                    <toDate standardDate="0523">523</toDate>
+                </dateRange>
+            </existDates>
+            <function>
+                <term>Metropolitan bishop</term>
+            </function>
+            <places>
+                <place>
+                    <placeRole>Place of birth</placeRole>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
+                        >Garmakan/Beth Garmai</placeEntry>
+                    <date notAfter="0450">ca. 440s?</date>
+                </place>
+                <place>
+                    <placeRole>Place of study</placeRole>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa/Antiochia ad Callirhoem</placeEntry>
+                </place>			
+            </places>
+            <biogHist>
+                <abstract>Metropolitan bp. of Mabbug (modern Membij/ancient Hierapolis) (485-519), ascetic theologian, christological polemicist, and sponsor of the Philoxenian NT.</abstract>
+                <p>Longer Description Here</p>
+                <chronList>
+                    <chronItem>
+                        <date standardDate="0484">484</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/520998"
+                            >Constantinople</placeEntry>
+                        <event> Supporting the Henotikon, Philoxenos visited Constantinople in 484 to offer Zeno a Miaphysite profession of faith.</event>
+                        
+                        
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="0486">0486</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/658480"
+                            >Mabbug/Hierapolis/Bambyke</placeEntry>
+                        <event>After the restoration of Peter the Fuller as patriarch of Antioch, Philoxenos was named metropolitan of Mabbug.</event>
+                        
+                        
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="0512">512</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/658381"
+                            >Antiochia/Theoupolis</placeEntry>
+                        <event>Philoxenos’s anti-Chalcedon efforts culminated in 512 when Flavian was ousted in favor of Severus as Patr. of Antioch. Philoxenos and his suffragan bishops (including a relation, Philoxenos of Doliche) assisted at Severus’s consecration. </event>
+                        
+                        
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="0519">519</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/844926"
+                            >Gangra</placeEntry>
+                        <event>In 519, Justin I exiled Philoxenos. In his final years, Philoxenos continued writing to monastic communities, encouraging them to persist in ascesis and Miaphysite christology.</event>
+                        
+                        
+                    </chronItem>
+                    <chronItem>
+                        <date standardDate="0523">523</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/216927">Philippopolis/Trimontium</placeEntry>
+                        <event>Philoxenos died in 523 under house arrest. Later traditions that he was executed are difficult to substantiate.</event>
+                        
+                    </chronItem>
+                </chronList>
+            </biogHist>
+        </description>
+        <relations>
+            <cpfRelation xlink:type="simple" cpfRelationType="associative"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+                xlink:arcrole="isAssociatedWith">
+                <relationEntry>Severus of Antioch</relationEntry>
+                <dateRange>
+                    <fromDate standardDate="0512>512</fromDate>
+                    <toDate standardDate="0523">523</toDate>
+                </dateRange>
+                <descriptiveNote>
+                    <p>Philoxenos’s anti-Chalcedon efforts culminated in 512 when Flavian was ousted in favor of Severus as Patr. of Antioch. Philoxenos and his suffragan bishops (including a relation, Philoxenos of Doliche) assisted at Severus’s consecration. Although later opponents vilified Philoxenos and Severus as uncompromising, epistolary evidence reveals that they initially struck a conciliatory tone as they sought to consolidate Miaphysite control of the clergy in Syria and Anatolia.</p>
+                </descriptiveNote>
+            </cpfRelation>
+            <cpfRelation xlink:type="simple" cpfRelationType="associative"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/CorporateBody"
+                xlink:arcrole="isAssociatedWith">
+                <relationEntry>School of Edessa</relationEntry>
+            </cpfRelation>
+        </relations>
+    </cpfDescription>
 </eac-cpf>
+
