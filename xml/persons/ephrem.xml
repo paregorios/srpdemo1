@@ -103,6 +103,11 @@
 				<part>ܐܦܪܝܡ</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
+			<nameEntry localType="http://id.loc.gov/authorities/names/n50082928" scriptCode="Latn"
+				xml:lang="eng">
+				<part>Ephraem, Syrus, Saint, 303-373</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
