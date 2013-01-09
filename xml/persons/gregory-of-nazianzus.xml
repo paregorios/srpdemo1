@@ -103,6 +103,12 @@
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
+			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
+				<part>Grégoire de Nazianze, saint</part>
+			</nameEntry>
+			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+				<part>Gregorius, Nazianzenus</part>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
@@ -155,7 +161,7 @@
 				
 			</places>
 			<biogHist>
-				<abstract>Gregory of Nazianzus was a theologian who wrote influential works in Greek, some of which were translated into Syriac. He was one of the three Cappadocian Fathers, and was briefly bishop of Constantinople.</abstract>
+				<abstract>Greek Church Father, and one of the three Cappadocian Fathers, whose influential writings earned him the title ‘the theologian’.</abstract>
 				<p>Detailed biographical history can go here.</p>
 				<chronList>
 					<chronItem>
