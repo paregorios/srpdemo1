@@ -12,6 +12,14 @@
       <language languageCode="eng">English</language>
       <script scriptCode="Latn">Latin</script>
     </languageDeclaration>
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime>2013</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Zeus</agent>
+      </maintenanceEvent>
+    </maintenanceHistory>
     <sources>
       <source>
         <sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry 500.</sourceEntry>
