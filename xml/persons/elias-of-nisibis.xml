@@ -100,6 +100,12 @@
 				<part>ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
+			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
+				<part>Élie de Nisibe</part>
+			</nameEntry>
+			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+				<part>Elias‏ ‎Bar-Šināja‏</part>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
@@ -112,7 +118,7 @@
 				<term>Metropolitan</term>
 			</function>
 			<biogHist>
-				<abstract>Eliya was metropolitan of Nisibis and wrote in Arabic.</abstract>
+				<abstract>Metropolitan of Nisibis and author.</abstract>
 				<p>Detailed biographical history can go here.</p>
 			</biogHist>
 		</description>
