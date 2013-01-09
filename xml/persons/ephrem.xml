@@ -108,12 +108,17 @@
 				<part>Ephraem, Syrus, Saint, 303-373</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
+			<nameEntry localType="BNF" scriptCode="Latn"
+				xml:lang="fre">
+				<part>Éphrem, saint</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
 				<dateRange>
 					<fromDate standardDate="0306">306</fromDate>
-					<toDate standardDate="0373-06-09">June 09, 373</toDate>
+					<toDate standardDate="0373">373</toDate>
 				</dateRange>
 			</existDates>
 			<function>
