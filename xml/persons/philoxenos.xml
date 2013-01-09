@@ -7,50 +7,40 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
 	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dbpprop="http://dbpedia.org/property/"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:exf="http://www.exforms.org/exf/1-0">
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dbpprop="http://dbpedia.org/property/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:exf="http://www.exforms.org/exf/1-0">
 	<control>
 		<recordId>44</recordId>
-	        <otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
-        <otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
-        <otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
-        <otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
-        <maintenanceStatus>new</maintenanceStatus>
+		<otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
+		<otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
+		<otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
+		<maintenanceStatus>new</maintenanceStatus>
 		<maintenanceAgency>
 			<agencyName>Syriac Reference Portal</agencyName>
 		</maintenanceAgency>
 		<maintenanceHistory>
 			<maintenanceEvent>
 				<eventType>created</eventType>
-				<eventDateTime standardDateTime="2012-12-27T20:28:46.118Z"/>
+				<eventDateTime standardDateTime="2013-01-09T22:26:46.118Z"/>
 				<agentType>human</agentType>
-				<agent>Nathan P. Gibson</agent>
-			</maintenanceEvent>
-			<maintenanceEvent>
-				<eventType>revised</eventType>
-				<eventDateTime standardDateTime="2012-12-27T20:45:46.118Z"/>
-				<agentType>human</agentType>
-				<agent>Nathan P. Gibson</agent>
+				<agent>David Michelson</agent>
 			</maintenanceEvent>
 		</maintenanceHistory>
 
 		<sources>
 			<source>
 				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
-					197.</sourceEntry>
+					428.</sourceEntry>
 			</source>
 			<source>
-				<sourceEntry>Barsoum, entry 9, pg. 196 (Arabic)/218 (Syriac)/229
+				<sourceEntry>Barsoum, entry 40, pg. 226 (Arabic)/252 (Syriac)/262
 					(English).</sourceEntry>
 			</source>
-			<source>
-				<sourceEntry>Abdisho (YDQ), pg. 69.</sourceEntry>
-			</source>
-			<source>
-				<sourceEntry>Abdisho (BO III), pg. 61.</sourceEntry>
-			</source>
+			
+			
 		</sources>
 	</control>
 	<cpfDescription>
@@ -58,108 +48,65 @@
 			<entityType>person</entityType>
 			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
 				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
-					<part>Ephrem</part>
+					<part>Philoxenos of Mabbug</part>
 				</nameEntry>
 				<nameEntry scriptCode="Syrc" xml:lang="syc">
-					<part>ܐܦܪܝܡ</part>
+					<part>ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
 					<preferredForm>syriaca.org</preferredForm>
 				</nameEntry>
 				<authorizedForm>syriaca.org</authorizedForm>
 			</nameEntryParallel>
 			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
 				transliteration="GEDSH" xml:lang="eng">
-				<part>Ephrem</part>
+				<part>Philoxenos of Mabbug</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
 			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
 				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
-					<part>St. Ephraim the Syrian</part>
+					<part>Mar Philoxenus of Mabug</part>
 				</nameEntry>
 				<nameEntry scriptCode="Arab" xml:lang="ara">
-					<part>مار افرام الملفان السرياني</part>
+					<part>مار فيلكسينس المنبجي</part>
 				</nameEntry>
 				<nameEntry scriptCode="Syrc" xml:lang="syc">
-					<part>ܡܪܝ ܐܦܪܝܡ</part>
+					<part>ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</part>
 				</nameEntry>
 				<nameEntry scriptCode="Syrj" xml:lang="syc">
-					<part>ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
+					<part>ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</part>
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
-			<nameEntryParallel localType="http://syriaca.org/localtype/abdisho-ydq">
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
-					<part>ܐܦܪܝܡ</part>
-				</nameEntry>
-				<nameEntry scriptCode="Syre" xml:lang="syc">
-					<part>ܐܲܦܪܹܝܡ</part>
-				</nameEntry>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntryParallel>
-			<nameEntry localType="http://syriaca.org/localtype/abdisho-bo" scriptCode="Syrc"
-				xml:lang="syc">
-				<part>ܐܦܪܝܡ</part>
-				<alternativeForm>syriaca.org</alternativeForm>
+			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
+				<part>Philoxène de Mabbugh</part>
 			</nameEntry>
-			<nameEntry localType="http://id.loc.gov/authorities/names/n50082928" scriptCode="Latn"
-				xml:lang="eng">
-				<part>Ephraem, Syrus, Saint, 303-373</part>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntry>
-			<nameEntry localType="BNF" scriptCode="Latn"
-				xml:lang="fre">
-				<part>Éphrem, saint</part>
-				<alternativeForm>syriaca.org</alternativeForm>
+			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+				<part>Philoxenos‏ ‎Von Mabbug‏</part>
 			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
 				<dateRange>
-					<fromDate standardDate="0306">306</fromDate>
-					<toDate standardDate="0373">373</toDate>
+					<fromDate notBefore="0450">ca. 440s?</fromDate>
+					<toDate standardDate="0523">523</toDate>
 				</dateRange>
 			</existDates>
 			<function>
-				<term>Deacon</term>
+				<term>Metropolitan bishop</term>
 			</function>
 			<places>
 				<place>
 					<placeRole>Place of birth</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-						>Nisibis/Antiochia</placeEntry>
-					<dateRange>
-						<fromDate standardDate="0306">306</fromDate>
-						<toDate standardDate="0359">359</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>Born probably of Christian parents in the early years of the 4th cent. in the region of Nisibis, he spent most of his life in Nisibis, serving a series of bishops (beginning with Yaʿqub of Nisibis, d. 338).</p>
-					</descriptiveNote>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
+						>Garmakan/Beth Garmai</placeEntry>
+					<date notAfter="0450">ca. 440s?</date>
 				</place>
 				<place>
-					<placeRole>Place of death</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
-						>Edessa/Antiochia ad Callirhoem</placeEntry>
-					<dateRange>
-						<fromDate standardDate="0363">363</fromDate>
-						<toDate standardDate="0373-06-09">June 09, 373</toDate>
-					</dateRange>
-				</place>
-				<place>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad
-						Tygrem/Amida</placeEntry>
-					<dateRange>
-						<fromDate standardDate="0359">359</fromDate>
-						<toDate standardDate="0363">363</toDate>
-					</dateRange>
-					<descriptiveNote>
-						<p>Ephrem stayed in Amida temporarily after the Persians gained control of
-							Nisibis.</p>
-					</descriptiveNote>
-				</place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa/Antiochia ad Callirhoem</placeEntry>
+				</place>			
 			</places>
 			<biogHist>
-				<abstract>Ephrem was a Christian teacher and prolific writer of the 4th century C.E.
-					in Syria and northern Mesopotamia. He is a key author in the Syriac traditions
-					and revered as a saint in a wide variety of Christian churches.</abstract>
+				<abstract>Metropolitan bp. of Mabbug (modern Membij/ancient Hierapolis) (485-519), ascetic theologian, christological polemicist, and sponsor of the Philoxenian NT.</abstract>
 				<p>Longer Description Here</p>
 				<chronList>
 					<chronItem>
