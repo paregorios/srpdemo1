@@ -1,0 +1,57 @@
+<eac-cpf xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
+  <control>
+    <recordId>74</recordId>
+    <maintenanceAgency>
+      <agencyName>syriaca.org</agencyName>
+    </maintenanceAgency>
+    <languageDeclaration>
+      <language languageCode="eng">English</language>
+      <script scriptCode="Latn">Latin</script>
+    </languageDeclaration>
+    <sources>
+      <source>
+        <sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry 500.</sourceEntry>
+      </source>
+      <source>
+        <sourceEntry>Barsoum, entry 69, pg. 304.</sourceEntry>
+      </source>
+    </sources>
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>person</entityType>
+      <nameEntryParallel>
+        <nameEntry scriptCode="Latn" transliteration="GEDSH">
+          <part>Yuḥanon of Ephesus</part>
+        </nameEntry>
+        <nameEntry scriptCode="Syrc">
+          <part>ܝܘܚܢܢ ܕܐܦܣܘܣ</part>
+          <preferredForm>syriaca.org</preferredForm>
+        </nameEntry>
+        <authorizedForm>syriaca.org</authorizedForm>
+      </nameEntryParallel>
+      <nameEntryParallel>
+        <nameEntry scriptCode="Arab" xml:lang="ara">
+          <part>يوحنا الافسسي</part>
+        </nameEntry>
+        <nameEntry scriptCode="Syrc" xml:lang="syc">
+          <part>ܝܘܚܢܢ ܕܐܦܣܘܣ</part>
+          <preferredForm>syriaca.org</preferredForm>
+        </nameEntry>
+        <nameEntry scriptCode="Latn" xml:lang="eng" transliteration="Barsoum-Anglicized">
+          <part>John of Ephesus</part>
+        </nameEntry>
+        <alternativeForm>syriaca.org</alternativeForm>
+      </nameEntryParallel>
+    </identity>
+    <description>
+      <existDates>
+        <dateRange>
+          <fromDate>507</fromDate>
+          <toDate>586</toDate>
+        </dateRange>
+      </existDates>
+      <biogHist></biogHist>
+    </description>
+  </cpfDescription>
+</eac-cpf>

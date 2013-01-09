@@ -1,0 +1,156 @@
+<?xml-stylesheet type="text/xsl" href="eac.xsl"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
+	xmlns="urn:isbn:1-931666-33-4" xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
+	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dbpprop="http://dbpedia.org/property/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:exf="http://www.exforms.org/exf/1-0">
+	<control>
+		<recordId>239</recordId>
+		<otherRecordId>http://viaf.org/hosted/syriac/25953</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/81959220</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/245087233</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/240917046</otherRecordId>
+		<otherRecordId>http://worldcat.org/identities/lccn-n50-24350</otherRecordId>
+		<otherRecordId>http://worldcat.org/identities/np-gregorius,%20abu%20al%20faraj$called%20bar%20hebraeus$1226%201286</otherRecordId>
+		<otherRecordId>http://worldcat.org/identities/np-gregorius%20abu%20al%20faraj$called%20bar%20habraeus$1226%201286</otherRecordId>
+		<otherRecordId>http://www.fihrist.org.uk/profile/person/ec6a8d45-fd25-445a-ab19-b29edc91f27d</otherRecordId>
+		<maintenanceStatus>new</maintenanceStatus>
+		<maintenanceAgency>
+			<agencyName>Syriac Reference Portal</agencyName>
+		</maintenanceAgency>
+		<maintenanceHistory>
+			<maintenanceEvent>
+				<eventType>created</eventType>
+				<eventDateTime standardDateTime="2013-01-03T18:45:46.118Z"/>
+				<agentType>human</agentType>
+				<agent>Nathan P. Gibson</agent>
+			</maintenanceEvent>
+			
+		</maintenanceHistory>
+
+		<sources>
+			<source>
+				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
+					74.</sourceEntry>
+			</source>
+			<source>
+				<sourceEntry>Barsoum, entry 235, pg. 411 (Arabic)/443 (Syriac)/463
+					(English).</sourceEntry>
+			</source>
+			
+			
+		</sources>
+	</control>
+	<cpfDescription>
+		<identity>
+			<entityType>person</entityType>
+			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+					<part>Bar ʿEbroyo, Grigorios</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܓܪܝܓܘܪܝܘܣ ܒܪ ܥܒܪܝܐ</part>
+					<preferredForm>syriaca.org</preferredForm>
+				</nameEntry>
+				<authorizedForm>syriaca.org</authorizedForm>
+			</nameEntryParallel>
+			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
+				transliteration="GEDSH" xml:lang="eng">
+				<part>Bar ʿEbroyo, Grigorios</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
+			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
+					<part>Mar Gregorius Bar Hebraeus</part>
+				</nameEntry>
+				<nameEntry scriptCode="Arab" xml:lang="ara">
+					<part>مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</part>
+					<preferredForm>syriaca.org</preferredForm>
+				</nameEntry>
+				<nameEntry scriptCode="Syrj" xml:lang="syc">
+					<part>ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+		</identity>
+		<description>
+			<existDates>
+				<dateRange>
+					<fromDate standardDate="1226">1226</fromDate>
+					<toDate standardDate="1286">1286</toDate>
+				</dateRange>
+			</existDates>
+			<function>
+				<term>Maphrian</term>
+			</function>
+			<places>
+				<place>
+					<placeRole>Place of birth</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629040"
+						>Melitene</placeEntry>
+					<date standardDate="1226">1226</date>
+				</place>
+				<place>
+					<placeRole>Place of death</placeRole>
+					<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Maragheh"
+						>Maragheh</placeEntry>
+					<date standardDate="1286">1286</date>
+				</place>
+				<place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381">Antiochia/Theoupolis</placeEntry>
+				</place>
+				<place>
+					<placeRole>Place of burial</placeRole>
+					<placeEntry>Convent of Mar Matthew, near Mosul</placeEntry>
+				</place>
+			</places>
+			<biogHist>
+				<abstract>Bar Hebraeus (Abu al-Faraj) was a Jacobite Maphrian and polymath.</abstract>
+				<p>Detailed biographical history can go here.</p>
+				<chronList>
+					<chronItem>
+						<date standardDate="1246">1246</date>
+						<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Gubos_%28West_Syrian_Diocese%29"
+							>Gubos (West Syrian Diocese)</placeEntry>
+						<event>Bar Hebraeus as bishop of Gubos (consecrated by Patriarch Ignatius II)</event>
+
+
+					</chronItem>
+					<chronItem>
+						<dateRange>
+							<fromDate  standardDate="1247">1247</fromDate>
+							<toDate standardDate="1252">1252</toDate>
+						</dateRange>
+						<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Laqabin_%28West_Syrian_Diocese%29"
+							>Laqabin (West Syrian Diocese)</placeEntry>
+						<event>Bar Hebraeus as bishop of Laqabin</event>
+					</chronItem>
+					<chronItem>
+						<dateRange>
+							<fromDate standardDate="1252">1252</fromDate>
+							<toDate standardDate="1264">1264</toDate>
+						</dateRange>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658409"
+							>Beroia</placeEntry>
+						<event>Bar Hebraeus as bishop over diocese of Aleppo (appointed by Dionysius)</event>
+					</chronItem>
+					<chronItem>
+						<date standardDate="1264">1264</date>
+						<event>Bar Hebraeus appointed Maphrian (by Ignatius III)</event>
+					</chronItem>
+				</chronList>
+			</biogHist>
+		</description>
+	</cpfDescription>
+</eac-cpf>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eac-cpf xmlns="urn:isbn:1-931666-33-4" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <control>
+        <recordId>44</recordId>
+        <otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
+        <otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
+        <otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
+        <otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
+        <maintenanceAgency>
+            <agencyName>Syriac Reference Portal</agencyName>
+        </maintenanceAgency>
+        <maintenanceHistory>
+            <maintenanceEvent>
+                <eventType>created</eventType>
+                <eventDateTime standardDateTime="2012-09-25T11:50:22-04:00"/>
+                <agentType>machine</agentType>
+                <agent>Ancient Persons PHP</agent>
+            </maintenanceEvent>
+   
+            <maintenanceEvent xmlns:oxf="http://www.orbeon.com/oxf/processors"
+                xmlns:xxi="http://orbeon.org/oxf/xml/xinclude"
+                xmlns:ev="http://www.w3.org/2001/xml-events"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
+                xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
+                xmlns:xeac="https://github.com/ewg118/xEAC"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xbl="http://www.w3.org/ns/xbl"
+                xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xxbl="http://orbeon.org/oxf/xml/xbl"
+                xmlns:pipeline="java:org.orbeon.oxf.processor.pipeline.PipelineFunctionLibrary"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:fr="http://orbeon.org/oxf/xml/form-runner"
+                xmlns:xxforms="http://orbeon.org/oxf/xml/xforms"
+                xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+                xmlns:exf="http://www.exforms.org/exf/1-0">
+                <eventType>revised</eventType>
+                <eventDateTime standardDateTime="2012-09-26T09:20:50.27-04:00"/>
+                <agentType>human</agentType>
+                <agent/>
+            </maintenanceEvent>
+        </maintenanceHistory>
+                 <!--TBD-->
+        <conventionDeclaration>
+            <abbreviation>WIKIPEDIA</abbreviation>
+            <citation>Wikipedia/DBpedia</citation>
+        </conventionDeclaration>
+        <!--TBD-->
+        <sources>
+            <source xlink:type="simple" xlink:href="http://viaf.org/viaf/54187001"/>
+        </sources>
+        <!--TBD-->
+    </control>
+    <cpfDescription>
+        <identity>
+            <entityType>person</entityType>
+            <nameEntry xml:lang="en">
+                <part>Philoxenus, Bishop of Hierapolis</part>
+                <alternativeForm>LC/NACO</alternativeForm>
+            </nameEntry>
+            <nameEntry xml:lang="fr">
+                <part>Philoxène de Mabbugh</part>
+                <alternativeForm>BNF/SUDOC</alternativeForm>
+            </nameEntry>
+            <nameEntry xml:lang="de">
+                <part>Philoxenus, Mabbugensis</part>
+                <alternativeForm>DNB</alternativeForm>
+                <!--This isn't really German but from the German file-->
+            </nameEntry>
+            <nameEntry xml:lang="en">
+                <part>Augustus</part>
+                <preferredForm>WIKIPEDIA</preferredForm>
+            </nameEntry>
+            <nameEntry xml:lang="zh">
+                <part>奥古斯都</part>
+                <alternativeForm>WIKIPEDIA</alternativeForm>
+            </nameEntry>
+            <nameEntry xml:lang="sv">
+                <part>Augustus</part>
+                <alternativeForm>WIKIPEDIA</alternativeForm>
+            </nameEntry>
+            <nameEntry xml:lang="de">
+                <part>Augustus</part>
+                <alternativeForm>WIKIPEDIA</alternativeForm>
+            </nameEntry>
+            <nameEntry xml:lang="it">
+                <part>Augusto</part>
+                <alternativeForm>WIKIPEDIA</alternativeForm>
+            </nameEntry>
+        </identity>
+        <description>
+            <place>
+                <date standardDate="0440">circa A.D. 440</date>
+                <placeEntry vocabularySource="http://pleiades.stoa.org/places/981504">Africa
+                    Proconsularis</placeEntry>
+            </place>
+            <place>
+                <date standardDate="-0045">45 B.C.</date>
+                <placeEntry vocabularySource="http://pleiades.stoa.org/places/481865"
+                    >Illyricum</placeEntry>
+            </place>
+            <place>
+                <date standardDate="-0045">45 B.C.</date>
+                <placeEntry vocabularySource="http://pleiades.stoa.org/places/1027"
+                    >Hispania</placeEntry>
+            </place>
+            <occupation>
+                <descriptiveNote>with Quintus Pedius</descriptiveNote>
+                <date standardDate="-0043">43 B.C.</date>
+                <term>Consul suffectus</term>
+            </occupation>
+            <occupation>
+                <date standardDate="-0048">48 B.C.</date>
+                <term>Pontifex Maximus</term>
+            </occupation>
+            <occupation>
+                <date standardDate="-0047">47 B.C.</date>
+                <term>Prefect</term>
+            </occupation>
+            <place>
+                <date standardDate="-0063-09-23">September 23, 63 B.C.</date>
+                <placeRole>Date of Birth</placeRole>
+                <placeEntry vocabularySource="http://nomisma.org/id/rome">Rome</placeEntry>
+            </place>
+            <biogHist>
+                <abstract xml:lang="en" localType="wikipedia">Augustus (Latin: Imperator Gaius
+                    Julius Caesar Augustus; 23 September 63 BC – 19 August AD 14) is considered the
+                    first emperor of the Roman Empire, which he ruled alone from 27 BC until his
+                    death in 14 AD. Born Gaius Octavius Thurinus, he was adopted posthumously by his
+                    great-uncle Gaius Julius Caesar in 44 BC via his last will and testament, and
+                    between then and 27 BC was officially named Gaius Julius Caesar. In 27 BC the
+                    Senate awarded him the honorific Augustus ("the revered one"), and thus
+                    consequently he was Gaius Julius Caesar Augustus. The young Octavius came into
+                    his inheritance after Caesar's assassination in 44 BC. In 43 BC, Octavian joined
+                    forces with Mark Antony and Marcus Aemilius Lepidus in a military dictatorship
+                    known as the Second Triumvirate. As a triumvir, Octavian ruled Rome and many of
+                    its provinces. The triumvirate was eventually torn apart under the competing
+                    ambitions of its rulers: Lepidus was driven into exile, and Antony committed
+                    suicide following his defeat at the Battle of Actium by Octavian's fleet under
+                    the command of Agrippa in 31 BC. After the demise of the Second Triumvirate,
+                    Octavian restored the outward facade of the Roman Republic, with governmental
+                    power vested in the Roman Senate, but in practice retained his autocratic power.
+                    It took several years to determine the exact framework by which a formally
+                    republican state could be led by a sole ruler; the result became known as the
+                    Roman Empire. The emperorship was never an office like the Roman dictatorship
+                    which Caesar and Sulla had held before him; indeed, he declined it when the
+                    Roman populace "entreated him to take on the dictatorship". He was not known as
+                    what we would call "Emperor" in his lifetime; "Imperator" was (to begin with)
+                    simply a title given to an unusually successful general. But Augustus was given,
+                    among other titles, that of "princeps", "the first (of citizens)". Originally it
+                    had no royal connotations. By law, Augustus held a collection of powers granted
+                    to him for life by the Senate, including those of tribune of the plebs and
+                    censor. He was consul until 23 BC. His substantive power stemmed from financial
+                    success and resources gained in conquest, the building of patronage
+                    relationships throughout the Empire, the loyalty of many military soldiers and
+                    veterans, the authority of the many honors granted by the Senate, and the
+                    respect of the people. Augustus' control over the majority of Rome's legions
+                    established an armed threat that could be used against the Senate, allowing him
+                    to coerce the Senate's decisions. With his ability to eliminate senatorial
+                    opposition by means of arms, the Senate became docile towards him. His rule
+                    through patronage, military power, and accumulation of the offices of the
+                    defunct Republic became the model for all later imperial governments. The reign
+                    of Augustus initiated an era of relative peace known as the Pax Romana, or Roman
+                    peace. Despite continuous wars on the frontiers, and one year-long civil war
+                    over the imperial succession, the Mediterranean world remained at peace for more
+                    than two centuries. Augustus enlarged the empire dramatically, annexing Egypt,
+                    Dalmatia, Pannonia, and Raetia, expanded possessions in Africa, and completed
+                    the conquest of Hispania. Beyond the frontiers, he secured the empire with
+                    client states, and made peace with Parthia through diplomacy. He reformed the
+                    Roman system of taxation, developed networks of roads with an official courier
+                    system, established a standing army, established the Praetorian Guard, and
+                    created official police and fire-fighting services for Rome. Much of the city
+                    was rebuilt under Augustus; and he wrote a record of his own accomplishments,
+                    known as the Res Gestae Divi Augusti, which has survived. Upon his death in AD
+                    14, Augustus was declared a god by the Senate—to be worshipped by the Romans.
+                    His names Augustus and Caesar were adopted by every subsequent emperor; and the
+                    eighth month of the Roman calendar, previously named Sextilis, was renamed
+                    Augustus in his honour. He was succeeded by his adopted son (also stepson and
+                    former son-in-law), Tiberius.</abstract>
+                <chronList>
+                    <chronItem>
+                        <event>Octavius' father Gaius Octavius becomes praetor</event>
+                        <date standardDate="-0060">60 B.C.</date>
+                    </chronItem>
+                    <chronItem>
+                        <event>Death of Octavius Senior; Octavius Junior is educated by his
+                            stepfather Lucius Marcius Philippus</event>
+                        <date standardDate="-0059">59 B.C.</date>
+                    </chronItem>
+                    <chronItem>
+                        <event>His uncle Julius Caesar launches the Second Civil War</event>
+                        <date standardDate="-0049">49 B.C.</date>
+                    </chronItem>
+                    <chronItem>
+                        <event>Adopted by Julius Caesar</event>
+                        <date standardDate="-0044">44 B.C.</date>
+                    </chronItem>
+                    <chronItem>
+                        <event>Battle of Mutina</event>
+                        <date standardDate="-0043">43 B.C.</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/383715"
+                            >Mutina</placeEntry>
+                    </chronItem>
+                    <chronItem>
+                        <event>Battle of Philippi</event>
+                        <date standardDate="-0042">42 B.C.</date>
+                        <placeEntry vocabularySource="http://pleiades.stoa.org/places/501482"
+                            >Krenides/Philippi/Col. Augusta Iulia Philippensis</placeEntry>
+                    </chronItem>
+                </chronList>
+            </biogHist>
+            <existDates>
+                <dateRange>
+                    <fromDate standardDate="-0063-09-23">23 September 63 B.C.</fromDate>
+                    <toDate standardDate="0014-08-19">19 August A.D. 14</toDate>
+                </dateRange>
+            </existDates>
+        </description>
+        <relations>
+            <cpfRelation xlink:type="simple" xlink:href="tiberius"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+                xlink:arcrole="predecessorOf">
+                <relationEntry>Tiberius</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:type="simple" xlink:href="julio-claudian_dynasty" xlink:role=""
+                xlink:arcrole="belongsToDynasty">
+                <relationEntry>Julio-Claudian dynasty</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:type="simple" xlink:href="gaius_octavius"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+                xlink:arcrole="childOf">
+                <relationEntry>Gaius Octavius</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:type="simple" xlink:href="julia_the_elder"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+                xlink:arcrole="parentOf">
+                <relationEntry>Julia the Elder</relationEntry>
+            </cpfRelation>
+            <cpfRelation xlink:type="simple" xlink:href="livia"
+                xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+                xlink:arcrole="spouseOf">
+                <relationEntry>Livia</relationEntry>
+            </cpfRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Statue-Augustus.jpg/200px-Statue-Augustus.jpg"
+                xlink:role="portrait">
+                <relationEntry>Thumbnail</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html"
+                xlink:role="subjectOf">
+                <relationEntry>http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://www.viajuliaaugusta.com/en/home.html" xlink:role="subjectOf">
+                <relationEntry>http://www.viajuliaaugusta.com/en/home.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://janusquirinus.org/Octavian/OctavianHome.html"
+                xlink:role="subjectOf">
+                <relationEntry>http://janusquirinus.org/Octavian/OctavianHome.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/home.html#45"
+                xlink:role="subjectOf">
+                <relationEntry>http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/home.html#45</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://www.bbc.co.uk/history/historic_figures/augustus.shtml"
+                xlink:role="subjectOf">
+                <relationEntry>http://www.bbc.co.uk/history/historic_figures/augustus.shtml</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/home.html"
+                xlink:role="subjectOf">
+                <relationEntry>http://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/home.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://cliojournal.wikispaces.com/The+Achievements+of+Augustus+Caesar"
+                xlink:role="subjectOf">
+                <relationEntry>http://cliojournal.wikispaces.com/The+Achievements+of+Augustus+Caesar</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://www.roman-emperors.org/auggie.htm" xlink:role="subjectOf">
+                <relationEntry>http://www.roman-emperors.org/auggie.htm</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://www.historyguide.org/ancient/lecture12b.html"
+                xlink:role="subjectOf">
+                <relationEntry>http://www.historyguide.org/ancient/lecture12b.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://janusquirinus.org/Octavian/humour.html" xlink:role="subjectOf">
+                <relationEntry>http://janusquirinus.org/Octavian/humour.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://www.csun.edu/~hcfll004/nicolaus.html" xlink:role="subjectOf">
+                <relationEntry>http://www.csun.edu/~hcfll004/nicolaus.html</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://ancientrome.ru/art/artworken/result.htm?alt=August&amp;pnumber=30"
+                xlink:role="subjectOf">
+                <relationEntry>http://ancientrome.ru/art/artworken/result.htm?alt=August&amp;pnumber=30</relationEntry>
+            </resourceRelation>
+            <resourceRelation xlink:type="simple"
+                xlink:href="http://finds.org.uk/romancoins/emperors/emperor/id/1"
+                xlink:role="subjectOf">
+                <relationEntry>Portable Antiquities Scheme Biography</relationEntry>
+            </resourceRelation>
+        </relations>
+    </cpfDescription>
+</eac-cpf>

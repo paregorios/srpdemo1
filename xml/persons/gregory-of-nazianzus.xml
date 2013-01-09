@@ -1,0 +1,190 @@
+<?xml-stylesheet type="text/xsl" href="eac.xsl"?>
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
+	xmlns="urn:isbn:1-931666-33-4" xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+	xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:eac="urn:isbn:1-931666-33-4"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
+	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dbpprop="http://dbpedia.org/property/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:exf="http://www.exforms.org/exf/1-0">
+	<control>
+		<recordId>511</recordId>
+		<otherRecordId>http://viaf.org/hosted/syriac/29201</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/108675755</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/249336660</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/236877762</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/195599811</otherRecordId>
+		<otherRecordId>http://viaf.org/viaf/193556148</otherRecordId>
+		<otherRecordId>http://worldcat.org/identities/lccn-n50-82276</otherRecordId>
+		<otherRecordId>http://www.fihrist.org.uk/profile/person/2c95173d-cde2-4246-b7dd-fd93252a194b</otherRecordId>
+		<maintenanceStatus>new</maintenanceStatus>
+		<maintenanceAgency>
+			<agencyName>Syriac Reference Portal</agencyName>
+		</maintenanceAgency>
+		<maintenanceHistory>
+			<maintenanceEvent>
+				<eventType>created</eventType>
+				<eventDateTime standardDateTime="2013-01-07T22:10:46.118Z"/>
+				<agentType>human</agentType>
+				<agent>Nathan P. Gibson</agent>
+			</maintenanceEvent>
+		</maintenanceHistory>
+
+		<sources>
+			<source>
+				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
+					235.</sourceEntry>
+			</source>
+			<source>
+				<sourceEntry>Barsoum, pg. 147 (Arabic)/169
+					(English).</sourceEntry>
+			</source>
+			<source>
+				<sourceEntry>Abdisho (YDQ), pg. 65.</sourceEntry>
+			</source>
+			<source>
+				<sourceEntry>Abdisho (BO III), pg. 23.</sourceEntry>
+			</source>
+		</sources>
+	</control>
+	<cpfDescription>
+		<identity>
+			<entityType>person</entityType>
+			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+					<part>Gregory of Nazianzus</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</part>
+					<preferredForm>syriaca.org</preferredForm>
+				</nameEntry>
+				<authorizedForm>syriaca.org</authorizedForm>
+			</nameEntryParallel>
+			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
+				transliteration="GEDSH" xml:lang="eng">
+				<part>Gregory of Nazianzus</part>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntry>
+			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
+					<part>Gregory Nazianzen</part>
+				</nameEntry>
+				<nameEntry scriptCode="Arab" xml:lang="ara">
+					<part>غريغوريوس النزينزي</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܓܪܝܓܘܪܝܘܣ ܕܢܐܙܝܢܙܘ</part>
+					<preferredForm>syriaca.org</preferredForm>
+				</nameEntry>
+				<nameEntry scriptCode="Syrj" xml:lang="syc">
+					<part>ܓܪܺܝܓܘܽܪܝܘܣ ܕܢܰܐܙܰܝܢܰܙܘ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+			<nameEntryParallel localType="http://syriaca.org/localtype/abdisho-ydq">
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syre" xml:lang="syc">
+					<part>ܓܪܝܼܓܘܿܪܝܼܘܿܣ ܪܲܒܵܐ ܐܲܦܸܣܩܘܿܦܵܐ ܕܐܵܢܙܝܵܢܙܘܼ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+			<nameEntryParallel localType="http://syriaca.org/localtype/abdisho-bo">
+				<nameEntry scriptCode="Syrc" xml:lang="syc">
+					<part>ܓܪܝܓܘܪܝܘܣ ܪܒܐ ܐܦܣܩܘܦܐ ܕܐܢܙܝܢܙܘ</part>
+				</nameEntry>
+				<nameEntry scriptCode="Syrj" xml:lang="syc">
+					<part>ܓܪܺܝܓܘܽܪܝܺܘܳܣ ܪܰܒܳܐ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܢܰܐܙܝܰܢܙܽܘ</part>
+				</nameEntry>
+				<alternativeForm>syriaca.org</alternativeForm>
+			</nameEntryParallel>
+		</identity>
+		<description>
+			<existDates>
+				<dateRange>
+					<fromDate standardDate="0330">0330</fromDate>
+					<toDate standardDate="0390">0390</toDate>
+				</dateRange>
+			</existDates>
+			<function>
+				<term>Bishop</term>
+			</function>
+			<places>
+				<place>
+					<placeRole>Place of birth</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619181"
+						>Karbala</placeEntry>
+					<date standardDate="0330">0330</date>
+				</place>
+				<place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619218">Nandianulus/Nazianzos</placeEntry>
+				</place>
+				<place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629035">Mazaka/Eusebeia/Caesarea</placeEntry>
+				</place>
+				<place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/727070">Alexandria</placeEntry>
+				</place>
+				<place>
+					<placeRole>Place of study</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/579885">Athenae</placeEntry>
+				</place>
+				<place>
+					<placeRole>Episcopal see</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619256">Sasima</placeEntry>
+					<date standardDate="0372">372</date>
+				</place>
+				<place>
+					<placeRole>Episcopal see</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/520998">Constantinopolis</placeEntry>
+				</place>
+				<place>
+					<placeRole>Place of death</placeRole>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619181"
+						>Karbala</placeEntry>
+					<date standardDate="0390">390</date>
+				</place>
+				
+			</places>
+			<biogHist>
+				<abstract>Gregory of Nazianzus was a theologian who wrote influential works in Greek, some of which were translated into Syriac. He was one of the three Cappadocian Fathers, and was briefly bishop of Constantinople.</abstract>
+				<p>Detailed biographical history can go here.</p>
+				<chronList>
+					<chronItem>
+						<date standardDate="0372">338</date>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/619256">Sasima</placeEntry>
+						<event>Gregory made bishop of Sasima</event>
+					</chronItem>
+				</chronList>
+			</biogHist>
+		</description>
+		<relations>
+			<cpfRelation xlink:type="simple" cpfRelationType="associative"
+				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+				xlink:arcrole="isAssociatedWith">
+				<relationEntry>Basil of Caesarea</relationEntry>
+				<placeEntry vocabularySource="http://pleiades.stoa.org/places/579885">Athenae</placeEntry>
+				<descriptiveNote>
+					<p>Gregory developed a friendship with Basil while studying in Athens, and they maintained a lifelong relationship.</p>
+				</descriptiveNote>
+			</cpfRelation>
+			<cpfRelation xlink:type="simple" cpfRelationType="associative"
+				xlink:role="http://RDVocab.info/uri/schema/FRBRentitiesRDA/Person"
+				xlink:arcrole="isAssociatedWith">
+				<relationEntry>Flavius Claudius Julianus</relationEntry>
+				<placeEntry vocabularySource="http://pleiades.stoa.org/places/579885">Athenae</placeEntry>
+				<descriptiveNote>
+					<p>Gregory met Julian while studying in Athens. Julian later became emperor ("Julian the Apostate").</p>
+				</descriptiveNote>
+			</cpfRelation>
+		</relations>
+	</cpfDescription>
+</eac-cpf>
