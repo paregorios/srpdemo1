@@ -82,6 +82,12 @@
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
+			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+				<part>Barhebraeus‏</part>
+			</nameEntry>
+			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="ger">
+				<part>Barhebraeus, Gregorius Abū al-Faraǧ (1226-1286)</part>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
@@ -116,7 +122,7 @@
 				</place>
 			</places>
 			<biogHist>
-				<abstract>Bar Hebraeus (Abu al-Faraj) was a Jacobite Maphrian and polymath.</abstract>
+				<abstract>Maph. (since 1264) and polymath. Foremost representative of the Syriac Renaissance of the 12th–13th cent.</abstract>
 				<p>Detailed biographical history can go here.</p>
 				<chronList>
 					<chronItem>

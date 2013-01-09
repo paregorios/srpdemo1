@@ -113,6 +113,10 @@
 				<part>Éphrem, saint</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
+			<nameEntry localType="DNB" scriptCode="Latn"
+				xml:lang="ger">
+				<part>Der Syrer, Ephraem</part>
+			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
