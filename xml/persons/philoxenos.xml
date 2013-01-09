@@ -12,15 +12,12 @@
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dbpprop="http://dbpedia.org/property/"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:exf="http://www.exforms.org/exf/1-0">
 	<control>
-		<recordId>13</recordId>
-		<otherRecordId>http://viaf.org/hosted/syriac/26172</otherRecordId>
-		<otherRecordId>http://viaf.org/viaf/100177778</otherRecordId>
-		<otherRecordId>http://worldcat.org/identities/lccn-n50-82928</otherRecordId>
-		<otherRecordId>http://worldcat.org/identities/np-ephrem$syrus%20saint$303%20373</otherRecordId>
-		<otherRecordId>http://worldcat.org/identities/np-ephraem$syrus$ca%20306%20ca%20373</otherRecordId>
-		<otherRecordId>http://www.fihrist.org.uk/profile/person/cae25c5e-00e9-4421-b96e-0b79072026ae</otherRecordId>
-		<otherRecordId>http://www.fihrist.org.uk/profile/person/0abe211d-13a4-4adc-8151-a4137c211c0e</otherRecordId>
-		<maintenanceStatus>new</maintenanceStatus>
+		<recordId>44</recordId>
+	        <otherRecordId>http://worldcat.org/identities/lccn-n79-8221</otherRecordId>
+        <otherRecordId>http://viaf.org/viaf/54187001</otherRecordId>
+        <otherRecordId>http://viaf.org/hosted/syriac/28554/</otherRecordId>
+        <otherRecordId>http://d-nb.info/gnd/118505122</otherRecordId>
+        <maintenanceStatus>new</maintenanceStatus>
 		<maintenanceAgency>
 			<agencyName>Syriac Reference Portal</agencyName>
 		</maintenanceAgency>
