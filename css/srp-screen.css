@@ -25,8 +25,9 @@ h1 {
     font-size: 30px;
 }
 
-ul.bulleted li {
+ul.bulleted > li {
     list-style: circle inside !important;
+    line-height: 1.5em;
 }
 
 ul.bulleted > li > ul.bulleted {
@@ -222,12 +223,22 @@ body {
                             padding: 1em 3em;
                         }
                         
-                        #tabcontent > div > h2 {
-                            font-size: 22px;
+                            #tabcontent > div > h2 {
+                                font-size: 22px;
+                            }
+                        
+                        #tabcontent > div h3 {
+                            font-size: 18px;
                         }
                         
-                        #tabcontent > div > h2 > *:lang(syc) {
-                            font-size: 150% !important;
+                        #tabcontent > div *:lang(syc) {
+                            font-size: 150%;
+                        }
+                        #tabcontent > div *:lang(ara) {
+                            font-size: 150%;
+                        }
+                        #tabcontent > div h4 {
+                            color: black;
                         }
                         
             
