@@ -169,7 +169,7 @@
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:apply-templates select="e:nameEntry[1]"/>
-                                    <ul>
+                                    <ul class="bulleted">
                                         <xsl:for-each select="e:nameEntry[1]/following-sibling::e:nameEntry">
                                             <li><xsl:apply-templates select="."/></li>
                                         </xsl:for-each>
@@ -208,13 +208,17 @@
     <xsl:template match="e:placeEntry[@vocabularySource]">
         <a href="{@vocabularySource}"><xsl:value-of select="."/></a>
     </xsl:template>
+    
+    <xsl:template match="e:descriptiveNote[ancestor::e:*[1]/self::e:place]">
+        <xsl:text> — </xsl:text><xsl:apply-templates select="e:p" mode="nowrap"/><xsl:text></xsl:text>
+    </xsl:template>
         
     <xsl:template match="e:date[ancestor::e:place]">
         <xsl:text> (</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text>
     </xsl:template>
     
     <xsl:template match="e:biogHist">
-        <xsl:apply-templates select="e:p[not(contains('Detailed biographical history can go here.', .))]"/>
+        <xsl:apply-templates select="e:p"/>
         <xsl:apply-templates select="e:chronList"/>
     </xsl:template>
     
@@ -275,6 +279,10 @@
     </xsl:template>
     
     <xsl:template match="e:agent | e:event | e:maintenanceAgency | e:agencyName | e:sourceEntry | e:part | e:placeEntry[not(@vocabularySource)]"><xsl:apply-templates/></xsl:template>
+    
+    <xsl:template match="e:p[contains(., 'Detailed biographical history can go here.') or contains(., 'Longer Description Here')]"/>
+    
+    <xsl:template match="e:*" mode="nowrap"><xsl:apply-templates/></xsl:template>
     
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
