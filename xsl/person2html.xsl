@@ -95,10 +95,12 @@
                                             <xsl:value-of select="$n"/>
                                         </div>
                                         <div id="names">
+                                            <h4>Names</h4>
                                             <xsl:apply-templates select="./descendant::e:identity"/>
                                         </div>
                                         <div id="geography">
-                                            
+                                            <h4>Geography</h4>
+                                            <xsl:apply-templates select="./descendant::e:places"/>
                                         </div>
                                         <div id="biography">
                                             
@@ -175,6 +177,28 @@
     </xsl:template>
     
     <xsl:template match="e:part"><xsl:apply-templates/></xsl:template>
+    
+    <xsl:template match="e:places">
+        <ul class="bulleted">
+            <xsl:for-each select="e:place">
+                <li><xsl:apply-templates/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="e:placeRole">
+        <strong><xsl:value-of select="."/>:</strong><xsl:text> </xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="e:placeEntry[@vocabularySource]">
+        <a href="{@vocabularySource}"><xsl:value-of select="."/></a>
+    </xsl:template>
+    
+    <xsl:template match="e:placeEntry[not(@vocabularySource)]"><xsl:value-of select="."/></xsl:template>
+    
+    <xsl:template match="e:date[ancestor::e:place]">
+        <xsl:text> (</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text>
+    </xsl:template>
     
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
