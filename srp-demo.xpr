@@ -10,6 +10,66 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>xml/persons/philoxenos.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>person2html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xml/persons/gregory-of-nazianzus.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>person2html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xml/persons/ephrem.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>person2html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xml/persons/elias-of-nisibis.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>person2html</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>xml/persons/bar-hebraeus.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -263,5 +323,7 @@
             </serialized>
         </options>
     </meta>
-    <projectTree name="srp-demo.xpr"/>
+    <projectTree name="srp-demo.xpr">
+        <folder path="xml/"/>
+    </projectTree>
 </project>
