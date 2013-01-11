@@ -222,6 +222,14 @@ body {
                             padding: 1em 3em;
                         }
                         
+                        #tabcontent > div > h2 {
+                            font-size: 22px;
+                        }
+                        
+                        #tabcontent > div > h2 > *:lang(syc) {
+                            font-size: 150% !important;
+                        }
+                        
             
             #footer {
                 background-color: orange;
