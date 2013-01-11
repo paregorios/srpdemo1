@@ -71,10 +71,10 @@
                                         <li>about</li>
                                     </ul>
                                 </div>
-                                <div id="subnav">
+                                <!-- <div id="subnav">
                                     <p>&gt;&gt;&gt;
                                         <span lang="{$persontitlelang}"><xsl:value-of select="$persontitle"/></span></p>
-                                </div>
+                                </div> -->
                                 <div id="activetab">
                                     <div id="tabcontent">
                                         <xsl:value-of select="$n"/>
