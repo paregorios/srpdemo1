@@ -80,7 +80,7 @@
                                         <xsl:value-of select="$n"/>
                                         <div id="title">
                                             <xsl:value-of select="$n"/>
-                                            <h3>
+                                            <h2>
                                                 <span xml:lang="{$personnamepreflang}">
                                                     <xsl:value-of select="$personnamepref"/>
                                                 </span>
@@ -88,7 +88,7 @@
                                                 <xsl:text> (</xsl:text>
                                                 <xsl:value-of select="$personnameprefgloss"/>
                                                 <xsl:text>)</xsl:text>
-                                            </h3>
+                                            </h2>
                                             <xsl:value-of select="$n"/>
                                             <xsl:apply-templates select="./descendant::e:existDates"/>
                                             <p>
@@ -99,19 +99,19 @@
                                             <xsl:value-of select="$n"/>
                                         </div>
                                         <div id="names">
-                                            <h4>Names</h4>
+                                            <h3>Names</h3>
                                             <xsl:apply-templates select="./descendant::e:identity"/>
                                         </div>
                                         <div id="geography">
-                                            <h4>Geography</h4>
+                                            <h3>Geography</h3>
                                             <xsl:apply-templates select="./descendant::e:places"/>
                                         </div>
                                         <div id="biography">
-                                            <h4>Biography</h4>
+                                            <h3>Biography</h3>
                                             <xsl:apply-templates select="./descendant::e:biogHist"/>
                                         </div>
                                         <div id="additional">
-                                            <h4>Other information and identifiers</h4>
+                                            <h3>Other information and identifiers</h3>
                                             <ul class="bulleted">
                                                 <xsl:for-each select="./descendant::e:control/e:otherRecordId">
                                                     <li><xsl:apply-templates select="."/></li>
@@ -119,7 +119,7 @@
                                             </ul>
                                         </div>
                                         <div id="provenance">
-                                            <h4>About this information</h4>
+                                            <h3>About this information</h3>
                                             <p>This information is maintained by <xsl:apply-templates select="./descendant::e:maintenanceAgency"/>.</p>
                                             <xsl:apply-templates select="./descendant::e:sources"/>
                                             <xsl:apply-templates select="./descendant::e:maintenanceHistory"/>
@@ -236,7 +236,7 @@
     </xsl:template>
     
     <xsl:template match="e:sources">
-        <h5>Sources:</h5>
+        <h4>Sources:</h4>
         <ul class="bulleted">
             <xsl:for-each select="e:source">
                 <li><xsl:apply-templates/></li>
@@ -245,7 +245,7 @@
     </xsl:template>
     
     <xsl:template match="e:maintenanceHistory">
-        <h5>History of changes:</h5>
+        <h4>History of changes:</h4>
         <ul class="bulleted">
             <xsl:for-each select="e:maintenanceEvent">
                 <li><xsl:apply-templates select="."/></li>
