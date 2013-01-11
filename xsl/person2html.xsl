@@ -34,7 +34,9 @@
                 <link rel="stylesheet" href="../css/yui/reset-fonts-grids.css" type="text/css" media="screen" />
                 <link rel="stylesheet" href="../css/srp-screen.css" type="text/css" media="screen" />
                 <link rel="stylesheet" href="../css/srp-trees-screen.css" type="text/css" media="screen" />
-            </head>
+                
+                <script src='http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js' type='text/javascript'></script>
+                <script src='http://isawnyu.github.com/awld-js/awld.js?autoinit' type='text/javascript'></script>            </head>
             <body>
                 <div id="outercontainer">
                     <div id="innercontainer">
