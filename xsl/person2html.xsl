@@ -107,7 +107,12 @@
                                             <xsl:apply-templates select="./descendant::e:biogHist"/>
                                         </div>
                                         <div id="additional">
-                                            
+                                            <h4>Other information and identifiers</h4>
+                                            <ul class="bulleted">
+                                                <xsl:for-each select="./descendant::e:control/e:otherRecordId">
+                                                    <li><xsl:apply-templates select="."/></li>
+                                                </xsl:for-each>
+                                            </ul>
                                         </div>
                                         <div id="provenance">
                                             
@@ -225,6 +230,9 @@
     
     <xsl:template match="e:event"><xsl:apply-templates/></xsl:template>
     
+    <xsl:template match="e:otherRecordId[starts-with(., 'http://')]">
+        <a href="{.}"><xsl:value-of select="."/></a>
+    </xsl:template>
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
     </xsl:template>
