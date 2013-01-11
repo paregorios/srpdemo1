@@ -73,7 +73,7 @@
                                 </div>
                                 <div id="subnav">
                                     <p>&gt;&gt;&gt;
-                                        <span xml:lang="{$persontitlelang}"><xsl:value-of select="$persontitle"/></span></p>
+                                        <span lang="{$persontitlelang}"><xsl:value-of select="$persontitle"/></span></p>
                                 </div>
                                 <div id="activetab">
                                     <div id="tabcontent">
@@ -81,7 +81,7 @@
                                         <div id="title">
                                             <xsl:value-of select="$n"/>
                                             <h2>
-                                                <span xml:lang="{$personnamepreflang}">
+                                                <span lang="{$personnamepreflang}">
                                                     <xsl:value-of select="$personnamepref"/>
                                                 </span>
                                                 <xsl:text/>
@@ -186,7 +186,7 @@
         <xsl:choose>
             <xsl:when test="xml:lang='eng'"><xsl:apply-templates select="e:part"/></xsl:when>
             <xsl:otherwise>
-                <span xml:lang="{@xml:lang}"><xsl:apply-templates select="e:part"/></span>
+                <span lang="{@xml:lang}"><xsl:apply-templates select="e:part"/></span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
