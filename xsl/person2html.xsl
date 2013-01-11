@@ -115,7 +115,10 @@
                                             </ul>
                                         </div>
                                         <div id="provenance">
-                                            
+                                            <h4>About this information</h4>
+                                            <p>This information is maintained by <xsl:apply-templates select="./descendant::e:maintenanceAgency"/>.</p>
+                                            <xsl:apply-templates select="./descendant::e:sources"/>
+                                            <xsl:apply-templates select="./descendant::e:maintenanceHistory"/>
                                         </div>
                                     </div>
                                 </div>
@@ -183,9 +186,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    <xsl:template match="e:part"><xsl:apply-templates/></xsl:template>
-    
+        
     <xsl:template match="e:places">
         <ul class="bulleted">
             <xsl:for-each select="e:place">
@@ -201,9 +202,7 @@
     <xsl:template match="e:placeEntry[@vocabularySource]">
         <a href="{@vocabularySource}"><xsl:value-of select="."/></a>
     </xsl:template>
-    
-    <xsl:template match="e:placeEntry[not(@vocabularySource)]"><xsl:value-of select="."/></xsl:template>
-    
+        
     <xsl:template match="e:date[ancestor::e:place]">
         <xsl:text> (</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text>
     </xsl:template>
@@ -228,11 +227,49 @@
         </ul>
     </xsl:template>
     
-    <xsl:template match="e:event"><xsl:apply-templates/></xsl:template>
-    
     <xsl:template match="e:otherRecordId[starts-with(., 'http://')]">
         <a href="{.}"><xsl:value-of select="."/></a>
     </xsl:template>
+    
+    <xsl:template match="e:sources">
+        <h5>Sources:</h5>
+        <ul class="bulleted">
+            <xsl:for-each select="e:source">
+                <li><xsl:apply-templates/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="e:maintenanceHistory">
+        <h5>History of changes:</h5>
+        <ul class="bulleted">
+            <xsl:for-each select="e:maintenanceEvent">
+                <li><xsl:apply-templates select="."/></li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="e:maintenanceEvent">
+        <xsl:text></xsl:text><xsl:apply-templates select="e:eventType"/><xsl:text></xsl:text>
+        <xsl:if test="e:eventDateTime">
+            <xsl:text> (</xsl:text><xsl:apply-templates select="e:eventDateTime"/><xsl:text>)</xsl:text>
+        </xsl:if>
+        <xsl:if test="e:agent">
+            <xsl:text> by </xsl:text><xsl:apply-templates select="e:agent"/><xsl:text></xsl:text>
+        </xsl:if>
+        <xsl:text>.</xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="e:eventDateTime[@standardDateTime]">
+        <xsl:text></xsl:text><xsl:value-of select="format-dateTime(@standardDateTime,'[M01]/[D01]/[Y0001] at [H01]:[m01]:[s01]')"/><xsl:text></xsl:text>
+    </xsl:template>
+
+    <xsl:template match="e:eventType[ancestor::e:*[1]/self::e:maintenanceEvent]">
+        <xsl:text></xsl:text><xsl:sequence select="concat(upper-case(substring(.,1,1)),substring(., 2),' '[not(last())])"/><xsl:text></xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="e:agent | e:event | e:maintenanceAgency | e:agencyName | e:sourceEntry | e:part | e:placeEntry[not(@vocabularySource)]"><xsl:apply-templates/></xsl:template>
+    
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
     </xsl:template>
