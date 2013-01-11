@@ -103,7 +103,8 @@
                                             <xsl:apply-templates select="./descendant::e:places"/>
                                         </div>
                                         <div id="biography">
-                                            
+                                            <h4>Biography</h4>
+                                            <xsl:apply-templates select="./descendant::e:biogHist"/>
                                         </div>
                                         <div id="additional">
                                             
@@ -131,6 +132,8 @@
     <xsl:template match="e:dateRange[e:fromDate and e:toDate]">
         <xsl:text></xsl:text><xsl:value-of select="e:fromDate"/>-<xsl:value-of select="e:toDate"/><xsl:text></xsl:text>
     </xsl:template>
+    
+    <xsl:template match="e:date"><xsl:apply-templates/></xsl:template>
     
     <xsl:template match="e:identity">
         <ul class="bulleted">
@@ -199,6 +202,28 @@
     <xsl:template match="e:date[ancestor::e:place]">
         <xsl:text> (</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text>
     </xsl:template>
+    
+    <xsl:template match="e:biogHist">
+        <xsl:apply-templates select="e:p[not(contains('Detailed biographical history can go here.', .))]"/>
+        <xsl:apply-templates select="e:chronList"/>
+    </xsl:template>
+    
+    <xsl:template match="e:chronList">
+        <ul class="bulleted">
+            <xsl:for-each select="e:chronItem">
+                <li>
+                    <xsl:text></xsl:text><xsl:apply-templates select="e:date | e:dateRange"/><xsl:text></xsl:text>
+                    <xsl:if test="e:place">
+                        <xsl:text> (</xsl:text><xsl:apply-templates select="e:place"/><xsl:text>)</xsl:text>
+                    </xsl:if>
+                    <xsl:text>: </xsl:text>
+                    <xsl:apply-templates select="e:event"/>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="e:event"><xsl:apply-templates/></xsl:template>
     
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
