@@ -95,7 +95,7 @@
                                             <xsl:value-of select="$n"/>
                                         </div>
                                         <div id="names">
-                                            
+                                            <xsl:apply-templates select="./descendant::e:identity"/>
                                         </div>
                                         <div id="geography">
                                             
@@ -129,6 +129,52 @@
     <xsl:template match="e:dateRange[e:fromDate and e:toDate]">
         <xsl:text></xsl:text><xsl:value-of select="e:fromDate"/>-<xsl:value-of select="e:toDate"/><xsl:text></xsl:text>
     </xsl:template>
+    
+    <xsl:template match="e:identity">
+        <ul class="bulleted">
+            <xsl:for-each select="e:nameEntryParallel | e:nameEntry">
+                <li>
+                    <xsl:choose>
+                        <xsl:when test="self::e:nameEntry">
+                            <xsl:apply-templates select="."/>
+                        </xsl:when>
+                        <xsl:when test="self::e:nameEntryParallel">
+                            <xsl:choose>
+                                <xsl:when test="e:nameEntry[e:preferredForm='syriaca.org']">
+                                    <xsl:apply-templates select="e:nameEntry[e:preferredForm='syriaca.org']"/>
+                                    <ul class="bulleted">
+                                        <xsl:for-each select="e:nameEntry[not(e:preferredForm='syriaca.org')]">
+                                            <li><xsl:apply-templates select="."/></li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:apply-templates select="e:nameEntry[1]"/>
+                                    <ul>
+                                        <xsl:for-each select="e:nameEntry[1]/following-sibling::e:nameEntry">
+                                            <li><xsl:apply-templates select="."/></li>
+                                        </xsl:for-each>
+                                    </ul>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
+                    </xsl:choose>
+                    
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <xsl:template match="e:nameEntry">
+        <xsl:choose>
+            <xsl:when test="xml:lang='eng'"><xsl:apply-templates select="e:part"/></xsl:when>
+            <xsl:otherwise>
+                <span xml:lang="{@xml:lang}"><xsl:apply-templates select="e:part"/></span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="e:part"><xsl:apply-templates/></xsl:template>
     
     <xsl:template match="e:*">
         <xsl:message>No handler in xslt for eac element <xsl:value-of select="local-name()"/></xsl:message>
