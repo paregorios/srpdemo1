@@ -196,7 +196,14 @@ body {
                             background-color: rgb(240,240,240);
                         }
                         
-                        
+                    #subnav {
+                        background-color: white;
+                        border: 1px solid rgb(153,153,153);
+                        border-top: none;
+                        border-bottom: none;         
+                        text-align: left;
+                        padding: 1em;
+                    }
                     #activetab {
                         background-color: white;
                         border: 1px solid rgb(153,153,153);
@@ -209,6 +216,10 @@ body {
                     
                         #tabcontent {
                             text-align: left;
+                        }
+                        
+                        #tabcontent > div {
+                            padding: 1em 3em;
                         }
                         
             
