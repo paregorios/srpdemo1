@@ -25,6 +25,14 @@ h1 {
     font-size: 30px;
 }
 
+ul.bulleted li {
+    list-style: circle inside !important;
+}
+
+ul.bulleted > li > ul.bulleted {
+    margin-left: 1em;
+}
+
 .pop {
     position:absolute; z-index:10; visibility:hidden; 
     left:50px;
