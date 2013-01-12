@@ -36,56 +36,79 @@
 		</maintenanceHistory>
 
 		<sources>
-			<source>
-				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
-					74.</sourceEntry>
+			<source xlink:href="http://syriaca.org">
+				<sourceEntry xml:id="syriaca.org">The Syriac Reference Portal (syriaca.org)</sourceEntry>
 			</source>
-			<source>
-				<sourceEntry>Barsoum, entry 235, pg. 411 (Arabic)/443 (Syriac)/463
-					(English).</sourceEntry>
+			<source xml:id="GEDSH">
+				<sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac Heritage</sourceEntry>
+				<descriptiveNote>
+					<p>Entry 74</p>
+				</descriptiveNote>
 			</source>
-			
-			
+			<source xml:id="Barsoum-SY">
+				<sourceEntry>Barsoum (Syriac)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 443</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Barsoum-AR">
+				<sourceEntry>Barsoum (Arabic)/</sourceEntry>
+				<descriptiveNote>
+					<p>Entry 235, page 411</p>
+				</descriptiveNote>				
+			</source>
+			<source  xml:id="Barsoum-EN">
+				<sourceEntry>Barsoum (English)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 463</p>
+				</descriptiveNote>
+			</source>
+			<source xlink:href="http://www.bnf.fr" xml:id="BnF">
+				<sourceEntry>Bibliothèque nationale de France</sourceEntry>
+			</source>
+			<source xlink:href="http://www.dnb.de" xml:id="DNB">
+				<sourceEntry>Deutsche Nationalbibliothek</sourceEntry>
+			</source>
 		</sources>
 	</control>
 	<cpfDescription>
 		<identity>
 			<entityType>person</entityType>
-			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
-				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+			<nameEntryParallel localType="#syriaca.org">
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng" localType="#syriaca.org">
 					<part>Bar ʿEbroyo, Grigorios</part>
 				</nameEntry>
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#syriaca.org">
 					<part>ܓܪܝܓܘܪܝܘܣ ܒܪ ܥܒܪܝܐ</part>
 					<preferredForm>syriaca.org</preferredForm>
 				</nameEntry>
 				<authorizedForm>syriaca.org</authorizedForm>
 			</nameEntryParallel>
-			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
+			<nameEntry localType="#GEDSH" scriptCode="Latn"
 				transliteration="GEDSH" xml:lang="eng">
 				<part>Bar ʿEbroyo, Grigorios</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
-				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
+			<nameEntryParallel localType="Barsoum">
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng" localType="#Barsoum-EN">
 					<part>Mar Gregorius Bar Hebraeus</part>
 				</nameEntry>
-				<nameEntry scriptCode="Arab" xml:lang="ara">
+				<nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
 					<part>مار غريغوريوس ابو الفرج الملطي مفريان المشهور بابن العبري</part>
 				</nameEntry>
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
 					<part>ܡܪܝ ܓܪܝܓܘܪܝܘܣ ܡܦܪܝܢܐ ܒܪ ܥܒܪܝܐ</part>
 					<preferredForm>syriaca.org</preferredForm>
 				</nameEntry>
-				<nameEntry scriptCode="Syrj" xml:lang="syc">
+				<nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
 					<part>ܡܳܪܝ ܓܪܺܝܓܳܘܪܝܘܣ ܡܰܦܪܝܳܢܐ ܒܰܪ ܥܶܒܪܳܝܐ</part>
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
-			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+			<nameEntry localType="#DNB" scriptCode="Latn" xml:lang="ger">
 				<part>Barhebraeus‏</part>
 			</nameEntry>
-			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="ger">
+			<nameEntry localType="#BnF" scriptCode="Latn" xml:lang="ger">
 				<part>Barhebraeus, Gregorius Abū al-Faraǧ (1226-1286)</part>
 			</nameEntry>
 		</identity>

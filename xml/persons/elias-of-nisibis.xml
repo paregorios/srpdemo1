@@ -43,67 +43,93 @@
 			
 		</maintenanceHistory>
 		<sources>
-			<source>
-				<sourceEntry>The Gorgias Encyclopedic Dictionary of Syriac Heritage, entry
-					193.</sourceEntry>
+			<source xlink:href="http://syriaca.org">
+				<sourceEntry xml:id="syriaca.org">The Syriac Reference Portal (syriaca.org)</sourceEntry>
 			</source>
-			<source>
-				<sourceEntry>Barsoum, pg. 126 (Arabic)/142 (English).</sourceEntry>
+			<source xml:id="GEDSH">
+				<sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac Heritage</sourceEntry>
+				<descriptiveNote>
+					<p>Entry 193</p>
+				</descriptiveNote>
 			</source>
-			<source>
-				<sourceEntry>Abdisho (YDQ), pg. 81.</sourceEntry>
+			<source xml:id="Barsoum-AR">
+				<sourceEntry>Barsoum (Arabic)/</sourceEntry>
+				<descriptiveNote>
+					<p>Page 126</p>
+				</descriptiveNote>				
 			</source>
-			<source>
-				<sourceEntry>Abdisho (BO III), pg. 266.</sourceEntry>
+			<source  xml:id="Barsoum-EN">
+				<sourceEntry>Barsoum (English)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 142</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Abdisho-YDQ">
+				<sourceEntry>Abdisho (YDQ)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 81</p>
+				</descriptiveNote>
+			</source>
+			<source xml:id="Abdisho-BO">
+				<sourceEntry>Abdisho (BO III)</sourceEntry>
+				<descriptiveNote>
+					<p>Page 266</p>
+				</descriptiveNote>
+			</source>
+			<source xlink:href="http://www.bnf.fr" xml:id="BnF">
+				<sourceEntry>Bibliothèque nationale de France</sourceEntry>
+			</source>
+			<source xlink:href="http://www.dnb.de" xml:id="DNB">
+				<sourceEntry>Deutsche Nationalbibliothek</sourceEntry>
 			</source>
 		</sources>
 	</control>
 	<cpfDescription>
 		<identity>
 			<entityType>person</entityType>
-			<nameEntryParallel localType="http://syriaca.org/localtype/syriaca.org">
-				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
+			<nameEntryParallel localType="#syriaca.org">
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng" localType="#syriaca.org">
 					<part>Eliya of Nisibis</part>
 				</nameEntry>
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#syriaca.org">
 					<part>ܐܠܝܐ ܕܨܘܒܐ</part>
 					<preferredForm>syriaca.org</preferredForm>
 				</nameEntry>
 				<authorizedForm>syriaca.org</authorizedForm>
 			</nameEntryParallel>
-			<nameEntry localType="http://syriaca.org/localtype/gedsh" scriptCode="Latn"
+			<nameEntry localType="#GEDSH" scriptCode="Latn"
 				transliteration="GEDSH" xml:lang="eng">
 				<part>Eliya of Nisibis</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntryParallel localType="http://syriaca.org/localtype/barsoum">
-				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng">
+			<nameEntryParallel localType="Barsoum">
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng" localType="#Barsoum-EN">
 					<part>Elijah ibn al-Sani</part>
 				</nameEntry>
-				<nameEntry scriptCode="Arab" xml:lang="ara">
+				<nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
 					<part>ايليا ابن السني مطران نصيبين</part>
 					<preferredForm>syriaca.org</preferredForm>
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
-			<nameEntryParallel localType="http://syriaca.org/localtype/abdisho-ydq">
-				<nameEntry scriptCode="Syrc" xml:lang="syc">
+			<nameEntryParallel localType="#Abdisho-YDQ">
+				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
 					<part>ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</part>
 				</nameEntry>
-				<nameEntry scriptCode="Syre" xml:lang="syc">
+				<nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
 					<part>ܐܹܠܝܼܵܐ ܒܲܪ ܫܸܢܵܝܵܐ ܡܝܼܛܪܵܦܘܿܠܹܝܛܵܐ ܕܨܘܿܒܵܐ</part>
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
-			<nameEntry localType="http://syriaca.org/localtype/abdisho-bo" scriptCode="Syrc"
+			<nameEntry localType="#Abdisho-BO" scriptCode="Syrc"
 				xml:lang="syc">
 				<part>ܐܠܝܐ ܒܪ ܫܢܝܐ ܡܝܛܪܦܘܠܝܛܐ ܕܨܘܒܐ</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntry localType="BNF" scriptCode="Latn" xml:lang="fre">
+			<nameEntry localType="#BnF" scriptCode="Latn" xml:lang="fre">
 				<part>Élie de Nisibe</part>
 			</nameEntry>
-			<nameEntry localType="DNB" scriptCode="Latn" xml:lang="ger">
+			<nameEntry localType="#DNB" scriptCode="Latn" xml:lang="ger">
 				<part>Elias‏ ‎Bar-Šināja‏</part>
 			</nameEntry>
 		</identity>
