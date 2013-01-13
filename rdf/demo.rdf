@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF 
+  xmlns:dc="http://purl.org/dc/terms/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rda-frbr="http://RDVocab.info/uri/schema/FRBRentitiesRDA/"
+  xmlns:rda-roles="http://rdvocab.info/roles/"
+  xmlns:bibo="http://purl.org/ontology/bibo/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <rdf:Description rdf:about="urn:srp:Paris_BnF_syr._232:F.444v-452r">
+    <dc:title>Homélie sur l'Annonciation de la vierge</dc:title>
+    <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/26172"/>
+    <dc:references rdf:resource="http://www.mss-syriaques.org/eng/notices/141176-Salomon-de-Baṣra-Livre-de-l-abeille-Simon-ibn-Kolail-ibn-Maqara-Le-jardin-du-reclus-et-consolation-du-solitaire-collection-de-textes-apocryphes-h....html"/>
+    <dc:language>ar-Syrc</dc:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:srp:e-Ktobe:Paris_BnF_syr._232:F.452r-456r">
+    <dc:title>Homélie sur la Vierge, Joseph et les juifs</dc:title>
+    <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/26172"/>
+    <dc:references rdf:resource="http://www.mss-syriaques.org/eng/notices/141176-Salomon-de-Baṣra-Livre-de-l-abeille-Simon-ibn-Kolail-ibn-Maqara-Le-jardin-du-reclus-et-consolation-du-solitaire-collection-de-textes-apocryphes-h....html"/>
+    <dc:language>ar-Syrc</dc:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:srp:HMML:124727">
+    <dc:title>Memra on Repentance and Admonition</dc:title>
+    <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/26172"/>
+    <dc:references rdf:resource="http://www.hmml.org/research2010/catalog/detail.asp?MSID=124727"/>
+    <dc:language>syc</dc:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fihrist.org.uk/profile/manuscript/a5ebc7b7-32ec-4d7f-856e-7f6e55c66df5">
+    <rdf:type rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
+    <dc:title>MS. Huntington 344</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fihrist.org.uk/profile/work/4d9850f8-1219-44d6-91ca-b6f0aef717bf">
+    <dc:title>Homily on St. George</dc:title>
+    <rda-roles:author>Theodosius bp of Gangra</rda-roles:author>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.fihrist.org.uk/profile/work/e7f4ecbc-4ece-4e36-9862-6abe07bbff36">
+    <dc:title>Homily on the birth of the Blessed Virgin Mary</dc:title>
+    <dc:isPartOf rdf:resource="http://www.fihrist.org.uk/profile/manuscript/a5ebc7b7-32ec-4d7f-856e-7f6e55c66df5"/>
+    <rda-roles:author rdf:resource="http://viaf.org/viaf/100177778"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/hosted/syriac/26172">
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/100177778"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:srp:e-Ktobe:Charfet_Rahmani_001:ff.1-229">
+    <dc:title>Livre des rayons</dc:title>
+    <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/25953"/>
+    <dc:references rdf:resource=""/>
+  </rdf:Description>
+  
+</rdf:RDF>

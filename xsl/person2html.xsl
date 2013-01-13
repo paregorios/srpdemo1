@@ -34,9 +34,11 @@
                 <link rel="stylesheet" href="../css/yui/reset-fonts-grids.css" type="text/css" media="screen" />
                 <link rel="stylesheet" href="../css/srp-screen.css" type="text/css" media="screen" />
                 <link rel="stylesheet" href="../css/srp-trees-screen.css" type="text/css" media="screen" />
-                
+ 
                 <script src='http://isawnyu.github.com/awld-js/lib/requirejs/require.min.js' type='text/javascript'></script>
-                <script src='http://isawnyu.github.com/awld-js/awld.js?autoinit' type='text/javascript'></script>            </head>
+                <script src='http://isawnyu.github.com/awld-js/awld.js?autoinit' type='text/javascript'></script>    
+
+            </head>
             <body>
                 <div id="outercontainer">
                     <div id="innercontainer">
@@ -78,7 +80,7 @@
                                         <span lang="{$persontitlelang}"><xsl:value-of select="$persontitle"/></span></p>
                                 </div> -->
                                 <div id="activetab">
-                                    <div id="tabcontent">
+                                    <div id="tabcontent" vocab="http://xmlns.com/foaf/0.1/" typeof="Person">
                                         <xsl:value-of select="$n"/>
                                         <div id="title">
                                             <xsl:value-of select="$n"/>
@@ -104,6 +106,10 @@
                                             <h3>Names</h3>
                                             <xsl:apply-templates select="./descendant::e:identity"/>
                                         </div>
+                                        <div id="works">
+                                            <h3>Works</h3>
+                                            <p>Looking up works...</p>
+                                        </div>
                                         <div id="geography">
                                             <h3>Geography</h3>
                                             <xsl:apply-templates select="./descendant::e:places"/>
@@ -112,7 +118,7 @@
                                             <h3>Biography</h3>
                                             <xsl:apply-templates select="./descendant::e:biogHist"/>
                                         </div>
-                                        <div id="additional">
+                                        <div id="additional" vocab="http://purl.org/dc/terms/">
                                             <h3>Other information and identifiers</h3>
                                             <ul class="bulleted">
                                                 <xsl:for-each select="./descendant::e:control/e:otherRecordId">
@@ -135,6 +141,8 @@
                         </div>
                     </div>
                 </div>
+                <script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+                <script src="../js/srp.js" type="text/javascript"></script>
             </body>
         </html>
     </xsl:template>
@@ -238,7 +246,7 @@
     </xsl:template>
     
     <xsl:template match="e:otherRecordId[starts-with(., 'http://')]">
-        <a href="{.}"><xsl:value-of select="."/></a>
+        <a property="identifier" href="{.}"><xsl:value-of select="."/></a>
     </xsl:template>
     
     <xsl:template match="e:sources">

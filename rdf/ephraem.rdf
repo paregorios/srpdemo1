@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:norm="http://whatever/java/ORG.oclc.util.NormalFormC"
+  xmlns:viaf="http://viaf.org/ontology/1.1/#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdaEnt="http://rdvocab.info/uri/schema/FRBRentitiesRDA/" xml:base="http://viaf.org/">
+  <rdf:Description rdf:about="http://viaf.org/viaf/100177778">
+    <!--The primary entity (formerly a viaf:NameAuthorityCluster)-->
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://rdvocab.info/uri/schema/FRBRentitiesRDA/Person"/>
+    <foaf:name>Ephraem, Syrus, Saint, 303-373</foaf:name>
+    <foaf:name>Efrem (św. ; ca 306-373).</foaf:name>
+    <foaf:name>Efrén, Santo</foaf:name>
+    <foaf:name>Ephraem Syrus</foaf:name>
+    <foaf:name>Éphrem, saint, 0306?-0373</foaf:name>
+    <foaf:name>Ephraem Syrus, s., 303-373</foaf:name>
+    <foaf:name>Efrém Syrský, svatý, 306-373</foaf:name>
+    <foaf:name>Ephrem The Syrian</foaf:name>
+    <foaf:name>Afrām, Mār, 303-373</foaf:name>
+    <foaf:name>Ephraem Syrus, saint</foaf:name>
+    <foaf:name>Ifrām, Mār, 303-373</foaf:name>
+    <foaf:name>Ifram, al-Suryānī, Saint, 303-373</foaf:name>
+    <foaf:name>Epʻrem Khuri, Asori, Saint, 303-373</foaf:name>
+    <foaf:name>Epʻrem Khori, Asori, Saint, 303-373</foaf:name>
+    <foaf:name>Ephrem, the Syrian, Saint, 303-373</foaf:name>
+    <foaf:name>Ephrem, Saint, 303-373</foaf:name>
+    <foaf:name>Ephrem, de Nisibe, Saint, 303-373</foaf:name>
+    <foaf:name>Ephraim, the Syrian, Saint, 303-373</foaf:name>
+    <foaf:name>Ephraem, der Syrer, Saint, 303-373</foaf:name>
+    <foaf:name>Efrem, Sirin, Saint, 303-373</foaf:name>
+    <foaf:name>Aphrem, Saint, 303-373</foaf:name>
+    <foaf:name>افرام، السرياني، مار</foaf:name>
+    <foaf:name>Ефрем, Сирин, Saint, 303-373</foaf:name>
+    <foaf:name>Афрем, из Нисивина, Saint, 303-373</foaf:name>
+    <foaf:name>Epʻrem, Asori, Saint, 303-373</foaf:name>
+    <foaf:name>Éphrem, le Syrien, 303-373</foaf:name>
+    <foaf:name>Ephraim, der Syrer, 303-373</foaf:name>
+    <foaf:name>Efrem, il Siro, Saint, 303-373</foaf:name>
+    <foaf:name>Effrem, Sanctus, 303-373</foaf:name>
+    <foaf:name>Aprem, Mar, 303-373</foaf:name>
+    <foaf:name>Afrem, iz Nisivina, Saint, 303-373</foaf:name>
+    <foaf:name>Éphrem de Nisibe.</foaf:name>
+    <foaf:name>Ephraem der Syrer.</foaf:name>
+    <foaf:name>Jefrem Sirin.</foaf:name>
+    <foaf:name>Ephrem the Syrian.</foaf:name>
+    <foaf:name>Ephrem Syrus.</foaf:name>
+    <foaf:name>Ephrem (s. ; ca 306-373). [m]</foaf:name>
+    <foaf:name>Ephräm der Syrer.</foaf:name>
+    <foaf:name>Ephräm aus Syrien.</foaf:name>
+    <foaf:name>Ephraem Syrus.</foaf:name>
+    <foaf:name>Ephraem Edessanae diaconus.</foaf:name>
+    <foaf:name>Efrem Syryjczyk.</foaf:name>
+    <foaf:name>Efrem il Siro.</foaf:name>
+    <foaf:name>Ephrem, Santo</foaf:name>
+    <foaf:name>Ephraem Syrus, Santo</foaf:name>
+    <foaf:name>Ephraem, Santo</foaf:name>
+    <foaf:name>Efrén de Siria, Santo</foaf:name>
+    <foaf:name>Efrén de Nísibe, Santo</foaf:name>
+    <foaf:name>Efrem, Santo</foaf:name>
+    <foaf:name>Efrem de Nísibis, Santo</foaf:name>
+    <foaf:name>Syrus, Ephraim</foaf:name>
+    <foaf:name>Syrus, Ephraemus</foaf:name>
+    <foaf:name>Syrus, Ephraemius</foaf:name>
+    <foaf:name>Syrus, Ephraem</foaf:name>
+    <foaf:name>Sowrb, Ephr'Em</foaf:name>
+    <foaf:name>Sanctus Ephraem</foaf:name>
+    <foaf:name>Saint Ephraim</foaf:name>
+    <foaf:name>Nisibe, Éphrem de</foaf:name>
+    <foaf:name>Lesyrien, Ephrem</foaf:name>
+    <foaf:name>Ephr'Em Sowrb</foaf:name>
+    <foaf:name>Ephrem Le Syrien</foaf:name>
+    <foaf:name>Ephraim Syrus</foaf:name>
+    <foaf:name>Ephraim Saint</foaf:name>
+    <foaf:name>Ephraemus Syrus</foaf:name>
+    <foaf:name>Ephraemius Syrus</foaf:name>
+    <foaf:name>Ephraem Sanctus</foaf:name>
+    <foaf:name>Der Syrer, Ephraem</foaf:name>
+    <foaf:name>Ephrem the Syrian, saint</foaf:name>
+    <foaf:name>Ephrem Syrus, saint</foaf:name>
+    <foaf:name>Ephrem, Sanctus</foaf:name>
+    <foaf:name>Éphrem le Syrien, saint</foaf:name>
+    <foaf:name>Ephrem der Syrer, saint</foaf:name>
+    <foaf:name>Éphrem de Syrie, saint</foaf:name>
+    <foaf:name>Éphrem de Nisibe, saint</foaf:name>
+    <foaf:name>Ephrämus Syrus</foaf:name>
+    <foaf:name>Ephräm Syrus Joannes</foaf:name>
+    <foaf:name>Ephräm Syrus</foaf:name>
+    <foaf:name>Ephräm, saint</foaf:name>
+    <foaf:name>Ephraim the Syrian, saint</foaf:name>
+    <foaf:name>Ephraim Syrus, saint</foaf:name>
+    <foaf:name>Ephraemus Syrus, saint</foaf:name>
+    <foaf:name>Ephraem, saint</foaf:name>
+    <foaf:name>Efraim Suros, saint</foaf:name>
+    <foaf:name>Ifram, al-Suryānī, s., 303-373</foaf:name>
+    <foaf:name>Epʻrem Khuri, Asori, s., 303-373</foaf:name>
+    <foaf:name>Ephrem Syrus, s., 303-373</foaf:name>
+    <foaf:name>Ephrem de Nisibe, s., 303-373</foaf:name>
+    <foaf:name>Ephraim, il Siriano, s., 303-373</foaf:name>
+    <foaf:name>Efrem Siro, s., 303-373</foaf:name>
+    <foaf:name>Aphrem, s., 303-373</foaf:name>
+    <foaf:name>Ephrem Syrus, sanctus, 306-373</foaf:name>
+    <foaf:name>Éphrem, 306-373</foaf:name>
+    <foaf:name>Ephräm des Syrers, 306-373</foaf:name>
+    <foaf:name>Ephraem, 306-373</foaf:name>
+    <rdaGr2:dateOfBirth>303</rdaGr2:dateOfBirth>
+    <rdaGr2:dateOfDeath>373</rdaGr2:dateOfDeath>0000000114532348<owl:sameAs
+      rdf:resource="http://d-nb.info/gnd/188009795"/>
+    <owl:sameAs rdf:resource="http://www.idref.fr/027999297/id"/>
+  </rdf:Description>
+  <!--Controlled and alternate headings from various authority files-->
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/NLA%7C000035073660#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/NLA"/>
+    <skos:prefLabel>Ephraem, Syrus, Saint, 303-373</skos:prefLabel>
+    <skos:altLabel>Afrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ifrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ifram, al-Suryānī, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khuri, Asori, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khori, Asori, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, the Syrian, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, de Nisibe, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraim, the Syrian, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraem, der Syrer, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Efrem, Sirin, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Aphrem, Saint, 303-373</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/NKC%7Cola2002153596#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/NKC"/>
+    <skos:prefLabel>Efrém Syrský, svatý, 306-373</skos:prefLabel>
+    <skos:altLabel>Ephrem Syrus, sanctus, 306-373</skos:altLabel>
+    <skos:altLabel>Éphrem, 306-373</skos:altLabel>
+    <skos:altLabel>Ephräm des Syrers, 306-373</skos:altLabel>
+    <skos:altLabel>Ephraem, 306-373</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/BAV%7CADV12433018#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/BAV"/>
+    <skos:prefLabel>Ephraem Syrus, s., 303-373</skos:prefLabel>
+    <skos:altLabel>Afrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ifram, al-Suryānī, s., 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khuri, Asori, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem Syrus, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem de Nisibe, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephraim, il Siriano, s., 303-373</skos:altLabel>
+    <skos:altLabel>Efrem Siro, s., 303-373</skos:altLabel>
+    <skos:altLabel>Aphrem, s., 303-373</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/BAV%7CADV12329384#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/BAV"/>
+    <skos:prefLabel>Ephraem Syrus, s., 303-373</skos:prefLabel>
+    <skos:altLabel>Afrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ifram, al-Suryānī, s., 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khuri, Asori, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem Syrus, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem de Nisibe, s., 303-373</skos:altLabel>
+    <skos:altLabel>Ephraim, il Siriano, s., 303-373</skos:altLabel>
+    <skos:altLabel>Efrem Siro, s., 303-373</skos:altLabel>
+    <skos:altLabel>Aphrem, s., 303-373</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/DNB%7C188009795#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/DNB"/>
+    <skos:prefLabel>Ephraem Syrus</skos:prefLabel>
+    <skos:altLabel>Éphrem de Nisibe.</skos:altLabel>
+    <skos:altLabel>Ephraem der Syrer.</skos:altLabel>
+    <skos:altLabel>Syrus, Ephraim</skos:altLabel>
+    <skos:altLabel>Syrus, Ephraemus</skos:altLabel>
+    <skos:altLabel>Syrus, Ephraemius</skos:altLabel>
+    <skos:altLabel>Syrus, Ephraem</skos:altLabel>
+    <skos:altLabel>Sowrb, Ephr'Em</skos:altLabel>
+    <skos:altLabel>Sanctus Ephraem</skos:altLabel>
+    <skos:altLabel>Saint Ephraim</skos:altLabel>
+    <skos:altLabel>Nisibe, Éphrem de</skos:altLabel>
+    <skos:altLabel>Lesyrien, Ephrem</skos:altLabel>
+    <skos:altLabel>Ephr'Em Sowrb</skos:altLabel>
+    <skos:altLabel>Ephrem Le Syrien</skos:altLabel>
+    <skos:altLabel>Ephraim Syrus</skos:altLabel>
+    <skos:altLabel>Ephraim Saint</skos:altLabel>
+    <skos:altLabel>Ephraemus Syrus</skos:altLabel>
+    <skos:altLabel>Ephraemius Syrus</skos:altLabel>
+    <skos:altLabel>Ephraem Sanctus</skos:altLabel>
+    <skos:altLabel>Der Syrer, Ephraem</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/NUKAT%7Cn++96211095#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/NUKAT"/>
+    <skos:prefLabel>Efrem (św. ; ca 306-373).</skos:prefLabel>
+    <skos:altLabel>Éphrem de Nisibe.</skos:altLabel>
+    <skos:altLabel>Ephraem der Syrer.</skos:altLabel>
+    <skos:altLabel>Jefrem Sirin.</skos:altLabel>
+    <skos:altLabel>Ephrem the Syrian.</skos:altLabel>
+    <skos:altLabel>Ephrem Syrus.</skos:altLabel>
+    <skos:altLabel>Ephrem (s. ; ca 306-373). [m]</skos:altLabel>
+    <skos:altLabel>Ephräm der Syrer.</skos:altLabel>
+    <skos:altLabel>Ephräm aus Syrien.</skos:altLabel>
+    <skos:altLabel>Ephraem Syrus.</skos:altLabel>
+    <skos:altLabel>Ephraem Edessanae diaconus.</skos:altLabel>
+    <skos:altLabel>Efrem Syryjczyk.</skos:altLabel>
+    <skos:altLabel>Efrem il Siro.</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/SUDOC%7C027999297#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/SUDOC"/>
+    <skos:prefLabel>Éphrem, saint, 0306?-0373</skos:prefLabel>
+    <skos:altLabel>Ephraem Syrus, saint</skos:altLabel>
+    <skos:altLabel>Ephrem the Syrian, saint</skos:altLabel>
+    <skos:altLabel>Ephrem Syrus, saint</skos:altLabel>
+    <skos:altLabel>Ephrem, Sanctus</skos:altLabel>
+    <skos:altLabel>Éphrem le Syrien, saint</skos:altLabel>
+    <skos:altLabel>Ephrem der Syrer, saint</skos:altLabel>
+    <skos:altLabel>Éphrem de Syrie, saint</skos:altLabel>
+    <skos:altLabel>Éphrem de Nisibe, saint</skos:altLabel>
+    <skos:altLabel>Ephrämus Syrus</skos:altLabel>
+    <skos:altLabel>Ephräm Syrus Joannes</skos:altLabel>
+    <skos:altLabel>Ephräm Syrus</skos:altLabel>
+    <skos:altLabel>Ephräm, saint</skos:altLabel>
+    <skos:altLabel>Ephraim the Syrian, saint</skos:altLabel>
+    <skos:altLabel>Ephraim Syrus, saint</skos:altLabel>
+    <skos:altLabel>Ephraemus Syrus, saint</skos:altLabel>
+    <skos:altLabel>Ephraem, saint</skos:altLabel>
+    <skos:altLabel>Efraim Suros, saint</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/WKP%7CEphrem_the_Syrian#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/WKP"/>
+    <skos:prefLabel>Ephrem The Syrian</skos:prefLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/BNE%7CXX824009#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/BNE"/>
+    <skos:prefLabel>Efrén, Santo</skos:prefLabel>
+    <skos:altLabel>Ephrem, Santo</skos:altLabel>
+    <skos:altLabel>Ephraem Syrus, Santo</skos:altLabel>
+    <skos:altLabel>Ephraem, Santo</skos:altLabel>
+    <skos:altLabel>Efrén de Siria, Santo</skos:altLabel>
+    <skos:altLabel>Efrén de Nísibe, Santo</skos:altLabel>
+    <skos:altLabel>Efrem, Santo</skos:altLabel>
+    <skos:altLabel>Efrem de Nísibis, Santo</skos:altLabel>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://viaf.org/viaf/sourceID/LC%7Cn++50082928#skos:Concept">
+    <skos:inScheme rdf:resource="http://viaf.org/authorityScheme/LC"/>
+    <skos:prefLabel>Ephraem, Syrus, Saint, 303-373</skos:prefLabel>
+    <skos:altLabel>Afrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraem Syrus, saint</skos:altLabel>
+    <skos:altLabel>Ifrām, Mār, 303-373</skos:altLabel>
+    <skos:altLabel>Ifram, al-Suryānī, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khuri, Asori, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem Khori, Asori, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, the Syrian, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephrem, de Nisibe, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraim, the Syrian, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraem, der Syrer, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Efrem, Sirin, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Aphrem, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>افرام، السرياني، مار</skos:altLabel>
+    <skos:altLabel>Ефрем, Сирин, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Афрем, из Нисивина, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Epʻrem, Asori, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Éphrem, le Syrien, 303-373</skos:altLabel>
+    <skos:altLabel>Ephraim, der Syrer, 303-373</skos:altLabel>
+    <skos:altLabel>Efrem, il Siro, Saint, 303-373</skos:altLabel>
+    <skos:altLabel>Effrem, Sanctus, 303-373</skos:altLabel>
+    <skos:altLabel>Aprem, Mar, 303-373</skos:altLabel>
+    <skos:altLabel>Afrem, iz Nisivina, Saint, 303-373</skos:altLabel>
+    <skos:exactMatch rdf:resource="http://id.loc.gov/authorities/names/n50082928"/>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </skos:Concept>
+  <!--Deprecated identifiers-->
+  <rdf:Description rdf:about="http://viaf.org/viaf/100177778/#skos:Concept">
+    <rdfs:comment>This concept identifier is deprecated. See the foaf:focus link for the primary
+      entity.</rdfs:comment>
+    <foaf:focus rdf:resource="http://viaf.org/viaf/100177778"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/100177778/#foaf:Person">
+    <rdfs:comment>This primary entity identifier is deprecated. See the owl:sameAs link for the new
+      identifier.</rdfs:comment>
+    <owl:sameAs rdf:resource="http://viaf.org/viaf/100177778"/>
+  </rdf:Description>
+</rdf:RDF>
