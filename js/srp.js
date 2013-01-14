@@ -15,12 +15,12 @@
               + "        optional {?ms foaf:isPrimaryTopicOf ?msurl} }")
               + "&format=json", function(data) {
                   if (data.results.bindings.length > 0) {
-                    jQuery("#works p").replaceWith('<ul id="worklist" class="bulleted"></ul>');
+                    jQuery("#works p").replaceWith('<h4>(318 results from <a href="http://www.mss-syriaques.org">ektobe</a>, <a href="http://www.hmml.org">HMML</a>, <a href="http://www.fihrist.org.uk">Fihrist</a>, <a href="#">see all results</a>)</h4><ul id="worklist" class="bulleted"></ul>');
                     jQuery.each(data.results.bindings, function(i, row) {
                       if (row.msurl) {
-                        jQuery("#worklist").append('<li>' + row.title.value +' (MS: <a href="' + row.msurl.value + '">' + row.mstitle.value + '</a>)</li>');
+                        jQuery("#worklist").append('<li>MS: <a href="' + row.msurl.value + '">' + row.mstitle.value + '</a>: ' + row.title.value +'</li>');
                       } else {
-                        jQuery("#worklist").append('<li><a href="'+ row.work.value +'">' + row.title.value +'</a> (MS: <a href="' + row.ms.value + '">' + row.mstitle.value + '</a>)</li>');
+                        jQuery("#worklist").append('<li>MS: <a href="' + row.ms.value + '">' + row.mstitle.value + '</a>: <a href="'+ row.work.value +'">' + row.title.value +'</a></li>');
                       }
                     });
                   } else {

@@ -108,8 +108,8 @@
                                             <xsl:apply-templates select="./descendant::e:identity"/>
                                         </div>
                                         <div id="works">
-                                            <h3>Works</h3>
-                                            <p>Looking up works...</p>
+                                            <h3>Manuscripts</h3>
+                                            <p>Searching for manuscripts...</p>
                                         </div>
                                         <div id="geography">
                                             <h3>Geography</h3>
