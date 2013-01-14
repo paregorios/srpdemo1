@@ -5,21 +5,22 @@
               + encodeURIComponent("prefix dc: <http://purl.org/dc/terms/> "
               + "prefix rda-roles: <http://rdvocab.info/roles/> "
               + "prefix rdf: <http://www.w3.org/2000/01/rdf-schema#> "
-              + "select ?work ?title ?mss ?mstitle ?url "
+              + "prefix foaf: <http://xmlns.com/foaf/0.1/>"
+              + "select ?work ?title ?ms ?mstitle ?msurl "
               + "from <http://isaw2.atlantides.org/srp/graph> "
               + "where { ?work rda-roles:author <" + a.href + "> . "
               + "        ?work dc:title ?title . "
-              + "        optional {?work dc:isPartOf ?mss . "
-              + "                  ?mss dc:title ?mstitle } . "
-              + "        optional {?work dc:references ?url} }")
+              + "        ?work dc:isPartOf ?ms . "
+              + "        ?ms dc:title ?mstitle . "
+              + "        optional {?ms foaf:isPrimaryTopicOf ?msurl} }")
               + "&format=json", function(data) {
                   if (data.results.bindings.length > 0) {
                     jQuery("#works p").replaceWith('<ul id="worklist" class="bulleted"></ul>');
                     jQuery.each(data.results.bindings, function(i, row) {
-                      if (row.url) {
-                        jQuery("#worklist").append('<li><a href="'+ row.url.value +'">' + row.title.value +'</a>' + (row.mss ? ' (MS: <a href="' + row.mss.value + '">' + row.mstitle.value + '</a>)':'')+'</li>');
+                      if (row.msurl) {
+                        jQuery("#worklist").append('<li>' + row.title.value +' (MS: <a href="' + row.msurl.value + '">' + row.mstitle.value + '</a>)</li>');
                       } else {
-                        jQuery("#worklist").append('<li><a href="'+ row.work.value +'">' + row.title.value +'</a>' + (row.mss ? ' (MS: <a href="' + row.mss.value + '">' + row.mstitle.value + '</a>)':'')+'</li>');
+                        jQuery("#worklist").append('<li><a href="'+ row.work.value +'">' + row.title.value +'</a> (MS: <a href="' + row.ms.value + '">' + row.mstitle.value + '</a>)</li>');
                       }
                     });
                   } else {
