@@ -25,6 +25,7 @@
         <xsl:variable name="personnamepreflang" select="./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='syc'][1]/@xml:lang"/>
         <xsl:variable name="personnameprefgloss" select="../descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='eng'][1]/e:part[1]"/>
         
+        <xsl:result-document href="{substring-after($personid, 'person-')}.html">
         <xsl:value-of select="$n"/>
         <xsl:processing-instruction name="DOCTYPE">html</xsl:processing-instruction>
         <xsl:value-of select="$n"/>
@@ -67,7 +68,7 @@
                             <div id="content">
                                 <div id="mainnav">
                                     <ul>
-                                        <li class="selected">authors</li>
+                                        <li class="selected"><a href="../authors.html">authors</a></li>
                                         <li>titles</li>
                                         <li>abbreviations</li>
                                         <li>artifacts</li>
@@ -145,6 +146,7 @@
                 <script src="../js/srp.js" type="text/javascript"></script>
             </body>
         </html>
+        </xsl:result-document>
     </xsl:template>
     
     <xsl:template match="e:existDates">

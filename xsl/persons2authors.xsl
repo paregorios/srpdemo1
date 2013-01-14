@@ -77,7 +77,7 @@
                                                     <xsl:variable name="personnameprefgloss" select="../descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='eng'][1]/e:part[1]"/>
                                                     <li>
                                                         <xsl:value-of select="$n"/>
-                                                        <label for="{$personid}" id="{$personid}-lbl"><xsl:value-of select="$persontitle"/></label>
+                                                        <label for="{$personid}" id="{$personid}-lbl"><a href="persons/{substring-after($personid, 'person-')}.html"><xsl:value-of select="$persontitle"/></a></label>
                                                         <xsl:value-of select="$n"/>                                                        
                                                         <div class="pop">
                                                             <xsl:value-of select="$n"/>
