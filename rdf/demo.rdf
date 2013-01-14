@@ -8,25 +8,25 @@
   xmlns:foaf="http://xmlns.com/foaf/0.1/"
   xmlns:owl="http://www.w3.org/2002/07/owl#">
   <!-- Ephrem the Syrian -->
-  <rdf:Description rdf:about="urn:srp:Paris_BnF_syr._232:F.444v-452r">
+  <rdf:Description rdf:about="urn:srp:e-Ktobe:Paris_BnF_syr._232:F.444v-452r">
     <dc:title>Homélie sur l'Annonciation de la vierge</dc:title>
     <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/26172"/>
-    <dc:isPartOf rdf:resource="urn:srp:Paris_BnF_syr._232"/>
+    <dc:isPartOf rdf:resource="urn:srp:e-Ktobe:Paris_BnF_syr._232"/>
     <dc:language>ar-Syrc</dc:language>
   </rdf:Description>
-  <rdf:Description rdf:about="urn:srp:Paris_BnF_syr._232">
+  <rdf:Description rdf:about="urn:srp:e-Ktobe:Paris_BnF_syr._232">
     <dc:title>Paris BnF syr. 232</dc:title>
     <rdf:type rdf:resource="http://purl.org/ontology/bibo/Manuscript"/>
     <foaf:isPrimaryTopicOf>
       <rdf:Description rdf:about="http://www.mss-syriaques.org/eng/notices/141176-Salomon-de-Baṣra-Livre-de-l-abeille-Simon-ibn-Kolail-ibn-Maqara-Le-jardin-du-reclus-et-consolation-du-solitaire-collection-de-textes-apocryphes-h....html">
-        <foaf:primaryTopic rdf:resource="urn:srp:Paris_BnF_syr._232"/>
+        <foaf:primaryTopic rdf:resource="urn:srp:e-Ktobe:Paris_BnF_syr._232"/>
       </rdf:Description>
     </foaf:isPrimaryTopicOf>
   </rdf:Description>
   <rdf:Description rdf:about="urn:srp:e-Ktobe:Paris_BnF_syr._232:F.452r-456r">
     <dc:title>Homélie sur la Vierge, Joseph et les juifs</dc:title>
     <rda-roles:author rdf:resource="http://viaf.org/hosted/syriac/26172"/>
-    <dc:isPartOf rdf:resource="urn:srp:Paris_BnF_syr._232"/>
+    <dc:isPartOf rdf:resource="urn:srp:e-Ktobe:Paris_BnF_syr._232"/>
     <dc:language>ar-Syrc</dc:language>
   </rdf:Description>
   <rdf:Description rdf:about="urn:srp:HMML:124727:pp.172-186">
