@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?DOCTYPE html?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>SRP Authors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/yui/reset-fonts-grids.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/srp-screen.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/srp-trees-screen.css" type="text/css" media="screen"/>
+  </head>
+  <body>
+    <div id="outercontainer">
+      <div id="innercontainer">
+        <div id="header">
+          <div id="branding">
+            <img src="images/logo.png" alt="syriac reference portal logo"/>
+            <h1>Syriac Reference Portal Demo 1</h1>
+          </div>
+          <div id="semweb">
+            <div><a href="" title="SPARQL is implemented"><img src="images/sparql-logo.png" alt="sparql logo"/></a></div>
+          </div>
+          <div id="search">
+            <form>
+              <input type="search" name="search" placeholder="search"/>
+              <input type="submit" name="find" label="go"/>
+            </form>
+          </div>
+        </div>
+        <div id="mainbody">
+          <div id="content">
+            <div id="mainnav">
+              <ul>
+                <li><a href="authors.html">authors</a></li>
+                <li>titles</li>
+                <li>abbreviations</li>
+                <li>artifacts</li>
+                <li>places</li>
+                <li class="selected">about</li>
+              </ul>
+            </div>
+            <div id="activetab">
+              <div id="tabcontent">
+                <div class="about">
+                  <h2>About:</h2>
+                
+                                <p>Welcome the Syriac Reference Portal (syriaca.org) demo!</p>
+                
+                                <p>This demo is a working protype for linking digital manuscript repositories.</p>
+                
+                                <p>This demo was created by Tom Elliot and Hugh Cayless of New York University’s Institute for the Study of the Ancient World and by David Michelson, director of Syriaca.org at Vanderbilt University. Funding from the project was provided by The Mellon Foundation, The National Endowment for the Humanities, and The Balzan Foundation.</p>
+                </div>
+                <div class="about">
+                                <h2>Objectives:</h2>
+                                <p>The main purpose of Syriaca.org is to provide Syriac scholars with tools searching across multiple online resources.</p>
+                
+                                <p>This demo accomplishes two objectives toward that purpose:</p>
+                
+                                <ol><li>Simultaneous cross-searching of online manuscript catalogues</li>
+                
+                                <li>Helping Syriac scholars to identify what portions of large repositories like Fihrist or HMML are most relevant to their research.</li></ol></div>
+                <div class="about">
+                <h2>Need:</h2>
+                <p>Currently a scholar looking for manuscripts with a work by a particular Syriac author must search in several online manuscript catalogues each of which use different authority files and have different data structures.</p>
+
+                <p>This demo project offers a solution by showing how multiple searches could be combined into one search. For proof-of-concept, this demo combines results for three significant websites: Fihrist (in the UK), HMML (in the US), and ektobe (part of e-corpus, in France) into one dynamically generated results page. </p>
+
+                <p>The demo also accomplishes a second objective to help make projects like Fihrist (whose primary audience is scholars workling in Arabic) accessible for use by scholars (i.e. Syriac scholars) with different but related research needs who might not otherwise consult the information in Fihrist.</p>
+              </div>
+              <div class="about">
+                <h2>User Guide:</h2>
+                <p>The current demo is organized around the author as the focus for discovery. The full site, however, will allow users to search based on other criteria (see the non-working tabs for titles of works, artifacts, and places)</p>
+
+                <p>Users begin with a list of authors which they could browse or search. Hovering over a link pulls up a brief window to help the user disambiguate their search.</p>
+
+                <p>Clicking on the link takes the user to the full authority file for the author (to help with disambiguation) and also dynamically generates links to manuscripts held by the partner projects.</p>
+
+                <p>From the list of manuscript results, the user can follow links taking them to the partner project site to view the manuscript contents.</p>
+              </div>
+              <div class="about">
+                <h2>Technical Explanation:</h2>
+
+                <p>The demo uses XML data structure and the principles of Linked Open Data to link the partner sites together. </p>
+
+                <p>The authority file is an XML document composed in the EAC   “Encoding Archival Context” schema. This authority file relies on URI’s (identifier numbers) from the Virtual International Authority File (VIAF).</p>
+
+                <p>The list of manuscripts is created by a javascript query of an RDF triple store created from the TEI or EAD records of the individual partner projects. That query returns a list of manuscripts and works for the matched VIAF ids, which the javascript writes it into the page as HTML. </p>
+              </div>
+              <div class="about">
+
+                <h3>Future Collaboration:</h3>
+
+                <p>Syriaca.org is actively welcoming collaborators and project partners. Only a few steps are needed to make partner websites discoverable through the Syriaca.org.</p>
+                <ol>
+
+                <li>Each partner is invited to collaborate with Syriaca.org in the creation of the author or person authority file. Ideally we would work together to create and submit new names to the Virtual International Authority File. Each partner site would also incorporate these URIs into their data.</li>
+
+                <li>The second step is to make arrangements for publishing in XML and RDF (for example from  EAD or TEI records). Ideally, the RDF we use to query against would be extracted and published by the partner projects. This would be the best practice to keep the data current and would also benefit the partner projects in that they could allow other projects (beyond the Syriac Reference Portal) access to their records as well.</li>
+              </ol>
+
+                <p>All prospective partner projects are invited to contact the project director, David Michelson.</p>
+              </div>
+              <div class="about">
+
+                <h3>Script for Screencast</h3>
+
+                <p>Welcome to a demonstration of the Syriac Reference Portal (syriaca.org). This is a demo of a website for linking digital manuscript repositories.</p>
+
+                <p>My name is David Michelson, assistant professor at Vanderbilt University and director of Syriaca.org.</p>
+
+                <p>This demo was created by Tom Elliot and Hugh Cayless of New York University’s Institute for the Study of the Ancient World and funded by The Mellon Foundation, The National Endowment for the Humanities, and Balzan Foundation.</p>
+
+                <p>The main purpose of Syriaca.org is to provide Syriac scholars with tools searching across multiple online resources.</p>
+
+                <p>This demo aims to achieve two objectives.</p>
+                
+                <ol>
+                <li>Simultaneous cross-searching of online manuscript catalogues</li>
+
+                <li>Allowing a scholarly sub-community (i.e. Syriac scholars) to identify what portions of large projects like Fihrist are most relevant to them</li>
+              </ol>
+
+                <p>Allow me to explain the needs met by these goals individually.</p>
+
+                <p>Our first objective addresses the fact that currently a scholar looking for manuscripts with a work by a particular Syriac author must search in several online manuscript catalogues each of which use different authority files and have different data structures.</p>
+
+                <p>Our demo project proposes a solution for how these multiple searchs might be combined into one. Our demo combines results for three important websites: Fihrist (in the UK), HMML (in the US), and ektobe (part of e-corpus, in France) into one dynamically generated results page. </p>
+
+                <p>Our second objective arises from our desire to help make projects like Fihrist (whose primary audience is scholars workling in Arabic) accessible for use by scholarly communities with different but related research needs, in this case Syriac scholars who might not otherwise consult the information in Fihrist.</p>
+
+                <p>Now for the actual demonstration:</p>
+
+                <p>This demo is organized around the author as the focus for discovery. The full site, however, will allow users to search based on other criteria (see the non-working tabs for titles of works, artifacts, and places)</p>
+
+                <p>We begin with a list of authors which users could browse or search.</p>
+
+                <p>Hovering over a link pulls up a brief window to help the user disambiguate their search.</p>
+
+                <p>Clicking on the link takes the user to the full authority file for the author (to help with disambiguation) and also dynamically generates links to manuscripts held by the partner projects.</p>
+
+                <p>For the technically curious, behind the the authority file is an XML document composed in the EAC   “Encoding Archival Context” schema. This authority file relies on URI’s (identifier numbers) from the Virtual International Authority File (VIAF).</p>
+
+                <p>The result that you will see is actually generated live when the page loads, this means that each partner site can update their data without adversely affecting the results. This approach is made possible by the XML data structure and the principles of Linked Open Data. (In this regard, the Fihrist project serves as an example of best practices, very minimal changes were made to the data from Fihrist in order to pull that data live into the demo site).</p>
+
+                <p>Behind the list of manuscripts which loads, a bit of javascript sends a query to an RDF triple store created from the TEI or EAD records of the individual partner projects. That query returns a list of manuscripts and works for the matched VIAF ids, and the javascript writes it into the page as HTML. </p>
+
+                <p>You have now seen the basic working of the demo.</p>
+
+                <p>There are a few steps which we will need to take to make collaboration between the portal and the partner projects work smoothly.</p>
+
+                <p>The first is further collaboration on an author or person authority file. Ideally we would work together to create and submit new names to the Virtual International Authority File.</p>
+
+                <p>The second step is to make arrangements for publishing RDF  from the TEI records. Ideally, the RDF we use to query against would be extracted and published by the partner projects. This would be the best practice to keep the data current and would also benefit the partner projects in that they could allow other projects (beyond the Syriac Reference Portal) access to their records as well.</p>
+
+                <h3>Manuscripts</h3>
+
+                <h4>(318 results from ektobe, HMML, Fihrist, see all results)</h4>
+                <ul class="bulleted">
+                  <li>MS: Charfet Rahmani 001: Livre des rayons (via ektobe)</li>
+                  <li>MS: Mardin Church of the Forty Martyrs 259: Commentary and Observation (via HMML)</li>
+                  <li>MS: Mardin Church of the Forty Martyrs 259: Exposition on "Holy, Holy, Holy" (via HMML)</li>
+                  <li>MS: MS. Pococke 54: Taʼrīkh mukhtaṣar al-duwal (via Fihrist)</li>
+                </ul>
+                <h3>Works</h3>
+
+                <h4>(451 results from ektobe, HMML, Fihrist, see all results)</h4>
+                <ul class="bulleted">
+                  <li>Livre des rayons (MS: Charfet Rahmani 001) (via ektobe)</li>
+                  <li>Commentary and Observation (MS: Mardin Church of the Forty Martyrs 259) (via HMML)</li>
+                  <li>Exposition on "Holy, Holy, Holy" (MS: Mardin Church of the Forty Martyrs 259) (via HMML)</li>
+                  <li>Taʼrīkh mukhtaṣar al-duwal (MS: MS. Pococke 54) (via HMML)</li>
+                </ul>
+
+
+
+                <p>Technically, once we have more time to develop it might look like this:</p>
+
+                <h3>Manuscripts</h3>
+
+                <h4>(318 results from ektobe, HMML, Fihrist, see all results)</h4>
+                <ul class="bulleted">
+                  <li>MS: Charfet Rahmani 001: Livre des rayons (via ektobe)</li>
+                  <li>MS: Mardin Church of the Forty Martyrs 259: 
+                    <ul class="bulleted">
+                      <li>Commentary and Observation (via HMML)</li>
+                      <li>Exposition on "Holy, Holy, Holy" (via HMML)</li>
+                    </ul></li>
+                  <li>MS: MS. Pococke 54: Taʼrīkh mukhtaṣar al-duwal (via Fihrist)</li>
+                </ul>
+
+                <h3>Works</h3>
+                <h4>(451 results from ektobe, HMML, Fihrist, see all results)</h4>
+                <ul class="bulleted">
+                  <li>Livre des rayons
+                    <ul class="bulleted">
+                      <li>(MS: Charfet Rahmani 001) (via ektobe)</li>
+                      <li>(MS: Mardin Church of the Forty Martyrs 259) (via HMML)</li>
+                    </ul></li>
+                  <li>Exposition on "Holy, Holy, Holy" (MS: Mardin Church of the Forty Martyrs 259) (via HMML)</li>
+                  <li>Taʼrīkh mukhtaṣar al-duwal (MS: MS. Pococke 54) (via HMML)</li>
+                </ul>
+              </div>
+                
+<div class="per-pop" id="per-1-pop"/></div></div></div></div><div id="footer"/></div></div></body></html>

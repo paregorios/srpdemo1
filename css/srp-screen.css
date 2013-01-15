@@ -25,6 +25,10 @@ h1 {
     font-size: 30px;
 }
 
+div.about p {
+  margin:.5em;
+}
+
 ul.bulleted > li {
     list-style: circle inside !important;
     line-height: 1.5em;
@@ -32,6 +36,15 @@ ul.bulleted > li {
 
 ul.bulleted > li > ul.bulleted {
     margin-left: 1em;
+}
+
+ol {
+list-style-type: decimal;
+}
+
+div.about ol > li {
+list-style: decimal outside !important;
+margin-left:4em;
 }
 
 .pop {
@@ -95,6 +108,10 @@ ul.bulleted > li > ul.bulleted {
 
 .popfoot>img {
     float: left;
+}
+
+span:lang(syc) {
+  font-family: "Estrangelo Antioch", Verdana, Arial, Helvetica, sans-serif;
 }
 
 body {
