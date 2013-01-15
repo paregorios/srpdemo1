@@ -201,6 +201,10 @@
                 <span lang="{concat(@xml:lang,'-',@scriptCode)}"><xsl:apply-templates select="e:part"/></span>
             </xsl:otherwise>
         </xsl:choose>
+      <xsl:if test="@localType">
+        <xsl:variable name="source" select="id(substring-after(@localType,'#'))"/>
+        <xsl:if test="$source/*"><xsl:text> </xsl:text>(<xsl:value-of select="$source/e:sourceEntry"/><xsl:if test="$source/e:descriptiveNote"><xsl:text>, </xsl:text><xsl:value-of select="$source/e:descriptiveNote/e:p"></xsl:value-of></xsl:if>)</xsl:if>
+      </xsl:if>
     </xsl:template>
         
     <xsl:template match="e:places">

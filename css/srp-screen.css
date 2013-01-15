@@ -112,15 +112,19 @@ margin-left:4em;
 
 span:lang(syc) {
   font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
+  font-size:larger;
 }
 span:lang(syc-Syrc) {
   font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
+  font-size:larger;
 }
 span:lang(syc-Syrj) {
   font-family: "Serto Batnan", Verdana, Arial, Helvetica, sans-serif;
+  font-size:larger;
 }
 span:lang(syc-Syre) {
   font-family: "East Syriac Adiabene", Verdana, Arial, Helvetica, sans-serif;
+  font-size:larger;
 }
 
 body {
@@ -267,7 +271,7 @@ body {
                         }
                         
                         #tabcontent > div *:lang(syc) {
-                            font-size: 150%;
+                            font-size: 175%;
                         }
                         #tabcontent > div *:lang(ara) {
                             font-size: 150%;
