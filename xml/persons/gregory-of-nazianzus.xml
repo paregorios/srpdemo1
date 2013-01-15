@@ -77,10 +77,13 @@
 			<source xlink:href="http://www.dnb.de" xml:id="DNB">
 				<sourceEntry>Deutsche Nationalbibliothek</sourceEntry>
 			</source>
+			<source xml:id="RERO" xlink:href="http://www.rero.ch/">
+				<sourceEntry>Réseau des bibliothèques de Suisse occidentale</sourceEntry>
+			</source>
 		</sources>
 	</control>
 	<cpfDescription>
-		<identity>
+		<identity localType="">
 			<entityType>person</entityType>
 			<nameEntryParallel localType="#syriaca.org">
 				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng" localType="#syriaca.org">
@@ -136,6 +139,9 @@
 			</nameEntry>
 			<nameEntry localType="#DNB" scriptCode="Latn" xml:lang="ger">
 				<part>Gregorius, Nazianzenus</part>
+			</nameEntry>
+			<nameEntry localType="#RERO" scriptCode="Grek" xml:lang="grc">
+				<part>Γρηγόριος,‏ ‎ὁ Ναζιανζηνός, ἅγιος</part>
 			</nameEntry>
 		</identity>
 		<description>
