@@ -111,7 +111,16 @@ margin-left:4em;
 }
 
 span:lang(syc) {
-  font-family: "Estrangelo Edessa", "Estrangelo Talada", Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
+}
+span:lang(syc-Syrc) {
+  font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
+}
+span:lang(syc-Syrj) {
+  font-family: "Serto Batnan", Verdana, Arial, Helvetica, sans-serif;
+}
+span:lang(syc-Syre) {
+  font-family: "East Syriac Adiabene", Verdana, Arial, Helvetica, sans-serif;
 }
 
 body {

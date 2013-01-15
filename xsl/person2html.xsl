@@ -22,7 +22,7 @@
         <xsl:variable name="persontitle" select="./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='eng'][1]/e:part[1]"/>
         <xsl:variable name="persontitlelang" select="./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='eng'][1]/@xml:lang"/>
         <xsl:variable name="personnamepref" select="./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='syc'][1]/e:part[1]"/>
-        <xsl:variable name="personnamepreflang" select="./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='syc'][1]/@xml:lang"/>
+        <xsl:variable name="personnamepreflang" select="concat('syc-',./descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='syc'][1]/@scriptCode)"/>
         <xsl:variable name="personnameprefgloss" select="../descendant::e:nameEntry[following-sibling::e:authorizedForm='syriaca.org' and @xml:lang='eng'][1]/e:part[1]"/>
         
         <xsl:result-document href="{substring-after($personid, 'person-')}.html">
@@ -198,7 +198,7 @@
         <xsl:choose>
             <xsl:when test="xml:lang='eng'"><xsl:apply-templates select="e:part"/></xsl:when>
             <xsl:otherwise>
-                <span lang="{@xml:lang}"><xsl:apply-templates select="e:part"/></span>
+                <span lang="{concat(@xml:lang,'-',@scriptCode)}"><xsl:apply-templates select="e:part"/></span>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
