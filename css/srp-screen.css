@@ -31,7 +31,6 @@ div.about p {
 
 ul.bulleted > li {
     list-style: circle inside !important;
-    line-height: 1.5em;
 }
 
 ul.bulleted > li > ul.bulleted {
