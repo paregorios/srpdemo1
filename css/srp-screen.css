@@ -187,19 +187,27 @@ body {
                         border-bottom: 1px solid rgb(153,153,153);
                     }
                     
-                        #mainnav>ul>li {
-                            border-top-left-radius: 7px 7px;
-                            border-top-right-radius: 7px 7px;
-                            float: left;
-                            width: 155px;
-                            height: 17px;
-                            padding: 7px 0;
-                            border: 1px solid rgb(153,153,153);
-                            background-color: rgb(204,204,204);
-                            font-family: "HelveticaNeue-Condensed", "Helvetica Neue", sans-serif;
-                            font-size: 15px;
-                            opacity: .5;
-                        }
+#mainnav>ul>li {
+    border-top-left-radius: 7px 7px;
+    border-top-right-radius: 7px 7px;
+    float: left;
+    width: 155px;
+    height: 17px;
+    padding: 7px 0;
+    border: 1px solid rgb(153,153,153);
+    background-color: rgb(204,204,204);
+    font-family: "HelveticaNeue-Condensed", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    opacity: .5;
+}
+
+#mainnav>ul>li>a {
+  color:black;
+  text-decoration:none;
+  font-family: "HelveticaNeue-Condensed", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}                       
+                        
                         
                         #mainnav>ul>li.selected, #mainnav>ul>li.selected:hover {
                             background-color: white;
