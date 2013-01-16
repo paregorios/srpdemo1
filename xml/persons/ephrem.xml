@@ -7,10 +7,10 @@
 	xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://saxon.sf.net/"
 	xmlns:xeac="https://github.com/ewg118/xEAC" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:dcterms="http://purl.org/dc/terms/"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dbpprop="http://dbpedia.org/property/"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:exf="http://www.exforms.org/exf/1-0">
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dbpprop="http://dbpedia.org/property/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:exf="http://www.exforms.org/exf/1-0">
 	<control>
 		<recordId>13</recordId>
 		<otherRecordId>http://viaf.org/hosted/syriac/26172</otherRecordId>
@@ -41,7 +41,8 @@
 
 		<sources>
 			<source xlink:href="http://syriaca.org">
-				<sourceEntry xml:id="syriaca.org">The Syriac Reference Portal (syriaca.org)</sourceEntry>
+				<sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
+					(syriaca.org)</sourceEntry>
 			</source>
 			<source xml:id="GEDSH">
 				<sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac Heritage</sourceEntry>
@@ -59,9 +60,9 @@
 				<sourceEntry>Barsoum (Arabic)</sourceEntry>
 				<descriptiveNote>
 					<p>Entry 9, page 196</p>
-				</descriptiveNote>				
+				</descriptiveNote>
 			</source>
-			<source  xml:id="Barsoum-EN">
+			<source xml:id="Barsoum-EN">
 				<sourceEntry>Barsoum (English)</sourceEntry>
 				<descriptiveNote>
 					<p>Page 229</p>
@@ -94,7 +95,8 @@
 		<identity>
 			<entityType>person</entityType>
 			<nameEntryParallel localType="#syriaca.org">
-				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng" localType="#syriaca.org">
+				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng"
+					localType="#syriaca.org">
 					<part>Ephrem</part>
 				</nameEntry>
 				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#syriaca.org">
@@ -103,13 +105,13 @@
 				</nameEntry>
 				<authorizedForm>syriaca.org</authorizedForm>
 			</nameEntryParallel>
-			<nameEntry localType="#GEDSH" scriptCode="Latn"
-				transliteration="GEDSH" xml:lang="eng">
+			<nameEntry localType="#GEDSH" scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
 				<part>Ephrem</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
 			<nameEntryParallel localType="Barsoum">
-				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng" localType="#Barsoum-EN">
+				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng"
+					localType="#Barsoum-EN">
 					<part>St. Ephraim the Syrian</part>
 				</nameEntry>
 				<nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
@@ -132,23 +134,19 @@
 				</nameEntry>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntryParallel>
-			<nameEntry localType="#Abdisho-BO" scriptCode="Syrc"
-				xml:lang="syc">
+			<nameEntry localType="#Abdisho-BO" scriptCode="Syrc" xml:lang="syc">
 				<part>ܐܦܪܝܡ</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntry localType="#LOC" scriptCode="Latn"
-				xml:lang="eng">
+			<nameEntry localType="#LOC" scriptCode="Latn" xml:lang="eng">
 				<part>Ephraem, Syrus, Saint, 303-373</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntry localType="#BnF" scriptCode="Latn"
-				xml:lang="fre">
+			<nameEntry localType="#BnF" scriptCode="Latn" xml:lang="fre">
 				<part>Éphrem, saint</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntry localType="#DNB" scriptCode="Latn"
-				xml:lang="ger">
+			<nameEntry localType="#DNB" scriptCode="Latn" xml:lang="ger">
 				<part>Der Syrer, Ephraem</part>
 			</nameEntry>
 		</identity>
@@ -165,28 +163,30 @@
 			<places>
 				<place>
 					<placeRole>Place of birth</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-						>Nisibis/Antiochia</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623">Nisibis
+						ܢܨܝܒܝܢ</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0306">306</fromDate>
 						<toDate standardDate="0359">359</toDate>
 					</dateRange>
 					<descriptiveNote>
-						<p>Born probably of Christian parents in the early years of the 4th cent. in the region of Nisibis, he spent most of his life in Nisibis, serving a series of bishops (beginning with Yaʿqub of Nisibis, d. 338).</p>
+						<p>Born probably of Christian parents in the early years of the 4th cent. in
+							the region of Nisibis, he spent most of his life in Nisibis, serving a
+							series of bishops (beginning with Yaʿqub of Nisibis, d. 338).</p>
 					</descriptiveNote>
 				</place>
 				<place>
 					<placeRole>Place of death</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
-						>Edessa/Antiochia ad Callirhoem</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa
+						ܐܘܪܗܝ</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0363">363</fromDate>
 						<toDate standardDate="0373-06-09">June 09, 373</toDate>
 					</dateRange>
 				</place>
 				<place>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad
-						Tygrem/Amida</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad Amida
+						ܐܡܝܕܐ</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0359">359</fromDate>
 						<toDate standardDate="0363">363</toDate>
@@ -206,7 +206,7 @@
 					<chronItem>
 						<date standardDate="0338">338</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
 						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
 
 
@@ -214,7 +214,7 @@
 					<chronItem>
 						<date standardDate="0346">346</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
 						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
 
 
@@ -222,7 +222,7 @@
 					<chronItem>
 						<date standardDate="0350">350</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
 						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
 
 
@@ -230,7 +230,7 @@
 					<chronItem>
 						<date standardDate="0359">359</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis/Antiochia</placeEntry>
+							>Nisibis ܢܨܝܒܝܢ</placeEntry>
 						<event>Ephrem leaves Nisibis</event>
 
 
@@ -238,15 +238,15 @@
 					<chronItem>
 						<date standardDate="0359">359</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad
-							Tygrem/Amida</placeEntry>
+							Amida ܐܡܝܕܐ</placeEntry>
 						<event>Ephrem goes to Amida</event>
 
 
 					</chronItem>
 					<chronItem>
 						<date standardDate="0363">363</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
-							>Edessa/Antiochia ad Callirhoem</placeEntry>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa
+							ܐܘܪܗܝ</placeEntry>
 						<event>Ephrem settles in Edessa</event>
 
 					</chronItem>
@@ -263,7 +263,7 @@
 					<toDate standardDate="0338">338</toDate>
 				</dateRange>
 				<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-					>Nisibis/Antiochia</placeEntry>
+					>Nisibis ܢܨܝܒܝܢ</placeEntry>
 				<descriptiveNote>
 					<p>Yaʿqub was bishop during much of Ephrem's life in Nisibis. Ephrem referred to
 						him in his works.</p>
