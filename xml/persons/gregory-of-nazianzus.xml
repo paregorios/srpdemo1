@@ -147,8 +147,8 @@
 		<description>
 			<existDates>
 				<dateRange>
-					<fromDate standardDate="0330">0330</fromDate>
-					<toDate standardDate="0390">0390</toDate>
+					<fromDate standardDate="0330">330</fromDate>
+					<toDate standardDate="0390">390</toDate>
 				</dateRange>
 			</existDates>
 			<function>
@@ -159,15 +159,15 @@
 					<placeRole>Place of birth</placeRole>
 					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619181"
 						>Karbala</placeEntry>
-					<date standardDate="0330">0330</date>
+					<date standardDate="0330">330</date>
 				</place>
 				<place>
 					<placeRole>Place of study</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619218">Nandianulus/Nazianzos</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619218">Nazianzus</placeEntry>
 				</place>
 				<place>
 					<placeRole>Place of study</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629035">Mazaka/Eusebeia/Caesarea</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629035">Caesarea</placeEntry>
 				</place>
 				<place>
 					<placeRole>Place of study</placeRole>
@@ -178,12 +178,12 @@
 					<placeEntry vocabularySource="http://pleiades.stoa.org/places/579885">Athenae</placeEntry>
 				</place>
 				<place>
-					<placeRole>Episcopal see</placeRole>
+					<placeRole>Place of bishopric</placeRole>
 					<placeEntry vocabularySource="http://pleiades.stoa.org/places/619256">Sasima</placeEntry>
 					<date standardDate="0372">372</date>
 				</place>
 				<place>
-					<placeRole>Episcopal see</placeRole>
+					<placeRole>Place of bishopric</placeRole>
 					<placeEntry vocabularySource="http://pleiades.stoa.org/places/520998">Constantinopolis</placeEntry>
 				</place>
 				<place>
@@ -199,7 +199,7 @@
 				<p>Detailed biographical history can go here.</p>
 				<chronList>
 					<chronItem>
-						<date standardDate="0372">338</date>
+						<date standardDate="0372">372</date>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/619256">Sasima</placeEntry>
 						<event>Gregory made bishop of Sasima</event>
 					</chronItem>

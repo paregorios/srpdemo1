@@ -122,13 +122,16 @@
                 <place>
                     <placeRole>Place of birth</placeRole>
                     <placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
-                        >Garmakan/Beth Garmai</placeEntry>
+                        >Beth Garmai ܒܝܬ ܓܪ̈ܡܝ</placeEntry>
                     <date notAfter="0450">ca. 440s?</date>
                 </place>
                 <place>
                     <placeRole>Place of study</placeRole>
                     <placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
                         >Edessa ܐܘܪܗܝ</placeEntry>
+                </place>
+                <place>
+                    <placeRole>Place of bishopric</placeRole>
                 </place>
             </places>
             <biogHist>
@@ -147,9 +150,9 @@
 
                     </chronItem>
                     <chronItem>
-                        <date standardDate="0486">0486</date>
+                        <date standardDate="0486">486</date>
                         <placeEntry vocabularySource="http://pleiades.stoa.org/places/658480"
-                            >Mabbug/Hierapolis/Bambyke</placeEntry>
+                            >Mabbug ܡܒܘܓ</placeEntry>
                         <event>After the restoration of Peter the Fuller as patriarch of Antioch,
                             Philoxenos was named metropolitan of Mabbug.</event>
 
@@ -158,7 +161,7 @@
                     <chronItem>
                         <date standardDate="0512">512</date>
                         <placeEntry vocabularySource="http://pleiades.stoa.org/places/658381"
-                            >Antiochia/Theoupolis</placeEntry>
+                            >Antioch ܐܢܛܝܘܟܝܐ</placeEntry>
                         <event>Philoxenos’s anti-Chalcedon efforts culminated in 512 when Flavian
                             was ousted in favor of Severus as Patr. of Antioch. Philoxenos and his
                             suffragan bishops (including a relation, Philoxenos of Doliche) assisted

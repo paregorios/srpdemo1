@@ -126,22 +126,22 @@
 				<place>
 					<placeRole>Place of birth</placeRole>
 					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629040"
-						>Melitene</placeEntry>
+						>Melitene ܡܝܠܝܛܝܢܝ</placeEntry>
 					<date standardDate="1226">1226</date>
 				</place>
 				<place>
 					<placeRole>Place of death</placeRole>
 					<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Maragheh"
-						>Maragheh</placeEntry>
+						>Maragha ܡܪܐܓܗ</placeEntry>
 					<date standardDate="1286">1286</date>
 				</place>
 				<place>
 					<placeRole>Place of study</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381">Antiochia/Theoupolis</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381">Antioch ܐܢܛܝܘܟܝܐ</placeEntry>
 				</place>
 				<place>
 					<placeRole>Place of burial</placeRole>
-					<placeEntry>Convent of Mar Matthew, near Mosul</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874581">Mor Matay ܕܝܪܐ ܕܡܪܝ ܡܬܝ</placeEntry>
 				</place>
 			</places>
 			<biogHist>
@@ -152,7 +152,7 @@
 						<date standardDate="1246">1246</date>
 						<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Gubos_%28West_Syrian_Diocese%29"
 							>Gubos (West Syrian Diocese)</placeEntry>
-						<event>Bar Hebraeus as bishop of Gubos (consecrated by Patriarch Ignatius II)</event>
+						<event>Bar Hebraeus served as bishop of Gubos (consecrated by Patriarch Ignatius II)</event>
 
 
 					</chronItem>
@@ -163,7 +163,7 @@
 						</dateRange>
 						<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Laqabin_%28West_Syrian_Diocese%29"
 							>Laqabin (West Syrian Diocese)</placeEntry>
-						<event>Bar Hebraeus as bishop of Laqabin</event>
+						<event>Bar Hebraeus served as bishop of Laqabin</event>
 					</chronItem>
 					<chronItem>
 						<dateRange>
@@ -172,7 +172,7 @@
 						</dateRange>
 						<placeEntry vocabularySource="http://pleiades.stoa.org/places/658409"
 							>Beroia</placeEntry>
-						<event>Bar Hebraeus as bishop over diocese of Aleppo (appointed by Dionysius)</event>
+						<event>Bar Hebraeus served as bishop over diocese of Aleppo (appointed by Dionysius)</event>
 					</chronItem>
 					<chronItem>
 						<date standardDate="1264">1264</date>
