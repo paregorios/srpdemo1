@@ -122,16 +122,35 @@
                 <place>
                     <placeRole>Place of birth</placeRole>
                     <placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
-                        >Beth Garmai ܒܝܬ ܓܪ̈ܡܝ</placeEntry>
+                         xml:lang="syc" scriptCode="Syrc">ܒܝܬ ܓܪ̈ܡܝ</placeEntry>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/893999"
+                        xml:lang="eng" scriptCode="Latn">Beth Garmai</placeEntry>
                     <date notAfter="0450">ca. 440s?</date>
                 </place>
                 <place>
                     <placeRole>Place of study</placeRole>
-                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658457"
-                        >Edessa ܐܘܪܗܝ</placeEntry>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658457" scriptCode="Syrc" xml:lang="syc">ܐܘܪܗܝ</placeEntry>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658457" scriptCode="Latn" xml:lang="eng">Edessa</placeEntry>
                 </place>
                 <place>
                     <placeRole>Place of bishopric</placeRole>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658480"
+                         xml:lang="syc" scriptCode="Syrc">ܡܒܘܓ</placeEntry>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/658480"
+                        xml:lang="eng" scriptCode="Latn">Mabbug</placeEntry>
+                    <date standardDate="0486">486</date>
+                </place>
+                <place>
+                    <placeRole>Place of exile</placeRole>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/844926"
+                        >Gangra</placeEntry>
+                    <date standardDate="0519">519</date>
+                </place>
+                <place>
+                    <placeRole>Place of death</placeRole>
+                    <placeEntry vocabularySource="http://pleiades.stoa.org/places/216927"
+                        >Philippopolis/Trimontium</placeEntry>
+                    <date standardDate="0523">523</date>
                 </place>
             </places>
             <biogHist>

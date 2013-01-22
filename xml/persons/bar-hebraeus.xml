@@ -125,23 +125,29 @@
 			<places>
 				<place>
 					<placeRole>Place of birth</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629040"
-						>Melitene ܡܝܠܝܛܝܢܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629040" 
+						 xml:lang="syc" scriptCode="Syrc">ܡܝܠܝܛܝܢܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/629040" 
+						xml:lang="eng" scriptCode="Latn">Melitene</placeEntry>
 					<date standardDate="1226">1226</date>
 				</place>
 				<place>
 					<placeRole>Place of death</placeRole>
 					<placeEntry vocabularySource="https://en.wikipedia.org/wiki/Maragheh"
-						>Maragha ܡܪܐܓܗ</placeEntry>
+						 xml:lang="syc" scriptCode="Syrc">ܡܪܐܓܗ</placeEntry>
+					<placeEntry  vocabularySource="https://en.wikipedia.org/wiki/Maragheh"
+						xml:lang="eng" scriptCode="Latn">Maragha</placeEntry>
 					<date standardDate="1286">1286</date>
 				</place>
 				<place>
 					<placeRole>Place of study</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381">Antioch ܐܢܛܝܘܟܝܐ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381" xml:lang="syc" scriptCode="Syrc">ܐܢܛܝܘܟܝܐ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658381" xml:lang="eng" scriptCode="Latn">Antioch</placeEntry>
 				</place>
 				<place>
 					<placeRole>Place of burial</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874581">Mor Matay ܕܝܪܐ ܕܡܪܝ ܡܬܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874581" xml:lang="syc" scriptCode="Syrc">ܕܝܪܐ ܕܡܪܝ ܡܬܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874581" xml:lang="eng" scriptCode="Latn">Mor Matay</placeEntry>
 				</place>
 			</places>
 			<biogHist>

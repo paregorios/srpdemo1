@@ -163,8 +163,8 @@
 				</place>
 				<place>
 					<placeRole>Place of metropolitan see</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623">Nisibis ܢܨܝܒܝܢ</placeEntry>
-					<dateRange>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623" scriptCode="Syrc" xml:lang="syc">ܢܨܝܒܝܢ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623" scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry><dateRange>
 						<fromDate standardDate="1008">1008</fromDate>
 						<toDate notAfter="1046">1046?</toDate>
 					</dateRange>
