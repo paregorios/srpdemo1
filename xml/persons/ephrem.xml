@@ -163,8 +163,8 @@
 			<places>
 				<place>
 					<placeRole>Place of birth</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623">Nisibis
-						ܢܨܝܒܝܢ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623" scriptCode="Syrc" xml:lang="syc">ܢܨܝܒܝܢ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623" scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0306">306</fromDate>
 						<toDate standardDate="0359">359</toDate>
@@ -177,16 +177,16 @@
 				</place>
 				<place>
 					<placeRole>Place of death</placeRole>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457">Edessa
-						ܐܘܪܗܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457" scriptCode="Syrc" xml:lang="syc">ܐܘܪܗܝ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/658457" scriptCode="Latn" xml:lang="eng">Edessa</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0363">363</fromDate>
 						<toDate standardDate="0373-06-09">June 09, 373</toDate>
 					</dateRange>
 				</place>
 				<place>
-					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298">Ad Amida
-						ܐܡܝܕܐ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298" xml:lang="syc" scriptCode="Syrc">ܐܡܝܕܐ</placeEntry>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874298" xml:lang="eng" scriptCode="Latn">Amida</placeEntry>
 					<dateRange>
 						<fromDate standardDate="0359">359</fromDate>
 						<toDate standardDate="0363">363</toDate>
@@ -205,8 +205,7 @@
 				<chronList>
 					<chronItem>
 						<date standardDate="0338">338</date>
-						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
-							>Nisibis ܢܨܝܒܝܢ</placeEntry>
+						<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623">Nisibis ܢܨܝܒܝܢ</placeEntry>
 						<event>Shapur II of Persia besieges Ephrem's hometown of Nisibis</event>
 
 
