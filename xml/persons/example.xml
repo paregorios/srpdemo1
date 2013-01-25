@@ -154,24 +154,73 @@
 		</sources>
 	</control>
 	<cpfDescription>
+	<!--REQUIRED
+	Whereas the control element describes the record, the cpfDescription is a container for everything describing the person.
+	Usually there is only one cpfDescription per person, but more than one is possible using the multipleIdentities element.
+	You might have two different cpfDescription elements, for instance, if the person has a pseudonym or other acquired identity, for which you want to have two separate sets of names and other information.
+	In our field, perhaps "Chrysostom" for John, Archbishop of Constantinople, or "The Interpreter" for Theodore of Mopsuestia would be good candidates for separate cpfDescription elements.
+	You might also use multiple identities in a single record if multiple people share a collaborative identity/pseudonym (perhaps "Ephrem Graecus" or the generic "Isaac"?).
+	For more explanation and examples of multiple identities, see http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html#d1e4966 and http://www3.iath.virginia.edu/eac/cpf/tagLibrary/cpfTagLibrary.html#d1e224 -->
+		
 		<identity>
+		<!--REQUIRED
+		This is the container element for all the person's names.
+		I'm not sure but what we should put our IDs for persons here, using entityId, and have separate IDs for the record.-->
+			
 			<entityType>person</entityType>
+			<!--REQUIRED
+			Values available are: person, corporateBody, or family.-->
+			
 			<nameEntryParallel localType="#syriaca.org">
+			<!--OPTIONAL
+			Parallel name entries (contained in a nameEntryParallel element) are usually used to show the same name (name form) in different languages.
+			For our purposes, we will put name entries in parallel when they are coming from different language/script versions of the same source.-->
+				
 				<nameEntry scriptCode="Latn" transliteration="GEDSH" xml:lang="eng"
 					localType="#syriaca.org">
+				<!--REQUIRED
+				The nameEntry element contains the parts of a particular name form.
+				
+				Use scriptCode to indicate what script the name is in.
+				Script codes must be in the ISO 15924 format.
+				You can look up scriptCodes at http://unicode.org/iso15924/iso15924-codes.html
+				The most common scripts we're using are "Latn" for Latin, "Syrc" for Syriac, "Syrj" for West Syriac, "Syre" for East Syriac, "Arab" for Arabic, and "Grek" for Greek.
+				
+				Use the transliteration attribute to specify which transliteration is being used for the name (if the name is a transliteration).
+				The transliteration value should be standardized (i.e., always the same value for a particular transliteration system.
+				
+				Use xml:lang to indicate the language. 
+				The xml:lang value must be in ISO-639-2 format.
+				Look up language codes at http://www.loc.gov/standards/iso639-2/php/code_list.php
+				The codes we frequently use are "syc" (Classical Syriac), "syr" (Syriac), "eng" (English), "ara" (Arabic), "fre" (French), "ger" (German)
+				
+				The localType attribute links to the xml:id of the source (using a hash tag at the beginning) to show which source the name comes from.
+				-->
+					
 					<part>Ephrem</part>
 				</nameEntry>
 				<nameEntry scriptCode="Syrc" xml:lang="syc" localType="#syriaca.org">
 					<part>ܐܦܪܝܡ</part>
 					<preferredForm>syriaca.org</preferredForm>
+					<!--OPTIONAL
+					The preferredForm element shows which of the two name entries is preferred.
+					The value of the preferredForm element (e.g., syriaca.org) shows by which rules this name entry is preferred.-->
+					
 				</nameEntry>
 				<authorizedForm>syriaca.org</authorizedForm>
+				<!--OPTIONAL
+				For any single nameEntry element or nameEntryParallel element, authorizedForm shows which nameEntry (or nameEntryParallel set) is authorized.
+				The value of authorizedForm shows the rules according to which it is authorized.
+				Do we need to define this somewhere, e.g., in localType?-->
+				
 			</nameEntryParallel>
 			<nameEntry localType="#GEDSH" scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
 				<part>Ephrem</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
 			<nameEntryParallel localType="Barsoum">
+			<!--By putting the names from Barsoum in parallel, we can show all the different language versions of names coming from Barsoum.-->
+				
 				<nameEntry scriptCode="Latn" transliteration="Barsoum-Anglicized" xml:lang="eng"
 					localType="#Barsoum-EN">
 					<part>St. Ephraim the Syrian</part>
