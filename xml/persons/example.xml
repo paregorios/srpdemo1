@@ -98,7 +98,7 @@
 			The source element is a container for each source used in creating the EAC record.
 			If the source can be accessed online, include the web address using the xlink:href attribute.
 			For our purposes, it is important to assign each source an xml:id. This ensures we can link specific elements like nameEntry to it (to show the provenance of a name form).
-			The xml:id must be unique in this document, but should be standardized–––i.e., the same for the same source listed in other EAC files.-->
+			The xml:id must be unique in this document, but should be standardized - i.e., the same for the same source listed in other EAC files.-->
 
 				<sourceEntry>The Syriac Reference Portal (syriaca.org)</sourceEntry>
 				<!--OPTIONAL
@@ -251,15 +251,121 @@
 			</nameEntry>
 		</identity>
 		<description>
+		<!--RECOMMENDED
+		The description element is a container for information about the author besides the author's names.
+		This is where all the biographical information will be.-->
 			<existDates>
-				<dateRange>
-					<fromDate standardDate="0306">306</fromDate>
-					<toDate standardDate="0373">373</toDate>
+			<!--RECOMMENDED
+			The existDates element should be used for the author's birth and death dates, and/or floruit dates.
+			This element is very flexible, since you can include a single date or date range or multiple dates or date ranges.
+			For corporate bodies, this is the date of establishment/dissolution.-->
+				<dateRange localType="life">
+				<!--OPTIONAL
+				The dateRange element lets you specify a period of time like "306-373 C.E." or  "Jan. 25-Feb. 27."
+				Just use fromDate for the first date and toDate for the second date.-->
+					<fromDate notBefore="0300" notAfter="0315" standardDate="0306" localType="birth">306</fromDate>
+					<!--REQUIRED if using dateRange
+					EAC has some great ways of handling dates.
+					DATE ATTRIBUTES
+						You can use any of the following three attributes for a date element, or a combination of them.
+						The standardDate attribute is where you can point to a single, machine-readable date.
+						The notBefore attribute allows you to specify a terminus post quem.
+						The notAfter attribute is a terminus ante quem.
+					NUMBER FORMATS FOR DATE ATTRIBUTES
+						Dates that are attribute values (values for notBefore, notAfter, or standardDate) should be in ISO 8601 format.
+						You can see details for ISO 8601 format at http://www.w3.org/TR/NOTE-datetime 
+						In brief, the format is YYYY-MM-DD (four-digit year, 2-digit month and day), but month and day are not required.
+						For 3-digit years, like 373, make sure to include a 0 on the front!
+					BC DATES
+						For BC dates, note that the year 0000 is 1 BC (since there is no year 0 between 1 BC and AD 1.
+						Therefore, to put a BC date, add 1 to it and put a minus sign in front of it (25 BC becomes -0025).
+						See http://www.fact-index.com/i/is/iso_8601.html
+					HUMAN READABLE DATE VALUES
+						The human-readable date that will be displayed is the value between <fromDate> and </fromDate> (in this case, "306").
+						You can express that date however you would like - "306," "AD 306," "306 CE," etc.-->
+					<toDate standardDate="0373-06-09" localType="death">June 9, 373</toDate>
 				</dateRange>
+				<!--If you don't have both birth and death dates, you can give the date(s) you have (birth/death, fl., etc.).
+				I think the type of date given should be specified with localType.
+				So an author with just a death date would be
+					<existDates>
+						<date standardDate="0373" localType="death">373</date>
+					<existDates>
+				An author with a floruit in the 2nd half of the 5th cent. could be given the following existDates:
+					<existDates>
+						<dateRange localType="floruit">
+							<fromDate standardDate="0450" localType="floruit">450</fromDate>
+							<toDate standardDate="499" localType="floruit">499</toDate>
+						</dateRange>
+					<existDates>
+				If, on the other hand, you'd like to give several dates that help establish the existDates of the person, you can use multiple date elements, or even mix date and dateRange elements inside a dateSet.
+				For example,
+					<existDates>
+						<dateSet>
+							<date standardDate="0451" localType="floruit">451</date>
+							<date notAfter="0473" localType="floruit">473 or earlier</date>
+							<dateRange localType="floruit">
+								<fromDate standardDate="0481" localType="floruit">481</fromDate>
+								<toDate standardDate="0497" localType="floruit">497</toDate>
+							</dateRange>
+						</dateSet>
+					<existDates>
+				-->
+				<descriptiveNote>Ephrem's birth date is uncertain, but was probably in the early years of the 4th cent., while his death is known with more precision.</descriptiveNote>
 			</existDates>
-			<function>
-				<term>Deacon</term>
-			</function>
+			<functions>
+			<!--REQUIRED if you use more than one function element
+			This is a container for multiple function elements.
+			You can still use this even if you only have one function.-->
+				<function>
+				<!--OPTIONAL
+				The function element is a very flexible element that can be used for describing "a function, activity, role, or purpose performed or manifested by the entity being described."
+				We might use this for describing a person's ecclesiastical role, even if laity.
+				We can also use it for describing things a person does besides their occupation.
+				Note that occupation is a separate element.
+				Also note that if we want to link the function to another entity - e.g., this person was the scribe of a particular manuscript - we should use the functionRelation element under relations.-->
+					<term>Deacon</term>
+					<!--REQUIRED
+					Terms should be standardized using the localTypeDeclaration.-->
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
+					<!--OPTIONAL
+					You can put in the place this function was performed.
+					See "places" below for more explanation.-->
+					<dateRange>
+					<!--OPTIONAL
+					You can include dates the function was performed, as dateRange, date, or dateSet elements.-->
+						<fromDate notAfter="0338">first half of 4th cent</fromDate>
+						<toDate standardDate="0359">359</toDate>
+					</dateRange>
+					<citation xlink:href="http://syriaca.org/linktosource">A citation could go here for a source that describes Ephrem as a deacon, preferably with a link.</citation>
+					<!--RECOMMENDED
+					If possible, include a citation to the source of the information.
+					We need to double-check the proper way of using the citation element.-->
+					<descriptiveNote>According to the earliest sources, Ephrem served as a deacon, though later sources sometimes give him a more prominent role.</descriptiveNote>
+					<!--OPTIONAL
+					You can describe the person's function in human-readable prose using descriptiveNote.-->
+				</function>
+			</functions>
+			<occupations>
+			<!--REQUIRED if you use more than one occupation element
+			This is a container for multiple occupation elements.
+			You can still use this even if you only have one occupation.-->
+				<occupation>
+				<!--OPTIONAL
+				You can include the person's occupation here.
+				This has essentially the same elements as function, so see the comments about the function element.-->
+					<term>Teacher</term>
+					<placeEntry vocabularySource="http://pleiades.stoa.org/places/874623"
+						scriptCode="Latn" xml:lang="eng">Nisibis</placeEntry>
+					<dateRange>
+						<fromDate notAfter="0338">first half of 4th cent</fromDate>
+						<toDate standardDate="0359">359</toDate>
+					</dateRange>
+					<citation xlink:href="http://syriaca.org/linktosource">A citation could go here for a source that describes Ephrem as a deacon, preferably with a link.</citation>
+					<descriptiveNote>Ephrem was a teacher, and biographical sources specifically recount him teaching madrashe to the bnat qiyama (a womens' choir?).</descriptiveNote>
+				</occupation>
+			</functions>
 			<places>
 				<place>
 					<placeRole>Place of birth</placeRole>
