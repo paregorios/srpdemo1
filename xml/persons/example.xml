@@ -249,17 +249,6 @@
 				<part>ܐܦܪܝܡ</part>
 				<alternativeForm>syriaca.org</alternativeForm>
 			</nameEntry>
-			<nameEntry localType="#LOC" scriptCode="Latn" xml:lang="eng">
-				<part>Ephraem, Syrus, Saint, 303-373</part>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntry>
-			<nameEntry localType="#BnF" scriptCode="Latn" xml:lang="fre">
-				<part>Éphrem, saint</part>
-				<alternativeForm>syriaca.org</alternativeForm>
-			</nameEntry>
-			<nameEntry localType="#DNB" scriptCode="Latn" xml:lang="ger">
-				<part>Der Syrer, Ephraem</part>
-			</nameEntry>
 		</identity>
 		<description>
 			<existDates>
