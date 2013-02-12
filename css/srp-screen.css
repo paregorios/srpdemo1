@@ -109,19 +109,19 @@ margin-left:4em;
     float: left;
 }
 
-span:lang(syc) {
+span:lang(syc),a:lang(syc) {
   font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
   font-size:larger;
 }
-span:lang(syc-Syrc) {
+span:lang(syc-Syrc),a:lang(syc-Syrc) {
   font-family: "Estrangelo Edessa", Verdana, Arial, Helvetica, sans-serif;
   font-size:larger;
 }
-span:lang(syc-Syrj) {
+span:lang(syc-Syrj),a:lang(syc-Syrj) {
   font-family: "Serto Batnan", Verdana, Arial, Helvetica, sans-serif;
   font-size:larger;
 }
-span:lang(syc-Syre) {
+span:lang(syc-Syre),a:lang(syc-Syre) {
   font-family: "East Syriac Adiabene", Verdana, Arial, Helvetica, sans-serif;
   font-size:larger;
 }

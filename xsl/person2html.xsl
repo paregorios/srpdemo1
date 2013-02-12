@@ -220,7 +220,7 @@
     </xsl:template>
     
     <xsl:template match="e:placeEntry[@vocabularySource]">
-        <a href="{@vocabularySource}"><xsl:value-of select="."/></a>
+        <a href="{@vocabularySource}"><xsl:if test="@xml:lang='syc'"><xsl:attribute name="lang">syc-<xsl:value-of select="@scriptCode"></xsl:value-of></xsl:attribute></xsl:if><xsl:value-of select="."/></a>
     </xsl:template>
     
     <xsl:template match="e:descriptiveNote[ancestor::e:*[1]/self::e:place]">
