@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML"
+  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Title</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Information about the source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <listPlace>
+      	<place xml:id="SRP-id-658" type="monastery">
+			<placeName xml:lang="en">Mor Behnam Hermitage</placeName>
+			<placeName xml:lang="syc">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)
+				<ref target="Barsoum-Syriac">Barsoum Syriac 546</ref>
+			</placeName>
+			<placeName xml:lang="ar">صومعة مار بهنام
+				<ref target="Barsoum-Arabic">Barsoum Arabic 510</ref></placeName>
+			<location>
+				<offset>north of</offset>
+				<placeName ref="http://syriaca.org/place/69">Dayr al-Zaʿfarān</placeName>
+				<bibl>Barsoum Arabic 510</bibl>
+			</location>
+      		<idno type="SRP-URI">http://syriaca.org/place/658</idno>
+      	</place>
+		<place xml:id="SRP-id-656" type="city">
+			<placeName xml:lang="en">Karka d-Ledan</placeName>
+			<placeName xml:lang="en">Karka d'Ledan
+				<ref target="CBSC">CBSC</ref>
+			</placeName>
+			<idno type="SRP-URI">http://syriaca.org/place/656</idno>
+		</place>
+		<place xml:id="SRP-id-655" type="city">
+			<placeName xml:lang="en">Ṣarrīn</placeName>
+			<placeName xml:lang="en">Serrin
+				<ref target="CBSC">CBSC</ref>
+			</placeName>
+			<placeName xml:lang="en">Sirrin
+				<ref target="CBSC">CBSC</ref>
+			</placeName>
+			<idno type="SRP-URI">http://syriaca.org/place/655</idno>
+			<idno type="Pleiades-URI">http://pleiades.stoa.org/places/658437/</idno>
+			<idno type="Wikipedia-URI">http://en.wikipedia.org/wiki/Sarrin</idno>
+		</place>
+		<place xml:id="SRP-id-78" type="city">
+			<placeName xml:lang="en">Edessa
+				<ref target="GEDSH Barsoum-English">GEDSH; Barsoum English 553</ref>
+			</placeName>
+			<placeName xml:lang="en">Urfa
+				<ref target="GEDSH">GEDSH</ref>
+			</placeName>
+			<placeName xml:lang="syc">ܐܘܪܗܳܝ
+				<ref target="Barsoum-Syriac">Barsoum Syriac 556</ref>
+			</placeName>
+			<placeName xml:lang="ar">الرها
+				<ref target="Barsoum-Arabic">Barsoum Arabic 516</ref>
+			</placeName>
+			<desc>183. Edessa
+				<bibl>GEDSH</bibl>
+			</desc>
+			<desc xml:lang="syc"> ܡܕܡ ܥܠ ܐܘܪܗܝ
+				<bibl>Barsoum Syriac 556</bibl>
+			</desc>
+			<desc xml:lang="ar"> بعض كلام عن الرها
+				<bibl>Barsoum Arabic 516</bibl>
+			</desc>
+			<desc xml:lang="en">a famous city, five day journey eastward from Aleppo, now called Urfa.
+				<bibl>Barsoum English 553</bibl>
+			</desc>
+			<location>
+				<geo>37.15 38.8</geo>
+				<bibl>GEDSH</bibl>
+			</location>
+			<location>
+				<measure unit="days-journey" quantity="5">five day journey</measure>
+				<offset>eastward from</offset>
+				<placeName>Aleppo</placeName>
+				<bibl>Barsoum English 553</bibl>
+			</location>
+			<idno type="SRP-URI">http://syriaca.org/place/78</idno>
+			<idno type="Pleiades-URI">http://pleiades.stoa.org/places/658457</idno>
+			<idno type="Wikipedia-URI">http://en.wikipedia.org/wiki/Edessa</idno>
+			<idno type="Wikipedia-URI">http://en.wikipedia.org/wiki/Şanlıurfa</idno>
+		</place>
+      	<place xml:id="SRP-id-69" type="monastery">
+      		<placeName xml:lang="en">Dayr al-Zaʿfarān
+      			<ref target="GEDSH">GEDSH</ref>
+      		</placeName>
+      		<placeName xml:lang="syc">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ
+      			<ref target="Barsoum-Syriac">Barsoum Syriac 545</ref>
+      		</placeName>
+      		<placeName xml:lang="ar">دير الزعفران
+      			<ref target="Barsoum-Arabic">Barsoum Arabic 510</ref>
+      		</placeName>
+      		<placeName xml:lang="en">Zaʿfaran Monastery
+      			<ref target="Barsoum-English">Barsoum English 570</ref>
+      		</placeName>
+      		<placeName xml:lang="en">monastery Deir Zafaran
+      			<ref target="CBSC">CBSC</ref>
+      		</placeName>
+      		<desc xml:lang="en">620. al-Zaʿfarān, Dayr
+      			<bibl>GEDSH</bibl>
+      		</desc>
+      		<desc>او دير مار حنانيا وهو مطران ماردين الذي وطّد اركانه سنة 793-800 على انقاض قلعة ودير قديم شرقي ماردين مسير ساعة عنها. وهو دير كبير عامر آهل، صار كرسياً للبطاركة من سنة 1293 نيفاً وستمائة سنة، انجب واحداً وعشرين بطريركاً وتسعة مفارنة ومئة وعشرة اساقفة. وسنة 1917 عملنا ونشرنا تاريخه الضافي الموسوم "بنزهة الاذهان" ويطل عليه شمالاً ثلاثة اديار صغيرة متجاورة وهي دير مار عززائيل وكان آهلاً برهط من الرهبان بين سنة 1500-1600 ودير مار يعقوب الملفان وذكر لأول مرة سنة 1165 ولا يزال عامراً، وصومعة مار بهنام وقطنها نفر من النساك حتى اواسط القرن السابع عشر وتخرج في كل منها نفر من الاساقفة
+      			<ref target="Barsoum-Arabic"> Barsoum Arabic 510</ref>
+      		</desc>
+      		<desc>or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:
+      			<ref target="Barsoum-English">Barsoum English 570</ref>
+      		</desc>
+      		<location>
+      			<geo>37.966111 44.792778</geo>
+      		</location>
+      		<idno type="SRP-URI">http://syriaca.org/place/69</idno>
+      		<idno type="Wikipedia-URI">http://en.wikipedia.org/wiki/Mor_Hananyo_Monastery</idno>
+      	</place>
+	  </listPlace>
+    </body>
+  </text>
+</TEI>
