@@ -263,7 +263,7 @@
 				<!--OPTIONAL
 				The dateRange element lets you specify a period of time like "306-373 C.E." or  "Jan. 25-Feb. 27."
 				Just use fromDate for the first date and toDate for the second date.-->
-					<fromDate notBefore="0300" notAfter="0315" standardDate="0306" localType="birth">306</fromDate>
+					<fromDate notBefore="0300" notAfter="0315" standardDate="0306">306</fromDate>
 					<!--REQUIRED if using dateRange
 					EAC has some great ways of handling dates.
 					DATE ATTRIBUTES
@@ -283,7 +283,7 @@
 					HUMAN READABLE DATE VALUES
 						The human-readable date that will be displayed is the value between <fromDate> and </fromDate> (in this case, "306").
 						You can express that date however you would like - "306," "AD 306," "306 CE," etc.-->
-					<toDate standardDate="0373-06-09" localType="death">June 9, 373</toDate>
+					<toDate standardDate="0373-06-09">June 9, 373</toDate>
 				</dateRange>
 				<!--If you don't have both birth and death dates, you can give the date(s) you have (birth/death, fl., etc.).
 				I think the type of date given should be specified with localType.
