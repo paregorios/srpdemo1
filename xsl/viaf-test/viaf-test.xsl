@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-    <xsl:output method="text"/>
-    <xsl:output method="xml" indent="yes" name="xml"/>
-    
     <xsl:template match="/root">
         <xsl:for-each select="row">
-            <xsl:variable name="filename" select="concat('output1/',SRP_ID,'.xml')" />
-            <xsl:result-document href="($filename)" format="xml">
             <eac-cpf>
                 <!-- Schema declarations should be inserted. -->
                 <control>
@@ -98,7 +92,6 @@
                     </sources>
                 </control>
             </eac-cpf>
-            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
