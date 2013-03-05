@@ -10,7 +10,7 @@
     <xsl:output method="html" indent="yes" name="html"/>
 
     <xsl:template match="/root">
-        
+
         <!-- Create an EAC file for each row. -->
         <xsl:for-each select="row">
             <!-- TO DO: Make sure to filter out non-authors. -->
@@ -118,33 +118,161 @@
                             <entityType>person</entityType>
                             <!-- Need to create columns in source data for syriaca.org authorized forms. -->
                             <!-- Give GEDSH name in decomposed name parts. -->
-                            <xsl:if test="string-length(normalize-space(concat(GEDSH_Given_Names,GEDSH_Family_Names,GEDSH_Titles))) > 0">
-                                <nameEntry localType="#GEDSH" scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
-                                    <xsl:if test="string-length(normalize-space(GEDSH_Given_Names)) > 0">
-                                        <part localType="given"><xsl:value-of select="GEDSH_Given_Names"/></part>
+                            <xsl:if
+                                test="string-length(normalize-space(concat(GEDSH_Given_Names,GEDSH_Family_Names,GEDSH_Titles))) > 0">
+                                <nameEntry localType="#GEDSH" scriptCode="Latn"
+                                    transliteration="GEDSH" xml:lang="eng">
+                                    <xsl:if
+                                        test="string-length(normalize-space(GEDSH_Given_Names)) > 0">
+                                        <part localType="given">
+                                            <xsl:value-of select="GEDSH_Given_Names"/>
+                                        </part>
                                     </xsl:if>
-                                    <xsl:if test="string-length(normalize-space(GEDSH_Family_Names)) > 0">
-                                        <part localType="family"><xsl:value-of select="GEDSH_Family_Names"/></part>
+                                    <xsl:if
+                                        test="string-length(normalize-space(GEDSH_Family_Names)) > 0">
+                                        <part localType="family">
+                                            <xsl:value-of select="GEDSH_Family_Names"/>
+                                        </part>
                                     </xsl:if>
                                     <xsl:if test="string-length(normalize-space(GEDSH_Titles)) > 0">
-                                        <part localType="termsOfAddress"><xsl:value-of select="GEDSH_Titles"/></part>
+                                        <part localType="termsOfAddress">
+                                            <xsl:value-of select="GEDSH_Titles"/>
+                                        </part>
                                     </xsl:if>
-                                <alternativeForm>syriaca.org</alternativeForm>
+                                    <alternativeForm>syriaca.org</alternativeForm>
                                 </nameEntry>
                             </xsl:if>
                             <!-- Give GEDSH name in a single name part. -->
                             <xsl:if test="string-length(normalize-space(GEDSH_Entry)) > 0">
-                                <nameEntry localType="#GEDSH" scriptCode="Latn" transliteration="GEDSH" xml:lang="eng">
-                                    <part localType="verbatim"><xsl:value-of select="GEDSH_Entry"/></part>
+                                <nameEntry localType="#GEDSH" scriptCode="Latn"
+                                    transliteration="GEDSH" xml:lang="eng">
+                                    <part localType="verbatim">
+                                        <xsl:value-of select="GEDSH_Entry"/>
+                                    </part>
                                     <alternativeForm>syriaca.org</alternativeForm>
                                 </nameEntry>
+                            </xsl:if>
+                            <!-- Give Barsoum names as parallel name entries in decomposed name parts. -->
+                            <!-- Test whether input data has the names split. -->
+                            <xsl:if
+                                test="string-length(normalize-space(concat(Barsoum_English_Given_Names,Barsoum_English_Family_Names,Barsoum_English_Titles,Barsoum_Arabic_Given_Names,Barsoum_Arabic_Family_Names,Barsoum_Arabic_Titles,Barsoum_Syriac_NV_Given_Names,Barsoum_Syriac_NV_Family_Names,Barsoum_Syriac_NV_Titles))) > 0">
+                                <nameEntryParallel localType="Barsoum">
+                                    <!-- Test for split English names. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Barsoum_English_Given_Names,Barsoum_English_Family_Names,Barsoum_English_Titles))) > 0">
+                                        <nameEntry scriptCode="Latn"
+                                            transliteration="Barsoum-Anglicized" xml:lang="eng"
+                                            localType="#Barsoum-EN">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_English_Given_Names)) > 0">
+                                                <part localType="given">
+                                                  <xsl:value-of select="Barsoum_English_Given_Names"
+                                                  />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_English_Family_Names)) > 0">
+                                                <part localType="family">
+                                                  <xsl:value-of
+                                                  select="Barsoum_English_Family_Names"/>
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_English_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                  <xsl:value-of select="Barsoum_English_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for split Arabic names. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Barsoum_Arabic_Given_Names,Barsoum_Arabic_Family_Names,Barsoum_Arabic_Titles))) > 0">
+                                        <nameEntry scriptCode="Arab" xml:lang="ara"
+                                            localType="#Barsoum-AR">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Arabic_Given_Names)) > 0">
+                                                <part localType="given">
+                                                  <xsl:value-of select="Barsoum_Arabic_Given_Names"
+                                                  />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Arabic_Family_Names)) > 0">
+                                                <part localType="family">
+                                                  <xsl:value-of select="Barsoum_Arabic_Family_Names"
+                                                  />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Arabic_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                  <xsl:value-of select="Barsoum_Arabic_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for split non-vocalized Syriac names. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Barsoum_Syriac_NV_Given_Names,Barsoum_Syriac_NV_Family_Names,Barsoum_Syriac_NV_Titles))) > 0">
+                                        <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_NV_Given_Names)) > 0">
+                                                <part localType="given">
+                                                    <xsl:value-of select="Barsoum_Syriac_NV_Given_Names"
+                                                  />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_NV_Family_Names)) > 0">
+                                                <part localType="family">
+                                                    <xsl:value-of select="Barsoum_Syriac_NV_Family_Names"
+                                                  />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_NV_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                    <xsl:value-of select="Barsoum_Syriac_NV_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for split vocalized Syriac names. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Barsoum_Syriac_V_Given_Names,Barsoum_Syriac_V_Family_Names,Barsoum_Syriac_V_Titles))) > 0">
+                                        <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_V_Given_Names)) > 0">
+                                                <part localType="given">
+                                                    <xsl:value-of select="Barsoum_Syriac_V_Given_Names"
+                                                    />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_V_Family_Names)) > 0">
+                                                <part localType="family">
+                                                    <xsl:value-of select="Barsoum_Syriac_V_Family_Names"
+                                                    />
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Barsoum_Syriac_V_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                    <xsl:value-of select="Barsoum_Syriac_V_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <alternativeForm>syriaca.org</alternativeForm>
+                                </nameEntryParallel>
                             </xsl:if>
                         </identity>
                     </cpfDescription>
                 </eac-cpf>
             </xsl:result-document>
         </xsl:for-each>
-        
+
         <!-- Create an index file that links to all of the EAC files. -->
         <xsl:result-document href="output1/index.html" format="html">
             <html>
@@ -153,11 +281,14 @@
                 </head>
                 <body>
                     <xsl:for-each select="row">
-                        <a href="{SRP_ID}.xml"><xsl:value-of select="Name__calculated_Barsoum_GEDSH_"/></a><br/>
+                        <a href="{SRP_ID}.xml">
+                            <xsl:value-of select="Name__calculated_Barsoum_GEDSH_"/>
+                        </a>
+                        <br/>
                     </xsl:for-each>
                 </body>
             </html>
-            
+
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
