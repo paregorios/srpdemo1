@@ -14,7 +14,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T16:09:51.714-05:00"/>
+            <eventDateTime standardDateTime="2013-03-05T16:48:55.979-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -74,9 +74,27 @@
                     scriptCode="Latn"
                     transliteration="GEDSH"
                     xml:lang="eng">
-            <part>Ephrem</part>
+            <part localType="verbatim">Ephrem</part>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntry>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="verbatim">St. Ephraim the Syrian</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="verbatim">مار افرام الملفان السرياني</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܡܪܝ ܐܦܪܝܡ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
       </identity>
    </cpfDescription>
 </eac-cpf>

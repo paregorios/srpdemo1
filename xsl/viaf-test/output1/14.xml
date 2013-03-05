@@ -13,7 +13,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T16:09:51.714-05:00"/>
+            <eventDateTime standardDateTime="2013-03-05T16:48:55.979-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -46,6 +46,46 @@
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="given">Simon</part>
+               <part localType="termsOfAddress">of Samosata</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">شمعون</part>
+               <part localType="termsOfAddress">السميساطي</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="given">ܫܡܥܘܢ</part>
+               <part localType="termsOfAddress">ܫܡܝܫܛܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="given">ܫܶܡܥܘܽܢ</part>
+               <part localType="termsOfAddress">ܫܡܺܝܫܛܳܝܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="verbatim">Simon of Samosata</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="verbatim">شمعون السميساطي</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܫܡܥܘܢ ܫܡܝܫܛܝܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܫܶܡܥܘܽܢ ܫܡܺܝܫܛܳܝܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
       </identity>
    </cpfDescription>
 </eac-cpf>

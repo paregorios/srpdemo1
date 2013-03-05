@@ -14,7 +14,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T16:09:51.714-05:00"/>
+            <eventDateTime standardDateTime="2013-03-05T16:48:55.979-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -47,6 +47,24 @@
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="verbatim">Aḥai, Catholicos of Ctesiphon</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="verbatim">آحى جاثليق المداىٔن</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
       </identity>
    </cpfDescription>
 </eac-cpf>

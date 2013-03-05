@@ -14,7 +14,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T16:09:51.714-05:00"/>
+            <eventDateTime standardDateTime="2013-03-05T16:48:55.979-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -58,9 +58,27 @@
                     scriptCode="Latn"
                     transliteration="GEDSH"
                     xml:lang="eng">
-            <part>Shemʿun of Beth Arsham</part>
+            <part localType="verbatim">Shemʿun of Beth Arsham</part>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntry>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="verbatim">Simon of Beth Arsham</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="verbatim">شمعون الارشمي</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܫܡܥܘܢ ܕܒܝܬ ܐܪܫܡ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+               <part localType="verbatim">ܫܶܡܥܘܢ ܕܒܶܝܬ ܐܰܪܫܰܡ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
       </identity>
    </cpfDescription>
 </eac-cpf>
