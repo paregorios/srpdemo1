@@ -215,25 +215,26 @@
                                     <!-- Test for split non-vocalized Syriac names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_Syriac_NV_Given_Names,Barsoum_Syriac_NV_Family_Names,Barsoum_Syriac_NV_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_NV_Given_Names)) > 0">
                                                 <part localType="given">
-                                                    <xsl:value-of select="Barsoum_Syriac_NV_Given_Names"
-                                                  />
+                                                  <xsl:value-of
+                                                  select="Barsoum_Syriac_NV_Given_Names"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_NV_Family_Names)) > 0">
                                                 <part localType="family">
-                                                    <xsl:value-of select="Barsoum_Syriac_NV_Family_Names"
-                                                  />
+                                                  <xsl:value-of
+                                                  select="Barsoum_Syriac_NV_Family_Names"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_NV_Titles)) > 0">
                                                 <part localType="termsOfAddress">
-                                                    <xsl:value-of select="Barsoum_Syriac_NV_Titles"/>
+                                                  <xsl:value-of select="Barsoum_Syriac_NV_Titles"/>
                                                 </part>
                                             </xsl:if>
                                         </nameEntry>
@@ -241,27 +242,75 @@
                                     <!-- Test for split vocalized Syriac names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_Syriac_V_Given_Names,Barsoum_Syriac_V_Family_Names,Barsoum_Syriac_V_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+                                        <nameEntry scriptCode="Syrj" xml:lang="syc"
+                                            localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_V_Given_Names)) > 0">
                                                 <part localType="given">
-                                                    <xsl:value-of select="Barsoum_Syriac_V_Given_Names"
-                                                    />
+                                                  <xsl:value-of
+                                                  select="Barsoum_Syriac_V_Given_Names"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_V_Family_Names)) > 0">
                                                 <part localType="family">
-                                                    <xsl:value-of select="Barsoum_Syriac_V_Family_Names"
-                                                    />
+                                                  <xsl:value-of
+                                                  select="Barsoum_Syriac_V_Family_Names"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_V_Titles)) > 0">
                                                 <part localType="termsOfAddress">
-                                                    <xsl:value-of select="Barsoum_Syriac_V_Titles"/>
+                                                  <xsl:value-of select="Barsoum_Syriac_V_Titles"/>
                                                 </part>
                                             </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <alternativeForm>syriaca.org</alternativeForm>
+                                </nameEntryParallel>
+                            </xsl:if>
+                            <!-- Give Barsoum names as parallel name entries in single name parts. -->
+                            <!-- Test whether input data has the names. -->
+                            <xsl:if
+                                test="string-length(normalize-space(concat(EnglishName,Arabic_Name,Syriac_Name_Non_Vocalized))) > 0">
+                                <nameEntryParallel localType="Barsoum">
+                                    <!-- Test for English name. -->
+                                    <xsl:if test="string-length(normalize-space(EnglishName)) > 0">
+                                        <nameEntry scriptCode="Latn"
+                                            transliteration="Barsoum-Anglicized" xml:lang="eng"
+                                            localType="#Barsoum-EN">
+                                            <part localType="verbatim">
+                                                <xsl:value-of select="EnglishName"/>
+                                            </part>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for Arabic name. -->
+                                    <xsl:if test="string-length(normalize-space(Arabic_Name)) > 0">
+                                        <nameEntry scriptCode="Arab" xml:lang="ara"
+                                            localType="#Barsoum-AR">                                            
+                                                <part localType="verbatim">
+                                                    <xsl:value-of select="Arabic_Name"/>
+                                                </part> 
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for non-vocalized Syriac name. -->
+                                    <xsl:if test="string-length(normalize-space(Syriac_Name_Non_Vocalized)) > 0">
+                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            localType="#Barsoum-SY">
+                                                <part localType="verbatim">
+                                                  <xsl:value-of
+                                                      select="Syriac_Name_Non_Vocalized"/>
+                                                </part>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <!-- Test for vocalized Syriac name. -->
+                                    <xsl:if test="string-length(normalize-space(Syriac_Name)) > 0">
+                                        <nameEntry scriptCode="Syrj" xml:lang="syc"
+                                            localType="#Barsoum-SY">
+                                                <part localType="verbatim">
+                                                  <xsl:value-of
+                                                      select="Syriac_Name"/>
+                                                </part>
                                         </nameEntry>
                                     </xsl:if>
                                     <alternativeForm>syriaca.org</alternativeForm>
