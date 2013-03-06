@@ -14,7 +14,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T16:48:55.979-05:00"/>
+            <eventDateTime standardDateTime="2013-03-05T19:24:45.159-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -92,6 +92,24 @@
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
                <part localType="verbatim">ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+               <part localType="given">ܐܦܪܝܡ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+               <part localType="given">ܐܲܦܪܹܝܡ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+               <part localType="verbatim">ܐܦܪܝܡ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+               <part localType="verbatim">ܐܲܦܪܹܝܡ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
