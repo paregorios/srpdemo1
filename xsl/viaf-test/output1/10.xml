@@ -14,7 +14,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-05T19:24:45.159-05:00"/>
+            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -113,6 +113,12 @@
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
+         <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+            <part localType="given">ܐܦܪܗܛ</part>
+         </nameEntry>
+         <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+            <part localType="verbatim">ܐܦܪܗܛ</part>
+         </nameEntry>
       </identity>
    </cpfDescription>
 </eac-cpf>

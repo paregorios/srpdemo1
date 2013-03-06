@@ -471,6 +471,162 @@
                                     </nameEntry>
                                 </xsl:when>
                             </xsl:choose>
+                            <!-- Give Abdisho BO names as parallel name entries. -->
+                            <xsl:choose>
+                                <!-- Test whether both vocalized and non-vocalized are present, and if so use nameEntryParallel. -->
+                                <xsl:when
+                                    test="(string-length(normalize-space(Syriac_from_Abdisho_BO_non-vocalized)) > 0) and (string-length(normalize-space(Syriac_from_Abdisho_BO_Vocalized)) > 0)">
+                                    <!-- Test whether names are split, and if so include them in multiple name parts. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Abdisho_Syriac_BO_NV_Given_Names,Abdisho_Syriac_BO_NV_Family_Names,Abdisho_Syriac_BO_NV_Titles,Abdisho_Syriac_BO_V_Given_Names,Abdisho_Syriac_BO_V_Family_Names,Abdisho_Syriac_BO_V_Titles))) > 0">
+                                        <nameEntryParallel localType="#Abdisho-YDQ">
+                                            <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                                localType="#Abdisho-YDQ">
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given_Names)) > 0">
+                                                    <part localType="given">
+                                                        <xsl:value-of
+                                                            select="Abdisho_Syriac_BO_NV_Given_Names"/>
+                                                    </part>
+                                                </xsl:if>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Family_Names)) > 0">
+                                                    <part localType="family">
+                                                        <xsl:value-of
+                                                            select="Abdisho_Syriac_BO_NV_Family_Names"/>
+                                                    </part>
+                                                </xsl:if>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Titles)) > 0">
+                                                    <part localType="termsOfAddress">
+                                                        <xsl:value-of
+                                                            select="Abdisho_Syriac_BO_NV_Titles"/>
+                                                    </part>
+                                                </xsl:if>
+                                            </nameEntry>
+                                            <nameEntry scriptCode="Syre" xml:lang="syc"
+                                                localType="#Abdisho-YDQ">
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_V_Given_Names)) > 0">
+                                                    <part localType="given">
+                                                        <xsl:value-of
+                                                            select="Abdisho_Syriac_BO_V_Given_Names"/>
+                                                    </part>
+                                                </xsl:if>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_V_Family_Names)) > 0">
+                                                    <part localType="family">
+                                                        <xsl:value-of
+                                                            select="Abdisho_Syriac_BO_V_Family_Names"/>
+                                                    </part>
+                                                </xsl:if>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_Syriac_BO_V_Titles)) > 0">
+                                                    <part localType="termsOfAddress">
+                                                        <xsl:value-of select="Abdisho_Syriac_BO_V_Titles"
+                                                        />
+                                                    </part>
+                                                </xsl:if>
+                                            </nameEntry>
+                                            <alternativeForm>syriaca.org</alternativeForm>
+                                        </nameEntryParallel>
+                                    </xsl:if>
+                                    <!-- Include vocalized and non-vocalized name forms in parallel. -->
+                                    <nameEntryParallel localType="#Abdisho-YDQ">
+                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            localType="#Abdisho-YDQ">
+                                            <part localType="verbatim">
+                                                <xsl:value-of
+                                                    select="Syriac_from_Abdisho_BO_non-vocalized"/>
+                                            </part>
+                                        </nameEntry>
+                                        <nameEntry scriptCode="Syre" xml:lang="syc"
+                                            localType="#Abdisho-YDQ">
+                                            <part localType="verbatim">
+                                                <xsl:value-of
+                                                    select="Syriac_from_Abdisho_BO_Vocalized"/>
+                                            </part>
+                                        </nameEntry>
+                                        <alternativeForm>syriaca.org</alternativeForm>
+                                    </nameEntryParallel>
+                                </xsl:when>
+                                <!-- If only non-vocalized present, do not use nameEntryParallel. -->
+                                <xsl:when
+                                    test="string-length(normalize-space(Syriac_from_Abdisho_BO_non-vocalized)) > 0">
+                                    <!-- Test whether name is split, and if so include name in multiple parts. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Abdisho_Syriac_BO_NV_Given_Names,Abdisho_Syriac_BO_NV_Family_Names,Abdisho_Syriac_BO_NV_Titles))) > 0">
+                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            localType="#Abdisho-YDQ">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given_Names)) > 0">
+                                                <part localType="given">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_NV_Given_Names"/>
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Family_Names)) > 0">
+                                                <part localType="family">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_NV_Family_Names"/>
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_NV_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        localType="#Abdisho-YDQ">
+                                        <part localType="verbatim">
+                                            <xsl:value-of
+                                                select="Syriac_from_Abdisho_BO_non-vocalized"/>
+                                        </part>
+                                    </nameEntry>
+                                </xsl:when>
+                                <!-- If only vocalized present, do not use nameEntryParallel. -->
+                                <xsl:when
+                                    test="string-length(normalize-space(Syriac_from_Abdisho_BO_Vocalized)) > 0">
+                                    <!-- Test whether name is split, and if so include name in multiple parts. -->
+                                    <xsl:if
+                                        test="string-length(normalize-space(concat(Abdisho_Syriac_BO_V_Given_Names,Abdisho_Syriac_BO_V_Family_Names,Abdisho_Syriac_BO_V_Titles))) > 0">
+                                        <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_V_Given_Names)) > 0">
+                                                <part localType="given">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_V_Given_Names"/>
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_V_Family_Names)) > 0">
+                                                <part localType="family">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_V_Family_Names"/>
+                                                </part>
+                                            </xsl:if>
+                                            <xsl:if
+                                                test="string-length(normalize-space(Abdisho_Syriac_BO_V_Titles)) > 0">
+                                                <part localType="termsOfAddress">
+                                                    <xsl:value-of
+                                                        select="Abdisho_Syriac_BO_V_Titles"/>
+                                                </part>
+                                            </xsl:if>
+                                        </nameEntry>
+                                    </xsl:if>
+                                    <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                        <part localType="verbatim">
+                                            <xsl:value-of
+                                                select="Syriac_from_Abdisho_BO_Vocalized"/>
+                                        </part>
+                                    </nameEntry>
+                                </xsl:when>
+                            </xsl:choose>
                         </identity>
                     </cpfDescription>
                 </eac-cpf>
