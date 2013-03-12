@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placesview.xsl"?>
 <TEI
   xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:svg="http://www.w3.org/2000/svg"
@@ -70,19 +71,25 @@
 			<quote source="#bib78-3">ܡܕܡ ܥܠ ܐܘܪܗܝ</quote>
 		</desc>
 		<desc xml:lang="ar">
-			<quote source="#bib78-4">بعض كلام عن الرها </quote>
+			<quote source="#bib78-4">مدينة مشهورة خمسة ايام عن حلب شرقا وتسمى اليوم اورفه.</quote>
 		</desc>
 		<desc xml:lang="en">
 			<quote source="#bib78-2">a famous city, five day journey eastward from Aleppo, now called Urfa.</quote>
 		</desc>
-		<location type="gps" source="bib78-1">
+		<location type="gps" source="#bib78-1">
 			<geo>37.15 38.8</geo>
 		</location>
-		<location type="relative" source="bib78-2">
+		<location type="relative" source="#bib78-2">
 			<measure unit="days-journey" quantity="5">five day journey</measure>
 			<offset>eastward from</offset>
 			<placeName ref="http://syriaca.org/place/18">Aleppo</placeName>
 		</location>
+		<event when="-0304" source="#bib78-1">
+			<desc xml:lang="en">Renamed Edessa by Seleucus I Nicator.</desc>
+		</event>
+		<event when="0201" source="#bib78-1">
+			<desc xml:lang="en">Flood of the river Daysan destroyed part of city.</desc>
+		</event>
 		<idno type="URI">http://syriaca.org/place/78</idno>
 		<idno type="URI">http://pleiades.stoa.org/places/658457</idno>
 		<idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
@@ -116,7 +123,7 @@
       			<quote source="#bib69-3">او دير مار حنانيا وهو مطران ماردين الذي وطّد اركانه سنة 793-800 على انقاض قلعة ودير قديم شرقي ماردين مسير ساعة عنها. وهو دير كبير عامر آهل، صار كرسياً للبطاركة من سنة 1293 نيفاً وستمائة سنة، انجب واحداً وعشرين بطريركاً وتسعة مفارنة ومئة وعشرة اساقفة. وسنة 1917 عملنا ونشرنا تاريخه الضافي الموسوم "بنزهة الاذهان" ويطل عليه شمالاً ثلاثة اديار صغيرة متجاورة وهي دير مار عززائيل وكان آهلاً برهط من الرهبان بين سنة 1500-1600 ودير مار يعقوب الملفان وذكر لأول مرة سنة 1165 ولا يزال عامراً، وصومعة مار بهنام وقطنها نفر من النساك حتى اواسط القرن السابع عشر وتخرج في كل منها نفر من الاساقفة</quote>
       		</desc>
       		<desc xml:lang="en">
-      			<quote source="bib69-4">or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:</quote>
+      			<quote source="#bib69-4">or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:</quote>
       		</desc>
       		<location source="#bib69-1">
       			<geo>37.966111 44.792778</geo>
@@ -142,6 +149,51 @@
       			<ptr target="http://syriaca.org/bibl/5"/>
       		</bibl>
       	</place>
+      	<place xml:id="SRP-id-202" type="river">
+      		<placeName xml:lang="en" source="http://syriaca.org/place/202 #bib202-1 #bib202-4 #bib202-5">Tigris</placeName>
+      		<placeName xml:lang="syr" source="#bib202-2">ܕܶܩܠܰܬ</placeName>
+      		<placeName xml:lang="ar" source="#bib202-3">دجلة</placeName>
+      		<!-- I do not have a source for the following event!  Should not be published! -->
+      		<event notBefore="0079" notAfter="0116">
+      			<desc xml:lang="en">Changed course to run between Kokhe and Ctesiphon rather than between Kokhe and Seleucia</desc>
+      		</event> 
+      		<idno type="URI">http://syriaca.org/place/202</idno>
+      		<idno type="URI">http://en.wikipedia.org/wiki/Tigris</idno>
+      		<bibl xml:id="bib202-1">
+      			<ptr target="http://syriaca.org/bibl/1"/>
+      		</bibl>
+      		<bibl xml:id="bib202-2">
+      			<ptr target="http://syriaca.org/bibl/3"/>
+      			<citedRange unit="pp">536</citedRange>
+      		</bibl>
+      		<bibl xml:id="bib202-3">
+      			<ptr target="http://syriaca.org/bibl/2"/>
+      			<citedRange unit="pp">504</citedRange>
+      		</bibl>
+      		<bibl xml:id="bib202-4">
+      			<ptr target="http://syriaca.org/bibl/4"/>
+      			<citedRange unit="pp">551</citedRange>
+      		</bibl>
+      		<bibl xml:id="bib202-5">
+      			<ptr target="http://syriaca.org/bibl/5"/>
+      		</bibl>
+      	</place>
+      	<place xml:id="SRP-id-622" type="city">
+      		<placeName xml:lang="en" source="http://syriaca.org/place/622 #bib622-1">Chalcedon</placeName>
+      		<!-- I do not have a source for the following event!  Should not be published! -->
+      		<event from="0451-10-08" to="0451-11-01">
+      			<desc xml:lang="en">Site of Ecumenical Council</desc>
+      		</event>
+      		<idno type="URI">http://syriaca.org/place/622</idno>
+      		<idno type="URI">http://pleiades.stoa.org/places/520988/</idno>
+      		<idno type="URI">http://en.wikipedia.org/wiki/Chalcedon</idno>
+      		<idno type="URI">http://en.wikipedia.org/wiki/Kadıköy</idno>
+      		<bibl xml:id="bib622-1">
+      			<ptr target="http://syriaca.org/bibl/5"/>
+      		</bibl>
+      	</place>
+      	<relation name="contains" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="#SRP-id-78" source="#bib78-1"/>
+      	<relation name="resided" active="http://syriaca.org/person/13" passive="#SRP-id-78" from="0363" to="0373" source="#bib78-1"/>
       </listPlace>
     </body>
   </text>
