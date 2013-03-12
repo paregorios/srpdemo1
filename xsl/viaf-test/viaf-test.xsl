@@ -34,6 +34,14 @@
                         <maintenanceAgency>
                             <agencyName>Syriac Reference Portal</agencyName>
                         </maintenanceAgency>
+                        <!-- localTypeDeclaration needs tweaking. -->                        
+                        <localTypeDeclaration>
+                            <abbreviation>syriaca</abbreviation>
+                            <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+                            <descriptiveNote>
+                                <p>Some sort of description.</p>
+                            </descriptiveNote>
+                        </localTypeDeclaration>
                         <maintenanceHistory>
                             <maintenanceEvent>
                                 <eventType>created</eventType>
@@ -215,7 +223,7 @@
                                     <!-- Test for split non-vocalized Syriac names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_Syriac_NV_Given_Names,Barsoum_Syriac_NV_Family_Names,Barsoum_Syriac_NV_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_NV_Given_Names)) > 0">
@@ -242,7 +250,7 @@
                                     <!-- Test for split vocalized Syriac names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_Syriac_V_Given_Names,Barsoum_Syriac_V_Family_Names,Barsoum_Syriac_V_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrj" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrj" xml:lang="syr"
                                             localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_V_Given_Names)) > 0">
@@ -296,7 +304,7 @@
                                     <!-- Test for non-vocalized Syriac name. -->
                                     <xsl:if
                                         test="string-length(normalize-space(Syriac_Name_Non_Vocalized)) > 0">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Barsoum-SY">
                                             <part localType="verbatim">
                                                 <xsl:value-of select="Syriac_Name_Non_Vocalized"/>
@@ -305,7 +313,7 @@
                                     </xsl:if>
                                     <!-- Test for vocalized Syriac name. -->
                                     <xsl:if test="string-length(normalize-space(Syriac_Name)) > 0">
-                                        <nameEntry scriptCode="Syrj" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrj" xml:lang="syr"
                                             localType="#Barsoum-SY">
                                             <part localType="verbatim">
                                                 <xsl:value-of select="Syriac_Name"/>
@@ -324,7 +332,7 @@
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_YdQ_NV_Given_Names,Abdisho_Syriac_YdQ_NV_Family_Names,Abdisho_Syriac_YdQ_NV_Titles,Abdisho_Syriac_YdQ_V_Given_Names,Abdisho_Syriac_YdQ_V_Family_Names,Abdisho_Syriac_YdQ_V_Titles))) > 0">
                                         <nameEntryParallel localType="#Abdisho-YDQ">
-                                            <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            <nameEntry scriptCode="Syrc" xml:lang="syr"
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_Syriac_YdQ_NV_Given_Names)) > 0">
@@ -348,7 +356,7 @@
                                                   </part>
                                                 </xsl:if>
                                             </nameEntry>
-                                            <nameEntry scriptCode="Syre" xml:lang="syc"
+                                            <nameEntry scriptCode="Syre" xml:lang="syr"
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_Syriac_YdQ_V_Given_Names)) > 0">
@@ -377,14 +385,14 @@
                                     </xsl:if>
                                     <!-- Include vocalized and non-vocalized name forms in parallel. -->
                                     <nameEntryParallel localType="#Abdisho-YDQ">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <part localType="verbatim">
                                                 <xsl:value-of
                                                   select="Syriac_from_Abdisho_YdQ_non-vocalized"/>
                                             </part>
                                         </nameEntry>
-                                        <nameEntry scriptCode="Syre" xml:lang="syc"
+                                        <nameEntry scriptCode="Syre" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <part localType="verbatim">
                                                 <xsl:value-of
@@ -400,7 +408,7 @@
                                     <!-- Test whether name is split, and if so include name in multiple parts. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_YdQ_NV_Given_Names,Abdisho_Syriac_YdQ_NV_Family_Names,Abdisho_Syriac_YdQ_NV_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_Syriac_YdQ_NV_Given_Names)) > 0">
@@ -425,7 +433,7 @@
                                             </xsl:if>
                                         </nameEntry>
                                     </xsl:if>
-                                    <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                    <nameEntry scriptCode="Syrc" xml:lang="syr"
                                         localType="#Abdisho-YDQ">
                                         <part localType="verbatim">
                                             <xsl:value-of
@@ -439,7 +447,7 @@
                                     <!-- Test whether name is split, and if so include name in multiple parts. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_YdQ_V_Given_Names,Abdisho_Syriac_YdQ_V_Family_Names,Abdisho_Syriac_YdQ_V_Titles))) > 0">
-                                        <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                        <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_Syriac_YdQ_V_Given_Names)) > 0">
                                                 <part localType="given">
@@ -463,7 +471,7 @@
                                             </xsl:if>
                                         </nameEntry>
                                     </xsl:if>
-                                    <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                    <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                         <part localType="verbatim">
                                             <xsl:value-of
                                                 select="Syriac_from_Abdisho_YdQ_Vocalized"/>
@@ -480,7 +488,7 @@
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_BO_NV_Given_Names,Abdisho_Syriac_BO_NV_Family_Names,Abdisho_Syriac_BO_NV_Titles,Abdisho_Syriac_BO_V_Given_Names,Abdisho_Syriac_BO_V_Family_Names,Abdisho_Syriac_BO_V_Titles))) > 0">
                                         <nameEntryParallel localType="#Abdisho-YDQ">
-                                            <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                            <nameEntry scriptCode="Syrc" xml:lang="syr"
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given_Names)) > 0">
@@ -504,7 +512,7 @@
                                                     </part>
                                                 </xsl:if>
                                             </nameEntry>
-                                            <nameEntry scriptCode="Syre" xml:lang="syc"
+                                            <nameEntry scriptCode="Syre" xml:lang="syr"
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_Syriac_BO_V_Given_Names)) > 0">
@@ -533,14 +541,14 @@
                                     </xsl:if>
                                     <!-- Include vocalized and non-vocalized name forms in parallel. -->
                                     <nameEntryParallel localType="#Abdisho-YDQ">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <part localType="verbatim">
                                                 <xsl:value-of
                                                     select="Syriac_from_Abdisho_BO_non-vocalized"/>
                                             </part>
                                         </nameEntry>
-                                        <nameEntry scriptCode="Syre" xml:lang="syc"
+                                        <nameEntry scriptCode="Syre" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <part localType="verbatim">
                                                 <xsl:value-of
@@ -556,7 +564,7 @@
                                     <!-- Test whether name is split, and if so include name in multiple parts. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_BO_NV_Given_Names,Abdisho_Syriac_BO_NV_Family_Names,Abdisho_Syriac_BO_NV_Titles))) > 0">
-                                        <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                        <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given_Names)) > 0">
@@ -581,7 +589,7 @@
                                             </xsl:if>
                                         </nameEntry>
                                     </xsl:if>
-                                    <nameEntry scriptCode="Syrc" xml:lang="syc"
+                                    <nameEntry scriptCode="Syrc" xml:lang="syr"
                                         localType="#Abdisho-YDQ">
                                         <part localType="verbatim">
                                             <xsl:value-of
@@ -595,7 +603,7 @@
                                     <!-- Test whether name is split, and if so include name in multiple parts. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Abdisho_Syriac_BO_V_Given_Names,Abdisho_Syriac_BO_V_Family_Names,Abdisho_Syriac_BO_V_Titles))) > 0">
-                                        <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                        <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_Syriac_BO_V_Given_Names)) > 0">
                                                 <part localType="given">
@@ -619,7 +627,7 @@
                                             </xsl:if>
                                         </nameEntry>
                                     </xsl:if>
-                                    <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+                                    <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                         <part localType="verbatim">
                                             <xsl:value-of
                                                 select="Syriac_from_Abdisho_BO_Vocalized"/>
