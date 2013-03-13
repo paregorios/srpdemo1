@@ -56,10 +56,12 @@
                             </maintenanceEvent>
                         </maintenanceHistory>
                         <sources>
-                            <source xlink:href="{$entityId}" xml:id="syriaca.org">
+                            <source xlink:href="http://syriaca.org" xml:id="syriaca.org">
                                 <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                                        <title>The Syriac Reference Portal (syriaca.org)<abbr>syriaca.org</abbr></title>
+                                        <title>The Syriac Reference Portal (syriaca.org)</title>
+                                        <abbr>syriaca.org</abbr>
+                                        <citedRange><xsl:attribute name="target"><xsl:value-of select="$entityId"></xsl:value-of></xsl:attribute></citedRange>
                                         <!-- What pointer should we use here, if any? -->
                                         <ptr target="http://syriaca.org/about"/>
                                     </bibl>
@@ -70,13 +72,15 @@
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
                                         <title>Gorgias Encyclopedic Dictionary of the Syriac
-                                            Heritage<abbr>GEDSH</abbr></title>
+                                            Heritage</title>
+                                        <abbr>GEDSH</abbr>
                                         <!-- How do we cite an entry number? Also we can put @target URL on citedRange if it refers to the particular unit. -->
                                         <xsl:if test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
+                                            <!-- Ask Tom/Hugh whether we should use @from or element values for page numbers and entry numbers. -->
                                         <citedRange unit="entry"><xsl:attribute name="from"><xsl:value-of select="GEDSH_Entry_Num"></xsl:value-of></xsl:attribute></citedRange>
                                         </xsl:if>
-                                            <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                            <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/1"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -86,10 +90,11 @@
                                 <source xml:id="Barsoum-SY">
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (Syriac)</abbr></title>
+                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                                        <abbr>Barsoum (Syriac)</abbr>
                                         <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/3"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -98,10 +103,11 @@
                                 <source xml:id="Barsoum-AR">
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                                        <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية<abbr>Barsoum (Arabic)</abbr></title>
+                                        <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                                        <abbr>Barsoum (Arabic)</abbr>
                                         <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_Ar_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/2"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -110,7 +116,8 @@
                                 <source xml:id="Barsoum-EN">
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (English)</abbr></title>
+                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                                        <abbr>Barsoum (English)</abbr>
                                         <!-- Is the entry num the same for all versions of Barsoum or does it apply to English only? -->
                                         <!-- How do we cite an entry number? -->
                                         <xsl:if test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
@@ -118,8 +125,8 @@
                                         </xsl:if>
                                             <!-- Can we have multiple citedRange elements? -->
                                         <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_En_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/4"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -130,10 +137,11 @@
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
                                         <!-- What's the title for Abdisho? -->
-                                        <title><abbr>Abdisho (YDQ)</abbr></title>
+                                        <title></title>
+                                        <abbr>Abdisho (YDQ)</abbr>
                                         <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Abdisho_YdQ_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/6"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -145,10 +153,11 @@
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
                                         <!-- What's the title for Abdisho? -->
-                                        <title><abbr>Abdisho (BO III)</abbr></title>
+                                        <title></title>
+                                        <abbr>Abdisho (BO III)</abbr>
                                         <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Abdisho_BO_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/7"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -158,9 +167,10 @@
                                     xml:id="CBSC">
                                     <objectXMLWrap>
                                     <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                                        <title>Comprehensive Bibliography of Syriac Christianity<abbr>CBSC</abbr></title>
-                                        <!-- What pointer should we use here? -->
-                                        <ptr target="http://syriaca.org/bibl/"/>
+                                        <title>Comprehensive Bibliography of Syriac Christianity</title>
+                                        <abbr>CBSC</abbr>
+                                        <!-- Does pointer need fuller URI? -->
+                                        <ptr target="http://syriaca.org/bibl/5"/>
                                     </bibl>
                                     </objectXMLWrap>
                                 </source>
@@ -177,7 +187,7 @@
                             <!-- Give GEDSH name in decomposed name parts. -->
                             <xsl:if
                                 test="string-length(normalize-space(concat(GEDSH_Given,GEDSH_Family,GEDSH_Titles))) > 0">
-                                <nameEntry localType="#GEDSH" scriptCode="Latn"
+                                <nameEntry localType="#GEDSH"
                                     transliteration="GEDSH" xml:lang="eng">
                                     <xsl:if
                                         test="string-length(normalize-space(GEDSH_Given)) > 0">
@@ -201,7 +211,7 @@
                             </xsl:if>
                             <!-- Give GEDSH name in a single name part. -->
                             <xsl:if test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                <nameEntry localType="#GEDSH" scriptCode="Latn"
+                                <nameEntry localType="#GEDSH"
                                     transliteration="GEDSH" xml:lang="eng">
                                     <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                         <xsl:value-of select="GEDSH_Full"/>
@@ -217,7 +227,7 @@
                                     <!-- Test for split English names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_En_Given,Barsoum_En_Family,Barsoum_En_Titles))) > 0">
-                                        <nameEntry scriptCode="Latn"
+                                        <nameEntry
                                             transliteration="Barsoum-Anglicized" xml:lang="eng"
                                             localType="#Barsoum-EN">
                                             <xsl:if
@@ -245,7 +255,7 @@
                                     <!-- Test for split Arabic names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_Ar_Given,Barsoum_Ar_Family,Barsoum_Ar_Titles))) > 0">
-                                        <nameEntry scriptCode="Arab" xml:lang="ara"
+                                        <nameEntry xml:lang="ara"
                                             localType="#Barsoum-AR">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Ar_Given)) > 0">
@@ -333,7 +343,7 @@
                                 <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
                                     <!-- Test for English name. -->
                                     <xsl:if test="string-length(normalize-space(Barsoum_En_Full)) > 0">
-                                        <nameEntry scriptCode="Latn"
+                                        <nameEntry
                                             transliteration="Barsoum-Anglicized" xml:lang="eng"
                                             localType="#Barsoum-EN">
                                             <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
@@ -343,7 +353,7 @@
                                     </xsl:if>
                                     <!-- Test for Arabic name. -->
                                     <xsl:if test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
-                                        <nameEntry scriptCode="Arab" xml:lang="ara"
+                                        <nameEntry xml:lang="ara"
                                             localType="#Barsoum-AR">
                                             <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of select="Barsoum_Ar_Full"/>
