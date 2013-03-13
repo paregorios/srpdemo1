@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -28,7 +35,7 @@
             <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
                                         Heritage</sourceEntry>
             <descriptiveNote>
-               <p>Entry 190</p>
+               <p>Entry </p>
             </descriptiveNote>
          </source>
          <source xml:id="Barsoum-SY">
@@ -48,6 +55,10 @@
             <descriptiveNote>
                <p>Page 297</p>
             </descriptiveNote>
+         </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
          </source>
       </sources>
    </control>
@@ -71,10 +82,10 @@
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">الراهب ايليا</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܕܝܪܝܐ ܐܠܝܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܕܰܝܪܳܝܐ ܐܠܝܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>

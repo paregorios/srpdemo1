@@ -1,0 +1,2504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="viaf-test-2.xsl"?>
+
+<!-- I generated this XML file with the following steps:
+1. Exported the Google Spreadsheet "Authors from Barsoum..." into a text file (.tsv).
+2. Removed most rows so the file is a manageable size for testing.
+3. Imported the TSV file using Oxygen's File > Import > Text File menu. -->
+
+<root>
+    <row>
+        <Calculated_Name>Bardaiṣan</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>3</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>DAM</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/31516</VIAF_URL>
+        <VIAF_ID>31516</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Bardaiṣan</GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family>Bardaiṣan</GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>3</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>225</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw> Bar Daysan </Barsoum_En_Raw>
+        <Barsoum_En_Full>Bar Daysan</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family>Bar Daysan</Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>191</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>برديصان</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>برديصان</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles></Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>222</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>214</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܒܪ ܕܝܨܢ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given></Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family>ܒܪ ܕܝܨܢ</Barsoum_Sy_NV_Family>
+        <Barsoum_Syriac_NV_Titles></Barsoum_Syriac_NV_Titles>
+        <Barsoum_Sy_V_Full>ܒܰܪ ܕܰܝܨܳܢ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given></Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family>ܒܰܪ ܕܰܝܨܳܢ</Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles></Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>4</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Aphrahaṭ</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>10</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/29980</VIAF_URL>
+        <VIAF_ID>29980</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Aphrahaṭ</GEDSH_Full>
+        <GEDSH_Given>Aphrahaṭ</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum </Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>8</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>228</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Aphrahat the Persian</Barsoum_En_Raw>
+        <Barsoum_En_Full>Aphrahat the Persian</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>195</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>افرهاط الفارسي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>افرهاط</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الفارسي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK </Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>364</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>217</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܐܦܪܗܛ ܦܪܣܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܦܪܗܛ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܦܪܣܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܐܰܦܪܗܰܛ ܦܳܪܣܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܰܦܪܗܰܛ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܦܳܪܣܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full>ܐܦܪܗܛ</Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given>ܐܦܪܗܛ</Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full>ܐܲܦܪܵܗܵܛ</Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given>ܐܲܦܪܵܗܵܛ</Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num>71</Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full>ܐܦܪܗܛ</Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given>ܐܦܪܗܛ</Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num>85</Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered>TAC</Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>Aphrahat</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>375</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Ephrem</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>13</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/26172</VIAF_URL>
+        <VIAF_ID>26172</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Ephrem</GEDSH_Full>
+        <GEDSH_Given>Ephrem</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>9</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>229</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>St. Ephraim the Syrian</Barsoum_En_Raw>
+        <Barsoum_En_Full>St. Ephraim the Syrian</Barsoum_En_Full>
+        <Barsoum_En_Given>Ephraim</Barsoum_En_Given>
+        <Barsoum_En_Family>the Syrian</Barsoum_En_Family>
+        <Barsoum_En_Titles>St.</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>196</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار افرام الملفان السرياني</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>افرام</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>السرياني، مار، الملفان</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>373</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>218</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܐܦܪܝܡ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܦܪܝܡ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܐܰܦܪܶܝܡ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܰܦܪܶܝܡ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full>ܐܦܪܝܡ</Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given>ܐܦܪܝܡ</Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full>ܐܲܦܪܹܝܡ</Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given>ܐܲܦܪܹܝܡ</Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num>69</Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full>ܐܦܪܝܡ</Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given>ܐܦܪܝܡ</Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num>61</Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered>TAC</Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>Ephrem</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>378</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Simon of Samosata</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>14</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>UNKNOWN</VIAF_Record_Exists_>
+        <VIAF_URL></VIAF_URL>
+        <VIAF_ID></VIAF_ID>
+        <Entry_Notes_Comments>Formerly pupils of St. Ephrem, now divided - TAC. Does not seem to be the same as the 7th cent. (?) Simeon of Simosata who wrote biography of Theodotus of Amida (http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=S&amp;sK=Simeon%20of%20Samosata&amp;sT=keywords).</Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full></GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>10 to 13</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num></Barsoum_En_Page_Num>
+        <Barsoum_En_Raw></Barsoum_En_Raw>
+        <Barsoum_En_Full>Simon of Samosata</Barsoum_En_Full>
+        <Barsoum_En_Given>Simon</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>of Samosata</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>203</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>شمعون السميساطي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>شمعون</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>السميساطي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>TAC</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>226</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܫܡܥܘܢ ܫܡܝܫܛܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܫܡܥܘܢ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܫܡܝܫܛܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܫܶܡܥܘܽܢ ܫܡܺܝܫܛܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܫܶܡܥܘܽܢ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܫܡܺܝܫܛܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full>Shemʿon of Samosata</GS_En_Full>
+        <GS_En_Given>Shemʿon</GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles>of Samosata</GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction>Add VIAF entry - TAC</Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number></Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Isḥaq of Amid</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>17</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36407</VIAF_URL>
+        <VIAF_ID>36407</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Isḥaq of Amid</GEDSH_Full>
+        <GEDSH_Given>Isḥaq</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Amid</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>16</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>238</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Isaac of Amid</Barsoum_En_Raw>
+        <Barsoum_En_Full>Isaac of Amid</Barsoum_En_Full>
+        <Barsoum_En_Given>Isaac</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>of Amid</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>204</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>اسحق الآمدي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>اسحق</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الآمدي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>363-418</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>228</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܐܝܣܚܩ ܐܡܝܕܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܝܣܚܩ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܐܡܝܕܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܐܝܣܚܳܩ ܐܳܡܝܕܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܝܣܚܳܩ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܐܳܡܝܕܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>380</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Aḥai, Catholicos of Ctesiphon</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>23</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36429</VIAF_URL>
+        <VIAF_ID>36429</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full></GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>20</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>240</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Aḥai, Catholicos of Ctesiphon</Barsoum_En_Raw>
+        <Barsoum_En_Full>Aḥai, Catholicos of Ctesiphon</Barsoum_En_Full>
+        <Barsoum_En_Given>Aḥai</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Catholicos of Ctesiphon</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>206</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>آحى جاثليق المداىٔن</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>آحى</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>جاثليق المداىٔن</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes>Arabic was missing, I added it according to Barsoum - JK</Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>415</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>233</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܚܝ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܰܚܝ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full>Aḥai</GS_En_Full>
+        <GS_En_Given>Aḥai</GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction>Add CE-CH to Viaf - TAC 2/22/13</Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>53</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Marutha of Maypherqaṭ</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>25</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/33482</VIAF_URL>
+        <VIAF_ID>33482</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Marutha of Maypherqaṭ</GEDSH_Full>
+        <GEDSH_Given>Marutha</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Maypherqaṭ</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>22</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>240</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Marutha of Miyapharqin</Barsoum_En_Raw>
+        <Barsoum_En_Full>Marutha of Miyapharqin</Barsoum_En_Full>
+        <Barsoum_En_Given>Marutha of Miyapharqin</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>207</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>ماروثا الفارقي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>ماروثا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الفارقي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>421</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>233</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܘܬܐ ܕܡܝܦܪܩܛ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܡܪܘܬܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܕܡܝܦܪܩܛ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܰܪܘܬܐ ܕܡܺܝܦܰܪܩܰܛ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܡܰܪܘܬܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܕܡܺܝܦܰܪܩܰܛ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full>ܡܪܘܬܐ ܐܦܣܩܘܦܐ</Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given>ܡܪܘܬܐ</Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles>ܐܦܣܩܘܦܐ</Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full>ܡܵܪܘܼܬܵܐ ܐܲܦܸܣܩܘܿܦܵܐ</Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given>ܡܵܪܘܼܬܵܐ</Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles>ܐܲܦܸܣܩܘܿܦܵܐ</Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num>70</Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full>ܡܪܘܬܐ ܐܦܣܩܘܦܐ</Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given>ܡܪܘܬܐ</Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles>ܐܦܣܩܘܦܐ</Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num>73</Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered>TAC</Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>382</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Rabbula of Edessa</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>26</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/25034</VIAF_URL>
+        <VIAF_ID>25034</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Rabbula of Edessa</GEDSH_Full>
+        <GEDSH_Given>Rabbula</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Edessa</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>23</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>242</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Rabula, metropolitan of Edessa</Barsoum_En_Raw>
+        <Barsoum_En_Full>Rabula, metropolitan of Edessa</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>208</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>رابولا مطران الرها</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>رابولا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مطران الرها</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>435</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>234</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܪܒܘܠܐ ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܪܒܘܠܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܝܛܪܘܦܘܠܝܛܐ ܕܐܘܪܗܝ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܪܰܒܘܠܐ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܪܰܒܘܠܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>383</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Isḥaq of Antioch</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>33</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/29706</VIAF_URL>
+        <VIAF_ID>29706</VIAF_ID>
+        <Entry_Notes_Comments>Why is Barsoum English not entered on this one?</Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Isḥaq of Antioch</GEDSH_Full>
+        <GEDSH_Given>Isḥaq</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Antioch</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>there is one isaac of edessa in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>31</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>246</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Isaac of Edessa, known as Isaac of Antioch</Barsoum_En_Raw>
+        <Barsoum_En_Full>Isaac of Edessa, known as Isaac of Antioch</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>211</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>اسحاق  الرهاوي المعروف بالانطاكي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>اسحاق</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الرهاوي المعروف بالانطاكي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes>got rid of arabic "rabban" (monk) cause Barsoum doesn't mention it. he is a priest though</Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>491</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>238</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܐܝܣܚܩ ܐܘܪܗܝܐ ܕܝܕܝܥ ܐܢܛܝܘܟܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܝܣܚܩ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܐܘܪܗܝܐ ܕܝܕܝܥ ܐܢܛܝܘܟܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܕܺܝܕܝܥ ܐܰܢܛܝܘܟܳܝܳܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܝܣܚܳܩ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܐܘܪܗܳܝܳܐ ܕܺܝܕܝܥ ܐܰܢܛܝܘܟܳܝܳܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>5</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Isḥaq of Edessa</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>34</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36474</VIAF_URL>
+        <VIAF_ID>36474</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Isḥaq of Edessa</GEDSH_Full>
+        <GEDSH_Given>Isḥaq</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Edessa</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>32</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>247</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Isaac the Second of Edessa</Barsoum_En_Raw>
+        <Barsoum_En_Full>Isaac the Second of Edessa</Barsoum_En_Full>
+        <Barsoum_En_Given>Isaac</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>the Second of Edessa</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>213</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>اسحاق الرهاوي الثاني</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>اسحاق</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الرهاوي الثاني</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>522</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>239</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܐܝܣܚܩ ܐܘܪܗܝܐ ܬܪܝܢܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܝܣܚܩ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܐܘܪܗܝܐ ܬܪܝܢܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܝܣܚܳܩ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܐܘܪܗܳܝܳܐ ܬܪܰܝܳܢܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>58</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Polykarpos</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>35</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36485</VIAF_URL>
+        <VIAF_ID>36485</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Polykarpos</GEDSH_Full>
+        <GEDSH_Given>Polykarpos</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>33</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>250</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Chorepiscopus Polycarp</Barsoum_En_Raw>
+        <Barsoum_En_Full>Chorepiscopus Polycarp</Barsoum_En_Full>
+        <Barsoum_En_Given>Polycarp</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Chorepiscopus</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>215</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>الخوري بوليقربوس</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>بوليقربوس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الخوري</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes>*Fixed Arabic - JK</Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>508</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>241</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܟܘܪܐܦܝܣܩܘܦܐ ܦܘܠܝܩܪܦܘܣ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܦܘܠܝܩܪܦܘܣ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܟܘܪܐܦܝܣܩܘܦܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܟܘܪܐܶܦܝܣܩܘܦܳܐ ܦܘܠܝܩܰܪܦܳܘܣ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܦܘܠܝܩܰܪܦܳܘܣ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܟܘܪܐܶܦܝܣܩܘܦܳܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>385</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yaʿqub of Serugh</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>42</SRP_ID>
+        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/25724</VIAF_URL>
+        <VIAF_ID>25724</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yaʿqub of Serugh</GEDSH_Full>
+        <GEDSH_Given>Yaʿqub</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Serugh</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate>ca. 451</GEDSH_Birthdate>
+        <GEDSH_Death_Date>521</GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>38</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>255</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Jacob of Sarug, the Malphono</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Jacob of Sarug, the Malphono</Barsoum_En_Full>
+        <Barsoum_En_Given>Jacob</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar, of Sarug, the Malphono</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>219</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار يعقوب السروجي الملفان</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يعقوب</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار  ، السروجي ، الملفان</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>521</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>246</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܥܩܘܒ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܕܣܪܘܓ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܰܥܩܘܒ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܕܰܣܪܘܓ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>395</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Philoxenos of Mabbug</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>44</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/28554/</VIAF_URL>
+        <VIAF_ID>28554</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Philoxenos of Mabbug</GEDSH_Full>
+        <GEDSH_Given>Philoxenos</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Mabbug</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>40</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>262</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Philoxenus of Mabug</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Philoxenus of Mabug</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>226</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار فيلكسينس المنبجي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>فيلكسينس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>المنبجي ،  مار</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>523</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>252</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܦܝܠܠܘܟܣܝܢܘܣ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܕܡܒܘܓ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܦܺܝܠܠܘܟܣܺܝܢܘܣ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܕܡܰܒܘܓ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>390</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Sergios of Reshʿayna</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>49</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36131/</VIAF_URL>
+        <VIAF_ID>36131</VIAF_ID>
+        <Entry_Notes_Comments> Comments: Changed typo from ܣܪܟܝܣ to ܣܪܓܝܣ</Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Sergios of Reshʿayna</GEDSH_Full>
+        <GEDSH_Given>Sergios</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Reshʿayna</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>45</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>273</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Sergius of Rish ‛Ayna</Barsoum_En_Raw>
+        <Barsoum_En_Full>Sergius of Rish ‛Ayna</Barsoum_En_Full>
+        <Barsoum_En_Given>Sergius</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>of Rish ‛Ayna</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>235</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>سرجيس الراسعني</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>سرجيس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الراسعني</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>536</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>261</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܣܪܓܝܣ ܪܝܫܥܝܢܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܣܪܓܝܣ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܪܝܫܥܝܢܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܣܰܪܓܝܣ ܪܺܝܫܥܰܝܢܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܣܰܪܓܝܣ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܪܺܝܫܥܰܝܢܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full>ܣܪܓܝܣ ܪܫܥܝܢܝܐ</Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given>ܣܪܓܝܣ</Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles>ܪܫܥܝܢܝܐ</Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full>ܣܲܪܓܝܼܣ ܪܹܫܥܲܝܢܵܝܵܐ</Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given>ܣܲܪܓܝܼܣ</Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles>ܪܹܫܥܲܝܢܵܝܵܐ</Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num>71</Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full>ܣܪܓܝܣ ܪܫܥܝܢܝܐ</Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given>ܣܪܓܝܣ</Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles>ܪܫܥܝܢܝܐ</Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num>87</Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered>TAC</Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>391</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yuḥanon of Tella</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>50</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/26884/</VIAF_URL>
+        <VIAF_ID>26884</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yuḥanon of Tella</GEDSH_Full>
+        <GEDSH_Given>Yuḥanon</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Tella</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>46</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>274</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>John of Tella</Barsoum_En_Raw>
+        <Barsoum_En_Full>St. John of Tella</Barsoum_En_Full>
+        <Barsoum_En_Given>John</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>of Tella</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>236</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full> مار يوحنا التلي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يوحنا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار , التلي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes>Added "mar" to John of Tella, cause Barsoum mentions him in the Arabic that he has the title and a feast day</Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>538</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>263</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܝܘܚܢܢ ܕܬܠܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܘܚܢܢ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܕܬܠܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܝܘܚܰܢܢ ܕܬܶܠܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܘܚܰܢܢ ܕܬܶܠܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܕܬܶܠܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>392</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Severus of Antioch</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>51</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/27793/</VIAF_URL>
+        <VIAF_ID>27793</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Severus of Antioch</GEDSH_Full>
+        <GEDSH_Given>Severus</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Antioch</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>47</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>276</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>St. Severus of Antioch</Barsoum_En_Raw>
+        <Barsoum_En_Full>St. Severus of Antioch</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>238</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>القديس سويريوس الانطاكي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>سويريوس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>القديس , الانطاكي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>538</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>265</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܣܘܝܪܝܘܣ ܕܐܢܛܝܘܟܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܣܘܝܪܝܘܣ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܕܐܢܛܝܘܟܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܣܶܘܝܪܝܘܣ ܕܐܰܢܛܝܘܟܺܝܰܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܣܶܘܝܪܝܘܣ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܕܐܰܢܛܝܘܟܺܝܰܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>6</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Shemʿun of Beth Arsham</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>53</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36153/</VIAF_URL>
+        <VIAF_ID>36153</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Shemʿun of Beth Arsham</GEDSH_Full>
+        <GEDSH_Given>Shemʿun</GEDSH_Given>
+        <GEDSH_Family>of Beth Arsham</GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>49</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>290</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Simon of Beth Arsham</Barsoum_En_Raw>
+        <Barsoum_En_Full>Simon of Beth Arsham</Barsoum_En_Full>
+        <Barsoum_En_Given>Simon</Barsoum_En_Given>
+        <Barsoum_En_Family>of Beth Arsham</Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>251</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>شمعون الارشمي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>شمعون</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الارشمي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>540</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>277</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܫܡܥܘܢ ܕܒܝܬ ܐܪܫܡ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܫܡܥܘܢ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family>ܕܒܝܬ ܐܪܫܡ</Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles></Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܫܶܡܥܘܢ ܕܒܶܝܬ ܐܰܪܫܰܡ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܫܶܡܥܘܢ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family>ܕܒܶܝܬ ܐܰܪܫܰܡ</Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles></Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>10</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Eliya (mid-6th cent.)</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>63</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>?</VIAF_URL>
+        <VIAF_ID></VIAF_ID>
+        <Entry_Notes_Comments>Merged with SRP470. Unsure whether http://viaf.org/viaf/216681907 refers to the same person. Did not include this link. --NG</Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw>190. Eliya (mid-6th cent.)</GEDSH_Raw>
+        <GEDSH_Entry_Num>190</GEDSH_Entry_Num>
+        <GEDSH_Full>Eliya (mid-6th cent.)</GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>59</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>297</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>The Monk Elijah</Barsoum_En_Raw>
+        <Barsoum_En_Full>The Monk Elijah</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>258</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>الراهب ايليا</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given></Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles></Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>284</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܕܝܪܝܐ ܐܠܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given></Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles></Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܕܰܝܪܳܝܐ ܐܠܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given></Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles></Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction>Need to enter Arabic - TAC 9/17/2012</Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number></Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Aḥudemmeh (of Balad?)</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>67</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36175/</VIAF_URL>
+        <VIAF_ID>36175</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Aḥudemmeh (of Balad?)</GEDSH_Full>
+        <GEDSH_Given>Aḥudemmeh</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>(of Balad?)</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>62</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>299</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Aḥudemeh</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Aḥudemeh</Barsoum_En_Full>
+        <Barsoum_En_Given>Aḥudemeh</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>259</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار احودامه</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>احودامه</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>575</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>285</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܐܚܘܕܐܡܗ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܐܚܘܕܐܡܗ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܐܰܚܘܕܶܐܡܗ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܐܰܚܘܕܶܐܡܗ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>40</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yaʿqub Burdʿoyo</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>69</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36186</VIAF_URL>
+        <VIAF_ID>36186</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yaʿqub Burdʿoyo</GEDSH_Full>
+        <GEDSH_Given>Yaʿqub</GEDSH_Given>
+        <GEDSH_Family>Burdʿoyo</GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>64</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>300</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Jacob Baradaeus</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Jacob Baradaeus</Barsoum_En_Full>
+        <Barsoum_En_Given>Jacob</Barsoum_En_Given>
+        <Barsoum_En_Family>Baradaeus</Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>260</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار يعقوب البرادعي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يعقوب</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family>البرادعي</Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes>Not certain if "Baradaeus" is a surname or title (as in of Baradi). Kept it as Surname considering trend</Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>578</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>286</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܝܥܩܘܒ ܒܘܪܕܥܢܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܥܩܘܒ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family>ܒܘܪܕܥܢܐ</Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܪܝ ܝܰܥܩܘܒ ܒܘܪܕܥܳܢܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܰܥܩܘܒ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family>ܒܘܪܕܥܳܢܐ</Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܪܝ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>42</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yuḥanon of Ephesus</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>74</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/28819/</VIAF_URL>
+        <VIAF_ID>28819</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yuḥanon of Ephesus</GEDSH_Full>
+        <GEDSH_Given>Yuḥanon</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Ephesus</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>69</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>304</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>John of Ephesus</Barsoum_En_Raw>
+        <Barsoum_En_Full>John of Ephesus</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>264</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>يوحنا الافسسي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يوحنا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الافسسي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>587</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>291</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܝܘܚܢܢ ܕܐܦܣܘܣ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܘܚܢܢ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܕܐܦܣܘܣ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܝܘܚܰܢܢ ܕܶܐܦܣܘܣ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܘܚܰܢܢ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܕܶܐܦܣܘܣ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>14</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Tumo of Ḥarqel</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>87</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36658</VIAF_URL>
+        <VIAF_ID>36658</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Tumo of Ḥarqel</GEDSH_Full>
+        <GEDSH_Given>Tumo</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Ḥarqel</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>not in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>82</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>317</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Thomas of Harkel</Barsoum_En_Raw>
+        <Barsoum_En_Full>Thomas of Harkel</Barsoum_En_Full>
+        <Barsoum_En_Given>Thomas</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>of Harkel</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>276</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>توما الحرقلي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>توما</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الحرقلي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>627</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>302</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܬܐܘܡܐ ܚܪܩܠܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܬܐܘܡܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܚܪܩܠܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܬܳܐܘܡܰܐ ܚܰܪܩܶܠܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܬܳܐܘܡܰܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܚܰܪܩܶܠܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>72</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yaʿqub of Edessa</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>113</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/26024</VIAF_URL>
+        <VIAF_ID>26024</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yaʿqub of Edessa</GEDSH_Full>
+        <GEDSH_Given>Yaʿqub</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Edessa</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>109</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>334</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Jacob of Edessa</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Jacob of Edessa</Barsoum_En_Full>
+        <Barsoum_En_Given>Jacob</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar, of Edessa</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>291</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار يعقوب الرهاوي</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يعقوب</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار الرهاوي</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>708</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>317</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܝܥܩܘܒ ܕܐܘܪܗܝ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܥܩܘܒ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܕܐܘܪܗܝ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܝܰܥܩܘܒ ܕܐܘܪܗܳܝ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܰܥܩܘܒ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܕܐܘܪܗܳܝ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full>ܝܥܩܘܒ ܐܘܪܗܝܐ</Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given>ܝܥܩܘܒ</Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles>ܐܘܪܗܝܐ</Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full>ܝܲܥܩܘܿܒ ܐܘܼܪܗܵܝܵܐ</Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given>ܝܲܥܩܘܿܒ</Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles>ܐܘܼܪܗܵܝܵܐ</Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num>80</Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full>ܝܥܩܘܒ ܐܘܪܗܝܐ</Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given>ܝܥܩܘܒ</Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles>ܐܘܪܗܝܐ</Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num>229</Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered>TAC</Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>22</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Deacon Saba</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>121</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36935</VIAF_URL>
+        <VIAF_ID>36935</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full></GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>117</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>353</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Deacon Saba</Barsoum_En_Raw>
+        <Barsoum_En_Full>Deacon Saba</Barsoum_En_Full>
+        <Barsoum_En_Given>Saba</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Deacon</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>308</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>الشماس سابا</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>سابا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الشماس</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year>726</Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>336</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܫܡܫܢܐ ܣܒܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܣܒܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܫܡܫܢܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܫܰܡܫܳܢܐ ܣܳܒܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܣܳܒܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܫܰܡܫܳܢܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full>Sobho of Reshʿayna</GS_En_Full>
+        <GS_En_Given>Sobho</GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles>of Reshʿayna</GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction>Add CE-CH to Viaf - TAC 2/25/13</Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>97</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Giwargi, bp. of the Arab tribes</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>122</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/32274</VIAF_URL>
+        <VIAF_ID>32274</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Giwargi, bp. of the Arab tribes</GEDSH_Full>
+        <GEDSH_Given>Giwargi</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>bp. of the Arab tribes</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>118</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>354</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar George, bishop of the Arabs</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar George, bishop of the Arabs</Barsoum_En_Full>
+        <Barsoum_En_Given>George</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar, bishop of the Arabs</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>308</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار جرجس اسقف العرب</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>جرجس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار , اسقف العرب</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>725</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>337</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܓܘܪܓܝ ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܓܘܪܓܝ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܐܦܝܣܩܘܦܐ ܕܥܡܡ̈ܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܓܶܘܰܪܓܝ ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܓܶܘܰܪܓܝ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܐܶܦܝܣܩܘܦܳܐ ܕܥܰܡܡ̈ܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>23</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Dionysios of Tel Maḥre</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>155</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/25573</VIAF_URL>
+        <VIAF_ID>25573</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Dionysios of Tel Maḥre</GEDSH_Full>
+        <GEDSH_Given>Dionysios</GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles>of Tel Maḥre</GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>154</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>386</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Dionysius of Tell Maḥre</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Dionysius of Tell Maḥre</Barsoum_En_Full>
+        <Barsoum_En_Given>Dionysius</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>Mar, of Tell Maḥre</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>338</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار ديونيسيوس التلمحري</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>ديونيسيوس</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار, التلمحري</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>845</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>367</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܪܝ ܕܝܘܢܢܘܣܝܘܣ ܬܠܡܚܪܝܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܕܝܘܢܢܘܣܝܘܣ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܡܪܝ ܬܠܡܚܪܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܳܪܝ ܕܝܘܢܢܘܣܝܘܣ ܬܰܠܡܚܪܳܝܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܕܝܘܢܢܘܣܝܘܣ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܡܳܪܝ ܬܰܠܡܚܪܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>27</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name></Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>159</SRP_ID>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF>JW</Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/37187</VIAF_URL>
+        <VIAF_ID>37187</VIAF_ID>
+        <Entry_Notes_Comments>Not found in GEDSH - This is not the Barhadbshabba 'Arbaya of the GEDSH</Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full></GEDSH_Full>
+        <GEDSH_Given></GEDSH_Given>
+        <GEDSH_Family></GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum></Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>158</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>390</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>The Monk Bar Ḥadhbshabba</Barsoum_En_Raw>
+        <Barsoum_En_Full>The Monk Bar Ḥadhbshabba</Barsoum_En_Full>
+        <Barsoum_En_Given>Bar Ḥadhbshabba</Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles>The Monk</Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>342</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>الراهب بر حذبشابا</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>بر حذبشابا</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family></Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>الراهب</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year></Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>370</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܕܝܪܝܐ ܒܪ ܚܕ ܒܫܒܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܒܪ ܚܕ ܒܫܒܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family></Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles>ܕܝܪܝܐ</Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܕܰܝܪܳܝܐ ܒܰܪ ܚܰܕ ܒܫܰܒܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܒܰܪ ܚܰܕ ܒܫܰܒܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family></Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles>ܕܰܝܪܳܝܐ</Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full>Barḥadbshabo of Mor Matay</GS_En_Full>
+        <GS_En_Given>Barḥadbshabo</GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles>of Mor Matay</GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction>Add CE-CH to Viaf - TAC 2/25/13</Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>121</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Mushe bar Kipho</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>173</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/29267</VIAF_URL>
+        <VIAF_ID>29267</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Mushe bar Kipho</GEDSH_Full>
+        <GEDSH_Given>Mushe</GEDSH_Given>
+        <GEDSH_Family>bar Kipho</GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>172</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>398</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Mar Moses Bar Kepha</Barsoum_En_Raw>
+        <Barsoum_En_Full>Mar Moses Bar Kepha</Barsoum_En_Full>
+        <Barsoum_En_Given></Barsoum_En_Given>
+        <Barsoum_En_Family></Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>350</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>مار موسي ابن كيفا</Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>موسي</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family>ابن كيفا</Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles>مار</Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>903</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>378</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܡܘܫܐ ܒܪ ܟܐܦܐ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܡܘܫܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family>ܒܪ ܟܐܦܐ</Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles></Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܡܘܫܶܐ ܒܰܪ ܟܺܐܦܳܐ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܡܘܫܶܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family>ܒܰܪ ܟܺܐܦܳܐ</Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles></Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>30</Merge_Row_Number>
+    </row>
+    <row>
+        <Calculated_Name>Yaḥyā b. ʿAdī</Calculated_Name>
+        <ID_Prefix>SRP</ID_Prefix>
+        <SRP_ID>180</SRP_ID>
+        <Existing_VIAF_matched___edited>JW</Existing_VIAF_matched___edited>
+        <Not_found_in_VIAF></Not_found_in_VIAF>
+        <New_Extended_Viaf_Record_Created>JW</New_Extended_Viaf_Record_Created>
+        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
+        <VIAF_URL>http://viaf.org/hosted/syriac/36289</VIAF_URL>
+        <VIAF_ID>36289</VIAF_ID>
+        <Entry_Notes_Comments></Entry_Notes_Comments>
+        <Name_split_needs_checking></Name_split_needs_checking>
+        <Name_split_checked></Name_split_checked>
+        <GEDSH_Raw></GEDSH_Raw>
+        <GEDSH_Entry_Num></GEDSH_Entry_Num>
+        <GEDSH_Full>Yaḥyā b. ʿAdī</GEDSH_Full>
+        <GEDSH_Given>Yaḥyā</GEDSH_Given>
+        <GEDSH_Family>b. ʿAdī</GEDSH_Family>
+        <GEDSH_Titles></GEDSH_Titles>
+        <Not_an_author_or_work></Not_an_author_or_work>
+        <No_Barsoum_entry></No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <GEDSH_Birthdate></GEDSH_Birthdate>
+        <GEDSH_Death_Date></GEDSH_Death_Date>
+        <Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_></Retroversion_of_Syriac_name_from_GEDSH__if_not_found_in_any_source_>
+        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
+        <Barsoum_En_Entry_Num>180</Barsoum_En_Entry_Num>
+        <Barsoum_En_Page_Num>406</Barsoum_En_Page_Num>
+        <Barsoum_En_Raw>Yaḥya Ibn ‛Adi</Barsoum_En_Raw>
+        <Barsoum_En_Full>Yaḥya Ibn ‛Adi</Barsoum_En_Full>
+        <Barsoum_En_Given>Yaḥya</Barsoum_En_Given>
+        <Barsoum_En_Family>Ibn ‛Adi</Barsoum_En_Family>
+        <Barsoum_En_Titles></Barsoum_En_Titles>
+        <Barsoum_Ar_Page_Num>358</Barsoum_Ar_Page_Num>
+        <Barsoum_Ar_Full>يحي بن عدي </Barsoum_Ar_Full>
+        <Barsoum_Ar_Given>يحي</Barsoum_Ar_Given>
+        <Barsoum_Ar_Family>بن عدي</Barsoum_Ar_Family>
+        <Barsoum_Ar_Titles></Barsoum_Ar_Titles>
+        <Barsoum_Ar_Entered>JK</Barsoum_Ar_Entered>
+        <Barsoum_Ar_Notes></Barsoum_Ar_Notes>
+        <Barsoum_En_Death_Year>974</Barsoum_En_Death_Year>
+        <Barsoum_En_Other_Year></Barsoum_En_Other_Year>
+        <Barsoum_En_Century></Barsoum_En_Century>
+        <Barsoum_Sy_Page_Num>385</Barsoum_Sy_Page_Num>
+        <Barsoum_Sy_NV_Full>ܝܚܝܐ ܒܪ ܥܕܝ</Barsoum_Sy_NV_Full>
+        <Barsoum_Sy_NV_Given>ܝܚܝܐ</Barsoum_Sy_NV_Given>
+        <Barsoum_Sy_NV_Family>ܒܪ ܥܕܝ</Barsoum_Sy_NV_Family>
+        <Barsoum_Sy_NV_Titles></Barsoum_Sy_NV_Titles>
+        <Barsoum_Sy_V_Full>ܝܰܚܝܰܐ ܒܰܪ ܥܰܕܝ</Barsoum_Sy_V_Full>
+        <Barsoum_Sy_V_Given>ܝܰܚܝܰܐ</Barsoum_Sy_V_Given>
+        <Barsoum_Sy_V_Family>ܒܰܪ ܥܰܕܝ</Barsoum_Sy_V_Family>
+        <Barsoum_Sy_V_Titles></Barsoum_Sy_V_Titles>
+        <Necessary_Corrections></Necessary_Corrections>
+        <Abdisho_YdQ_Sy_NV_Full></Abdisho_YdQ_Sy_NV_Full>
+        <Abdisho_YdQ_Sy_NV_Given></Abdisho_YdQ_Sy_NV_Given>
+        <Abdisho_YdQ_Sy_NV_Family></Abdisho_YdQ_Sy_NV_Family>
+        <Abdisho_YdQ_Sy_NV_Titles></Abdisho_YdQ_Sy_NV_Titles>
+        <Abdisho_YdQ_Sy_V_Full></Abdisho_YdQ_Sy_V_Full>
+        <Abdisho_YdQ_Sy_V_Given></Abdisho_YdQ_Sy_V_Given>
+        <Abdisho_YdQ_Sy_V_Family></Abdisho_YdQ_Sy_V_Family>
+        <Abdisho_YdQ_Sy_V_Titles></Abdisho_YdQ_Sy_V_Titles>
+        <Abdisho_YdQ_Sy_Page_Num></Abdisho_YdQ_Sy_Page_Num>
+        <Abdisho_BO_Sy_NV_Full></Abdisho_BO_Sy_NV_Full>
+        <Abdisho_Syriac_BO_NV_Given></Abdisho_Syriac_BO_NV_Given>
+        <Abdisho_BO_Sy_NV_Family></Abdisho_BO_Sy_NV_Family>
+        <Abdisho_BO_Sy_NV_Titles></Abdisho_BO_Sy_NV_Titles>
+        <Abdisho_BO_Sy_V_Full></Abdisho_BO_Sy_V_Full>
+        <Abdisho_BO_Sy_V_Given></Abdisho_BO_Sy_V_Given>
+        <Abdisho_BO_Sy_V_Family></Abdisho_BO_Sy_V_Family>
+        <Abdisho_BO_Sy_V_Titles></Abdisho_BO_Sy_V_Titles>
+        <Abdisho_BO_Sy_Page_Num></Abdisho_BO_Sy_Page_Num>
+        <Syriac_Entered></Syriac_Entered>
+        <GS_En_Full></GS_En_Full>
+        <GS_En_Given></GS_En_Given>
+        <GS_En_Family></GS_En_Family>
+        <GS_En_Titles></GS_En_Titles>
+        <Other_En></Other_En>
+        <Other_En_Given></Other_En_Given>
+        <Other_En_Family></Other_En_Family>
+        <Other_En_Titles></Other_En_Titles>
+        <Extended_VIAF_Updated></Extended_VIAF_Updated>
+        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
+        <CBSC_En>#REF!</CBSC_En>
+        <Original_Sort_Order></Original_Sort_Order>
+        <Merge_Row_Number>31</Merge_Row_Number>
+    </row>
+</root>

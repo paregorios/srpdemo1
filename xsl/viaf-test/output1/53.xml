@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -49,11 +56,23 @@
                <p>Page 290</p>
             </descriptiveNote>
          </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
+         </source>
       </sources>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
+         <nameEntry localType="#GEDSH"
+                    scriptCode="Latn"
+                    transliteration="GEDSH"
+                    xml:lang="eng">
+            <part localType="given">Shemʿun</part>
+            <part localType="family">of Beth Arsham</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
          <nameEntry localType="#GEDSH"
                     scriptCode="Latn"
                     transliteration="GEDSH"
@@ -66,15 +85,37 @@
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
+               <part localType="given">Simon</part>
+               <part localType="family">of Beth Arsham</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">شمعون</part>
+               <part localType="termsOfAddress">الارشمي</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܫܡܥܘܢ</part>
+               <part localType="family">ܕܒܝܬ ܐܪܫܡ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܫܶܡܥܘܢ</part>
+               <part localType="family">ܕܒܶܝܬ ܐܰܪܫܰܡ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
                <part localType="verbatim">Simon of Beth Arsham</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">شمعون الارشمي</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܫܡܥܘܢ ܕܒܝܬ ܐܪܫܡ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܫܶܡܥܘܢ ܕܒܶܝܬ ܐܰܪܫܰܡ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>

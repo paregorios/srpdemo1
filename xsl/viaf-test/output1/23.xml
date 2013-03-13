@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -42,6 +49,10 @@
                <p>Page 240</p>
             </descriptiveNote>
          </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
+         </source>
       </sources>
    </control>
    <cpfDescription>
@@ -52,15 +63,36 @@
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
+               <part localType="given">Aḥai</part>
+               <part localType="termsOfAddress">Catholicos of Ctesiphon</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">آحى</part>
+               <part localType="termsOfAddress">جاثليق المداىٔن</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܐܚܝ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܐܰܚܝ</part>
+               <part localType="termsOfAddress">ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
                <part localType="verbatim">Aḥai, Catholicos of Ctesiphon</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">آحى جاثليق المداىٔن</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܐܚܝ ܩܬܘܠܝܩܐ ܕܣܠܝܩ ܘܩܛܣܝܦܘܢ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܐܰܚܝ ܩܰܬܘܠܝܩܳܐ ܕܣܰܠܝܩ ܘܩܰܛܣܝܦܘܢ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>

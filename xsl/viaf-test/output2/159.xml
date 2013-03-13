@@ -5,8 +5,8 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
    <control>
-      <recordId>42</recordId>
-      <otherRecordId>http://viaf.org/hosted/syriac/25724</otherRecordId>
+      <recordId>159</recordId>
+      <otherRecordId>http://viaf.org/hosted/syriac/37187</otherRecordId>
       <maintenanceStatus>new</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
@@ -21,7 +21,7 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:31.336-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -31,29 +31,22 @@
             <sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
                                     (syriaca.org)</sourceEntry>
          </source>
-         <source xml:id="GEDSH">
-            <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
-                                        Heritage</sourceEntry>
-            <descriptiveNote>
-               <p>Entry </p>
-            </descriptiveNote>
-         </source>
          <source xml:id="Barsoum-SY">
             <sourceEntry>Barsoum (Syriac)</sourceEntry>
             <descriptiveNote>
-               <p>Page 246</p>
+               <p>Page 370</p>
             </descriptiveNote>
          </source>
          <source xml:id="Barsoum-AR">
             <sourceEntry>Barsoum (Arabic)</sourceEntry>
             <descriptiveNote>
-               <p>Page 219</p>
+               <p>Page 342</p>
             </descriptiveNote>
          </source>
          <source xml:id="Barsoum-EN">
             <sourceEntry>Barsoum (English)</sourceEntry>
             <descriptiveNote>
-               <p>Page 255</p>
+               <p>Page 390</p>
             </descriptiveNote>
          </source>
          <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
@@ -65,39 +58,24 @@
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry localType="#GEDSH"
-                    scriptCode="Latn"
-                    transliteration="GEDSH"
-                    xml:lang="eng">
-            <part localType="given">Yaʿqub</part>
-            <part localType="termsOfAddress">of Serugh</part>
-            <alternativeForm>syriaca.org</alternativeForm>
-         </nameEntry>
-         <nameEntry localType="#GEDSH"
-                    scriptCode="Latn"
-                    transliteration="GEDSH"
-                    xml:lang="eng">
-            <part localType="verbatim">Yaʿqub of Serugh</part>
-            <alternativeForm>syriaca.org</alternativeForm>
-         </nameEntry>
          <nameEntryParallel localType="Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="given">Jacob</part>
-               <part localType="termsOfAddress">Mar, of Sarug, the Malphono</part>
+               <part localType="given">Bar Ḥadhbshabba</part>
+               <part localType="termsOfAddress">The Monk</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="given">يعقوب</part>
-               <part localType="termsOfAddress">مار  ، السروجي ، الملفان</part>
+               <part localType="given">بر حذبشابا</part>
+               <part localType="termsOfAddress">الراهب</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܝܥܩܘܒ</part>
+               <part localType="given">ܒܪ ܚܕ ܒܫܒܐ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܝܰܥܩܘܒ</part>
-               <part localType="termsOfAddress">ܡܳܪܝ ܕܰܣܪܘܓ</part>
+               <part localType="given">ܒܰܪ ܚܰܕ ܒܫܰܒܐ</part>
+               <part localType="termsOfAddress">ܕܰܝܪܳܝܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
@@ -106,16 +84,16 @@
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="verbatim">Mar Jacob of Sarug, the Malphono</part>
+               <part localType="verbatim">The Monk Bar Ḥadhbshabba</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="verbatim">مار يعقوب السروجي الملفان</part>
+               <part localType="verbatim">الراهب بر حذبشابا</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܡܪܝ ܝܥܩܘܒ ܕܣܪܘܓ ܡܠܦܢܐ</part>
+               <part localType="verbatim">ܕܝܪܝܐ ܒܪ ܚܕ ܒܫܒܐ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܡܳܪܝ ܝܰܥܩܘܒ ܕܰܣܪܘܓ ܡܰܠܦܳܢܐ</part>
+               <part localType="verbatim">ܕܰܝܪܳܝܐ ܒܰܪ ܚܰܕ ܒܫܰܒܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>

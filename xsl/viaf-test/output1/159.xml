@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -23,13 +30,6 @@
          <source xlink:href="http://syriaca.org">
             <sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
                                     (syriaca.org)</sourceEntry>
-         </source>
-         <source xml:id="GEDSH">
-            <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
-                                        Heritage</sourceEntry>
-            <descriptiveNote>
-               <p>Entry </p>
-            </descriptiveNote>
          </source>
          <source xml:id="Barsoum-SY">
             <sourceEntry>Barsoum (Syriac)</sourceEntry>
@@ -49,18 +49,36 @@
                <p>Page 390</p>
             </descriptiveNote>
          </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
+         </source>
       </sources>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
-         <nameEntry localType="#GEDSH"
-                    scriptCode="Latn"
-                    transliteration="GEDSH"
-                    xml:lang="eng">
-            <part localType="verbatim">Not found - This is not the Barhadbshabba 'Arbaya of the GEDSH</part>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
+               <part localType="given">Bar Ḥadhbshabba</part>
+               <part localType="termsOfAddress">The Monk</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">بر حذبشابا</part>
+               <part localType="termsOfAddress">الراهب</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܒܪ ܚܕ ܒܫܒܐ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܒܰܪ ܚܰܕ ܒܫܰܒܐ</part>
+               <part localType="termsOfAddress">ܕܰܝܪܳܝܐ</part>
+            </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
-         </nameEntry>
+         </nameEntryParallel>
          <nameEntryParallel localType="Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
@@ -71,10 +89,10 @@
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">الراهب بر حذبشابا</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܕܝܪܝܐ ܒܪ ܚܕ ܒܫܒܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܕܰܝܪܳܝܐ ܒܰܪ ܚܰܕ ܒܫܰܒܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>

@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -61,11 +68,23 @@
                <p>Page 87</p>
             </descriptiveNote>
          </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
+         </source>
       </sources>
    </control>
    <cpfDescription>
       <identity>
          <entityType>person</entityType>
+         <nameEntry localType="#GEDSH"
+                    scriptCode="Latn"
+                    transliteration="GEDSH"
+                    xml:lang="eng">
+            <part localType="given">Sergios</part>
+            <part localType="termsOfAddress">of Reshʿayna</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
          <nameEntry localType="#GEDSH"
                     scriptCode="Latn"
                     transliteration="GEDSH"
@@ -78,44 +97,65 @@
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
+               <part localType="given">Sergius</part>
+               <part localType="termsOfAddress">of Rish ‛Ayna</part>
+            </nameEntry>
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">سرجيس</part>
+               <part localType="termsOfAddress">الراسعني</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܣܪܓܝܣ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܣܰܪܓܝܣ</part>
+               <part localType="termsOfAddress">ܪܺܝܫܥܰܝܢܳܝܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Latn"
+                       transliteration="Barsoum-Anglicized"
+                       xml:lang="eng"
+                       localType="#Barsoum-EN">
                <part localType="verbatim">Sergius of Rish ‛Ayna</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">سرجيس الراسعني</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܣܪܓܝܣ ܪܝܫܥܝܢܝܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܣܰܪܓܝܣ ܪܺܝܫܥܰܝܢܳܝܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
          <nameEntryParallel localType="#Abdisho-YDQ">
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
                <part localType="given">ܣܪܓܝܣ</part>
                <part localType="termsOfAddress">ܪܫܥܝܢܝܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                <part localType="given">ܣܲܪܓܝܼܣ</part>
                <part localType="termsOfAddress">ܪܹܫܥܲܝܢܵܝܵܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
          <nameEntryParallel localType="#Abdisho-YDQ">
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
                <part localType="verbatim">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syre" xml:lang="syc" localType="#Abdisho-YDQ">
+            <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                <part localType="verbatim">ܣܲܪܓܝܼܣ ܪܹܫܥܲܝܢܵܝܵܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
-         <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+         <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
             <part localType="given">ܣܪܓܝܣ</part>
             <part localType="termsOfAddress">ܪܫܥܝܢܝܐ</part>
          </nameEntry>
-         <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Abdisho-YDQ">
+         <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
             <part localType="verbatim">ܣܪܓܝܣ ܪܫܥܝܢܝܐ</part>
          </nameEntry>
       </identity>

@@ -11,10 +11,17 @@
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
       </maintenanceAgency>
+      <localTypeDeclaration>
+         <abbreviation>syriaca</abbreviation>
+         <citation xlink:href="http://syriaca.org/vocab/eac/localType" xlink:type="simple">Some sort of citation</citation>
+         <descriptiveNote>
+            <p>Some sort of description.</p>
+         </descriptiveNote>
+      </localTypeDeclaration>
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-06T14:37:37.985-05:00"/>
+            <eventDateTime standardDateTime="2013-03-12T20:26:07.684-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
@@ -49,6 +56,10 @@
                <p>Page 246</p>
             </descriptiveNote>
          </source>
+         <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
+            <sourceEntry>Comprehensive Bibliography of Syriac
+                                        Christianity</sourceEntry>
+         </source>
       </sources>
    </control>
    <cpfDescription>
@@ -58,9 +69,31 @@
                     scriptCode="Latn"
                     transliteration="GEDSH"
                     xml:lang="eng">
+            <part localType="given">Isḥaq</part>
+            <part localType="termsOfAddress">of Antioch</part>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntry>
+         <nameEntry localType="#GEDSH"
+                    scriptCode="Latn"
+                    transliteration="GEDSH"
+                    xml:lang="eng">
             <part localType="verbatim">Isḥaq of Antioch</part>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntry>
+         <nameEntryParallel localType="Barsoum">
+            <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
+               <part localType="given">اسحاق</part>
+               <part localType="termsOfAddress">الرهاوي المعروف بالانطاكي</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܐܝܣܚܩ</part>
+            </nameEntry>
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
+               <part localType="given">ܐܝܣܚܳܩ</part>
+               <part localType="termsOfAddress">ܐܘܪܗܳܝܳܐ ܕܺܝܕܝܥ ܐܰܢܛܝܘܟܳܝܳܐ</part>
+            </nameEntry>
+            <alternativeForm>syriaca.org</alternativeForm>
+         </nameEntryParallel>
          <nameEntryParallel localType="Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
@@ -71,10 +104,10 @@
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
                <part localType="verbatim">اسحاق  الرهاوي المعروف بالانطاكي</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrc" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܐܝܣܚܩ ܐܘܪܗܝܐ ܕܝܕܝܥ ܐܢܛܝܘܟܝܐ</part>
             </nameEntry>
-            <nameEntry scriptCode="Syrj" xml:lang="syc" localType="#Barsoum-SY">
+            <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
                <part localType="verbatim">ܐܝܣܚܳܩ ܐܘܪܗܳܝܳܐ ܕܺܝܕܝܥ ܐܰܢܛܝܘܟܳܝܳܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
