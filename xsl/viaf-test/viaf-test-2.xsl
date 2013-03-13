@@ -19,15 +19,15 @@
             <xsl:result-document href="{$filename}" format="xml">
                 <eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                     xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd"
-                    xmlns="urn:isbn:1-931666-33-4" xmlns:eac="urn:isbn:1-931666-33-4"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    xmlns="urn:isbn:1-931666-33-4" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <control>
                         <recordId>
                             <xsl:value-of select="SRP_ID"/>
                         </recordId>
                         <xsl:if test="string-length(normalize-space(VIAF_URL)) > 0">
+                            <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
                             <otherRecordId>
-                                <xsl:value-of select="VIAF_URL"/>
+                                <xsl:value-of select="VIAF_URL"/>/
                             </otherRecordId>
                         </xsl:if>
                         <maintenanceStatus>new</maintenanceStatus>
@@ -64,7 +64,7 @@
                                     <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
                                         Heritage</sourceEntry>
                                     <descriptiveNote>
-                                        <p>Entry <xsl:value-of select="GEDSH_Full_Num"/></p>
+                                        <p>Entry <xsl:value-of select="GEDSH_Entry_Num"/></p>
                                     </descriptiveNote>
                                 </source>
                             </xsl:if>
@@ -89,7 +89,12 @@
                                 <source xml:id="Barsoum-EN">
                                     <sourceEntry>Barsoum (English)</sourceEntry>
                                     <descriptiveNote>
-                                        <p>Page <xsl:value-of select="Barsoum_En_Page_Num"/></p>
+                                        <p>
+                                            <!-- Is the entry num the same for all versions of Barsoum or does it apply to English only? -->
+                                            <xsl:if test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
+                                                Entry <xsl:value-of select="Barsoum_En_Entry_Num"/>, 
+                                            </xsl:if>
+                                                Page <xsl:value-of select="Barsoum_En_Page_Num"/></p>
                                     </descriptiveNote>
                                 </source>
                             </xsl:if>
@@ -123,6 +128,9 @@
                     </control>
                     <cpfDescription>
                         <identity>
+                            <entityId>http://syriaca.org/person/<xsl:value-of select="SRP_ID"/></entityId>
+                            <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
+                            <entityId><xsl:value-of select="VIAF_URL"/></entityId>
                             <entityType>person</entityType>
                             <!-- Need to create columns in source data for syriaca.org authorized forms. -->
                             <!-- Give GEDSH name in decomposed name parts. -->
@@ -132,18 +140,18 @@
                                     transliteration="GEDSH" xml:lang="eng">
                                     <xsl:if
                                         test="string-length(normalize-space(GEDSH_Given)) > 0">
-                                        <part localType="given">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#given">
                                             <xsl:value-of select="GEDSH_Given"/>
                                         </part>
                                     </xsl:if>
                                     <xsl:if
                                         test="string-length(normalize-space(GEDSH_Family)) > 0">
-                                        <part localType="family">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#family">
                                             <xsl:value-of select="GEDSH_Family"/>
                                         </part>
                                     </xsl:if>
                                     <xsl:if test="string-length(normalize-space(GEDSH_Titles)) > 0">
-                                        <part localType="termsOfAddress">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                             <xsl:value-of select="GEDSH_Titles"/>
                                         </part>
                                     </xsl:if>
@@ -154,7 +162,7 @@
                             <xsl:if test="string-length(normalize-space(GEDSH_Full)) > 0">
                                 <nameEntry localType="#GEDSH" scriptCode="Latn"
                                     transliteration="GEDSH" xml:lang="eng">
-                                    <part localType="verbatim">
+                                    <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                         <xsl:value-of select="GEDSH_Full"/>
                                     </part>
                                     <alternativeForm>syriaca.org</alternativeForm>
@@ -164,7 +172,7 @@
                             <!-- Test whether input data has the names split. -->
                             <xsl:if
                                 test="string-length(normalize-space(concat(Barsoum_En_Given,Barsoum_En_Family,Barsoum_En_Titles,Barsoum_Ar_Given,Barsoum_Ar_Family,Barsoum_Ar_Titles,Barsoum_Sy_NV_Given,Barsoum_Sy_NV_Family,Barsoum_Syriac_NV_Titles))) > 0">
-                                <nameEntryParallel localType="Barsoum">
+                                <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
                                     <!-- Test for split English names. -->
                                     <xsl:if
                                         test="string-length(normalize-space(concat(Barsoum_En_Given,Barsoum_En_Family,Barsoum_En_Titles))) > 0">
@@ -173,21 +181,21 @@
                                             localType="#Barsoum-EN">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_En_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of select="Barsoum_En_Given"
                                                   />
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_En_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Barsoum_En_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_En_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of select="Barsoum_En_Titles"/>
                                                 </part>
                                             </xsl:if>
@@ -200,21 +208,21 @@
                                             localType="#Barsoum-AR">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Ar_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of select="Barsoum_Ar_Given"
                                                   />
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Ar_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of select="Barsoum_Ar_Family"
                                                   />
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Ar_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of select="Barsoum_Ar_Titles"/>
                                                 </part>
                                             </xsl:if>
@@ -227,21 +235,21 @@
                                             localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Sy_NV_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of
                                                   select="Barsoum_Sy_NV_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Sy_NV_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Barsoum_Sy_NV_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Syriac_NV_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of select="Barsoum_Syriac_NV_Titles"/>
                                                 </part>
                                             </xsl:if>
@@ -254,21 +262,21 @@
                                             localType="#Barsoum-SY">
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Sy_V_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of
                                                   select="Barsoum_Sy_V_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Sy_V_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Barsoum_Sy_V_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_Sy_V_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of select="Barsoum_Sy_V_Titles"/>
                                                 </part>
                                             </xsl:if>
@@ -281,13 +289,13 @@
                             <!-- Test whether input data has the names. -->
                             <xsl:if
                                 test="string-length(normalize-space(concat(Barsoum_En_Full,Barsoum_Ar_Full,Barsoum_Sy_NV_Full))) > 0">
-                                <nameEntryParallel localType="Barsoum">
+                                <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
                                     <!-- Test for English name. -->
                                     <xsl:if test="string-length(normalize-space(Barsoum_En_Full)) > 0">
                                         <nameEntry scriptCode="Latn"
                                             transliteration="Barsoum-Anglicized" xml:lang="eng"
                                             localType="#Barsoum-EN">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of select="Barsoum_En_Full"/>
                                             </part>
                                         </nameEntry>
@@ -296,7 +304,7 @@
                                     <xsl:if test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
                                         <nameEntry scriptCode="Arab" xml:lang="ara"
                                             localType="#Barsoum-AR">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of select="Barsoum_Ar_Full"/>
                                             </part>
                                         </nameEntry>
@@ -306,7 +314,7 @@
                                         test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
                                         <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Barsoum-SY">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of select="Barsoum_Sy_NV_Full"/>
                                             </part>
                                         </nameEntry>
@@ -315,7 +323,7 @@
                                     <xsl:if test="string-length(normalize-space(Barsoum_Sy_V_Full)) > 0">
                                         <nameEntry scriptCode="Syrj" xml:lang="syr"
                                             localType="#Barsoum-SY">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of select="Barsoum_Sy_V_Full"/>
                                             </part>
                                         </nameEntry>
@@ -336,21 +344,21 @@
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Given)) > 0">
-                                                  <part localType="given">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Given"/>
                                                   </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Family)) > 0">
-                                                  <part localType="family">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Family"/>
                                                   </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Titles)) > 0">
-                                                  <part localType="termsOfAddress">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Titles"/>
                                                   </part>
@@ -360,21 +368,21 @@
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Given)) > 0">
-                                                  <part localType="given">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_V_Given"/>
                                                   </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Family)) > 0">
-                                                  <part localType="family">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_V_Family"/>
                                                   </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Titles)) > 0">
-                                                  <part localType="termsOfAddress">
+                                                  <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of select="Abdisho_YdQ_Sy_V_Titles"
                                                   />
                                                   </part>
@@ -387,14 +395,14 @@
                                     <nameEntryParallel localType="#Abdisho-YDQ">
                                         <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Full"/>
                                             </part>
                                         </nameEntry>
                                         <nameEntry scriptCode="Syre" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_V_Full"/>
                                             </part>
@@ -412,21 +420,21 @@
                                             localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                   <xsl:value-of
                                                   select="Abdisho_YdQ_Sy_NV_Titles"/>
                                                 </part>
@@ -435,7 +443,7 @@
                                     </xsl:if>
                                     <nameEntry scriptCode="Syrc" xml:lang="syr"
                                         localType="#Abdisho-YDQ">
-                                        <part localType="verbatim">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                             <xsl:value-of
                                                 select="Abdisho_YdQ_Sy_NV_Full"/>
                                         </part>
@@ -450,21 +458,21 @@
                                         <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                     <xsl:value-of
                                                         select="Abdisho_YdQ_Sy_V_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                     <xsl:value-of
                                                         select="Abdisho_YdQ_Sy_V_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_V_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                     <xsl:value-of
                                                         select="Abdisho_YdQ_Sy_V_Titles"/>
                                                 </part>
@@ -472,7 +480,7 @@
                                         </nameEntry>
                                     </xsl:if>
                                     <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
-                                        <part localType="verbatim">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                             <xsl:value-of
                                                 select="Abdisho_YdQ_Sy_V_Full"/>
                                         </part>
@@ -492,21 +500,21 @@
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given)) > 0">
-                                                    <part localType="given">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                         <xsl:value-of
                                                             select="Abdisho_Syriac_BO_NV_Given"/>
                                                     </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_BO_Sy_NV_Family)) > 0">
-                                                    <part localType="family">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                         <xsl:value-of
                                                             select="Abdisho_BO_Sy_NV_Family"/>
                                                     </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_BO_Sy_NV_Titles)) > 0">
-                                                    <part localType="termsOfAddress">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                         <xsl:value-of
                                                             select="Abdisho_BO_Sy_NV_Titles"/>
                                                     </part>
@@ -516,21 +524,21 @@
                                                 localType="#Abdisho-YDQ">
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_BO_Sy_V_Given)) > 0">
-                                                    <part localType="given">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                         <xsl:value-of
                                                             select="Abdisho_BO_Sy_V_Given"/>
                                                     </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_BO_Sy_V_Family)) > 0">
-                                                    <part localType="family">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                         <xsl:value-of
                                                             select="Abdisho_BO_Sy_V_Family"/>
                                                     </part>
                                                 </xsl:if>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Abdisho_BO_Sy_V_Titles)) > 0">
-                                                    <part localType="termsOfAddress">
+                                                    <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                         <xsl:value-of select="Abdisho_BO_Sy_V_Titles"
                                                         />
                                                     </part>
@@ -543,14 +551,14 @@
                                     <nameEntryParallel localType="#Abdisho-YDQ">
                                         <nameEntry scriptCode="Syrc" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of
                                                     select="Abdisho_BO_Sy_NV_Full"/>
                                             </part>
                                         </nameEntry>
                                         <nameEntry scriptCode="Syre" xml:lang="syr"
                                             localType="#Abdisho-YDQ">
-                                            <part localType="verbatim">
+                                            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                                 <xsl:value-of
                                                     select="Abdisho_BO_Sy_V_Full"/>
                                             </part>
@@ -568,21 +576,21 @@
                                             localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_Syriac_BO_NV_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                     <xsl:value-of
                                                         select="Abdisho_Syriac_BO_NV_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_BO_Sy_NV_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                     <xsl:value-of
                                                         select="Abdisho_BO_Sy_NV_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_BO_Sy_NV_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                     <xsl:value-of
                                                         select="Abdisho_BO_Sy_NV_Titles"/>
                                                 </part>
@@ -591,7 +599,7 @@
                                     </xsl:if>
                                     <nameEntry scriptCode="Syrc" xml:lang="syr"
                                         localType="#Abdisho-YDQ">
-                                        <part localType="verbatim">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                             <xsl:value-of
                                                 select="Abdisho_BO_Sy_NV_Full"/>
                                         </part>
@@ -606,21 +614,21 @@
                                         <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_BO_Sy_V_Given)) > 0">
-                                                <part localType="given">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#given">
                                                     <xsl:value-of
                                                         select="Abdisho_BO_Sy_V_Given"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_BO_Sy_V_Family)) > 0">
-                                                <part localType="family">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#family">
                                                     <xsl:value-of
                                                         select="Abdisho_BO_Sy_V_Family"/>
                                                 </part>
                                             </xsl:if>
                                             <xsl:if
                                                 test="string-length(normalize-space(Abdisho_BO_Sy_V_Titles)) > 0">
-                                                <part localType="termsOfAddress">
+                                                <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">
                                                     <xsl:value-of
                                                         select="Abdisho_BO_Sy_V_Titles"/>
                                                 </part>
@@ -628,14 +636,14 @@
                                         </nameEntry>
                                     </xsl:if>
                                     <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
-                                        <part localType="verbatim">
+                                        <part localType="http://syriaca.org/vocab/eac/localType#verbatim">
                                             <xsl:value-of
                                                 select="Abdisho_BO_Sy_V_Full"/>
                                         </part>
                                     </nameEntry>
                                 </xsl:when>
                             </xsl:choose>
-                        </identity>
+                        </identity>                        
                     </cpfDescription>
                 </eac-cpf>
             </xsl:result-document>
