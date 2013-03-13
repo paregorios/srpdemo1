@@ -13,7 +13,9 @@
 
         <!-- Create an EAC file for each row. -->
         <xsl:for-each select="row">
-            <!-- TO DO: Make sure to filter out non-authors. -->
+            <!-- TO DO: Make sure to filter out non-persons/non-corporate-bodies. -->
+            <!-- Create a variable for the entityId URL. -->
+            <xsl:variable name="entityId">http://syriaca.org/person/<xsl:value-of select="SRP_ID"/></xsl:variable>
             <!-- Write the file to the subdirectory "output2" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename" select="concat('output2/',SRP_ID,'.xml')"/>
             <xsl:result-document href="{$filename}" format="xml">
@@ -54,85 +56,124 @@
                             </maintenanceEvent>
                         </maintenanceHistory>
                         <sources>
-                            <source xlink:href="http://syriaca.org">
-                                <sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
-                                    (syriaca.org)</sourceEntry>
+                            <source xlink:href="{$entityId}" xml:id="syriaca.org">
+                                <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title>The Syriac Reference Portal (syriaca.org)<abbr>syriaca.org</abbr></title>
+                                        <!-- What pointer should we use here, if any? -->
+                                        <ptr target="http://syriaca.org/about"/>
+                                    </bibl>
+                                </objectXMLWrap>
                             </source>
                             <xsl:if test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                <!-- Need to also test for "None," etc. or remove from source data -->
                                 <source xml:id="GEDSH">
-                                    <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
-                                        Heritage</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>Entry <xsl:value-of select="GEDSH_Entry_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title>Gorgias Encyclopedic Dictionary of the Syriac
+                                            Heritage<abbr>GEDSH</abbr></title>
+                                        <!-- How do we cite an entry number? Also we can put @target URL on citedRange if it refers to the particular unit. -->
+                                        <xsl:if test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
+                                        <citedRange unit="entry"><xsl:attribute name="from"><xsl:value-of select="GEDSH_Entry_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        </xsl:if>
+                                            <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if
                                 test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
                                 <source xml:id="Barsoum-SY">
-                                    <sourceEntry>Barsoum (Syriac)</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>Page <xsl:value-of select="Barsoum_Sy_Page_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (Syriac)</abbr></title>
+                                        <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
                                 <source xml:id="Barsoum-AR">
-                                    <sourceEntry>Barsoum (Arabic)</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>Page <xsl:value-of select="Barsoum_Ar_Page_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية<abbr>Barsoum (Arabic)</abbr></title>
+                                        <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_Ar_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if test="string-length(normalize-space(Barsoum_En_Full)) > 0">
                                 <source xml:id="Barsoum-EN">
-                                    <sourceEntry>Barsoum (English)</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>
-                                            <!-- Is the entry num the same for all versions of Barsoum or does it apply to English only? -->
-                                            <xsl:if test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
-                                                Entry <xsl:value-of select="Barsoum_En_Entry_Num"/>, 
-                                            </xsl:if>
-                                                Page <xsl:value-of select="Barsoum_En_Page_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (English)</abbr></title>
+                                        <!-- Is the entry num the same for all versions of Barsoum or does it apply to English only? -->
+                                        <!-- How do we cite an entry number? -->
+                                        <xsl:if test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
+                                        <citedRange unit="entry"><xsl:attribute name="from"><xsl:value-of select="Barsoum_En_Entry_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        </xsl:if>
+                                            <!-- Can we have multiple citedRange elements? -->
+                                        <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Barsoum_En_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if
                                 test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Full)) > 0">
                                 <source xml:id="Abdisho-YDQ">
-                                    <sourceEntry>Abdisho (YDQ)</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>Page <xsl:value-of select="Abdisho_YdQ_Sy_Page_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <!-- What's the title for Abdisho? -->
+                                        <title><abbr>Abdisho (YDQ)</abbr></title>
+                                        <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Abdisho_YdQ_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if
                                 test="string-length(normalize-space(Abdisho_BO_Sy_NV_Full)) > 0">
                                 <!-- Need OR test for vocalized also -->
                                 <source xml:id="Abdisho-BO">
-                                    <sourceEntry>Abdisho (BO III)</sourceEntry>
-                                    <descriptiveNote>
-                                        <p>Page <xsl:value-of select="Abdisho_BO_Sy_Page_Num"/></p>
-                                    </descriptiveNote>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <!-- What's the title for Abdisho? -->
+                                        <title><abbr>Abdisho (BO III)</abbr></title>
+                                        <citedRange unit="pp"><xsl:attribute name="from"><xsl:value-of select="Abdisho_BO_Sy_Page_Num"></xsl:value-of></xsl:attribute></citedRange>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                             <xsl:if test="string-length(normalize-space(CBSC_En)) > 0">
                                 <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB"
                                     xml:id="CBSC">
-                                    <sourceEntry>Comprehensive Bibliography of Syriac
-                                        Christianity</sourceEntry>
+                                    <objectXMLWrap>
+                                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                        <title>Comprehensive Bibliography of Syriac Christianity<abbr>CBSC</abbr></title>
+                                        <!-- What pointer should we use here? -->
+                                        <ptr target="http://syriaca.org/bibl/"/>
+                                    </bibl>
+                                    </objectXMLWrap>
                                 </source>
                             </xsl:if>
                         </sources>
                     </control>
                     <cpfDescription>
                         <identity>
-                            <entityId>http://syriaca.org/person/<xsl:value-of select="SRP_ID"/></entityId>
+                            <entityId><xsl:value-of select="$entityId"/></entityId>
                             <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
                             <entityId><xsl:value-of select="VIAF_URL"/></entityId>
                             <entityType>person</entityType>
-                            <!-- Need to create columns in source data for syriaca.org authorized forms. -->
+                            <!-- Need to create columns in source data for syriaca.org authorized forms (for Syriac at least). For English, can just pull them in using GEDSH/GEDSH-style. -->
                             <!-- Give GEDSH name in decomposed name parts. -->
                             <xsl:if
                                 test="string-length(normalize-space(concat(GEDSH_Given,GEDSH_Family,GEDSH_Titles))) > 0">

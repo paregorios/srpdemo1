@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="urn:isbn:1-931666-33-4"
-         xmlns:eac="urn:isbn:1-931666-33-4"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
    <control>
@@ -20,79 +19,104 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-12T20:26:31.336-04:00"/>
+            <eventDateTime standardDateTime="2013-03-13T14:16:34.643-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
       </maintenanceHistory>
       <sources>
-         <source xlink:href="http://syriaca.org">
-            <sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
-                                    (syriaca.org)</sourceEntry>
+         <source xlink:href="http://syriaca.org/person/14" xml:id="syriaca.org">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Syriac Reference Portal (syriaca.org)<abbr>syriaca.org</abbr>
+                  </title>
+                  <ptr target="http://syriaca.org/about"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-SY">
-            <sourceEntry>Barsoum (Syriac)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 226</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (Syriac)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="226"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-AR">
-            <sourceEntry>Barsoum (Arabic)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 203</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية<abbr>Barsoum (Arabic)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="203"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-EN">
-            <sourceEntry>Barsoum (English)</sourceEntry>
-            <descriptiveNote>
-               <p>Page </p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (English)</abbr>
+                  </title>
+                  <citedRange unit="entry" from="10 to 13"/>
+                  <citedRange unit="pp" from=""/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
-            <sourceEntry>Comprehensive Bibliography of Syriac
-                                        Christianity</sourceEntry>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Comprehensive Bibliography of Syriac Christianity<abbr>CBSC</abbr>
+                  </title>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
       </sources>
    </control>
    <cpfDescription>
       <identity>
+         <entityId>http://syriaca.org/person/14</entityId>
+         <entityId/>
          <entityType>person</entityType>
-         <nameEntryParallel localType="Barsoum">
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="given">Simon</part>
-               <part localType="termsOfAddress">of Samosata</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">Simon</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">of Samosata</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="given">شمعون</part>
-               <part localType="termsOfAddress">السميساطي</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">شمعون</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">السميساطي</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܫܡܥܘܢ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܫܡܥܘܢ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܫܶܡܥܘܽܢ</part>
-               <part localType="termsOfAddress">ܫܡܺܝܫܛܳܝܐ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܫܶܡܥܘܽܢ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܫܡܺܝܫܛܳܝܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
-         <nameEntryParallel localType="Barsoum">
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="verbatim">Simon of Samosata</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">Simon of Samosata</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="verbatim">شمعون السميساطي</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">شمعون السميساطي</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܫܡܥܘܢ ܫܡܝܫܛܝܐ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܫܡܥܘܢ ܫܡܝܫܛܝܐ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܫܶܡܥܘܽܢ ܫܡܺܝܫܛܳܝܐ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܫܶܡܥܘܽܢ ܫܡܺܝܫܛܳܝܐ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="urn:isbn:1-931666-33-4"
-         xmlns:eac="urn:isbn:1-931666-33-4"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xsi:schemaLocation="urn:isbn:1-931666-33-4 http://eac.staatsbibliothek-berlin.de/schema/cpf.xsd">
    <control>
       <recordId>13</recordId>
-      <otherRecordId>http://viaf.org/hosted/syriac/26172</otherRecordId>
+      <otherRecordId>http://viaf.org/hosted/syriac/26172/
+                            </otherRecordId>
       <maintenanceStatus>new</maintenanceStatus>
       <maintenanceAgency>
          <agencyName>Syriac Reference Portal</agencyName>
@@ -21,139 +21,177 @@
       <maintenanceHistory>
          <maintenanceEvent>
             <eventType>created</eventType>
-            <eventDateTime standardDateTime="2013-03-12T20:26:31.336-04:00"/>
+            <eventDateTime standardDateTime="2013-03-13T14:16:34.643-04:00"/>
             <agentType>machine</agentType>
             <agent>Syriac Reference Portal</agent>
          </maintenanceEvent>
       </maintenanceHistory>
       <sources>
-         <source xlink:href="http://syriaca.org">
-            <sourceEntry xml:id="syriaca.org">The Syriac Reference Portal
-                                    (syriaca.org)</sourceEntry>
+         <source xlink:href="http://syriaca.org/person/13" xml:id="syriaca.org">
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Syriac Reference Portal (syriaca.org)<abbr>syriaca.org</abbr>
+                  </title>
+                  <ptr target="http://syriaca.org/about"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="GEDSH">
-            <sourceEntry>Gorgias Encyclopedic Dictionary of the Syriac
-                                        Heritage</sourceEntry>
-            <descriptiveNote>
-               <p>Entry </p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Gorgias Encyclopedic Dictionary of the Syriac
+                                            Heritage<abbr>GEDSH</abbr>
+                  </title>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-SY">
-            <sourceEntry>Barsoum (Syriac)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 218</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (Syriac)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="218"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-AR">
-            <sourceEntry>Barsoum (Arabic)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 196</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title xml:lang="ara">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية<abbr>Barsoum (Arabic)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="196"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Barsoum-EN">
-            <sourceEntry>Barsoum (English)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 229</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences<abbr>Barsoum (English)</abbr>
+                  </title>
+                  <citedRange unit="entry" from="9"/>
+                  <citedRange unit="pp" from="229"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Abdisho-YDQ">
-            <sourceEntry>Abdisho (YDQ)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 69</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>
+                     <abbr>Abdisho (YDQ)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="69"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xml:id="Abdisho-BO">
-            <sourceEntry>Abdisho (BO III)</sourceEntry>
-            <descriptiveNote>
-               <p>Page 61</p>
-            </descriptiveNote>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>
+                     <abbr>Abdisho (BO III)</abbr>
+                  </title>
+                  <citedRange unit="pp" from="61"/>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
          <source xlink:href="http://www.csc.org.il/db/db.aspx?db=SB" xml:id="CBSC">
-            <sourceEntry>Comprehensive Bibliography of Syriac
-                                        Christianity</sourceEntry>
+            <objectXMLWrap>
+               <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                  <title>Comprehensive Bibliography of Syriac Christianity<abbr>CBSC</abbr>
+                  </title>
+                  <ptr target="http://syriaca.org/bibl/"/>
+               </bibl>
+            </objectXMLWrap>
          </source>
       </sources>
    </control>
    <cpfDescription>
       <identity>
+         <entityId>http://syriaca.org/person/13</entityId>
+         <entityId>http://viaf.org/hosted/syriac/26172</entityId>
          <entityType>person</entityType>
          <nameEntry localType="#GEDSH"
                     scriptCode="Latn"
                     transliteration="GEDSH"
                     xml:lang="eng">
-            <part localType="given">Ephrem</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#given">Ephrem</part>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntry>
          <nameEntry localType="#GEDSH"
                     scriptCode="Latn"
                     transliteration="GEDSH"
                     xml:lang="eng">
-            <part localType="verbatim">Ephrem</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">Ephrem</part>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntry>
-         <nameEntryParallel localType="Barsoum">
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="given">Ephraim</part>
-               <part localType="family">the Syrian</part>
-               <part localType="termsOfAddress">St.</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">Ephraim</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#family">the Syrian</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">St.</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="given">افرام</part>
-               <part localType="termsOfAddress">السرياني، مار، الملفان</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">افرام</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">السرياني، مار، الملفان</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܐܦܪܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܐܦܪܝܡ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="given">ܐܰܦܪܶܝܡ</part>
-               <part localType="termsOfAddress">ܡܳܪܝ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܐܰܦܪܶܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#termsOfAddress">ܡܳܪܝ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
-         <nameEntryParallel localType="Barsoum">
+         <nameEntryParallel localType="http://syriaca.org/vocab/eac/localType#Barsoum">
             <nameEntry scriptCode="Latn"
                        transliteration="Barsoum-Anglicized"
                        xml:lang="eng"
                        localType="#Barsoum-EN">
-               <part localType="verbatim">St. Ephraim the Syrian</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">St. Ephraim the Syrian</part>
             </nameEntry>
             <nameEntry scriptCode="Arab" xml:lang="ara" localType="#Barsoum-AR">
-               <part localType="verbatim">مار افرام الملفان السرياني</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">مار افرام الملفان السرياني</part>
             </nameEntry>
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܡܪܝ ܐܦܪܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܡܪܝ ܐܦܪܝܡ</part>
             </nameEntry>
             <nameEntry scriptCode="Syrj" xml:lang="syr" localType="#Barsoum-SY">
-               <part localType="verbatim">ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܡܳܪܝ ܐܰܦܪܶܝܡ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
          <nameEntryParallel localType="#Abdisho-YDQ">
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
-               <part localType="given">ܐܦܪܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܐܦܪܝܡ</part>
             </nameEntry>
             <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
-               <part localType="given">ܐܲܦܪܹܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#given">ܐܲܦܪܹܝܡ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
          <nameEntryParallel localType="#Abdisho-YDQ">
             <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
-               <part localType="verbatim">ܐܦܪܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܐܦܪܝܡ</part>
             </nameEntry>
             <nameEntry scriptCode="Syre" xml:lang="syr" localType="#Abdisho-YDQ">
-               <part localType="verbatim">ܐܲܦܪܹܝܡ</part>
+               <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܐܲܦܪܹܝܡ</part>
             </nameEntry>
             <alternativeForm>syriaca.org</alternativeForm>
          </nameEntryParallel>
          <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
-            <part localType="given">ܐܦܪܝܡ</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#given">ܐܦܪܝܡ</part>
          </nameEntry>
          <nameEntry scriptCode="Syrc" xml:lang="syr" localType="#Abdisho-YDQ">
-            <part localType="verbatim">ܐܦܪܝܡ</part>
+            <part localType="http://syriaca.org/vocab/eac/localType#verbatim">ܐܦܪܝܡ</part>
          </nameEntry>
       </identity>
    </cpfDescription>
