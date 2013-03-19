@@ -9,15 +9,62 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Title</title>
+        <title xml:lang="en">Example TEI places (preferred English place name for single-place TEI files)</title>
+        <respStmt>
+        	<resp>a collaborative work of</resp>
+        	<name>the Syriac Reference Portal</name>
+        </respStmt>
       </titleStmt>
+      <editionStmt>
+      	<edition n="0">Initial draft</edition>
+      	<respStmt>
+      		<resp>drafted by</resp>
+      		<name>Thomas A. Carlson</name>
+      	</respStmt>
+      </editionStmt>
       <publicationStmt>
-        <p>Publication Information</p>
+      	<authority>The Syriac Reference Portal (Syriaca.org)</authority>
+      	<availability>
+      		<licence target="http://creativecommons.org/licenses/by/3.0/">
+      			Distributed under a Creative Commons Attribution 3.0 Unported License
+      		</licence>
+      	</availability>
+      	<date>2013-03-15</date>
       </publicationStmt>
       <sourceDesc>
-        <p>Information about the source</p>
+      	<bibl xml:id="bib78-1">
+      		<title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+      		<ptr target="http://syriaca.org/bibl/1"/>
+      	</bibl>
+      	<bibl xml:id="bib78-2">
+      		<title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+      		<ptr target="http://syriaca.org/bibl/4"/>
+      		<citedRange unit="pp">553</citedRange>
+      	</bibl>
+      	<bibl xml:id="bib78-3">
+      		<title xml:lang="en">Barsoum Syriac</title>
+      		<ptr target="http://syriaca.org/bibl/3"/>
+      		<citedRange unit="pp">556</citedRange>
+      	</bibl>
+      	<bibl xml:id="bib78-4">
+      		<title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+      		<ptr target="http://syriaca.org/bibl/2"/>
+      		<citedRange unit="pp">516</citedRange>
+      	</bibl>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+  	<projectDesc>
+  		<p>The Syriac Reference Portal is a really cool project.</p>
+  	</projectDesc>
+    </encodingDesc>
+    <revisionDesc>
+    	<change when="2013-04-15" who="#ngibson" n="1.1" target="#ng">ADDED: Pleiades coordinates</change>
+    	<change when="2013-04-01" who="#dmichelson" target="#dam">FIXED: Ufra to Urfa</change>
+    	<change when="2013-03-16" who="#tcarlson" n="1.0">ADDED: teiHeader/revisionDesc</change>
+    	<change when="2013-03-15" who="#tcarlson">ADDED: teiHeader</change>
+    	<change when="2013-03-01" who="#tcarlson" n="0.1">CREATED: place</change>
+    </revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -32,10 +79,12 @@
 		</location>
       		<idno type="URI">http://syriaca.org/place/658</idno>
       		<bibl xml:id="bib658-1">
+      			<title xml:lang="en">Barsoum Syriac</title>
       			<ptr target="http://syriaca.org/bibl/3"/>
       			<citedRange unit="pp">546</citedRange>
       		</bibl>
       		<bibl xml:id="bib658-2">
+      			<title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
       			<ptr target="http://syriaca.org/bibl/2"/>
       			<citedRange unit="pp">510</citedRange>
       		</bibl>
@@ -45,6 +94,7 @@
 		<placeName xml:lang="en" source="#bib656-1">Karka d'Ledan</placeName>
 		<idno type="URI">http://syriaca.org/place/656</idno>
 		<bibl xml:id="bib656-1">
+			<title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
 			<ptr target="http://syriaca.org/bibl/5"/>
 		</bibl>
 	</place>
@@ -56,12 +106,13 @@
 		<idno type="URI">http://pleiades.stoa.org/places/658437/</idno>
 		<idno type="URI">http://en.wikipedia.org/wiki/Sarrin</idno>
 		<bibl xml:id="bib655-1">
+			<title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
 			<ptr target="http://syriaca.org/bibl/5"/>
 		</bibl>
 	</place>
 	<place xml:id="SRP-id-78" type="city">
 		<placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2">Edessa</placeName>
-		<placeName xml:lang="en" source="#bib78-1">Urfa</placeName>
+		<placeName xml:id="dam" xml:lang="en" source="#bib78-1">Urfa</placeName>
 		<placeName xml:lang="syr" source="#bib78-3">ܐܘܪܗܳܝ</placeName>
 		<placeName xml:lang="ar" source="#bib78-4">الرها</placeName>
 		<desc xml:lang="en">
@@ -79,6 +130,9 @@
 		<location type="gps" source="#bib78-1">
 			<geo>37.15 38.8</geo>
 		</location>
+		<location xml:id="ng" type="gps" source="http://pleiades.stoa.org/places/658457/dare-location">
+			<geo>37.14863 38.786696</geo>
+		</location>
 		<location type="relative" source="#bib78-2">
 			<measure unit="days-journey" quantity="5">five day journey</measure>
 			<offset>eastward from</offset>
@@ -94,21 +148,7 @@
 		<idno type="URI">http://pleiades.stoa.org/places/658457</idno>
 		<idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
 		<idno type="URI">http://en.wikipedia.org/wiki/Şanlıurfa</idno>
-		<bibl xml:id="bib78-1">
-			<ptr target="http://syriaca.org/bibl/1"/>
-		</bibl>
-		<bibl xml:id="bib78-2">
-			<ptr target="http://syriaca.org/bibl/4"/>
-			<citedRange unit="pp">553</citedRange>
-		</bibl>
-		<bibl xml:id="bib78-3">
-			<ptr target="http://syriaca.org/bibl/3"/>
-			<citedRange unit="pp">556</citedRange>
-		</bibl>
-		<bibl xml:id="bib78-4">
-			<ptr target="http://syriaca.org/bibl/2"/>
-			<citedRange unit="pp">516</citedRange>
-		</bibl>
+		<!-- <bibl> elements placed in TEI/teiHeader/fileDesc/sourceDesc -->
 	</place>
       	<place xml:id="SRP-id-69" type="monastery">
       		<placeName xml:lang="en" source="http://syriaca.org/place/69 #bib69-1">Dayr al-Zaʿfarān</placeName>
@@ -131,21 +171,26 @@
       		<idno type="URI">http://syriaca.org/place/69</idno>
       		<idno type="URI">http://en.wikipedia.org/wiki/Mor_Hananyo_Monastery</idno>
       		<bibl xml:id="bib69-1">
+      			<title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
       			<ptr target="http://syriaca.org/bibl/1"/>
       		</bibl>
       		<bibl xml:id="bib69-2">
+      			<title xml:lang="en">Barsoum Syriac</title>
       			<ptr target="http://syriaca.org/bibl/3"/>
       			<citedRange unit="pp">545</citedRange>
       		</bibl>
       		<bibl xml:id="bib69-3">
+      			<title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
       			<ptr target="http://syriaca.org/bibl/2"/>
       			<citedRange unit="pp">510</citedRange>
       		</bibl>
       		<bibl xml:id="bib69-4">
+      			<title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
       			<ptr target="http://syriaca.org/bibl/4"/>
       			<citedRange unit="pp">570</citedRange>
       		</bibl>
       		<bibl xml:id="bib69-5">
+      			<title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
       			<ptr target="http://syriaca.org/bibl/5"/>
       		</bibl>
       	</place>
@@ -160,21 +205,26 @@
       		<idno type="URI">http://syriaca.org/place/202</idno>
       		<idno type="URI">http://en.wikipedia.org/wiki/Tigris</idno>
       		<bibl xml:id="bib202-1">
+      			<title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
       			<ptr target="http://syriaca.org/bibl/1"/>
       		</bibl>
       		<bibl xml:id="bib202-2">
+      			<title xml:lang="en">Barsoum Syriac</title>
       			<ptr target="http://syriaca.org/bibl/3"/>
       			<citedRange unit="pp">536</citedRange>
       		</bibl>
       		<bibl xml:id="bib202-3">
+      			<title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
       			<ptr target="http://syriaca.org/bibl/2"/>
       			<citedRange unit="pp">504</citedRange>
       		</bibl>
       		<bibl xml:id="bib202-4">
+      			<title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
       			<ptr target="http://syriaca.org/bibl/4"/>
       			<citedRange unit="pp">551</citedRange>
       		</bibl>
       		<bibl xml:id="bib202-5">
+      			<title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
       			<ptr target="http://syriaca.org/bibl/5"/>
       		</bibl>
       	</place>
@@ -189,6 +239,7 @@
       		<idno type="URI">http://en.wikipedia.org/wiki/Chalcedon</idno>
       		<idno type="URI">http://en.wikipedia.org/wiki/Kadıköy</idno>
       		<bibl xml:id="bib622-1">
+      			<title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
       			<ptr target="http://syriaca.org/bibl/5"/>
       		</bibl>
       	</place>
