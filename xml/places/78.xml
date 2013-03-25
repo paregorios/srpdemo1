@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">Edessa</title>
+                <respStmt>
+                    <resp>a collaborative work of</resp>
+                    <name>Syriaca.org: The Syriac Reference Portal</name>
+                </respStmt>
+                <respStmt xml:id="tcarlson">
+                    <name>Thomas A. Carlson</name>
+                    <resp>creator</resp>
+                </respStmt>
+                <respStmt xml:id="raydin">
+                    <name>Robert Aydin</name>
+                    <resp>Syriac description entry</resp>
+                </respStmt>
+                <respStmt xml:id="rakhrass">
+                    <name>Dayroyo Roger-Youssef Akhrass</name>
+                    <resp>Arabic description entry</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-03-25</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-03-25" who="#tcarlson">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="SRP-id-78" type="city">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2">Edessa</placeName>
+                    <placeName xml:lang="en" source="#bib78-1">Urfa</placeName>
+                    <placeName xml:lang="syr" source="#bib78-3">ܐܘܪܗܳܝ</placeName>
+                    <placeName xml:lang="ar" source="#bib78-4">الرها</placeName>
+                    <desc xml:lang="en">
+                        <quote source="#bib78-1">183. Edessa</quote>
+                    </desc>
+                    <desc xml:lang="syr">
+                        <quote source="#bib78-3">ܡܕܡ ܥܠ ܐܘܪܗܝ</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib78-4">مدينة مشهورة خمسة ايام عن حلب شرقا وتسمى اليوم اورفه.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib78-2">a famous city, five day journey eastward from Aleppo, now called Urfa.</quote>
+                    </desc>
+                    <location type="gps" source="#bib78-1">
+                        <geo>37.15 38.8</geo>
+                    </location>
+                    <location type="relative" source="#bib78-2">
+                        <measure unit="days-journey" quantity="5">five day journey</measure>
+                        <offset>eastward from</offset>
+                        <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>
+                    </location>
+                    <event when="-0304" source="#bib78-1">
+                        <desc xml:lang="en">Renamed Edessa by Seleucus I Nicator.</desc>
+                    </event>
+                    <event when="0201" source="#bib78-1">
+                        <desc xml:lang="en">Flood of the river Daysan destroyed part of city.</desc>
+                    </event>
+                    <idno type="URI">http://syriaca.org/place/78</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Şanlıurfa</idno>
+                    <bibl xml:id="bib78-1">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                    </bibl>
+                    <bibl xml:id="bib78-2">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">553</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-3">
+                        <title xml:lang="en">Barsoum Syriac</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">556</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib78-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">516</citedRange>
+                    </bibl>
+                </place>
+                <relation name="resided" active="http://syriaca.org/person/13" passive="#SRP-id-78" from="0363" to="0373" source="#bib78-1"/>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
