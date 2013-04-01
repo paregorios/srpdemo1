@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
 <TEI
     xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:svg="http://www.w3.org/2000/svg"
@@ -9,23 +10,26 @@
         <fileDesc>
             <titleStmt>
                 <title xml:lang="en">Edessa</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>                    
                 <respStmt>
-                    <resp>a collaborative work of</resp>
-                    <name>Syriaca.org: The Syriac Reference Portal</name>
-                </respStmt>
-                <respStmt xml:id="tcarlson">
-                    <name>Thomas A. Carlson</name>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
                     <resp>creator</resp>
                 </respStmt>
-                <respStmt xml:id="raydin">
-                    <name>Robert Aydin</name>
+                <respStmt>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
                     <resp>Syriac description entry</resp>
                 </respStmt>
-                <respStmt xml:id="rakhrass">
-                    <name>Dayroyo Roger-Youssef Akhrass</name>
+                <respStmt>
+                    <name  ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
                     <resp>Arabic description entry</resp>
                 </respStmt>
             </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
                 <availability>
@@ -40,17 +44,19 @@
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
-            <change when="2013-03-25" who="#tcarlson">CREATED: place</change>
+            <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
+            <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <listPlace>
                 <place xml:id="SRP-id-78" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2">Edessa</placeName>
+                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2 #bib78-5">Edessa</placeName>
                     <placeName xml:lang="en" source="#bib78-1">Urfa</placeName>
-                    <placeName xml:lang="syr" source="#bib78-3">ܐܘܪܗܳܝ</placeName>
+                    <placeName xml:lang="syr" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
                     <placeName xml:lang="ar" source="#bib78-4">الرها</placeName>
+                    <desc xml:id="abstract-en-78" xml:lang="en">A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</desc>
                     <desc xml:lang="en">
                         <quote source="#bib78-1">183. Edessa</quote>
                     </desc>
@@ -84,6 +90,7 @@
                     <bibl xml:id="bib78-1">
                         <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                         <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">138-139</citedRange>
                     </bibl>
                     <bibl xml:id="bib78-2">
                         <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
@@ -100,7 +107,13 @@
                         <ptr target="http://syriaca.org/bibl/2"/>
                         <citedRange unit="pp">516</citedRange>
                     </bibl>
+                    <bibl xml:id="bib78-5">
+                        <title xml:lang="en">Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838</title>
+                        <ptr target="http://syriaca.org/bibl/8"/>
+                        <citedRange unit="pp">2:912</citedRange>
+                    </bibl>
                 </place>
+                <relation name="contains" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="#SRP-id-78" source="#bib78-1"/>
                 <relation name="resided" active="http://syriaca.org/person/13" passive="#SRP-id-78" from="0363" to="0373" source="#bib78-1"/>
             </listPlace>
         </body>

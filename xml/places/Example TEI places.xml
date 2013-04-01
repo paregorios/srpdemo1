@@ -9,15 +9,18 @@
     <fileDesc>
       <titleStmt>
         <title xml:lang="en">Example TEI places</title>
+        <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+        <funder>The National Endowment for the Humanities</funder>
+        <funder>The International Balzan Prize Foundation</funder>
+        <principal>David A. Michelson</principal>                    
         <respStmt>
-        	<resp>a collaborative work of</resp>
-        	<name>Syriaca.org: The Syriac Reference Portal</name>
-        </respStmt>
-        <respStmt>
-        	<name xml:id="tcarlson">Thomas A. Carlson</name>
+        	<name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
         	<resp>creator</resp>
         </respStmt>
       </titleStmt>
+      <editionStmt>
+    	<edition n="1.0"/>
+      </editionStmt>
       <publicationStmt>
       	<authority>Syriaca.org: The Syriac Reference Portal</authority>
       	<availability>
@@ -32,10 +35,12 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-    	<change when="2013-03-25" who="#tcarlson">MOVED: sourceDesc/bibl elements back to Edessa place</change>
-    	<change when="2013-03-16" who="#tcarlson">ADDED: teiHeader/revisionDesc</change>
-    	<change when="2013-03-15" who="#tcarlson">ADDED: teiHeader</change>
-    	<change when="2013-03-01" who="#tcarlson">CREATED: place</change>
+    	<change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">
+    		MOVED: sourceDesc/bibl elements back to Edessa place
+    	</change>
+    	<change when="2013-03-16" who="http://syriaca.org/editors.xml#tcarlson">ADDED: teiHeader/revisionDesc</change>
+    	<change when="2013-03-15" who="http://syriaca.org/editors.xml#tcarlson">ADDED: teiHeader</change>
+    	<change when="2013-03-01" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
     </revisionDesc>
   </teiHeader>
   <text>
