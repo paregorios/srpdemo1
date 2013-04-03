@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">Chalcedon</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>                    
+                <respStmt>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                    <resp>creator</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-03-25</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
+            <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="SRP-id-622" type="city">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/622 #bib622-1">Chalcedon</placeName>
+                    <desc xml:id="abstract-en-622" xml:lang="en">A city across the Bosphorus from Constantinople, the site of an ecumenical council in 451.</desc>
+                    <idno type="URI">http://syriaca.org/place/622</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/520988/</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Chalcedon</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Kadıköy</idno>
+                    <bibl xml:id="bib622-1">
+                        <title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
