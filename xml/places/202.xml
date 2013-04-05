@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-03-25</date>
+                <date>2013-04-01</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -43,7 +43,7 @@
     <text>
         <body>
             <listPlace>
-                <place xml:id="SRP-id-202" type="river">
+                <place xml:id="place-202" type="river">
                     <placeName xml:lang="en" source="http://syriaca.org/place/202 #bib202-1 #bib202-4 #bib202-5">Tigris</placeName>
                     <placeName xml:lang="syr" source="#bib202-2">ܕܶܩܠܰܬ</placeName>
                     <placeName xml:lang="ar" source="#bib202-3">دجلة</placeName>

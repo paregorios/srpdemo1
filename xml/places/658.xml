@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-03-25</date>
+                <date>2013-04-01</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -43,7 +43,7 @@
     <text>
         <body>
             <listPlace>
-                <place xml:id="SRP-id-658" type="monastery">
+                <place xml:id="place-658" type="monastery">
                     <placeName xml:lang="en" source="http://syriaca.org/place/658">Mor Behnam Hermitage</placeName>
                     <placeName xml:lang="syr" source="#bib658-1">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)	</placeName>
                     <placeName xml:lang="ar" source="#bib658-2">صومعة مار بهنام</placeName>

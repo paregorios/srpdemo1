@@ -9,7 +9,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="en">Karka d-Ledan</title>
+                <title xml:lang="en">Ḥadyab</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>The International Balzan Prize Foundation</funder>
@@ -29,27 +29,36 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-01</date>
+                <date>2013-04-04</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
-            <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
-            <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
+            <change when="2013-04-04" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <listPlace>
-                <place xml:id="place-656" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/656">Karka d-Ledan</placeName>
-                    <placeName xml:lang="en" source="#bib656-1">Karka d'Ledan</placeName>
-                    <desc xml:id="abstract-en-656" xml:lang="en">A diocese of the Church of the East, whose bishop was a suffragan of the Metropolitan of Beth Huzaye.</desc>
-                    <idno type="URI">http://syriaca.org/place/656</idno>
-                    <bibl xml:id="bib656-1">
-                        <title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
+                <place xml:id="place-6" type="province">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/6 #bib6-1">Ḥadyab</placeName>
+                    <placeName xml:lang="en" source="#bib6-1 #bib6-2">Adiabene</placeName>
+                    <desc xml:id="abstract-en-6" xml:lang="en">A province of the Sasanian Persian Empire around Arbela.</desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib6-1">20. Adiabene</quote>
+                    </desc>
+                    <idno type="URI">http://syriaca.org/place/6</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/893935</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Adiabene</idno>
+                    <bibl xml:id="bib6-1">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                        <citedRange unit="pp">10-11</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib6-2">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
                         <ptr target="http://syriaca.org/bibl/5"/>
                     </bibl>
                 </place>

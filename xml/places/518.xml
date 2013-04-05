@@ -9,7 +9,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:lang="en">Karka d-Ledan</title>
+                <title xml:lang="en">Mount Qāsiyūn</title>
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>The International Balzan Prize Foundation</funder>
@@ -29,28 +29,41 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-01</date>
+                <date>2013-04-05</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
-            <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
-            <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
+            <change when="2013-04-05" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <listPlace>
-                <place xml:id="place-656" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/656">Karka d-Ledan</placeName>
-                    <placeName xml:lang="en" source="#bib656-1">Karka d'Ledan</placeName>
-                    <desc xml:id="abstract-en-656" xml:lang="en">A diocese of the Church of the East, whose bishop was a suffragan of the Metropolitan of Beth Huzaye.</desc>
-                    <idno type="URI">http://syriaca.org/place/656</idno>
-                    <bibl xml:id="bib656-1">
-                        <title xml:lang="en">A Comprehensive Bibliography on Syriac Christianity</title>
-                        <ptr target="http://syriaca.org/bibl/5"/>
+                <place xml:id="place-518" type="mountain">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/518">Mount Qāsiyūn</placeName>
+                    <placeName xml:lang="syr" source="#bib518-1">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
+                    <placeName xml:lang="ar" source="#bib518-2">جبل قاسيون</placeName>
+                    <placeName xml:lang="en" source="#bib518-3">Qasyun Mountain</placeName>
+                    <desc xml:id="abstract-en-518">A mountain north of Damascus.</desc>
+                    <idno type="URI">http://syriaca.org/place/518</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Mount_Qasioun</idno>
+                    <bibl xml:id="bib518-1">
+                        <title xml:lang="en">Barsoum Syriac</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">557</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib518-2">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">517</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib518-3">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">558</citedRange>
                     </bibl>
                 </place>
             </listPlace>

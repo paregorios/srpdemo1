@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-03-25</date>
+                <date>2013-04-01</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -43,7 +43,7 @@
     <text>
         <body>
             <listPlace>
-                <place xml:id="SRP-id-655" type="city">
+                <place xml:id="place-655" type="city">
                     <placeName xml:lang="en" source="http://syriaca.org/place/655">Ṣarrīn</placeName>
                     <placeName xml:lang="en" source="#bib655-1">Serrin</placeName>
                     <placeName xml:lang="en" source="#bib655-1">Sirrin</placeName>

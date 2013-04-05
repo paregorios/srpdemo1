@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:math="http://www.w3.org/1998/Math/MathML"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="en">Serugh</title>
+                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                <funder>The National Endowment for the Humanities</funder>
+                <funder>The International Balzan Prize Foundation</funder>
+                <principal>David A. Michelson</principal>                    
+                <respStmt>
+                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                    <resp>creator</resp>
+                </respStmt>
+                <respStmt>
+                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                    <resp>Syriac description entry</resp>
+                </respStmt>
+                <respStmt>
+                    <name  ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+                    <resp>Arabic description entry</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0"/>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by/3.0/">
+                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                    </licence>
+                </availability>
+                <date>2013-04-03</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Born digital.</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="place-45" type="city">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/45 #bib-45-1">Serugh</placeName>
+                    <placeName xml:lang="en" source="#bib45-1">Baṭnan</placeName>
+                    <placeName xml:lang="syr" source="#bib45-2">ܒܰܛܢܢ</placeName>
+                    <placeName xml:lang="syr" source="#bib45-3">ܣܪܘܓ</placeName>
+                    <placeName xml:lang="ar" source="#bib45-4">بَطنان</placeName>
+                    <placeName xml:lang="ar" source="#bib45-5">سروج</placeName>
+                    <placeName xml:lang="en" source="#bib45-6">Baṭnān</placeName>
+                    <placeName xml:lang="en" source="#bib45-7">Sarug</placeName>
+                    <placeName xml:lang="en" source="#bib45-8">Batnan</placeName>
+                    <desc xml:id="abstract-en-45" xml:lang="en">An ancient city where Jacob of Serugh was bishop.</desc>
+                    <desc xml:lang="syr">
+                        <quote source="#bib45-2">ܡܕܡ ܥܠ ܒܰܛܢܢ</quote>
+                    </desc>
+                    <desc xml:lang="syr">
+                        <quote source="#bib45-3">ܡܕܡ ܥܠ ܣܪܘܓ</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib45-4">مدينة قديمة كانت بقرب سروج</quote>
+                    </desc>
+                    <desc xml:lang="ar">
+                        <quote source="#bib45-5">بليدة من ديار مضر بين حران وجرابلس.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib45-6">an ancient town, formerly located near Sarug.</quote>
+                    </desc>
+                    <desc xml:lang="en">
+                        <quote source="#bib45-7">a small town in the Mudar territory, between Ḥarran and Jarabulus. [Modern name, Suruç (tr.)]</quote>
+                    </desc>
+                    <location type="gps" source="#bib45-1">
+                        <geo>36.97608 38.42424</geo>
+                    </location>
+                    <idno type="URI">http://syriaca.org/place/45</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/658405</idno>
+                    <idno type="URI">http://en.wikipedia.org/wiki/Suruç</idno>
+                    <bibl xml:id="bib45-1">
+                        <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                        <ptr target="http://syriaca.org/bibl/1"/>
+                    </bibl>
+                    <bibl xml:id="bib45-2">
+                        <title xml:lang="en">Barsoum Syriac</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">537</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-3">
+                        <title xml:lang="en">Barsoum Syriac</title>
+                        <ptr target="http://syriaca.org/bibl/3"/>
+                        <citedRange unit="pp">556</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-4">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">505</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-5">
+                        <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                        <ptr target="http://syriaca.org/bibl/2"/>
+                        <citedRange unit="pp">516</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-6">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">552</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-7">
+                        <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                        <ptr target="http://syriaca.org/bibl/4"/>
+                        <citedRange unit="pp">558</citedRange>
+                    </bibl>
+                    <bibl xml:id="bib45-8">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                    </bibl>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>

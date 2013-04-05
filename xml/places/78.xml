@@ -37,13 +37,14 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-03-25</date>
+                <date>2013-04-03</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
+            <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">ADDED: CBSC citation</change>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
             <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
@@ -51,8 +52,8 @@
     <text>
         <body>
             <listPlace>
-                <place xml:id="SRP-id-78" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2 #bib78-5">Edessa</placeName>
+                <place xml:id="place-78" type="city">
+                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2 #bib78-5 #bib78-6">Edessa</placeName>
                     <placeName xml:lang="en" source="#bib78-1">Urfa</placeName>
                     <placeName xml:lang="syr" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
                     <placeName xml:lang="ar" source="#bib78-4">الرها</placeName>
@@ -83,6 +84,15 @@
                     <event when="0201" source="#bib78-1">
                         <desc xml:lang="en">Flood of the river Daysan destroyed part of city.</desc>
                     </event>
+                    <state type="confession" from="0451" to="1924" source="#bib78-1">
+                        <label>Syrian Orthodox</label>
+                    </state> 
+                    <state type="confession" from="0641" source="#bib78-1">
+                        <label>Muslim</label>
+                    </state>
+                    <state type="confession" from="1098" to="1144" source="#bib78-1">
+                        <label>Latin</label>
+                    </state>
                     <idno type="URI">http://syriaca.org/place/78</idno>
                     <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
@@ -112,9 +122,13 @@
                         <ptr target="http://syriaca.org/bibl/8"/>
                         <citedRange unit="pp">2:912</citedRange>
                     </bibl>
+                    <bibl xml:id="bib78-6">
+                        <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                        <ptr target="http://syriaca.org/bibl/5"/>
+                    </bibl>
                 </place>
-                <relation name="contains" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="#SRP-id-78" source="#bib78-1"/>
-                <relation name="resided" active="http://syriaca.org/person/13" passive="#SRP-id-78" from="0363" to="0373" source="#bib78-1"/>
+                <relation name="contains" active="http://syriaca.org/place/145 http://syriaca.org/place/166" passive="#place-78" source="#bib78-1"/>
+                <relation name="resided" active="http://syriaca.org/person/13" passive="#place-78" from="0363" to="0373" source="#bib78-1"/>
             </listPlace>
         </body>
     </text>
