@@ -51,10 +51,10 @@
         <body>
             <listPlace>
                 <place xml:id="place-45" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/45 #bib-45-1">Serugh</placeName>
+                    <placeName xml:lang="en" source="http://syriaca.org/place/45 #bib45-1">Serugh</placeName>
                     <placeName xml:lang="en" source="#bib45-1">Baṭnan</placeName>
-                    <placeName xml:lang="syr" source="#bib45-2">ܒܰܛܢܢ</placeName>
                     <placeName xml:lang="syr" source="#bib45-3">ܣܪܘܓ</placeName>
+                    <placeName xml:lang="syr" source="#bib45-2">ܒܰܛܢܢ</placeName>
                     <placeName xml:lang="ar" source="#bib45-4">بَطنان</placeName>
                     <placeName xml:lang="ar" source="#bib45-5">سروج</placeName>
                     <placeName xml:lang="en" source="#bib45-6">Baṭnān</placeName>
