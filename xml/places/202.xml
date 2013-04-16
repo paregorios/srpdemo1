@@ -29,13 +29,15 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-01</date>
+                <date>2013-04-16</date>
+                <idno type="srp">202</idno>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
+            <change when="2013-04-16" who="http://www.paregorios.org/me">ADDED: idno@type=srp</change>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
             <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
