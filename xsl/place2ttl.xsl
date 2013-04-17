@@ -15,6 +15,7 @@
     </xd:doc>
     
     <xsl:param name="uribase">http://syriaca.org/place/</xsl:param>
+    <xsl:param name="agenturi">https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl</xsl:param>
     
     <xsl:output method="text" encoding="UTF-8" indent="no"/>
 
@@ -107,7 +108,13 @@
         <!-- annotations about placenames -->
         <xsl:apply-templates select="t:placeName"/>
         
-        
+        <xsl:value-of select="$n"/>
+        <xsl:text>&lt;</xsl:text><xsl:value-of select="$agenturi"/><xsl:text>&gt; a prov:SoftwareAgent</xsl:text>
+        <xsl:value-of select="$snt"/>
+        <xsl:text>foaf:homepage &lt;</xsl:text><xsl:value-of select="$agenturi"/><xsl:text>&gt;</xsl:text>
+        <xsl:value-of select="$snt"/>
+        <xsl:text>foaf:name "place2ttl"</xsl:text>
+        <xsl:value-of select="$pn"/>
     </xsl:template>
     
     <xsl:template match="t:titleStmt">
@@ -148,6 +155,10 @@
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:annotatedAt "</xsl:text>
         <xsl:value-of select="$docroot/descendant::t:publicationStmt/t:date"/><xsl:text>T00:00:01Z"</xsl:text>
+        <xsl:value-of select="$snt"/>
+        <xsl:text>oa:serializedBy &lt;</xsl:text>
+        <xsl:value-of select="$agenturi"/>
+        <xsl:text>&gt;</xsl:text>
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:serializedAt "</xsl:text>
         <xsl:value-of select="current-dateTime()"/><xsl:text>"</xsl:text>
