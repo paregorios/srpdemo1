@@ -1,0 +1,73 @@
+<http://syriaca.org/place/202> a <http://geovocab.org/spatial#Feature> ;
+  rdfs:label "Tigris"@en ;
+  rdfs:comment "The eastern major river of Mesopotamia, flowing from SE Turkey to the Persian Gulf."@en ;
+  foaf:primaryTopicOf <http://syriaca.org/place/202/html> ,
+    <http://en.wikipedia.org/wiki/Tigris> ;
+  owl:sameAs <http://dbpedia.org/resource/Tigris> .
+
+<http://syriaca.org/place/202/html> a foaf:Document, bibo:Webpage ;
+  cito:citesForInformation <http://en.wikipedia.org/wiki/Tigris> ;
+  dcterms:contributor <http://syriaca.org/editors.xml#tcarlson> ,
+    <http://www.paregorios.org/me> .
+
+<http://syriaca.org/place/202/anno/placename1> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/202/anno/placename1/body> ;
+  oa:hasTarget <http://syriaca.org/place/202> ;
+  oa:motivatedBy oa:identifying ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ,
+    <http://www.paregorios.org/me> ;
+  oa:annotatedAt "2013-04-16T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+
+<http://syriaca.org/place/202/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "Tigris"@en ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/place/202/html> ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
+  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage"@en ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/4> ;
+  dcterms:biblographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 551"@en ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/5> ;
+  dcterms:biblographicCitation  "A Comprehensive Bibliography on Syriac Christianity"@en .
+
+<http://syriaca.org/place/202/anno/placename2> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/202/anno/placename2/body> ;
+  oa:hasTarget <http://syriaca.org/place/202> ;
+  oa:motivatedBy oa:identifying ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ,
+    <http://www.paregorios.org/me> ;
+  oa:annotatedAt "2013-04-16T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+
+<http://syriaca.org/place/202/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "ܕܶܩܠܰܬ"@syr ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/3> ;
+  dcterms:biblographicCitation  "Barsoum Syriac, p. 536"@en .
+
+<http://syriaca.org/place/202/anno/placename3> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/202/anno/placename3/body> ;
+  oa:hasTarget <http://syriaca.org/place/202> ;
+  oa:motivatedBy oa:identifying ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ,
+    <http://www.paregorios.org/me> ;
+  oa:annotatedAt "2013-04-16T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+
+<http://syriaca.org/place/202/anno/placename3/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "دجلة"@ar ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
+  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 504"@ar .
+
+<https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
+  foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  foaf:name "place2ttl" .
+
+<http://syriaca.org/editors.xml#tcarlson> a foaf:Person .
+
+<http://www.paregorios.org/me> a foaf:Person .
+
