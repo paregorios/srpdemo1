@@ -53,7 +53,7 @@
         <!-- URI#this identifies a spatial feature, has a title and description, and is primary topic of the page -->
         <xsl:text>&lt;</xsl:text><xsl:value-of select="$srpuri"/><xsl:text>&gt; a &lt;http://geovocab.org/spatial#Feature&gt;</xsl:text>
         <xsl:apply-templates select="//t:titleStmt"/>
-        <xsl:apply-templates select="t:desc"/>
+        <xsl:apply-templates select="t:desc[not(t:quote)]"/>
         <xsl:value-of select="$snt"/>
         <xsl:text>foaf:primaryTopicOf &lt;</xsl:text><xsl:value-of select="$srpuri"/>/html<xsl:text>&gt;</xsl:text>
         
@@ -105,6 +105,9 @@
         
         <xsl:value-of select="$pn"/>
         
+        <!-- descriptions quoted from elsewhere -->
+        <xsl:apply-templates select="t:desc[t:quote]"/>
+        
         <!-- annotations about placenames -->
         <xsl:apply-templates select="t:placeName"/>
         
@@ -128,7 +131,30 @@
         </xsl:call-template>
     </xsl:template>
     
-    <xsl:template match="t:desc">
+    <xsl:template match="t:desc[t:quote]">
+        <xsl:variable name="annoid"><xsl:call-template name="getAnnoID"/></xsl:variable>
+        <xsl:variable name="bodyid"><xsl:value-of select="$annoid"/>/body</xsl:variable>
+        
+        <!-- serialize the basic annotation -->
+        <xsl:call-template name="anno-boilerplate">
+            <xsl:with-param name="annoid" select="$annoid"/>
+            <xsl:with-param name="bodyid" select="$bodyid"/>
+            <xsl:with-param name="motivation">oa:describing</xsl:with-param>
+        </xsl:call-template>
+        
+        <!-- serialize the annotation body (i.e., the desc itself) -->
+        <xsl:for-each select="t:quote">
+            <xsl:call-template name="body-boilerplate">
+                <xsl:with-param name="annoid" select="$annoid"/>
+                <xsl:with-param name="bodyid" select="$bodyid"/>
+            </xsl:call-template>
+        </xsl:for-each>
+        <xsl:value-of select="$pn"/>
+        
+        
+    </xsl:template>
+    
+    <xsl:template match="t:desc[not(t:quote)]">
         <xsl:value-of select="$snt"/>
         <xsl:text>rdfs:comment "</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:text>"</xsl:text>
         <xsl:call-template name="lang"/>
@@ -142,18 +168,19 @@
         <xsl:text>&gt;</xsl:text>
     </xsl:template>
     
-    <xsl:template match="t:placeName">
-        <!-- serialize the basic annotation -->
+    <xsl:template name="anno-boilerplate">
+        <xsl:param name="motivation">oa:identifying</xsl:param>
+        <xsl:param name="annoid"/>
+        <xsl:param name="bodyid"/>
         <xsl:value-of select="$n"/>
-        <xsl:variable name="annoid"><xsl:call-template name="getAnnoID"/></xsl:variable>
-        <xsl:variable name="bodyid"><xsl:value-of select="$annoid"/>/body</xsl:variable>
         <xsl:text>&lt;</xsl:text><xsl:value-of select="$annoid"/><xsl:text>&gt; a oa:Annotation</xsl:text>
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:hasBody &lt;</xsl:text><xsl:value-of select="$bodyid"/><xsl:text>&gt;</xsl:text>
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:hasTarget &lt;</xsl:text><xsl:value-of select="$srpuri"/><xsl:text>&gt;</xsl:text>
         <xsl:value-of select="$snt"/>
-        <xsl:text>oa:motivatedBy oa:identifying</xsl:text>
+        <xsl:text>oa:motivatedBy </xsl:text>
+        <xsl:value-of select="$motivation"/>
         <xsl:call-template name="contributors"/>
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:annotatedAt "</xsl:text>
@@ -165,11 +192,11 @@
         <xsl:value-of select="$snt"/>
         <xsl:text>oa:serializedAt "</xsl:text>
         <xsl:value-of select="current-dateTime()"/><xsl:text>"</xsl:text>
-        
-        
-        
-        
-        <!-- serialize the annotation body (i.e., the placename itself -->
+    </xsl:template>
+    
+    <xsl:template name="body-boilerplate">
+        <xsl:param name="annoid"/>
+        <xsl:param name="bodyid"/>
         <xsl:value-of select="$pn"/>
         <xsl:value-of select="$n"/>
         <xsl:text>&lt;</xsl:text><xsl:value-of select="$bodyid"/><xsl:text>&gt; a cnt:ContentAsText, dctypes:Text</xsl:text>
@@ -202,6 +229,25 @@
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="t:placeName">
+        <xsl:variable name="annoid"><xsl:call-template name="getAnnoID"/></xsl:variable>
+        <xsl:variable name="bodyid"><xsl:value-of select="$annoid"/>/body</xsl:variable>
+        
+        <!-- serialize the basic annotation -->
+        <xsl:call-template name="anno-boilerplate">
+            <xsl:with-param name="annoid" select="$annoid"/>
+            <xsl:with-param name="bodyid" select="$bodyid"/>
+        </xsl:call-template>
+        
+        
+        <!-- serialize the annotation body (i.e., the placename itself -->
+        <xsl:call-template name="body-boilerplate">
+            <xsl:with-param name="annoid" select="$annoid"/>
+            <xsl:with-param name="bodyid" select="$bodyid"/>
+        </xsl:call-template>
+
         <xsl:value-of select="$pn"/>
     </xsl:template>
     
@@ -215,11 +261,11 @@
 
         <xsl:text>@</xsl:text>
         <xsl:choose>
-            <xsl:when test="$langcontext/@lang">
-                <xsl:text></xsl:text><xsl:value-of select="$langcontext/@lang"/><xsl:text></xsl:text>
+            <xsl:when test="$langcontext/ancestor-or-self::*/@lang">
+                <xsl:text></xsl:text><xsl:value-of select="$langcontext/ancestor-or-self::*[@lang][1]/@lang"/><xsl:text></xsl:text>
             </xsl:when>
-            <xsl:when test="$langcontext/@xml:lang">
-                <xsl:text></xsl:text><xsl:value-of select="$langcontext/@xml:lang"/><xsl:text></xsl:text>
+            <xsl:when test="$langcontext/ancestor-or-self::*/@xml:lang">
+                <xsl:text></xsl:text><xsl:value-of select="$langcontext/ancestor-or-self::*[@xml:lang][1]/@xml:lang"/><xsl:text></xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:text>en</xsl:text>
