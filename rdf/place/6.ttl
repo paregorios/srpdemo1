@@ -1,0 +1,67 @@
+<http://syriaca.org/place/6> a <http://geovocab.org/spatial#Feature> ;
+  rdfs:label "Ḥadyab"@en ;
+  rdfs:comment "A province of the Sasanian Persian Empire around Arbela."@en ;
+  foaf:primaryTopicOf <http://syriaca.org/place/6/html> ,
+    <http://en.wikipedia.org/wiki/Adiabene> ;
+  owl:sameAs <http://pleiades.stoa.org/places/893935#this> ,
+    <http://dbpedia.org/resource/Adiabene> .
+
+<http://syriaca.org/place/6/html> a foaf:Document, bibo:Webpage ;
+  cito:citesForInformation <http://pleiades.stoa.org/places/893935> ,
+    <http://en.wikipedia.org/wiki/Adiabene> ;
+  dcterms:contributor <http://syriaca.org/editors.xml#tcarlson> .
+
+<http://syriaca.org/place/6/anno/desc2> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/6/anno/desc2/body> ;
+  oa:hasTarget <http://syriaca.org/place/6> ;
+  oa:motivatedBy oa:describing ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
+  oa:annotatedAt "2013-04-04T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T13:37:47.307-05:00" .
+
+<http://syriaca.org/place/6/anno/desc2/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "20. Adiabene"@en ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
+  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 10-11"@en .
+
+<http://syriaca.org/place/6/anno/placename1> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/6/anno/placename1/body> ;
+  oa:hasTarget <http://syriaca.org/place/6> ;
+  oa:motivatedBy oa:identifying ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
+  oa:annotatedAt "2013-04-04T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T13:37:47.307-05:00" .
+
+<http://syriaca.org/place/6/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "Ḥadyab"@en ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/place/6/html> ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
+  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 10-11"@en .
+
+<http://syriaca.org/place/6/anno/placename2> a oa:Annotation ;
+  oa:hasBody <http://syriaca.org/place/6/anno/placename2/body> ;
+  oa:hasTarget <http://syriaca.org/place/6> ;
+  oa:motivatedBy oa:identifying ;
+  oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
+  oa:annotatedAt "2013-04-04T00:00:01Z" ;
+  oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  oa:serializedAt "2013-04-17T13:37:47.307-05:00" .
+
+<http://syriaca.org/place/6/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
+  cnt:chars "Adiabene"@en ;
+  dc:format "text/plain" ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
+  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 10-11"@en ;
+  cito:citesAsSourceDocument <http://syriaca.org/bibl/5> ;
+  dcterms:biblographicCitation  "The Comprehensive Bibliography on Syriac Christianity"@en .
+
+<https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
+  foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
+  foaf:name "place2ttl" .
+
+<http://syriaca.org/editors.xml#tcarlson> a foaf:Person .
+

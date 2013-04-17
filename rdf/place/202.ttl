@@ -18,7 +18,7 @@
     <http://www.paregorios.org/me> ;
   oa:annotatedAt "2013-04-16T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+  oa:serializedAt "2013-04-17T13:34:59.699-05:00" .
 
 <http://syriaca.org/place/202/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Tigris"@en ;
@@ -39,7 +39,7 @@
     <http://www.paregorios.org/me> ;
   oa:annotatedAt "2013-04-16T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+  oa:serializedAt "2013-04-17T13:34:59.699-05:00" .
 
 <http://syriaca.org/place/202/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "ܕܶܩܠܰܬ"@syr ;
@@ -55,7 +55,7 @@
     <http://www.paregorios.org/me> ;
   oa:annotatedAt "2013-04-16T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T12:34:49.518-05:00" .
+  oa:serializedAt "2013-04-17T13:34:59.699-05:00" .
 
 <http://syriaca.org/place/202/anno/placename3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "دجلة"@ar ;
