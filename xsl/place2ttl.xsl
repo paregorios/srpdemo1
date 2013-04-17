@@ -108,6 +108,7 @@
         <!-- annotations about placenames -->
         <xsl:apply-templates select="t:placeName"/>
         
+        <!-- annotations about agents -->
         <xsl:value-of select="$n"/>
         <xsl:text>&lt;</xsl:text><xsl:value-of select="$agenturi"/><xsl:text>&gt; a prov:SoftwareAgent</xsl:text>
         <xsl:value-of select="$snt"/>
@@ -115,6 +116,8 @@
         <xsl:value-of select="$snt"/>
         <xsl:text>foaf:name "place2ttl"</xsl:text>
         <xsl:value-of select="$pn"/>
+        <xsl:value-of select="$n"/>
+        <xsl:call-template name="contributors-agents"/>
     </xsl:template>
     
     <xsl:template match="t:titleStmt">
@@ -274,6 +277,18 @@
         </xsl:if>
     </xsl:template>
     
+    <xsl:template name="contributors-agents">
+        <xsl:if test="$docroot/descendant::t:revisionDesc/t:change">
+            <xsl:for-each-group select="$docroot/descendant::t:revisionDesc/t:change" group-by="@who">   
+                <xsl:sort select="current-grouping-key()"/>
+                <xsl:text>&lt;</xsl:text>
+                <xsl:value-of select="current-grouping-key()"/>
+                <xsl:text>&gt; a foaf:Person</xsl:text>
+                <xsl:value-of select="$pn"/>
+                <xsl:value-of select="$n"/>
+            </xsl:for-each-group>
+        </xsl:if>
+    </xsl:template>
     <xsl:template match="t:*"/>
     
     
