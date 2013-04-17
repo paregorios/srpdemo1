@@ -68,17 +68,18 @@
             <xsl:variable name="first" select="t:idno[@type='URI' and (starts-with(., 'http://en.wikipedia.org') or starts-with(., 'http://pleiades.stoa.org/places/'))][1]"/>
             <xsl:value-of select="$snt"/>
             <xsl:text>owl:sameAs </xsl:text>
-            <xsl:for-each select="t:idno[@type='URI' and starts-with(., 'http://en.wikipedia.org')]">
+            <xsl:for-each select="t:idno[@type='URI' and (starts-with(., 'http://en.wikipedia.org') or starts-with(., 'http://pleiades.stoa.org/places/'))]">
                 <xsl:if test="$first != .">
                     <xsl:value-of select="$cntt"/>
                 </xsl:if>
-                <xsl:text>&lt;http://dbpedia.org/resource/</xsl:text><xsl:value-of select="substring-after(., 'wiki/')"/><xsl:text>&gt;</xsl:text>
-            </xsl:for-each> 
-            <xsl:for-each select="t:idno[@type='URI' and starts-with(., 'http://pleiades.stoa.org/places')]">
-                <xsl:if test="$first != .">
-                    <xsl:value-of select="$cntt"/>
-                </xsl:if>
-                <xsl:text>&lt;</xsl:text><xsl:value-of select="."/><xsl:text>#this&gt;</xsl:text>
+                <xsl:choose>
+                    <xsl:when test="starts-with(., 'http://en.wikipedia.org')">
+                        <xsl:text>&lt;http://dbpedia.org/resource/</xsl:text><xsl:value-of select="substring-after(., 'wiki/')"/><xsl:text>&gt;</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="starts-with(., 'http://pleiades.stoa.org/places/')">
+                        <xsl:text>&lt;</xsl:text><xsl:value-of select="."/><xsl:text>#this&gt;</xsl:text>
+                    </xsl:when>
+                </xsl:choose>
             </xsl:for-each>
         </xsl:if> 
         
