@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person>
+                  <persName xml:lang="syr-Latin-x-gedsh" source="#bib45-1" type="sic">Philoxenos of
+                     Mabbug</persName>
+                  <persName><choice>
+                        <seg><persName source="#bib45-2" type="sic">Mar Philoxenus of
+                              Mabug</persName></seg>
+                        <seg><persName xml:lang="ara" source="#bib45-3" type="sic">مار فيلكسينس
+                              المنبجي</persName></seg>
+                        <seg><persName xml:lang="syr-syrc" source="#bib45-4" type="sic">ܡܪܝ
+                              ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName></seg>
+                        <seg><persName xml:lang="syr-syrj" source="#bib45-4" type="sic">ܡܳܪܝ
+                              ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName></seg>
+                     </choice></persName>
+                  <persName xml:lang="ger" source="#bib45-5" type="sic">Philoxenos Von
+                     Mabbug</persName>
+                  <idno type="URI">http://syriaca.org/person/44</idno>
+                  <idno type="URI">http://worldcat.org/identities/lccn-n79-8221</idno>
+                  <idno type="URI">http://viaf.org/viaf/54187001</idno>
+                  <idno type="URI">http://viaf.org/hosted/syriac/28554</idno>
+                  <idno type="URI">http://d-nb.info/gnd/118505122</idno>
+                  <floruit notBefore="0440" notAfter="0523">ca. 440s? to 523<placeName
+                        ref="http://syriaca.org/place/mabbug"/></floruit>
+                  <birth when="0440" source="#bib45-1">
+                     <placeName ref="http://syriaca.org/place/bethgarmai" source="#bib45-1"/>
+                  </birth>
+                  <death when-iso="0523" when="0523" source="#bib45-1"><placeName
+                        ref="http://pleiades.stoa.org/places/216927" source="#bib45-1"/></death>
+                  <affiliation/>
+                  <!--not in EAC-->
+                  <occupation from="0486" ref="http://syriaca.org/tag/bishop" source="#bib45-1">
+                     <!--or use taxonomy here--> Metropolitan Bishop</occupation>
+                  <!--Unlike EAC places in TEI are treated under other elements, not as a list, could be indexed for porting to EAC-->
+                  <education evidence="external" source="#bib45-1"><name source="#bib45-1">School of
+                           <placeName ref="http://syriaca.org/place/edessa"
+                        >Edessa</placeName></name></education>
+                  <faith ref="http://syriaca.org/tag/syrorth" source="#bib45-1">
+                     <!--or use taxonomy here--> Syrian Orthodox</faith>
+                  <langKnowledge/>
+                  <!--not in EAC-->
+                  <nationality/>
+                  <!--not in EAC-->
+                  <sex/>
+                  <!--not in EAC-->
+                  <age/>
+                  <!--not in EAC-->
+                  <socecStatus/>
+                  <!--not in EAC-->
+                  <trait/>
+                  <!--this is a broad element, needs further investigation to compare with EAC-->
+                  <state source="#bib45-1">
+                     <!--this is a broad element, needs further investigation to compare with EAC-->
+                     <label>Short Biography</label>
+                     <!--this is to render eac' bioghist and abstract-->
+                     <p>Metropolitan bp. of Mabbug (modern Membij/ancient Hierapolis) (485-519),
+                        ascetic theologian, christological polemicist, and sponsor of the
+                        Philoxenian NT.</p>
+                  </state>
+                  <residence from="0486" to="0520" source="#bib45-1">
+                     <placeName ref="http://syriaca.org/place/mabbug">Mabbug</placeName></residence>
+                  <listEvent>
+                  <event when="0484" where="http://pleiades.stoa.org/places/520998"
+                     source="#bib45-1">
+                     <p>Supporting the Henotikon, Philoxenos visited Constantinople in 484 to offer
+                        Zeno a Miaphysite profession of faith.</p>
+                  </event>
+                  <event when="0486" where="http://syriaca.org/place/mabbug" source="#bib45-1">
+                     <p>After the restoration of <persName ref="http://syriaca.org/person/fuller"
+                           >Peter the Fuller</persName> as patriarch of Antioch. Philoxenos was
+                        named metropolitan of <placeName ref="http://syriaca.org/place/mabbug"
+                           >Mabbug</placeName></p>
+                  </event>
+                  </listEvent>
+                  <listRelation>
+                     <!--not sure why this is not validating-->
+                  </listRelation>
+                  <bibl xml:id="bib45-1">
+                     <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
+                        Heritage</title>
+                     <ptr target="http://syriaca.org/bibl/1"/>
+                     <citedRange unit="entry">428</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib45-2">
+                     <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
+                        Sciences</title>
+                     <ptr target="http://syriaca.org/bibl/4"/>
+                     <citedRange unit="pp">262</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib45-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                        السريانية</title>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">226</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib45-4">
+                     <title xml:lang="en">Barsoum Syriac</title>
+                     <ptr target="http://syriaca.org/bibl/3"/>
+                     <citedRange unit="pp">252</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib45-5">
+                     <title xml:lang="grm">Deutsche Nationalbibliothek</title>
+                     <ptr target="http://d-nb.info/gnd/118505122"/>
+                  </bibl>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+   </text>
+</TEI>
