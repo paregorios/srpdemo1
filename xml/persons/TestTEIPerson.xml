@@ -44,9 +44,9 @@
                   <idno type="URI">http://viaf.org/hosted/syriac/28554</idno>
                   <idno type="URI">http://d-nb.info/gnd/118505122</idno>
                   <floruit notBefore="0440" notAfter="0523">ca. 440s? to 523<placeName
-                        ref="http://syriaca.org/place/mabbug"/></floruit>
+                        ref="http://syriaca.org/place/122">Mabbug</placeName></floruit>
                   <birth when="0440" source="#bib44-1">
-                     <placeName ref="http://syriaca.org/place/bethgarmai" source="#bib44-1"/>
+                     <placeName ref="http://syriaca.org/place/33" source="#bib44-1">Beth Garmai</placeName>
                   </birth>
                   <death when-iso="0523" when="0523" source="#bib44-1"><placeName
                         ref="http://pleiades.stoa.org/places/216927" source="#bib44-1"/></death>
@@ -56,7 +56,7 @@
                      <!--or use taxonomy here--> Metropolitan Bishop</occupation>
                   <!--Unlike EAC places in TEI personography are treated under other elements, not as a list, could be indexed for porting to EAC-->
                   <education evidence="external" source="#bib44-1"><name source="#bib44-1">School of
-                           <placeName ref="http://syriaca.org/place/edessa"
+                           <placeName ref="http://syriaca.org/place/78"
                         >Edessa</placeName></name></education>
                   <faith ref="http://syriaca.org/tag/syrorth" source="#bib44-1">
                      <!--or use taxonomy here--> Syrian Orthodox</faith>
@@ -82,9 +82,9 @@
                      </desc>
                   </state>
                   <residence from="0486" to="0520" source="#bib44-1">
-                     <placeName ref="http://syriaca.org/place/mabbug">Mabbug</placeName></residence>
+                     <placeName ref="http://syriaca.org/place/122">Mabbug</placeName></residence>
                   <listEvent>
-                     <event when="0484" where="http://pleiades.stoa.org/places/520998"
+                     <event when="0484" where="http://syriaca.org/place/586"
                         source="#bib44-1">
                         <p>Supporting the Henotikon, Philoxenos visited Constantinople in 484 to
                            offer Zeno a Miaphysite profession of faith.</p>
@@ -92,7 +92,7 @@
                      <event when="0486" where="http://syriaca.org/place/mabbug" source="#bib44-1">
                         <p>After the restoration of <persName ref="http://syriaca.org/person/fuller"
                               >Peter the Fuller</persName> as patriarch of Antioch. Philoxenos was
-                           named metropolitan of <placeName ref="http://syriaca.org/place/mabbug"
+                           named metropolitan of <placeName ref="http://syriaca.org/place/122"
                               >Mabbug</placeName></p>
                      </event>
                   </listEvent>
