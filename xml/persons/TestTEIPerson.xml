@@ -19,7 +19,7 @@
          <particDesc>
             <!-- Hugh, can we put the personlist in the body or is this where it needs to go? It is not really contextual information or a person list since there is no "body"; on the other hand our MSS descriptions go in the MSDesc in the fileDesc so that is also in the header rather than that body -->
             <listPerson>
-               <person>
+               <person xml:id="person-44">
                   <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="sic">Philoxenos of
                      Mabbug</persName>
                   <!-- How do we show an authorized form? Can we assign more than one type? -->
@@ -60,7 +60,7 @@
                         >Edessa</placeName></name></education>
                   <faith ref="http://syriaca.org/tag/syrorth" source="#bib44-1">
                      <!--or use taxonomy here--> Syrian Orthodox</faith>
-                  <langKnowledge/>
+                  <langKnowledge><p/></langKnowledge>
                   <!--not in EAC, but if we find a way to port it we could use it. It could be crosswalked to EAC as "localDescription" type = language known -->
                   <nationality/>
                   <!--not in EAC, but if we find a way to port it we could use it. It could be crosswalked to EAC as "localDescription" type = nationality -->
@@ -82,7 +82,8 @@
                      </desc>
                   </state>
                   <residence from="0486" to="0520" source="#bib44-1">
-                     <placeName ref="http://syriaca.org/place/122">Mabbug</placeName></residence>
+                     <placeName ref="http://syriaca.org/place/122">Mabbug</placeName>
+                  </residence>
                   <listEvent>
                      <event when="0484" where="http://syriaca.org/place/586"
                         source="#bib44-1">
@@ -96,16 +97,6 @@
                               >Mabbug</placeName></p>
                      </event>
                   </listEvent>
-                  <listRelation>
-                     <!--not sure why this is not validating-->
-                     <relation type="social" name="isAssociatedWith" mutual="#p1 #p2" from="0512" to="0523"><p>Philoxenos’s anti-Chalcedon efforts culminated in 512 when Flavian was ousted
-                        in favor of Severus as Patr. of Antioch. Philoxenos and his suffragan
-                        bishops (including a relation, Philoxenos of Doliche) assisted at Severus’s
-                        consecration. Although later opponents vilified Philoxenos and Severus as
-                        uncompromising, epistolary evidence reveals that they initially struck a
-                        conciliatory tone as they sought to consolidate Miaphysite control of the
-                        clergy in Syria and Anatolia.</p></relation>
-                  </listRelation>
                   <bibl xml:id="bib44-1">
                      <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
                         Heritage</title>
@@ -134,6 +125,15 @@
                      <ptr target="http://d-nb.info/gnd/118505122"/>
                   </bibl>
                </person>
+               <relation type="social" name="subordinate" active="#person-44" passive="http://syriaca.org/person/51" from="0512" to="0523">
+                  <desc>Philoxenos’s anti-Chalcedon efforts culminated in 512 when Flavian was ousted
+                  in favor of Severus as Patr. of Antioch. Philoxenos and his suffragan
+                  bishops (including a relation, Philoxenos of Doliche) assisted at Severus’s
+                  consecration. Although later opponents vilified Philoxenos and Severus as
+                  uncompromising, epistolary evidence reveals that they initially struck a
+                  conciliatory tone as they sought to consolidate Miaphysite control of the
+                  clergy in Syria and Anatolia.</desc>
+               </relation>
             </listPerson>
          </particDesc>
       </profileDesc>
