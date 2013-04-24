@@ -12,7 +12,7 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:55.742-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.209-05:00" .
 
 <http://syriaca.org/place/658/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Mor Behnam Hermitage"@en ;
@@ -26,13 +26,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:55.742-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.209-05:00" .
 
 <http://syriaca.org/place/658/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)"@syr ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/3> ;
-  dcterms:biblographicCitation  "Barsoum Syriac, p. 546"@en .
+  dcterms:bibliographicCitation  "Barsoum Syriac, p. 546"@en .
 
 <http://syriaca.org/place/658/anno/placename3> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/658/anno/placename3/body> ;
@@ -41,13 +41,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:55.742-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.209-05:00" .
 
 <http://syriaca.org/place/658/anno/placename3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "صومعة مار بهنام"@ar ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
-  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
+  dcterms:bibliographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
 
 <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
   foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;

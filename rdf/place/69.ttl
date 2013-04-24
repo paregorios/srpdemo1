@@ -16,13 +16,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/desc2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "620. al-Zaʿfarān, Dayr"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
-  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage"@en .
+  dcterms:bibliographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage"@en .
 
 <http://syriaca.org/place/69/anno/desc3> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/desc3/body> ;
@@ -31,13 +31,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/desc3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "او دير مار حنانيا وهو مطران ماردين الذي وطّد اركانه سنة 793-800 على انقاض قلعة ودير قديم شرقي ماردين مسير ساعة عنها. وهو دير كبير عامر آهل، صار كرسياً للبطاركة من سنة 1293 نيفاً وستمائة سنة، انجب واحداً وعشرين بطريركاً وتسعة مفارنة ومئة وعشرة اساقفة. وسنة 1917 عملنا ونشرنا تاريخه الضافي الموسوم "بنزهة الاذهان" ويطل عليه شمالاً ثلاثة اديار صغيرة متجاورة وهي دير مار عززائيل وكان آهلاً برهط من الرهبان بين سنة 1500-1600 ودير مار يعقوب الملفان وذكر لأول مرة سنة 1165 ولا يزال عامراً، وصومعة مار بهنام وقطنها نفر من النساك حتى اواسط القرن السابع عشر وتخرج في كل منها نفر من الاساقفة"@ar ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
-  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
+  dcterms:bibliographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
 
 <http://syriaca.org/place/69/anno/desc4> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/desc4/body> ;
@@ -46,13 +46,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/desc4/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/4> ;
-  dcterms:biblographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 570"@en .
+  dcterms:bibliographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 570"@en .
 
 <http://syriaca.org/place/69/anno/placename1> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/placename1/body> ;
@@ -61,14 +61,14 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Dayr al-Zaʿfarān"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/place/69/html> ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
-  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage"@en .
+  dcterms:bibliographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage"@en .
 
 <http://syriaca.org/place/69/anno/placename2> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/placename2/body> ;
@@ -77,13 +77,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ"@syr ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/3> ;
-  dcterms:biblographicCitation  "Barsoum Syriac, p. 545"@en .
+  dcterms:bibliographicCitation  "Barsoum Syriac, p. 545"@en .
 
 <http://syriaca.org/place/69/anno/placename3> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/placename3/body> ;
@@ -92,13 +92,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/placename3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "دير الزعفران"@ar ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
-  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
+  dcterms:bibliographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 510"@ar .
 
 <http://syriaca.org/place/69/anno/placename4> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/placename4/body> ;
@@ -107,13 +107,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/placename4/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Zaʿfaran Monastery"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/4> ;
-  dcterms:biblographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 570"@en .
+  dcterms:bibliographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 570"@en .
 
 <http://syriaca.org/place/69/anno/placename5> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/69/anno/placename5/body> ;
@@ -122,13 +122,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.253-05:00" .
+  oa:serializedAt "2013-04-24T13:55:26.726-05:00" .
 
 <http://syriaca.org/place/69/anno/placename5/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "monastery Deir Zafaran"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/5> ;
-  dcterms:biblographicCitation  "A Comprehensive Bibliography on Syriac Christianity"@en .
+  dcterms:bibliographicCitation  "A Comprehensive Bibliography on Syriac Christianity"@en .
 
 <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
   foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;

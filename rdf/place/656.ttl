@@ -12,7 +12,7 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:55.325-05:00" .
+  oa:serializedAt "2013-04-24T13:55:25.765-05:00" .
 
 <http://syriaca.org/place/656/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Karka d-Ledan"@en ;
@@ -26,13 +26,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-01T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:55.325-05:00" .
+  oa:serializedAt "2013-04-24T13:55:25.765-05:00" .
 
 <http://syriaca.org/place/656/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Karka d'Ledan"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/5> ;
-  dcterms:biblographicCitation  "A Comprehensive Bibliography on Syriac Christianity"@en .
+  dcterms:bibliographicCitation  "A Comprehensive Bibliography on Syriac Christianity"@en .
 
 <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
   foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;

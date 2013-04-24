@@ -280,7 +280,7 @@
         </xsl:if>
         <xsl:if test="self::t:bibl">
             <xsl:value-of select="$snt"/>
-            <xsl:text>dcterms:biblographicCitation </xsl:text>
+            <xsl:text>dcterms:bibliographicCitation </xsl:text>
             <xsl:text> "</xsl:text><xsl:value-of select="t:title"/><xsl:text></xsl:text>
             <xsl:choose>
                 <xsl:when test="t:citedRange">

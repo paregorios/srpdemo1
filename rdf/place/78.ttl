@@ -21,13 +21,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/desc2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "183. Edessa"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
-  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en .
+  dcterms:bibliographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en .
 
 <http://syriaca.org/place/78/anno/desc3> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/desc3/body> ;
@@ -36,13 +36,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/desc3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "ܡܕܡ ܥܠ ܐܘܪܗܝ"@syr ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/3> ;
-  dcterms:biblographicCitation  "Barsoum Syriac, p. 556"@en .
+  dcterms:bibliographicCitation  "Barsoum Syriac, p. 556"@en .
 
 <http://syriaca.org/place/78/anno/desc4> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/desc4/body> ;
@@ -51,13 +51,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/desc4/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "مدينة مشهورة خمسة ايام عن حلب شرقا وتسمى اليوم اورفه."@ar ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
-  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 516"@ar .
+  dcterms:bibliographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 516"@ar .
 
 <http://syriaca.org/place/78/anno/desc5> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/desc5/body> ;
@@ -66,13 +66,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/desc5/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "a famous city, five day journey eastward from Aleppo, now called Urfa."@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/4> ;
-  dcterms:biblographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 553"@en .
+  dcterms:bibliographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 553"@en .
 
 <http://syriaca.org/place/78/anno/placename1> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/placename1/body> ;
@@ -81,20 +81,20 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/placename1/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Edessa"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/place/78/html> ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
-  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en ;
+  dcterms:bibliographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/4> ;
-  dcterms:biblographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 553"@en ;
+  dcterms:bibliographicCitation  "The Scattered Pearls: A History of Syriac Literature and Sciences, p. 553"@en ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/8> ;
-  dcterms:biblographicCitation  "Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838, p. 2:912"@en ;
+  dcterms:bibliographicCitation  "Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838, p. 2:912"@en ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/5> ;
-  dcterms:biblographicCitation  "The Comprehensive Bibliography on Syriac Christianity"@en .
+  dcterms:bibliographicCitation  "The Comprehensive Bibliography on Syriac Christianity"@en .
 
 <http://syriaca.org/place/78/anno/placename2> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/placename2/body> ;
@@ -103,13 +103,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/placename2/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "Urfa"@en ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/1> ;
-  dcterms:biblographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en .
+  dcterms:bibliographicCitation  "The Gorgias Encyclopedic Dictionary of the Syriac Heritage, pp. 138-139"@en .
 
 <http://syriaca.org/place/78/anno/placename3> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/placename3/body> ;
@@ -118,15 +118,15 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/placename3/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "ܐܘܪܗܳܝ"@syr ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/3> ;
-  dcterms:biblographicCitation  "Barsoum Syriac, p. 556"@en ;
+  dcterms:bibliographicCitation  "Barsoum Syriac, p. 556"@en ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/8> ;
-  dcterms:biblographicCitation  "Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838, p. 2:912"@en .
+  dcterms:bibliographicCitation  "Catalogue of Syriac Manuscripts in the British Museum Acquired since the Year 1838, p. 2:912"@en .
 
 <http://syriaca.org/place/78/anno/placename4> a oa:Annotation ;
   oa:hasBody <http://syriaca.org/place/78/anno/placename4/body> ;
@@ -135,13 +135,13 @@
   oa:annotatedBy <http://syriaca.org/editors.xml#tcarlson> ;
   oa:annotatedAt "2013-04-03T00:00:01Z" ;
   oa:serializedBy <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
-  oa:serializedAt "2013-04-17T13:38:56.96-05:00" .
+  oa:serializedAt "2013-04-24T13:55:27.454-05:00" .
 
 <http://syriaca.org/place/78/anno/placename4/body> a cnt:ContentAsText, dctypes:Text ;
   cnt:chars "الرها"@ar ;
   dc:format "text/plain" ;
   cito:citesAsSourceDocument <http://syriaca.org/bibl/2> ;
-  dcterms:biblographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 516"@ar .
+  dcterms:bibliographicCitation  "كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية, p. 516"@ar .
 
 <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> a prov:SoftwareAgent ;
   foaf:homepage <https://github.com/paregorios/srpdemo1/blob/master/xsl/place2ttl.xsl> ;
