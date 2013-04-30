@@ -27,11 +27,13 @@
                         <recordId>
                             <xsl:value-of select="SRP_ID"/>
                         </recordId>
-                        <xsl:if test="string-length(normalize-space(VIAF_URL)) > 0">
-                            <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
-                            <otherRecordId>
-                                <xsl:value-of select="VIAF_URL"/>/ </otherRecordId>
-                        </xsl:if>
+                        <xsl:for-each select="URL">
+                            <xsl:if test="string-length(normalize-space(.)) > 0">
+                                <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
+                                <otherRecordId>
+                                    <xsl:value-of select="."/>/</otherRecordId>
+                            </xsl:if>
+                        </xsl:for-each>
                         <maintenanceStatus>new</maintenanceStatus>
                         <maintenanceAgency>
                             <agencyName>Syriac Reference Portal</agencyName>
@@ -225,10 +227,13 @@
                             <entityId>
                                 <xsl:value-of select="$entityId"/>
                             </entityId>
-                            <!-- This needs a forEach statement once we have multiple VIAF URL's to include. -->
-                            <entityId>
-                                <xsl:value-of select="VIAF_URL"/>
-                            </entityId>
+                            <xsl:for-each select="URL">
+                                <xsl:if test="string-length(normalize-space(.)) > 0">
+                                    <entityId>
+                                        <xsl:value-of select="."/>
+                                    </entityId>
+                                </xsl:if>
+                            </xsl:for-each>
                             <entityType>person</entityType>
                             <!-- Need to decide how our authorized/alternative & preferred forms work. -->
                             <!-- Need to create columns in source data for syriaca.org authorized forms (for Syriac at least). For English, can just pull them in using GEDSH/GEDSH-style. -->
