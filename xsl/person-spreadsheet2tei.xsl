@@ -14,6 +14,8 @@
         
         <!-- Create a TEI file for each row. -->
         <xsl:for-each select="row">
+            <xsl:variable name="xml-id">person-<xsl:value-of select="SRP_ID"
+            /></xsl:variable>
             <!-- Write the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename" select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
             <xsl:result-document href="{$filename}" format="xml">
@@ -34,7 +36,9 @@
                             <particDesc>
                                 <!-- Did we decide to put persons in header or body? -->
                                 <listPerson>
-                                    
+                                    <person xml:id="{$xml-id}">
+                                        
+                                    </person>
                                 </listPerson>
                             </particDesc>
                         </profileDesc>
