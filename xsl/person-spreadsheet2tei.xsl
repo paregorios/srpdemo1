@@ -81,17 +81,23 @@
                                                 </xsl:choose>
                                             </choice>
                                         </persName>
+                                        <xsl:if test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
                                         <bibl xml:id="{$gedsh-id}">
                                             <title xml:lang="en">The Gorgias Encyclopedic Dictionary
                                                 of the Syriac Heritage</title>
                                             <ptr target="http://syriaca.org/bibl/1"/>
+                                            <xsl:if test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
                                             <citedRange unit="entry">
                                                 <xsl:value-of select="GEDSH_Entry_Num"/>
                                             </citedRange>
+                                            </xsl:if>
+                                            <xsl:if test="string-length(normalize-space(GEDSH_Start_Pg)) > 0">
                                             <citedRange unit="pp">
                                                 <xsl:value-of select="GEDSH_Start_Pg"/>
                                             </citedRange>
+                                            </xsl:if>
                                         </bibl>
+                                        </xsl:if>
                                     </person>
                                 </listPerson>
                             </particDesc>
