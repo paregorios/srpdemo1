@@ -43,16 +43,15 @@
                                 <!-- Did we decide to put persons in header or body? -->
                                 <listPerson>
                                     <person xml:id="{$person-id}">
-                                        <!-- Should we use @resp to indicate syriaca.org standard names? -->
-                                        <persName resp="syriaca.org">
+                                        <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel.-->
+                                        <persName resp="syriaca.org" type="sic">
                                             <choice>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
                                                   <!-- Should we use syr-Syrc for unvocalized Syriac, or simply syr? -->
                                                   <!-- Should we put in SRP as @source or @resp? -->
                                                   <seg>
-                                                  <persName xml:lang="syr-Syrc"
-                                                  type="sic">
+                                                  <persName xml:lang="syr-Syrc" type="sic">
                                                   <xsl:value-of select="Authorized_Sy_Full"/>
                                                   </persName>
                                                   </seg>
@@ -62,8 +61,7 @@
                                                   test="string-length(normalize-space(GEDSH_Full)) > 0">
                                                   <seg>
                                                   <persName xml:lang="syr-Latn-x-gedsh"
-                                                  source="#{$gedsh-id}"
-                                                  type="sic">
+                                                  source="#{$gedsh-id}" type="sic">
                                                   <xsl:value-of select="GEDSH_Full"/>
                                                   </persName>
                                                   </seg>
@@ -71,8 +69,7 @@
                                                   <xsl:when
                                                   test="string-length(normalize-space(GS_En_Full)) > 0">
                                                   <seg>
-                                                  <persName xml:lang="syr-Latn-x-gedsh"
-                                                  type="sic">
+                                                  <persName xml:lang="syr-Latn-x-gedsh" type="sic">
                                                   <xsl:value-of select="GS_En_Full"/>
                                                   </persName>
                                                   </seg>
@@ -81,22 +78,25 @@
                                                 </xsl:choose>
                                             </choice>
                                         </persName>
-                                        <xsl:if test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
-                                        <bibl xml:id="{$gedsh-id}">
-                                            <title xml:lang="en">The Gorgias Encyclopedic Dictionary
-                                                of the Syriac Heritage</title>
-                                            <ptr target="http://syriaca.org/bibl/1"/>
-                                            <xsl:if test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
-                                            <citedRange unit="entry">
-                                                <xsl:value-of select="GEDSH_Entry_Num"/>
-                                            </citedRange>
-                                            </xsl:if>
-                                            <xsl:if test="string-length(normalize-space(GEDSH_Start_Pg)) > 0">
-                                            <citedRange unit="pp">
-                                                <xsl:value-of select="GEDSH_Start_Pg"/>
-                                            </citedRange>
-                                            </xsl:if>
-                                        </bibl>
+                                        <xsl:if
+                                            test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
+                                            <bibl xml:id="{$gedsh-id}">
+                                                <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                                                <ptr target="http://syriaca.org/bibl/1"/>
+                                                <xsl:if
+                                                  test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
+                                                  <citedRange unit="entry">
+                                                  <xsl:value-of select="GEDSH_Entry_Num"/>
+                                                  </citedRange>
+                                                </xsl:if>
+                                                <xsl:if
+                                                  test="string-length(normalize-space(GEDSH_Start_Pg)) > 0">
+                                                  <citedRange unit="pp">
+                                                  <xsl:value-of select="GEDSH_Start_Pg"/>
+                                                  </citedRange>
+                                                </xsl:if>
+                                            </bibl>
                                         </xsl:if>
                                     </person>
                                 </listPerson>
