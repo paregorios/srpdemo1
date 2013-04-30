@@ -14,12 +14,19 @@
         
         <!-- Create a TEI file for each row. -->
         <xsl:for-each select="row">
-            <xsl:variable name="xml-id">person-<xsl:value-of select="SRP_ID"
+            <!-- Create a variable to use as the xml:id for the person element -->
+            <xsl:variable name="person-id">person-<xsl:value-of select="SRP_ID"
             /></xsl:variable>
+            <!-- Create a variable to use as the base for the xml:id for bib elements -->
+            <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"
+            /></xsl:variable>
+            <!-- Create variables to use as xml:id for bib elements -->
+            <xsl:variable name="gedsh-id"><xsl:value-of select="concat($bib-id, '-1')"/></xsl:variable>
             <!-- Write the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename" select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
             <xsl:result-document href="{$filename}" format="xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0">
+                    <!-- Need to decide what header should look like. -->
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
@@ -36,8 +43,20 @@
                             <particDesc>
                                 <!-- Did we decide to put persons in header or body? -->
                                 <listPerson>
-                                    <person xml:id="{$xml-id}">
-                                        
+                                    <person xml:id="{$person-id}">
+                                        <xsl:if test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
+                                            <!-- Should we use syr-Syrc for unvocalized Syriac, or simply syr? -->
+                                            <persName xml:lang="syr-Syrc" source="#{$gedsh-id}" type="sic">
+                                                <xsl:value-of select="Authorized_Sy_Full"/>
+                                            </persName>
+                                        </xsl:if>
+                                        <bibl xml:id="{$gedsh-id}">
+                                            <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
+                                                Heritage</title>
+                                            <ptr target="http://syriaca.org/bibl/1"/>
+                                            <citedRange unit="entry"><xsl:value-of select="GEDSH_Entry_Num"/></citedRange>
+                                            <citedRange unit="pp"><xsl:value-of select="GEDSH_Start_Pg"/></citedRange>
+                                        </bibl>
                                     </person>
                                 </listPerson>
                             </particDesc>
