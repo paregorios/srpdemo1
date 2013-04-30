@@ -46,10 +46,24 @@
                                     <person xml:id="{$person-id}">
                                         <xsl:if test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
                                             <!-- Should we use syr-Syrc for unvocalized Syriac, or simply syr? -->
-                                            <persName xml:lang="syr-Syrc" source="#{$gedsh-id}" type="sic">
+                                            <!-- Should we put in SRP as @source or @resp? -->
+                                            <persName xml:lang="syr-Syrc" resp="syriaca.org" type="sic">
                                                 <xsl:value-of select="Authorized_Sy_Full"/>
                                             </persName>
                                         </xsl:if>
+                                        <xsl:choose>
+                                            <xsl:when test="string-length(normalize-space(GEDSH_Full)) > 0">
+                                                <persName xml:lang="syr-Latn-x-gedsh" source="#{$gedsh-id}" resp="syriaca.org" type="sic">
+                                                    <xsl:value-of select="GEDSH_Full"/>
+                                                </persName>
+                                            </xsl:when>
+                                            <xsl:when test="string-length(normalize-space(GS_En_Full)) > 0">
+                                                <persName xml:lang="syr-Latn-x-gedsh" resp="syriaca.org" type="sic">
+                                                    <xsl:value-of select="GS_En_Full"/>
+                                                </persName>
+                                            </xsl:when>
+                                            <xsl:otherwise></xsl:otherwise>
+                                        </xsl:choose>
                                         <bibl xml:id="{$gedsh-id}">
                                             <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac
                                                 Heritage</title>
