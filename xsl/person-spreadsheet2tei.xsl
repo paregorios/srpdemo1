@@ -43,6 +43,7 @@
                                 <!-- Did we decide to put persons in header or body? -->
                                 <listPerson>
                                     <person xml:id="{$person-id}">
+                                        <!-- Standard Syriaca.org names, unsplit -->
                                         <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel.-->
                                         <persName resp="syriaca.org" type="sic">
                                             <choice>
@@ -78,6 +79,8 @@
                                                 </xsl:choose>
                                             </choice>
                                         </persName>
+                                        
+                                        <!-- Standard Syriaca.org names, split -->
                                         <persName resp="syriaca.org" type="split">
                                             <choice>
                                                 <xsl:if
@@ -148,6 +151,34 @@
                                                 </xsl:choose>
                                             </choice>
                                         </persName>
+                                        
+                                        <!-- GEDSH names, unsplit -->
+                                        <xsl:if
+                                            test="string-length(normalize-space(GEDSH_Full)) > 0">
+                                            <persName xml:lang="syr-Latn-x-gedsh"
+                                                    source="#{$gedsh-id}" type="sic">
+                                                    <xsl:value-of select="GEDSH_Full"/>
+                                            </persName>
+                                        </xsl:if>
+                                        
+                                        <!-- GEDSH names, split -->
+                                        <xsl:if
+                                            test="string-length(normalize-space(GEDSH_Full)) > 0">
+                                                <persName xml:lang="syr-Latn-x-gedsh"
+                                                    source="#{$gedsh-id}" type="split">
+                                                    <xsl:if test="string-length(normalize-space(GEDSH_Given)) > 0">
+                                                        <forename><xsl:value-of select="GEDSH_Given"/></forename>
+                                                    </xsl:if>
+                                                    <xsl:if test="string-length(normalize-space(GEDSH_Family)) > 0">
+                                                        <surname><xsl:value-of select="GEDSH_Family"/></surname>
+                                                    </xsl:if>
+                                                    <xsl:if test="string-length(normalize-space(GEDSH_Titles)) > 0">
+                                                        <addName type="untagged-title"><xsl:value-of select="GEDSH_Titles"/></addName>
+                                                    </xsl:if>
+                                                </persName>
+                                        </xsl:if>
+                                        
+                                        
                                         <xsl:if
                                             test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
                                             <bibl xml:id="{$gedsh-id}">
