@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="person-410">
+                  <persName resp="syriaca.org" type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib410-1" type="sic">Ceriani, Antonio Maria</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName resp="syriaca.org" type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="syr-Latn-x-gedsh" source="#bib410-1" type="split">
+                              <forename>Antonio Maria</forename>
+                              <surname>Ceriani</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib410-1" type="sic">Ceriani, Antonio Maria</persName>
+                  <persName xml:lang="syr-Latn-x-gedsh" source="#bib410-1" type="split">
+                     <forename>Antonio Maria</forename>
+                     <surname>Ceriani</surname>
+                  </persName>
+                  <persName type="sic">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib410-3" type="sic">سيرياني</persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <persName type="split">
+                     <choice>
+                        <seg>
+                           <persName xml:lang="ar" source="#bib410-3" type="split">
+                              <surname>سيرياني</surname>
+                           </persName>
+                        </seg>
+                     </choice>
+                  </persName>
+                  <bibl xml:id="bib410-1">
+                     <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                     <abbr>GEDSH</abbr>
+                     <ptr target="http://syriaca.org/bibl/1"/>
+                     <citedRange unit="entry">123</citedRange>
+                  </bibl>
+                  <bibl xml:id="bib410-3">
+                     <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
+                                                    السريانية</title>
+                     <abbr>Barsoum (Arabic)</abbr>
+                     <ptr target="http://syriaca.org/bibl/2"/>
+                     <citedRange unit="pp">49</citedRange>
+                  </bibl>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+   </text>
+</TEI>
