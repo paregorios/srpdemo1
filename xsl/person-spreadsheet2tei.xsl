@@ -49,11 +49,11 @@
                         </fileDesc>
                         <profileDesc>
                             <particDesc>
-                                <!-- Did we decide to put persons in header or body? -->
+                                <!-- Move persons to body! -->
                                 <listPerson>
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
-                                        <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel.-->
+                                        <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel. Decision: use syriaca-authorized as type.-->
                                         <persName resp="syriaca.org" type="sic">
                                             <choice>
                                                 <xsl:if
