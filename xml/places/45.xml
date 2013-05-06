@@ -37,13 +37,14 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-03</date>
+                <date>2013-05-06</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
+            <change when="2013-04-11" who="http://syriaca.org/editors.xml#tcarlson">ADDED: place name links in desc elements</change>
             <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
     </teiHeader>
@@ -51,10 +52,10 @@
         <body>
             <listPlace>
                 <place xml:id="place-45" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/45 #bib45-1">Serugh</placeName>
+                    <placeName xml:lang="en" resp="http://syriaca.org" source="#bib45-1">Serugh</placeName>
                     <placeName xml:lang="en" source="#bib45-1">Baṭnan</placeName>
-                    <placeName xml:lang="syr" source="#bib45-3">ܣܪܘܓ</placeName>
                     <placeName xml:lang="syr" source="#bib45-2">ܒܰܛܢܢ</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib45-3">ܣܪܘܓ</placeName>
                     <placeName xml:lang="ar" source="#bib45-4">بَطنان</placeName>
                     <placeName xml:lang="ar" source="#bib45-5">سروج</placeName>
                     <placeName xml:lang="en" source="#bib45-6">Baṭnān</placeName>
@@ -62,10 +63,10 @@
                     <placeName xml:lang="en" source="#bib45-8">Batnan</placeName>
                     <desc xml:id="abstract-en-45" xml:lang="en">An ancient city where Jacob of Serugh was bishop.</desc>
                     <desc xml:lang="syr">
-                        <quote source="#bib45-2">ܡܕܡ ܥܠ ܒܰܛܢܢ</quote>
+                        <quote source="#bib45-2">ܡܕܺܝܢܬܐ ܥܰܬܝܩܬܳܐ ܕܰܒܩܘܪܒܳܐ ܕܰܣܪܘܓ ܗܘܬ.</quote>
                     </desc>
                     <desc xml:lang="syr">
-                        <quote source="#bib45-3">ܡܕܡ ܥܠ ܣܪܘܓ</quote>
+                        <quote source="#bib45-3">ܐܰܬܪܰܐ ܗܘ ܕܰܒܕܝܐܪ ܡܶܨܪ ܒܶܝܬ ܚܳܪܳܢ ܠܓܰܪܰܐܒܠܣ</quote>
                     </desc>
                     <desc xml:lang="ar">
                         <quote source="#bib45-4">مدينة قديمة كانت بقرب سروج</quote>
@@ -77,11 +78,14 @@
                         <quote source="#bib45-6">an ancient town, formerly located near Sarug.</quote>
                     </desc>
                     <desc xml:lang="en">
-                        <quote source="#bib45-7">a small town in the Mudar territory, between Ḥarran and Jarabulus. [Modern name, Suruç (tr.)]</quote>
+                        <quote source="#bib45-7">a small town in the <placeName ref="http://syriaca.org/place/491">Mudar territory</placeName>, 
+                            between <placeName ref="http://syriaca.org/place/216">Ḥarran</placeName> and 
+                            <placeName ref="http://syriaca.org/place/83">Jarabulus</placeName>. [Modern name, Suruç (tr.)]</quote>
                     </desc>
                     <location type="gps" source="#bib45-1">
                         <geo>36.97608 38.42424</geo>
                     </location>
+                    <state type="existence"/>
                     <idno type="URI">http://syriaca.org/place/45</idno>
                     <idno type="URI">http://pleiades.stoa.org/places/658405</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Suruç</idno>
@@ -90,12 +94,12 @@
                         <ptr target="http://syriaca.org/bibl/1"/>
                     </bibl>
                     <bibl xml:id="bib45-2">
-                        <title xml:lang="en">Barsoum Syriac</title>
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                         <ptr target="http://syriaca.org/bibl/3"/>
                         <citedRange unit="pp">537</citedRange>
                     </bibl>
                     <bibl xml:id="bib45-3">
-                        <title xml:lang="en">Barsoum Syriac</title>
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                         <ptr target="http://syriaca.org/bibl/3"/>
                         <citedRange unit="pp">556</citedRange>
                     </bibl>

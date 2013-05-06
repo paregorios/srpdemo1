@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-05</date>
+                <date>2013-05-06</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -43,15 +43,16 @@
         <body>
             <listPlace>
                 <place xml:id="place-518" type="mountain">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/518">Mount Qāsiyūn</placeName>
-                    <placeName xml:lang="syr" source="#bib518-1">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
+                    <placeName xml:lang="en" resp="http://syriaca.org">Mount Qāsiyūn</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib518-1">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
                     <placeName xml:lang="ar" source="#bib518-2">جبل قاسيون</placeName>
                     <placeName xml:lang="en" source="#bib518-3">Qasyun Mountain</placeName>
                     <desc xml:id="abstract-en-518">A mountain north of Damascus.</desc>
+                    <state type="existence"/>
                     <idno type="URI">http://syriaca.org/place/518</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Mount_Qasioun</idno>
                     <bibl xml:id="bib518-1">
-                        <title xml:lang="en">Barsoum Syriac</title>
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                         <ptr target="http://syriaca.org/bibl/3"/>
                         <citedRange unit="pp">557</citedRange>
                     </bibl>

@@ -37,13 +37,24 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-04-03</date>
+                <date>2013-05-06</date>
             </publicationStmt>
+            <notesStmt>
+                <note type="future-revision">FUTURE: one possibility</note>
+            </notesStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Future 1</p>
+                <p>Future 2</p>
+            </editorialDecl>
+        </encodingDesc>
         <revisionDesc>
+            <change type="future">Decide how to mark future revisions that need to be made</change>
+            <change when="2013-04-11" who="http://syriaca.org/editors.xml#tcarlson">ADDED: place name links in desc elements</change>
             <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">ADDED: CBSC citation</change>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
             <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
@@ -53,22 +64,22 @@
         <body>
             <listPlace>
                 <place xml:id="place-78" type="city">
-                    <placeName xml:lang="en" source="http://syriaca.org/place/78 #bib78-1 #bib78-2 #bib78-5 #bib78-6">Edessa</placeName>
-                    <placeName xml:lang="en" source="#bib78-1">Urfa</placeName>
-                    <placeName xml:lang="syr" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
-                    <placeName xml:lang="ar" source="#bib78-4">الرها</placeName>
-                    <desc xml:id="abstract-en-78" xml:lang="en">A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</desc>
+                    <placeName xml:id="name78-1" xml:lang="en" resp="http://syriaca.org" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6">Edessa</placeName>
+                    <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1">Urfa</placeName>
+                    <placeName xml:id="name78-3" xml:lang="syr" resp="http://syriaca.org" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
+                    <placeName xml:id="name78-4" xml:lang="ar" source="#bib78-4">الرها</placeName>
+                    <desc xml:id="abstract-en-78" xml:lang="en">A city of <placeName ref="http://syriaca.org/place/124">Mesopotamia</placeName>, the capital of the ancient kingdom of <placeName ref="http://syriaca.org/place/145">Osrhoene</placeName>, modern Urfa.</desc>
                     <desc xml:lang="en">
                         <quote source="#bib78-1">183. Edessa</quote>
                     </desc>
                     <desc xml:lang="syr">
-                        <quote source="#bib78-3">ܡܕܡ ܥܠ ܐܘܪܗܝ</quote>
+                        <quote source="#bib78-3">ܡܕܺܝܢܬܐ ܗܳܝ ܛܒܝܒܬܳܐ ܠܡܰܕܢܚܳܐ ܕܚܳܠܳܒ ܚܰܡܫܳܐ ܝܰܘܡ̈ܝܢ ܘܡܶܫܬܰܡܗܐ ܝܰܘܡܳܢ ܐܘܪܦܰܗ̈</quote>
                     </desc>
                     <desc xml:lang="ar">
                         <quote source="#bib78-4">مدينة مشهورة خمسة ايام عن حلب شرقا وتسمى اليوم اورفه.</quote>
                     </desc>
                     <desc xml:lang="en">
-                        <quote source="#bib78-2">a famous city, five day journey eastward from Aleppo, now called Urfa.</quote>
+                        <quote source="#bib78-2">a famous city, five day journey eastward from <placeName ref="http://syriaca.org/place/18">Aleppo</placeName>, now called Urfa.</quote>
                     </desc>
                     <location type="gps" source="#bib78-1">
                         <geo>37.15 38.8</geo>
@@ -82,8 +93,9 @@
                         <desc xml:lang="en">Renamed Edessa by Seleucus I Nicator.</desc>
                     </event>
                     <event when="0201" source="#bib78-1">
-                        <desc xml:lang="en">Flood of the river Daysan destroyed part of city.</desc>
+                        <desc xml:lang="en">Flood of the river <placeName ref="http://syriaca.org/place/191">Daiṣan</placeName> destroyed part of city.</desc>
                     </event>
+                    <state type="existence" from="-0304"/>
                     <state type="confession" from="0451" to="1924" source="#bib78-1">
                         <label>Syrian Orthodox</label>
                     </state> 
@@ -93,6 +105,13 @@
                     <state type="confession" from="1098" to="1144" source="#bib78-1">
                         <label>Latin</label>
                     </state>
+                    <event type="attestation" xml:id="attestation142-1" notBefore="1291" notAfter="1318" source="#bib142-6"><label>Attestation</label></event>
+                    <linkGrp type="name-attestations">
+                        <link target="#name1 #attestation1"/>
+                        <link target="#name1 #attestation2"/>
+                        <link target="#name1 #attestation3"/>
+                        <link target="#name1 #attestation4"/>
+                    </linkGrp>
                     <idno type="URI">http://syriaca.org/place/78</idno>
                     <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
@@ -108,7 +127,7 @@
                         <citedRange unit="pp">553</citedRange>
                     </bibl>
                     <bibl xml:id="bib78-3">
-                        <title xml:lang="en">Barsoum Syriac</title>
+                        <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                         <ptr target="http://syriaca.org/bibl/3"/>
                         <citedRange unit="pp">556</citedRange>
                     </bibl>
