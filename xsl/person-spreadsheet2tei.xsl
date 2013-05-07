@@ -57,8 +57,11 @@
                                         <!-- Syriaca.org authorized name forms are designated using @subtype="syriaca-authorized".
                                         (I'm using subtype rather than type because type needs to be used for sic/split.)-->
                                         <!-- Experimenting with for-each. Need to add more attributes, as well as split names. -->
+                                        
+                                        <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
                                             <persName>
+                                                <!-- Applies language attributes specific to fields -->
                                                 <xsl:choose>
                                                     <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
                                                     <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
@@ -82,7 +85,11 @@
                                                     <xsl:when test="contains(name(),'_Ar')">
                                                         <xsl:attribute name="xml:lang" select="'ar'"/>
                                                     </xsl:when>
-                                                </xsl:choose>                                                
+                                                </xsl:choose>
+                                                <xsl:attribute name="type" select="'sic'"/>
+                                                <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
+                                                    <xsl:attribute name="resp" select="'http://syriaca.org'"/>
+                                                </xsl:if>
                                                 <xsl:value-of select="node()"/>
                                             </persName>
                                         </xsl:for-each>
