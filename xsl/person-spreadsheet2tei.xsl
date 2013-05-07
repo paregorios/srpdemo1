@@ -56,6 +56,7 @@
                                         <!-- Standard Syriaca.org names, unsplit -->
                                         <!-- Syriaca.org authorized name forms are designated using @subtype="syriaca-authorized".
                                         (I'm using subtype rather than type because type needs to be used for sic/split.)-->
+                                        <!-- Experimenting with for-each. Need to add more attributes, as well as split names. -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
                                             <persName>
                                                 <xsl:choose>
