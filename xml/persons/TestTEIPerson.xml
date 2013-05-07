@@ -21,9 +21,9 @@
       <body>
          <listPerson>
             <person xml:id="person-44">
-               <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="syriaca-authorized sic">Philoxenos of
+               <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="split" subtype="syriaca-authorized">Philoxenos of
                   Mabbug</persName>
-               <!-- We can show dates ussing att.dateable for names -->
+               <!-- We can show dates using att.dateable for names -->
                <!-- We could use the name element and sort = attribute to break the name up but retain ordering -->
                <persName><choice>
                   <!-- I am using choice here to show that these 4 names are intellectually parallel but not parallel with the persName below them-even though they are all for the same person. I am using seg here instead of sic corr or reg because I don't want to imply that one is right or wrong, they are all valid -->

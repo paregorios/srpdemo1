@@ -54,9 +54,9 @@
                             <listPerson>
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
-                                        <!-- Syriaca.org authorized name forms are designated using @type="syriaca-authorized".-->
-                                        <!-- Whitespace is a legitimate way to use more than one type, right? -->
-                                        <persName type="syriaca-authorized sic">
+                                        <!-- Syriaca.org authorized name forms are designated using @subtype="syriaca-authorized".
+                                        (I'm using subtype rather than type because type needs to be used for sic/split.)-->
+                                        <persName type="sic" subtype="syriaca-authorized">
                                             <choice>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
@@ -92,7 +92,7 @@
                                         </persName>
                                         
                                         <!-- Standard Syriaca.org names, split -->
-                                        <persName type="syriaca-authorized split">
+                                        <persName type="split" subtype="syriaca-authorized">
                                             <choice>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
