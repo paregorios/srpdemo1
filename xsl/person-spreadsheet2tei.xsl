@@ -54,8 +54,9 @@
                             <listPerson>
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
-                                        <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel. Decision: use syriaca-authorized as type.-->
-                                        <persName resp="syriaca.org" type="sic">
+                                        <!-- Syriaca.org authorized name forms are designated using @type="syriaca-authorized".-->
+                                        <!-- Whitespace is a legitimate way to use more than one type, right? -->
+                                        <persName type="syriaca-authorized sic">
                                             <choice>
                                                 <xsl:if
                                                   test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
@@ -91,7 +92,7 @@
                                         </persName>
                                         
                                         <!-- Standard Syriaca.org names, split -->
-                                        <persName resp="syriaca.org" type="split">
+                                        <persName type="syriaca-authorized split">
                                             <choice>
                                                 <xsl:if
                                                     test="string-length(normalize-space(Authorized_Sy_Full)) > 0">

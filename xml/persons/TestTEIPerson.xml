@@ -21,9 +21,8 @@
       <body>
          <listPerson>
             <person xml:id="person-44">
-               <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="sic">Philoxenos of
+               <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="syriaca-authorized sic">Philoxenos of
                   Mabbug</persName>
-               <!-- How do we show an authorized form? Can we assign more than one type? -->
                <!-- We can show dates ussing att.dateable for names -->
                <!-- We could use the name element and sort = attribute to break the name up but retain ordering -->
                <persName><choice>
