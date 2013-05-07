@@ -48,10 +48,10 @@
                                 <p>Information about the source</p>
                             </sourceDesc>
                         </fileDesc>
-                        <profileDesc>
-                            <particDesc>
-                                <!-- Move persons to body! -->
-                                <listPerson>
+                    </teiHeader>
+                    <text>
+                        <body>
+                            <listPerson>
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
                                         <!-- Should we use @resp to indicate syriaca.org standard names? EAC could then use @resp="syriaca.org" and @type="sic" to pull unsplit authorized Syriaca.org names in parallel. Decision: use syriaca-authorized as type.-->
@@ -404,12 +404,6 @@
                                         
                                     </person>
                                 </listPerson>
-                            </particDesc>
-                        </profileDesc>
-                    </teiHeader>
-                    <text>
-                        <body>
-                            <p>Some text here.</p>
                         </body>
                     </text>
                 </TEI>
