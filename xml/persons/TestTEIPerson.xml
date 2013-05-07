@@ -21,22 +21,20 @@
       <body>
          <listPerson>
             <person xml:id="person-44">
-               <persName xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="split" subtype="syriaca-authorized">Philoxenos of
+               <persName xml:id="name-44-1" xml:lang="syr-Latin-x-gedsh" source="#bib44-1" type="split" subtype="syriaca-authorized">Philoxenos of
                   Mabbug</persName>
                <!-- We can show dates using att.dateable for names -->
                <!-- We could use the name element and sort = attribute to break the name up but retain ordering -->
-               <persName><choice>
-                  <!-- I am using choice here to show that these 4 names are intellectually parallel but not parallel with the persName below them-even though they are all for the same person. I am using seg here instead of sic corr or reg because I don't want to imply that one is right or wrong, they are all valid -->
-                  <seg><persName source="#bib44-2" type="sic">Mar Philoxenus of
-                     Mabug</persName></seg>
-                  <seg><persName xml:lang="ara" source="#bib44-3" type="sic">مار فيلكسينس
-                     المنبجي</persName></seg>
-                  <seg><persName xml:lang="syr-syrc" source="#bib44-4" type="sic">ܡܪܝ
-                     ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName></seg>
-                  <seg><persName xml:lang="syr-syrj" source="#bib44-4" type="sic">ܡܳܪܝ
-                     ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName></seg>
-               </choice></persName>
-               <persName xml:lang="ger" source="#bib44-5" type="sic">Philoxenos Von
+               <!-- We can use @corresp to show which names are parallel to each other; e.g., different language versions of the name from the same source. -->
+               <persName xml:id="name-44-2" source="#bib44-2" type="sic" corresp="#name-44-3 #name-44-4 #name-44-5">Mar Philoxenus of
+                     Mabug</persName>
+               <persName xml:id="name-44-3" xml:lang="ara" source="#bib44-3" type="sic" corresp="#name-44-2 #name-44-4 #name-44-5">مار فيلكسينس
+                     المنبجي</persName>
+               <persName xml:id="name-44-4" xml:lang="syr-syrc" source="#bib44-4" type="sic" corresp="#name-44-2 #name-44-3 #name-44-5">ܡܪܝ
+                     ܦܝܠܠܘܟܣܝܢܘܣ ܕܡܒܘܓ</persName>
+               <persName xml:id="name-44-5" xml:lang="syr-syrj" source="#bib44-4" type="sic" corresp="#name-44-2 #name-44-3 #name-44-5">ܡܳܪܝ
+                     ܦܺܝܠܠܘܟܣܺܝܢܘܣ ܕܡܰܒܘܓ</persName>
+               <persName xml:id="name-44-6" xml:lang="ger" source="#bib44-5" type="sic">Philoxenos Von
                   Mabbug</persName>
                <idno type="URI">http://syriaca.org/person/44</idno>
                <idno type="URI">http://worldcat.org/identities/lccn-n79-8221</idno>
