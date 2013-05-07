@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/brown_odds.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/brown_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
   xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
@@ -25,6 +25,38 @@
         <moduleRef key="core"/>
         <moduleRef key="tei"/>
         <moduleRef key="textstructure"/>
+        <moduleRef key="certainty"/>
+        <moduleRef key="linking"/>
+        <moduleRef key="msdescription"/>
+        <moduleRef key="namesdates"/>
+        <elementSpec ident="addName" module="namesdates">
+          <attList>
+            <!-- Do we need a custom namespace here? -->
+            <attDef ident="type" ns="http://www.example.org/ns/nonTEI" mode="add">
+              <desc>
+                specifies the type of <gi>addName</gi> as one of certain pre-defined values.
+              </desc>
+              <valList type="closed">
+                <valItem ident="office">
+                  <desc>A title referring to the person's office; for example, <eg>priest</eg> or <eg>deacon</eg></desc>
+                </valItem>
+                <valItem ident="saint">
+                  <desc>A title describing the person as a saint; for example, <eg>saint</eg> or <eg>martyr</eg></desc>
+                </valItem>
+                <!-- Should genName be used instead of this? -->
+                <valItem ident="numeric">
+                  <desc>A title used to sequence the person's life or reign with respect to other persons having the same name; for example, <eg>XIV</eg></desc>
+                </valItem>
+                <valItem ident="terms-of-address">
+                  <desc>Any title not accounted for by the other types of titles</desc>
+                </valItem>
+                <valItem ident="untagged-title">
+                  <desc>A title or titles that have not been disambiguated into types</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
       </schemaSpec>
     </body>
   </text>
