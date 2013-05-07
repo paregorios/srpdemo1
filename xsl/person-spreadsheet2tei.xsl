@@ -56,6 +56,37 @@
                                         <!-- Standard Syriaca.org names, unsplit -->
                                         <!-- Syriaca.org authorized name forms are designated using @subtype="syriaca-authorized".
                                         (I'm using subtype rather than type because type needs to be used for sic/split.)-->
+                                        <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
+                                            <persName>
+                                                <xsl:choose>
+                                                    <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
+                                                    <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
+                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-gedsh'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Barsoum_En')">
+                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'CBSC_En')">
+                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
+                                                        <xsl:attribute name="xml:lang" select="'syr'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="(contains(name(),'Barsoum_Sy_V')) or (contains(name(),'BO_Sy_V'))">
+                                                        <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'YdQ_Sy_V')">
+                                                        <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'_Ar')">
+                                                        <xsl:attribute name="xml:lang" select="'ar'"/>
+                                                    </xsl:when>
+                                                </xsl:choose>                                                
+                                                <xsl:value-of select="node()"/>
+                                            </persName>
+                                        </xsl:for-each>
+                                        
+                                       <!-- The <persName> below may be irrelevant if my above experiment with for-each works. -->
                                         <persName type="sic" subtype="syriaca-authorized">
                                             <choice>
                                                 <xsl:if

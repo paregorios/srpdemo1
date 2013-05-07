@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="person-593">
+               <persName type="sic" subtype="syriaca-authorized">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="sic">Lamsa, George</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split" subtype="syriaca-authorized">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="split">
+                           <forename>George</forename>
+                           <surname>Lamsa</surname>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="sic">Lamsa, George</persName>
+               <persName xml:lang="syr-Latn-x-gedsh" source="#bib593-1" type="split">
+                  <forename>George</forename>
+                  <surname>Lamsa</surname>
+               </persName>
+               <bibl xml:id="bib593-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic
+                                                  Dictionary of the Syriac Heritage</title>
+                  <abbr>GEDSH</abbr>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="entry">325</citedRange>
+               </bibl>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>

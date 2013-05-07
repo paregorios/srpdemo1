@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPerson>
+            <person xml:id="person-875">
+               <persName type="sic" subtype="syriaca-authorized">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Abraham of Maḥoze</persName>
+                     </seg>
+                  </choice>
+               </persName>
+               <persName type="split" subtype="syriaca-authorized">
+                  <choice>
+                     <seg>
+                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
+                           <forename>Abraham</forename>
+                           <addName type="untagged-title">of Maḥoze</addName>
+                        </persName>
+                     </seg>
+                  </choice>
+               </persName>
+            </person>
+         </listPerson>
+      </body>
+   </text>
+</TEI>
