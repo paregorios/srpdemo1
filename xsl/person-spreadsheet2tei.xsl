@@ -9,6 +9,7 @@
     <xsl:output method="xml" indent="yes" name="xml"/>
     <xsl:output method="html" indent="yes" name="html"/>
 
+    
     <xsl:template match="/root">
 
         <!-- Create a TEI file for each row. -->
@@ -70,55 +71,16 @@
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
                                             <persName>
-                                                <!-- Applies language attributes specific to fields -->
-                                                <xsl:choose>
-                                                    <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
-                                                    <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
-                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-gedsh'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Barsoum_En')">
-                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'CBSC_En')">
-                                                        <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
-                                                        <xsl:attribute name="xml:lang" select="'syr'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="(contains(name(),'Barsoum_Sy_V')) or (contains(name(),'BO_Sy_V'))">
-                                                        <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'YdQ_Sy_V')">
-                                                        <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'_Ar')">
-                                                        <xsl:attribute name="xml:lang" select="'ar'"/>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <!-- Adding @source attributes -->
-                                                <xsl:choose>
-                                                    <xsl:when test="contains(name(),'GEDSH')">
-                                                        <xsl:attribute name="source" select="$gedsh-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Barsoum_En')">
-                                                        <xsl:attribute name="source" select="$barsoum-en-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Barsoum_Sy')">
-                                                        <xsl:attribute name="source" select="$barsoum-sy-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Barsoum_Ar')">
-                                                        <xsl:attribute name="source" select="$barsoum-ar-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'CBSC_En')">
-                                                        <xsl:attribute name="source" select="$cbsc-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Abdisho_YdQ')">
-                                                        <xsl:attribute name="source" select="$abdisho-ydq-id"/>
-                                                    </xsl:when>
-                                                    <xsl:when test="contains(name(),'Abdisho_BO')">
-                                                        <xsl:attribute name="source" select="$abdisho-bo-id"/>
-                                                    </xsl:when>
-                                                </xsl:choose>
+                                                <xsl:call-template name="language"/>
+                                                <xsl:call-template name="source">
+                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                </xsl:call-template>
                                                 <xsl:attribute name="type" select="'sic'"/>
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
                                                     <xsl:attribute name="resp" select="'http://syriaca.org'"/>
@@ -502,4 +464,66 @@
 
         </xsl:result-document>
     </xsl:template>
+        
+    <xsl:template match="*" name="language">
+        <!-- Applies language attributes specific to fields -->
+        <xsl:choose>
+            <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
+            <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
+                <xsl:attribute name="xml:lang" select="'syr-Latn-x-gedsh'"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_En')">
+                <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'CBSC_En')">
+                <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
+            </xsl:when>
+            <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
+                <xsl:attribute name="xml:lang" select="'syr'"/>
+            </xsl:when>
+            <xsl:when test="(contains(name(),'Barsoum_Sy_V')) or (contains(name(),'BO_Sy_V'))">
+                <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'YdQ_Sy_V')">
+                <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'_Ar')">
+                <xsl:attribute name="xml:lang" select="'ar'"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="source" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="gedsh-id"/>
+        <xsl:param name="barsoum-en-id"/>
+        <xsl:param name="barsoum-sy-id"/>
+        <xsl:param name="barsoum-ar-id"/>
+        <xsl:param name="cbsc-id"/>
+        <xsl:param name="abdisho-ydq-id"/>
+        <xsl:param name="abdisho-bo-id"/>
+        <xsl:choose>
+            <xsl:when test="contains(name(),'GEDSH')">
+                <xsl:attribute name="source" select="$gedsh-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_En')">
+                <xsl:attribute name="source" select="$barsoum-en-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_Sy')">
+                <xsl:attribute name="source" select="$barsoum-sy-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_Ar')">
+                <xsl:attribute name="source" select="$barsoum-ar-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'CBSC_En')">
+                <xsl:attribute name="source" select="$cbsc-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_YdQ')">
+                <xsl:attribute name="source" select="$abdisho-ydq-id"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_BO')">
+                <xsl:attribute name="source" select="$abdisho-bo-id"/>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
 </xsl:stylesheet>
