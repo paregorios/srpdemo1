@@ -30,6 +30,15 @@
             <xsl:variable name="barsoum-sy-id">
                 <xsl:value-of select="concat($bib-id, '-4')"/>
             </xsl:variable>
+            <xsl:variable name="abdisho-ydq-id">
+                <xsl:value-of select="concat($bib-id, '-5')"/>
+            </xsl:variable>
+            <xsl:variable name="abdisho-bo-id">
+                <xsl:value-of select="concat($bib-id, '-6')"/>
+            </xsl:variable>
+            <xsl:variable name="cbsc-id">
+                <xsl:value-of select="concat($bib-id, '-7')"/>
+            </xsl:variable>
             <!-- Write the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename"
                 select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
@@ -84,6 +93,30 @@
                                                     </xsl:when>
                                                     <xsl:when test="contains(name(),'_Ar')">
                                                         <xsl:attribute name="xml:lang" select="'ar'"/>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <!-- Adding @source attributes -->
+                                                <xsl:choose>
+                                                    <xsl:when test="contains(name(),'GEDSH')">
+                                                        <xsl:attribute name="source" select="$gedsh-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Barsoum_En')">
+                                                        <xsl:attribute name="source" select="$barsoum-en-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Barsoum_Sy')">
+                                                        <xsl:attribute name="source" select="$barsoum-sy-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Barsoum_Ar')">
+                                                        <xsl:attribute name="source" select="$barsoum-ar-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'CBSC_En')">
+                                                        <xsl:attribute name="source" select="$cbsc-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Abdisho_YdQ')">
+                                                        <xsl:attribute name="source" select="$abdisho-ydq-id"/>
+                                                    </xsl:when>
+                                                    <xsl:when test="contains(name(),'Abdisho_BO')">
+                                                        <xsl:attribute name="source" select="$abdisho-bo-id"/>
                                                     </xsl:when>
                                                 </xsl:choose>
                                                 <xsl:attribute name="type" select="'sic'"/>
