@@ -47,7 +47,8 @@
             <listPlace>
                 <place xml:id="place-202" type="river">
                     <placeName xml:lang="en" resp="http://syriaca.org" source="#bib202-1 #bib202-4 #bib202-5">Tigris</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib202-2">ܕܶܩܠܰܬ</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org">ܕܩܠܬ</placeName>
+                    <placeName xml:lang="syr-Syrj" source="#bib202-2">ܕܶܩܠܰܬ</placeName>
                     <placeName xml:lang="ar" source="#bib202-3">دجلة</placeName>
                     <desc xml:id="abstract-en-202" xml:lang="en">The eastern major river of Mesopotamia, flowing from SE Turkey to the Persian Gulf.</desc>
                     <state type="existence"/>

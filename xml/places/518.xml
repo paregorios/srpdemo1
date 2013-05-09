@@ -44,11 +44,15 @@
             <listPlace>
                 <place xml:id="place-518" type="mountain">
                     <placeName xml:lang="en" resp="http://syriaca.org">Mount Qāsiyūn</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib518-1">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
+                    <placeName xml:id="placename518-2" xml:lang="syr" resp="http://syriaca.org">ܛܘܪܐ ܕܩܐܣܒܘܢ</placeName>
+                    <placeName xml:id="placename518-3" xml:lang="syr-Syrj" source="#bib518-1">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
                     <placeName xml:lang="ar" source="#bib518-2">جبل قاسيون</placeName>
                     <placeName xml:lang="en" source="#bib518-3">Qasyun Mountain</placeName>
                     <desc xml:id="abstract-en-518">A mountain north of Damascus.</desc>
                     <state type="existence"/>
+                    <note xml:id="placename518-2-deprecation" type="deprecation">Mistranscribed from Arabic based on reading a letter ba (with one dot) instead of the letter ya (with two dots)</note>
+                    <link target="placename518-2 placename518-2-deprecation"/>
+                    <link target="placename518-3 placename518-2-deprecation"/>
                     <idno type="URI">http://syriaca.org/place/518</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Mount_Qasioun</idno>
                     <bibl xml:id="bib518-1">

@@ -66,7 +66,8 @@
                 <place xml:id="place-78" type="city">
                     <placeName xml:id="name78-1" xml:lang="en" resp="http://syriaca.org" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6">Edessa</placeName>
                     <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1">Urfa</placeName>
-                    <placeName xml:id="name78-3" xml:lang="syr" resp="http://syriaca.org" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org">ܐܘܪܗܝ</placeName>
+                    <placeName xml:id="name78-3" xml:lang="syr-Syrj" source="#bib78-3 #bib78-5">ܐܘܪܗܳܝ</placeName>
                     <placeName xml:id="name78-4" xml:lang="ar" source="#bib78-4">الرها</placeName>
                     <desc xml:id="abstract-en-78" xml:lang="en">A city of <placeName ref="http://syriaca.org/place/124">Mesopotamia</placeName>, the capital of the ancient kingdom of <placeName ref="http://syriaca.org/place/145">Osrhoene</placeName>, modern Urfa.</desc>
                     <desc xml:lang="en">

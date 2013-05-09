@@ -101,27 +101,20 @@
                 <xsl:choose>
                     <xsl:when test="t:placeName[@xml:lang='syr']">
                         <xsl:attribute name="dir">rtl</xsl:attribute>
-                        <xsl:value-of select="t:placeName[@xml:lang='syr'][1]"/> -
-                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@source,'syriaca.org')]"/>                        
+                        <xsl:value-of select="t:placeName[@xml:lang='syr' and contains(@resp,'syriaca.org')]"/> -
+                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@resp,'syriaca.org')]"/>                        
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@source,'syriaca.org')]"/>
+                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@resp,'syriaca.org')]"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </h2>
         </div>
         <div id="names">
-                    <p><xsl:for-each select="t:placeName[contains(@source,'bib')]">
+                    <p><xsl:for-each select="t:placeName[@source]">
                         <xsl:value-of select="current()"/>
                             &#x200F;&#x200E; <!-- RLM makes any parenthesis in Syriac/Arabic name work well; LRM makes citation parenthesis work well -->
-                            (<xsl:choose>
-                                <xsl:when test="contains(@source,'syriaca.org')">
-                                <xsl:value-of select="replace(replace(substring-after(@source,' '), $bibprefix,''),' ', ', ')"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                <xsl:value-of select="replace(replace(@source, $bibprefix,''),' ', ', ')"/>
-                                </xsl:otherwise>
-                            </xsl:choose>) 
+                            (<xsl:value-of select="replace(replace(@source, $bibprefix,''),' ', ', ')"/>) 
                     </xsl:for-each></p>
             <p>Place Type: <xsl:value-of select="@type"/> </p>
             <p>Confessions:
@@ -142,7 +135,7 @@
         </div>
         <div id="abstract">
             <h3>Abstract</h3>
-            <xsl:value-of select="t:desc[contains(@xml:id,'abstract')]"/>
+            <xsl:apply-templates select="t:desc[contains(@xml:id,'abstract-en')]"></xsl:apply-templates>
         </div>
         <div id="location">
             <h3>Location</h3>
@@ -179,7 +172,7 @@
             <!-- Pull related subjects -->
         </div>
         <div id="descriptions">
-            <xsl:apply-templates select="t:desc"/>
+            <xsl:apply-templates select="t:desc[not(contains(@xml:id,'abstract'))]"/>
         </div>
         <div id="idnos">
             <h3>Additional Links</h3>
@@ -209,7 +202,7 @@
     
     <xsl:template match="t:location[not(t:geo)]">
         <li>
-            <xsl:for-each select="child::node()">
+            <!-- <xsl:for-each select="child::node()">
                 <xsl:choose>
                     <xsl:when test="@ref">
                         <a>
@@ -221,13 +214,15 @@
                     </xsl:when>
                     <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
                 </xsl:choose>
-            </xsl:for-each>
+            </xsl:for-each> -->
+            <xsl:apply-templates select="child::node()"/>
             (<xsl:value-of select="replace(replace(@source, $bibprefix,''),' ', ', ')"/>)
             <!-- (<xsl:value-of select="substring-after(@source,'-')"/>)  -->
         </li>
     </xsl:template>
     
     <xsl:template match="//t:event">
+        <xsl:if test="not(contains(@type,'attestation'))">
         <li>
             <xsl:choose>
                 <xsl:when test="@when">
@@ -237,40 +232,44 @@
                     <xsl:value-of select="@from"/> - <xsl:if test="@to"><xsl:value-of select="@to"/></xsl:if>:
                 </xsl:when>
             </xsl:choose>
-            <xsl:value-of select="."/>
+            <xsl:apply-templates select="t:desc/child::node()"/>
+            <!-- <xsl:value-of select="."/> -->
             (<xsl:value-of select="replace(replace(@source, $bibprefix,''),' ', ', ')"/>)
             <!-- (<xsl:value-of select="substring-after(@source,'-')"/>)  -->
         </li>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="//t:desc">
+        <xsl:if test="contains(@xml:id,'abstract')">
+            <xsl:apply-templates select="child::node()"/>
+        </xsl:if>
+        
         <!-- If there is a GEDSH desc, i.e. if there is a bibl entry for GEDSH whose @xml:id is contained in the @source of the quote of this desc -->
-       <!-- <p>Description (lang <xsl:value-of select="@xml:lang"/>, citation <xsl:value-of select="t:quote/@source"/>): <xsl:value-of select="t:quote"/></p> -->
-       <!-- <p><xsl:value-of select="//t:bibl[contains(t:ptr/@target,'http://syriaca.org/bibl/4')]/@xml:id"/></p> -->
         <xsl:if test="t:quote/@source">
             <xsl:variable name="citation"><xsl:value-of select="substring-after(t:quote/@source,'#')"/></xsl:variable>
             <xsl:if test="//t:bibl[contains(t:ptr/@target,'http://syriaca.org/bibl/1') and contains(@xml:id,$citation)]">
-            <h3>GEDSH Entry</h3>
-            <p><xsl:value-of select="t:quote"/>... (read more)
-                (<xsl:value-of select="replace(replace(t:quote/@source, $bibprefix,''),' ', ', ')"/>)
-                <!-- (<xsl:value-of select="substring-after(t:quote/@source,'-')"/>)  -->
-            </p>
-        </xsl:if>
+                <h3>GEDSH Entry</h3>
+                <p><xsl:apply-templates select="t:quote/child::node()"/>... (read more)
+                    (<xsl:value-of select="replace(replace(t:quote/@source, $bibprefix,''),' ', ', ')"/>)
+                    <!-- (<xsl:value-of select="substring-after(t:quote/@source,'-')"/>)  -->
+                </p>
+            </xsl:if>
         
-        <!-- If Barsoum description, Description heading and "(Read in Syriac or Arabic)" -->
-        <xsl:if test="//t:bibl[contains(t:ptr/@target,'http://syriaca.org/bibl/4') and contains(@xml:id,$citation)]">
-            <h3>Description</h3>
-            <p><xsl:value-of select="t:quote"/>  (Read in Syriac or Arabic)
-                (<xsl:value-of select="replace(replace(t:quote/@source, $bibprefix,''),' ', ', ')"/>)
-                <!-- (<xsl:value-of select="substring-after(t:quote/@source,'-')"/>)  -->
-            </p>
-        </xsl:if>
+            <!-- If Barsoum description, Description heading and "(Read in Syriac or Arabic)" -->
+            <xsl:if test="//t:bibl[contains(t:ptr/@target,'http://syriaca.org/bibl/4') and contains(@xml:id,$citation)]">
+                <h3>Description</h3>
+                <p><xsl:apply-templates select="t:quote/child::node()"/>  (Read in Syriac or Arabic)
+                    (<xsl:value-of select="replace(replace(t:quote/@source, $bibprefix,''),' ', ', ')"/>)
+                    <!-- (<xsl:value-of select="substring-after(t:quote/@source,'-')"/>)  -->
+                </p>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
     
     <xsl:template match="//t:idno">
-        <xsl:if test="not(contains(.,'syriaca.org'))">
-                <li><xsl:value-of select="current()"></xsl:value-of></li>
+        <xsl:if test="contains(@type,'URI') and not(contains(.,'syriaca.org'))">
+            <li><a><xsl:attribute name="href"><xsl:value-of select="current()"/></xsl:attribute><xsl:value-of select="current()"/></a></li>
         </xsl:if>
     </xsl:template>
     
@@ -282,8 +281,20 @@
                     <xsl:value-of select="t:ptr/@target"/>
                 </xsl:attribute>
                 <xsl:value-of select="t:title"/>
-            </a><xsl:if test="t:citedRange">, </xsl:if>
-            <xsl:value-of select="t:citedRange"/>.
+            </a>&#x200E;<xsl:if test="t:citedRange">, <xsl:value-of select="t:citedRange"/></xsl:if>. <!-- LRM makes citation comma work well -->
         </li>
     </xsl:template>
+    
+    <xsl:template match="text()">
+        <!-- Deal with text while adding links to place names surrounded by <placeName ref="http://syriaca.org/place/##"/> -->
+        <xsl:choose>
+            <xsl:when test="contains(../@ref,'syriaca.org')">
+                <a><xsl:attribute name="href"><xsl:value-of select="../@ref"/></xsl:attribute><xsl:value-of select="."/></a>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
 </xsl:stylesheet>

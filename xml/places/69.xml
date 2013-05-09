@@ -49,7 +49,8 @@
             <listPlace>
                 <place xml:id="place-69" type="monastery">
                     <placeName xml:lang="en" resp="http://syriaca.org" source="#bib69-1">Dayr al-Zaʿfarān</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib69-2">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org">ܕܝܪܐ ܕܙܥܦܪܐܢ</placeName>
+                    <placeName xml:lang="syr-Syrj" source="#bib69-2">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ</placeName>
                     <placeName xml:lang="ar" source="#bib69-3">دير الزعفران</placeName>
                     <placeName xml:lang="en" source="#bib69-4">Zaʿfaran Monastery</placeName>
                     <placeName xml:lang="en" source="#bib69-5">monastery Deir Zafaran</placeName>

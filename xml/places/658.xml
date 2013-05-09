@@ -45,7 +45,8 @@
             <listPlace>
                 <place xml:id="place-658" type="monastery">
                     <placeName xml:lang="en" resp="http://syriaca.org">Mor Behnam Hermitage</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib658-1">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
+                    <placeName xml:lang="syr" resp="http://syriaca.org">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
+                    <placeName xml:lang="syr-Syrj" source="#bib658-1">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
                     <placeName xml:lang="ar" source="#bib658-2">صومعة مار بهنام</placeName>
                     <location source="#bib658-2">
                         <offset>north of</offset>
