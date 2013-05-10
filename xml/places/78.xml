@@ -39,21 +39,11 @@
                 </availability>
                 <date>2013-05-06</date>
             </publicationStmt>
-            <notesStmt>
-                <note type="future-revision">FUTURE: one possibility</note>
-            </notesStmt>
             <sourceDesc>
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <editorialDecl>
-                <p>Future 1</p>
-                <p>Future 2</p>
-            </editorialDecl>
-        </encodingDesc>
         <revisionDesc>
-            <change type="future">Decide how to mark future revisions that need to be made</change>
             <change when="2013-04-11" who="http://syriaca.org/editors.xml#tcarlson">ADDED: place name links in desc elements</change>
             <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">ADDED: CBSC citation</change>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
@@ -73,7 +63,7 @@
                     <desc xml:lang="en">
                         <quote source="#bib78-1">183. Edessa</quote>
                     </desc>
-                    <desc xml:lang="syr">
+                    <desc xml:lang="syr-Syrj">
                         <quote source="#bib78-3">ܡܕܺܝܢܬܐ ܗܳܝ ܛܒܝܒܬܳܐ ܠܡܰܕܢܚܳܐ ܕܚܳܠܳܒ ܚܰܡܫܳܐ ܝܰܘܡ̈ܝܢ ܘܡܶܫܬܰܡܗܐ ܝܰܘܡܳܢ ܐܘܪܦܰܗ̈</quote>
                     </desc>
                     <desc xml:lang="ar">
@@ -106,13 +96,6 @@
                     <state type="confession" from="1098" to="1144" source="#bib78-1">
                         <label>Latin</label>
                     </state>
-                    <event type="attestation" xml:id="attestation142-1" notBefore="1291" notAfter="1318" source="#bib142-6"><label>Attestation</label></event>
-                    <linkGrp type="name-attestations">
-                        <link target="#name1 #attestation1"/>
-                        <link target="#name1 #attestation2"/>
-                        <link target="#name1 #attestation3"/>
-                        <link target="#name1 #attestation4"/>
-                    </linkGrp>
                     <idno type="URI">http://syriaca.org/place/78</idno>
                     <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
