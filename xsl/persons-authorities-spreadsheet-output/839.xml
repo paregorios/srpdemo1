@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,57 +17,49 @@
       <body>
          <listPerson>
             <person xml:id="person-839">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Ammonius of Alexandria</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="ar" source="#bib839-3">امونيوس الاسكندري</persName>
+               <persName type="sic" xml:lang="syr" source="#bib839-4">ܐܡܘܢܝܣ ܐܠܟܣܢܕܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib839-4">ܐܰܡܘܢܝܣ ܐܰܠܟܣܢܕܪܳܝܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib839-5">ܐܡܘܢܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib839-5">ܐܵܡܘܿܢܝܼܣ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib839-6">ܐܡܘܢܝܣ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib839-6">ܐܰܡܽܘܢܝܳܣ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Ammonius of Alexandria</persName>
+               <persName type="split" xml:lang="ar" source="#bib839-3">
+                  <forename>امونيوس</forename>
+                  <surname/>
+                  <addName type="untagged-title">الاسكندري</addName>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Ammonius</forename>
-                           <addName type="untagged-title">of Alexandria</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr" source="#bib839-4">
+                  <forename>ܐܡܘܢܝܣ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
-               <persName type="sic">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib839-4" type="sic">ܐܡܘܢܝܣ ܐܠܟܣܢܕܪܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib839-4" type="sic">ܐܰܡܘܢܝܣ ܐܰܠܟܣܢܕܪܳܝܐ</persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib839-3" type="sic">امونيوس الاسكندري</persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib839-4">
+                  <forename>ܐܰܡܘܢܝܣ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܰܠܟܣܢܕܪܳܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib839-5">
+                  <forename>ܐܡܘܢܝܣ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib839-5">
+                  <forename>ܐܵܡܘܿܢܝܼܣ</forename>
+                  <surname/>
                </persName>
                <persName type="split">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Syrc" source="#bib839-4" type="split">
-                           <forename>ܐܡܘܢܝܣ</forename>
-                           <addName type="untagged-title">ܐܠܟܣܢܕܪܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="syr-Syrj" source="#bib839-4" type="split">
-                           <forename>ܐܰܡܘܢܝܣ</forename>
-                           <addName type="untagged-title">ܐܰܠܟܣܢܕܪܳܝܐ</addName>
-                        </persName>
-                     </seg>
-                     <seg>
-                        <persName xml:lang="ar" source="#bib839-3" type="split">
-                           <forename>امونيوس</forename>
-                           <addName type="untagged-title">الاسكندري</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+                  <forename>ܐܡܘܢܝܣ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib839-6">
+                  <forename>ܐܰܡܽܘܢܝܳܣ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Ammonius</forename>
+                  <surname/>
+                  <addName type="untagged-title">of Alexandria</addName>
                </persName>
                <bibl xml:id="bib839-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب

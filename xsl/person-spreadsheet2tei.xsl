@@ -4,7 +4,8 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
+    xmlns:saxon="http://saxon.sf.net/">
     <xsl:output method="text"/>
     <xsl:output method="xml" indent="yes" name="xml"/>
     <xsl:output method="html" indent="yes" name="html"/>
@@ -70,8 +71,10 @@
                                         
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
-                                            <persName>
+                                            <persName type="sic">
+                                                <!-- Adds language attributes. -->
                                                 <xsl:call-template name="language"/>
+                                                <!-- Adds source attributes. -->
                                                 <xsl:call-template name="source">
                                                     <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
                                                     <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
@@ -81,7 +84,7 @@
                                                     <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
                                                     <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
                                                 </xsl:call-template>
-                                                <xsl:attribute name="type" select="'sic'"/>
+                                                <!-- Shows which name forms are authorized. -->
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
                                                     <xsl:attribute name="resp" select="'http://syriaca.org'"/>
                                                 </xsl:if>
@@ -89,260 +92,85 @@
                                             </persName>
                                         </xsl:for-each>
                                         
-                                       <!-- The <persName> below may be irrelevant if my above experiment with for-each works. -->
-                                        <persName type="sic" subtype="syriaca-authorized">
-                                            <choice>
-                                                <xsl:if
-                                                  test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
-                                                  <!-- Should we use syr-Syrc for unvocalized Syriac, or simply syr? -->
-                                                  <!-- Should we put in SRP as @source or @resp? -->
-                                                  <seg>
-                                                  <persName xml:lang="syr-Syrc" type="sic">
-                                                  <xsl:value-of select="Authorized_Sy_Full"/>
-                                                  </persName>
-                                                  </seg>
-                                                </xsl:if>
-                                                <xsl:choose>
-                                                  <xsl:when
-                                                  test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                                  <seg>
-                                                  <persName xml:lang="syr-Latn-x-gedsh"
-                                                  source="#{$gedsh-id}" type="sic">
-                                                  <xsl:value-of select="GEDSH_Full"/>
-                                                  </persName>
-                                                  </seg>
-                                                  </xsl:when>
-                                                  <xsl:when
-                                                  test="string-length(normalize-space(GS_En_Full)) > 0">
-                                                  <seg>
-                                                  <persName xml:lang="syr-Latn-x-gedsh" type="sic">
-                                                  <xsl:value-of select="GS_En_Full"/>
-                                                  </persName>
-                                                  </seg>
-                                                  </xsl:when>
-                                                  <xsl:otherwise/>
-                                                </xsl:choose>
-                                            </choice>
-                                        </persName>
-                                        
-                                        <!-- Standard Syriaca.org names, split -->
-                                        <persName type="split" subtype="syriaca-authorized">
-                                            <choice>
-                                                <xsl:if
-                                                    test="string-length(normalize-space(Authorized_Sy_Full)) > 0">
-                                                    <!-- Should we use syr-Syrc for unvocalized Syriac, or simply syr? -->
-                                                    <!-- Should we put in SRP as @source or @resp? -->
-                                                    <seg>
-                                                        <persName xml:lang="syr-Syrc" type="split">
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Given)) > 0">
-                                                            <forename><xsl:value-of select="Authorized_Sy_Given"/></forename>
-                                                            </xsl:if>
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Family)) > 0">
-                                                                <surname><xsl:value-of select="Authorized_Sy_Family"/></surname>
-                                                            </xsl:if>
-                                                            <!-- Need to discuss order and types of following titles. -->
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Office)) > 0">
-                                                                <addName type="office"><xsl:value-of select="Authorized_Sy_Office"/></addName>
-                                                            </xsl:if>
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Saint_Title)) > 0">
-                                                                <addName type="saint"><xsl:value-of select="Authorized_Sy_Saint_Title"/></addName>
-                                                            </xsl:if>
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Numeric_Title)) > 0">
-                                                                <genName type="numeric"><xsl:value-of select="Authorized_Sy_Numeric_Title"/></genName>
-                                                            </xsl:if>
-                                                            <xsl:if test="string-length(normalize-space(Authorized_Sy_Terms_of_Address)) > 0">
-                                                                <addName type="terms-of-address"><xsl:value-of select="Authorized_Sy_Terms_of_Address"/></addName>
-                                                            </xsl:if>
-                                                        </persName>
-                                                    </seg>
-                                                </xsl:if>
-                                                <xsl:choose>
-                                                    <!-- Assumes all GEDSH names are split. -->
-                                                    <xsl:when
-                                                        test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                                        <seg>
-                                                            <persName xml:lang="syr-Latn-x-gedsh"
-                                                                source="#{$gedsh-id}" type="split">
-                                                                <xsl:if test="string-length(normalize-space(GEDSH_Given)) > 0">
-                                                                    <forename><xsl:value-of select="GEDSH_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(GEDSH_Family)) > 0">
-                                                                    <surname><xsl:value-of select="GEDSH_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(GEDSH_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="GEDSH_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:when>
-                                                    <!-- Assumes all GEDSH-style names are split. -->
-                                                    <xsl:when
-                                                        test="string-length(normalize-space(GS_En_Full)) > 0">
-                                                        <seg>
-                                                            <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                                                                <xsl:if test="string-length(normalize-space(GS_En_Given)) > 0">
-                                                                    <forename><xsl:value-of select="GS_En_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(GS_En_Family)) > 0">
-                                                                    <surname><xsl:value-of select="GS_En_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(GS_En_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="GS_En_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:when>
-                                                    <xsl:otherwise/>
-                                                </xsl:choose>
-                                            </choice>
-                                        </persName>
-                                        
-                                        <!-- GEDSH names, unsplit -->
-                                        <!-- Should split and unsplit versions be given as choice/seg? -->
-                                        <xsl:if
-                                            test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                            <persName xml:lang="syr-Latn-x-gedsh"
-                                                    source="#{$gedsh-id}" type="sic">
-                                                    <xsl:value-of select="GEDSH_Full"/>
-                                            </persName>
-                                        </xsl:if>
-                                        
-                                        <!-- GEDSH names, split -->
-                                        <xsl:if
-                                            test="string-length(normalize-space(GEDSH_Full)) > 0">
-                                                <persName xml:lang="syr-Latn-x-gedsh"
-                                                    source="#{$gedsh-id}" type="split">
-                                                    <xsl:if test="string-length(normalize-space(GEDSH_Given)) > 0">
-                                                        <forename><xsl:value-of select="GEDSH_Given"/></forename>
-                                                    </xsl:if>
-                                                    <xsl:if test="string-length(normalize-space(GEDSH_Family)) > 0">
-                                                        <surname><xsl:value-of select="GEDSH_Family"/></surname>
-                                                    </xsl:if>
-                                                    <xsl:if test="string-length(normalize-space(GEDSH_Titles)) > 0">
-                                                        <addName type="untagged-title"><xsl:value-of select="GEDSH_Titles"/></addName>
-                                                    </xsl:if>
-                                                </persName>
-                                        </xsl:if>
-                                        
-                                        <!-- Barsoum names, unsplit -->
-                                        <!-- Test whether any Barsoum names exist -->
-                                        <xsl:if test="string-length(normalize-space(concat(Barsoum_Sy_NV_Full,Barsoum_En_Full,Barsoum_Ar_Full))) > 0">
-                                        <!-- If using <choice> for Barsoum <bibl> citations, may be able to cite parent <bibl> as @source here. -->
-                                            <persName type="sic">
-                                            <choice>
-                                                <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
-                                                    <seg>
-                                                        <persName xml:lang="syr-Syrc" source="#{$barsoum-sy-id}" type="sic">
-                                                            <xsl:value-of select="Barsoum_Sy_NV_Full"/>
-                                                        </persName>
-                                                    </seg>
-                                                </xsl:if>
-                                                <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_Sy_V_Full)) > 0">
-                                                    <seg>
-                                                        <persName xml:lang="syr-Syrj" source="#{$barsoum-sy-id}" type="sic">
-                                                            <xsl:value-of select="Barsoum_Sy_V_Full"/>
-                                                        </persName>
-                                                    </seg>
-                                                </xsl:if>
-                                                <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
-                                                    <seg>
-                                                        <!-- Should language be "ar" or "syr-Arab-x-barsoum"? -->
-                                                        <persName xml:lang="ar" source="#{$barsoum-ar-id}" type="sic">
-                                                            <xsl:value-of select="Barsoum_Ar_Full"/>
-                                                        </persName>
-                                                    </seg>
-                                                </xsl:if>
-                                                <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_En_Full)) > 0">
-                                                    <seg>
-                                                        <!-- Should language be "en" or "syr-Latn-x-barsoum"? -->
-                                                        <persName xml:lang="en" source="#{$barsoum-en-id}" type="sic">
-                                                            <xsl:value-of select="Barsoum_En_Full"/>
-                                                        </persName>
-                                                    </seg>
-                                                </xsl:if>
-                                            </choice>
-                                        </persName>
-                                            <!-- If using <choice> for Barsoum <bibl> citations, may be able to cite parent <bibl> as @source here. -->
+                                        <!-- Adds split persName elements. -->
+                                        <!-- Groups together split name fields by the first part of the field name (e.g., "GEDSH"). -->
+                                        <xsl:for-each-group
+                                            select="*[(contains(name(),'_Given') or contains(name(),'_Family') or contains(name(),'_Titles') or contains(name(),'_Office') or contains(name(),'_Saint_Title') or contains(name(),'_Numeric_Title') or contains(name(),'_Terms_of_Address')) and string-length(normalize-space(node()))]"
+                                            group-by="replace(replace(replace(replace(replace(replace(replace(name(), '_Given', ''), '_Family', ''), '_Titles', ''), '_Office', ''), '_Saint_Title', ''), '_Numeric_Title', ''), '_Terms_of_Address', '')">
                                             <persName type="split">
-                                                <choice>
-                                                    <!-- Assumes all Barsoum names are split -->
-                                                    <xsl:if
-                                                        test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
-                                                        <seg>
-                                                            <persName xml:lang="syr-Syrc" source="#{$barsoum-sy-id}" type="split">
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_NV_Given)) > 0">
-                                                                    <forename><xsl:value-of select="Barsoum_Sy_NV_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_NV_Family)) > 0">
-                                                                    <surname><xsl:value-of select="Barsoum_Sy_NV_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_NV_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="Barsoum_Sy_NV_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:if>
-                                                    <!-- Assumes all Barsoum names are split -->
-                                                    <xsl:if
-                                                        test="string-length(normalize-space(Barsoum_Sy_V_Full)) > 0">
-                                                        <seg>
-                                                            <persName xml:lang="syr-Syrj" source="#{$barsoum-sy-id}" type="split">
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_V_Given)) > 0">
-                                                                    <forename><xsl:value-of select="Barsoum_Sy_V_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_V_Family)) > 0">
-                                                                    <surname><xsl:value-of select="Barsoum_Sy_V_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Sy_V_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="Barsoum_Sy_V_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:if>
-                                                    <!-- Assumes all Barsoum names are split -->
-                                                    <xsl:if
-                                                        test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
-                                                        <seg>
-                                                            <!-- Should language be "ar" or "syr-Arab-x-barsoum"? -->
-                                                            <persName xml:lang="ar" source="#{$barsoum-ar-id}" type="split">
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Ar_Given)) > 0">
-                                                                    <forename><xsl:value-of select="Barsoum_Ar_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Ar_Family)) > 0">
-                                                                    <surname><xsl:value-of select="Barsoum_Ar_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_Ar_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="Barsoum_Ar_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:if>
-                                                    <!-- Assumes all Barsoum names are split -->
-                                                    <xsl:if
-                                                        test="string-length(normalize-space(Barsoum_En_Full)) > 0">
-                                                        <seg>
-                                                            <!-- Should language be "en" or "syr-Latn-x-barsoum"? -->
-                                                            <persName xml:lang="en" source="#{$barsoum-en-id}" type="split">
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_En_Given)) > 0">
-                                                                    <forename><xsl:value-of select="Barsoum_En_Given"/></forename>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_En_Family)) > 0">
-                                                                    <surname><xsl:value-of select="Barsoum_En_Family"/></surname>
-                                                                </xsl:if>
-                                                                <xsl:if test="string-length(normalize-space(Barsoum_En_Titles)) > 0">
-                                                                    <addName type="untagged-title"><xsl:value-of select="Barsoum_En_Titles"/></addName>
-                                                                </xsl:if>
-                                                            </persName>
-                                                        </seg>
-                                                    </xsl:if>
-                                                </choice>
+                                                <!-- Adds language attributes. -->
+                                                <xsl:call-template name="language"/>
+                                                <!-- Adds source attributes. -->
+                                                <xsl:call-template name="source">
+                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                </xsl:call-template>
+                                                <!-- Shows which name forms are authorized. -->
+                                                <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
+                                                    <xsl:attribute name="resp" select="'http://syriaca.org'"/>
+                                                </xsl:if>
+                                                <!-- Assumes name parts are in the order Given, Family, Title or the order Given, Family, Office, Saint Title, Numeric Title, Terms of Address. -->
+                                                <xsl:if test="ends-with(name(), '_Given')">
+                                                    <forename><xsl:value-of select="."/></forename>
+                                                </xsl:if>
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Family')">
+                                                        <surname><xsl:value-of select="."/></surname>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Family')">
+                                                        <surname><xsl:value-of select="following-sibling::*[ends-with(name(), '_Family')][1]"/></surname>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <!-- The following does not work. Revise! -->
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Titles')">
+                                                        <addName type="untagged-title"><xsl:value-of select="."/></addName>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Titles')">
+                                                        <addName type="untagged-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Titles')][1]"/></addName>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Office')">
+                                                        <addName type="office"><xsl:value-of select="."/></addName>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Office')">
+                                                        <addName type="office"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Office')][1]"/></addName>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Saint_Title')">
+                                                        <addName type="saint-title"><xsl:value-of select="."/></addName>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Saint_Title')">
+                                                        <addName type="saint-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Saint_Title')][1]"/></addName>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Numeric_Title')">
+                                                        <addName type="numeric-title"><xsl:value-of select="."/></addName>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Numeric_Title')">
+                                                        <addName type="numeric-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Numeric_Title')][1]"/></addName>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                <xsl:choose>
+                                                    <xsl:when test="ends-with(name(), '_Terms_of_Address')">
+                                                        <addName type="terms-of-address"><xsl:value-of select="."/></addName>
+                                                    </xsl:when>
+                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Terms_of_Address')">
+                                                        <addName type="terms-of-address"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Terms_of_Address')][1]"/></addName>
+                                                    </xsl:when>
+                                                </xsl:choose>
+                                                
                                             </persName>
-                                        </xsl:if>
-                                        
+                                        </xsl:for-each-group>
+                                      
                                         
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
@@ -437,6 +265,8 @@
                                             </bibl>
                                         </xsl:if>
                                         
+                                        <!-- Add Abdisho citations -->
+                                        
                                     </person>
                                 </listPerson>
                         </body>
@@ -503,25 +333,25 @@
         <xsl:param name="abdisho-bo-id"/>
         <xsl:choose>
             <xsl:when test="contains(name(),'GEDSH')">
-                <xsl:attribute name="source" select="$gedsh-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$gedsh-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_En')">
-                <xsl:attribute name="source" select="$barsoum-en-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-en-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Sy')">
-                <xsl:attribute name="source" select="$barsoum-sy-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-sy-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Ar')">
-                <xsl:attribute name="source" select="$barsoum-ar-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-ar-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'CBSC_En')">
-                <xsl:attribute name="source" select="$cbsc-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$cbsc-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ')">
-                <xsl:attribute name="source" select="$abdisho-ydq-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$abdisho-ydq-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_BO')">
-                <xsl:attribute name="source" select="$abdisho-bo-id"/>
+                <xsl:attribute name="source">#<xsl:value-of select="$abdisho-bo-id"/></xsl:attribute>
             </xsl:when>
         </xsl:choose>
     </xsl:template>

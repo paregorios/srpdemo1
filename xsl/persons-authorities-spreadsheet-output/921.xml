@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,21 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-921">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Bar Doqsin</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib921-5">ܒܪ ܕܘܩܣܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib921-5">ܒܲܪ ܕܘܿܩܣܝܼܢ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib921-6">ܒܪ ܕܩܘܣܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib921-6">ܒܰܪ ܕܩܘܽܣܺܝܢ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Bar Doqsin</persName>
+               <persName type="split" xml:lang="syr" source="#bib921-5">
+                  <forename>ܒܪ ܕܘܩܣܝܢ</forename>
+                  <surname>ܒܲܪ ܕܘܿܩܣܝܼܢ</surname>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <surname>Bar Doqsin</surname>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib921-5">
+                  <forename>ܒܲܪ ܕܘܿܩܣܝܼܢ</forename>
+                  <surname>ܒܪ ܕܩܘܣܝܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib921-6">
+                  <forename>ܒܪ ܕܩܘܣܝܢ</forename>
+                  <surname>ܒܰܪ ܕܩܘܽܣܺܝܢ</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib921-6">
+                  <forename>ܒܰܪ ܕܩܘܽܣܺܝܢ</forename>
+                  <surname>Bar Doqsin</surname>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Bar Doqsin</forename>
+                  <surname/>
                </persName>
             </person>
          </listPerson>

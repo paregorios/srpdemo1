@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-324">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib324-1" type="sic">Aḥob Qaṭraya</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib324-1" type="split">
-                           <forename>Aḥob</forename>
-                           <addName type="untagged-title">Qaṭraya</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib324-1" type="sic">Aḥob Qaṭraya</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib324-1" type="split">
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib324-1"
+                         resp="http://syriaca.org">Aḥob Qaṭraya</persName>
+               <persName type="sic" xml:lang="syr" source="#bib324-5">ܐܚܘܒ ܩܛܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib324-5">ܐܲܚܘܼܒ ܩܸܛܪܵܝܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib324-6">ܐܝܘܒ ܩܛܪܝܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib324-6">ܐܝܺܘܽܒ ܩܰܛܪܳܝܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib324-1"
+                         resp="http://syriaca.org">
                   <forename>Aḥob</forename>
+                  <surname/>
                   <addName type="untagged-title">Qaṭraya</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib324-5">
+                  <forename>ܐܚܘܒ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܩܛܪܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib324-5">
+                  <forename>ܐܲܚܘܼܒ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܩܸܛܪܵܝܵܐ</addName>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܝܘܒ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܩܛܪܝܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib324-6">
+                  <forename>ܩܛܪܝܐ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܩܰܛܪܳܝܳܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib324-6">
+                  <forename>ܐܝܺܘܽܒ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܩܰܛܪܳܝܳܐ</addName>
                </persName>
                <bibl xml:id="bib324-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

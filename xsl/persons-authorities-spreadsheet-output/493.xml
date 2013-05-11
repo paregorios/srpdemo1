@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,27 +17,46 @@
       <body>
          <listPerson>
             <person xml:id="person-493">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib493-1" type="sic">Gabriel of Baṣra</persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" source="#bib493-1" type="split">
-                           <forename>Gabriel</forename>
-                           <addName type="untagged-title">of Baṣra</addName>
-                        </persName>
-                     </seg>
-                  </choice>
-               </persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib493-1" type="sic">Gabriel of Baṣra</persName>
-               <persName xml:lang="syr-Latn-x-gedsh" source="#bib493-1" type="split">
+               <persName type="sic"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib493-1"
+                         resp="http://syriaca.org">Gabriel of Baṣra</persName>
+               <persName type="sic" xml:lang="syr" source="#bib493-5">ܓܒܪܝܠ ܕܒܨܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib493-5">ܓܲܒܪܝܹܠ ܕܒܲܨܪܵܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib493-6">ܓܒܪܐܝܠ ܕܒܨܪܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib493-6">ܓܰܒܪܺܐܝܶܠ ܕܒܳܨܪܳܐ</persName>
+               <persName type="split"
+                         xml:lang="syr-Latn-x-gedsh"
+                         source="#bib493-1"
+                         resp="http://syriaca.org">
                   <forename>Gabriel</forename>
+                  <surname/>
                   <addName type="untagged-title">of Baṣra</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib493-5">
+                  <forename>ܓܒܪܝܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܕܒܨܪܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib493-5">
+                  <forename>ܓܲܒܪܝܹܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܕܒܲܨܪܵܐ</addName>
+               </persName>
+               <persName type="split">
+                  <forename>ܓܒܪܐܝܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܕܒܨܪܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib493-6">
+                  <forename>ܕܒܨܪܐ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܕܒܳܨܪܳܐ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib493-6">
+                  <forename>ܓܰܒܪܺܐܝܶܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܕܒܳܨܪܳܐ</addName>
                </persName>
                <bibl xml:id="bib493-1">
                   <title xml:lang="en">The Gorgias Encyclopedic

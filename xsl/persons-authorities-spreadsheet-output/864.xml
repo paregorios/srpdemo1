@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,22 +17,40 @@
       <body>
          <listPerson>
             <person xml:id="person-864">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Gabriel of Hormizdshir</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib864-5">ܓܒܪܝܠ ܐܦܣܩܘܦܐ ܕܗܘܪܡܝܙܕܫܝܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib864-5">ܓܲܒܪܝܹܠ ܐܲܦܸܣܩܘܿܦܵܐ ܕܗܘܼܪܡܝܼܙܕܫܝܼܪ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib864-6">ܓܒܪܐܝܠ ܐܦܝܣܩܘܦܐ ܕܗܘܡܝܙܕܫܝܪ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib864-6">ܓܰܒܪܺܐܝܶܠ ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܗܽܘܪܡܺܝܙܕܫܺܝܪ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Gabriel of Hormizdshir</persName>
+               <persName type="split" xml:lang="syr" source="#bib864-5">
+                  <forename>ܓܒܪܝܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܦܣܩܘܦܐ ܕܗܘܪܡܝܙܕܫܝܪ</addName>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Gabriel</forename>
-                           <addName type="untagged-title">of Hormizdshir</addName>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib864-5">
+                  <forename>ܓܲܒܪܝܹܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܲܦܸܣܩܘܿܦܵܐ ܕܗܘܼܪܡܝܼܙܕܫܝܼܪ</addName>
+               </persName>
+               <persName type="split">
+                  <forename>ܓܒܪܐܝܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܦܝܣܩܘܦܐ ܕܗܘܡܝܙܕܫܝܪ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr" source="#bib864-6">
+                  <forename>ܐܦܝܣܩܘܦܐ ܕܗܘܡܝܙܕܫܝܪ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܗܽܘܪܡܺܝܙܕܫܺܝܪ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib864-6">
+                  <forename>ܓܰܒܪܺܐܝܶܠ</forename>
+                  <surname/>
+                  <addName type="untagged-title">ܐܶܦܺܝܣܩܽܘܦܳܐ ܕܗܽܘܪܡܺܝܙܕܫܺܝܪ</addName>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Gabriel</forename>
+                  <surname/>
+                  <addName type="untagged-title">of Hormizdshir</addName>
                </persName>
             </person>
          </listPerson>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -17,21 +17,30 @@
       <body>
          <listPerson>
             <person xml:id="person-844">
-               <persName type="sic" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="sic">Aquilinus</persName>
-                     </seg>
-                  </choice>
+               <persName type="sic" xml:lang="syr" source="#bib844-5">ܐܩܘܠܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrn" source="#bib844-5">ܐܲܩܘܿܠܝܼܢܹܐ</persName>
+               <persName type="sic" xml:lang="syr" source="#bib844-6">ܐܩܘܠܝܢܐ</persName>
+               <persName type="sic" xml:lang="syr-Syrj" source="#bib844-6">ܐܰܩܽܘܠܺܝܢܳܐ</persName>
+               <persName type="sic" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">Aquilinus</persName>
+               <persName type="split" xml:lang="syr" source="#bib844-5">
+                  <forename>ܐܩܘܠܝܢܐ</forename>
+                  <surname/>
                </persName>
-               <persName type="split" subtype="syriaca-authorized">
-                  <choice>
-                     <seg>
-                        <persName xml:lang="syr-Latn-x-gedsh" type="split">
-                           <forename>Aquilinus</forename>
-                        </persName>
-                     </seg>
-                  </choice>
+               <persName type="split" xml:lang="syr-Syrn" source="#bib844-5">
+                  <forename>ܐܲܩܘܿܠܝܼܢܹܐ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split">
+                  <forename>ܐܩܘܠܝܢܐ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split" xml:lang="syr-Syrj" source="#bib844-6">
+                  <forename>ܐܰܩܽܘܠܺܝܢܳܐ</forename>
+                  <surname/>
+               </persName>
+               <persName type="split" xml:lang="syr-Latn-x-gedsh" resp="http://syriaca.org">
+                  <forename>Aquilinus</forename>
+                  <surname/>
                </persName>
             </person>
          </listPerson>
