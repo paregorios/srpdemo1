@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-05-06</date>
+                <date>2013-05-13</date>
                 <idno type="srp">202</idno>
             </publicationStmt>
             <sourceDesc>
@@ -46,13 +46,14 @@
         <body>
             <listPlace>
                 <place xml:id="place-202" type="river">
-                    <placeName xml:lang="en" resp="http://syriaca.org" source="#bib202-1 #bib202-4 #bib202-5">Tigris</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org">ܕܩܠܬ</placeName>
-                    <placeName xml:lang="syr-Syrj" source="#bib202-2">ܕܶܩܠܰܬ</placeName>
-                    <placeName xml:lang="ar" source="#bib202-3">دجلة</placeName>
+                    <placeName xml:id="name202-1" xml:lang="en" resp="http://syriaca.org" source="#bib202-1 #bib202-4 #bib202-5" corresp="#name202-3 #name202-4">Tigris</placeName>
+                    <placeName xml:id="name202-2" xml:lang="syr" resp="http://syriaca.org">ܕܩܠܬ</placeName>
+                    <placeName xml:id="name202-3" xml:lang="syr-Syrj" source="#bib202-2" corresp="#name202-1 #name202-4">ܕܶܩܠܰܬ</placeName>
+                    <placeName xml:id="name202-4" xml:lang="ar" source="#bib202-3" corresp="#name202-1 #name202-3">دجلة</placeName>
                     <desc xml:id="abstract-en-202" xml:lang="en">The eastern major river of Mesopotamia, flowing from SE Turkey to the Persian Gulf.</desc>
                     <state type="existence"/>
                     <idno type="URI">http://syriaca.org/place/202</idno>
+                    <idno type="URI">http://pleiades.stoa.org/places/912964</idno>
                     <idno type="URI">http://en.wikipedia.org/wiki/Tigris</idno>
                     <bibl xml:id="bib202-1">
                         <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>

@@ -37,7 +37,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-05-06</date>
+                <date>2013-05-13</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -52,15 +52,15 @@
         <body>
             <listPlace>
                 <place xml:id="place-45" type="city">
-                    <placeName xml:lang="en" resp="http://syriaca.org" source="#bib45-1">Serugh</placeName>
-                    <placeName xml:lang="en" source="#bib45-1">Baṭnan</placeName>
-                    <placeName xml:lang="syr-Syrj" source="#bib45-2">ܒܰܛܢܢ</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org" source="#bib45-3">ܣܪܘܓ</placeName>
-                    <placeName xml:lang="ar" source="#bib45-4">بَطنان</placeName>
-                    <placeName xml:lang="ar" source="#bib45-5">سروج</placeName>
-                    <placeName xml:lang="en" source="#bib45-6">Baṭnān</placeName>
-                    <placeName xml:lang="en" source="#bib45-7">Sarug</placeName>
-                    <placeName xml:lang="en" source="#bib45-8">Batnan</placeName>
+                    <placeName xml:id="name45-1" xml:lang="en" resp="http://syriaca.org" source="#bib45-1">Serugh</placeName>
+                    <placeName xml:id="name45-2" xml:lang="en" source="#bib45-1">Baṭnan</placeName>
+                    <placeName xml:id="name45-3" xml:lang="syr-Syrj" source="#bib45-2" corresp="#name45-5 #name45-7">ܒܰܛܢܢ</placeName>
+                    <placeName xml:id="name45-4" xml:lang="syr" resp="http://syriaca.org" source="#bib45-3" corresp="#name45-6 #name45-8">ܣܪܘܓ</placeName>
+                    <placeName xml:id="name45-5" xml:lang="ar" source="#bib45-4" corresp="#name45-3 #name45-7">بَطنان</placeName>
+                    <placeName xml:id="name45-6" xml:lang="ar" source="#bib45-5" corresp="#name45-4 #name45-8">سروج</placeName>
+                    <placeName xml:id="name45-7" xml:lang="en" source="#bib45-6" corresp="#name45-3 #name45-5">Baṭnān</placeName>
+                    <placeName xml:id="name45-8" xml:lang="en" source="#bib45-7" corresp="#name45-4 #name45-6">Sarug</placeName>
+                    <placeName xml:id="name45-9" xml:lang="en" source="#bib45-8">Batnan</placeName>
                     <desc xml:id="abstract-en-45" xml:lang="en">An ancient city where Jacob of Serugh was bishop.</desc>
                     <desc xml:lang="syr-Syrj">
                         <quote source="#bib45-2">ܡܕܺܝܢܬܐ ܥܰܬܝܩܬܳܐ ܕܰܒܩܘܪܒܳܐ ܕܰܣܪܘܓ ܗܘܬ.</quote>

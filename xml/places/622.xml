@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-05-06</date>
+                <date>2013-05-13</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -44,7 +44,7 @@
         <body>
             <listPlace>
                 <place xml:id="place-622" type="city">
-                    <placeName xml:lang="en" resp="http://syriaca.org" source="#bib622-1">Chalcedon</placeName>
+                    <placeName xml:id="name622-1" xml:lang="en" resp="http://syriaca.org" source="#bib622-1">Chalcedon</placeName>
                     <desc xml:id="abstract-en-622" xml:lang="en">A city across the Bosphorus from Constantinople, the site of an ecumenical council in 451.</desc>
                     <state type="existience"/>
                     <idno type="URI">http://syriaca.org/place/622</idno>

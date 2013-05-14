@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-05-06</date>
+                <date>2013-05-13</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -44,9 +44,9 @@
         <body>
             <listPlace>
                 <place xml:id="place-655" type="city">
-                    <placeName xml:lang="en" resp="http://syriaca.org">Ṣarrīn</placeName>
-                    <placeName xml:lang="en" source="#bib655-1">Serrin</placeName>
-                    <placeName xml:lang="en" source="#bib655-1">Sirrin</placeName>
+                    <placeName xml:id="name655-1" xml:lang="en" resp="http://syriaca.org">Ṣarrīn</placeName>
+                    <placeName xml:id="name655-2" xml:lang="en" source="#bib655-1">Serrin</placeName>
+                    <placeName xml:id="name655-3" xml:lang="en" source="#bib655-1">Sirrin</placeName>
                     <desc xml:id="abstract-en-655" xml:lang="en">A village in modern Syria near the Euphrates.</desc>
                     <state type="existence"/>
                     <idno type="URI">http://syriaca.org/place/655</idno>

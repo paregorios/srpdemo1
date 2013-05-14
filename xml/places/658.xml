@@ -29,7 +29,7 @@
                         Distributed under a Creative Commons Attribution 3.0 Unported License
                     </licence>
                 </availability>
-                <date>2013-05-06</date>
+                <date>2013-05-13</date>
             </publicationStmt>
             <sourceDesc>
                 <p>Born digital.</p>
@@ -44,10 +44,10 @@
         <body>
             <listPlace>
                 <place xml:id="place-658" type="monastery">
-                    <placeName xml:lang="en" resp="http://syriaca.org">Mor Behnam Hermitage</placeName>
-                    <placeName xml:lang="syr" resp="http://syriaca.org">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
-                    <placeName xml:lang="syr-Syrj" source="#bib658-1">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
-                    <placeName xml:lang="ar" source="#bib658-2">صومعة مار بهنام</placeName>
+                    <placeName xml:id="name658-1" xml:lang="en" resp="http://syriaca.org">Mor Behnam Hermitage</placeName>
+                    <placeName xml:id="name658-2" xml:lang="syr" resp="http://syriaca.org">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
+                    <placeName xml:id="name658-3" xml:lang="syr-Syrj" source="#bib658-1" corresp="#name658-4">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
+                    <placeName xml:id="name658-4" xml:lang="ar" source="#bib658-2" corresp="#name658-3">صومعة مار بهنام</placeName>
                     <location source="#bib658-2">
                         <offset>north of</offset>
                         <placeName ref="http://syriaca.org/place/69">Dayr al-Zaʿfarān</placeName>
