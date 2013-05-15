@@ -15,11 +15,31 @@
 
         <!-- Create a TEI file for each row. -->
         <xsl:for-each select="row">
-            <!-- Create a variable to use as the xml:id for the person element -->
+            <!-- Creates variable to use for displaying the name in titles, headers, etc. -->
+            <xsl:variable name="display-name-english">
+                <xsl:choose>
+                    <xsl:when test="string-length(normalize-space(GEDSH_Full))">
+                        <xsl:value-of select="GEDSH_Full"/>
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space(GS_En_Full))">
+                        <xsl:value-of select="GS_En_Full"/>
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space(Barsoum_En_Full))">
+                        <xsl:value-of select="Barsoum_En_Full"/>
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space(CBSC_En_Full))">
+                        <xsl:value-of select="CBSC_En_Full"/>
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space(Other_En_Full))">
+                        <xsl:value-of select="Other_En_Full"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:variable>
+            <!-- Creates a variable to use as the xml:id for the person element -->
             <xsl:variable name="person-id">person-<xsl:value-of select="SRP_ID"/></xsl:variable>
-            <!-- Create a variable to use as the base for the xml:id for bib elements -->
+            <!-- Creates a variable to use as the base for the xml:id for bib elements -->
             <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"/></xsl:variable>
-            <!-- Create variables to use as xml:id for bib elements -->
+            <!-- Creates variables to use as xml:id for bib elements -->
             <xsl:variable name="gedsh-id">
                 <xsl:value-of select="concat($bib-id, '-1')"/>
             </xsl:variable>
@@ -41,7 +61,7 @@
             <xsl:variable name="cbsc-id">
                 <xsl:value-of select="concat($bib-id, '-7')"/>
             </xsl:variable>
-            <!-- Write the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
+            <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename"
                 select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
             <xsl:result-document href="{$filename}" format="xml">
@@ -50,23 +70,49 @@
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
-                                <title xml:lang="en">...</title>
-                                <!--Each project will establish its own protocol for the title.-->
+                                <title xml:lang="en"><xsl:value-of select="$display-name-english"/> | The Syriac Prosopography</title>
                                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
-                                <funder>...</funder>
-                                <!--Funders will be from a controlled list.-->
-                                <principal>David A. Michelson</principal>               	 
+                                <!-- Which funders do we include here? -->
+                                <funder>The National Endowment for the Humanities</funder>
+                                <funder>The International Balzan Prize Foundation</funder>
+                                <principal>David A. Michelson</principal>
+                                <!-- Are the following correct? -->
                                 <respStmt>
-                                    <name>...</name>
+                                    <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                                    <resp>English name entry, matching with viaf.org records</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
                                     <resp>creator</resp>
                                 </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                                    <resp>editing, Syriac name entry, disambiguation research</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                                    <resp>Syriac name entry</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                                    <resp>Arabic name entry</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                                    <resp>normalization, matching with viaf.org records</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+                                    <resp>date entry</resp>
+                                </respStmt>
+                                <!-- Should anybody from VIAF or ISAW be added here? -->
                             </titleStmt>
                             <editionStmt>
                                 <edition n="1.0"/>
                             </editionStmt>
                             <publicationStmt>
-                                <authority>Syriaca.org: The Syriac Reference Portal
-                                </authority>
+                                <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                                <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$person-id"/>/source</idno>
                                 <availability>
                                     <licence
                                         target="http://creativecommons.org/licenses/by/3.0/">
@@ -74,12 +120,30 @@
                                         Attribution 3.0 Unported License
                                     </licence>
                                 </availability>
-                                <date>...</date>
+                                <!-- Is this the publication date for the entire data set or this record? Is the date is was converted to XML good enough? -->
+                                <date><xsl:value-of select="current-date()"/></date>
                             </publicationStmt>
                             <sourceDesc>
                                 <p>Born digital.</p>
                             </sourceDesc>
                         </fileDesc>
+                        <encodingDesc>
+                            <editorialDecl>
+                                <p>Normalization of capitalization in encoded names.</p>
+                                <!-- Are there other editorial decisions we need to record here? -->
+                            </editorialDecl>
+                            <classDecl>
+                                <taxonomy>
+                                    <category xml:id="syriaca-authorized">
+                                        <catDesc>
+                                            <!-- Check whether the following is acceptable. -->
+                                            The name considered authoritative by Syriaca.org for cataloging purposes
+                                            <!-- Do name types "sic" and "split" go here or in ODD file or both?-->
+                                        </catDesc>
+                                    </category>
+                                </taxonomy>
+                            </classDecl>
+                        </encodingDesc>
                         <profileDesc>
                             <langUsage>
                                 <language ident="syr">Unvocalized Syriac of any variety or period</language>
@@ -93,7 +157,11 @@
                             </langUsage>
                         </profileDesc>
                         <revisionDesc>
-                            <change>...</change>
+                            <change who="http://syriaca.org/editors.xml#ngibson"
+                                n="1.0">
+                                <xsl:attribute name="when" select="current-date()"/>
+                                CREATED: person
+                            </change>
                         </revisionDesc>
                     </teiHeader>
                     <text>
@@ -294,7 +362,7 @@
             <xsl:when test="contains(name(),'Barsoum_En')">
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
             </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En')">
+            <xsl:when test="contains(name(),'CBSC_En_Full')">
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-cbsc'"/>
             </xsl:when>
             <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
@@ -333,7 +401,7 @@
             <xsl:when test="contains(name(),'Barsoum_Ar')">
                 <xsl:attribute name="source">#<xsl:value-of select="$barsoum-ar-id"/></xsl:attribute>
             </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En')">
+            <xsl:when test="contains(name(),'CBSC_En_Full')">
                 <xsl:attribute name="source">#<xsl:value-of select="$cbsc-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ')">
