@@ -50,15 +50,51 @@
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
-                                <title>Title</title>
+                                <title xml:lang="en">...</title>
+                                <!--Each project will establish its own protocol for the title.-->
+                                <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+                                <funder>...</funder>
+                                <!--Funders will be from a controlled list.-->
+                                <principal>David A. Michelson</principal>               	 
+                                <respStmt>
+                                    <name>...</name>
+                                    <resp>creator</resp>
+                                </respStmt>
                             </titleStmt>
+                            <editionStmt>
+                                <edition n="1.0"/>
+                            </editionStmt>
                             <publicationStmt>
-                                <p>Publication Information</p>
+                                <authority>Syriaca.org: The Syriac Reference Portal
+                                </authority>
+                                <availability>
+                                    <licence
+                                        target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons
+                                        Attribution 3.0 Unported License
+                                    </licence>
+                                </availability>
+                                <date>...</date>
                             </publicationStmt>
                             <sourceDesc>
-                                <p>Information about the source</p>
+                                <p>Born digital.</p>
                             </sourceDesc>
                         </fileDesc>
+                        <profileDesc>
+                            <langUsage>
+                                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                                <language ident="en">English</language>
+                                <language ident="ar">Arabic</language>
+                                <language ident="fr">French</language>
+                                <language ident="de">German</language>
+                                <language ident="lat">Latin</language>
+                            </langUsage>
+                        </profileDesc>
+                        <revisionDesc>
+                            <change>...</change>
+                        </revisionDesc>
                     </teiHeader>
                     <text>
                         <body>
@@ -114,60 +150,13 @@
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
                                                     <xsl:attribute name="resp" select="'http://syriaca.org'"/>
                                                 </xsl:if>
-                                                <!-- Assumes name parts are in the order Given, Family, Title or the order Given, Family, Office, Saint Title, Numeric Title, Terms of Address. -->
-                                                <xsl:if test="ends-with(name(), '_Given')">
-                                                    <forename><xsl:value-of select="."/></forename>
-                                                </xsl:if>
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Family')">
-                                                        <surname><xsl:value-of select="."/></surname>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Family')">
-                                                        <surname><xsl:value-of select="following-sibling::*[ends-with(name(), '_Family')][1]"/></surname>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <!-- The following does not work. Revise! -->
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Titles')">
-                                                        <addName type="untagged-title"><xsl:value-of select="."/></addName>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Titles')">
-                                                        <addName type="untagged-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Titles')][1]"/></addName>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Office')">
-                                                        <addName type="office"><xsl:value-of select="."/></addName>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Office')">
-                                                        <addName type="office"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Office')][1]"/></addName>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Saint_Title')">
-                                                        <addName type="saint-title"><xsl:value-of select="."/></addName>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Saint_Title')">
-                                                        <addName type="saint-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Saint_Title')][1]"/></addName>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Numeric_Title')">
-                                                        <addName type="numeric-title"><xsl:value-of select="."/></addName>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Numeric_Title')">
-                                                        <addName type="numeric-title"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Numeric_Title')][1]"/></addName>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with(name(), '_Terms_of_Address')">
-                                                        <addName type="terms-of-address"><xsl:value-of select="."/></addName>
-                                                    </xsl:when>
-                                                    <xsl:when test="string-length(normalize-space(following-sibling::*[1])) and ends-with(name(following-sibling::*[1]), '_Terms_of_Address')">
-                                                        <addName type="terms-of-address"><xsl:value-of select="following-sibling::*[ends-with(name(), '_Terms_of_Address')][1]"/></addName>
-                                                    </xsl:when>
-                                                </xsl:choose>
-                                                
+                                                <xsl:call-template name="name-parts">
+                                                    <xsl:with-param name="group" select="replace(replace(replace(replace(replace(replace(replace(name(), '_Given', ''), '_Family', ''), '_Titles', ''), '_Office', ''), '_Saint_Title', ''), '_Numeric_Title', ''), '_Terms_of_Address', '')"/>
+                                                    <xsl:with-param name="same-group" select="1"/>
+                                                    <xsl:with-param name="next-element-name" select="name()"/>
+                                                    <xsl:with-param name="next-element" select="."/>
+                                                    <xsl:with-param name="count" select="0"/>
+                                                </xsl:call-template>
                                             </persName>
                                         </xsl:for-each-group>
                                       
@@ -295,7 +284,7 @@
         </xsl:result-document>
     </xsl:template>
         
-    <xsl:template match="*" name="language">
+    <xsl:template name="language" xmlns="http://www.tei-c.org/ns/1.0">
         <!-- Applies language attributes specific to fields -->
         <xsl:choose>
             <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
@@ -306,7 +295,7 @@
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
             </xsl:when>
             <xsl:when test="contains(name(),'CBSC_En')">
-                <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
+                <xsl:attribute name="xml:lang" select="'syr-Latn-x-cbsc'"/>
             </xsl:when>
             <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
                 <xsl:attribute name="xml:lang" select="'syr'"/>
@@ -354,6 +343,53 @@
                 <xsl:attribute name="source">#<xsl:value-of select="$abdisho-bo-id"/></xsl:attribute>
             </xsl:when>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
+        <!-- Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_Given"). Used to make sure this template loop doesn't proceed to a different set of fields. -->
+        <xsl:param name="group"/>
+        <!-- Boolean to test whether the next element is in the same group/fieldset. -->
+        <xsl:param name="same-group"/>
+        <!-- The name of the next element being processed, which is the element immediately following in the source XML. -->
+        <xsl:param name="next-element-name"/>
+        <!-- Content of the next element being processed, which is the element immediately following in the source XML. -->
+        <xsl:param name="next-element"/>
+        <!-- A counter to use for determining the next element to process.  -->
+        <xsl:param name="count"/>
+        <xsl:if test="(contains(name(),'_Given') or contains(name(),'_Family') or contains(name(),'_Titles') or contains(name(),'_Office') or contains(name(),'_Saint_Title') or contains(name(),'_Numeric_Title') or contains(name(),'_Terms_of_Address')) and $same-group">
+            <xsl:if test="string-length(normalize-space($next-element))">
+                <xsl:choose>
+                    <xsl:when test="ends-with($next-element-name, '_Given')">
+                        <forename><xsl:value-of select="$next-element"/></forename>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Family')">
+                        <surname><xsl:value-of select="$next-element"/></surname>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Titles')">
+                        <addName type="untagged-title"><xsl:value-of select="$next-element"/></addName>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Office')">
+                        <addName type="office"><xsl:value-of select="$next-element"/></addName>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Saint_Title')">
+                        <addName type="saint-title"><xsl:value-of select="$next-element"/></addName>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Numeric_Title')">
+                        <addName type="numeric-title"><xsl:value-of select="$next-element"/></addName>
+                    </xsl:when>
+                    <xsl:when test="ends-with($next-element-name, '_Terms_of_Address')">
+                        <addName type="terms-of-address"><xsl:value-of select="$next-element"/></addName>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:if>
+            <xsl:call-template name="name-parts">
+                <xsl:with-param name="group" select="$group"/>
+                <xsl:with-param name="same-group" select="matches(replace(replace(replace(replace(replace(replace(replace(name(following-sibling::*[$count + 1]), '_Given', ''), '_Family', ''), '_Titles', ''), '_Office', ''), '_Saint_Title', ''), '_Numeric_Title', ''), '_Terms_of_Address', ''), $group)"/>
+                <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
+                <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
+                <xsl:with-param name="count" select="$count + 1"/>
+            </xsl:call-template>
+        </xsl:if>
     </xsl:template>
     
 </xsl:stylesheet>
