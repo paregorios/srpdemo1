@@ -429,33 +429,36 @@
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_En')">
                 <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>2<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '3', $split-id,' #', $person-name-id, '4a', $split-id,' #', $person-name-id, '4b', $split-id, ' #', $person-name-id, '2', '-', number(not(number(replace($split-id, '-', '')))))"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Ar')">
                 <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>3<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', $split-id,' #', $person-name-id, '4a', $split-id,' #', $person-name-id, '4b', $split-id, ' #', $person-name-id, '3', '-', number(not(number(replace($split-id, '-', '')))))"/>
             </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Sy')">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="$person-name-id"/>4<xsl:choose>
-                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
-                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
-                    </xsl:choose><xsl:value-of select="$split-id"/>
-                </xsl:attribute>
+            <xsl:when test="contains(name(),'Barsoum_Sy_NV')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>4a<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', $split-id,' #', $person-name-id, '3', $split-id,' #', $person-name-id, '4b', $split-id, ' #', $person-name-id, '4a', '-', number(not(number(replace($split-id, '-', '')))))"/>
             </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_YdQ')">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="$person-name-id"/>5<xsl:choose>
-                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
-                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
-                    </xsl:choose><xsl:value-of select="$split-id"/>
-                </xsl:attribute>
+            <xsl:when test="contains(name(), 'Barsoum_Sy_V')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>4b<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', $split-id,' #', $person-name-id, '3', $split-id,' #', $person-name-id, '4a', $split-id, ' #', $person-name-id, '4b', '-', number(not(number(replace($split-id, '-', '')))))"/>        
             </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_BO')">
-                <xsl:attribute name="xml:id">
-                    <xsl:value-of select="$person-name-id"/>6<xsl:choose>
-                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
-                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
-                    </xsl:choose><xsl:value-of select="$split-id"/>
-                </xsl:attribute>
+            <xsl:when test="contains(name(),'Abdisho_YdQ_NV')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>5a<xsl:value-of select="$split-id"/></xsl:attribute>
+                <!-- Should Abdisho YdQ and BO be in parallel to each other too (as here and below) since different editions of same name? -->
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '5b', $split-id,' #', $person-name-id, '6a', $split-id,' #', $person-name-id, '5a', '-', number(not(number(replace($split-id, '-', '')))))"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_YdQ_V')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>5b<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '5a', $split-id,' #', $person-name-id, '6b', $split-id,' #', $person-name-id, '5b', '-', number(not(number(replace($split-id, '-', '')))))"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_BO_NV')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>6a<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '6b', $split-id,' #', $person-name-id, '5a', $split-id,' #', $person-name-id, '6a', '-', number(not(number(replace($split-id, '-', '')))))"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_BO_V')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>6b<xsl:value-of select="$split-id"/></xsl:attribute>
+                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '6a', $split-id,' #', $person-name-id, '5b', $split-id,' #', $person-name-id, '6b', '-', number(not(number(replace($split-id, '-', '')))))"/>
             </xsl:when>
             <xsl:when test="contains(name(),'CBSC_En_Full')">
                 <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>7<xsl:value-of select="$split-id"/></xsl:attribute>
