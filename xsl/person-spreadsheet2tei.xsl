@@ -169,13 +169,15 @@
                             <listPerson>
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
-                                        <!-- Syriaca.org authorized name forms are designated using @subtype="syriaca-authorized".
-                                        (I'm using subtype rather than type because type needs to be used for sic/split.)-->
-                                        <!-- Experimenting with for-each. Need to add more attributes, as well as split names. -->
+                                        <!-- Experimenting with for-each. Need to add more attributes. -->
                                         
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
                                             <persName type="sic">
+                                                <!-- Adds xml:id attribute. -->
+                                                <xsl:call-template name="perName-id">
+                                                    <xsl:with-param name="split-id" select="'-0'"/>
+                                                </xsl:call-template>
                                                 <!-- Adds language attributes. -->
                                                 <xsl:call-template name="language"/>
                                                 <!-- Adds source attributes. -->
@@ -190,7 +192,7 @@
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
-                                                    <xsl:attribute name="resp" select="'http://syriaca.org'"/>
+                                                    <xsl:attribute name="syriaca-tags" select="'syriaca-authorized'"/>
                                                 </xsl:if>
                                                 <xsl:value-of select="node()"/>
                                             </persName>
@@ -202,6 +204,10 @@
                                             select="*[(contains(name(),'_Given') or contains(name(),'_Family') or contains(name(),'_Titles') or contains(name(),'_Office') or contains(name(),'_Saint_Title') or contains(name(),'_Numeric_Title') or contains(name(),'_Terms_of_Address')) and string-length(normalize-space(node()))]"
                                             group-by="replace(replace(replace(replace(replace(replace(replace(name(), '_Given', ''), '_Family', ''), '_Titles', ''), '_Office', ''), '_Saint_Title', ''), '_Numeric_Title', ''), '_Terms_of_Address', '')">
                                             <persName type="split">
+                                                <!-- Adds xml:id attribute. -->
+                                                <xsl:call-template name="perName-id">
+                                                    <xsl:with-param name="split-id" select="'-1'"/>
+                                                </xsl:call-template>
                                                 <!-- Adds language attributes. -->
                                                 <xsl:call-template name="language"/>
                                                 <!-- Adds source attributes. -->
@@ -216,8 +222,9 @@
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
-                                                    <xsl:attribute name="resp" select="'http://syriaca.org'"/>
+                                                    <xsl:attribute name="syriaca-tags" select="'syriaca-authorized'"/>
                                                 </xsl:if>
+                                                <!-- Adds name parts -->
                                                 <xsl:call-template name="name-parts">
                                                     <xsl:with-param name="group" select="replace(replace(replace(replace(replace(replace(replace(name(), '_Given', ''), '_Family', ''), '_Titles', ''), '_Office', ''), '_Saint_Title', ''), '_Numeric_Title', ''), '_Terms_of_Address', '')"/>
                                                     <xsl:with-param name="same-group" select="1"/>
@@ -395,20 +402,63 @@
             <xsl:when test="contains(name(),'Barsoum_En')">
                 <xsl:attribute name="source">#<xsl:value-of select="$barsoum-en-id"/></xsl:attribute>
             </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Sy')">
-                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-sy-id"/></xsl:attribute>
-            </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Ar')">
                 <xsl:attribute name="source">#<xsl:value-of select="$barsoum-ar-id"/></xsl:attribute>
             </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En_Full')">
-                <xsl:attribute name="source">#<xsl:value-of select="$cbsc-id"/></xsl:attribute>
+            <xsl:when test="contains(name(),'Barsoum_Sy')">
+                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-sy-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ')">
                 <xsl:attribute name="source">#<xsl:value-of select="$abdisho-ydq-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_BO')">
                 <xsl:attribute name="source">#<xsl:value-of select="$abdisho-bo-id"/></xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'CBSC_En_Full')">
+                <xsl:attribute name="source">#<xsl:value-of select="$cbsc-id"/></xsl:attribute>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="split-id"/>
+        <xsl:variable name="person-name-id">name<xsl:value-of select="../SRP_ID"/>-</xsl:variable>
+        <xsl:choose>
+            <xsl:when test="contains(name(),'GEDSH')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>1<xsl:value-of select="$split-id"/></xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_En')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>2<xsl:value-of select="$split-id"/></xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_Ar')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>3<xsl:value-of select="$split-id"/></xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Barsoum_Sy')">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$person-name-id"/>4<xsl:choose>
+                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
+                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
+                    </xsl:choose><xsl:value-of select="$split-id"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_YdQ')">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$person-name-id"/>5<xsl:choose>
+                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
+                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
+                    </xsl:choose><xsl:value-of select="$split-id"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Abdisho_BO')">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="$person-name-id"/>6<xsl:choose>
+                        <xsl:when test="contains(name(), '_NV_')">a</xsl:when>
+                        <xsl:when test="contains(name(), '_V_')">b</xsl:when>
+                    </xsl:choose><xsl:value-of select="$split-id"/>
+                </xsl:attribute>
+            </xsl:when>
+            <xsl:when test="contains(name(),'CBSC_En_Full')">
+                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>7<xsl:value-of select="$split-id"/></xsl:attribute>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
