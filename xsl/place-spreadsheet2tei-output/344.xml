@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Dayro d-Boʿut</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/344/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-344" type="">
+               <placeName xml:id="name344-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayro d-Boʿut</placeName>
+               <placeName xml:id="name344-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܒܥܘܬ ܐܘ ܒܢ̈ܝ ܒܥܘܬ</placeName>
+               <placeName xml:id="name344-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib344-1"
+                          corresp="#name344-4 #name344-5">ܕܰܝܪܐ ܕܒܳܥܘܬ ܐܰܘ ܒܢ̈ܝ ܒܳܥܘܬ</placeName>
+               <placeName xml:id="name344-4"
+                          xml:lang="ar"
+                          source="#bib344-2"
+                          corresp="#name344-3 #name344-5">دير باعوث او بني باعوث</placeName>
+               <placeName xml:id="name344-5"
+                          xml:lang="en"
+                          source="#bib344-3"
+                          corresp="#name344-3 #name344-4">Bāʿūth (or Banu Bāʿūth) Monastery</placeName>
+               <desc xml:id="abstract-en-344"/>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib344-1">ܒܰܫܒܳܒܘܬܗ̇ ܕܟܰܪܒܘܬ. ܐܶܬܥܗܰܕ ܫܢܰܬ  1057  ܘܒܗ ܐܶܬܢܰܦܩܘ ܐܰܪܒܥܳܐ ܐܶܦܝܣܩܘܦ̈ܐ. ܒܰܙܘܗܝ ܟܶܢܫܳܐ ܕܡܰܫܠܡ̈ܳܢܐ ܫܢܰܬ  1290  ܘܐܰܚܕܘܗܝ ܒܰܩܛܝܪܳܐ ܚܕܳܪ̈ܰܝ  1131</quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib344-2">بجوار خربوت ذكر سنة 1057 وفيه تخرج اربعة اساقفة نهبته طائفة من المسلمين عام 1290 ثم اغتصبوه حوالي 1311</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib344-3">near Kharput, first was mentioned in history in 1057. It produced four bishops. In 1290 it was ransacked by a group of Muslims and Muslims finally occupied it in 1311.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/344</idno>
+               <bibl xml:id="bib344-1">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">543</citedRange>
+               </bibl>
+               <bibl xml:id="bib344-2">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">509</citedRange>
+               </bibl>
+               <bibl xml:id="bib344-3">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">562</citedRange>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Qenneshre</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+               <resp>Arabic description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/230/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-230" type="">
+               <placeName xml:id="name230-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib230-1 #bib230-5">Qenneshre</placeName>
+               <placeName xml:id="name230-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܢܫܪܝܢ</placeName>
+               <placeName xml:id="name230-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib230-2"
+                          corresp="#name230-4 #name230-5">ܕܰܝܪܳܐ ܕܩܶܢܰܫܪܺܝܢ</placeName>
+               <placeName xml:id="name230-4"
+                          xml:lang="ar"
+                          source="#bib230-3"
+                          corresp="#name230-3 #name230-5">دير قِنَسرين</placeName>
+               <placeName xml:id="name230-5"
+                          xml:lang="en"
+                          source="#bib230-4"
+                          corresp="#name230-3 #name230-4">Qenneshrin Monastery</placeName>
+               <placeName xml:id="name230-6" xml:lang="en" source="#bib230-5">Monastery of Qenneshre</placeName>
+               <desc xml:id="abstract-en-230"/>
+               <desc xml:lang="en">
+                  <quote source="#bib230-1">444. Qenneshre, Monastery of</quote>
+               </desc>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib230-2">ܒܫܶܡ ܡܳܪܝ ܬܐܘܡܐ ܫܠܝܚܳܐ ܥܠ ܝܰܕ ܦܪܳܬ ܠܩܘܽܒܠܐ ܕܓܰܪܐܒܠܣ. ܐܶܫܬܰܬܐܣ ܚܕܳܪ ܫܢܰܬ  530  ܘܺܝܪܶܒ ܫܡܗ ܘܐܝܺܬ ܗܘܐ ܠܗ ܝܰܘܡ̈ܬܐ ܕܚܶܘܳܪ̈ܝܢ ܘܰܡܗܰܒܒܝܢ ܥܕܰܡܐ ܠܕܳܪܐ ܬܫܺܝܥܳܝܐ ܘܰܥܪܳܐ ܒܰܙܒܢ ܕܥܰܡܝܪ ܗܘܐ ܬܠܳܬܡ̈ܐܐ ܘܫܰܒܥܝܢ ܕܰܝܪ̈ܝܐ ܐܰܘܩܕܽܘܗܝ ܐܢܳܫܝ̈ܢ ܟܘܐܪܓ ܘܫܰܟܠܠܗ ܕܝܺܘܢܢܘܣܝܘܣ ܩܰܕܡܳܝܐ ܘܐܰܗܦܟܗ ܠܐܝܟܰܢܳܝܘܬܗ ܩܰܕܡܳܝܬܐ ܫܢܰܬ  822  ܘܐܶܬܬܰܠܘܰܬ ܠܡܰܪܥܺܝܬܐ ܕܫܰܡܝܫܛ ܚܕܳܪ ܫܢܰܬ  1025  ܘܗܳܝ ܕܓܰܠܝܐ ܩܰܘܝ̣ ܟܰܕ ܥܰܡܝܪ ܥܕܰܡܐ ܠܪܝܫ ܡܰܐܬܐ ܕܰܬܠܳܬܰܥܣܪ̈ܐ ܘܰܠܚܰܪܬܐ ܥܰܠܥܶܠ ܙܰܒܢܐ ܒܐܢܳܫ̈ܘܗܝ ܘܐܶܬܠܰܝܬܝܺܘ ܢܝ̣̈ܫܐ ܕܒܶܢܝܳܢ̈ܘܗܝ</quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib230-3">باسم توما الرسول على شاطئ الفرات مقابل بلدة جرابلس انشئ حول سنة 530 واستفاضت شهرته وكان له ايام غر زهر الى القرن التاسع، وحوى ايام عمارته ثلثمائة وسبعين راهبا، احرقه بعض الخوارج فرمه ديونيسيوس الاول واعاده سيرته الاولى سنة 822 عضد الكنيسة بسبعة بطاركة وخمسة عشر اسقفا حتى سنة 930 والحق بابرشية سميساط حول سنة 1025 والاظهر انه ظل عامرا حتى صدر المئة الثالثة عشرة ثم عصف الدهر باهله وتنكرت معارف اطلاله.</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib230-4">built in the name of the Apostle Thomas on the bank of the Euphrates, opposite Jarabulus, about 530. It was a famous monastery until the ninth century and at its high point housed about 370 monks. It was burned by some dissenters, but was restored by Patriarch Dionysius I in 822. By 930, seven patriarchs and fifteen bishops had graduated from it. About 1025 it was attached to the diocese of Samosata. It is probable that it remained active until the thirteenth century, after which it was abandoned. See our article in the Patriarchal Magazine, 4: 265-278.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/230</idno>
+               <idno type="URI">http://pleiades.stoa.org/places/658579</idno>
+               <bibl xml:id="bib230-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="maps">Map II B1</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-2">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">550-551</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">513</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-4">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">568</citedRange>
+               </bibl>
+               <bibl xml:id="bib230-5">
+                  <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

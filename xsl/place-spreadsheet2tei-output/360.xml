@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Dayr al-Suryān</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/360/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-360" type="">
+               <placeName xml:id="name360-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib360-1">Dayr al-Suryān</placeName>
+               <placeName xml:id="name360-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܣܘܪ̈ܝܝܐ</placeName>
+               <placeName xml:id="name360-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib360-2"
+                          corresp="#name360-4 #name360-5">ܕܰܝܪܳܐ ܕܣܘܪ̈ܝܝܐ</placeName>
+               <placeName xml:id="name360-4"
+                          xml:lang="ar"
+                          source="#bib360-3"
+                          corresp="#name360-3 #name360-5">دير السريان</placeName>
+               <placeName xml:id="name360-5"
+                          xml:lang="en"
+                          source="#bib360-4"
+                          corresp="#name360-3 #name360-4">Syrians, Monastery of the</placeName>
+               <placeName xml:id="name360-6" xml:lang="en" source="#bib360-5">Deir al-Surian</placeName>
+               <desc xml:id="abstract-en-360"/>
+               <desc xml:lang="en">
+                  <quote source="#bib360-1">523. al-Suryān, Dayr</quote>
+               </desc>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib360-2">ܕܰܒܫܶܡ ܡܳܪܬܰܢ ܒܬܘܠܬܐ ܒܡܰܕܒܪܳܐ ܕܐܶܣܩܺܝܛܝ  ܒܡܶܨܪܝܢ. ܡܶܣܬܒܰܪ ܒܶܢܝܳܢܗ ܒܕܳܪܳܐ ܚܡܝܫܳܝܳܐ ܙܰܒܢܗ ܡܰܪܘܬܶܐ ܬܰܓܪܝܬܳܝܐ ܬܰܓܳܪܐ ܣܘܪܝܳܝܳܐ ܒܡܶܨܥܳܝ̈ܬܳܗ̇ ܕܡܰܐܬܳܐ ܫܬܝܬܳܝܬܳܐ ܘܫܰܟܢܗ ܠܕܰܝܪ̈ܝܐ ܣܘܪ̈ܝܳܝܐ. ܥܳܡܪܺܝܢ ܗܘܘ ܒܗ ܫܢܰܬ  1084  ܫܰܒܥܺܝܢ ܕܰܝܪ̈ܝܐ. ܘܩܰܘܝ ܡܝܰܬܰܒ ܒܗܽܘܢ ܥܕܰܡܳܐ ܠܦܶܠܓܳܗ̇ ܕܡܰܐܬܳܐ ܕܰܫܒܰܥܣܶܪ̈ܐ ܘܗܳܫܐ ܥܳܡܪܝܢ ܒܗ ܕܰܝܪ̈ܝܐ ܐܝܺܓܘܦܛܳܝ̈ܐ. </quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib360-3">باسم السيدة العذرآء في برية الاسقيط بمصر، يظن بنآؤه في القرن الخامس ابتاعه ماروثا التكريتي التاجر السرياني في اواسط المئة السادسة واوقفه على رهبان السريان وكان يحوي منهم سبعين راهباً عام 1804 وظلّ آهلا بهم الى منتصف المئة السابعة عشرة ويسكنه في هذا الوقت رهبان اقباط </quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib360-4">this monastery was built in the name of the Virgin in the Scete desert in Egypt, perhaps in the fifth century. In the middle of the sixth century the Syrian merchant Marutha of Takrit bought it and dedicated it to the Syrian monks, whose number reached seventy in 1084. Inhabited by Syrian monks until the seventeenth century, it is presently inhabited by Coptic monks.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/360</idno>
+               <idno type="URI">http://pleiades.stoa.org/places/727108</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Syrian_Monastery,_Egypt</idno>
+               <bibl xml:id="bib360-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+               </bibl>
+               <bibl xml:id="bib360-2">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">546-547</citedRange>
+               </bibl>
+               <bibl xml:id="bib360-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">511</citedRange>
+               </bibl>
+               <bibl xml:id="bib360-4">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">569</citedRange>
+               </bibl>
+               <bibl xml:id="bib360-5">
+                  <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

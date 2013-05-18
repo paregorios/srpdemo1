@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Mor Quryaqus</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+               <resp>Arabic description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/377/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-377" type="">
+               <placeName xml:id="name377-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Quryaqus</placeName>
+               <placeName xml:id="name377-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܩܘܪܝܐܩܘܣ</placeName>
+               <placeName xml:id="name377-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib377-1"
+                          corresp="#name377-4 #name377-5">ܕܰܝܪܐ ܕܡܳܪܝ ܩܘܽܪܝܰܐܩܘܣ</placeName>
+               <placeName xml:id="name377-4"
+                          xml:lang="ar"
+                          source="#bib377-2"
+                          corresp="#name377-3 #name377-5">دير مار قرياقس</placeName>
+               <placeName xml:id="name377-5"
+                          xml:lang="en"
+                          source="#bib377-3"
+                          corresp="#name377-3 #name377-4">Quryaqos Monastery</placeName>
+               <desc xml:id="abstract-en-377"/>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib377-1">ܒܩܘܪܒܳܐ ܕܙܰܪܓܰܠ ܩܪܝܬܳܐ ܒܒܶܝܬ ܫܺܐܪ̈ܝܐ. ܡܰܪܕܶܐ ܬܪܶܝܢ ܝܰܘܡ̈ܝܢ ܡܶܢ ܐܳܡܝ̣ܕ ܠܓܰܪܒܰܝ ܡܰܕܢܚܐ. ܗܘܳܐ ܟܽܘܪܣܝܐ ܕܡܰܪܥܝܬܐ ܡܶܢ ܪܝܫ ܕܳܪܐ ܕܚܰܡܫܥܣܪ ܥܕܰܡܐ ܠܪܝܫ ܕܳܪܐ ܕܩܳܐܡ. ܐܶܣܬܦܰܩ ܡܶܢ ܕܰܝܪ̈ܝܐ ܡܶܢ ܡܶܬܚܐ ܕܬܰܪܬܶܝܢ ܫܢ̈ܝܢ ܘܥܰܡܝ̣ܪ.</quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib377-2">بقرب قرية زرجل في البشيرية بولاية ديار بكر مسير يومين عنها في الشمال الشرقي، كان كرسي ابرشية من اول القرن الخامس عشر الى صدر القرن الحالي؛ خلا من اهله منذ سنتين وهو عامر.</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib377-3">near the village of Zarjal in al-Bushayriyya, in the province of Diyarbakir, lies about two day journey northeast of Diyarbakir. From the beginning of the fifteenth century to the beginning of the present century it was a bishopric see. It is still standing, although no one has lived in it for two years.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/377</idno>
+               <bibl xml:id="bib377-1">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">550</citedRange>
+               </bibl>
+               <bibl xml:id="bib377-2">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">513</citedRange>
+               </bibl>
+               <bibl xml:id="bib377-3">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">569</citedRange>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

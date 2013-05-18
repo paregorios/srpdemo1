@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Marga</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+               <resp>Arabic description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/457/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-457" type="">
+               <placeName xml:id="name457-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib457-4">Marga</placeName>
+               <placeName xml:id="name457-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib457-1"
+                          corresp="#name457-3 #name457-4">ܡܪܓܐ</placeName>
+               <placeName xml:id="name457-3"
+                          xml:lang="ar"
+                          source="#bib457-2"
+                          corresp="#name457-2 #name457-4">مرجا او المرج</placeName>
+               <placeName xml:id="name457-4"
+                          xml:lang="en"
+                          source="#bib457-3"
+                          corresp="#name457-2 #name457-3">Marga (Marj)</placeName>
+               <desc xml:id="abstract-en-457"/>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib457-1">ܦܢܺܝܬܐ ܕܰܒܓܰܪܒܰܝ ܡܰܕܢܰܚ ܡܘܨܠ ܡܶܢܩܕܺܝܡ ܪܘܣܬܩܳܐ ܪܰܒܐ ܗܘܳܬ.</quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib457-2">ناحية في شمال شرقي الموصل كانت قديما رستاقا كبيرا.</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib457-3">a place northeast of Mosul, formerly a big province.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/457</idno>
+               <bibl xml:id="bib457-1">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">561</citedRange>
+               </bibl>
+               <bibl xml:id="bib457-2">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">519</citedRange>
+               </bibl>
+               <bibl xml:id="bib457-3">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">556</citedRange>
+               </bibl>
+               <bibl xml:id="bib457-4">
+                  <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

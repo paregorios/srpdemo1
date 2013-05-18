@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Kasliyud Monastery</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+               <resp>Arabic description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/380/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-380" type="">
+               <placeName xml:id="name380-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib380-3"
+                          corresp="#name380-3 #name380-4">Kasliyud Monastery</placeName>
+               <placeName xml:id="name380-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܟܣܠܝܘܕ</placeName>
+               <placeName xml:id="name380-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib380-1"
+                          corresp="#name380-4 #name380-1">ܕܰܝܪܳܐ ܕܟܣܠܝܘܕ</placeName>
+               <placeName xml:id="name380-4"
+                          xml:lang="ar"
+                          source="#bib380-2"
+                          corresp="#name380-3 #name380-1">دير كاسليود</placeName>
+               <desc xml:id="abstract-en-380"/>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib380-1">ܒܐܽܘܚܕܳܢܐ ܕܓܰܪܡܰܐܢܺܝܩܝ (ܡܪܥܫ) ܐܶܬܢܰܦܰܩ ܒܗ ܐܰܪܒܥܐ ܐܶܦܝܣܩܘ̈ܦܐ ܡܶܢ ܫܢܰܬ  1100  -  1200  </quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib380-2">في ولاية مرعش تخرج فيه اربعة اساقفة من سنة 1100 الى 1200.</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib380-3">in the province of Marʿash. Between 1100 and 1200 four bishops graduated from it.</quote>
+               </desc>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/380</idno>
+               <bibl xml:id="bib380-1">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">551</citedRange>
+               </bibl>
+               <bibl xml:id="bib380-2">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">513</citedRange>
+               </bibl>
+               <bibl xml:id="bib380-3">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">565</citedRange>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>
