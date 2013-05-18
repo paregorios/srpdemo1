@@ -24,6 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/518/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -35,6 +36,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-05" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
         </revisionDesc>
@@ -43,8 +65,8 @@
         <body>
             <listPlace>
                 <place xml:id="place-518" type="mountain">
-                    <placeName xml:id="name518-1" xml:lang="en" resp="http://syriaca.org">Mount Qāsiyūn</placeName>
-                    <placeName xml:id="name518-2" xml:lang="syr" resp="http://syriaca.org">ܛܘܪܐ ܕܩܐܣܒܘܢ</placeName>
+                    <placeName xml:id="name518-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mount Qāsiyūn</placeName>
+                    <placeName xml:id="name518-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܛܘܪܐ ܕܩܐܣܒܘܢ</placeName>
                     <placeName xml:id="name518-3" xml:lang="syr-Syrj" source="#bib518-1" corresp="#name518-4 #name518-5">ܛܘܪܳܐ ܕܩܰܐܣܒܘܢ</placeName>
                     <placeName xml:id="name518-4" xml:lang="ar" source="#bib518-2" corresp="#name518-3 #name518-5">جبل قاسيون</placeName>
                     <placeName xml:id="name518-5" xml:lang="en" source="#bib518-3" corresp="#name518-3 #name518-4">Qasyun Mountain</placeName>

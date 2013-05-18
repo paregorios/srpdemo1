@@ -28,6 +28,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/69/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -39,6 +40,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
             <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
@@ -48,8 +70,8 @@
         <body>
             <listPlace>
                 <place xml:id="place-69" type="monastery">
-                    <placeName xml:id="name69-1" xml:lang="en" resp="http://syriaca.org" source="#bib69-1">Dayr al-Zaʿfarān</placeName>
-                    <placeName xml:id="name69-2" xml:lang="syr" resp="http://syriaca.org">ܕܝܪܐ ܕܙܥܦܪܐܢ</placeName>
+                    <placeName xml:id="name69-1" xml:lang="en" syriaca-tags="#syriaca-authorized" source="#bib69-1">Dayr al-Zaʿfarān</placeName>
+                    <placeName xml:id="name69-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܙܥܦܪܐܢ</placeName>
                     <placeName xml:id="name69-3" xml:lang="syr-Syrj" source="#bib69-2" corresp="#name69-4 #name69-5">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ</placeName>
                     <placeName xml:id="name69-4" xml:lang="ar" source="#bib69-3" corresp="#name69-3 #name69-5">دير الزعفران</placeName>
                     <placeName xml:id="name69-5" xml:lang="en" source="#bib69-4" corresp="#name69-3 #name69-4">Zaʿfaran Monastery</placeName>
@@ -67,7 +89,7 @@
                     <desc xml:lang="en">
                         <quote source="#bib69-4">or St. Ḥananya Monastery, was built by Ḥananya, metropolitan of Mardin, between 793 and 800 on the site of an old monastery north of Mardin. This great and populous monastery in 1293 became the Patriarchal see for some six hundred years. It claims twenty-one Patriarchs, nine Maphryonos and 110 bishops. In 1917 we published its detailed history, entitled Nuzhat al-Adhhān (The Excursion of Minds). In its immediate neighborhood there are three small monasteries close together:</quote>
                     </desc>
-                    <location source="#bib69-1">
+                    <location type="gps" source="#bib69-1">
                         <geo>37.966111 44.792778</geo>
                     </location>
                     <state type="existence" notBefore="0300"/>

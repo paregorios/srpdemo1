@@ -32,6 +32,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/78/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -43,6 +44,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-11" who="http://syriaca.org/editors.xml#tcarlson">ADDED: place name links in desc elements</change>
             <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">ADDED: CBSC citation</change>
@@ -54,9 +76,9 @@
         <body>
             <listPlace>
                 <place xml:id="place-78" type="city">
-                    <placeName xml:id="name78-1" xml:lang="en" resp="http://syriaca.org" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6" corresp="#name78-4 #name78-5">Edessa</placeName>
+                    <placeName xml:id="name78-1" xml:lang="en" syriaca-tags="#syriaca-authorized" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6" corresp="#name78-4 #name78-5">Edessa</placeName>
                     <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1">Urfa</placeName>
-                    <placeName xml:id="name78-3" xml:lang="syr" resp="http://syriaca.org">ܐܘܪܗܝ</placeName>
+                    <placeName xml:id="name78-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܐܘܪܗܝ</placeName>
                     <placeName xml:id="name78-4" xml:lang="syr-Syrj" source="#bib78-3 #bib78-5" corresp="#name78-1 #name78-5">ܐܘܪܗܳܝ</placeName>
                     <placeName xml:id="name78-5" xml:lang="ar" source="#bib78-4" corresp="#name78-1 #name78-4">الرها</placeName>
                     <desc xml:id="abstract-en-78" xml:lang="en">A city of <placeName ref="http://syriaca.org/place/124">Mesopotamia</placeName>, the capital of the ancient kingdom of <placeName ref="http://syriaca.org/place/145">Osrhoene</placeName>, modern Urfa.</desc>
@@ -104,6 +126,7 @@
                         <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                         <ptr target="http://syriaca.org/bibl/1"/>
                         <citedRange unit="pp">138-139</citedRange>
+                        <citedRange unit="maps">2</citedRange>
                     </bibl>
                     <bibl xml:id="bib78-2">
                         <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
