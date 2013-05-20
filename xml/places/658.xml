@@ -24,6 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/658/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -35,6 +36,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
             <change when="2013-03-25" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
@@ -44,11 +66,11 @@
         <body>
             <listPlace>
                 <place xml:id="place-658" type="monastery">
-                    <placeName xml:id="name658-1" xml:lang="en" resp="http://syriaca.org">Mor Behnam Hermitage</placeName>
-                    <placeName xml:id="name658-2" xml:lang="syr" resp="http://syriaca.org">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
+                    <placeName xml:id="name658-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Behnam Hermitage</placeName>
+                    <placeName xml:id="name658-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
                     <placeName xml:id="name658-3" xml:lang="syr-Syrj" source="#bib658-1" corresp="#name658-4">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
                     <placeName xml:id="name658-4" xml:lang="ar" source="#bib658-2" corresp="#name658-3">صومعة مار بهنام</placeName>
-                    <location source="#bib658-2">
+                    <location type="relative" source="#bib658-2">
                         <offset>north of</offset>
                         <placeName ref="http://syriaca.org/place/69">Dayr al-Zaʿfarān</placeName>
                     </location>

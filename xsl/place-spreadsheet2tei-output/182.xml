@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="placedemo.xsl"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude"
+     xmlns:svg="http://www.w3.org/2000/svg"
+     xmlns:math="http://www.w3.org/1998/Math/MathML"
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns:syriaca="http://syriaca.org">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="en">Seleucia</title>
+            <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
+            <funder>The National Endowment for the Humanities</funder>
+            <funder>The International Balzan Prize Foundation</funder>
+            <principal>David A. Michelson</principal>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+               <resp>Syriac description entry</resp>
+            </respStmt>
+            <respStmt>
+               <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
+               <resp>Arabic description entry</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1.0"/>
+         </editionStmt>
+         <publicationStmt>
+            <authority>Syriaca.org: The Syriac Reference Portal</authority>
+            <idno type="URI">http://syriaca.org/place/182/source</idno>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/3.0/">
+                                        Distributed under a Creative Commons Attribution 3.0 Unported License
+                                    </licence>
+            </availability>
+            <date>2013-05-17-04:00</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <classDecl>
+            <taxonomy>
+               <category xml:id="syriaca-authorized">
+                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               </category>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="syr">Unvocalized Syriac of any variety or period</language>
+            <language ident="syr-Syrj">Vocalized West Syriac</language>
+            <language ident="syr-Syrn">Vocalized East Syriac</language>
+            <language ident="en">English</language>
+            <language ident="ar">Arabic</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <listPlace>
+            <place xml:id="place-182" type="">
+               <placeName xml:id="name182-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib182-1 #bib182-4"
+                          corresp="#name182-3 #name182-4">Seleucia</placeName>
+               <placeName xml:id="name182-2"
+                          xml:lang="syr"
+                          syriaca-tags="#syriaca-authorized">ܣܠܝܩ</placeName>
+               <placeName xml:id="name182-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib182-2"
+                          corresp="#name182-4 #name182-1">ܣܠܝܺܩ</placeName>
+               <placeName xml:id="name182-4"
+                          xml:lang="ar"
+                          source="#bib182-3"
+                          corresp="#name182-3 #name182-1">سليق</placeName>
+               <desc xml:id="abstract-en-182"/>
+               <desc xml:lang="en">
+                  <quote source="#bib182-1">483. Seleucia-Ctesiphon</quote>
+               </desc>
+               <desc xml:lang="syr-Syrj">
+                  <quote source="#bib182-2">ܬܰܪܬܝܢ ܡܕܝ̈ܢܳܢ ܕܒܰܚܕ̈ܕܐ ܣܒܝܣ̈ܢ ܘܡܶܬܩܰܪ̈ܝܳܢ ܡܕܝ̈ܢܳܬܐ ܐܶܡܐ ܕܰܡܕܝ̈ܢܬܳܐ ܕܦܳܪ̈ܣܳܝܐ ܣܰܐܣܰܐܢܳܝ̈ܐ ܠܬܰܝܡܢܳܗ̇ ܕܒܓܕܕ ܡܰܪܕܶܐ ܫܶܬ ܫܳܥܝ̈ܢ ܘܰܚܪܶܒ̈ܝ ܒܫܘܪܳܝ ܫܘܠܛܳܢܐ ܕܥܰܪ̈ܒܝܐ ܘܰܒܓܰܢܒܗܝܢ ܝܰܘܡܳܢ ܩܪܝܬܳܐ ܕܣܰܠܡܰܐܢ ܒܰܐܟ.</quote>
+               </desc>
+               <desc xml:lang="ar">
+                  <quote source="#bib182-3">مدينتان متصلتان سميتا بالمدائن عاصمة الفرس الساسانيين، جنوبي بغداد مسيرة ست ساعات، خربتا في صدر الفتح العربي وبجانبهما اليوم قرية سلمان باك.</quote>
+               </desc>
+               <desc xml:lang="en">
+                  <quote source="#bib182-4">two connected cities. They were the capital of the Sassanids, situated about six hours journey south of Baghdad. Both these cities were destroyed at the beginning of the Arab conquest. Near their site is the present village of Salman Pak.</quote>
+               </desc>
+               <location type="gps" source="#bib182-1">
+                  <geo>33.094444 44.522222</geo>
+               </location>
+               <state type="existence"/>
+               <idno type="URI">http://syriaca.org/place/182</idno>
+               <idno type="URI">http://pleiades.stoa.org/places/894084</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Seleucia</idno>
+               <bibl xml:id="bib182-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="maps">Map I C2, II C2</citedRange>
+               </bibl>
+               <bibl xml:id="bib182-2">
+                  <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
+                  <ptr target="http://syriaca.org/bibl/3"/>
+                  <citedRange unit="pp">556</citedRange>
+               </bibl>
+               <bibl xml:id="bib182-3">
+                  <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
+                  <ptr target="http://syriaca.org/bibl/2"/>
+                  <citedRange unit="pp">516</citedRange>
+               </bibl>
+               <bibl xml:id="bib182-4">
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                  <ptr target="http://syriaca.org/bibl/4"/>
+                  <citedRange unit="pp">558</citedRange>
+               </bibl>
+            </place>
+         </listPlace>
+      </body>
+   </text>
+</TEI>

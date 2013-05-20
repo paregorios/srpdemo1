@@ -24,6 +24,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/202/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -36,6 +37,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-16" who="http://www.paregorios.org/me">ADDED: idno@type=srp</change>
             <change when="2013-04-01" who="http://syriaca.org/editors.xml#tcarlson">ADDED: abstract</change>
@@ -46,8 +68,8 @@
         <body>
             <listPlace>
                 <place xml:id="place-202" type="river">
-                    <placeName xml:id="name202-1" xml:lang="en" resp="http://syriaca.org" source="#bib202-1 #bib202-4 #bib202-5" corresp="#name202-3 #name202-4">Tigris</placeName>
-                    <placeName xml:id="name202-2" xml:lang="syr" resp="http://syriaca.org">ܕܩܠܬ</placeName>
+                    <placeName xml:id="name202-1" xml:lang="en" syriaca-tags="#syriaca-authorized" source="#bib202-1 #bib202-4 #bib202-5" corresp="#name202-3 #name202-4">Tigris</placeName>
+                    <placeName xml:id="name202-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܩܠܬ</placeName>
                     <placeName xml:id="name202-3" xml:lang="syr-Syrj" source="#bib202-2" corresp="#name202-1 #name202-4">ܕܶܩܠܰܬ</placeName>
                     <placeName xml:id="name202-4" xml:lang="ar" source="#bib202-3" corresp="#name202-1 #name202-3">دجلة</placeName>
                     <desc xml:id="abstract-en-202" xml:lang="en">The eastern major river of Mesopotamia, flowing from SE Turkey to the Persian Gulf.</desc>

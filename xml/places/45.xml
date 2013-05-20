@@ -32,6 +32,7 @@
             </editionStmt>
             <publicationStmt>
                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
+                <idno type="URI">http://syriaca.org/place/45/source</idno>
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by/3.0/">
                         Distributed under a Creative Commons Attribution 3.0 Unported License
@@ -43,6 +44,27 @@
                 <p>Born digital.</p>
             </sourceDesc>
         </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Normalized capitalization of GEDSH names.</p>
+            </editorialDecl>
+            <classDecl>
+                <taxonomy>
+                    <category xml:id="syriaca-authorized">
+                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    </category>
+                </taxonomy>
+            </classDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="syr">Unvocalized Syriac of any variety or period</language>
+                <language ident="syr-Syrj">Vocalized West Syriac</language>
+                <language ident="syr-Syrn">Vocalized East Syriac</language>
+                <language ident="en">English</language>
+                <language ident="ar">Arabic</language>
+            </langUsage>
+        </profileDesc>
         <revisionDesc>
             <change when="2013-04-11" who="http://syriaca.org/editors.xml#tcarlson">ADDED: place name links in desc elements</change>
             <change when="2013-04-03" who="http://syriaca.org/editors.xml#tcarlson">CREATED: place</change>
@@ -52,10 +74,10 @@
         <body>
             <listPlace>
                 <place xml:id="place-45" type="city">
-                    <placeName xml:id="name45-1" xml:lang="en" resp="http://syriaca.org" source="#bib45-1">Serugh</placeName>
+                    <placeName xml:id="name45-1" xml:lang="en" syriaca-tags="#syriaca-authorized" source="#bib45-1">Serugh</placeName>
                     <placeName xml:id="name45-2" xml:lang="en" source="#bib45-1">Baṭnan</placeName>
                     <placeName xml:id="name45-3" xml:lang="syr-Syrj" source="#bib45-2" corresp="#name45-5 #name45-7">ܒܰܛܢܢ</placeName>
-                    <placeName xml:id="name45-4" xml:lang="syr" resp="http://syriaca.org" source="#bib45-3" corresp="#name45-6 #name45-8">ܣܪܘܓ</placeName>
+                    <placeName xml:id="name45-4" xml:lang="syr" syriaca-tags="#syriaca-authorized" source="#bib45-3" corresp="#name45-6 #name45-8">ܣܪܘܓ</placeName>
                     <placeName xml:id="name45-5" xml:lang="ar" source="#bib45-4" corresp="#name45-3 #name45-7">بَطنان</placeName>
                     <placeName xml:id="name45-6" xml:lang="ar" source="#bib45-5" corresp="#name45-4 #name45-8">سروج</placeName>
                     <placeName xml:id="name45-7" xml:lang="en" source="#bib45-6" corresp="#name45-3 #name45-5">Baṭnān</placeName>
