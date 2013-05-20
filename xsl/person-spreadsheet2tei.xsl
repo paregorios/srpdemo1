@@ -162,6 +162,11 @@
                                 <xsl:attribute name="when" select="current-date()"/>
                                 CREATED: person
                             </change>
+                            <xsl:if test="string-length(normalize-space(For_Post-Publication_Review))">
+                                <change type="planned">
+                                    <xsl:value-of select="For_Post-Publication_Review"/>
+                                </change>
+                            </xsl:if>
                         </revisionDesc>
                     </teiHeader>
                     <text>
@@ -331,7 +336,31 @@
                                         
                                         <!-- Add Abdisho citations -->
                                         
+                                        
+                                        <xsl:if test="string-length(normalize-space(Record_Description))">
+                                            <note type="record-description">
+                                                <xsl:value-of select="Record_Description"/>
+                                            </note>
+                                        </xsl:if>
+                                       
+                                        
                                     </person>
+                                
+                                <!-- Should disambiguation be done as a relation or a note? -->
+                                <xsl:if test="string-length(normalize-space(Disambiguation_URLs))">
+                                    <relation 
+                                        type="disambiguation" 
+                                        name="different-from" 
+                                        active="{$person-id} Disambiguation_URLs" 
+                                        mutual="{$person-id} Disambiguation_URLs">
+                                        <xsl:if test="string-length(normalize-space(Disambiguation))">
+                                            <desc>
+                                                <xsl:value-of select="Disambiguation"/>
+                                            </desc>
+                                        </xsl:if>
+                                    </relation>
+                                </xsl:if>
+                                
                                 </listPerson>
                         </body>
                     </text>
@@ -420,6 +449,8 @@
         </xsl:choose>
     </xsl:template>
     
+    <!-- Adds @xml-id and @corresp to persName elements. -->
+    <!-- The following @corresp doesn't test for whether the referenced persName fields actually exist. Does it need to? -->
     <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="split-id"/>
         <xsl:variable name="person-name-id">name<xsl:value-of select="../SRP_ID"/>-</xsl:variable>
