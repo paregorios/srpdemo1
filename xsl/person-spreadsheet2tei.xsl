@@ -5,15 +5,41 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
-    xmlns:saxon="http://saxon.sf.net/">
+    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
+        <xd:desc>
+            <xd:p><xd:b>Created on:</xd:b> May 21, 2013</xd:p>
+            <xd:p><xd:b>Author:</xd:b>Nathan Gibson</xd:p>
+            <xd:p>Transforms XML data imported from the Google Spreadsheet "Author Names from Barsoum..." into Syriaca.org TEI.</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:output method="text"/>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>Defines an XML format for the transformed data.</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:output method="xml" indent="yes" name="xml"/>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>Defines an HTML format for the transformed data.</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:output method="html" indent="yes" name="html"/>
 
     
-    <xsl:template match="/root">
-
-        <!-- Create a TEI file for each row. -->
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template generates the overall structure of each TEI document and calls other templates at the relevant points. It creates 2 kinds of files:
+            <xd:ul>
+                <xd:li>Individual TEI files for each row of the source XML, named by SRP ID.</xd:li>
+                <xd:li>An HTML index file displaying the names of all records as links to their TEI XML files</xd:li>
+            </xd:ul>
+            </xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template name="main" match="/root">
+        <!-- Creates a TEI document for each row (person record). -->
         <xsl:for-each select="row">
             <!-- Creates variable to use for displaying the name in titles, headers, etc. -->
             <xsl:variable name="display-name-english">
@@ -174,10 +200,6 @@
                             <listPerson>
                                 <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
                                     <person xml:id="{$person-id}">
-                                        <!-- Standard Syriaca.org names, unsplit -->
-                                        <!-- Experimenting with for-each. Need to add more attributes. -->
-                                        
-                                        
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
                                             <persName type="sic">
@@ -487,8 +509,17 @@
         </xsl:result-document>
     </xsl:template>
         
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template applies @xml:lang attributes to an element, based on the text strings in their field names.</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template name="language" xmlns="http://www.tei-c.org/ns/1.0">
-        <!-- Applies language attributes specific to fields -->
         <xsl:choose>
             <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
             <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
@@ -518,6 +549,31 @@
         </xsl:choose>
     </xsl:template>
     
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template applies the @source attribute to an element, based on text strings contained in the element's name.</xd:p>
+            <xd:p>The @source links to a bibl element using an xml:id.</xd:p>
+        </xd:desc>
+        <xd:param name="gedsh-id">The xml:id for the GEDSH bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-en-id">The xml:id for the Barsoum English bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-sy-id">The xml:id for the Barsoum Syriac bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-ar-id">The xml:id for the Barsoum Arabic bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="cbsc-id">The xml:id for the CBSC bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-ydq-id">The xml:id for the Abidsho YdQ bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-bo-id">The xml:id for the Abdisho BO bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="gedsh-id"></xd:param>
+        <xd:param name="barsoum-en-id"></xd:param>
+        <xd:param name="barsoum-sy-id"></xd:param>
+        <xd:param name="barsoum-ar-id"></xd:param>
+        <xd:param name="cbsc-id"></xd:param>
+        <xd:param name="abdisho-ydq-id"></xd:param>
+        <xd:param name="abdisho-bo-id"></xd:param>
+    </xd:doc>
     <xsl:template name="source" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="gedsh-id"/>
         <xsl:param name="barsoum-en-id"/>
@@ -553,8 +609,24 @@
         </xsl:choose>
     </xsl:template>
     
-    <!-- Adds @xml-id and @corresp to persName elements. -->
     <!-- The following @corresp doesn't test for whether the referenced persName fields actually exist. Does it need to? -->
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template does the following:
+                <xd:ul>
+                    <xd:li>Creates xml:id attributes for persName elements, generating the ID's by stringing together the SRP ID, a number corresponding to the source, an "a" or "b" for unvocalized/vocalized, and a 0 or 1 for split/unsplit.</xd:li>
+                    <xd:li>Links the persName to other language/vocalization versions of the name using @corresp.</xd:li>
+                </xd:ul>
+            </xd:p>
+        </xd:desc>
+        <xd:param name="split-id">Designates whether the persName is a split ("-1") or unsplit ("-0") version of the name.</xd:param>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="split-id"></xd:param>
+    </xd:doc>
     <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="split-id"/>
         <xsl:variable name="person-name-id">name<xsl:value-of select="../SRP_ID"/>-</xsl:variable>
@@ -601,16 +673,42 @@
         </xsl:choose>
     </xsl:template>
     
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>Cycles through the fields containing the individual parts of a name, creating and populating the appropriate TEI name fields.
+            Name fields using this template should end in one of the following:
+                <xd:ul>
+                    <xd:li>_Given</xd:li>
+                    <xd:li>_Family</xd:li>
+                    <xd:li>_Titles</xd:li>
+                    <xd:li>_Office</xd:li>
+                    <xd:li>_Saint_Title</xd:li>
+                    <xd:li>_Numeric_Title</xd:li>
+                    <xd:li>_Terms_of_Address</xd:li>
+                </xd:ul>
+            </xd:p>
+        </xd:desc>
+        <xd:param name="group">Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_Given"). Used to make sure this template loop doesn't proceed to a different set of fields.</xd:param>
+        <xd:param name="same-group">Boolean to test whether the next element is in the same group/fieldset.</xd:param>
+        <xd:param name="next-element-name">The name of the next element being processed, which is the element immediately following in the source XML.</xd:param>
+        <xd:param name="next-element">Content of the next element being processed, which is the element immediately following in the source XML.</xd:param>
+        <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="group"></xd:param>
+        <xd:param name="same-group"></xd:param>
+        <xd:param name="next-element-name"></xd:param>
+        <xd:param name="next-element"></xd:param>
+        <xd:param name="count"></xd:param>
+    </xd:doc>
     <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
-        <!-- Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_Given"). Used to make sure this template loop doesn't proceed to a different set of fields. -->
         <xsl:param name="group"/>
-        <!-- Boolean to test whether the next element is in the same group/fieldset. -->
         <xsl:param name="same-group"/>
-        <!-- The name of the next element being processed, which is the element immediately following in the source XML. -->
         <xsl:param name="next-element-name"/>
-        <!-- Content of the next element being processed, which is the element immediately following in the source XML. -->
         <xsl:param name="next-element"/>
-        <!-- A counter to use for determining the next element to process.  -->
         <xsl:param name="count"/>
         <xsl:if test="(contains(name(),'_Given') or contains(name(),'_Family') or contains(name(),'_Titles') or contains(name(),'_Office') or contains(name(),'_Saint_Title') or contains(name(),'_Numeric_Title') or contains(name(),'_Terms_of_Address')) and $same-group">
             <xsl:if test="string-length(normalize-space($next-element))">
@@ -649,7 +747,37 @@
     </xsl:template>
     
     
-    <!-- Adds date or event values and attributes -->
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template processes elements that contain date information, including the following:<xd:ul>
+                <xd:li>floruit</xd:li>
+                <xd:li>birth</xd:li>
+                <xd:li>death</xd:li>
+                <xd:li>event</xd:li>
+            </xd:ul>
+                The template other templates to add date and source attributes, then determines whether and how to add a human-readable value to the element, and which (if any) custom type attribute to use. 
+            </xd:p>
+        </xd:desc>
+        <xd:param name="gedsh-id">The xml:id for the GEDSH bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-en-id">The xml:id for the Barsoum English bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-sy-id">The xml:id for the Barsoum Syriac bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-ar-id">The xml:id for the Barsoum Arabic bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="cbsc-id">The xml:id for the CBSC bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-ydq-id">The xml:id for the Abidsho YdQ bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-bo-id">The xml:id for the Abdisho BO bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="gedsh-id"></xd:param>
+        <xd:param name="barsoum-en-id"></xd:param>
+        <xd:param name="barsoum-sy-id"></xd:param>
+        <xd:param name="barsoum-ar-id"></xd:param>
+        <xd:param name="cbsc-id"></xd:param>
+        <xd:param name="abdisho-ydq-id"></xd:param>
+        <xd:param name="abdisho-bo-id"></xd:param>
+    </xd:doc>
     <xsl:template name="event-or-date" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="gedsh-id"/>
         <xsl:param name="barsoum-en-id"/>
@@ -661,8 +789,6 @@
         
         <!-- Adds machine-readable attributes to date. -->
         <xsl:call-template name="date-attributes">
-            <!-- Uses the name of the human-readable field, except in fields that have "_Begin" and "_End",
-            which it replaces so that @from and @to attributes can be added to the same element. -->
             <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
             <xsl:with-param name="next-element-name" select="name()"/>
             <xsl:with-param name="next-element" select="node()"/>
@@ -697,9 +823,35 @@
         </xsl:choose>
     </xsl:template>
     
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p>This template adds machine-readable date attributes to an element, based on text strings contained in the source XML element's name.
+            <xd:ul>
+                <xd:li>_Begin_Standard --> @from</xd:li>
+                <xd:li>_End_Standard --> @to</xd:li>
+                <xd:li>_Standard --> @when</xd:li>
+                <xd:li>_Not_Before --> @notBefore</xd:li>
+                <xd:li>_Not_After --> @notAfter</xd:li>
+            </xd:ul>
+            </xd:p>
+        </xd:desc>
+        <xd:param name="date-type">Uses the name of the human-readable field, except in fields that have "_Begin" and "_End",
+            which it replaces so that @from and @to attributes can be added to the same element. Fields should be named in such a way that machine-readable fields contain the name of the field that has human-readable date data. If the template is called and the <xd:ref name="next-element-name" type="parameter">next element name</xd:ref> does not contain this date-type, the template will be exited.</xd:param>
+        <xd:param name="next-element-name">The name of the next element to be processed. This is used in combination with the <xd:ref name="count" type="parameter">count param</xd:ref> to cycle through the set of fields used to create an element with dates.</xd:param>
+        <xd:param name="next-element">The content of the next element to be processed. This is used in combination with the <xd:ref name="count" type="parameter">count param</xd:ref> to cycle through the set of fields used to create an element with dates.</xd:param>
+        <xd:param name="count">A counter to facilitate cycling through fields recursively.</xd:param>
+    </xd:doc>
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="date-type"></xd:param>
+        <xd:param name="next-element-name"></xd:param>
+        <xd:param name="next-element"></xd:param>
+        <xd:param name="count"></xd:param>
+    </xd:doc>
     <xsl:template name="date-attributes" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="date-type"/>
-        <xsl:param name="source-prefix"/>
         <xsl:param name="next-element-name"/>
         <xsl:param name="next-element"/>
         <xsl:param name="count"/>
@@ -729,7 +881,6 @@
             </xsl:if>
         <xsl:call-template name="date-attributes">
             <xsl:with-param name="date-type" select="$date-type"/>
-            <xsl:with-param name="source-prefix" select="$source-prefix"/>
             <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
             <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
             <xsl:with-param name="count" select="$count + 1"/>
