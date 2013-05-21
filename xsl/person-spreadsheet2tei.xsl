@@ -250,17 +250,32 @@
                                         </xsl:for-each>
                                       
                                       <!-- Adds date elements -->
-                                        <xsl:for-each-group 
-                                            select="*[contains(name(),'DOB') and string-length(normalize-space(node()))]"
-                                            group-by="substring-before(name(), '_DOB')">
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'DOB') and string-length(normalize-space(node()))]">
                                             <birth>
+                                                <!-- Adds machine-readable attributes to date. -->
                                                 <xsl:call-template name="date-attributes">
                                                     <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOB')"/>
                                                     <xsl:with-param name="next-element-name" select="name()"/>
+                                                    <xsl:with-param name="next-element" select="node()"/>
                                                     <xsl:with-param name="count" select="0"/>
                                                 </xsl:call-template>
+                                                
+                                                <!-- Adds source attributes. -->
+                                                <xsl:call-template name="source">
+                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                </xsl:call-template>
+                                                
+                                                <!-- Adds human readable date as content of birth element. -->
+                                                <xsl:value-of select="."/>
                                             </birth>
-                                        </xsl:for-each-group>
+                                        </xsl:for-each>
                                         
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
@@ -449,14 +464,16 @@
             <xsl:when test="contains(name(),'GEDSH')">
                 <xsl:attribute name="source">#<xsl:value-of select="$gedsh-id"/></xsl:attribute>
             </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_En')">
-                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-en-id"/></xsl:attribute>
-            </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Ar')">
                 <xsl:attribute name="source">#<xsl:value-of select="$barsoum-ar-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Sy')">
                 <xsl:attribute name="source">#<xsl:value-of select="$barsoum-sy-id"/></xsl:attribute>
+            </xsl:when>
+            <!-- Since Barsoum_Ar and Barsoum_Sy are matched above, anything else with Barsoum is assumed to be from the English version,
+            whether or not marked specifically "EN" (e.g., dates).-->
+            <xsl:when test="contains(name(),'Barsoum')">
+                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-en-id"/></xsl:attribute>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ')">
                 <xsl:attribute name="source">#<xsl:value-of select="$abdisho-ydq-id"/></xsl:attribute>
@@ -573,11 +590,19 @@
         <xsl:param name="next-element"/>
         <xsl:param name="count"/>
         <xsl:if test="contains($next-element-name, '_DOB')">
-        <xsl:choose>
-            <xsl:when test="contains($next-element-name, '_Standard')">
-                <xsl:attribute name="when" select="$next-element"/>
-            </xsl:when>
-        </xsl:choose>
+            <xsl:if test="string-length(normalize-space($next-element))">
+                <xsl:choose>
+                    <xsl:when test="contains($next-element-name, '_Standard')">
+                        <xsl:attribute name="when" select="$next-element"/>
+                    </xsl:when>
+                    <xsl:when test="contains($next-element-name, '_Not_Before')">
+                        <xsl:attribute name="notBefore" select="$next-element"/>
+                    </xsl:when>
+                    <xsl:when test="contains($next-element-name, '_Not_After')">
+                        <xsl:attribute name="notAfter" select="$next-element"/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:if>
         <xsl:call-template name="date-attributes">
             <xsl:with-param name="source-prefix" select="$source-prefix"/>
             <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
