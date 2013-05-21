@@ -251,19 +251,9 @@
                                       
                                       <!-- Adds date elements -->
                                         <xsl:for-each 
-                                            select="*[ends-with(name(),'DOB') and string-length(normalize-space(node()))]">
-                                            <birth>
-                                                <!-- Adds machine-readable attributes to date. -->
-                                                <xsl:call-template name="date-attributes">
-                                                    <xsl:with-param name="date-type" select="name()"/>
-                                                    <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOB')"/>
-                                                    <xsl:with-param name="next-element-name" select="name()"/>
-                                                    <xsl:with-param name="next-element" select="node()"/>
-                                                    <xsl:with-param name="count" select="0"/>
-                                                </xsl:call-template>
-                                                
-                                                <!-- Adds source attributes. -->
-                                                <xsl:call-template name="source">
+                                            select="*[ends-with(name(),'Floruit') and string-length(normalize-space(node()))]">
+                                            <floruit>
+                                                <xsl:call-template name="event-or-date">
                                                     <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
                                                     <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
                                                     <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
@@ -272,25 +262,26 @@
                                                     <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
                                                     <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
                                                 </xsl:call-template>
-                                                
-                                                <!-- Adds human readable date as content of birth element. -->
-                                                <xsl:value-of select="."/>
+                                            </floruit>
+                                        </xsl:for-each>
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'DOB') and string-length(normalize-space(node()))]">
+                                            <birth>
+                                                <xsl:call-template name="event-or-date">
+                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                </xsl:call-template>
                                             </birth>
                                         </xsl:for-each>
                                         <xsl:for-each 
                                             select="*[ends-with(name(),'DOD') and string-length(normalize-space(node()))]">
                                             <death>
-                                                <!-- Adds machine-readable attributes to date. -->
-                                                <xsl:call-template name="date-attributes">
-                                                    <xsl:with-param name="date-type" select="name()"/>
-                                                    <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOD')"/>
-                                                    <xsl:with-param name="next-element-name" select="name()"/>
-                                                    <xsl:with-param name="next-element" select="node()"/>
-                                                    <xsl:with-param name="count" select="0"/>
-                                                </xsl:call-template>
-                                                
-                                                <!-- Adds source attributes. -->
-                                                <xsl:call-template name="source">
+                                                <xsl:call-template name="event-or-date">
                                                     <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
                                                     <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
                                                     <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
@@ -299,11 +290,27 @@
                                                     <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
                                                     <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
                                                 </xsl:call-template>
-                                                
-                                                <!-- Adds human readable date as content of birth element. -->
-                                                <xsl:value-of select="."/>
                                             </death>
                                         </xsl:for-each>
+                                        <xsl:if test="string-length(normalize-space(GEDSH_Reign_Begin)) or string-length(normalize-space(GEDSH_Reign_End)) or string-length(normalize-space(Barsoum_En_Other_Date))">
+                                            <listEvent>
+                                                <!-- Will we always have both begin and end value for reigns? If not, how do we handle the following so that it creates only one event element for each Begin and End sequence? -->
+                                                <xsl:for-each 
+                                                    select="*[(ends-with(name(),'_Begin') or ends-with(name(),'_Other_Date')) and string-length(normalize-space(node()))]">
+                                                    <event>
+                                                        <xsl:call-template name="event-or-date">
+                                                            <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                            <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                            <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                            <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                            <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                            <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                            <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                        </xsl:call-template>
+                                                    </event>
+                                                </xsl:for-each>
+                                            </listEvent>
+                                        </xsl:if>
                                         
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
@@ -611,7 +618,54 @@
     </xsl:template>
     
     
-    <!-- Adds date attributes -->
+    <!-- Adds date or event values and attributes -->
+    <xsl:template name="event-or-date" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="gedsh-id"/>
+        <xsl:param name="barsoum-en-id"/>
+        <xsl:param name="barsoum-sy-id"/>
+        <xsl:param name="barsoum-ar-id"/>
+        <xsl:param name="cbsc-id"/>
+        <xsl:param name="abdisho-ydq-id"/>
+        <xsl:param name="abdisho-bo-id"/>
+        
+        <!-- Adds machine-readable attributes to date. -->
+        <xsl:call-template name="date-attributes">
+            <!-- Uses the name of the human-readable field, except in fields that have "_Begin" and "_End",
+            which it replaces so that @from and @to attributes can be added to the same element. -->
+            <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
+            <xsl:with-param name="next-element-name" select="name()"/>
+            <xsl:with-param name="next-element" select="node()"/>
+            <xsl:with-param name="count" select="0"/>
+        </xsl:call-template>
+
+        <!-- Adds source attributes. -->
+        <xsl:call-template name="source">
+            <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+            <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+            <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+            <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+            <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+            <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+            <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+        </xsl:call-template>
+        
+        <!-- Adds custom type and, if relevant, human-readable date as content of element-->
+        <xsl:choose>
+            <xsl:when test="contains(name(), 'Reign')">
+                <!-- Is "incumbency" or "term-of-office" better for this? -->
+                <xsl:attribute name="type" select="'reign'"/>
+                <xsl:value-of select="."/>-<xsl:value-of select="following-sibling::*[ends-with(name(), '_End')]"/>
+            </xsl:when>
+            <xsl:when test="contains(name(), '_Other_Date')">
+                <!-- Is "incumbency" or "term-of-office" better for this? -->
+                <xsl:attribute name="type" select="'untagged'"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
     <xsl:template name="date-attributes" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="date-type"/>
         <xsl:param name="source-prefix"/>
@@ -621,9 +675,16 @@
         <!-- Tests whether the beginning of the field name matches the name of the human-readable field. 
         For this to work, machine-readable date fields need to start with the field name of the corresponding human-readable field.
         For example, GEDSH_DOB and GEDSH_DOB_Standard -->
+        <!-- What should be done if a _Begin field or an _End field have notBefore/notAfter attributes? -->
         <xsl:if test="contains($next-element-name, $date-type)">
             <xsl:if test="string-length(normalize-space($next-element))">
                 <xsl:choose>
+                    <xsl:when test="contains($next-element-name, '_Begin_Standard')">
+                        <xsl:attribute name="from" select="$next-element"/>
+                    </xsl:when>
+                    <xsl:when test="contains($next-element-name, '_End_Standard')">
+                        <xsl:attribute name="to" select="$next-element"/>
+                    </xsl:when>
                     <xsl:when test="contains($next-element-name, '_Standard')">
                         <xsl:attribute name="when" select="$next-element"/>
                     </xsl:when>
