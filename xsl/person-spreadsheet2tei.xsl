@@ -337,7 +337,6 @@
                                         
                                         <!-- Citations for Barsoum-->
                                         <!-- Does the order matter here? -->
-                                        <!-- Should we use <choice> here to put versions in parallel? -->
                                         <xsl:if
                                             test="string-length(normalize-space(Barsoum_En_Full)) > 0">
                                             <bibl xml:id="{$barsoum-en-id}">
@@ -405,9 +404,38 @@
                                             </bibl>
                                         </xsl:if>
                                         
-                                        <!-- Add Abdisho citations -->
+                                        <!-- Need Abdisho titles -->
+                                        <xsl:if
+                                            test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Full)) > 0">
+                                            <bibl xml:id="{$abdisho-ydq-id}">
+                                                <title>Abdisho (YdQ)</title>
+                                                <abbr>Abdisho (YdQ)</abbr>
+                                                <ptr target="http://syriaca.org/bibl/6"/>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_YdQ_Sy_Page_Num)) > 0">
+                                                    <citedRange unit="pp">
+                                                        <xsl:value-of select="Abdisho_YdQ_Sy_Page_Num"/>
+                                                    </citedRange>
+                                                </xsl:if>
+                                            </bibl>
+                                        </xsl:if>
+                                        <xsl:if
+                                            test="(string-length(normalize-space(Abdisho_BO_Sy_NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_Sy_V_Full)) > 0)">
+                                            <bibl xml:id="{$abdisho-bo-id}">
+                                                <title>Abdisho (BO)</title>
+                                                <abbr>Abdisho (BO)</abbr>
+                                                <ptr target="http://syriaca.org/bibl/7"/>
+                                                <xsl:if
+                                                    test="string-length(normalize-space(Abdisho_BO_Sy_Page_Num)) > 0">
+                                                    <citedRange unit="pp">
+                                                        <xsl:value-of select="Abdisho_BO_Sy_Page_Num"/>
+                                                    </citedRange>
+                                                </xsl:if>
+                                            </bibl>
+                                        </xsl:if>
                                         
                                         
+                                        <!-- Adds Record Description field as a note. -->
                                         <xsl:if test="string-length(normalize-space(Record_Description))">
                                             <note type="record-description">
                                                 <xsl:value-of select="Record_Description"/>
@@ -469,8 +497,11 @@
             <xsl:when test="contains(name(),'Barsoum_En')">
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
             </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En_Full')">
+            <xsl:when test="contains(name(),'CBSC_En')">
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-cbsc'"/>
+            </xsl:when>
+            <xsl:when test="contains(name(),'Other_En')">
+                <xsl:attribute name="xml:lang" select="'en'"/>
             </xsl:when>
             <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
                 <xsl:attribute name="xml:lang" select="'syr'"/>
@@ -657,7 +688,7 @@
                 <xsl:value-of select="."/>-<xsl:value-of select="following-sibling::*[ends-with(name(), '_End')]"/>
             </xsl:when>
             <xsl:when test="contains(name(), '_Other_Date')">
-                <!-- Is "incumbency" or "term-of-office" better for this? -->
+                <!-- What about using this type? -->
                 <xsl:attribute name="type" select="'untagged'"/>
             </xsl:when>
             <xsl:otherwise>
