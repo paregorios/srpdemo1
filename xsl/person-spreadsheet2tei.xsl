@@ -621,12 +621,7 @@
         </xd:desc>
         <xd:param name="split-id">Designates whether the persName is a split ("-1") or unsplit ("-0") version of the name.</xd:param>
     </xd:doc>
-    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-        <xd:desc>
-            <xd:p></xd:p>
-        </xd:desc>
-        <xd:param name="split-id"></xd:param>
-    </xd:doc>
+    <!-- Will we use @corresp or linkGrp to show parallel names? -->
     <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="split-id"/>
         <xsl:variable name="person-name-id">name<xsl:value-of select="../SRP_ID"/>-</xsl:variable>
