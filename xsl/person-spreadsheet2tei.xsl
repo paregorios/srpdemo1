@@ -239,6 +239,13 @@
                                                 </xsl:call-template>
                                             </persName>
                                         </xsl:for-each-group>
+                                        
+                                        <!-- Adds VIAF URLs. -->
+                                        <xsl:for-each select="URL">
+                                            <idno type="URI">
+                                                <xsl:value-of select="URL"/>
+                                            </idno>
+                                        </xsl:for-each>
                                       
                                         
                                         <!-- Citation for GEDSH -->
