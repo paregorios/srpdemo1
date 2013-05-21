@@ -172,9 +172,11 @@
                     <text>
                         <body>
                             <listPerson>
+                                <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
                                     <person xml:id="{$person-id}">
                                         <!-- Standard Syriaca.org names, unsplit -->
                                         <!-- Experimenting with for-each. Need to add more attributes. -->
+                                        
                                         
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
@@ -241,12 +243,24 @@
                                         </xsl:for-each-group>
                                         
                                         <!-- Adds VIAF URLs. -->
-                                        <xsl:for-each select="URL">
+                                        <xsl:for-each select="URL[string-length(normalize-space()) > 0]">
                                             <idno type="URI">
-                                                <xsl:value-of select="URL"/>
+                                                <xsl:value-of select="."/>
                                             </idno>
                                         </xsl:for-each>
                                       
+                                      <!-- Adds date elements -->
+                                        <xsl:for-each-group 
+                                            select="*[contains(name(),'DOB') and string-length(normalize-space(node()))]"
+                                            group-by="substring-before(name(), '_DOB')">
+                                            <birth>
+                                                <xsl:call-template name="date-attributes">
+                                                    <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOB')"/>
+                                                    <xsl:with-param name="next-element-name" select="name()"/>
+                                                    <xsl:with-param name="count" select="0"/>
+                                                </xsl:call-template>
+                                            </birth>
+                                        </xsl:for-each-group>
                                         
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
@@ -548,6 +562,28 @@
                 <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
                 <xsl:with-param name="count" select="$count + 1"/>
             </xsl:call-template>
+        </xsl:if>
+    </xsl:template>
+    
+    
+    <!-- Adds date attributes -->
+    <xsl:template name="date-attributes" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="source-prefix"/>
+        <xsl:param name="next-element-name"/>
+        <xsl:param name="next-element"/>
+        <xsl:param name="count"/>
+        <xsl:if test="contains($next-element-name, '_DOB')">
+        <xsl:choose>
+            <xsl:when test="contains($next-element-name, '_Standard')">
+                <xsl:attribute name="when" select="$next-element"/>
+            </xsl:when>
+        </xsl:choose>
+        <xsl:call-template name="date-attributes">
+            <xsl:with-param name="source-prefix" select="$source-prefix"/>
+            <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
+            <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
+            <xsl:with-param name="count" select="$count + 1"/>
+        </xsl:call-template>
         </xsl:if>
     </xsl:template>
     
