@@ -255,6 +255,7 @@
                                             <birth>
                                                 <!-- Adds machine-readable attributes to date. -->
                                                 <xsl:call-template name="date-attributes">
+                                                    <xsl:with-param name="date-type" select="name()"/>
                                                     <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOB')"/>
                                                     <xsl:with-param name="next-element-name" select="name()"/>
                                                     <xsl:with-param name="next-element" select="node()"/>
@@ -275,6 +276,33 @@
                                                 <!-- Adds human readable date as content of birth element. -->
                                                 <xsl:value-of select="."/>
                                             </birth>
+                                        </xsl:for-each>
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'DOD') and string-length(normalize-space(node()))]">
+                                            <death>
+                                                <!-- Adds machine-readable attributes to date. -->
+                                                <xsl:call-template name="date-attributes">
+                                                    <xsl:with-param name="date-type" select="name()"/>
+                                                    <xsl:with-param name="source-prefix" select="substring-before(name(), '_DOD')"/>
+                                                    <xsl:with-param name="next-element-name" select="name()"/>
+                                                    <xsl:with-param name="next-element" select="node()"/>
+                                                    <xsl:with-param name="count" select="0"/>
+                                                </xsl:call-template>
+                                                
+                                                <!-- Adds source attributes. -->
+                                                <xsl:call-template name="source">
+                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
+                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
+                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
+                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
+                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
+                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
+                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                </xsl:call-template>
+                                                
+                                                <!-- Adds human readable date as content of birth element. -->
+                                                <xsl:value-of select="."/>
+                                            </death>
                                         </xsl:for-each>
                                         
                                         <!-- Citation for GEDSH -->
@@ -585,11 +613,15 @@
     
     <!-- Adds date attributes -->
     <xsl:template name="date-attributes" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="date-type"/>
         <xsl:param name="source-prefix"/>
         <xsl:param name="next-element-name"/>
         <xsl:param name="next-element"/>
         <xsl:param name="count"/>
-        <xsl:if test="contains($next-element-name, '_DOB')">
+        <!-- Tests whether the beginning of the field name matches the name of the human-readable field. 
+        For this to work, machine-readable date fields need to start with the field name of the corresponding human-readable field.
+        For example, GEDSH_DOB and GEDSH_DOB_Standard -->
+        <xsl:if test="contains($next-element-name, $date-type)">
             <xsl:if test="string-length(normalize-space($next-element))">
                 <xsl:choose>
                     <xsl:when test="contains($next-element-name, '_Standard')">
@@ -604,6 +636,7 @@
                 </xsl:choose>
             </xsl:if>
         <xsl:call-template name="date-attributes">
+            <xsl:with-param name="date-type" select="$date-type"/>
             <xsl:with-param name="source-prefix" select="$source-prefix"/>
             <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
             <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
