@@ -88,6 +88,19 @@
             <xsl:variable name="cbsc-id">
                 <xsl:value-of select="concat($bib-id, '-7')"/>
             </xsl:variable>
+            <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH. -->
+            <xsl:variable name="sort">
+                <xsl:choose>
+                    <xsl:when test="string-length(normalize-space(GEDSH_Full)) and string-length(normalize-space(concat(GEDSH_Given, GEDSH_Family, GEDSH_Titles)))">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Given)">forename</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Family)">surname</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">title</xsl:when>
+                        </xsl:choose>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:variable>
+            
             <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename"
                 select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
@@ -262,6 +275,7 @@
                                                     <xsl:with-param name="next-element-name" select="name()"/>
                                                     <xsl:with-param name="next-element" select="."/>
                                                     <xsl:with-param name="count" select="0"/>
+                                                    <xsl:with-param name="sort" select="$sort"/>
                                                 </xsl:call-template>
                                             </persName>
                                         </xsl:for-each-group>
@@ -336,12 +350,13 @@
                                             </listEvent>
                                         </xsl:if>
                                         
+                                        <!-- Bibl elements -->
+                                        <!-- Should languages be declared for English titles or only non-English? -->
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
                                             test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
                                             <bibl xml:id="{$gedsh-id}">
-                                                <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                                                <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                                                 <abbr>GEDSH</abbr>
                                                 <ptr target="http://syriaca.org/bibl/1"/>
                                                 <xsl:if
@@ -364,8 +379,7 @@
                                         <xsl:if
                                             test="string-length(normalize-space(Barsoum_En_Full)) > 0">
                                             <bibl xml:id="{$barsoum-en-id}">
-                                                <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                                                <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (English)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/4"/>
                                                 <xsl:if
@@ -408,8 +422,7 @@
                                             test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
                                             <bibl xml:id="{$barsoum-sy-id}">
                                                 <!-- Is this the actual title? -->
-                                                <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                                                <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (Syriac)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/3"/>
                                                 <!-- Are entry nums the same for Syriac as for English? -->
@@ -701,16 +714,7 @@
         <xd:param name="next-element-name">The name of the next element being processed, which is the element immediately following in the source XML.</xd:param>
         <xd:param name="next-element">Content of the next element being processed, which is the element immediately following in the source XML.</xd:param>
         <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
-    </xd:doc>
-    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-        <xd:desc>
-            <xd:p></xd:p>
-        </xd:desc>
-        <xd:param name="group"></xd:param>
-        <xd:param name="same-group"></xd:param>
-        <xd:param name="next-element-name"></xd:param>
-        <xd:param name="next-element"></xd:param>
-        <xd:param name="count"></xd:param>
+        <xd:param name="sort">Contains the name of the TEI name part element that should be used first in alphabetical lists.</xd:param>
     </xd:doc>
     <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="group"/>
@@ -718,29 +722,72 @@
         <xsl:param name="next-element-name"/>
         <xsl:param name="next-element"/>
         <xsl:param name="count"/>
+        <xsl:param name="sort"/>
         <xsl:if test="(contains(name(),'_Given') or contains(name(),'_Family') or contains(name(),'_Titles') or contains(name(),'_Office') or contains(name(),'_Saint_Title') or contains(name(),'_Numeric_Title') or contains(name(),'_Terms_of_Address')) and $same-group">
             <xsl:if test="string-length(normalize-space($next-element))">
                 <xsl:choose>
                     <xsl:when test="ends-with($next-element-name, '_Given')">
-                        <forename><xsl:value-of select="$next-element"/></forename>
+                        <forename>
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'forename'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/></forename>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Family')">
-                        <surname><xsl:value-of select="$next-element"/></surname>
+                        <surname>
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'surname'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </surname>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Titles')">
-                        <addName type="untagged-title"><xsl:value-of select="$next-element"/></addName>
+                        <addName type="untagged-title">
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'title'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </addName>
                     </xsl:when>
+                    <!--Should this be roleName?-->
                     <xsl:when test="ends-with($next-element-name, '_Office')">
-                        <addName type="office"><xsl:value-of select="$next-element"/></addName>
+                        <addName type="office">
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'title'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </addName>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Saint_Title')">
-                        <addName type="saint-title"><xsl:value-of select="$next-element"/></addName>
+                        <addName type="saint-title">
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'title'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </addName>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Numeric_Title')">
-                        <genName type="numeric-title"><xsl:value-of select="$next-element"/></genName>
+                        <genName type="numeric-title">
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'title'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </genName>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Terms_of_Address')">
-                        <addName type="terms-of-address"><xsl:value-of select="$next-element"/></addName>
+                        <addName type="terms-of-address">
+                            <xsl:call-template name="name-parts-sort">
+                                <xsl:with-param name="sort" select="$sort"/>
+                                <xsl:with-param name="name-part" select="'title'"/>
+                            </xsl:call-template>
+                            <xsl:value-of select="$next-element"/>
+                        </addName>
                     </xsl:when>
                 </xsl:choose>
             </xsl:if>
@@ -754,6 +801,26 @@
         </xsl:if>
     </xsl:template>
     
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Determines which name part should be given precedence in alphabetic lists, using GEDSH, if present.</xd:p>
+        </xd:desc>
+        <xd:param name="sort">Shows which name part should be given precedence in alphabetic lists. Contains "forename", "surname", "title", or empty string.</xd:param>
+        <xd:param name="name-part">Passes in the current name part being processed from the <xd:ref name="name-parts" type="template">name-parts template</xd:ref>.</xd:param>
+    </xd:doc>
+    <xsl:template name="name-parts-sort">
+        <xsl:param name="sort"/>
+        <xsl:param name="name-part"/>
+        <xsl:if test="string-length(normalize-space($sort))">
+            <xsl:attribute name="sort">
+                <xsl:choose>
+                    <xsl:when test="matches($sort, $name-part)">0</xsl:when>
+                    <xsl:otherwise>1</xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+        </xsl:if>
+    </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
