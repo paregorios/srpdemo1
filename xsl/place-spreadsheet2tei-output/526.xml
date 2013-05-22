@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,19 +70,17 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib526-3"
-                          corresp="#name526-3 #name526-4">Persia</placeName>
+                          corresp="#name526-5">Persia</placeName>
                <placeName xml:id="name526-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܐܬܪ̈ܘܬܐ ܕܦܪܣ</placeName>
-               <placeName xml:id="name526-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib526-1"
-                          corresp="#name526-4 #name526-1">ܐܰܬܪ̈ܘܳܬܳܐ ܕܦܳܪܶܣ</placeName>
-               <placeName xml:id="name526-4"
+               <placeName xml:id="name526-3" xml:lang="syr-Syrj" source="#bib526-1">ܐܰܬܪ̈ܘܳܬܳ</placeName>
+               <placeName xml:id="name526-4" xml:lang="syr-Syrj" source="#bib526-1">ܕܦܳܪܶܣ</placeName>
+               <placeName xml:id="name526-5"
                           xml:lang="ar"
                           source="#bib526-2"
-                          corresp="#name526-3 #name526-1">بلاد فارس</placeName>
-               <placeName xml:id="name526-5" xml:lang="en" source="#bib526-4">Iran</placeName>
+                          corresp="#name526-1">بلاد فارس</placeName>
+               <placeName xml:id="name526-6" xml:lang="en" source="#bib526-4">Iran</placeName>
                <desc xml:id="abstract-en-526"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/526</idno>

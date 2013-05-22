@@ -157,13 +157,13 @@
                                             <xsl:sequence select="(Barsoum_Syriac_Name)"/>
                                         </xsl:if>
                                         <xsl:if test="Barsoum_Syriac_Name_Vocalized != ''">
-                                            <xsl:sequence select="(Barsoum_Syriac_Name_Vocalized)"/>
+                                            <xsl:sequence select="tokenize(Barsoum_Syriac_Name_Vocalized,'.\s')"/>
                                         </xsl:if>
                                         <xsl:if test="Barsoum_Arabic_Name != ''">
-                                            <xsl:sequence select="(Barsoum_Arabic_Name)"/>
+                                            <xsl:sequence select="tokenize(Barsoum_Arabic_Name,'،\s')"/>
                                         </xsl:if>
                                         <xsl:if test="Barsoum_English_Name != ''">
-                                            <xsl:sequence select="(Barsoum_English_Name)"/>
+                                            <xsl:sequence select="tokenize(Barsoum_English_Name,',\s')"/>
                                         </xsl:if>
                                         <xsl:if test="CBSC_Keyword != ''">
                                             <xsl:sequence select="tokenize(CBSC_Keyword,'; ')"/>
@@ -182,31 +182,31 @@
                                             <xsl:attribute name="xml:lang">
                                                 <xsl:choose>
                                                     <xsl:when test="$this_row/Barsoum_Syriac_Name = .">syr</xsl:when>
-                                                    <xsl:when test="$this_row/Barsoum_Syriac_Name_Vocalized = .">syr-Syrj</xsl:when>  <!-- when "vocalized" form equals unvocalized, use 'syr' -->
-                                                    <xsl:when test="$this_row/Barsoum_Arabic_Name = .">ar</xsl:when>
+                                                    <xsl:when test="exists(index-of(tokenize($this_row/Barsoum_Syriac_Name_Vocalized,'.\s'), .))">syr-Syrj</xsl:when>  <!-- when "vocalized" form equals unvocalized, use 'syr' -->
+                                                    <xsl:when test="exists(index-of(tokenize($this_row/Barsoum_Arabic_Name,'،\s'), .))">ar</xsl:when>
                                                     <xsl:otherwise>en</xsl:otherwise>
                                                 </xsl:choose>
                                             </xsl:attribute>
                                             
-                                            <!-- if it is the <Name> value or the <Barsoum_Syriac_Name> value, then it needs a @resp attribute to indicate it is a Syriaca.org preferred form -->
+                                            <!-- if it is the <Name> value or the <Barsoum_Syriac_Name> value, then it needs a @syriaca-tags attribute to indicate it is a Syriaca.org authorized form -->
                                             <xsl:if test="$this_row/Name = . or $this_row/Barsoum_Syriac_Name = .">
                                                 <xsl:attribute name="syriaca-tags">#syriaca-authorized</xsl:attribute>
                                             </xsl:if>
                                             
                                             <!-- if it is from a print source, it needs a @source attribute -->
                                             <!-- to achieve space-separated xml:id references, we create a sequence of references and then print it -->
-                                            <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.)) or $this_row/Barsoum_Syriac_Name_Vocalized = . or $this_row/Barsoum_Arabic_Name = . or $this_row/Barsoum_English_Name = . or exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.))">
+                                            <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.)) or exists(index-of(tokenize($this_row/Barsoum_Syriac_Name_Vocalized,'.\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_Arabic_Name,'،\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_English_Name,',\s'), .)) or exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.))">
                                                 <xsl:variable name="this_source_attribute" as="xs:string*">
                                                     <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'GEDSH')))"/>
                                                     </xsl:if>
-                                                    <xsl:if test="$this_row/Barsoum_Syriac_Name_Vocalized = .">
+                                                    <xsl:if test="exists(index-of(tokenize($this_row/Barsoum_Syriac_Name_Vocalized,'.\s'), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'Barsoum-Syriac')))"/>
                                                     </xsl:if>
-                                                    <xsl:if test="$this_row/Barsoum_Arabic_Name = .">
+                                                    <xsl:if test="exists(index-of(tokenize($this_row/Barsoum_Arabic_Name,'،\s'), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'Barsoum-Arabic')))"/>
                                                     </xsl:if>
-                                                    <xsl:if test="$this_row/Barsoum_English_Name = .">
+                                                    <xsl:if test="exists(index-of(tokenize($this_row/Barsoum_English_Name,',\s'), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'Barsoum-English')))"/>
                                                     </xsl:if>
                                                     <xsl:if test="exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.))">
@@ -217,6 +217,7 @@
                                             </xsl:if>
                                             
                                             <!-- finally, if it is a Barsoum name, it needs a @corresp attribute pointing to the other Barsoum names -->
+                                            <!-- NOTE: this @corresp generator DOES NOT WORK wherever there is more than one Barsoum name -->
                                             <xsl:if test="$this_row/Barsoum_Syriac_Name_Vocalized = . or $this_row/Barsoum_Arabic_Name = . or $this_row/Barsoum_English_Name = .">
                                                 <xsl:variable name="this_corresp_attribute" as="xs:string*">
                                                     <xsl:choose>
@@ -377,7 +378,9 @@
                                         <idno type="URI"><xsl:value-of select="Pleiades_URI"/></idno>
                                     </xsl:if>
                                     <xsl:if test="Wikipedia_URI != ''">
-                                        <idno type="URI"><xsl:value-of select="Wikipedia_URI"/></idno> <!-- FUTURE: split multiple Wikipedia URIs -->
+                                        <xsl:for-each select="tokenize(Wikipedia_URI,'\s\|\s')">
+                                            <idno type="URI"><xsl:value-of select="current()"/></idno> <!-- FUTURE: split multiple Wikipedia URIs -->
+                                        </xsl:for-each>
                                     </xsl:if>
                                     
                                     <!-- Insert the <bibl> elements -->

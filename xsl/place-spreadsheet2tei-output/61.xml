@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,29 +59,26 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-61" type="">
+            <place xml:id="place-61" type="open-water">
                <placeName xml:id="name61-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib61-1 #bib61-4"
-                          corresp="#name61-3 #name61-4">Caspian Sea</placeName>
+                          corresp="#name61-5">Caspian Sea</placeName>
                <placeName xml:id="name61-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܝܡܐ ܕܩܙܒܝܢ</placeName>
-               <placeName xml:id="name61-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib61-2"
-                          corresp="#name61-4 #name61-1">ܝܰܡܐ ܕܩܳܙܒܝܢ</placeName>
-               <placeName xml:id="name61-4"
+               <placeName xml:id="name61-3" xml:lang="syr-Syrj" source="#bib61-2">ܝܰܡ</placeName>
+               <placeName xml:id="name61-4" xml:lang="syr-Syrj" source="#bib61-2">ܕܩܳܙܒܝܢ</placeName>
+               <placeName xml:id="name61-5"
                           xml:lang="ar"
                           source="#bib61-3"
-                          corresp="#name61-3 #name61-1">بحر قزبين</placeName>
+                          corresp="#name61-1">بحر قزبين</placeName>
                <desc xml:id="abstract-en-61"/>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/61</idno>
                <idno type="URI">http://pleiades.stoa.org/places/884130</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Caspian_Sea</idno>

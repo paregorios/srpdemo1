@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib362-3"
-                          corresp="#name362-3 #name362-4">Sinun (Sinin) Monastery</placeName>
+                          corresp="#name362-5">Sinun (Sinin) Monastery</placeName>
                <placeName xml:id="name362-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܣܢܘܢ</placeName>
-               <placeName xml:id="name362-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib362-1"
-                          corresp="#name362-4 #name362-1">ܕܰܝܪܳܐ ܕܣܢܘܢ</placeName>
-               <placeName xml:id="name362-4"
+               <placeName xml:id="name362-3" xml:lang="syr-Syrj" source="#bib362-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name362-4" xml:lang="syr-Syrj" source="#bib362-1">ܕܣܢܘܢ</placeName>
+               <placeName xml:id="name362-5"
                           xml:lang="ar"
                           source="#bib362-2"
-                          corresp="#name362-3 #name362-1">دير سنون وقيل ايضاً سنين</placeName>
+                          corresp="#name362-1">دير سنون وقيل ايضاً سنين</placeName>
                <desc xml:id="abstract-en-362"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib362-1">ܒܩܘܪܒܳܐ ܕܐܘܪܗܳܝ. ܕܟܝܺܪ ܫܢܰܝ̈  512  -  565  ܐܰܚܪܒܗ ܥܳܫܘܡܐ ܥܰܒܕܐܠܠܗ ܒܰܪ ܒܰܟܬܰܪܝ  751.  </quote>

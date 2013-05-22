@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -64,14 +67,9 @@
          <listPlace>
             <place xml:id="place-319" type="">
                <placeName xml:id="name319-1" xml:lang="en" syriaca-tags="#syriaca-authorized">al-Jabal al-Muqaddas</placeName>
-               <placeName xml:id="name319-2"
-                          xml:lang="ar"
-                          source="#bib319-1"
-                          corresp="#name319-3">الجبل المقدس</placeName>
-               <placeName xml:id="name319-3"
-                          xml:lang="en"
-                          source="#bib319-2"
-                          corresp="#name319-2">Holy Mountain, The</placeName>
+               <placeName xml:id="name319-2" xml:lang="ar" source="#bib319-1">الجبل المقدس</placeName>
+               <placeName xml:id="name319-3" xml:lang="en" source="#bib319-2">Holy Mountain</placeName>
+               <placeName xml:id="name319-4" xml:lang="en" source="#bib319-2">The</placeName>
                <desc xml:id="abstract-en-319"/>
                <desc xml:lang="ar">
                   <quote source="#bib319-1">شرقي الرها اشتهر بكثرة ادياره</quote>

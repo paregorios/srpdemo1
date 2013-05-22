@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">BETH ZABDAI</title>
+            <title xml:lang="en">Beth Zabdai</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,30 +59,28 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-39" type="">
+            <place xml:id="place-39" type="province">
                <placeName xml:id="name39-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib39-1">BETH ZABDAI</placeName>
+                          source="#bib39-1">Beth Zabdai</placeName>
                <placeName xml:id="name39-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܒܝܬ ܙܒܕܝ</placeName>
-               <placeName xml:id="name39-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib39-2"
-                          corresp="#name39-4 #name39-5">ܒܶܝܬ ܙܰܒܕܰܝ</placeName>
-               <placeName xml:id="name39-4"
+               <placeName xml:id="name39-3" xml:lang="syr-Syrj" source="#bib39-2">ܒܶܝ</placeName>
+               <placeName xml:id="name39-4" xml:lang="syr-Syrj" source="#bib39-2">ܙܰܒܕܰܝ</placeName>
+               <placeName xml:id="name39-5"
                           xml:lang="ar"
                           source="#bib39-3"
-                          corresp="#name39-3 #name39-5">بازبدي</placeName>
-               <placeName xml:id="name39-5"
+                          corresp="#name39-6">بازبدي</placeName>
+               <placeName xml:id="name39-6"
                           xml:lang="en"
                           source="#bib39-4"
-                          corresp="#name39-3 #name39-4">Bazabdi (Beth Zabdai)</placeName>
+                          corresp="#name39-5">Bazabdi (Beth Zabdai)</placeName>
                <desc xml:id="abstract-en-39"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/39</idno>

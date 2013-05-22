@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,13 +67,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-109" type="">
+            <place xml:id="place-109" type="settlement">
                <placeName xml:id="name109-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -82,15 +85,13 @@
                <placeName xml:id="name109-4"
                           xml:lang="syr-Syrj"
                           source="#bib109-2"
-                          corresp="#name109-5 #name109-6">ܩܰܐܠܘܢܝܩܝ</placeName>
+                          corresp="#name109-5">ܩܰܐܠܘܢܝܩܝ</placeName>
                <placeName xml:id="name109-5"
                           xml:lang="ar"
                           source="#bib109-3"
-                          corresp="#name109-4 #name109-6">الرقة</placeName>
-               <placeName xml:id="name109-6"
-                          xml:lang="en"
-                          source="#bib109-4"
-                          corresp="#name109-4 #name109-5">Raqqa, al-</placeName>
+                          corresp="#name109-4">الرقة</placeName>
+               <placeName xml:id="name109-6" xml:lang="en" source="#bib109-4">Raqqa</placeName>
+               <placeName xml:id="name109-7" xml:lang="en" source="#bib109-4">al-</placeName>
                <desc xml:id="abstract-en-109"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib109-2">ܡܕܝܢܬܳܐ ܗܘܳܬ ܪܰܒܬܳܐ ܒܩܘܪܒܳܐ ܕܰܦܪܳܬ ܘܡܶܬܰܐܡܪ ܠܗ̇ ܪܰܩܰܗ̈ ܘܝܰܘܡܳܢܐ ܗܘܳܬ ܡܕܝܢܬܳܘܢܺܝܬܳܐ ܕܕܳܡܝܳܐ ܠܰܩܪܺܝܬܳܐ.</quote>

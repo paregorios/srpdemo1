@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,18 @@
                <placeName xml:id="name395-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܐܗܪܘܢ ܕܫܓܪ̈ܐ</placeName>
-               <placeName xml:id="name395-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib395-1"
-                          corresp="#name395-4 #name395-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܐܰܗܪܘܢ ܕܫܓܪ̈ܐ</placeName>
-               <placeName xml:id="name395-4"
+               <placeName xml:id="name395-3" xml:lang="syr-Syrj" source="#bib395-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name395-4" xml:lang="syr-Syrj" source="#bib395-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name395-5" xml:lang="syr-Syrj" source="#bib395-1">ܐܰܗܪܘ</placeName>
+               <placeName xml:id="name395-6" xml:lang="syr-Syrj" source="#bib395-1">ܕܫܓܪ̈ܐ</placeName>
+               <placeName xml:id="name395-7"
                           xml:lang="ar"
                           source="#bib395-2"
-                          corresp="#name395-3 #name395-5">دير مار هارون في الشغر</placeName>
-               <placeName xml:id="name395-5"
+                          corresp="#name395-8">دير مار هارون في الشغر</placeName>
+               <placeName xml:id="name395-8"
                           xml:lang="en"
                           source="#bib395-3"
-                          corresp="#name395-3 #name395-4">Aaron Monastery</placeName>
+                          corresp="#name395-7">Aaron Monastery</placeName>
                <desc xml:id="abstract-en-395"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib395-1">ܒܐܘܚܕܳܢܐ ܕܰܩܠܝܣܘܪܐ. ܐܶܬܢܰܦܩܘ ܒܗ ܬܪܶܝܢ ܦܰܛܪܝܪ̈ܟܐ ܘܚܰܡܫܐ ܐܶܦܝܣ̈ܩܘܦܶܐ  686 - 1170</quote>

@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,17 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib428-3"
-                          corresp="#name428-3 #name428-4">Sari Awastir</placeName>
+                          corresp="#name428-6">Sari Awastir</placeName>
                <placeName xml:id="name428-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܣܐܪܗ ܐܘ ܐܣܬܝܪ</placeName>
-               <placeName xml:id="name428-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib428-1"
-                          corresp="#name428-4 #name428-1">ܣܰܐܪܗ ܐܘ ܐܶܣܬܝܪ</placeName>
-               <placeName xml:id="name428-4"
+               <placeName xml:id="name428-3" xml:lang="syr-Syrj" source="#bib428-1">ܣܰܐܪ</placeName>
+               <placeName xml:id="name428-4" xml:lang="syr-Syrj" source="#bib428-1">ܐ</placeName>
+               <placeName xml:id="name428-5" xml:lang="syr-Syrj" source="#bib428-1">ܐܶܣܬܝܪ</placeName>
+               <placeName xml:id="name428-6"
                           xml:lang="ar"
                           source="#bib428-2"
-                          corresp="#name428-3 #name428-1">ساري او ستير</placeName>
+                          corresp="#name428-1">ساري او ستير</placeName>
                <desc xml:id="abstract-en-428"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/428</idno>

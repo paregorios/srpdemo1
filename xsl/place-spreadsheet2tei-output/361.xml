@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,17 @@
                <placeName xml:id="name361-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܫܠܝܡܘܢ</placeName>
-               <placeName xml:id="name361-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib361-1"
-                          corresp="#name361-4 #name361-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܫܠܶܝܡܘܢ</placeName>
-               <placeName xml:id="name361-4"
+               <placeName xml:id="name361-3" xml:lang="syr-Syrj" source="#bib361-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name361-4" xml:lang="syr-Syrj" source="#bib361-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name361-5" xml:lang="syr-Syrj" source="#bib361-1">ܫܠܶܝܡܘܢ</placeName>
+               <placeName xml:id="name361-6"
                           xml:lang="ar"
                           source="#bib361-2"
-                          corresp="#name361-3 #name361-5">دير مار سليمان</placeName>
-               <placeName xml:id="name361-5"
+                          corresp="#name361-7">دير مار سليمان</placeName>
+               <placeName xml:id="name361-7"
                           xml:lang="en"
                           source="#bib361-3"
-                          corresp="#name361-3 #name361-4">Solomon Monastery</placeName>
+                          corresp="#name361-6">Solomon Monastery</placeName>
                <desc xml:id="abstract-en-361"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib361-1">ܒܩܘܪܒܳܐ ܕܕܠܘܟ. ܘܚܳܐܰܪ ܠܡܰܪܓܐ ܕܥܰܝܢܳܐ ܘܥܰܡܝܪ ܗܘܳܐ  875  -  1000  ܘܢܰܦܶܩ  13  ܐܶܦܝܣܩܘܦ̈ܐ. </quote>

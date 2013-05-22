@@ -9,14 +9,14 @@
         <xsl:text>
 </xsl:text>
     </xsl:variable> 
-    <xsl:variable name="bibprefix">#bib<xsl:value-of select="substring-after(//t:idno[contains(.,'syriaca.org')],'place/')"/>-</xsl:variable>
+    <xsl:variable name="bibprefix">#bib<xsl:value-of select="substring-after(//t:place/t:idno[contains(.,'syriaca.org')],'place/')"/>-</xsl:variable>
     
     <xsl:template match="/">
         <xsl:apply-templates select="t:TEI"/>
     </xsl:template>
     
     <xsl:template match="t:TEI">
-     <xsl:result-document href="{substring-after(//t:idno[contains(.,'syriaca.org')],'place/')}.html">
+     <xsl:result-document href="{substring-after(//t:place/t:idno[contains(.,'syriaca.org')],'place/')}.html">
             <xsl:value-of select="$n"/>
             <xsl:processing-instruction name="DOCTYPE">html</xsl:processing-instruction>
             <xsl:value-of select="$n"/>
@@ -101,11 +101,11 @@
                 <xsl:choose>
                     <xsl:when test="t:placeName[@xml:lang='syr']">
                         <xsl:attribute name="dir">rtl</xsl:attribute>
-                        <xsl:value-of select="t:placeName[@xml:lang='syr' and contains(@resp,'syriaca.org')]"/> -
-                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@resp,'syriaca.org')]"/>                        
+                        <xsl:value-of select="t:placeName[@xml:lang='syr' and contains(@syriaca-tags,'syriaca-authorized')]"/> -
+                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@syriaca-tags,'syriaca-authorized')]"/>                        
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@resp,'syriaca.org')]"/>
+                        <xsl:value-of select="t:placeName[@xml:lang='en' and contains(@syriaca-tags,'syriaca-authorized')]"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </h2>

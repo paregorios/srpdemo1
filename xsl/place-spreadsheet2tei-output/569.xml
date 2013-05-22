@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,19 +70,17 @@
                <placeName xml:id="name569-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܛܘܪܐ ܕܣܡܥܐܢ</placeName>
-               <placeName xml:id="name569-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib569-1"
-                          corresp="#name569-4 #name569-5">ܛܘܽܪܐ ܕܣܶܡܥܰܐܢ</placeName>
-               <placeName xml:id="name569-4"
+               <placeName xml:id="name569-3" xml:lang="syr-Syrj" source="#bib569-1">ܛܘܽܪ</placeName>
+               <placeName xml:id="name569-4" xml:lang="syr-Syrj" source="#bib569-1">ܕܣܶܡܥܰܐܢ</placeName>
+               <placeName xml:id="name569-5"
                           xml:lang="ar"
                           source="#bib569-2"
-                          corresp="#name569-3 #name569-5">جبل سمعان</placeName>
-               <placeName xml:id="name569-5"
+                          corresp="#name569-6">جبل سمعان</placeName>
+               <placeName xml:id="name569-6"
                           xml:lang="en"
                           source="#bib569-3"
-                          corresp="#name569-3 #name569-4">Siman mountain</placeName>
-               <placeName xml:id="name569-6" xml:lang="en" source="#bib569-4">Jebel Siman</placeName>
+                          corresp="#name569-5">Siman mountain</placeName>
+               <placeName xml:id="name569-7" xml:lang="en" source="#bib569-4">Jebel Siman</placeName>
                <desc xml:id="abstract-en-569"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/569</idno>

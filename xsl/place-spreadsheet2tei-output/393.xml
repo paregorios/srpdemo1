@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,17 @@
                <placeName xml:id="name393-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܒܝܬ ܡܠܟܐ</placeName>
-               <placeName xml:id="name393-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib393-1"
-                          corresp="#name393-4 #name393-5">ܕܰܝܪܳܐ ܕܒܶܝܬ ܡܰܠܟܐ</placeName>
-               <placeName xml:id="name393-4"
+               <placeName xml:id="name393-3" xml:lang="syr-Syrj" source="#bib393-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name393-4" xml:lang="syr-Syrj" source="#bib393-1">ܕܒܶܝ</placeName>
+               <placeName xml:id="name393-5" xml:lang="syr-Syrj" source="#bib393-1">ܡܰܠܟܐ</placeName>
+               <placeName xml:id="name393-6"
                           xml:lang="ar"
                           source="#bib393-2"
-                          corresp="#name393-3 #name393-5">دير بيث ملكي</placeName>
-               <placeName xml:id="name393-5"
+                          corresp="#name393-7">دير بيث ملكي</placeName>
+               <placeName xml:id="name393-7"
                           xml:lang="en"
                           source="#bib393-3"
-                          corresp="#name393-3 #name393-4">Beth Malke Monastery</placeName>
+                          corresp="#name393-6">Beth Malke Monastery</placeName>
                <desc xml:id="abstract-en-393"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib393-1">ܒܟܘܪܳܐ ܕܐܰܢܛܝܘܟܝܐ ܒܓܰܘܗ ܥܡܰܪ ܐܰܬܰܢܐܣܝܘܣ ܬܪܰܝܳܢܐ ܡܝܰܒܠ ܟܬܳܒ̈ܐ ܦܝܠܳܣܘܦܳܝ̈ܐ ܠܠܶܫܳܢܰܢ ܒܡܶܨܥܳܝ̈ܬܗ ܕܕܳܪܐ ܫܒܝܥܳܝܐ</quote>

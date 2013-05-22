@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,54 +63,62 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-300" type="">
-               <placeName xml:id="name300-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Badlis</placeName>
+               <placeName xml:id="name300-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib300-1">Badlis</placeName>
                <placeName xml:id="name300-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܕܠܝܣ</placeName>
                <placeName xml:id="name300-3"
                           xml:lang="syr-Syrj"
-                          source="#bib300-1"
+                          source="#bib300-2"
                           corresp="#name300-4 #name300-5">ܒܶܕܠܝܣ</placeName>
                <placeName xml:id="name300-4"
                           xml:lang="ar"
-                          source="#bib300-2"
+                          source="#bib300-3"
                           corresp="#name300-3 #name300-5">بدليس</placeName>
                <placeName xml:id="name300-5"
                           xml:lang="en"
-                          source="#bib300-3"
+                          source="#bib300-4"
                           corresp="#name300-3 #name300-4">Badlīs (Bitlis)</placeName>
                <desc xml:id="abstract-en-300"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib300-1">ܡܕܝܢܬܳܐ ܕܩܰܪܝܒܐ ܠܟܰܠܐܛ ܘܰܒܡܰܕܢܰܚ ܬܰܝܡܢ ܝܰܡܬܳܐ ܕܘܰܐܢ.</quote>
+                  <quote source="#bib300-2">ܡܕܝܢܬܳܐ ܕܩܰܪܝܒܐ ܠܟܰܠܐܛ ܘܰܒܡܰܕܢܰܚ ܬܰܝܡܢ ܝܰܡܬܳܐ ܕܘܰܐܢ.</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib300-2">مدينة قرب خلاط وشرقي جنوبي بحيرة وان</quote>
+                  <quote source="#bib300-3">مدينة قرب خلاط وشرقي جنوبي بحيرة وان</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib300-3">a town near Khalāṭ, southeast of Lake Van.</quote>
+                  <quote source="#bib300-4">a town near Khalāṭ, southeast of Lake Van.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/300</idno>
                <idno type="URI">http://pleiades.stoa.org/places/874438</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Bitlis</idno>
                <bibl xml:id="bib300-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="pp">225</citedRange>
+               </bibl>
+               <bibl xml:id="bib300-2">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">537</citedRange>
                </bibl>
-               <bibl xml:id="bib300-2">
+               <bibl xml:id="bib300-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">505</citedRange>
                </bibl>
-               <bibl xml:id="bib300-3">
+               <bibl xml:id="bib300-4">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">552</citedRange>

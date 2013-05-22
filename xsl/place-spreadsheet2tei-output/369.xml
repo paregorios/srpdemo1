@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name369-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܥܪ̈ܒܝܐ</placeName>
-               <placeName xml:id="name369-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib369-1"
-                          corresp="#name369-4 #name369-5">ܕܰܝܪܳܐ ܕܥܰܪ̈ܒܳܝܐ</placeName>
-               <placeName xml:id="name369-4"
+               <placeName xml:id="name369-3" xml:lang="syr-Syrj" source="#bib369-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name369-4" xml:lang="syr-Syrj" source="#bib369-1">ܕܥܰܪ̈ܒܳܝܐ</placeName>
+               <placeName xml:id="name369-5"
                           xml:lang="ar"
                           source="#bib369-2"
-                          corresp="#name369-3 #name369-5">دير العرب</placeName>
-               <placeName xml:id="name369-5"
+                          corresp="#name369-6">دير العرب</placeName>
+               <placeName xml:id="name369-6"
                           xml:lang="en"
                           source="#bib369-3"
-                          corresp="#name369-3 #name369-4">Arabs’ Monastery</placeName>
+                          corresp="#name369-5">Arabs’ Monastery</placeName>
                <desc xml:id="abstract-en-369"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib369-1">ܒܩܘܽܪܒܐ ܕܬܶܠ ܕܡܰܘܙܠܰܬ ܒܶܝܬ ܠܗ̇ ܠܬܶܠܒܣܡ ܐܶܬܒܢܺܝ ܒܕܳܪܐ ܚܡܺܝܫܳܝܐ. ܥܰܗܕܗ ܡܰܟܬܰܒܙܒ̈ܢܐ ܡܶܢ ܫܢܰܬ  521  -  845  ܘܐܶܬܢܰܦܰܩܘ ܒܗ ܐܰܪܒܥܐ ܐܶܦܝܺܣܩܘܦ̈ܐ</quote>

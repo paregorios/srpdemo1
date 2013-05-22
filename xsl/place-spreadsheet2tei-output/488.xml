@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib488-3"
-                          corresp="#name488-3 #name488-4">Sea of Marmara</placeName>
+                          corresp="#name488-5">Sea of Marmara</placeName>
                <placeName xml:id="name488-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܝܡܐ ܕܡܪܡܪܐ</placeName>
-               <placeName xml:id="name488-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib488-1"
-                          corresp="#name488-4 #name488-1">ܝܰܡܐ ܕܡܰܪܡܰܪܐ</placeName>
-               <placeName xml:id="name488-4"
+               <placeName xml:id="name488-3" xml:lang="syr-Syrj" source="#bib488-1">ܝܰܡ</placeName>
+               <placeName xml:id="name488-4" xml:lang="syr-Syrj" source="#bib488-1">ܕܡܰܪܡܰܪܐ</placeName>
+               <placeName xml:id="name488-5"
                           xml:lang="ar"
                           source="#bib488-2"
-                          corresp="#name488-3 #name488-1">بحر مرمرة</placeName>
+                          corresp="#name488-1">بحر مرمرة</placeName>
                <desc xml:id="abstract-en-488"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/488</idno>

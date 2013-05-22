@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,27 +67,25 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-60" type="">
+            <place xml:id="place-60" type="settlement">
                <placeName xml:id="name60-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib60-1 #bib60-4"
-                          corresp="#name60-3 #name60-4">Caesarea</placeName>
+                          corresp="#name60-3">Caesarea</placeName>
                <placeName xml:id="name60-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܩܣܪܝܐ</placeName>
                <placeName xml:id="name60-3"
                           xml:lang="syr-Syrj"
                           source="#bib60-2"
-                          corresp="#name60-4 #name60-1">ܩܶܣܰܪܝܐ</placeName>
-               <placeName xml:id="name60-4"
-                          xml:lang="ar"
-                          source="#bib60-3"
-                          corresp="#name60-3 #name60-1">قيسارية، قيصرية</placeName>
+                          corresp="#name60-1">ܩܶܣܰܪܝܐ</placeName>
+               <placeName xml:id="name60-4" xml:lang="ar" source="#bib60-3">قيسارية</placeName>
+               <placeName xml:id="name60-5" xml:lang="ar" source="#bib60-3">قيصرية</placeName>
                <desc xml:id="abstract-en-60"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib60-2">ܡܕܝܢܬܳܐ ܗܝ ܕܰܒܬܰܝܡܢܳܐ ܡܰܕܢܚܳܝܐ ܕܰܐܢܩܘܪܰܐ ܘܡܶܬܩܰܪܝܳܐ ܝܰܘܡܳܢ ܩܰܝܣܰܪ.</quote>

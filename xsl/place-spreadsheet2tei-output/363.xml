@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,17 @@
                <placeName xml:id="name363-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܫܪܒܠ</placeName>
-               <placeName xml:id="name363-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib363-1"
-                          corresp="#name363-4 #name363-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܫܰܪܒܶܠ</placeName>
-               <placeName xml:id="name363-4"
+               <placeName xml:id="name363-3" xml:lang="syr-Syrj" source="#bib363-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name363-4" xml:lang="syr-Syrj" source="#bib363-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name363-5" xml:lang="syr-Syrj" source="#bib363-1">ܫܰܪܒܶܠ</placeName>
+               <placeName xml:id="name363-6"
                           xml:lang="ar"
                           source="#bib363-2"
-                          corresp="#name363-3 #name363-5">دير مار شربيل</placeName>
-               <placeName xml:id="name363-5"
+                          corresp="#name363-7">دير مار شربيل</placeName>
+               <placeName xml:id="name363-7"
                           xml:lang="en"
                           source="#bib363-3"
-                          corresp="#name363-3 #name363-4">Sharbil Monastery</placeName>
+                          corresp="#name363-6">Sharbil Monastery</placeName>
                <desc xml:id="abstract-en-363"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib363-1">ܒܰܟܦܪ ܫܳܡܰܥ. ܥܰܗܕܗ ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܒܰܫܢܰܬ  1210  ܥܕܰܡܳܐ ܠܰܐܚܪ̈ܳܝܬܗ ܕܕܳܪܐ ܫܬܰܥܣܝܺܪܳܝܐ. ܘܡܶܢܗ ܩܳܡ ܡܰܦܪܝܳܢܐ ܒܛܘܪܥܰܒܕܝܢ.</quote>

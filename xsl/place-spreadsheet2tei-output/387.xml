@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name387-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܓܕܠܝܬܐ</placeName>
-               <placeName xml:id="name387-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib387-1"
-                          corresp="#name387-4 #name387-5">ܕܰܝܪܐ ܕܡܰܓܕܠܳܝܬܐ</placeName>
-               <placeName xml:id="name387-4"
+               <placeName xml:id="name387-3" xml:lang="syr-Syrj" source="#bib387-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name387-4" xml:lang="syr-Syrj" source="#bib387-1">ܕܡܰܓܕܠܳܝܬܐ</placeName>
+               <placeName xml:id="name387-5"
                           xml:lang="ar"
                           source="#bib387-2"
-                          corresp="#name387-3 #name387-5">دير المجدلية</placeName>
-               <placeName xml:id="name387-5"
+                          corresp="#name387-6">دير المجدلية</placeName>
+               <placeName xml:id="name387-6"
                           xml:lang="en"
                           source="#bib387-3"
-                          corresp="#name387-3 #name387-4">Magdalene Monastery</placeName>
+                          corresp="#name387-5">Magdalene Monastery</placeName>
                <desc xml:id="abstract-en-387"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib387-1">ܒܐܘܪܫܠܶܡ ܒܡܰܫܪܝܬܐ ܕܬܰܪܥܐ ܕܥܰܡܘܼܕܐ. ܕܝܪܐ ܥܰܬܝܩܐ ܕܟܺܝܪ ܫܢܰܬ  1000  ܘܐܝܬܰܘܗܝ ܗܘܐ ܟܘܪܣܝܳܐ ܕܡܝܛܪܘܦܘܠܝܛܘܬܐ ܘܐܝܬ ܗܘܳܐ ܒܗ ܫܢܰܬ  1235  ܫܰܒܥܝܢ ܕܰܝܪ̈ܝܐ ܘܐܶܬܢܰܦܩܘ ܒܗ ܐܰܪܒܥܐ ܡܝܛܪ̈ܘܦܘܠܝܛܐ ܐܰܚܕܘܗܝ ܐܢܳܫܝ̈ܢ ܡܰܫܠܡܳܢ̈ܐ ܒܚܰܝܠܐ ܕܡܰܡܐܠܝܟ ܒܕܳܪܐ ܕܐܰܪܒܥܣܪ ܟܶܢ ܥܰܒܕܘܗܝ ܠܗܘܢ ܡܰܕܪܰܫܬܐ ܒܫܶܡ ܡܰܝܡܘܢܝܗ. ܩܰܘܝ̣ ܡܶܢܗ ܐܳܬܘ̈ܬ ܚܰܪ̈ܒܳܬܐ ܥܕܰܡܐ ܠܡܶܨܥܝ̈ܬܗ ܕܕܳܪܐ ܕܰܥܒܪ. ܒܳܬܰܪܟܢ ܐܶܬܠܰܝܬܝܰܬ ܕܘܟܬܗ. </quote>

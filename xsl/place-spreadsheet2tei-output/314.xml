@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                <placeName xml:id="name314-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܬܠ ܡܚܪܝ</placeName>
-               <placeName xml:id="name314-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib314-1"
-                          corresp="#name314-4 #name314-5">ܬܶܠ ܡܰܚܪܝ</placeName>
-               <placeName xml:id="name314-4"
+               <placeName xml:id="name314-3" xml:lang="syr-Syrj" source="#bib314-1">ܬܶ</placeName>
+               <placeName xml:id="name314-4" xml:lang="syr-Syrj" source="#bib314-1">ܡܰܚܪܝ</placeName>
+               <placeName xml:id="name314-5"
                           xml:lang="ar"
                           source="#bib314-2"
-                          corresp="#name314-3 #name314-5">تلّ محرى </placeName>
-               <placeName xml:id="name314-5"
+                          corresp="#name314-6">تلّ محرى </placeName>
+               <placeName xml:id="name314-6"
                           xml:lang="en"
                           source="#bib314-3"
-                          corresp="#name314-3 #name314-4">Tell Maḥre</placeName>
+                          corresp="#name314-5">Tell Maḥre</placeName>
                <desc xml:id="abstract-en-314"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib314-1">ܡܕܝܢܬܘܢܝܬܳܐ ܕܒܶܝܬ ܚܰܣܰܢ ܡܰܣܠܡܗ ܒܶܢ ܥܰܒܕ ܐܠܡܠܟ ܠܩܰܐܠܘܢܝܩܝ ܘܰܫܡܗ̇ ܝܰܘܡܳܢ ܬܠ ܐܠܡܰܢܰܐܟܝܪ.</quote>

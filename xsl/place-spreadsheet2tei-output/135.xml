@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,13 +59,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-135" type="">
+            <place xml:id="place-135" type="open-water">
                <placeName xml:id="name135-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -70,20 +73,17 @@
                <placeName xml:id="name135-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܝܡܐ ܡܨܥܝܐ</placeName>
-               <placeName xml:id="name135-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib135-2"
-                          corresp="#name135-4 #name135-5">ܝܰܡܳܐ ܡܶܨܥܳܝܐ</placeName>
-               <placeName xml:id="name135-4"
+               <placeName xml:id="name135-3" xml:lang="syr-Syrj" source="#bib135-2">ܝܰܡܳ</placeName>
+               <placeName xml:id="name135-4" xml:lang="syr-Syrj" source="#bib135-2">ܡܶܨܥܳܝܐ</placeName>
+               <placeName xml:id="name135-5"
                           xml:lang="ar"
                           source="#bib135-3"
-                          corresp="#name135-3 #name135-5">بحر الروم</placeName>
-               <placeName xml:id="name135-5"
+                          corresp="#name135-6">بحر الروم</placeName>
+               <placeName xml:id="name135-6"
                           xml:lang="en"
                           source="#bib135-4"
-                          corresp="#name135-3 #name135-4">Mediterranean</placeName>
+                          corresp="#name135-5">Mediterranean</placeName>
                <desc xml:id="abstract-en-135"/>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/135</idno>
                <idno type="URI">http://pleiades.stoa.org/places/1043</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Mediterranean_Sea</idno>

@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                <placeName xml:id="name358-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ  ܕܙܘܩܢ̈ܝܢ</placeName>
-               <placeName xml:id="name358-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib358-1"
-                          corresp="#name358-4 #name358-5">ܕܰܝܪܳܐ  ܕܙܘܩܢ̈ܝܢ</placeName>
-               <placeName xml:id="name358-4"
+               <placeName xml:id="name358-3" xml:lang="syr-Syrj" source="#bib358-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name358-4" xml:lang="syr-Syrj" source="#bib358-1"> ܕܙܘܩܢ̈ܝܢ</placeName>
+               <placeName xml:id="name358-5"
                           xml:lang="ar"
                           source="#bib358-2"
-                          corresp="#name358-3 #name358-5">دير زوقنين</placeName>
-               <placeName xml:id="name358-5"
+                          corresp="#name358-6">دير زوقنين</placeName>
+               <placeName xml:id="name358-6"
                           xml:lang="en"
                           source="#bib358-3"
-                          corresp="#name358-3 #name358-4">Zuqnīn Monastery</placeName>
+                          corresp="#name358-5">Zuqnīn Monastery</placeName>
                <desc xml:id="abstract-en-358"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib358-1">ܠܒܰܪ ܡܶܢ ܐܳܡܝܕ ܕܰܝܪܳܐ ܪܰܒܐ ܘܰܛܒܝܒܳܐ. ܢܦܰܩ ܡܶܢܗ ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ  755  ܘܐܰܪܒܰܥܣܰܪ ܐܶܦܝܣܩܘ̈ܦܶܐ.</quote>

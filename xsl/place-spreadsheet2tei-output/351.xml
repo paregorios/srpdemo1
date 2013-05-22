@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,19 +74,19 @@
                <placeName xml:id="name351-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܚܢܝܢܐ ܐܘ ܚܢܢܝܐ</placeName>
-               <placeName xml:id="name351-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib351-1"
-                          corresp="#name351-4 #name351-5">ܕܰܝܪܳܐ ܕܚܰܢܝܢܳܐ ܐܰܘ ܚܰܢܰܢܝܳܐ</placeName>
-               <placeName xml:id="name351-4"
+               <placeName xml:id="name351-3" xml:lang="syr-Syrj" source="#bib351-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name351-4" xml:lang="syr-Syrj" source="#bib351-1">ܕܚܰܢܝܢܳ</placeName>
+               <placeName xml:id="name351-5" xml:lang="syr-Syrj" source="#bib351-1">ܐܰ</placeName>
+               <placeName xml:id="name351-6" xml:lang="syr-Syrj" source="#bib351-1">ܚܰܢܰܢܝܳܐ</placeName>
+               <placeName xml:id="name351-7"
                           xml:lang="ar"
                           source="#bib351-2"
-                          corresp="#name351-3 #name351-5">دير حنينا او حنانيا</placeName>
-               <placeName xml:id="name351-5"
+                          corresp="#name351-8">دير حنينا او حنانيا</placeName>
+               <placeName xml:id="name351-8"
                           xml:lang="en"
                           source="#bib351-3"
-                          corresp="#name351-3 #name351-4">Ḥananya Monastery</placeName>
-               <placeName xml:id="name351-6" xml:lang="en" source="#bib351-4">monastery of Mar Hanina</placeName>
+                          corresp="#name351-7">Ḥananya Monastery</placeName>
+               <placeName xml:id="name351-9" xml:lang="en" source="#bib351-4">monastery of Mar Hanina</placeName>
                <desc xml:id="abstract-en-351"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib351-1">ܘܰܟܒܰܪ ܡܶܬܒܰܝܬܶܐ ܠܚܰܢܝܢܳܐ ܥܢܘܳܝܐ  500  ܒܶܗ ܐܶܬܬܣܪܰܚ ܦܶܛܪܘܣ ܬܠܝܬܳܝܐ ܫܢܰܬ  581.  </quote>

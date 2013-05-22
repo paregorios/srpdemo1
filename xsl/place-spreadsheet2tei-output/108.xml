@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">KARKA D-BETH SLOKH</title>
+            <title xml:lang="en">Karka d-Beth Slokh</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,32 +67,33 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-108" type="">
+            <place xml:id="place-108" type="settlement">
                <placeName xml:id="name108-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib108-1">KARKA D-BETH SLOKH</placeName>
+                          source="#bib108-1">Karka d-Beth Slokh</placeName>
                <placeName xml:id="name108-2" xml:lang="en" source="#bib108-1">Kirkuk</placeName>
                <placeName xml:id="name108-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib108-2"
-                          corresp="#name108-4 #name108-5">ܟܪܟ ܣܠܘܟ</placeName>
-               <placeName xml:id="name108-4"
+                          corresp="#name108-6 #name108-7">ܟܪܟ ܣܠܘܟ</placeName>
+               <placeName xml:id="name108-4" xml:lang="syr-Syrj" source="#bib108-2">ܟܪ</placeName>
+               <placeName xml:id="name108-5" xml:lang="syr-Syrj" source="#bib108-2">ܣܠܘܟ</placeName>
+               <placeName xml:id="name108-6"
                           xml:lang="ar"
                           source="#bib108-3"
-                          corresp="#name108-3 #name108-5">كرخ سلوخ</placeName>
-               <placeName xml:id="name108-5"
+                          corresp="#name108-3 #name108-7">كرخ سلوخ</placeName>
+               <placeName xml:id="name108-7"
                           xml:lang="en"
                           source="#bib108-4"
-                          corresp="#name108-3 #name108-4">Karkh Slukh</placeName>
-               <placeName xml:id="name108-6" xml:lang="en" source="#bib108-5">Karka de Beth Selok</placeName>
+                          corresp="#name108-3 #name108-6">Karkh Slukh</placeName>
+               <placeName xml:id="name108-8" xml:lang="en" source="#bib108-5">Karka de Beth Selok</placeName>
                <desc xml:id="abstract-en-108"/>
                <desc xml:lang="en">
                   <quote source="#bib108-1">316. Karka d-Beth Slokh</quote>

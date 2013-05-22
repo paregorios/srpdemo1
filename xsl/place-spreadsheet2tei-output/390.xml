@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -74,19 +77,18 @@
                <placeName xml:id="name390-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib390-3"
-                          corresp="#name390-3 #name390-4">Easterners, Monastery of the</placeName>
+                          corresp="#name390-5">Easterners, Monastery of the</placeName>
                <placeName xml:id="name390-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܕܢܚܝ̈ܐ</placeName>
-               <placeName xml:id="name390-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib390-1"
-                          corresp="#name390-4 #name390-1">ܕܰܝܪܳܐ ܕܡܰܕܢܚܳܝ̈ܐ</placeName>
-               <placeName xml:id="name390-4"
+               <placeName xml:id="name390-3" xml:lang="syr-Syrj" source="#bib390-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name390-4" xml:lang="syr-Syrj" source="#bib390-1">ܕܡܰܕܢܚܳܝ̈ܐ</placeName>
+               <placeName xml:id="name390-5"
                           xml:lang="ar"
                           source="#bib390-2"
-                          corresp="#name390-3 #name390-1">دير المشارقة</placeName>
+                          corresp="#name390-1">دير المشارقة</placeName>
+               <placeName xml:id="name390-6" xml:lang="en" source="#bib390-3">Easterners</placeName>
+               <placeName xml:id="name390-7" xml:lang="en" source="#bib390-3">Monastery of the</placeName>
                <desc xml:id="abstract-en-390"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib390-1">ܒܛܘܪܳܐ ܕܐܘܪܗܳܝ ܪܰܒ ܘܰܫܛܝ̣ܚ ܒܕܰܝܪ̈ܬܳܗ̇. ܐܶܫܬܬܰܐܣ ܒܡܰܐܬܐ ܪܒܝܥܳܝܬܐ. ܘܰܪܕܰܦ ܠܕܰܝܪ̈ܝܰܘܗܝ ܕܘܡܝܛܝܰܐܢܶܐ ܡܝܠܝܛܝܢܳܝܐ ܘܝܰܘܢܳܝܐ ܘܰܩܛܠ ܡܶܢܗܘܢ ܐܝܟ ܐܰܪܒܰܥܡܳܐܐ ܫܢܰܬ  600  ܥܰܠ ܕܣܰܩܘܒ̈ܠܳܝܺܝܢ ܠܪܶܥܝܳܢܗ. ܥܰܕܪ ܠܥܺܕܬܳܐ ܒܰܚܕܰܥܣܪ ܐܶܦܝܣܩܘܦ̈ܐ. ܘܩܰܘܝ ܟܰܕ ܥܰܡܝܪ ܠܡܶܨܥܳܝ̈ܬܗ ܕܡܰܐܬܐ ܕܰܬܠܳܬܥܣܪ̈ܐ.</quote>

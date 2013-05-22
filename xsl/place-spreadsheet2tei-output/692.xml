@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,29 +59,28 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-692" type="">
+            <place xml:id="place-692" type="church">
                <placeName xml:id="name692-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib692-3"
-                          corresp="#name692-3 #name692-4">St. Cosmas Church</placeName>
+                          corresp="#name692-6">St. Cosmas Church</placeName>
                <placeName xml:id="name692-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܥܕܬܐ ܕܡܪܝ ܩܘܙܡܐ</placeName>
-               <placeName xml:id="name692-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib692-1"
-                          corresp="#name692-4 #name692-1">ܥܕܬܐ ܕܡܳܪܝ ܩܘܙܡܐ</placeName>
-               <placeName xml:id="name692-4"
+               <placeName xml:id="name692-3" xml:lang="syr-Syrj" source="#bib692-1">ܥܕܬ</placeName>
+               <placeName xml:id="name692-4" xml:lang="syr-Syrj" source="#bib692-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name692-5" xml:lang="syr-Syrj" source="#bib692-1">ܩܘܙܡܐ</placeName>
+               <placeName xml:id="name692-6"
                           xml:lang="ar"
                           source="#bib692-2"
-                          corresp="#name692-3 #name692-1">بيعة مار قزما</placeName>
+                          corresp="#name692-1">بيعة مار قزما</placeName>
                <desc xml:id="abstract-en-692"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/692</idno>

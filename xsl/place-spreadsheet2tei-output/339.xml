@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,19 +74,18 @@
                <placeName xml:id="name339-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܐܘܓܝܢ</placeName>
-               <placeName xml:id="name339-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib339-1"
-                          corresp="#name339-4 #name339-5">ܕܰܝܪܐ ܕܡܳܪܝ ܐܰܘܓܝܢ</placeName>
-               <placeName xml:id="name339-4"
+               <placeName xml:id="name339-3" xml:lang="syr-Syrj" source="#bib339-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name339-4" xml:lang="syr-Syrj" source="#bib339-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name339-5" xml:lang="syr-Syrj" source="#bib339-1">ܐܰܘܓܝܢ</placeName>
+               <placeName xml:id="name339-6"
                           xml:lang="ar"
                           source="#bib339-2"
-                          corresp="#name339-3 #name339-5">دير مار اوجين</placeName>
-               <placeName xml:id="name339-5"
+                          corresp="#name339-7">دير مار اوجين</placeName>
+               <placeName xml:id="name339-7"
                           xml:lang="en"
                           source="#bib339-3"
-                          corresp="#name339-3 #name339-4">Eugene Monastery</placeName>
-               <placeName xml:id="name339-6" xml:lang="en" source="#bib339-4">monastery of Mar Awgen</placeName>
+                          corresp="#name339-6">Eugene Monastery</placeName>
+               <placeName xml:id="name339-8" xml:lang="en" source="#bib339-4">monastery of Mar Awgen</placeName>
                <desc xml:id="abstract-en-339"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib339-1">ܒܰܫܦܘܠܳܐ ܕܛܘܪܳܐ ܕܐܝܺܙܠܐ ܗ̇ܘ ܕܚܳܐܰܪ ܠܰܢܨܝܒܝܢ ܐܶܫܬܰܬܐܣ ܒܡܰܐܬܐ ܪܒܝܥܳܝܬܐ ܐܰܘ ܒܪܺܝܫܐ ܕܰܚܡܝܫܳܝܬܐ ܘܐܶܫܬܰܚܠܦܘ ܙܰܒ̈ܢܐ ܥܠܰܘܗܝ ܘܐܶܫܬܰܠܛܘ ܥܠܰܘܗܝ ܢܰܣܛܘܪ̈ܝܰܢܘ ܙܰܒܢܳܐ ܢܰܓܝܪܐ ܘܰܗܦܟ ܠܘܳܬܢ ܒܰܐܚܪ̈ܝܬܗ̇ ܕܡܰܐܬܐ ܕܰܬܡܳܢܰܥܶܣܪ̈ܐ ܢܦܰܩܘ ܡܶܢܗ ܬܪܶܝܢ ܐܶܦܝܣܩܘܦ̈ܐ ܘܰܥܕܰܡܐ ܠܗܳܫܐ ܥܰܡܝܪ ܘܰܫܟܝܺܚ ܒܗ ܕܰܝܪܳܝܐ ܚܰܕ.</quote>

@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,31 +67,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-97" type="">
+            <place xml:id="place-97" type="settlement">
                <placeName xml:id="name97-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib97-1">Qalʿa Rumayta</placeName>
                <placeName xml:id="name97-2" xml:lang="en" source="#bib97-1">Hṙomklay</placeName>
                <placeName xml:id="name97-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܩܠܥܐ ܪܘܡܝܬܐ</placeName>
-               <placeName xml:id="name97-4"
-                          xml:lang="syr-Syrj"
-                          source="#bib97-2"
-                          corresp="#name97-5 #name97-6">ܩܶܠܥܳܐ ܪܘܡܳܝܬܐ</placeName>
-               <placeName xml:id="name97-5"
+               <placeName xml:id="name97-4" xml:lang="syr-Syrj" source="#bib97-2">ܩܶܠܥܳ</placeName>
+               <placeName xml:id="name97-5" xml:lang="syr-Syrj" source="#bib97-2">ܪܘܡܳܝܬܐ</placeName>
+               <placeName xml:id="name97-6"
                           xml:lang="ar"
                           source="#bib97-3"
-                          corresp="#name97-4 #name97-6">قلعة الروم</placeName>
-               <placeName xml:id="name97-6"
+                          corresp="#name97-7">قلعة الروم</placeName>
+               <placeName xml:id="name97-7"
                           xml:lang="en"
                           source="#bib97-4"
-                          corresp="#name97-4 #name97-5">Qalʿat al-Rum</placeName>
+                          corresp="#name97-6">Qalʿat al-Rum</placeName>
                <desc xml:id="abstract-en-97"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib97-2">ܩܶܠܥܳܐ ܚܰܣܝܢܬܳܐ ܘܰܐܬܪܐ ܕܰܠܡܰܥܪܰܒ ܦܪܳܬ ܠܘܩܒܰܠ ܒܝܪܬܐ ܠܩܘܪܒܳܐ ܕܰܩܪܝܬܐ ܟ̣ܠܦܬܝ. ܘܡܶܫܬܰܡܗܐ ܗܘܳܬ ܩܶܠܥܳܐ ܕܙܘܓܡܐ. ܘܚܰܪܝܒܐ</quote>

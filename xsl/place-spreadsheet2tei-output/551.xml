@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,17 @@
                <placeName xml:id="name551-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܕܝܫܬܐ ܒܪܒܪܐ</placeName>
-               <placeName xml:id="name551-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib551-1"
-                          corresp="#name551-4 #name551-5">ܕܰܝܪܐ ܕܩܰܕܝܫܬܳܐ ܒܰܪܒܰܪܐ</placeName>
-               <placeName xml:id="name551-4"
+               <placeName xml:id="name551-3" xml:lang="syr-Syrj" source="#bib551-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name551-4" xml:lang="syr-Syrj" source="#bib551-1">ܕܩܰܕܝܫܬܳ</placeName>
+               <placeName xml:id="name551-5" xml:lang="syr-Syrj" source="#bib551-1">ܒܰܪܒܰܪܐ</placeName>
+               <placeName xml:id="name551-6"
                           xml:lang="ar"
                           source="#bib551-2"
-                          corresp="#name551-3 #name551-5">دير القديسة بربارة</placeName>
-               <placeName xml:id="name551-5"
+                          corresp="#name551-7">دير القديسة بربارة</placeName>
+               <placeName xml:id="name551-7"
                           xml:lang="en"
                           source="#bib551-3"
-                          corresp="#name551-3 #name551-4">Barbara Monastery</placeName>
+                          corresp="#name551-6">Barbara Monastery</placeName>
                <desc xml:id="abstract-en-551"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/551</idno>

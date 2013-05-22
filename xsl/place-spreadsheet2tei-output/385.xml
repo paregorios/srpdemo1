@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name385-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܟܘܝܒܐܬ</placeName>
-               <placeName xml:id="name385-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib385-1"
-                          corresp="#name385-4 #name385-5">ܕܰܝܪܳܐ ܕܟܘܝ̣ܒܰܐܬ</placeName>
-               <placeName xml:id="name385-4"
+               <placeName xml:id="name385-3" xml:lang="syr-Syrj" source="#bib385-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name385-4" xml:lang="syr-Syrj" source="#bib385-1">ܕܟܘܝ̣ܒܰܐܬ</placeName>
+               <placeName xml:id="name385-5"
                           xml:lang="ar"
                           source="#bib385-2"
-                          corresp="#name385-3 #name385-5">دير كريخات</placeName>
-               <placeName xml:id="name385-5"
+                          corresp="#name385-6">دير كريخات</placeName>
+               <placeName xml:id="name385-6"
                           xml:lang="en"
                           source="#bib385-3"
-                          corresp="#name385-3 #name385-4">Kuwaykhat Monastery</placeName>
+                          corresp="#name385-5">Kuwaykhat Monastery</placeName>
                <desc xml:id="abstract-en-385"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib385-1">ܒܓܶܢܒ ܡܣܝܣܛܐ ܒܩܝܺܠܝܩܝܰܐ  ܕܟܺܝܪ ܫܢܬ  1208  ܘܡܶܢܗ ܗܘܰܘ ܬܪܶܝܢ ܦܰܛܪܝܰܪ̈ܟܐ ܐܺܝܓܢܰܐܛܝܘܣ ܪܒܺܝܥܳܝܐ  1282  ܘܡܝܟܳܐܝܠ ܬܪܰܝܳܢܐ  1312 .  ܘܒܗ ܐܶܬܬܰܫܠܡ ܦܝܠܠܘܟܣܝܢ ܬܪܰܝܳܢܐ ܙܡܳܡܐ ܕܦܰܛܪܝܰܪܟܘܬܐ ܫܢܰܬ  1389</quote>

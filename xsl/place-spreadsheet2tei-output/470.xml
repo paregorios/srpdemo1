@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,14 @@
                <placeName xml:id="name470-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܝܥܩܘܒ ܡܠܦܢܐ</placeName>
-               <placeName xml:id="name470-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib470-1"
-                          corresp="#name470-4 #name470-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܝܰܥܩܘܒ ܡܰܠܦܳܢܐ</placeName>
-               <placeName xml:id="name470-4"
-                          xml:lang="ar"
-                          source="#bib470-2"
-                          corresp="#name470-3 #name470-5">دير مار يعقوب الملفان</placeName>
-               <placeName xml:id="name470-5"
-                          xml:lang="en"
-                          source="#bib470-3"
-                          corresp="#name470-3 #name470-4">Jacob, the Doctor of the Church, Monastery</placeName>
+               <placeName xml:id="name470-3" xml:lang="syr-Syrj" source="#bib470-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name470-4" xml:lang="syr-Syrj" source="#bib470-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name470-5" xml:lang="syr-Syrj" source="#bib470-1">ܝܰܥܩܘ</placeName>
+               <placeName xml:id="name470-6" xml:lang="syr-Syrj" source="#bib470-1">ܡܰܠܦܳܢܐ</placeName>
+               <placeName xml:id="name470-7" xml:lang="ar" source="#bib470-2">دير مار يعقوب الملفان</placeName>
+               <placeName xml:id="name470-8" xml:lang="en" source="#bib470-3">Jacob</placeName>
+               <placeName xml:id="name470-9" xml:lang="en" source="#bib470-3">the Doctor of the Church</placeName>
+               <placeName xml:id="name470-10" xml:lang="en" source="#bib470-3">Monastery</placeName>
                <desc xml:id="abstract-en-470"/>
                <desc xml:lang="en">
                   <quote source="#bib470-3">first mentioned in history in 1165 and still active.</quote>

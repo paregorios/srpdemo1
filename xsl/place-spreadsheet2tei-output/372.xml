@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name372-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܦܣܩܝܢ</placeName>
-               <placeName xml:id="name372-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib372-1"
-                          corresp="#name372-4 #name372-5">ܕܰܝܪܳܐ ܕܦܳܣܩܝܢ</placeName>
-               <placeName xml:id="name372-4"
+               <placeName xml:id="name372-3" xml:lang="syr-Syrj" source="#bib372-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name372-4" xml:lang="syr-Syrj" source="#bib372-1">ܕܦܳܣܩܝܢ</placeName>
+               <placeName xml:id="name372-5"
                           xml:lang="ar"
                           source="#bib372-2"
-                          corresp="#name372-3 #name372-5">دير فُسقين</placeName>
-               <placeName xml:id="name372-5"
+                          corresp="#name372-6">دير فُسقين</placeName>
+               <placeName xml:id="name372-6"
                           xml:lang="en"
                           source="#bib372-3"
-                          corresp="#name372-3 #name372-4">Fusqīn Monastery</placeName>
+                          corresp="#name372-5">Fusqīn Monastery</placeName>
                <desc xml:id="abstract-en-372"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib372-1">ܘܡܶܬܶܐܡܰܪ ܠܗ̇ ܕܰܝܪܳܐ ܕܰܫܡܝ̈ܛܳܝܐ. ܥܠ ܣܶܦܰܬ ܦܪܳܬ ܢܰܗܪܐ ܒܩܘܽܪܒܐ ܕܕܰܝܪܐ ܕܡܳܪܝ ܐܰܒܚܰܝ ܒܓܰܪܓܪܰ. ܚܰܕܶܬ ܠܒܶܢܝܳܢܗ ܕܰܝܪܳܝܐ ܕܰܘܝܕ ܘܟܶܢܫܐ ܕܥܶܢܘ̈ܝܐ ܒܪܺܝܫܐ ܕܡܰܐܬܐ ܕܰܚܕܰܥܣܪ̈ܐ ܘܠܗ ܡܬܒܰܝܬܝܢ ܚܰܡܫܐ ܐܶܦܝܣܩܘ̈ܦܐ ܒܕܳܪܗ ܩܰܕܡܳܝܐ ܒܡܰܐܬܐ ܕܰܥܣܪ ܘܰܒܢܳܐ ܗܰܝܟܠܗ ܪܰܒܰܢ ܚܰܒܩܘܩ ܗܘ ܕܰܫܟܝܚ ܗܘܐ ܒܰܫܢܰܬ  1160  ܘܥܰܡܝܪ ܗܘܐ ܫܢܰܬ  1565  ܐܠܐ ܒܳܬܰܪ ܩܰܠܝܠ ܫܢ̈ܝܐ ܠܰܝܬ ܗܘܐ ܒܗ̇ ܥܳܡܘܪ.</quote>

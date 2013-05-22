@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name373-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܦܣܝܠܬܐ</placeName>
-               <placeName xml:id="name373-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib373-1"
-                          corresp="#name373-4 #name373-5">ܕܰܝܪܐ ܕܰܦܣܝܠܬܐ</placeName>
-               <placeName xml:id="name373-4"
+               <placeName xml:id="name373-3" xml:lang="syr-Syrj" source="#bib373-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name373-4" xml:lang="syr-Syrj" source="#bib373-1">ܕܰܦܣܝܠܬܐ</placeName>
+               <placeName xml:id="name373-5"
                           xml:lang="ar"
                           source="#bib373-2"
-                          corresp="#name373-3 #name373-5">دير فسيلتا</placeName>
-               <placeName xml:id="name373-5"
+                          corresp="#name373-6">دير فسيلتا</placeName>
+               <placeName xml:id="name373-6"
                           xml:lang="en"
                           source="#bib373-3"
-                          corresp="#name373-3 #name373-4">Fsīltā Monastery</placeName>
+                          corresp="#name373-5">Fsīltā Monastery</placeName>
                <desc xml:id="abstract-en-373"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib373-1">ܐܰܘܟܝܬ ܓܠܺܝܦܐ ܠܒܰܪ ܡܶܢ ܬܶܠ ܡܰܘܙܠܰܬ ܡܕܝܢܬܐ. ܐܶܫܬܰܬܐܣ ܒܡܰܐܬܳܐ ܚܡܝܫܳܝܬܳܐ ܘܐܰܦܩ ܚܰܡܫܐ ܐܶܦܝܣܩܘܦ̈ܐ ܘܰܫܠܺܝܘ ܛܶܒܰܘ̈ܗܝ ܫܢܰܬ 880 .</quote>

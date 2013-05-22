@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,21 @@
                <placeName xml:id="name337-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܐܒܘ ܓܐܠܒ ܐܘ ܕܝܪܐ ܦܬܘܪ ܡܠܟ̈ܐ ܒܓܪܓܪ</placeName>
-               <placeName xml:id="name337-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib337-1"
-                          corresp="#name337-4 #name337-5">ܕܰܝܪܐ ܕܰܐܒܽܘ ܓܰܐܠܒ ܐܰܘ ܕܰܝܪܐ ܦܳܬܘܪ ܡܰܠܟ̈ܐ ܒܓܰܪܓܰܪ</placeName>
-               <placeName xml:id="name337-4"
+               <placeName xml:id="name337-3" xml:lang="syr-Syrj" source="#bib337-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name337-4" xml:lang="syr-Syrj" source="#bib337-1">ܕܰܐܒܽ</placeName>
+               <placeName xml:id="name337-5" xml:lang="syr-Syrj" source="#bib337-1">ܓܰܐܠ</placeName>
+               <placeName xml:id="name337-6" xml:lang="syr-Syrj" source="#bib337-1">ܐܰ</placeName>
+               <placeName xml:id="name337-7" xml:lang="syr-Syrj" source="#bib337-1">ܦܳܬܘ</placeName>
+               <placeName xml:id="name337-8" xml:lang="syr-Syrj" source="#bib337-1">ܡܰܠܟ̈</placeName>
+               <placeName xml:id="name337-9" xml:lang="syr-Syrj" source="#bib337-1">ܒܓܰܪܓܰܪ</placeName>
+               <placeName xml:id="name337-10"
                           xml:lang="ar"
                           source="#bib337-2"
-                          corresp="#name337-3 #name337-5">دير ابو غالب او دير مائدة الملك في كركر</placeName>
-               <placeName xml:id="name337-5"
+                          corresp="#name337-11">دير ابو غالب او دير مائدة الملك في كركر</placeName>
+               <placeName xml:id="name337-11"
                           xml:lang="en"
                           source="#bib337-3"
-                          corresp="#name337-3 #name337-4">Abū Ghālib Monastery</placeName>
+                          corresp="#name337-10">Abū Ghālib Monastery</placeName>
                <desc xml:id="abstract-en-337"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib337-1">ܥܗܝܺܕ ܡܶܢ ܫܢܰܬ 1133 ܥܕܰܡܳܐ 1600 ܘܒܰܫܢܰܬ 1170 ܒܢܳܐ ܦܰܛܪܝܰܪܟܳܐ ܡܺܝܟܳܐܝܠ ܠܥܺܕܬܗ ܘܰܢܦܰܩܘ ܡܶܢܗ ܚܰܡܫܳܐ ܐܶܦܝܣܩܘܦ̈ܐ</quote>

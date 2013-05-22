@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                <placeName xml:id="name560-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܛܘܪܐ ܨܗܝܐ</placeName>
-               <placeName xml:id="name560-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib560-1"
-                          corresp="#name560-4 #name560-5">ܛܘܪܐ ܨܗܝܳܐ</placeName>
-               <placeName xml:id="name560-4"
+               <placeName xml:id="name560-3" xml:lang="syr-Syrj" source="#bib560-1">ܛܘܪ</placeName>
+               <placeName xml:id="name560-4" xml:lang="syr-Syrj" source="#bib560-1">ܨܗܝܳܐ</placeName>
+               <placeName xml:id="name560-5"
                           xml:lang="ar"
                           source="#bib560-2"
-                          corresp="#name560-3 #name560-5">الجبل القاحل</placeName>
-               <placeName xml:id="name560-5"
+                          corresp="#name560-6">الجبل القاحل</placeName>
+               <placeName xml:id="name560-6"
                           xml:lang="en"
                           source="#bib560-3"
-                          corresp="#name560-3 #name560-4">Barren Mountain</placeName>
+                          corresp="#name560-5">Barren Mountain</placeName>
                <desc xml:id="abstract-en-560"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/560</idno>

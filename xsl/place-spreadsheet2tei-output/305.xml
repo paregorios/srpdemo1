@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib305-3"
-                          corresp="#name305-3 #name305-4">Beth Arsham</placeName>
+                          corresp="#name305-5">Beth Arsham</placeName>
                <placeName xml:id="name305-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܐܪܩܡ</placeName>
-               <placeName xml:id="name305-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib305-1"
-                          corresp="#name305-4 #name305-1">ܒܶܝܬ ܐܰܪܩܡ</placeName>
-               <placeName xml:id="name305-4"
+               <placeName xml:id="name305-3" xml:lang="syr-Syrj" source="#bib305-1">ܒܶܝ</placeName>
+               <placeName xml:id="name305-4" xml:lang="syr-Syrj" source="#bib305-1">ܐܰܪܩܡ</placeName>
+               <placeName xml:id="name305-5"
                           xml:lang="ar"
                           source="#bib305-2"
-                          corresp="#name305-3 #name305-1">بيث ارشم</placeName>
+                          corresp="#name305-1">بيث ارشم</placeName>
                <desc xml:id="abstract-en-305"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib305-1">ܐܰܬܪܐ ܕܩܰܪܝܒ ܠܰܡܕܝܢ̈ܬܐ (ܣܠܝܩ ܘܩܰܛܝܣܦܘܢ) ܠܬܰܝܡܢܗ̇ ܕܒܓܕܕ ܘܠܐ ܝܺܕܝܺܥܐ ܕܘܟܬܗ̇.</quote>

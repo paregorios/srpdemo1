@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,31 +63,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-69" type="">
+            <place xml:id="place-69" type="monastery">
                <placeName xml:id="name69-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib69-1">Dayr al-Zaʿfarān</placeName>
                <placeName xml:id="name69-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܙܥܦܪܐܢ</placeName>
-               <placeName xml:id="name69-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib69-2"
-                          corresp="#name69-4 #name69-5">ܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ</placeName>
-               <placeName xml:id="name69-4"
+               <placeName xml:id="name69-3" xml:lang="syr-Syrj" source="#bib69-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name69-4" xml:lang="syr-Syrj" source="#bib69-2">ܕܙܰܥܦܰܪܐܢ</placeName>
+               <placeName xml:id="name69-5"
                           xml:lang="ar"
                           source="#bib69-3"
-                          corresp="#name69-3 #name69-5">دير الزعفران</placeName>
-               <placeName xml:id="name69-5"
+                          corresp="#name69-6">دير الزعفران</placeName>
+               <placeName xml:id="name69-6"
                           xml:lang="en"
                           source="#bib69-4"
-                          corresp="#name69-3 #name69-4">Zaʿfaran Monastery</placeName>
-               <placeName xml:id="name69-6" xml:lang="en" source="#bib69-5">monastery Deir Zafaran</placeName>
+                          corresp="#name69-5">Zaʿfaran Monastery</placeName>
+               <placeName xml:id="name69-7" xml:lang="en" source="#bib69-5">monastery Deir Zafaran</placeName>
                <desc xml:id="abstract-en-69">A monastery near Mardin, the seat of a Syrian Orthodox patriachate from 1293 into the 20th C.</desc>
                <desc xml:lang="en">
                   <quote source="#bib69-1">620. al-Zaʿfarān, Dayr</quote>

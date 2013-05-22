@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">APAMEA</title>
+            <title xml:lang="en">Apamea</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,30 +63,27 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-11" type="">
+            <place xml:id="place-11" type="settlement">
                <placeName xml:id="name11-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib11-1">APAMEA</placeName>
+                          source="#bib11-1 #bib11-4"
+                          corresp="#name11-3 #name11-4">Apamea</placeName>
                <placeName xml:id="name11-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܐܘܦܡܝܐ</placeName>
                <placeName xml:id="name11-3"
                           xml:lang="syr-Syrj"
                           source="#bib11-2"
-                          corresp="#name11-4 #name11-5">ܐܘܦܰܡܝܰܐ</placeName>
+                          corresp="#name11-4 #name11-1">ܐܘܦܰܡܝܰܐ</placeName>
                <placeName xml:id="name11-4"
                           xml:lang="ar"
                           source="#bib11-3"
-                          corresp="#name11-3 #name11-5">آفامية او فامية</placeName>
-               <placeName xml:id="name11-5"
-                          xml:lang="en"
-                          source="#bib11-4"
-                          corresp="#name11-3 #name11-4">Apamea</placeName>
+                          corresp="#name11-3 #name11-1">آفامية او فامية</placeName>
                <desc xml:id="abstract-en-11"/>
                <desc xml:lang="en">
                   <quote source="#bib11-1">38. Apamea</quote>

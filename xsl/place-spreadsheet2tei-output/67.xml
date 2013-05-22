@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">DARA</title>
+            <title xml:lang="en">Dara</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,30 +63,27 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-67" type="">
+            <place xml:id="place-67" type="settlement">
                <placeName xml:id="name67-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib67-1">DARA</placeName>
+                          source="#bib67-1 #bib67-4"
+                          corresp="#name67-3 #name67-4">Dara</placeName>
                <placeName xml:id="name67-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܪܐ</placeName>
                <placeName xml:id="name67-3"
                           xml:lang="syr-Syrj"
                           source="#bib67-2"
-                          corresp="#name67-4 #name67-5">ܕܳܪܳܐ</placeName>
+                          corresp="#name67-4 #name67-1">ܕܳܪܳܐ</placeName>
                <placeName xml:id="name67-4"
                           xml:lang="ar"
                           source="#bib67-3"
-                          corresp="#name67-3 #name67-5">دارا</placeName>
-               <placeName xml:id="name67-5"
-                          xml:lang="en"
-                          source="#bib67-4"
-                          corresp="#name67-3 #name67-4">Dara</placeName>
+                          corresp="#name67-3 #name67-1">دارا</placeName>
                <desc xml:id="abstract-en-67"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib67-2">ܡܕܝܺܢܬܐ ܗܝ ܕܒܰܦܫܦܘܽܠܐ ܕܛܘܪܐ ܒܶܝܬ ܢܨܺܝܒܝܺܢ ܠܡܰܪܕܺܝܢ ܐܶܬܝܰܬܒܰܬ ܫܢܰܬ  506  ܘܩܰܘܝܰܬ ܟܘܪܣܝܳܐ ܐܶܦܝܣܩܘܦܳܝܐ ܠܣܘܪ̈ܝܳܝܐ ܥܕܡܐ ܠܡܶܨܥܝ̈ܬܗ ܕܕܳܪܳܐ ܕܝ̄ܒ ܘܝܰܘܡܳܢ ܩܪܺܝܬܳܐ ܗܝ ܙܥܘܽܪܬܐ.</quote>

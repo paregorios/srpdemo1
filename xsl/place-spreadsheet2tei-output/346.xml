@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,17 @@
                <placeName xml:id="name346-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܕܝܫܬܐ ܒܪܒܪܐ</placeName>
-               <placeName xml:id="name346-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib346-1"
-                          corresp="#name346-4 #name346-5">ܕܰܝܪܐ ܕܩܰܕܝܫܬܳܐ ܒܰܪܒܰܪܐ</placeName>
-               <placeName xml:id="name346-4"
+               <placeName xml:id="name346-3" xml:lang="syr-Syrj" source="#bib346-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name346-4" xml:lang="syr-Syrj" source="#bib346-1">ܕܩܰܕܝܫܬܳ</placeName>
+               <placeName xml:id="name346-5" xml:lang="syr-Syrj" source="#bib346-1">ܒܰܪܒܰܪܐ</placeName>
+               <placeName xml:id="name346-6"
                           xml:lang="ar"
                           source="#bib346-2"
-                          corresp="#name346-3 #name346-5">دير القديسة بربارة</placeName>
-               <placeName xml:id="name346-5"
+                          corresp="#name346-7">دير القديسة بربارة</placeName>
+               <placeName xml:id="name346-7"
                           xml:lang="en"
                           source="#bib346-3"
-                          corresp="#name346-3 #name346-4">Barbara Monastery</placeName>
+                          corresp="#name346-6">Barbara Monastery</placeName>
                <desc xml:id="abstract-en-346"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib346-1">ܒܛܘܪܳܐ ܕܐܘܪܗܳܝ ܐܶܫܬܰܬܰܐܣ ܗܰܘ ܕܰܝܪܳܐ ܐܚܪܺܢܳܐ ܒܗ ܒܰܫܡܳܐ ܒܫܘܪܳܝ ܕܳܪܳܐ ܚܡܝܫܳܝܳܐ. ܘܐܶܬܕܰܟܪܳܗ̇ ܡܰܟܬܰܒܙܰܒܢ̈ܐ ܥܕܰܡܐ ܠܰܫܢܰܬ  1191  ܘܒܗ ܐܶܬܢܰܦܩ ܒܰܣܝܺܠܝܘܣ ܦܐܪܣ ܡܝܺܛܪܘܦܘܠܝܛܳܐ ܕܐܘܪܗܳܝ  1204.</quote>

@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,32 +59,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-43" type="">
+            <place xml:id="place-43" type="river">
                <placeName xml:id="name43-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib43-1">Balikh</placeName>
                <placeName xml:id="name43-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܢܗܪ ܒܐܠܚ</placeName>
-               <placeName xml:id="name43-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib43-2"
-                          corresp="#name43-4 #name43-5">ܢܗܰܪ ܒܰܐܠܚ</placeName>
-               <placeName xml:id="name43-4"
+               <placeName xml:id="name43-3" xml:lang="syr-Syrj" source="#bib43-2">ܢܗܰ</placeName>
+               <placeName xml:id="name43-4" xml:lang="syr-Syrj" source="#bib43-2">ܒܰܐܠܚ</placeName>
+               <placeName xml:id="name43-5"
                           xml:lang="ar"
                           source="#bib43-3"
-                          corresp="#name43-3 #name43-5">نهر البليخ</placeName>
-               <placeName xml:id="name43-5"
+                          corresp="#name43-6">نهر البليخ</placeName>
+               <placeName xml:id="name43-6"
                           xml:lang="en"
                           source="#bib43-4"
-                          corresp="#name43-3 #name43-4">Balikh river</placeName>
+                          corresp="#name43-5">Balikh river</placeName>
                <desc xml:id="abstract-en-43"/>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/43</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Balikh_River</idno>
                <bibl xml:id="bib43-1">

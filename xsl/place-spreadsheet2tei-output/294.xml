@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,18 @@
                <placeName xml:id="name294-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܐܓܒܐܪܗ (ܐܘ ܒܝܬ ܓܢܒܪ̈ܐ)</placeName>
-               <placeName xml:id="name294-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib294-1"
-                          corresp="#name294-4 #name294-5">ܒܐܓܒܐܪܗ (ܐܰܘ ܒܶܝܬ ܓܰܢܒܳܪ̈ܐ)</placeName>
-               <placeName xml:id="name294-4"
+               <placeName xml:id="name294-3" xml:lang="syr-Syrj" source="#bib294-1">ܒܐܓܒܐܪ</placeName>
+               <placeName xml:id="name294-4" xml:lang="syr-Syrj" source="#bib294-1">(ܐܰ</placeName>
+               <placeName xml:id="name294-5" xml:lang="syr-Syrj" source="#bib294-1">ܒܶܝ</placeName>
+               <placeName xml:id="name294-6" xml:lang="syr-Syrj" source="#bib294-1">ܓܰܢܒܳܪ̈ܐ)</placeName>
+               <placeName xml:id="name294-7"
                           xml:lang="ar"
                           source="#bib294-2"
-                          corresp="#name294-3 #name294-5">باجبّارة</placeName>
-               <placeName xml:id="name294-5"
+                          corresp="#name294-8">باجبّارة</placeName>
+               <placeName xml:id="name294-8"
                           xml:lang="en"
                           source="#bib294-3"
-                          corresp="#name294-3 #name294-4">Bajabbara</placeName>
+                          corresp="#name294-7">Bajabbara</placeName>
                <desc xml:id="abstract-en-294"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib294-1">ܩܪܺܝܬܳܐ ܗܝ ܕܥܰܠ ܢܰܗܪܘܣܐ ܕܟܘܣܪ ܕܰܠܡܕܢܚܐ ܕܡܰܘܨܰܠ ܚܰܪܝܒܐ ܒܡܶܨܥܳܝ̈ܬܗ ܕܕܳܪܐ ܕܝܓ. </quote>

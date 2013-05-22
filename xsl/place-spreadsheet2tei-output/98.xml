@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">IRAQ</title>
+            <title xml:lang="en">Iraq</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,30 +59,27 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-98" type="">
+            <place xml:id="place-98" type="region">
                <placeName xml:id="name98-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib98-1">IRAQ</placeName>
+                          source="#bib98-1 #bib98-4 #bib98-5"
+                          corresp="#name98-3 #name98-4">Iraq</placeName>
                <placeName xml:id="name98-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܥܪܐܩ</placeName>
                <placeName xml:id="name98-3"
                           xml:lang="syr-Syrj"
                           source="#bib98-2"
-                          corresp="#name98-4 #name98-5">ܥܪܰܐܩ</placeName>
+                          corresp="#name98-4 #name98-1">ܥܪܰܐܩ</placeName>
                <placeName xml:id="name98-4"
                           xml:lang="ar"
                           source="#bib98-3"
-                          corresp="#name98-3 #name98-5">العراق</placeName>
-               <placeName xml:id="name98-5"
-                          xml:lang="en"
-                          source="#bib98-4 #bib98-5"
-                          corresp="#name98-3 #name98-4">Iraq</placeName>
+                          corresp="#name98-3 #name98-1">العراق</placeName>
                <desc xml:id="abstract-en-98"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/98</idno>

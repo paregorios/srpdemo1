@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib384-3"
-                          corresp="#name384-3 #name384-4">Gugel Monastery</placeName>
+                          corresp="#name384-5">Gugel Monastery</placeName>
                <placeName xml:id="name384-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܓܘܓܠ</placeName>
-               <placeName xml:id="name384-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib384-1"
-                          corresp="#name384-4 #name384-1">ܕܰܝܪܐ ܓܘܓܠ</placeName>
-               <placeName xml:id="name384-4"
+               <placeName xml:id="name384-3" xml:lang="syr-Syrj" source="#bib384-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name384-4" xml:lang="syr-Syrj" source="#bib384-1">ܓܘܓܠ</placeName>
+               <placeName xml:id="name384-5"
                           xml:lang="ar"
                           source="#bib384-2"
-                          corresp="#name384-3 #name384-1">دير كوكل</placeName>
+                          corresp="#name384-1">دير كوكل</placeName>
                <desc xml:id="abstract-en-384"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib384-1">ܒܛܘܪܥܰܒܕܝܢ ܡܶܣܬܒܰܪ ܘܡܶܬܐܡܰܪ ܗܘܐ ܠܗ ܕܒܶܝܬ ܓܘܳܓܝ ܘܥܰܡܝܪ ܗܘܳܐ ܒܪܝܫܳܐ ܕܡܰܐܬܐ ܫܬܝܬܳܝܬܐ. ܘܥܰܠ ܫܶܬܶܐܣܰܘ̈ܗܝ ܐܶܬܒܢܺܝ ܕܰܝܪܳܐ ܕܐܰܒܪܗܡ ܟܰܫܟܳܪܝܐ ܢܰܣܛܘܽܪܝܢܳܐ. ܟܶܢ ܐܰܚܕܽܘܗܝ ܣܘܪ̈ܝܳܝܐ ܒܪܝܫܗ ܕܕܳܪܐ ܕܰܬܫܰܥܣܪ ܐܰܟܡܳܐ ܕܐܶܚܰܕܘ ܕܰܝܪܐ ܕܡܳܪܝ ܝܘܚܰܢܢ ܛܰܝܳܝܐ ܕܩܰܪܝܒ ܠܕܰܝܪܐ ܕܡܳܪܝ ܐܰܘܓܝܢ ܒܳܬܪ ܕܐܶܣܬܰܦܰܩܘ ܗܘܰܘ ܘܰܚܪܶܒܘ ܘܫܰܟܠܶܠܘ ܐܢܘܢ</quote>

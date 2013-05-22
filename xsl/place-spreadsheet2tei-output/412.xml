@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,16 +78,18 @@
                <placeName xml:id="name412-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib412-1"
-                          corresp="#name412-3 #name412-4">ܣܡܩ̈ܐ ܐܘ ܣܡܩ̈ܝ</placeName>
-               <placeName xml:id="name412-3"
+                          corresp="#name412-6 #name412-7">ܣܡܩ̈ܐ ܐܘ ܣܡܩ̈ܝ</placeName>
+               <placeName xml:id="name412-3" xml:lang="syr-Syrj" source="#bib412-1">ܣܡܩ̈</placeName>
+               <placeName xml:id="name412-4" xml:lang="syr-Syrj" source="#bib412-1">ܐ</placeName>
+               <placeName xml:id="name412-5" xml:lang="syr-Syrj" source="#bib412-1">ܣܡܩ̈ܝ</placeName>
+               <placeName xml:id="name412-6"
                           xml:lang="ar"
                           source="#bib412-2"
-                          corresp="#name412-2 #name412-4">سمقا او سمقي</placeName>
-               <placeName xml:id="name412-4"
+                          corresp="#name412-2 #name412-7">سمقا او سمقي</placeName>
+               <placeName xml:id="name412-7"
                           xml:lang="en"
                           source="#bib412-3"
-                          corresp="#name412-2 #name412-3">Semqa (Semqe)</placeName>
+                          corresp="#name412-2 #name412-6">Semqa (Semqe)</placeName>
                <desc xml:id="abstract-en-412"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib412-1">ܡܶܢ ܩܘܪ̈ܝܘܐ ܕܐܳܡܝܕ ܠܡܰܕܢܰܚ ܓܰܪܒܰܝ ܕܝܠܳܗ̇ܳ ܡܰܪܕܶܐ ܬܰܪܬܝܢ ܫܳܥܝ̈ܢ ܘܰܟܒܰܪ ܗܝ ܡܬܶܩܰܪܝܳܐ ܝܰܘܡܢ ܣܘܡܰܐܩܠܝ.</quote>

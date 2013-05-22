@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,29 +63,31 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-40" type="">
-               <placeName xml:id="name40-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Bostra</placeName>
-               <placeName xml:id="name40-2" xml:lang="en" source="#bib40-1">BOSTRA</placeName>
-               <placeName xml:id="name40-3" xml:lang="en" source="#bib40-1">Boṣra</placeName>
-               <placeName xml:id="name40-4"
+            <place xml:id="place-40" type="settlement">
+               <placeName xml:id="name40-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib40-1">Bostra</placeName>
+               <placeName xml:id="name40-2" xml:lang="en" source="#bib40-1">Boṣra</placeName>
+               <placeName xml:id="name40-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib40-2"
-                          corresp="#name40-5 #name40-6">ܒܘܨܪ</placeName>
-               <placeName xml:id="name40-5"
+                          corresp="#name40-4 #name40-5">ܒܘܨܪ</placeName>
+               <placeName xml:id="name40-4"
                           xml:lang="ar"
                           source="#bib40-3"
-                          corresp="#name40-4 #name40-6">بُصرى</placeName>
-               <placeName xml:id="name40-6"
+                          corresp="#name40-3 #name40-5">بُصرى</placeName>
+               <placeName xml:id="name40-5"
                           xml:lang="en"
                           source="#bib40-4"
-                          corresp="#name40-4 #name40-5">Buṣra</placeName>
+                          corresp="#name40-3 #name40-4">Buṣra</placeName>
                <desc xml:id="abstract-en-40"/>
                <desc xml:lang="en">
                   <quote source="#bib40-1">112. Bostra</quote>

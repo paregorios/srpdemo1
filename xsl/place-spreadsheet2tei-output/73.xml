@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,30 +67,24 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-73" type="">
+            <place xml:id="place-73" type="monastery">
                <placeName xml:id="name73-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib73-1">Dayro d-Notpo</placeName>
                <placeName xml:id="name73-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܢܛܦܐ</placeName>
-               <placeName xml:id="name73-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib73-2"
-                          corresp="#name73-4 #name73-5">ܕܰܝܪܐ ܕܢܛܦܳܐ</placeName>
-               <placeName xml:id="name73-4"
-                          xml:lang="ar"
-                          source="#bib73-3"
-                          corresp="#name73-3 #name73-5">دير القطرة او الناطف</placeName>
-               <placeName xml:id="name73-5"
-                          xml:lang="en"
-                          source="#bib73-4"
-                          corresp="#name73-3 #name73-4">Qaṭra, or Nāṭif, Monastery</placeName>
+               <placeName xml:id="name73-3" xml:lang="syr-Syrj" source="#bib73-2">ܕܰܝܪ</placeName>
+               <placeName xml:id="name73-4" xml:lang="syr-Syrj" source="#bib73-2">ܕܢܛܦܳܐ</placeName>
+               <placeName xml:id="name73-5" xml:lang="ar" source="#bib73-3">دير القطرة او الناطف</placeName>
+               <placeName xml:id="name73-6" xml:lang="en" source="#bib73-4">Qaṭra</placeName>
+               <placeName xml:id="name73-7" xml:lang="en" source="#bib73-4">or Nāṭif</placeName>
+               <placeName xml:id="name73-8" xml:lang="en" source="#bib73-4">Monastery</placeName>
                <desc xml:id="abstract-en-73"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib73-2">ܒܫܶܡ ܡܳܪܬܰܢ ܒܬܘܽܠܬܐ ܘܡܳܪܝ ܬܶܐܘܕܘܪܳܘܣ. ܕܰܝܪܐ ܙܥܘܽܪܐ ܘܥܰܬܝܩ ܗܰܝܟܠܗ ܢܩܝܺܪ ܒܫܽܘܥܐ ܗܽܘܝܽܘ ܒܪܺܝܫ ܛܘܪܐ ܕܚܳܐܪ ܠܕܰܝܪܳܐ ܕܙܰܥܦܰܪܐܢ ܩܰܒܠ ܟܶܢܫܐ ܕܥܶܢܘܳܝ̈ܐ ܘܐܶܬܬܟܶܒܘ ܠܘܳܬܢ ܛܶܒ̈ܘܗܝ ܡܶܢ ܕܳܪܐ ܕܐܰܪܒܥܣܪ ܘܐܶܬܪܰܝܫܰܢ ܥܠܰܘܗܝ ܒܙܰܒܢ ܐܶܦܝܣܩܘܦܐ ܘܡܶܬܒܰܝܬܶܐ ܠܗ ܐܰܪܒܥܳܐ ܐܶܦܣܩܘܦ̈ܐ. ܘܐܶܬܓܰܙܺܝ ܡܶܢ ܐܢܳܫܘ̈ܗܝ ܚܕܳܪ ܫܢܰܬ 1927 . </quote>

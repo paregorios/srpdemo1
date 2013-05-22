@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib380-3"
-                          corresp="#name380-3 #name380-4">Kasliyud Monastery</placeName>
+                          corresp="#name380-5">Kasliyud Monastery</placeName>
                <placeName xml:id="name380-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܟܣܠܝܘܕ</placeName>
-               <placeName xml:id="name380-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib380-1"
-                          corresp="#name380-4 #name380-1">ܕܰܝܪܳܐ ܕܟܣܠܝܘܕ</placeName>
-               <placeName xml:id="name380-4"
+               <placeName xml:id="name380-3" xml:lang="syr-Syrj" source="#bib380-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name380-4" xml:lang="syr-Syrj" source="#bib380-1">ܕܟܣܠܝܘܕ</placeName>
+               <placeName xml:id="name380-5"
                           xml:lang="ar"
                           source="#bib380-2"
-                          corresp="#name380-3 #name380-1">دير كاسليود</placeName>
+                          corresp="#name380-1">دير كاسليود</placeName>
                <desc xml:id="abstract-en-380"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib380-1">ܒܐܽܘܚܕܳܢܐ ܕܓܰܪܡܰܐܢܺܝܩܝ (ܡܪܥܫ) ܐܶܬܢܰܦܰܩ ܒܗ ܐܰܪܒܥܐ ܐܶܦܝܣܩܘ̈ܦܐ ܡܶܢ ܫܢܰܬ  1100  -  1200  </quote>

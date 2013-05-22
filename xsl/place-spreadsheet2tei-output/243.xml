@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,13 +59,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-243" type="">
+            <place xml:id="place-243" type="settlement">
                <placeName xml:id="name243-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -70,18 +73,16 @@
                <placeName xml:id="name243-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܡܢܥܡ</placeName>
-               <placeName xml:id="name243-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib243-2"
-                          corresp="#name243-4 #name243-5">ܒܶܝܬ ܡܰܢܥܡ</placeName>
-               <placeName xml:id="name243-4"
+               <placeName xml:id="name243-3" xml:lang="syr-Syrj" source="#bib243-2">ܒܶܝ</placeName>
+               <placeName xml:id="name243-4" xml:lang="syr-Syrj" source="#bib243-2">ܡܰܢܥܡ</placeName>
+               <placeName xml:id="name243-5"
                           xml:lang="ar"
                           source="#bib243-3"
-                          corresp="#name243-3 #name243-5">بانمعم </placeName>
-               <placeName xml:id="name243-5"
+                          corresp="#name243-6">بانمعم </placeName>
+               <placeName xml:id="name243-6"
                           xml:lang="en"
                           source="#bib243-4"
-                          corresp="#name243-3 #name243-4">Banimʿim</placeName>
+                          corresp="#name243-5">Banimʿim</placeName>
                <desc xml:id="abstract-en-243"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/243</idno>

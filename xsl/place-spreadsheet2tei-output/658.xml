@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,14 +70,12 @@
                <placeName xml:id="name658-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܚܒܝ̈ܫܝܬܐ ܕܡܪܝ ܒܗܢܡ (ܘܡܪܝ ܝܘܣܦ)</placeName>
-               <placeName xml:id="name658-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib658-1"
-                          corresp="#name658-4">ܚܒܝ̈ܫܳܝܳܬܐ ܕܡܳܪܝ ܒܶܗܢܰܡ (ܘܡܳܪܝ ܝܰܘܣܦ)</placeName>
-               <placeName xml:id="name658-4"
-                          xml:lang="ar"
-                          source="#bib658-2"
-                          corresp="#name658-3">صومعة مار بهنام</placeName>
+               <placeName xml:id="name658-3" xml:lang="syr-Syrj" source="#bib658-1">ܚܒܝ̈ܫܳܝܳܬ</placeName>
+               <placeName xml:id="name658-4" xml:lang="syr-Syrj" source="#bib658-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name658-5" xml:lang="syr-Syrj" source="#bib658-1">ܒܶܗܢܰ</placeName>
+               <placeName xml:id="name658-6" xml:lang="syr-Syrj" source="#bib658-1">(ܘܡܳܪ</placeName>
+               <placeName xml:id="name658-7" xml:lang="syr-Syrj" source="#bib658-1">ܝܰܘܣܦ)</placeName>
+               <placeName xml:id="name658-8" xml:lang="ar" source="#bib658-2">صومعة مار بهنام</placeName>
                <desc xml:id="abstract-en-658">A hermitage in the hills above Dayr al-Zaʿfarān.</desc>
                <state type="existence" notAfter="1625"/>
                <idno type="URI">http://syriaca.org/place/658</idno>

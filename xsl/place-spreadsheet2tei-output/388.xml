@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -76,19 +79,22 @@
                <placeName xml:id="name388-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܡܪܩܘܣ ܐܘܢܓܠܝܣܛܐ ܘܕܡܪܬܝ ܡܪܝܡ ܒܐܘܪܫܠܡ</placeName>
-               <placeName xml:id="name388-4"
-                          xml:lang="syr-Syrj"
-                          source="#bib388-2"
-                          corresp="#name388-5 #name388-6">ܕܰܝܪܐ ܕܡܳܪܝ ܡܰܪܩܘܣ ܐܶܘܰܢܓܠܝܣܛܐ ܘܰܕܡܳܪܬܝ ܡܰܪܝܰܡ ܒܐܘܪܫܠܡ</placeName>
-               <placeName xml:id="name388-5"
+               <placeName xml:id="name388-4" xml:lang="syr-Syrj" source="#bib388-2">ܕܰܝܪ</placeName>
+               <placeName xml:id="name388-5" xml:lang="syr-Syrj" source="#bib388-2">ܕܡܳܪ</placeName>
+               <placeName xml:id="name388-6" xml:lang="syr-Syrj" source="#bib388-2">ܡܰܪܩܘ</placeName>
+               <placeName xml:id="name388-7" xml:lang="syr-Syrj" source="#bib388-2">ܐܶܘܰܢܓܠܝܣܛ</placeName>
+               <placeName xml:id="name388-8" xml:lang="syr-Syrj" source="#bib388-2">ܘܰܕܡܳܪܬ</placeName>
+               <placeName xml:id="name388-9" xml:lang="syr-Syrj" source="#bib388-2">ܡܰܪܝܰ</placeName>
+               <placeName xml:id="name388-10" xml:lang="syr-Syrj" source="#bib388-2">ܒܐܘܪܫܠܡ</placeName>
+               <placeName xml:id="name388-11"
                           xml:lang="ar"
                           source="#bib388-3"
-                          corresp="#name388-4 #name388-6">دير مار مرقس الانجيلي و السيدة العذرآء باورشليم</placeName>
-               <placeName xml:id="name388-6"
+                          corresp="#name388-12">دير مار مرقس الانجيلي و السيدة العذرآء باورشليم</placeName>
+               <placeName xml:id="name388-12"
                           xml:lang="en"
                           source="#bib388-4"
-                          corresp="#name388-4 #name388-5">Mark the Evangelist Monastery and the Virgin Monastery</placeName>
-               <placeName xml:id="name388-7" xml:lang="en" source="#bib388-5">monastery of St Mark</placeName>
+                          corresp="#name388-11">Mark the Evangelist Monastery and the Virgin Monastery</placeName>
+               <placeName xml:id="name388-13" xml:lang="en" source="#bib388-5">monastery of St Mark</placeName>
                <desc xml:id="abstract-en-388"/>
                <desc xml:lang="en">
                   <quote source="#bib388-1">354. Mark, Monastery of St.</quote>

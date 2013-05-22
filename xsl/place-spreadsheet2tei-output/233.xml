@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,13 +63,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-233" type="">
+            <place xml:id="place-233" type="monastery">
                <placeName xml:id="name233-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -74,19 +77,17 @@
                <placeName xml:id="name233-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܬܠܥܕܐ</placeName>
-               <placeName xml:id="name233-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib233-2"
-                          corresp="#name233-4 #name233-5">ܕܰܝܪܐ ܕܬܰܠܥܕܰܐ</placeName>
-               <placeName xml:id="name233-4"
+               <placeName xml:id="name233-3" xml:lang="syr-Syrj" source="#bib233-2">ܕܰܝܪ</placeName>
+               <placeName xml:id="name233-4" xml:lang="syr-Syrj" source="#bib233-2">ܕܬܰܠܥܕܰܐ</placeName>
+               <placeName xml:id="name233-5"
                           xml:lang="ar"
                           source="#bib233-3"
-                          corresp="#name233-3 #name233-5">دير تلعدا</placeName>
-               <placeName xml:id="name233-5"
+                          corresp="#name233-6">دير تلعدا</placeName>
+               <placeName xml:id="name233-6"
                           xml:lang="en"
                           source="#bib233-4"
-                          corresp="#name233-3 #name233-4">Talʿada Monastery</placeName>
-               <placeName xml:id="name233-6" xml:lang="en" source="#bib233-5">monastery of Tell Ada</placeName>
+                          corresp="#name233-5">Talʿada Monastery</placeName>
+               <placeName xml:id="name233-7" xml:lang="en" source="#bib233-5">monastery of Tell Ada</placeName>
                <desc xml:id="abstract-en-233"/>
                <desc xml:lang="en">
                   <quote source="#bib233-1">537. Tell ʿAda, Monastery of</quote>

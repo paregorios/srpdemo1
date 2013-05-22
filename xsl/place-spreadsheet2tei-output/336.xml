@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -64,14 +67,9 @@
          <listPlace>
             <place xml:id="place-336" type="">
                <placeName xml:id="name336-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayr Ibn Jājī</placeName>
-               <placeName xml:id="name336-2"
-                          xml:lang="ar"
-                          source="#bib336-1"
-                          corresp="#name336-3">دير ابن جاجي</placeName>
-               <placeName xml:id="name336-3"
-                          xml:lang="en"
-                          source="#bib336-2"
-                          corresp="#name336-2">Bar Jājī, Monastery</placeName>
+               <placeName xml:id="name336-2" xml:lang="ar" source="#bib336-1">دير ابن جاجي</placeName>
+               <placeName xml:id="name336-3" xml:lang="en" source="#bib336-2">Bar Jājī</placeName>
+               <placeName xml:id="name336-4" xml:lang="en" source="#bib336-2">Monastery</placeName>
                <desc xml:id="abstract-en-336"/>
                <desc xml:lang="ar">
                   <quote source="#bib336-1">على النهر اليابس من اعمال ملطية انشأه باسم الشهداء الاربعين الراهب ايليا ابن جاجي التكريتي عام 960 وعلّم فيه الراهب يوحنا تلميذ مارون العلوم اللغوية والحكمية في حدود سنة 980-999 وتخرج فيه ستة عشر حبرا حتى سنة 1105 وفي سنة 1058 تضعضع بغارة شنها ثلاثة آلاف تركي على ملطية فتولاه الخراب</quote>

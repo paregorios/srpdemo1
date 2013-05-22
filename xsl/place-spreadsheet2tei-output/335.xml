@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,52 +63,62 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-335" type="">
-               <placeName xml:id="name335-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Abḥai</placeName>
+               <placeName xml:id="name335-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib335-1">Mor Abḥai</placeName>
                <placeName xml:id="name335-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܐܒܚܝ ܐܘ ܕܝܪܐ ܕܣܒܠܬܐ</placeName>
-               <placeName xml:id="name335-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib335-1"
-                          corresp="#name335-4 #name335-5">ܕܰܝܪܐ ܕܡܳܪܝ ܐܰܒܚܝ ܐܰܘ ܕܰܝܪܳܐ ܕܣܶܒܠܬܐ</placeName>
-               <placeName xml:id="name335-4"
+               <placeName xml:id="name335-3" xml:lang="syr-Syrj" source="#bib335-2">ܕܰܝܪ</placeName>
+               <placeName xml:id="name335-4" xml:lang="syr-Syrj" source="#bib335-2">ܕܡܳܪ</placeName>
+               <placeName xml:id="name335-5" xml:lang="syr-Syrj" source="#bib335-2">ܐܰܒܚ</placeName>
+               <placeName xml:id="name335-6" xml:lang="syr-Syrj" source="#bib335-2">ܐܰ</placeName>
+               <placeName xml:id="name335-7" xml:lang="syr-Syrj" source="#bib335-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name335-8" xml:lang="syr-Syrj" source="#bib335-2">ܕܣܶܒܠܬܐ</placeName>
+               <placeName xml:id="name335-9"
                           xml:lang="ar"
-                          source="#bib335-2"
-                          corresp="#name335-3 #name335-5">دير مار ابحاي او دير السلالم</placeName>
-               <placeName xml:id="name335-5"
-                          xml:lang="en"
                           source="#bib335-3"
-                          corresp="#name335-3 #name335-4">Abḥai Monastery</placeName>
+                          corresp="#name335-10">دير مار ابحاي او دير السلالم</placeName>
+               <placeName xml:id="name335-10"
+                          xml:lang="en"
+                          source="#bib335-4"
+                          corresp="#name335-9">Abḥai Monastery</placeName>
                <desc xml:id="abstract-en-335"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib335-1">ܥܰܠ ܣܶܦܬܳܐ ܕܰܦܪܳܬ ܕܝܰܡܝܢܐ ܡܰܪܕܶܐ ܦܶܠܓܘܬ ܫܳܥܐ ܡܶܢ ܥܘܪܒܝܫ ܩܪܺܝܬܐ ܕܰܒܩܰܪܝܒܘܬ ܓܰܪܓܰܪ ܐܶܬܒܢܝ ܒܳܬܰܪ ܡܰܐܬܐ ܚܡܝܺܫܳܝܬܐ. ܘܐܶܬܕܰܟܪܗ ܡܰܟܬܰܒܙܰܒ̈ܢܐ ܒܪܝܫܐ ܕܡܰܐܬܐ ܬܫܝܥܳܝܬܳܐ ܘܐܰܘܠܶܕ ܠܥܺܕܬܳܐ ܚܰܕ ܦܰܛܪܝܰܪܟܐ ܘܐܰܪܒܥܣܪ ܐܶܦܝܣܩ̈ܘܦܐ ܘܥܰܡܝܪ ܗܘܐ ܥܕܡܐ ܠܪܝܫ ܡܰܐܬܐ ܘܰܬܡܳܢܥܶܣܪ̈ܐ ܘܚܰܪ̈ܒܬܗ ܩܰܝ̈ܡܳܢ ܥܕܰܡܐ ܠܝܰܘܡܳܢ.</quote>
+                  <quote source="#bib335-2">ܥܰܠ ܣܶܦܬܳܐ ܕܰܦܪܳܬ ܕܝܰܡܝܢܐ ܡܰܪܕܶܐ ܦܶܠܓܘܬ ܫܳܥܐ ܡܶܢ ܥܘܪܒܝܫ ܩܪܺܝܬܐ ܕܰܒܩܰܪܝܒܘܬ ܓܰܪܓܰܪ ܐܶܬܒܢܝ ܒܳܬܰܪ ܡܰܐܬܐ ܚܡܝܺܫܳܝܬܐ. ܘܐܶܬܕܰܟܪܗ ܡܰܟܬܰܒܙܰܒ̈ܢܐ ܒܪܝܫܐ ܕܡܰܐܬܐ ܬܫܝܥܳܝܬܳܐ ܘܐܰܘܠܶܕ ܠܥܺܕܬܳܐ ܚܰܕ ܦܰܛܪܝܰܪܟܐ ܘܐܰܪܒܥܣܪ ܐܶܦܝܣܩ̈ܘܦܐ ܘܥܰܡܝܪ ܗܘܐ ܥܕܡܐ ܠܪܝܫ ܡܰܐܬܐ ܘܰܬܡܳܢܥܶܣܪ̈ܐ ܘܚܰܪ̈ܒܬܗ ܩܰܝ̈ܡܳܢ ܥܕܰܡܐ ܠܝܰܘܡܳܢ.</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib335-2">علي ضفة الفرات اليمنى مسيرة نصف ساعة من قرية عوربيش بقرب كركرانشيء بعد المئة الخامسة؟ و ذكره التاريخ صدر المئة التاسعة. وانجب بطريركاً واربعة عشر اسقفاً وظلّ عامرا آهلاً حتى صدر المئة الثامنة عشر وبقي منه اطلال</quote>
+                  <quote source="#bib335-3">علي ضفة الفرات اليمنى مسيرة نصف ساعة من قرية عوربيش بقرب كركرانشيء بعد المئة الخامسة؟ و ذكره التاريخ صدر المئة التاسعة. وانجب بطريركاً واربعة عشر اسقفاً وظلّ عامرا آهلاً حتى صدر المئة الثامنة عشر وبقي منه اطلال</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib335-3">or the Monastery of the Ladders, is on the right bank of the Euphrates, a half-hour journey from the village of ʿUrbīsh, near Karkar. It was established sometime after the fifth century and was first mentioned by historians in the beginning of the ninth century. It produced one Patriarch and fourteen bishops. It was inhabited until the beginning of the eighteenth century. Some of its ruins are still standing.</quote>
+                  <quote source="#bib335-4">or the Monastery of the Ladders, is on the right bank of the Euphrates, a half-hour journey from the village of ʿUrbīsh, near Karkar. It was established sometime after the fifth century and was first mentioned by historians in the beginning of the ninth century. It produced one Patriarch and fourteen bishops. It was inhabited until the beginning of the eighteenth century. Some of its ruins are still standing.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/335</idno>
                <bibl xml:id="bib335-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="pp">60</citedRange>
+               </bibl>
+               <bibl xml:id="bib335-2">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">541</citedRange>
                </bibl>
-               <bibl xml:id="bib335-2">
+               <bibl xml:id="bib335-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">507</citedRange>
                </bibl>
-               <bibl xml:id="bib335-3">
+               <bibl xml:id="bib335-4">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">560</citedRange>

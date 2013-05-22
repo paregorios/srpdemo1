@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,17 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib492-3"
-                          corresp="#name492-3 #name492-4">Qaṣr Ibn Hubayra</placeName>
+                          corresp="#name492-6">Qaṣr Ibn Hubayra</placeName>
                <placeName xml:id="name492-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܩܨܪܐ ܕܒܪ ܗܘܒܝܪܗ</placeName>
-               <placeName xml:id="name492-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib492-1"
-                          corresp="#name492-4 #name492-1">ܩܰܨܪܐ ܕܒܰܪ ܗܘܒܝܪܗ</placeName>
-               <placeName xml:id="name492-4"
+               <placeName xml:id="name492-3" xml:lang="syr-Syrj" source="#bib492-1">ܩܰܨܪ</placeName>
+               <placeName xml:id="name492-4" xml:lang="syr-Syrj" source="#bib492-1">ܕܒܰ</placeName>
+               <placeName xml:id="name492-5" xml:lang="syr-Syrj" source="#bib492-1">ܗܘܒܝܪܗ</placeName>
+               <placeName xml:id="name492-6"
                           xml:lang="ar"
                           source="#bib492-2"
-                          corresp="#name492-3 #name492-1">قصر ابن هبيرة</placeName>
+                          corresp="#name492-1">قصر ابن هبيرة</placeName>
                <desc xml:id="abstract-en-492"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/492</idno>

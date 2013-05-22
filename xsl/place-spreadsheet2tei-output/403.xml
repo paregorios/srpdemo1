@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name403-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܗ ܐܠܝܐ</placeName>
-               <placeName xml:id="name403-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib403-1"
-                          corresp="#name403-4 #name403-5">ܕܶܝܪܰܗ ܐܠܝܐ</placeName>
-               <placeName xml:id="name403-4"
+               <placeName xml:id="name403-3" xml:lang="syr-Syrj" source="#bib403-1">ܕܶܝܪܰ</placeName>
+               <placeName xml:id="name403-4" xml:lang="syr-Syrj" source="#bib403-1">ܐܠܝܐ</placeName>
+               <placeName xml:id="name403-5"
                           xml:lang="ar"
                           source="#bib403-2"
-                          corresp="#name403-3 #name403-5">دير اِليا</placeName>
-               <placeName xml:id="name403-5"
+                          corresp="#name403-6">دير اِليا</placeName>
+               <placeName xml:id="name403-6"
                           xml:lang="en"
                           source="#bib403-3"
-                          corresp="#name403-3 #name403-4">Dayr Elijah</placeName>
+                          corresp="#name403-5">Dayr Elijah</placeName>
                <desc xml:id="abstract-en-403"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib403-1">ܡܰܙܪܰܥܬܐ ܗܝ ܕܒܰܫܦܘܠܐ ܕܛܘܪܐ ܕܡܰܪܕܝܢ ܘܰܒܬܰܝܡܢܳܗ̇ ܐܶܬܩܰܪܝܰܬ ܒܫܶܡ ܡܳܪܝ ܐܠܝܐ. ܡܛܠ ܕܥܺܕܬܳܗ̇ ܒܓܰܘܗ̇ ܣܺܝܡܳܐ ܘܡܶܬܐܡܪ ܠܗ̇ ܬܘܪܟܳܐܝܬ ܓܶܦܬܠܶܟ</quote>

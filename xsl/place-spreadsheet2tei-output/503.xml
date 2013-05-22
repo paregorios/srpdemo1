@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,19 +70,17 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib503-3"
-                          corresp="#name503-3 #name503-4">Black Sea</placeName>
+                          corresp="#name503-5">Black Sea</placeName>
                <placeName xml:id="name503-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܝܡܐ ܐܘܟܡܐ</placeName>
-               <placeName xml:id="name503-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib503-1"
-                          corresp="#name503-4 #name503-1">ܝܰܡܳܐ ܐܘܟܳܡܐ</placeName>
-               <placeName xml:id="name503-4"
+               <placeName xml:id="name503-3" xml:lang="syr-Syrj" source="#bib503-1">ܝܰܡܳ</placeName>
+               <placeName xml:id="name503-4" xml:lang="syr-Syrj" source="#bib503-1">ܐܘܟܳܡܐ</placeName>
+               <placeName xml:id="name503-5"
                           xml:lang="ar"
                           source="#bib503-2"
-                          corresp="#name503-3 #name503-1">البحر الاسود</placeName>
-               <placeName xml:id="name503-5" xml:lang="en" source="#bib503-4">Nicomedia</placeName>
+                          corresp="#name503-1">البحر الاسود</placeName>
+               <placeName xml:id="name503-6" xml:lang="en" source="#bib503-4">Nicomedia</placeName>
                <desc xml:id="abstract-en-503"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/503</idno>

@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Upper/Greater Zab</title>
+            <title xml:lang="en">Greater Zab</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,33 +59,32 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-204" type="">
-               <placeName xml:id="name204-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Upper/Greater Zab</placeName>
-               <placeName xml:id="name204-2" xml:lang="en" source="#bib204-1">Upper</placeName>
-               <placeName xml:id="name204-3" xml:lang="en" source="#bib204-1">Greater Zab</placeName>
-               <placeName xml:id="name204-4"
+            <place xml:id="place-204" type="river">
+               <placeName xml:id="name204-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib204-1">Greater Zab</placeName>
+               <placeName xml:id="name204-2" xml:lang="en" source="#bib204-1">Upper Zab</placeName>
+               <placeName xml:id="name204-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܙܒܐ ܪܒܐ</placeName>
-               <placeName xml:id="name204-5"
-                          xml:lang="syr-Syrj"
-                          source="#bib204-2"
-                          corresp="#name204-6 #name204-7">ܙܒܐ ܪܰܒܐ</placeName>
+               <placeName xml:id="name204-4" xml:lang="syr-Syrj" source="#bib204-2">ܙܒ</placeName>
+               <placeName xml:id="name204-5" xml:lang="syr-Syrj" source="#bib204-2">ܪܰܒܐ</placeName>
                <placeName xml:id="name204-6"
                           xml:lang="ar"
                           source="#bib204-3"
-                          corresp="#name204-5 #name204-7">الزاب الكبير</placeName>
+                          corresp="#name204-7">الزاب الكبير</placeName>
                <placeName xml:id="name204-7"
                           xml:lang="en"
                           source="#bib204-4"
-                          corresp="#name204-5 #name204-6">Great Zab</placeName>
+                          corresp="#name204-6">Great Zab</placeName>
                <desc xml:id="abstract-en-204"/>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/204</idno>
                <idno type="URI">http://pleiades.stoa.org/places/894183</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Great_Zab</idno>

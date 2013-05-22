@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib568-3"
-                          corresp="#name568-3 #name568-4">Marj al-ʿAyn</placeName>
+                          corresp="#name568-5">Marj al-ʿAyn</placeName>
                <placeName xml:id="name568-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܡܪܓܐ ܕܥܝܢܐ</placeName>
-               <placeName xml:id="name568-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib568-1"
-                          corresp="#name568-4 #name568-1">ܡܰܪܓܐ ܕܥܰܝܢܳܐ</placeName>
-               <placeName xml:id="name568-4"
+               <placeName xml:id="name568-3" xml:lang="syr-Syrj" source="#bib568-1">ܡܰܪܓ</placeName>
+               <placeName xml:id="name568-4" xml:lang="syr-Syrj" source="#bib568-1">ܕܥܰܝܢܳܐ</placeName>
+               <placeName xml:id="name568-5"
                           xml:lang="ar"
                           source="#bib568-2"
-                          corresp="#name568-3 #name568-1">مرج العين</placeName>
+                          corresp="#name568-1">مرج العين</placeName>
                <desc xml:id="abstract-en-568"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/568</idno>

@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib444-3"
-                          corresp="#name444-3 #name444-4">Kafr Ḥawwār</placeName>
+                          corresp="#name444-5">Kafr Ḥawwār</placeName>
                <placeName xml:id="name444-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܟܦܪ ܚܘܐܪ</placeName>
-               <placeName xml:id="name444-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib444-1"
-                          corresp="#name444-4 #name444-1">ܟܦܰܪ ܚܰܘܐܰܪ</placeName>
-               <placeName xml:id="name444-4"
+               <placeName xml:id="name444-3" xml:lang="syr-Syrj" source="#bib444-1">ܟܦܰ</placeName>
+               <placeName xml:id="name444-4" xml:lang="syr-Syrj" source="#bib444-1">ܚܰܘܐܰܪ</placeName>
+               <placeName xml:id="name444-5"
                           xml:lang="ar"
                           source="#bib444-2"
-                          corresp="#name444-3 #name444-1">كفر حوار</placeName>
+                          corresp="#name444-1">كفر حوار</placeName>
                <desc xml:id="abstract-en-444"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib444-1">ܡܶܢ ܩܘܪ̈ܝܳܐ ܕܰܛܪܺܝܦܘܠܝܣ ܕܕܰܪܡܣܘܩ. </quote>

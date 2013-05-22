@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,17 @@
                <placeName xml:id="name377-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܩܘܪܝܐܩܘܣ</placeName>
-               <placeName xml:id="name377-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib377-1"
-                          corresp="#name377-4 #name377-5">ܕܰܝܪܐ ܕܡܳܪܝ ܩܘܽܪܝܰܐܩܘܣ</placeName>
-               <placeName xml:id="name377-4"
+               <placeName xml:id="name377-3" xml:lang="syr-Syrj" source="#bib377-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name377-4" xml:lang="syr-Syrj" source="#bib377-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name377-5" xml:lang="syr-Syrj" source="#bib377-1">ܩܘܽܪܝܰܐܩܘܣ</placeName>
+               <placeName xml:id="name377-6"
                           xml:lang="ar"
                           source="#bib377-2"
-                          corresp="#name377-3 #name377-5">دير مار قرياقس</placeName>
-               <placeName xml:id="name377-5"
+                          corresp="#name377-7">دير مار قرياقس</placeName>
+               <placeName xml:id="name377-7"
                           xml:lang="en"
                           source="#bib377-3"
-                          corresp="#name377-3 #name377-4">Quryaqos Monastery</placeName>
+                          corresp="#name377-6">Quryaqos Monastery</placeName>
                <desc xml:id="abstract-en-377"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib377-1">ܒܩܘܪܒܳܐ ܕܙܰܪܓܰܠ ܩܪܝܬܳܐ ܒܒܶܝܬ ܫܺܐܪ̈ܝܐ. ܡܰܪܕܶܐ ܬܪܶܝܢ ܝܰܘܡ̈ܝܢ ܡܶܢ ܐܳܡܝ̣ܕ ܠܓܰܪܒܰܝ ܡܰܕܢܚܐ. ܗܘܳܐ ܟܽܘܪܣܝܐ ܕܡܰܪܥܝܬܐ ܡܶܢ ܪܝܫ ܕܳܪܐ ܕܚܰܡܫܥܣܪ ܥܕܰܡܐ ܠܪܝܫ ܕܳܪܐ ܕܩܳܐܡ. ܐܶܣܬܦܰܩ ܡܶܢ ܕܰܝܪ̈ܝܐ ܡܶܢ ܡܶܬܚܐ ܕܬܰܪܬܶܝܢ ܫܢ̈ܝܢ ܘܥܰܡܝ̣ܪ.</quote>

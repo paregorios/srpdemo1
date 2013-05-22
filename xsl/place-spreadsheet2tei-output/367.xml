@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,11 @@
                <placeName xml:id="name367-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܨܠܝܒܐ</placeName>
-               <placeName xml:id="name367-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib367-1"
-                          corresp="#name367-4 #name367-5">ܕܰܝܪܳܐ ܕܰܨܠܝܒܐ</placeName>
-               <placeName xml:id="name367-4"
-                          xml:lang="ar"
-                          source="#bib367-2"
-                          corresp="#name367-3 #name367-5">دير الصليب</placeName>
-               <placeName xml:id="name367-5"
-                          xml:lang="en"
-                          source="#bib367-3"
-                          corresp="#name367-3 #name367-4">Cross, Monastery of the</placeName>
+               <placeName xml:id="name367-3" xml:lang="syr-Syrj" source="#bib367-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name367-4" xml:lang="syr-Syrj" source="#bib367-1">ܕܰܨܠܝܒܐ</placeName>
+               <placeName xml:id="name367-5" xml:lang="ar" source="#bib367-2">دير الصليب</placeName>
+               <placeName xml:id="name367-6" xml:lang="en" source="#bib367-3">Cross</placeName>
+               <placeName xml:id="name367-7" xml:lang="en" source="#bib367-3">Monastery of the</placeName>
                <desc xml:id="abstract-en-367"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib367-1">ܕܺܝܕܺܝܥ ܝܰܘܡܳܢ ܕܰܝܪܐ ܕܡܰܟ݂ܰܪ ܗ̄ ܘܰܐܕܺܝ ܟܽܘܪܕܳܐܝܬ. ܕܰܝܪܳܐ ܙܥܘܽܪܐ ܒܓܶܒ ܕܶܦܢܗ ܩܪܺܝܬܐ ܒܐܽܘܪܚܐ ܕܚܰܣܢ ܟܺܐܦܐ. ܐܶܬܒܢܺܝ ܗܰܝܟܠܗ ܒܰܬܚܘ̈ܡܰܝ ܫܢܰܬ  770  ܚܪܶܒ ܒܰܩܪܳܒܐ ܕܰܥܒܰܪ ܒܩܶܛܠܐ ܕܐܰܚܪܳܝܐ ܕܕܰܝܪ̈ܳܝܰܘܗܝ ܩܳܡܘ ܡܢܗ ܬܠܬܐ ܐܶܦܝܣܩܘ̈ܦܐ.</quote>

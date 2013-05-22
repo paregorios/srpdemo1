@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,17 @@
                <placeName xml:id="name349-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܓܘܒܐ ܒܪܝܐ</placeName>
-               <placeName xml:id="name349-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib349-1"
-                          corresp="#name349-4 #name349-5">ܕܰܝܪܳܐ ܕܓܘܒܳܐ ܒܰܪܳܝܐ</placeName>
-               <placeName xml:id="name349-4"
+               <placeName xml:id="name349-3" xml:lang="syr-Syrj" source="#bib349-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name349-4" xml:lang="syr-Syrj" source="#bib349-1">ܕܓܘܒܳ</placeName>
+               <placeName xml:id="name349-5" xml:lang="syr-Syrj" source="#bib349-1">ܒܰܪܳܝܐ</placeName>
+               <placeName xml:id="name349-6"
                           xml:lang="ar"
                           source="#bib349-2"
-                          corresp="#name349-3 #name349-5">ديرالجبّ الخارجي البراني</placeName>
-               <placeName xml:id="name349-5"
+                          corresp="#name349-7">ديرالجبّ الخارجي البراني</placeName>
+               <placeName xml:id="name349-7"
                           xml:lang="en"
                           source="#bib349-3"
-                          corresp="#name349-3 #name349-4">Gubba Baraya Monastery</placeName>
+                          corresp="#name349-6">Gubba Baraya Monastery</placeName>
                <desc xml:id="abstract-en-349"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib349-1">ܒܡܰܕܒܪܳܐ ܕܰܦܪܳܬ ܒܶܝܬ ܚܳܠܳܒ ܠܡܰܒܘܓ ܐܶܫܬܰܬܐܣ ܒܚܰܪܬܗ ܕܕܳܪܳܐ ܚܡܺܝܫܳܝܳܐ ܘܰܒܪܺܝܫܗ ܕܰܫܬܝܺܬܳܝܐ ܘܐܶܬܦܣܶܩ ܛܶܒܗ ܒܡܶܨܥܳܝ̈ܬܗ ܕܰܬܫܝܺܥܳܝܐ  ܐܰܦܶܩ ܐܰܪܒܥܳܐ ܦܰܛܪܝܰܪ̈ܟܐ ܘܰܬܠܳܬܐ ܐܶܦܝ̈ܣܩܘܦܐ.</quote>

@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,52 +63,60 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-345" type="">
-               <placeName xml:id="name345-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Paksimeṭ</placeName>
+            <place xml:id="place-345" type="monastery">
+               <placeName xml:id="name345-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib345-1">Paksimeṭ</placeName>
                <placeName xml:id="name345-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܦܩܝܣܡܐܛ</placeName>
                <placeName xml:id="name345-3"
                           xml:lang="syr-Syrj"
-                          source="#bib345-1"
+                          source="#bib345-2"
                           corresp="#name345-4 #name345-5">ܦܰܩܝܣܡܰܐܛ</placeName>
                <placeName xml:id="name345-4"
                           xml:lang="ar"
-                          source="#bib345-2"
+                          source="#bib345-3"
                           corresp="#name345-3 #name345-5">باقسماط او فقسماط</placeName>
                <placeName xml:id="name345-5"
                           xml:lang="en"
-                          source="#bib345-3"
+                          source="#bib345-4"
                           corresp="#name345-3 #name345-4">Baqismāt (or Phaqismāt) Monastery</placeName>
                <desc xml:id="abstract-en-345"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib345-1">ܒܳܣܝܣ ܕܰܒܩܝܠܝܺܩܝܐ. ܥܡܰܪ ܒܗ ܝܘܚܰܢܢ ܕܝ̄ܒ ܫܢܰܬ  1108  ܘܐܰܘܩܕܽܘܗܝ ܦܳܠܚ̈ܐ ܡܶܨܪ̈ܝܐ ܬܠܳܬ ܙܰܒܢ̈ܝܢ ܒܶܝܬ ܫܢܰܬ  1226  -   1279  ܘܩܰܛܠܗ ܒܗ 25  ܕܰܝܪ̈ܝܐ ܘܠܗ ܡܶܬܒܰܝܬܶܐ ܓܪܝܺܓܘܪܺܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܣܝܺܣ.</quote>
+                  <quote source="#bib345-2">ܒܳܣܝܣ ܕܰܒܩܝܠܝܺܩܝܐ. ܥܡܰܪ ܒܗ ܝܘܚܰܢܢ ܕܝ̄ܒ ܫܢܰܬ  1108  ܘܐܰܘܩܕܽܘܗܝ ܦܳܠܚ̈ܐ ܡܶܨܪ̈ܝܐ ܬܠܳܬ ܙܰܒܢ̈ܝܢ ܒܶܝܬ ܫܢܰܬ  1226  -   1279  ܘܩܰܛܠܗ ܒܗ 25  ܕܰܝܪ̈ܝܐ ܘܠܗ ܡܶܬܒܰܝܬܶܐ ܓܪܝܺܓܘܪܺܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܣܝܺܣ.</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib345-2">في سيس بقيليقية، نزل به يوحنا الثاني عشر عام 1208 واحرقه الجنود المصريون ثلاثاً بين سنة 1266-1279 وقتلوا فيه خمسة وعشرين راهباً (التاريخ المدني لابن العبري ص 523 و 531 و 542 ؟ واليه ينسب غريغوريوس مطران سيس حول 1290</quote>
+                  <quote source="#bib345-3">في سيس بقيليقية، نزل به يوحنا الثاني عشر عام 1208 واحرقه الجنود المصريون ثلاثاً بين سنة 1266-1279 وقتلوا فيه خمسة وعشرين راهباً (التاريخ المدني لابن العبري ص 523 و 531 و 542 ؟ واليه ينسب غريغوريوس مطران سيس حول 1290</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib345-3">is situated in Sīs, Cilicia. Patriarch John XII resided there in 1108. Between 1266 and 1279, it was burned three times by Egyptian troops, who also killed twenty-five monks. (See Bar Hebraeus, Chronography, pp. 523, 531, 542). Gregorius, metropolitan of Sīs, may have belonged to this monastery around 1290.</quote>
+                  <quote source="#bib345-4">is situated in Sīs, Cilicia. Patriarch John XII resided there in 1108. Between 1266 and 1279, it was burned three times by Egyptian troops, who also killed twenty-five monks. (See Bar Hebraeus, Chronography, pp. 523, 531, 542). Gregorius, metropolitan of Sīs, may have belonged to this monastery around 1290.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/345</idno>
                <bibl xml:id="bib345-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="pp">35, 444</citedRange>
+               </bibl>
+               <bibl xml:id="bib345-2">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">543</citedRange>
                </bibl>
-               <bibl xml:id="bib345-2">
+               <bibl xml:id="bib345-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">509</citedRange>
                </bibl>
-               <bibl xml:id="bib345-3">
+               <bibl xml:id="bib345-4">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">561</citedRange>

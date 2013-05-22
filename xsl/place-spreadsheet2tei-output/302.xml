@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                <placeName xml:id="name302-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܫܐܪ̈ܝܐ</placeName>
-               <placeName xml:id="name302-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib302-1"
-                          corresp="#name302-4 #name302-5">ܒܶܝܬ ܫܶܐܪ̈ܺܝܐ</placeName>
-               <placeName xml:id="name302-4"
+               <placeName xml:id="name302-3" xml:lang="syr-Syrj" source="#bib302-1">ܒܶܝ</placeName>
+               <placeName xml:id="name302-4" xml:lang="syr-Syrj" source="#bib302-1">ܫܶܐܪ̈ܺܝܐ</placeName>
+               <placeName xml:id="name302-5"
                           xml:lang="ar"
                           source="#bib302-2"
-                          corresp="#name302-3 #name302-5">بشيريّة وتعرّف باللام</placeName>
-               <placeName xml:id="name302-5"
+                          corresp="#name302-6">بشيريّة وتعرّف باللام</placeName>
+               <placeName xml:id="name302-6"
                           xml:lang="en"
                           source="#bib302-3"
-                          corresp="#name302-3 #name302-4">Bushayriyya</placeName>
+                          corresp="#name302-5">Bushayriyya</placeName>
                <desc xml:id="abstract-en-302"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib302-1">ܘܝܰܘܡܳܢ ܡܶܫܬܰܡܗܐ ܒܶܫܶܝܪܺܝܶܗ ܠܓܰܪܒܰܝ ܐܳܡܝܕ. ܡܰܪܕܶܐ ܬܪܝܢ ܝܰܘܡ̈ܝܢ.</quote>

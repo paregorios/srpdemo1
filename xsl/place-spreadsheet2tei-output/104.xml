@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">JERUSALEM</title>
+            <title xml:lang="en">Jerusalem</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,32 +59,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-104" type="">
+            <place xml:id="place-104" type="settlement">
                <placeName xml:id="name104-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib104-1">JERUSALEM</placeName>
+                          source="#bib104-1 #bib104-4 #bib104-5"
+                          corresp="#name104-3 #name104-4">Jerusalem</placeName>
                <placeName xml:id="name104-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܐܘܪܫܠܡ</placeName>
                <placeName xml:id="name104-3"
                           xml:lang="syr-Syrj"
                           source="#bib104-2"
-                          corresp="#name104-4 #name104-5">ܐܘܪܫܠܶܡ</placeName>
+                          corresp="#name104-4 #name104-1">ܐܘܪܫܠܶܡ</placeName>
                <placeName xml:id="name104-4"
                           xml:lang="ar"
                           source="#bib104-3"
-                          corresp="#name104-3 #name104-5">اورشليم</placeName>
-               <placeName xml:id="name104-5"
-                          xml:lang="en"
-                          source="#bib104-4 #bib104-5"
-                          corresp="#name104-3 #name104-4">Jerusalem</placeName>
+                          corresp="#name104-3 #name104-1">اورشليم</placeName>
                <desc xml:id="abstract-en-104"/>
                <desc xml:lang="en">
                   <quote source="#bib104-1">301. Jerusalem</quote>

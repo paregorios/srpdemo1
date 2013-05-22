@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">ARABIA</title>
+            <title xml:lang="en">Arabia</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,18 +59,17 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-12" type="">
+            <place xml:id="place-12" type="province">
                <placeName xml:id="name12-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib12-1">ARABIA</placeName>
-               <placeName xml:id="name12-2" xml:lang="en" source="#bib12-2">Arabia</placeName>
+                          source="#bib12-1 #bib12-2">Arabia</placeName>
                <desc xml:id="abstract-en-12"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/12</idno>

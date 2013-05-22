@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,16 +74,18 @@
                <placeName xml:id="name296-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib296-1"
-                          corresp="#name296-3 #name296-4">ܒܐܪܘܡܐܢܗ ܐܘ ܪܘܡܐܢܗ</placeName>
-               <placeName xml:id="name296-3"
+                          corresp="#name296-6 #name296-7">ܒܐܪܘܡܐܢܗ ܐܘ ܪܘܡܐܢܗ</placeName>
+               <placeName xml:id="name296-3" xml:lang="syr-Syrj" source="#bib296-1">ܒܐܪܘܡܐܢ</placeName>
+               <placeName xml:id="name296-4" xml:lang="syr-Syrj" source="#bib296-1">ܐ</placeName>
+               <placeName xml:id="name296-5" xml:lang="syr-Syrj" source="#bib296-1">ܪܘܡܐܢܗ</placeName>
+               <placeName xml:id="name296-6"
                           xml:lang="ar"
                           source="#bib296-2"
-                          corresp="#name296-2 #name296-4">بارومانة او رومانة</placeName>
-               <placeName xml:id="name296-4"
+                          corresp="#name296-2 #name296-7">بارومانة او رومانة</placeName>
+               <placeName xml:id="name296-7"
                           xml:lang="en"
                           source="#bib296-3"
-                          corresp="#name296-2 #name296-3">Barumana (or Rumana)</placeName>
+                          corresp="#name296-2 #name296-6">Barumana (or Rumana)</placeName>
                <desc xml:id="abstract-en-296"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib296-1">ܡܕܝܢܬܳܘܢܝܬܐ ܕܒܐܽܘܚܕܳܢܐ ܕܓܰܪܓܰܪ ܚܪܝܒܐ.</quote>

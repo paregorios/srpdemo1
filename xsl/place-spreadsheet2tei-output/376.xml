@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,18 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib376-3"
-                          corresp="#name376-3 #name376-4">Qidr (or Qidar) Monastery</placeName>
+                          corresp="#name376-7">Qidr (or Qidar) Monastery</placeName>
                <placeName xml:id="name376-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܕܪ ܐܘ ܩܝܕܪ</placeName>
-               <placeName xml:id="name376-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib376-1"
-                          corresp="#name376-4 #name376-1">ܕܰܝܪܳܐ ܕܩܕܪ ܐܰܘ ܩܝܕܪ</placeName>
-               <placeName xml:id="name376-4"
+               <placeName xml:id="name376-3" xml:lang="syr-Syrj" source="#bib376-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name376-4" xml:lang="syr-Syrj" source="#bib376-1">ܕܩܕ</placeName>
+               <placeName xml:id="name376-5" xml:lang="syr-Syrj" source="#bib376-1">ܐܰ</placeName>
+               <placeName xml:id="name376-6" xml:lang="syr-Syrj" source="#bib376-1">ܩܝܕܪ</placeName>
+               <placeName xml:id="name376-7"
                           xml:lang="ar"
                           source="#bib376-2"
-                          corresp="#name376-3 #name376-1">دير قدر او قيدار</placeName>
+                          corresp="#name376-1">دير قدر او قيدار</placeName>
                <desc xml:id="abstract-en-376"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib376-1">ܐܰܘ ܩܝܕܪ ܡܶܢ ܕܰܝܪ̈ܳܬܐ ܕܪܝܫ ܥܰܝܢܐ ܕܟܝܪ ܒܡܰܐܬܳܐ ܫܬܺܝܬܳܝܬܐ ܘܡܶܢܗ ܗܘܳܐ ܡܰܟܬܒܳܢܐ ܩܰܫܝܫܐ ܬܳܐܘܡܐ ܫܢܰܬ  636  ܘܐܰܫܩܶܠܘ ܕܰܝܪ̈ܳܝܘܗܝ ܠܕܰܝܪܐ ܕܥܰܡܘܕܐ.</quote>

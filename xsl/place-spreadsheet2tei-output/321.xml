@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -70,19 +73,21 @@
                <placeName xml:id="name321-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib321-3"
-                          corresp="#name321-3 #name321-4">Jazira, Upper (Diyār Rabiʿa)</placeName>
+                          corresp="#name321-8">Jazira, Upper (Diyār Rabiʿa)</placeName>
                <placeName xml:id="name321-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܓܙܪܬܐ ܥܠܝܬܐ ܐܘ ܐܬܪ̈ܘܬܐ ܕܪܒܝܥܗ̇</placeName>
-               <placeName xml:id="name321-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib321-1"
-                          corresp="#name321-4 #name321-1">ܓܳܙܰܪܬܐ ܥܶܠܳܝܬܳܐ ܐܰܘ ܐܰܬܪ̈ܘܬܳܐ ܕܪܒܝܥܗ̇</placeName>
-               <placeName xml:id="name321-4"
+               <placeName xml:id="name321-3" xml:lang="syr-Syrj" source="#bib321-1">ܓܳܙܰܪܬ</placeName>
+               <placeName xml:id="name321-4" xml:lang="syr-Syrj" source="#bib321-1">ܥܶܠܳܝܬܳ</placeName>
+               <placeName xml:id="name321-5" xml:lang="syr-Syrj" source="#bib321-1">ܐܰ</placeName>
+               <placeName xml:id="name321-6" xml:lang="syr-Syrj" source="#bib321-1">ܐܰܬܪ̈ܘܬܳ</placeName>
+               <placeName xml:id="name321-7" xml:lang="syr-Syrj" source="#bib321-1">ܕܪܒܝܥܗ̇</placeName>
+               <placeName xml:id="name321-8"
                           xml:lang="ar"
                           source="#bib321-2"
-                          corresp="#name321-3 #name321-1">الجزيرة العليا او ديار ربيعة</placeName>
+                          corresp="#name321-1">الجزيرة العليا او ديار ربيعة</placeName>
+               <placeName xml:id="name321-9" xml:lang="en" source="#bib321-3">Jazira</placeName>
+               <placeName xml:id="name321-10" xml:lang="en" source="#bib321-3">Upper (Diyār Rabiʿa)</placeName>
                <desc xml:id="abstract-en-321"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib321-1">ܒܝܬ ܇ ܒܘܪܐ ܘܕܶܩܠܰܬ ܐܝܬܰܝܗܘܢ ܡܰܥܡܪ̈ܶܐ ܕܬܰܓܠܒܳܝ̈ܐ ܛܘܗܡܳܐ ܪܰܒܐ ܕܰܐܪ̈ܰܐܒܳܝܐ ܘܐܺܝܬܰܝܗܘܽܢ ܗܘܰܘ ܡܫܝܚ̈ܝܶܐ ܣܘܪ̈ܝܳܝܐ ܐܰܪ̈ܬܘܕܘܟܣܽܘ ܘܩܰܘܺܝܘ ܡܫܝܚܝ̈ܐ ܥܕܰܡܳܐ ܠܡܰܐܬܐ ܥܣܝܪܳܝܬܳܐ ܘܡܶܢ ܛܒ̈ܝܒܶܐ ܕܓܰܒܪ̈ܶܝܗ̇ ܓܰܝܐܬ ܒܪ ܓܘܬ ܕܺܝܕܺܝܥ ܐܰܟܛܠ ܦܘܺܐܝܛܳܐ ܕܢܰܦܝܩ ܫܡܗ ܚܕܳܪ̈ܰܝ ܫܢܰܬ  710  ܐܬܓܰܙܝܰܬ ܡܢ ܐܢܳܫ̈ܝܗ̇ ܒܕܳܪܳܐ ܕܐܰܪܒܰܥܣܪ ܐܶܬܝܰܬܒܬ ܚܕܳܪ̈ܰܝ ܫܢܰܬ  1921  ܘܐܶܬܚ̈ܕܰܬܝ ܒܗ̇ ܡܕܝܢ̈ܬܳܐ ܕܚܰܣܝܟܐ ܘܒܶܝܬܙ̈ܠܐ ܘܪܝܫ ܥܰܝܢܳܐ ܘܫܰܪܝ ܪܳܕܐ ܒܳܗ̇ ܫܘܽܟܠܠܐ.</quote>

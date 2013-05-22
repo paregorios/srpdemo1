@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,17 @@
                <placeName xml:id="name357-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܙܟܝ</placeName>
-               <placeName xml:id="name357-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib357-1"
-                          corresp="#name357-4 #name357-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܙܰܟܰܝ</placeName>
-               <placeName xml:id="name357-4"
+               <placeName xml:id="name357-3" xml:lang="syr-Syrj" source="#bib357-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name357-4" xml:lang="syr-Syrj" source="#bib357-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name357-5" xml:lang="syr-Syrj" source="#bib357-1">ܙܰܟܰܝ</placeName>
+               <placeName xml:id="name357-6"
                           xml:lang="ar"
                           source="#bib357-2"
-                          corresp="#name357-3 #name357-5">دير مار زكّى</placeName>
-               <placeName xml:id="name357-5"
+                          corresp="#name357-7">دير مار زكّى</placeName>
+               <placeName xml:id="name357-7"
                           xml:lang="en"
                           source="#bib357-3"
-                          corresp="#name357-3 #name357-4">Zakka Monastery</placeName>
+                          corresp="#name357-6">Zakka Monastery</placeName>
                <desc xml:id="abstract-en-357"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib357-1">ܘܡܶܫܬܰܡܰܗ ܬܘܒ ܕܰܝܪܳܐ ܕܡܳܪܬܳܐ ܒܬܘܠܬܐ. ܒܰܝܢܳܬ ܛܘܪ̈ܐ ܕܓܰܪܓܰܪ ܐܶܫܬܰܟܠܰܠ ܫܢܰܬ  1588  ܘܰܢܦܰܩ ܡܶܢܗ ܬܪܶܝܢ ܐܶܦܝܣܩܘ̈ܦܐ.</quote>

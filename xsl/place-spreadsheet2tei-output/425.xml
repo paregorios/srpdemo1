@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,13 +78,15 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib425-3"
-                          corresp="#name425-2 #name425-3">Quṣur (al-Kawliyya)</placeName>
+                          corresp="#name425-2 #name425-6">Quṣur (al-Kawliyya)</placeName>
                <placeName xml:id="name425-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib425-1"
-                          corresp="#name425-3 #name425-1">ܩܨܪ̈ܐ ܐܘ ܩܨܘܪ</placeName>
-               <placeName xml:id="name425-3"
+                          corresp="#name425-6 #name425-1">ܩܨܪ̈ܐ ܐܘ ܩܨܘܪ</placeName>
+               <placeName xml:id="name425-3" xml:lang="syr-Syrj" source="#bib425-1">ܩܨܪ̈</placeName>
+               <placeName xml:id="name425-4" xml:lang="syr-Syrj" source="#bib425-1">ܐ</placeName>
+               <placeName xml:id="name425-5" xml:lang="syr-Syrj" source="#bib425-1">ܩܨܘܪ</placeName>
+               <placeName xml:id="name425-6"
                           xml:lang="ar"
                           source="#bib425-2"
                           corresp="#name425-2 #name425-1">قصور ويقال لها الكولية</placeName>

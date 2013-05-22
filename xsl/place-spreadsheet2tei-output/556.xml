@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,19 +70,19 @@
                <placeName xml:id="name556-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܝܘܚܢܢ ܛܝܝܐ</placeName>
-               <placeName xml:id="name556-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib556-1"
-                          corresp="#name556-4 #name556-5">ܕܰܝܪܐ ܕܡܳܪܝ ܝܘܚܰܢܢ ܛܰܝܳܝܐ</placeName>
-               <placeName xml:id="name556-4"
+               <placeName xml:id="name556-3" xml:lang="syr-Syrj" source="#bib556-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name556-4" xml:lang="syr-Syrj" source="#bib556-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name556-5" xml:lang="syr-Syrj" source="#bib556-1">ܝܘܚܰܢ</placeName>
+               <placeName xml:id="name556-6" xml:lang="syr-Syrj" source="#bib556-1">ܛܰܝܳܝܐ</placeName>
+               <placeName xml:id="name556-7"
                           xml:lang="ar"
                           source="#bib556-2"
-                          corresp="#name556-3 #name556-5">دير يوحنا الطائي</placeName>
-               <placeName xml:id="name556-5"
+                          corresp="#name556-8">دير يوحنا الطائي</placeName>
+               <placeName xml:id="name556-8"
                           xml:lang="en"
                           source="#bib556-3"
-                          corresp="#name556-3 #name556-4">Monastery of St. John Ṭayoyo</placeName>
-               <placeName xml:id="name556-6" xml:lang="en" source="#bib556-4">monastery of John the Arab</placeName>
+                          corresp="#name556-7">Monastery of St. John Ṭayoyo</placeName>
+               <placeName xml:id="name556-9" xml:lang="en" source="#bib556-4">monastery of John the Arab</placeName>
                <desc xml:id="abstract-en-556"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/556</idno>

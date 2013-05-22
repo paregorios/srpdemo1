@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,15 @@
                <placeName xml:id="name353-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܕܢܝܐܝܠ ܕܓܠܫ ܥܢܘܝܐ 439</placeName>
-               <placeName xml:id="name353-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib353-1"
-                          corresp="#name353-4 #name353-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܕܳܢܝܐܝܠ ܕܓܳܠܫ ܥܢܘܳܝܳܐ 439</placeName>
-               <placeName xml:id="name353-4"
-                          xml:lang="ar"
-                          source="#bib353-2"
-                          corresp="#name353-3 #name353-5">دير مار دانيال الجلشي الناسك 439+</placeName>
-               <placeName xml:id="name353-5"
-                          xml:lang="en"
-                          source="#bib353-3"
-                          corresp="#name353-3 #name353-4">Daniel the Jalshian ascetic (d. 439), Monastery of</placeName>
+               <placeName xml:id="name353-3" xml:lang="syr-Syrj" source="#bib353-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name353-4" xml:lang="syr-Syrj" source="#bib353-1">ܕܡܳܪ</placeName>
+               <placeName xml:id="name353-5" xml:lang="syr-Syrj" source="#bib353-1">ܕܳܢܝܐܝ</placeName>
+               <placeName xml:id="name353-6" xml:lang="syr-Syrj" source="#bib353-1">ܕܓܳܠ</placeName>
+               <placeName xml:id="name353-7" xml:lang="syr-Syrj" source="#bib353-1">ܥܢܘܳܝܳ</placeName>
+               <placeName xml:id="name353-8" xml:lang="syr-Syrj" source="#bib353-1">439</placeName>
+               <placeName xml:id="name353-9" xml:lang="ar" source="#bib353-2">دير مار دانيال الجلشي الناسك 439+</placeName>
+               <placeName xml:id="name353-10" xml:lang="en" source="#bib353-3">Daniel the Jalshian ascetic (d. 439)</placeName>
+               <placeName xml:id="name353-11" xml:lang="en" source="#bib353-3">Monastery of</placeName>
                <desc xml:id="abstract-en-353"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib353-1">ܒܛܘܪܳܐ ܕܡܬܝܢܝܗ ܘܰܒܓܰܪܒܰܝ ܡܰܪܕܝܢ ܡܰܪܕܶܐ ܡܰܫܩܠܐ ܕܚܰܕ ܝܰܘܡܐ ܡܶܢܗ̇ ܫܰܟܠܠܗ ܝܘܚܰܢܢ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܡܰܪܕܝܢ ܗܘܐ ܫܢܰܬ   1230  ܘܗܐ ܠܗܫܐ ܒܶܢܝ̈ܢܰܘܗܝ ܪܰܘܪܒ̈ܐ ܩܰܝܳܡ̈ܝܢ.</quote>

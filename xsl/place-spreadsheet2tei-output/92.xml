@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,30 +63,28 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-92" type="">
+            <place xml:id="place-92" type="settlement">
                <placeName xml:id="name92-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib92-1">Hasankeyf</placeName>
                <placeName xml:id="name92-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܚܣܢ ܟܐܦܐ</placeName>
-               <placeName xml:id="name92-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib92-2"
-                          corresp="#name92-4 #name92-5">ܚܰܣܢ ܟܺܐܦܐ</placeName>
-               <placeName xml:id="name92-4"
+               <placeName xml:id="name92-3" xml:lang="syr-Syrj" source="#bib92-2">ܚܰܣ</placeName>
+               <placeName xml:id="name92-4" xml:lang="syr-Syrj" source="#bib92-2">ܟܺܐܦܐ</placeName>
+               <placeName xml:id="name92-5"
                           xml:lang="ar"
                           source="#bib92-3"
-                          corresp="#name92-3 #name92-5">حصن كيفا</placeName>
-               <placeName xml:id="name92-5"
+                          corresp="#name92-6">حصن كيفا</placeName>
+               <placeName xml:id="name92-6"
                           xml:lang="en"
                           source="#bib92-4"
-                          corresp="#name92-3 #name92-4">Ḥiṣn Kifa</placeName>
+                          corresp="#name92-5">Ḥiṣn Kifa</placeName>
                <desc xml:id="abstract-en-92"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib92-2">ܡܕܝܢܬܐ ܘܩܶܠܥܳܐ ܪܰܒܬܳܐ ܕܚܳܝܪܐ ܠܕܶܩܠܰܬ ܒܶܝܬ ܐܳܡܝܺܕ ܠܰܓܙܺܝܪܳܬܐ ܕܒܰܪ ܥܽܘܡܰܪ. ܗܘܳܬ ܒܰܙܒܰܢ ܐܶܡܳܐ ܕܰܡܕܝܢ̈ܬܳܐ ܠܚܰܕ ܦܶܪܥܐ ܕܡܰܠܟܘܬܳܐ ܐܰܝܘܒܳܝܬܐ ܥܕܰܡܳܐ ܠܪܺܝܫ ܡܰܐܬܳܐ ܥܣܝܪܳܝܬܳܐ. ܘܝܰܘܡܳܢ ܐܝܬܶܝܗ̇ ܩܪܺܝܬܳܐ.</quote>

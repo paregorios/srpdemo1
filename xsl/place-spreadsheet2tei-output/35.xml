@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">BETH LAPAṬ</title>
+            <title xml:lang="en">Beth Lapaṭ</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,18 +59,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-35" type="">
+            <place xml:id="place-35" type="settlement">
                <placeName xml:id="name35-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib35-1">BETH LAPAṬ</placeName>
-               <placeName xml:id="name35-2" xml:lang="en" source="#bib35-1">GONDESHAPUR</placeName>
+                          source="#bib35-1">Beth Lapaṭ</placeName>
+               <placeName xml:id="name35-2" xml:lang="en" source="#bib35-1">Gondeshapur</placeName>
                <placeName xml:id="name35-3" xml:lang="en" source="#bib35-2">Bet Lapat</placeName>
                <desc xml:id="abstract-en-35"/>
                <desc xml:lang="en">

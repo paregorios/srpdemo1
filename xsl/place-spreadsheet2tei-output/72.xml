@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,30 +67,30 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-72" type="">
+            <place xml:id="place-72" type="monastery">
                <placeName xml:id="name72-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib72-1">Dayro d-Mor Yaʿqub</placeName>
                <placeName xml:id="name72-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܝܥܩܘܒ ܚܒܝܫܝܐ</placeName>
-               <placeName xml:id="name72-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib72-2"
-                          corresp="#name72-4 #name72-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܝܰܥܩܘܒ ܚܒܝܫܝܐ</placeName>
-               <placeName xml:id="name72-4"
+               <placeName xml:id="name72-3" xml:lang="syr-Syrj" source="#bib72-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name72-4" xml:lang="syr-Syrj" source="#bib72-2">ܕܡܳܪ</placeName>
+               <placeName xml:id="name72-5" xml:lang="syr-Syrj" source="#bib72-2">ܝܰܥܩܘ</placeName>
+               <placeName xml:id="name72-6" xml:lang="syr-Syrj" source="#bib72-2">ܚܒܝܫܝܐ</placeName>
+               <placeName xml:id="name72-7"
                           xml:lang="ar"
                           source="#bib72-3"
-                          corresp="#name72-3 #name72-5">دير مار يعقوب الحبيس</placeName>
-               <placeName xml:id="name72-5"
+                          corresp="#name72-8">دير مار يعقوب الحبيس</placeName>
+               <placeName xml:id="name72-8"
                           xml:lang="en"
                           source="#bib72-4"
-                          corresp="#name72-3 #name72-4">Jacob the Solitary Monastery</placeName>
+                          corresp="#name72-7">Jacob the Solitary Monastery</placeName>
                <desc xml:id="abstract-en-72"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib72-2">ܒܓܶܢܒ ܨܰܠܚ ܩܪܝܬܐ ܕܰܒܛܘܪܥܰܒܕܝܢ. ܕܰܝܪܐ ܗܘ ܪܰܒܐ ܒܢܳܝܗܝ ܥܢܘܳܝܐ ܡܳܪܝ ܝܰܥܩܘܒ ܩܕܳܡ ܫܢܰܬ  419  ܘܐܶܬܒܢܝ ܗܰܝܟܠܗ ܚܕܳܪ  770 . ܗܘܐ ܟܘܪܣܝܳܐ ܕܦܰܛܪܝܰܪܟܐ ܕܛܘܪܥܰܒܕܝܢ ܫܢܰܬ  1365  ܐܶܬܢܰܦܰܩܘ ܒܗ ܬܪܶܝܢ ܦܰܛܪܝܰܪ̈ܟܶܐ ܘܚܰܕ ܡܰܦܪܝܳܢܐ ܘܫܰܒܥܐ ܐܶܦܝܣ̈ܩܘܦܶܐ ܘܰܥܕܰܡܐ ܠܝܰܘܡܢ ܥܰܡܝܪ.</quote>

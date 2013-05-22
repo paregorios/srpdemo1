@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,31 +59,28 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-563" type="">
+            <place xml:id="place-563" type="mountain">
                <placeName xml:id="name563-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib563-3"
-                          corresp="#name563-3 #name563-4">Mount Sinai</placeName>
+                          corresp="#name563-5">Mount Sinai</placeName>
                <placeName xml:id="name563-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܛܘܪܐ ܕܣܝܢܝ</placeName>
-               <placeName xml:id="name563-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib563-1"
-                          corresp="#name563-4 #name563-1">ܛܘܪܳܐ ܕܣܝܢܰܝ</placeName>
-               <placeName xml:id="name563-4"
+               <placeName xml:id="name563-3" xml:lang="syr-Syrj" source="#bib563-1">ܛܘܪܳ</placeName>
+               <placeName xml:id="name563-4" xml:lang="syr-Syrj" source="#bib563-1">ܕܣܝܢܰܝ</placeName>
+               <placeName xml:id="name563-5"
                           xml:lang="ar"
                           source="#bib563-2"
-                          corresp="#name563-3 #name563-1">جبل سينا</placeName>
+                          corresp="#name563-1">جبل سينا</placeName>
                <desc xml:id="abstract-en-563"/>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/563</idno>
                <idno type="URI">http://pleiades.stoa.org/places/746815</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Mount_Sinai</idno>

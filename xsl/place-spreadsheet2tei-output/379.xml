@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name379-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܘܒ̈ܐ</placeName>
-               <placeName xml:id="name379-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib379-1"
-                          corresp="#name379-4 #name379-5">ܕܰܝܪܐ ܕܩܘܒ̈ܐ</placeName>
-               <placeName xml:id="name379-4"
+               <placeName xml:id="name379-3" xml:lang="syr-Syrj" source="#bib379-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name379-4" xml:lang="syr-Syrj" source="#bib379-1">ܕܩܘܒ̈ܐ</placeName>
+               <placeName xml:id="name379-5"
                           xml:lang="ar"
                           source="#bib379-2"
-                          corresp="#name379-3 #name379-5">دير قوبا</placeName>
-               <placeName xml:id="name379-5"
+                          corresp="#name379-6">دير قوبا</placeName>
+               <placeName xml:id="name379-6"
                           xml:lang="en"
                           source="#bib379-3"
-                          corresp="#name379-3 #name379-4">Qūbā Monastery</placeName>
+                          corresp="#name379-5">Qūbā Monastery</placeName>
                <desc xml:id="abstract-en-379"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib379-1">ܒܰܫܦܘܽܠܐ ܕܛܘܪܐ ܕܐܽܘܪܗܳܝ ܠܬܰܝܡܢ ܥܕܬܐ ܕܡܳܪܝ ܩܘܙܡܐ ܐܶܬܒܢܺܝ ܒܫܘܪܳܝܐ ܕܕܳܪܐ ܚܡܺܝܫܝܐ. ܘܐܰܚܪܒܗ ܒܪܳܐ ܕܒܰܟܬܰܪܝ ܫܢܰܬ  751  ܘܬܶܢܝܳܢܘܬ ܐܶܬܗܦܟ ܒܶܢܝܳܢܗ ܘܢܰܦܩ ܬܠܳܬܐ ܐܶܦܝܣܩܘ̈ܦܐ ܥܕܰܡܐ ܠܰܫܢܬ  873</quote>

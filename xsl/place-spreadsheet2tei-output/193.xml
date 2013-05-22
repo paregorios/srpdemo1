@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">TAGRIT</title>
+            <title xml:lang="en">Tagrit</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,17 +63,17 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-193" type="">
+            <place xml:id="place-193" type="settlement">
                <placeName xml:id="name193-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib193-1">TAGRIT</placeName>
+                          source="#bib193-1 #bib193-5">Tagrit</placeName>
                <placeName xml:id="name193-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܬܓܪܝܬ</placeName>
@@ -86,7 +89,6 @@
                           xml:lang="en"
                           source="#bib193-4"
                           corresp="#name193-3 #name193-4">Takrit</placeName>
-               <placeName xml:id="name193-6" xml:lang="en" source="#bib193-5">Tagrit</placeName>
                <desc xml:id="abstract-en-193"/>
                <desc xml:lang="en">
                   <quote source="#bib193-1">532. Tagrit</quote>

@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                <placeName xml:id="name342-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܒܐܪܝܕ</placeName>
-               <placeName xml:id="name342-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib342-1"
-                          corresp="#name342-4 #name342-5">ܕܰܝܪܐ ܕܒܰܐܪܝܕ</placeName>
-               <placeName xml:id="name342-4"
+               <placeName xml:id="name342-3" xml:lang="syr-Syrj" source="#bib342-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name342-4" xml:lang="syr-Syrj" source="#bib342-1">ܕܒܰܐܪܝܕ</placeName>
+               <placeName xml:id="name342-5"
                           xml:lang="ar"
                           source="#bib342-2"
-                          corresp="#name342-3 #name342-5">دير البارد</placeName>
-               <placeName xml:id="name342-5"
+                          corresp="#name342-6">دير البارد</placeName>
+               <placeName xml:id="name342-6"
                           xml:lang="en"
                           source="#bib342-3"
-                          corresp="#name342-3 #name342-4">Bārid Monastery</placeName>
+                          corresp="#name342-5">Bārid Monastery</placeName>
                <desc xml:id="abstract-en-342"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib342-1">ܫܰܬܐܣܶܗ ܦܰܛܪܝܰܪܟܐ ܝܘܚܰܢܢ ܫܒܝܥܳܝܳܐ ܒܰܐܬܪ̈ܘܬܳܐ ܕܡܝܠܝܺܛܝܢܝ ܫܢܰܬ  969  ܘܒܶܗ ܥܡܰܪ ܘܰܥܢܰܕ. ܘܕܰܝܪܳܐ ܗܘܳܐ ܪܰܒܐ ܛܰܝܶܒ ܚܰܕ ܦܰܛܪܝܰܪܟܐ ܘܚܰܕ ܡܰܦܪܝܳܢܐ ܘܚܰܕ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܘܰܬܡܳܢܰܥܣܪ ܐܶܦܝܣܩܘܦ̈ܐ ܘܠܐ ܚܙܰܝܢܰܢ ܠܗ ܥܘܗܕܳܢܐ ܒܳܬܰܪ ܫܢܰܬ 1343</quote>

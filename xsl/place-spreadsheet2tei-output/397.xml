@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,52 +67,59 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-397" type="">
-               <placeName xml:id="name397-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Yaʿqub </placeName>
+               <placeName xml:id="name397-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib397-1">Mor Yaʿqub </placeName>
                <placeName xml:id="name397-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܝܥܩܘܒ</placeName>
-               <placeName xml:id="name397-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib397-1"
-                          corresp="#name397-4 #name397-5">ܕܰܝܪܳܐ ܕܡܳܪܝ ܝܰܥܩܘܒ</placeName>
-               <placeName xml:id="name397-4"
+               <placeName xml:id="name397-3" xml:lang="syr-Syrj" source="#bib397-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name397-4" xml:lang="syr-Syrj" source="#bib397-2">ܕܡܳܪ</placeName>
+               <placeName xml:id="name397-5" xml:lang="syr-Syrj" source="#bib397-2">ܝܰܥܩܘܒ</placeName>
+               <placeName xml:id="name397-6"
                           xml:lang="ar"
-                          source="#bib397-2"
-                          corresp="#name397-3 #name397-5">دير مار يعقوب</placeName>
-               <placeName xml:id="name397-5"
-                          xml:lang="en"
                           source="#bib397-3"
-                          corresp="#name397-3 #name397-4">Jacob Monastery</placeName>
+                          corresp="#name397-7">دير مار يعقوب</placeName>
+               <placeName xml:id="name397-7"
+                          xml:lang="en"
+                          source="#bib397-4"
+                          corresp="#name397-6">Jacob Monastery</placeName>
                <desc xml:id="abstract-en-397"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib397-1">ܒܩܘܪܒܐ ܕܟܰܝܫܘܡ ܕܟܝܪ ܒܡܰܟܬܰܒ̈ܙܰܒܢܐ ܒܰܐܚܪ̈ܝܳܬܗ ܕܕܳܪܐ ܫܒܝܥܳܝܐ. ܘܗܘܐ ܡܢܗ ܥܶܣܪܐ ܐܶܦܝܣ̈ܩܘܦܐ ܡܢ ܫܢܰܬ  810  - 925</quote>
+                  <quote source="#bib397-2">ܒܩܘܪܒܐ ܕܟܰܝܫܘܡ ܕܟܝܪ ܒܡܰܟܬܰܒ̈ܙܰܒܢܐ ܒܰܐܚܪ̈ܝܳܬܗ ܕܕܳܪܐ ܫܒܝܥܳܝܐ. ܘܗܘܐ ܡܢܗ ܥܶܣܪܐ ܐܶܦܝܣ̈ܩܘܦܐ ܡܢ ܫܢܰܬ  810  - 925</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib397-2">بالقرب من كيسوم، ذكره التاريخ اواخر القرن السابع ونشأ منه عشرة اساقفة من 810 الى 925.</quote>
+                  <quote source="#bib397-3">بالقرب من كيسوم، ذكره التاريخ اواخر القرن السابع ونشأ منه عشرة اساقفة من 810 الى 925.</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib397-3">near Kesūm, was first mentioned in history at the end of the seventh century. Ten bishops graduated from it between 810 and 925.</quote>
+                  <quote source="#bib397-4">near Kesūm, was first mentioned in history at the end of the seventh century. Ten bishops graduated from it between 810 and 925.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/397</idno>
                <bibl xml:id="bib397-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="pp">69, 127, 432</citedRange>
+               </bibl>
+               <bibl xml:id="bib397-2">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">554</citedRange>
                </bibl>
-               <bibl xml:id="bib397-2">
+               <bibl xml:id="bib397-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">515</citedRange>
                </bibl>
-               <bibl xml:id="bib397-3">
+               <bibl xml:id="bib397-4">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">564</citedRange>

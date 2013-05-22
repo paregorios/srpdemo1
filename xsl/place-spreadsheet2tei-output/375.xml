@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,7 +67,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,18 +78,16 @@
                <placeName xml:id="name375-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܦܥܢܘܪ</placeName>
-               <placeName xml:id="name375-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib375-1"
-                          corresp="#name375-4 #name375-5">ܕܰܝܪܳܐ ܕܦܰܥܢܘܪ</placeName>
-               <placeName xml:id="name375-4"
+               <placeName xml:id="name375-3" xml:lang="syr-Syrj" source="#bib375-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name375-4" xml:lang="syr-Syrj" source="#bib375-1">ܕܦܰܥܢܘܪ</placeName>
+               <placeName xml:id="name375-5"
                           xml:lang="ar"
                           source="#bib375-2"
-                          corresp="#name375-3 #name375-5">دير فعنور</placeName>
-               <placeName xml:id="name375-5"
+                          corresp="#name375-6">دير فعنور</placeName>
+               <placeName xml:id="name375-6"
                           xml:lang="en"
                           source="#bib375-3"
-                          corresp="#name375-3 #name375-4">Faʿnūr Monastery</placeName>
+                          corresp="#name375-5">Faʿnūr Monastery</placeName>
                <desc xml:id="abstract-en-375"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib375-1">ܠܐ ܝܕܝܥܳܐ ܕܘܟܬܗ̇. ܥܰܡܝܺܪ ܗܘܳܐ ܫܢܰܬ  510   -  575  </quote>

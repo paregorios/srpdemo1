@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib493-3"
-                          corresp="#name493-3 #name493-4">Sufniyyin province</placeName>
+                          corresp="#name493-5">Sufniyyin province</placeName>
                <placeName xml:id="name493-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܐܬܪܐ ܕܨܘܦܢܝ̈ܐ</placeName>
-               <placeName xml:id="name493-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib493-1"
-                          corresp="#name493-4 #name493-1">ܐܰܬܪܳܐ ܕܨܘܦܢܳܝ̈ܐ</placeName>
-               <placeName xml:id="name493-4"
+               <placeName xml:id="name493-3" xml:lang="syr-Syrj" source="#bib493-1">ܐܰܬܪܳ</placeName>
+               <placeName xml:id="name493-4" xml:lang="syr-Syrj" source="#bib493-1">ܕܨܘܦܢܳܝ̈ܐ</placeName>
+               <placeName xml:id="name493-5"
                           xml:lang="ar"
                           source="#bib493-2"
-                          corresp="#name493-3 #name493-1">قطر الصوفنيين</placeName>
+                          corresp="#name493-1">قطر الصوفنيين</placeName>
                <desc xml:id="abstract-en-493"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/493</idno>

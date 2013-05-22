@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,13 +67,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-226" type="">
+            <place xml:id="place-226" type="monastery">
                <placeName xml:id="name226-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -78,19 +81,17 @@
                <placeName xml:id="name226-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܪܛܡܝܢ</placeName>
-               <placeName xml:id="name226-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib226-2"
-                          corresp="#name226-4 #name226-5">ܕܰܝܪܳܐ ܕܩܰܪܛܡܝܢ</placeName>
-               <placeName xml:id="name226-4"
+               <placeName xml:id="name226-3" xml:lang="syr-Syrj" source="#bib226-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name226-4" xml:lang="syr-Syrj" source="#bib226-2">ܕܩܰܪܛܡܝܢ</placeName>
+               <placeName xml:id="name226-5"
                           xml:lang="ar"
                           source="#bib226-3"
-                          corresp="#name226-3 #name226-5">دير قرتمين</placeName>
-               <placeName xml:id="name226-5"
+                          corresp="#name226-6">دير قرتمين</placeName>
+               <placeName xml:id="name226-6"
                           xml:lang="en"
                           source="#bib226-4"
-                          corresp="#name226-3 #name226-4">Qarṭmin Monastery</placeName>
-               <placeName xml:id="name226-6" xml:lang="en" source="#bib226-5">monastery of Gabriel of Qartmin</placeName>
+                          corresp="#name226-5">Qarṭmin Monastery</placeName>
+               <placeName xml:id="name226-7" xml:lang="en" source="#bib226-5">monastery of Gabriel of Qartmin</placeName>
                <desc xml:id="abstract-en-226"/>
                <desc xml:lang="en">
                   <quote source="#bib226-1">214. Gabriel, Monastery of Mor</quote>

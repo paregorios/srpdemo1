@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">MABBUG</title>
+            <title xml:lang="en">Mabbug</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,18 +67,18 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-122" type="">
+            <place xml:id="place-122" type="settlement">
                <placeName xml:id="name122-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib122-1">MABBUG</placeName>
-               <placeName xml:id="name122-2" xml:lang="en" source="#bib122-1">HIERAPOLIS</placeName>
+                          source="#bib122-1 #bib122-5">Mabbug</placeName>
+               <placeName xml:id="name122-2" xml:lang="en" source="#bib122-1 #bib122-5">Hierapolis</placeName>
                <placeName xml:id="name122-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܡܒܘܓ</placeName>
@@ -91,8 +94,6 @@
                           xml:lang="en"
                           source="#bib122-4"
                           corresp="#name122-4 #name122-5">Mabug</placeName>
-               <placeName xml:id="name122-7" xml:lang="en" source="#bib122-5">Hierapolis</placeName>
-               <placeName xml:id="name122-8" xml:lang="en" source="#bib122-5">Mabbug</placeName>
                <desc xml:id="abstract-en-122"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib122-2">ܡܕܝܢܬܳܐ ܗܘܳܬ ܪܰܒܬܐ ܕܒܐܘܚܕܳܢܳܐ ܕܚܳܠܳܒ ܠܓܰܪܒܰܝ ܡܰܕܢܚܳܗ̇ ܒܶܝܬ ܠܳܗ̇ ܠܰܦܪܳܬ ܐܝܬ ܬܠܳܬܐ ܦܪ̈ܣܚܶܐ ܝܰܘܡܳܢ ܩܰܣܛܪܰܐ ܗܘܳܬ. </quote>

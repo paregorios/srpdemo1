@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
                           source="#bib529-3"
-                          corresp="#name529-3 #name529-4">Russia</placeName>
+                          corresp="#name529-5">Russia</placeName>
                <placeName xml:id="name529-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܩܘܛܢܘܬܐ ܕܪܘܣܝܐ</placeName>
-               <placeName xml:id="name529-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib529-1"
-                          corresp="#name529-4 #name529-1">ܩܘܽܛܢܘܬܐ ܕܪܘܽܣܝܰܐ</placeName>
-               <placeName xml:id="name529-4"
+               <placeName xml:id="name529-3" xml:lang="syr-Syrj" source="#bib529-1">ܩܘܽܛܢܘܬ</placeName>
+               <placeName xml:id="name529-4" xml:lang="syr-Syrj" source="#bib529-1">ܕܪܘܽܣܝܰܐ</placeName>
+               <placeName xml:id="name529-5"
                           xml:lang="ar"
                           source="#bib529-2"
-                          corresp="#name529-3 #name529-1">جمهورية روسيا</placeName>
+                          corresp="#name529-1">جمهورية روسيا</placeName>
                <desc xml:id="abstract-en-529"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/529</idno>

@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">BETH GARMAI</title>
+            <title xml:lang="en">Beth Garmai</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,31 +59,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-33" type="">
+            <place xml:id="place-33" type="province">
                <placeName xml:id="name33-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib33-1">BETH GARMAI</placeName>
+                          source="#bib33-1">Beth Garmai</placeName>
                <placeName xml:id="name33-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܒܝܬ ܓܪ̈ܡܝ</placeName>
-               <placeName xml:id="name33-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib33-2"
-                          corresp="#name33-4 #name33-5">ܒܶܝܬ ܓܰܪ̈ܡܰܝ</placeName>
-               <placeName xml:id="name33-4"
+               <placeName xml:id="name33-3" xml:lang="syr-Syrj" source="#bib33-2">ܒܶܝ</placeName>
+               <placeName xml:id="name33-4" xml:lang="syr-Syrj" source="#bib33-2">ܓܰܪ̈ܡܰܝ</placeName>
+               <placeName xml:id="name33-5"
                           xml:lang="ar"
                           source="#bib33-3"
-                          corresp="#name33-3 #name33-5">باجرمي</placeName>
-               <placeName xml:id="name33-5"
+                          corresp="#name33-6">باجرمي</placeName>
+               <placeName xml:id="name33-6"
                           xml:lang="en"
                           source="#bib33-4"
-                          corresp="#name33-3 #name33-4">Bajermi (Beth Garmai)</placeName>
-               <placeName xml:id="name33-6" xml:lang="en" source="#bib33-5">Bet Garmai</placeName>
+                          corresp="#name33-5">Bajermi (Beth Garmai)</placeName>
+               <placeName xml:id="name33-7" xml:lang="en" source="#bib33-5">Bet Garmai</placeName>
                <desc xml:id="abstract-en-33"/>
                <desc xml:lang="en">
                   <quote source="#bib33-1">99. Beth Garmai</quote>

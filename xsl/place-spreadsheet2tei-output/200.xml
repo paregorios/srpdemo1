@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,13 +63,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-200" type="">
+            <place xml:id="place-200" type="settlement">
                <placeName xml:id="name200-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -75,18 +78,13 @@
                <placeName xml:id="name200-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܬܠܐ ܐܘ ܬܠ ܡܰܘܙܠܬ</placeName>
-               <placeName xml:id="name200-4"
-                          xml:lang="syr-Syrj"
-                          source="#bib200-2"
-                          corresp="#name200-5 #name200-6">ܬܠܐ ܐܘ ܬܶܠ ܡܰܘܙܠܰܬ</placeName>
-               <placeName xml:id="name200-5"
-                          xml:lang="ar"
-                          source="#bib200-3"
-                          corresp="#name200-4 #name200-6">تلا او تلّ موزلث او تلّ موزن</placeName>
-               <placeName xml:id="name200-6"
-                          xml:lang="en"
-                          source="#bib200-4"
-                          corresp="#name200-4 #name200-5">Tella (Tell Mawzalt, or Mawzan)</placeName>
+               <placeName xml:id="name200-4" xml:lang="syr-Syrj" source="#bib200-2">ܬܠ</placeName>
+               <placeName xml:id="name200-5" xml:lang="syr-Syrj" source="#bib200-2">ܐ</placeName>
+               <placeName xml:id="name200-6" xml:lang="syr-Syrj" source="#bib200-2">ܬܶ</placeName>
+               <placeName xml:id="name200-7" xml:lang="syr-Syrj" source="#bib200-2">ܡܰܘܙܠܰܬ</placeName>
+               <placeName xml:id="name200-8" xml:lang="ar" source="#bib200-3">تلا او تلّ موزلث او تلّ موزن</placeName>
+               <placeName xml:id="name200-9" xml:lang="en" source="#bib200-4">Tella (Tell Mawzalt</placeName>
+               <placeName xml:id="name200-10" xml:lang="en" source="#bib200-4">or Mawzan)</placeName>
                <desc xml:id="abstract-en-200"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib200-2">ܡܕܝܺܢܬܐ ܗܘܳܬ ܡܫܰܟܠܠܬܐ ܕܒܶܝܬ ܡܰܪܕܝܢ ܠܐܘܪܗܳܝ ܡܰܪܕܶܐ ܬܪܶܝܢ ܡܰܫ̈ܩܠܝܢ ܡܶܢ ܩܰܕܡܳܝܬܐ ܘܝܰܘܡܳܢ ܡܕܝܢܬܽܘܢܳܝܬܳܐ ܗܝ ܕܡܶܬܶܐܡܰܪ ܠܗ̇ ܘܶܝܪܰܐܢܫܰܗܝܪ.</quote>

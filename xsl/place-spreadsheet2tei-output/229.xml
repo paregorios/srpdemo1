@@ -39,13 +39,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -64,13 +67,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-229" type="">
+            <place xml:id="place-229" type="monastery">
                <placeName xml:id="name229-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -78,18 +81,16 @@
                <placeName xml:id="name229-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܪܩܦܬܐ</placeName>
-               <placeName xml:id="name229-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib229-2"
-                          corresp="#name229-4 #name229-5">ܕܰܝܪܐ ܕܩܰܪܩܰܦܬܐ</placeName>
-               <placeName xml:id="name229-4"
+               <placeName xml:id="name229-3" xml:lang="syr-Syrj" source="#bib229-2">ܕܰܝܪ</placeName>
+               <placeName xml:id="name229-4" xml:lang="syr-Syrj" source="#bib229-2">ܕܩܰܪܩܰܦܬܐ</placeName>
+               <placeName xml:id="name229-5"
                           xml:lang="ar"
                           source="#bib229-3"
-                          corresp="#name229-3 #name229-5">دير قرقفتا</placeName>
-               <placeName xml:id="name229-5"
+                          corresp="#name229-6">دير قرقفتا</placeName>
+               <placeName xml:id="name229-6"
                           xml:lang="en"
                           source="#bib229-4"
-                          corresp="#name229-3 #name229-4">Qarqafta Monastery</placeName>
+                          corresp="#name229-5">Qarqafta Monastery</placeName>
                <desc xml:id="abstract-en-229"/>
                <desc xml:lang="en">
                   <quote source="#bib229-1">442. Qarqaphto, Monastery of</quote>

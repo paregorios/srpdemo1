@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,13 +63,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-262" type="">
+            <place xml:id="place-262" type="settlement">
                <placeName xml:id="name262-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
@@ -74,18 +77,16 @@
                <placeName xml:id="name262-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܟܘܕܝܕܐ</placeName>
-               <placeName xml:id="name262-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib262-2"
-                          corresp="#name262-4 #name262-5">ܒܶܝܬ ܟܘܕܰܝܕܐ</placeName>
-               <placeName xml:id="name262-4"
+               <placeName xml:id="name262-3" xml:lang="syr-Syrj" source="#bib262-2">ܒܶܝ</placeName>
+               <placeName xml:id="name262-4" xml:lang="syr-Syrj" source="#bib262-2">ܟܘܕܰܝܕܐ</placeName>
+               <placeName xml:id="name262-5"
                           xml:lang="ar"
                           source="#bib262-3"
-                          corresp="#name262-3 #name262-5">باُخديدة</placeName>
-               <placeName xml:id="name262-5"
+                          corresp="#name262-6">باُخديدة</placeName>
+               <placeName xml:id="name262-6"
                           xml:lang="en"
                           source="#bib262-4"
-                          corresp="#name262-3 #name262-4">Beth Khudayda</placeName>
+                          corresp="#name262-5">Beth Khudayda</placeName>
                <desc xml:id="abstract-en-262"/>
                <desc xml:lang="en">
                   <quote source="#bib262-1">441. Qaraqosh</quote>

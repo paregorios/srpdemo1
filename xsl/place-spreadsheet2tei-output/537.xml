@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,19 +70,17 @@
                <placeName xml:id="name537-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܩܣܝܢܐ</placeName>
-               <placeName xml:id="name537-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib537-1"
-                          corresp="#name537-4 #name537-5">ܒܶܝܬ ܩܶܣܝܳܢܳܐ</placeName>
-               <placeName xml:id="name537-4"
+               <placeName xml:id="name537-3" xml:lang="syr-Syrj" source="#bib537-1">ܒܶܝ</placeName>
+               <placeName xml:id="name537-4" xml:lang="syr-Syrj" source="#bib537-1">ܩܶܣܝܳܢܳܐ</placeName>
+               <placeName xml:id="name537-5"
                           xml:lang="ar"
                           source="#bib537-2"
-                          corresp="#name537-3 #name537-5">باقسيان</placeName>
-               <placeName xml:id="name537-5"
+                          corresp="#name537-6">باقسيان</placeName>
+               <placeName xml:id="name537-6"
                           xml:lang="en"
                           source="#bib537-3"
-                          corresp="#name537-3 #name537-4">Baqsyan</placeName>
-               <placeName xml:id="name537-6" xml:lang="en" source="#bib537-4">Bet Qustan</placeName>
+                          corresp="#name537-5">Baqsyan</placeName>
+               <placeName xml:id="name537-7" xml:lang="en" source="#bib537-4">Bet Qustan</placeName>
                <desc xml:id="abstract-en-537"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/537</idno>

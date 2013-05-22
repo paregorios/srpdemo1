@@ -35,13 +35,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -60,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,18 +74,16 @@
                <placeName xml:id="name306-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܝܬ ܒܬܝ̈ܢ</placeName>
-               <placeName xml:id="name306-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib306-1"
-                          corresp="#name306-4 #name306-5">ܒܶܝܬ ܒܳܬܺܝ̈ܢ</placeName>
-               <placeName xml:id="name306-4"
+               <placeName xml:id="name306-3" xml:lang="syr-Syrj" source="#bib306-1">ܒܶܝ</placeName>
+               <placeName xml:id="name306-4" xml:lang="syr-Syrj" source="#bib306-1">ܒܳܬܺܝ̈ܢ</placeName>
+               <placeName xml:id="name306-5"
                           xml:lang="ar"
                           source="#bib306-2"
-                          corresp="#name306-3 #name306-5">بيث باتين</placeName>
-               <placeName xml:id="name306-5"
+                          corresp="#name306-6">بيث باتين</placeName>
+               <placeName xml:id="name306-6"
                           xml:lang="en"
                           source="#bib306-3"
-                          corresp="#name306-3 #name306-4">Beth Bātīn</placeName>
+                          corresp="#name306-5">Beth Bātīn</placeName>
                <desc xml:id="abstract-en-306"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib306-1">ܩܪܝܬܐ ܕܚܰܪܝܒܐ ܠܒܰܪ ܡܶܢ ܚܳܪܳܢ.</quote>

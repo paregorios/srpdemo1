@@ -31,13 +31,16 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-17-04:00</date>
+            <date>2013-05-21-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
+         <editorialDecl>
+            <p>Normalized capitalization of GEDSH names.</p>
+         </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
@@ -56,7 +59,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -67,18 +70,16 @@
                <placeName xml:id="name491-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܐܪ ܕܡܨܪ</placeName>
-               <placeName xml:id="name491-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib491-1"
-                          corresp="#name491-4 #name491-5">ܕܝܐܪ ܕܡܶܨܪ</placeName>
-               <placeName xml:id="name491-4"
+               <placeName xml:id="name491-3" xml:lang="syr-Syrj" source="#bib491-1">ܕܝܐ</placeName>
+               <placeName xml:id="name491-4" xml:lang="syr-Syrj" source="#bib491-1">ܕܡܶܨܪ</placeName>
+               <placeName xml:id="name491-5"
                           xml:lang="ar"
                           source="#bib491-2"
-                          corresp="#name491-3 #name491-5">ديار مضر</placeName>
-               <placeName xml:id="name491-5"
+                          corresp="#name491-6">ديار مضر</placeName>
+               <placeName xml:id="name491-6"
                           xml:lang="en"
                           source="#bib491-3"
-                          corresp="#name491-3 #name491-4">Mudar territory</placeName>
+                          corresp="#name491-5">Mudar territory</placeName>
                <desc xml:id="abstract-en-491"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/491</idno>
