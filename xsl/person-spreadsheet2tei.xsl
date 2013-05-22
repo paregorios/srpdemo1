@@ -825,6 +825,7 @@
             <xsl:when test="contains(name(), '_Other_Date')">
                 <!-- What about using this type? -->
                 <xsl:attribute name="type" select="'untagged'"/>
+                <desc>An event for which no description has been logged.</desc>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
