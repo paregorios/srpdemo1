@@ -164,11 +164,9 @@
                             <classDecl>
                                 <taxonomy>
                                     <category xml:id="syriaca-authorized">
-                                        <catDesc>
-                                            <!-- Check whether the following is acceptable. -->
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            <!-- Do name types "sic" and "split" go here or in ODD file or both?-->
-                                        </catDesc>
+                                        <!-- Check whether the following is acceptable. -->
+                                        <!-- Do name types "sic" and "split" go here or in ODD file or both?-->
+                                        <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                                     </category>
                                 </taxonomy>
                             </classDecl>
@@ -225,7 +223,7 @@
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
-                                                    <xsl:attribute name="syriaca-tags" select="'syriaca-authorized'"/>
+                                                    <xsl:attribute name="syriaca-tags" select="'#syriaca-authorized'"/>
                                                 </xsl:if>
                                                 <xsl:value-of select="node()"/>
                                             </persName>
@@ -255,7 +253,7 @@
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
                                                 <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
-                                                    <xsl:attribute name="syriaca-tags" select="'syriaca-authorized'"/>
+                                                    <xsl:attribute name="syriaca-tags" select="'#syriaca-authorized'"/>
                                                 </xsl:if>
                                                 <!-- Adds name parts -->
                                                 <xsl:call-template name="name-parts">
