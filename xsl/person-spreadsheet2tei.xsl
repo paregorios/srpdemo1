@@ -738,7 +738,7 @@
                         <addName type="saint-title"><xsl:value-of select="$next-element"/></addName>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Numeric_Title')">
-                        <addName type="numeric-title"><xsl:value-of select="$next-element"/></addName>
+                        <genName type="numeric-title"><xsl:value-of select="$next-element"/></genName>
                     </xsl:when>
                     <xsl:when test="ends-with($next-element-name, '_Terms_of_Address')">
                         <addName type="terms-of-address"><xsl:value-of select="$next-element"/></addName>
