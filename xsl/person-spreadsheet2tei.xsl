@@ -484,9 +484,8 @@
                                 <xsl:if test="string-length(normalize-space(Disambiguation_URLs))">
                                     <relation 
                                         type="disambiguation" 
-                                        name="different-from" 
-                                        active="{$person-id} {Disambiguation_URLs}" 
-                                        mutual="{$person-id} {Disambiguation_URLs}">
+                                        name="different-from"
+                                        mutual="#{$person-id} {Disambiguation_URLs}">
                                         <xsl:if test="string-length(normalize-space(Disambiguation))">
                                             <desc>
                                                 <xsl:value-of select="Disambiguation"/>
