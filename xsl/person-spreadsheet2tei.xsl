@@ -64,6 +64,7 @@
             <!-- Creates a variable to use as the xml:id for the person element -->
             <xsl:variable name="person-id">person-<xsl:value-of select="SRP_ID"/></xsl:variable>
             <!-- Creates a variable to use as the base for the xml:id for bib elements -->
+            <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
             <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"/></xsl:variable>
             <!-- Creates variables to use as xml:id for bib elements -->
             <xsl:variable name="gedsh-id">
@@ -155,7 +156,9 @@
                         </fileDesc>
                         <encodingDesc>
                             <editorialDecl>
-                                <p>Normalization of capitalization in encoded names.</p>
+                                <!-- Should this be inside a normalization tag? -->
+                                <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+                                <p>The capitalization of names marked with the type "split" has been normalized.</p>
                                 <!-- Are there other editorial decisions we need to record here? -->
                             </editorialDecl>
                             <classDecl>
