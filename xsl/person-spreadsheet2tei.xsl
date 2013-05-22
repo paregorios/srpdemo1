@@ -455,6 +455,20 @@
                                                 </xsl:if>
                                             </bibl>
                                         </xsl:if>
+                                        <xsl:if
+                                            test="string-length(normalize-space(CBSC_En_Full)) > 0">
+                                            <!-- Should we include the link to CBSC as @ref on the bibl element or as an additional @target on the pointer?-->
+                                            <!-- Should CBSC link go directly to the tag on the CBSC system? 
+                                            If so, we'll need to have some way to discern whether it is a  subject heading or an author heading in CBSC.
+                                            And should that go under citedRange?-->
+                                            <bibl 
+                                                xml:id="{$cbsc-id}"
+                                                ref="http://www.csc.org.il/db/db.aspx?db=SB">
+                                                <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                                                <abbr>CBSC</abbr>
+                                                <ptr target="http://syriaca.org/bibl/5"/>
+                                            </bibl>
+                                        </xsl:if>
                                         
                                         
                                         <!-- Adds Record Description field as a note. -->
