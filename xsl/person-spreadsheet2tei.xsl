@@ -138,7 +138,7 @@
                             </editionStmt>
                             <publicationStmt>
                                 <authority>Syriaca.org: The Syriac Reference Portal</authority>
-                                <idno type="URI">http://syriaca.org/person/<xsl:value-of select="$person-id"/>/source</idno>
+                                <idno type="URI">http://syriaca.org/person/<xsl:value-of select="SRP_ID"/>/source</idno>
                                 <availability>
                                     <licence
                                         target="http://creativecommons.org/licenses/by/3.0/">
