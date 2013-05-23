@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-847/source</idno>
+            <idno type="URI">http://syriaca.org/person/847/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -95,41 +94,88 @@
       <body>
          <listPerson>
             <person xml:id="person-847">
-               <persName type="sic" xml:lang="syr" source="#bib847-5">ܐܝܪܢܐܘܣ ܨܘܪܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrn" source="#bib847-5">ܐܝܼܪܹܢܹܐܘܿܣ ܨܘܿܪܵܝܵܐ</persName>
-               <persName type="sic" xml:lang="syr" source="#bib847-6">ܐܝܪܝܢܐܘܣ ܨܘܪܝܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrj" source="#bib847-6">ܐܝܺܪܺܝܢܶܐܘܳܣ ܨܽܘܪܳܝܳܐ</persName>
+               <persName type="sic"
+                         xml:id="name847-5a-0"
+                         corresp="#name847-5b-0 #name847-6a-0 #name847-5a-1"
+                         xml:lang="syr"
+                         source="#bib847-5">ܐܝܪܢܐܘܣ ܨܘܪܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name847-5b-0"
+                         corresp="#name847-5a-0 #name847-6b-0 #name847-5b-1"
+                         xml:lang="syr-Syrn"
+                         source="#bib847-5">ܐܝܼܪܹܢܹܐܘܿܣ ܨܘܿܪܵܝܵܐ</persName>
+               <persName type="sic"
+                         xml:id="name847-6a-0"
+                         corresp="#name847-6b-0 #name847-5a-0 #name847-6a-1"
+                         xml:lang="syr"
+                         source="#bib847-6">ܐܝܪܝܢܐܘܣ ܨܘܪܝܐ</persName>
+               <persName type="sic"
+                         xml:id="name847-6b-0"
+                         corresp="#name847-6a-0 #name847-5b-0 #name847-6b-1"
+                         xml:lang="syr-Syrj"
+                         source="#bib847-6">ܐܝܺܪܺܝܢܶܐܘܳܣ ܨܽܘܪܳܝܳܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="syriaca-authorized">Irenaeus of Tyre</persName>
+                         syriaca-tags="#syriaca-authorized">Irenaeus of Tyre</persName>
                <persName type="sic"
                          xml:id="name847-7-0"
                          xml:lang="syr-Latn-x-cbsc"
                          source="#bib847-7">#REF!</persName>
-               <persName type="split" xml:lang="syr" source="#bib847-5">
+               <persName type="split"
+                         xml:id="name847-5a-1"
+                         corresp="#name847-5b-1 #name847-6a-1 #name847-5a-0"
+                         xml:lang="syr"
+                         source="#bib847-5">
                   <forename>ܐܝܪܢܐܘܣ</forename>
                   <addName type="untagged-title">ܨܘܪܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrn" source="#bib847-5">
+               <persName type="split"
+                         xml:id="name847-5b-1"
+                         corresp="#name847-5a-1 #name847-6b-1 #name847-5b-0"
+                         xml:lang="syr-Syrn"
+                         source="#bib847-5">
                   <forename>ܐܝܼܪܹܢܹܐܘܿܣ</forename>
                   <addName type="untagged-title">ܨܘܿܪܵܝܵܐ</addName>
                </persName>
-               <persName type="split">
+               <persName type="split"
+                         xml:id="name847-6a-1"
+                         corresp="#name847-6b-1 #name847-5a-1 #name847-6a-0"
+                         xml:lang="syr"
+                         source="#bib847-6">
                   <forename>ܐܝܪܝܢܐܘܣ</forename>
-               </persName>
-               <persName type="split" xml:lang="syr" source="#bib847-6">
                   <addName type="untagged-title">ܨܘܪܝܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrj" source="#bib847-6">
+               <persName type="split"
+                         xml:id="name847-6b-1"
+                         corresp="#name847-6a-1 #name847-5b-1 #name847-6b-0"
+                         xml:lang="syr-Syrj"
+                         source="#bib847-6">
                   <forename>ܐܝܺܪܺܝܢܶܐܘܳܣ</forename>
                   <addName type="untagged-title">ܨܽܘܪܳܝܳܐ</addName>
                </persName>
                <persName type="split"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="syriaca-authorized">
+                         syriaca-tags="#syriaca-authorized">
                   <forename>Irenaeus</forename>
                   <addName type="untagged-title">of Tyre</addName>
                </persName>
+               <bibl xml:id="bib847-5">
+                  <title>Abdisho (YdQ)</title>
+                  <abbr>Abdisho (YdQ)</abbr>
+                  <ptr target="http://syriaca.org/bibl/6"/>
+                  <citedRange unit="pp">67</citedRange>
+               </bibl>
+               <bibl xml:id="bib847-6">
+                  <title>Abdisho (BO)</title>
+                  <abbr>Abdisho (BO)</abbr>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+                  <citedRange unit="pp">38</citedRange>
+               </bibl>
+               <bibl xml:id="bib847-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
+               </bibl>
             </person>
          </listPerson>
       </body>

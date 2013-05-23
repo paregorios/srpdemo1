@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-784/source</idno>
+            <idno type="URI">http://syriaca.org/person/784/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,9 +85,10 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
+         <change type="planned">1. Does http://viaf.org/viaf/22544388 (Theodorus Alexandrinae) refer to this Theodosius or to the 5th cent. grammarian? 2. Do http://viaf.org/viaf/32386803 and http://viaf.org/viaf/217803904 and http://viaf.org/viaf/217971054 refer to this person? 3. Is this the same person to whom the Panegyric on John the Baptist is attributed (http://viaf.org/viaf/225359960)?</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -99,7 +99,7 @@
                          xml:id="name784-1-0"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib784-1"
-                         syriaca-tags="syriaca-authorized">Theodosius of Alexandria</persName>
+                         syriaca-tags="#syriaca-authorized">Theodosius of Alexandria</persName>
                <persName type="sic"
                          xml:id="name784-2-0"
                          corresp="#name784-3-0 #name784-4a-0 #name784-4b-0 #name784-2-1"
@@ -128,8 +128,8 @@
                          xml:id="name784-1-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib784-1"
-                         syriaca-tags="syriaca-authorized">
-                  <forename>Theodosius</forename>
+                         syriaca-tags="#syriaca-authorized">
+                  <forename sort="0">Theodosius</forename>
                   <addName type="untagged-title">of Alexandria</addName>
                </persName>
                <persName type="split"
@@ -137,7 +137,7 @@
                          corresp="#name784-3-1 #name784-4a-1 #name784-4b-1 #name784-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib784-2">
-                  <forename>Theodosius</forename>
+                  <forename sort="0">Theodosius</forename>
                   <addName type="untagged-title">Patriarch of Alexandria</addName>
                </persName>
                <persName type="split"
@@ -145,7 +145,7 @@
                          corresp="#name784-2-1 #name784-4a-1 #name784-4b-1 #name784-3-0"
                          xml:lang="ar"
                          source="#bib784-3">
-                  <forename>ثاودوسيوس</forename>
+                  <forename sort="0">ثاودوسيوس</forename>
                   <addName type="untagged-title">بطريرك الاسكندرية</addName>
                </persName>
                <persName type="split"
@@ -153,7 +153,7 @@
                          corresp="#name784-2-1 #name784-3-1 #name784-4b-1 #name784-4a-0"
                          xml:lang="syr"
                          source="#bib784-4">
-                  <forename>ܬܐܘܕܘܣܝܘܣ</forename>
+                  <forename sort="0">ܬܐܘܕܘܣܝܘܣ</forename>
                   <addName type="untagged-title">ܦܛܪܝܪܟܐ ܕܐܠܟܣܢܕܪܝܐ</addName>
                </persName>
                <persName type="split"
@@ -161,19 +161,30 @@
                          corresp="#name784-2-1 #name784-3-1 #name784-4a-1 #name784-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib784-4">
-                  <forename>ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename>
+                  <forename sort="0">ܬܶܐܘܳܕܳܘܣܝܳܘܣ</forename>
                   <addName type="untagged-title">ܦܰܛܪܝܰܪܟܐ ܕܰܐܠܟܣܰܢܕܰܪܝܐ</addName>
                </persName>
+               <idno type="URI">http://viaf.org/viaf/19784428</idno>
+               <idno type="URI">http://worldcat.org/identities/lccn-nb2006-16481</idno>
+               <idno type="URI">http://worldcat.org/identities/np-theodosius$alexandrinus archiepiscopus$566</idno>
+               <idno type="URI">http://worldcat.org/identities/np-theodosius$abp of alexandria</idno>
+               <idno type="URI">http://viaf.org/viaf/64362662</idno>
+               <idno type="URI">http://viaf.org/viaf/225359960</idno>
+               <idno type="URI">http://viaf.org/viaf/232018364</idno>
+               <idno type="URI">http://viaf.org/viaf/17630471</idno>
+               <idno type="URI">http://viaf.org/viaf/22544388</idno>
+               <idno type="URI">http://viaf.org/viaf/217971054</idno>
+               <idno type="URI">http://viaf.org/viaf/217803904</idno>
+               <idno type="URI">http://viaf.org/viaf/225359960</idno>
+               <death when="0566" source="#bib784-1">566</death>
                <bibl xml:id="bib784-1">
-                  <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">550</citedRange>
                </bibl>
                <bibl xml:id="bib784-2">
-                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
                   <ptr target="http://syriaca.org/bibl/4"/>
                </bibl>
@@ -185,10 +196,14 @@
                   <citedRange unit="pp">561</citedRange>
                </bibl>
                <bibl xml:id="bib784-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib784-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

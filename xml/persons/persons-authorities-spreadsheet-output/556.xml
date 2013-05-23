@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-556/source</idno>
+            <idno type="URI">http://syriaca.org/person/556/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,7 +98,7 @@
                          xml:id="name556-1-0"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib556-1"
-                         syriaca-tags="syriaca-authorized">Ishoʿdnaḥ</persName>
+                         syriaca-tags="#syriaca-authorized">Ishoʿdnaḥ</persName>
                <persName type="sic"
                          xml:id="name556-2-0"
                          corresp="#name556-3-0 #name556-4a-0 #name556-4b-0 #name556-2-1"
@@ -120,9 +119,21 @@
                          corresp="#name556-2-0 #name556-3-0 #name556-4a-0 #name556-4b-1"
                          xml:lang="syr-Syrj"
                          source="#bib556-4">ܝܶܫܘܥ ܕܢܰܚ ܕܒܘܨܪܳܐ</persName>
-               <persName type="sic" xml:lang="syr" source="#bib556-5">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
-               <persName type="sic" xml:lang="syr-Syrn" source="#bib556-5">ܡܵܪܝ ܝܑܼܫܘܿܥܕܢܲܚ ܕܒܲܨܪܵܐ</persName>
-               <persName type="sic" xml:lang="syr" source="#bib556-6">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
+               <persName type="sic"
+                         xml:id="name556-5a-0"
+                         corresp="#name556-5b-0 #name556-6a-0 #name556-5a-1"
+                         xml:lang="syr"
+                         source="#bib556-5">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
+               <persName type="sic"
+                         xml:id="name556-5b-0"
+                         corresp="#name556-5a-0 #name556-6b-0 #name556-5b-1"
+                         xml:lang="syr-Syrn"
+                         source="#bib556-5">ܡܵܪܝ ܝܑܼܫܘܿܥܕܢܲܚ ܕܒܲܨܪܵܐ</persName>
+               <persName type="sic"
+                         xml:id="name556-6a-0"
+                         corresp="#name556-6b-0 #name556-5a-0 #name556-6a-1"
+                         xml:lang="syr"
+                         source="#bib556-6">ܡܪܝ ܝܫܘܥܕܢܚ ܕܒܨܪܐ</persName>
                <persName type="sic"
                          xml:id="name556-7-0"
                          xml:lang="syr-Latn-x-cbsc"
@@ -131,15 +142,15 @@
                          xml:id="name556-1-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib556-1"
-                         syriaca-tags="syriaca-authorized">
-                  <forename>Ishoʿdnaḥ</forename>
+                         syriaca-tags="#syriaca-authorized">
+                  <forename sort="0">Ishoʿdnaḥ</forename>
                </persName>
                <persName type="split"
                          xml:id="name556-2-1"
                          corresp="#name556-3-1 #name556-4a-1 #name556-4b-1 #name556-2-0"
                          xml:lang="syr-Latn-x-barsoum"
                          source="#bib556-2">
-                  <forename>Yeshoʿdnaḥ</forename>
+                  <forename sort="0">Yeshoʿdnaḥ</forename>
                   <addName type="untagged-title">of Baṣra</addName>
                </persName>
                <persName type="split"
@@ -147,7 +158,7 @@
                          corresp="#name556-2-1 #name556-4a-1 #name556-4b-1 #name556-3-0"
                          xml:lang="ar"
                          source="#bib556-3">
-                  <forename>يشوعدناح</forename>
+                  <forename sort="0">يشوعدناح</forename>
                   <addName type="untagged-title">البصري</addName>
                </persName>
                <persName type="split"
@@ -155,7 +166,7 @@
                          corresp="#name556-2-1 #name556-3-1 #name556-4b-1 #name556-4a-0"
                          xml:lang="syr"
                          source="#bib556-4">
-                  <forename>ܝܫܘܥ ܕܢܚ</forename>
+                  <forename sort="0">ܝܫܘܥ ܕܢܚ</forename>
                   <addName type="untagged-title">ܕܒܘܨܪܐ</addName>
                </persName>
                <persName type="split"
@@ -163,33 +174,42 @@
                          corresp="#name556-2-1 #name556-3-1 #name556-4a-1 #name556-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib556-4">
-                  <forename>ܝܶܫܘܥ ܕܢܰܚ</forename>
+                  <forename sort="0">ܝܶܫܘܥ ܕܢܰܚ</forename>
                   <addName type="untagged-title">ܕܒܘܨܪܳܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr" source="#bib556-5">
-                  <forename>ܝܫܘܥܕܢܚ</forename>
+               <persName type="split"
+                         xml:id="name556-5a-1"
+                         corresp="#name556-5b-1 #name556-6a-1 #name556-5a-0"
+                         xml:lang="syr"
+                         source="#bib556-5">
+                  <forename sort="0">ܝܫܘܥܕܢܚ</forename>
                   <addName type="untagged-title">ܡܪܝ, ܕܒܨܪܐ</addName>
                </persName>
-               <persName type="split" xml:lang="syr-Syrn" source="#bib556-5">
-                  <forename>ܝܑܼܫܘܿܥܕܢܲܚ</forename>
+               <persName type="split"
+                         xml:id="name556-5b-1"
+                         corresp="#name556-5a-1 #name556-6b-1 #name556-5b-0"
+                         xml:lang="syr-Syrn"
+                         source="#bib556-5">
+                  <forename sort="0">ܝܑܼܫܘܿܥܕܢܲܚ</forename>
                   <addName type="untagged-title">ܡܵܪܝ, ܕܒܲܨܪܵܐ</addName>
                </persName>
-               <persName type="split">
-                  <forename>ܝܫܘܥܕܢܚ</forename>
-               </persName>
-               <persName type="split" xml:lang="syr" source="#bib556-6">
+               <persName type="split"
+                         xml:id="name556-6a-1"
+                         corresp="#name556-6b-1 #name556-5a-1 #name556-6a-0"
+                         xml:lang="syr"
+                         source="#bib556-6">
+                  <forename sort="0">ܝܫܘܥܕܢܚ</forename>
                   <addName type="untagged-title">ܡܪܝ, ܕܒܨܪܐ</addName>
                </persName>
+               <floruit source="#bib556-1">9th cent.</floruit>
                <bibl xml:id="bib556-1">
-                  <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">284</citedRange>
                </bibl>
                <bibl xml:id="bib556-2">
-                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
                   <ptr target="http://syriaca.org/bibl/4"/>
                </bibl>
@@ -201,10 +221,26 @@
                   <citedRange unit="pp">27</citedRange>
                </bibl>
                <bibl xml:id="bib556-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib556-5">
+                  <title>Abdisho (YdQ)</title>
+                  <abbr>Abdisho (YdQ)</abbr>
+                  <ptr target="http://syriaca.org/bibl/6"/>
+                  <citedRange unit="pp">78</citedRange>
+               </bibl>
+               <bibl xml:id="bib556-6">
+                  <title>Abdisho (BO)</title>
+                  <abbr>Abdisho (BO)</abbr>
+                  <ptr target="http://syriaca.org/bibl/7"/>
+                  <citedRange unit="pp">195</citedRange>
+               </bibl>
+               <bibl xml:id="bib556-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-132/source</idno>
+            <idno type="URI">http://syriaca.org/person/132/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -117,7 +116,7 @@
                          source="#bib132-4">ܐܝܘܰܐܢܝܣ ܩܰܕܡܳܝܐ</persName>
                <persName type="sic"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="syriaca-authorized">Iwannis (Yuḥanon III)</persName>
+                         syriaca-tags="#syriaca-authorized">Iwannis (Yuḥanon III)</persName>
                <persName type="sic"
                          xml:id="name132-7-0"
                          xml:lang="syr-Latn-x-cbsc"
@@ -155,13 +154,13 @@
                </persName>
                <persName type="split"
                          xml:lang="syr-Latn-x-gedsh"
-                         syriaca-tags="syriaca-authorized">
+                         syriaca-tags="#syriaca-authorized">
                   <forename>Iwannis (Yuḥanon)</forename>
                   <addName type="untagged-title">III</addName>
                </persName>
+               <death when="0754" source="#bib132-2">754</death>
                <bibl xml:id="bib132-2">
-                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="entry">132</citedRange>
@@ -176,12 +175,16 @@
                   <citedRange unit="pp">317</citedRange>
                </bibl>
                <bibl xml:id="bib132-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">132</citedRange>
                   <citedRange unit="pp">345</citedRange>
+               </bibl>
+               <bibl xml:id="bib132-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

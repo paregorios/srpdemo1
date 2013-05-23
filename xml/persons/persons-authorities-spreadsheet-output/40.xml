@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-40/source</idno>
+            <idno type="URI">http://syriaca.org/person/40/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,7 +98,7 @@
                          xml:id="name40-1-0"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib40-1"
-                         syriaca-tags="syriaca-authorized">Yeshuʿ the Stylite</persName>
+                         syriaca-tags="#syriaca-authorized">Yeshuʿ the Stylite</persName>
                <persName type="sic"
                          xml:id="name40-2-0"
                          corresp="#name40-3-0 #name40-4a-0 #name40-4b-0 #name40-2-1"
@@ -128,8 +127,8 @@
                          xml:id="name40-1-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib40-1"
-                         syriaca-tags="syriaca-authorized">
-                  <forename>Yeshuʿ</forename>
+                         syriaca-tags="#syriaca-authorized">
+                  <forename sort="0">Yeshuʿ</forename>
                   <addName type="untagged-title">the Stylite</addName>
                </persName>
                <persName type="split"
@@ -137,7 +136,7 @@
                          corresp="#name40-2-1 #name40-4a-1 #name40-4b-1 #name40-3-0"
                          xml:lang="ar"
                          source="#bib40-3">
-                  <forename>يشوع</forename>
+                  <forename sort="0">يشوع</forename>
                   <addName type="untagged-title">القس ، العمودي</addName>
                </persName>
                <persName type="split"
@@ -145,7 +144,7 @@
                          corresp="#name40-2-1 #name40-3-1 #name40-4b-1 #name40-4a-0"
                          xml:lang="syr"
                          source="#bib40-4">
-                  <forename>ܝܫܘܥ</forename>
+                  <forename sort="0">ܝܫܘܥ</forename>
                   <addName type="untagged-title">ܐܣܛܘܢܪܐ</addName>
                </persName>
                <persName type="split"
@@ -153,18 +152,23 @@
                          corresp="#name40-2-1 #name40-3-1 #name40-4a-1 #name40-4b-0"
                          xml:lang="syr-Syrj"
                          source="#bib40-4">
-                  <forename>ܝܶܫܘܥ</forename>
+                  <forename sort="0">ܝܶܫܘܥ</forename>
                   <addName type="untagged-title">ܐܶܣܛܘܢܳܪܳܐ</addName>
                </persName>
+               <idno type="URI">http://viaf.org/viaf/79425254</idno>
+               <idno type="URI">http://worldcat.org/identities/lccn-n96-26164</idno>
+               <listEvent>
+                  <event when="0515" source="#bib40-2" type="untagged">
+                     <desc>An event for which no description has been logged.</desc>
+                  </event>
+               </listEvent>
                <bibl xml:id="bib40-1">
-                  <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                </bibl>
                <bibl xml:id="bib40-2">
-                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and
-                                                    Sciences</title>
+                  <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (English)</abbr>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="entry">37</citedRange>
@@ -179,12 +183,16 @@
                   <citedRange unit="pp">218</citedRange>
                </bibl>
                <bibl xml:id="bib40-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="entry">37</citedRange>
                   <citedRange unit="pp">245</citedRange>
+               </bibl>
+               <bibl xml:id="bib40-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>

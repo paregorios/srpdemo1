@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:saxon="http://saxon.sf.net/">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:saxon="http://saxon.sf.net/"
+     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -42,14 +44,14 @@
          </editionStmt>
          <publicationStmt>
             <authority>Syriaca.org: The Syriac Reference Portal</authority>
-            <idno type="URI">http://syriaca.org/person/person-405/source</idno>
+            <idno type="URI">http://syriaca.org/person/405/source</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/3.0/">
                                         Distributed under a Creative Commons
                                         Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-16-04:00</date>
+            <date>2013-05-22-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -57,16 +59,13 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalization of capitalization in encoded names.</p>
+            <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
+            <p>The capitalization of names marked with the type "split" has been normalized.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
                <category xml:id="syriaca-authorized">
-                  <catDesc>
-                                            
-                                            The name considered authoritative by Syriaca.org for cataloging purposes
-                                            
-                                        </catDesc>
+                  <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
                </category>
             </taxonomy>
          </classDecl>
@@ -86,7 +85,7 @@
       <revisionDesc>
          <change who="http://syriaca.org/editors.xml#ngibson"
                  n="1.0"
-                 when="2013-05-16-04:00">
+                 when="2013-05-22-04:00">
                                 CREATED: person
                             </change>
       </revisionDesc>
@@ -99,7 +98,7 @@
                          xml:id="name405-1-0"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib405-1"
-                         syriaca-tags="syriaca-authorized">Burkitt, Francis Crawford</persName>
+                         syriaca-tags="#syriaca-authorized">Burkitt, Francis Crawford</persName>
                <persName type="sic"
                          xml:id="name405-3-0"
                          corresp="#name405-2-0 #name405-4a-0 #name405-4b-0 #name405-3-1"
@@ -118,8 +117,8 @@
                          xml:id="name405-1-1"
                          xml:lang="syr-Latn-x-gedsh"
                          source="#bib405-1"
-                         syriaca-tags="syriaca-authorized">
-                  <forename>Francis Crawford</forename>
+                         syriaca-tags="#syriaca-authorized">
+                  <forename sort="1">Francis Crawford</forename>
                   <surname>Burkitt</surname>
                </persName>
                <persName type="split"
@@ -127,18 +126,27 @@
                          corresp="#name405-2-1 #name405-4a-1 #name405-4b-1 #name405-3-0"
                          xml:lang="ar"
                          source="#bib405-3">
-                  <surname>بوركيت</surname>
+                  <surname sort="0">بوركيت</surname>
                </persName>
                <persName type="split"
                          xml:id="name405-4a-1"
                          corresp="#name405-2-1 #name405-3-1 #name405-4b-1 #name405-4a-0"
                          xml:lang="syr"
                          source="#bib405-4">
-                  <surname>ܒܘܪܟܝܬ</surname>
+                  <surname sort="0">ܒܘܪܟܝܬ</surname>
                </persName>
+               <idno type="URI">http://viaf.org/viaf/64145489</idno>
+               <idno type="URI">http://worldcat.org/identities/lccn-n88-677319</idno>
+               <idno type="URI">http://viaf.org/viaf/215151002</idno>
+               <idno type="URI">http://viaf.org/viaf/213473284</idno>
+               <idno type="URI">http://viaf.org/viaf/207229741</idno>
+               <idno type="URI">http://viaf.org/viaf/199662749</idno>
+               <idno type="URI">http://viaf.org/viaf/189266225</idno>
+               <idno type="URI">http://viaf.org/viaf/216905991</idno>
+               <birth when="1864" source="#bib405-1">1864</birth>
+               <death when="1935" source="#bib405-1">1935</death>
                <bibl xml:id="bib405-1">
-                  <title xml:lang="en">The Gorgias Encyclopedic
-                                                  Dictionary of the Syriac Heritage</title>
+                  <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <abbr>GEDSH</abbr>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="entry">118</citedRange>
@@ -151,10 +159,14 @@
                   <citedRange unit="pp">521</citedRange>
                </bibl>
                <bibl xml:id="bib405-4">
-                  <title>The Scattered Pearls: A History of Syriac
-                                                    Literature and Sciences</title>
+                  <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <abbr>Barsoum (Syriac)</abbr>
                   <ptr target="http://syriaca.org/bibl/3"/>
+               </bibl>
+               <bibl xml:id="bib405-7">
+                  <title>A Comprehensive Bibliography on Syriac Christianity</title>
+                  <abbr>CBSC</abbr>
+                  <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                </bibl>
             </person>
          </listPerson>
