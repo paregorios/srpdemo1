@@ -170,6 +170,7 @@
                         <encodingDesc>
                             <editorialDecl>
                                 <!-- Should this be inside a normalization tag? -->
+                                <!-- Need to add how we've done dates, such as "early 8th cent.", etc. -->
                                 <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
                                 <p>The capitalization of names marked with the type "split" has been normalized.</p>
                                 <!-- Are there other editorial decisions we need to record here? -->
@@ -797,6 +798,7 @@
                 <xsl:with-param name="next-element-name" select="name(following-sibling::*[$count + 1])"/>
                 <xsl:with-param name="next-element" select="following-sibling::*[$count + 1]"/>
                 <xsl:with-param name="count" select="$count + 1"/>
+                <xsl:with-param name="sort" select="$sort"/>
             </xsl:call-template>
         </xsl:if>
     </xsl:template>
