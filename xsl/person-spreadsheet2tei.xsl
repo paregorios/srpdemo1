@@ -101,7 +101,8 @@
                 <xsl:value-of select="concat($bib-id, '-7')"/>
             </xsl:variable>
             
-            <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH. -->
+            <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or GEDSH-style.
+            Doesn't work for comma-separated name parts that should be sorted as first. -->
             <xsl:variable name="sort">
                 <xsl:choose>
                     <xsl:when test="string-length(normalize-space(GEDSH_Full)) and string-length(normalize-space(concat(GEDSH_Given, GEDSH_Family, GEDSH_Titles)))">
@@ -275,6 +276,9 @@
                                         
                                         
                                         <!-- Adds VIAF URLs. -->
+                                        <!--What will our VIAF source ID be? SRP?-->
+                                        <idno type="URI">http://viaf.org/viaf/sourceID/SRP|<xsl:value-of select="SRP_ID"/></idno>
+                                        
                                         <xsl:for-each select="URL[string-length(normalize-space()) > 0]">
                                             <idno type="URI">
                                                 <xsl:value-of select="."/>
