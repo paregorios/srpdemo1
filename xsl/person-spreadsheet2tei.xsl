@@ -5,7 +5,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0"
-    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+    xmlns:saxon="http://saxon.sf.net/" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:functx="http://www.functx.com">
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> May 21, 2013</xd:p>
@@ -38,6 +38,18 @@
             </xd:p>
         </xd:desc>
     </xd:doc>
+    
+    <xsl:function name="functx:escape-for-regex" as="xs:string" 
+        xmlns:functx="http://www.functx.com" >
+        <xsl:param name="arg" as="xs:string?"/> 
+        
+        <xsl:sequence select=" 
+            replace($arg,
+            '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))','\\$1')
+            "/>
+        
+    </xsl:function>
+    
     <xsl:template name="main" match="/root">
         <!-- Creates a TEI document for each row (person record). -->
         <xsl:for-each select="row">
@@ -88,6 +100,7 @@
             <xsl:variable name="cbsc-id">
                 <xsl:value-of select="concat($bib-id, '-7')"/>
             </xsl:variable>
+            
             <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH. -->
             <xsl:variable name="sort">
                 <xsl:choose>
@@ -95,11 +108,19 @@
                         <xsl:choose>
                             <xsl:when test="starts-with(GEDSH_Full, GEDSH_Given)">forename</xsl:when>
                             <xsl:when test="starts-with(GEDSH_Full, GEDSH_Family)">surname</xsl:when>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">title</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">addName</xsl:when>
+                        </xsl:choose>
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space(GS_En_Full)) and string-length(normalize-space(concat(GS_En_Given, GS_En_Family, GS_En_Titles)))">
+                        <xsl:choose>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Given)">forename</xsl:when>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Family)">surname</xsl:when>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Titles)">addName</xsl:when>
                         </xsl:choose>
                     </xsl:when>
                 </xsl:choose>
             </xsl:variable>
+            
             
             <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:variable name="filename"
@@ -246,6 +267,7 @@
                                                     <xsl:with-param name="name" select="."/>
                                                     <xsl:with-param name="count" select="1"/>
                                                     <xsl:with-param name="all-name-parts" select="following-sibling::*[contains(name(), $group)]"/>
+                                                    <xsl:with-param name="sort" select="$sort"/>
                                                 </xsl:call-template>
                                             </persName>
                                         </xsl:for-each>
@@ -692,50 +714,68 @@
         <xsl:param name="name"/>
         <xsl:param name="count"/>
         <xsl:param name="all-name-parts"/>
+        <xsl:param name="sort"/>
         <xsl:param name="next-column" select="$all-name-parts[$count]"/>
-        <xsl:param name="next-column-name" select="name($next-column)"/>
+        <xsl:param name="next-column-name" select="name($all-name-parts[$count])"/>
         <xsl:choose>
-            <xsl:when test="$all-name-parts">
+            <xsl:when test="count($all-name-parts)">
+                <xsl:variable name="name-element-name">
+                    <xsl:choose>
+                        <xsl:when test="contains($next-column-name,'_Given')">forename</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Family')">surname</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Titles') or contains($next-column-name,'_Saint_Title') or contains($next-column-name,'_Terms_of_Address')">addName</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Office')">roleName</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Numeric_Title')">genName</xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
+                <!-- Might be able to machine-generate title types based on content (e.g., "bishop," "III", etc.) -->
+                <xsl:variable name="name-element-type">
+                    <xsl:choose>
+                        <xsl:when test="contains($next-column-name,'_Titles')">untagged-title</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Saint_Title')">saint-title</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Terms_of_Address')">terms-of-address</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Office')">office</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Numeric_Title')">numeric-title</xsl:when>
+                    </xsl:choose>
+                </xsl:variable>
                 <xsl:choose>
-                    <xsl:when test="$next-column-name">
-                        <xsl:variable name="name-element-name">
-                            <xsl:choose>
-                                <xsl:when test="contains($next-column-name,'_Given')">forename</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Family')">surname</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Titles') or contains($next-column-name,'_Saint_Title') or contains($next-column-name,'_Terms_of_Address')">addName</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Office')">roleName</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Numeric_Title')">genName</xsl:when>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <!-- Might be able to machine-generate title types based on content (e.g., "bishop," "III", etc.) -->
-                        <xsl:variable name="name-element-type">
-                            <xsl:choose>
-                                <xsl:when test="contains($next-column-name,'_Titles')">untagged-title</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Saint_Title')">saint-title</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Terms_of_Address')">terms-of-address</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Office')">office</xsl:when>
-                                <xsl:when test="contains($next-column-name,'_Numeric_Title')">numeric-title</xsl:when>
-                            </xsl:choose>
-                        </xsl:variable>
+                    <xsl:when test="contains($next-column, ', ') or contains($next-column, '، ')">
+                        <xsl:call-template name="name-parts">
+                            <xsl:with-param name="name">
+                                <xsl:call-template name="name-part-comma-separated">
+                                    <xsl:with-param name="name" select="$name"/>
+                                    <xsl:with-param name="count" select="1"/>
+                                    <!-- The token for splitting comma-separated values doesn't work well for commas inside parentheses. (See SRP 224) -->
+                                    <xsl:with-param name="all-name-parts" select="tokenize($next-column, ',\s|،\s')"/>
+                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                    <xsl:with-param name="sort" select="$sort"/>
+                                </xsl:call-template>
+                            </xsl:with-param>
+                            <xsl:with-param name="count" select="$count + 1"/>
+                            <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                            <xsl:with-param name="sort" select="$sort"/>
+                        </xsl:call-template>                    
+                    </xsl:when>
+                    <xsl:when test="string-length($next-column-name)">
                         <xsl:choose>
                             <xsl:when test="string-length($name-element-name) and string-length(normalize-space($next-column))">
-                                <xsl:analyze-string select="$name" regex="{$next-column}" flags="i">
+                                <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
                                     <xsl:matching-substring>
-                                        <xsl:element name="{$name-element-name}">
-                                            <xsl:if test="string-length($name-element-type)">
-                                                <xsl:attribute name="type" select="$name-element-type"/>
-                                            </xsl:if>
-                                            <xsl:copy-of select="."/>
-                                        </xsl:element>
+                                        <xsl:call-template name="name-part-element">
+                                            <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                                            <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                            <xsl:with-param name="sort" select="$sort"/>
+                                        </xsl:call-template>
                                     </xsl:matching-substring>
                                     <xsl:non-matching-substring>
                                         <xsl:call-template name="name-parts">
                                             <xsl:with-param name="name" select="."/>
                                             <xsl:with-param name="count" select="$count + 1"/>
                                             <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                                            <xsl:with-param name="sort" select="$sort"/>
                                         </xsl:call-template>
                                     </xsl:non-matching-substring>
-                                    <xsl:fallback></xsl:fallback>
                                 </xsl:analyze-string>
                             </xsl:when>
                             <xsl:otherwise>
@@ -743,6 +783,7 @@
                                     <xsl:with-param name="name" select="$name"/>
                                     <xsl:with-param name="count" select="$count + 1"/>
                                     <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                                    <xsl:with-param name="sort" select="$sort"/>
                                 </xsl:call-template>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -758,90 +799,81 @@
         </xsl:choose>
     </xsl:template>
     
-    
-    <xsl:template name="name-part-element" xmlns="http://www.tei-c.org/ns/1.0">
+    <xsl:template name="name-part-comma-separated" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
-        <xsl:param name="next-column"/>
+        <xsl:param name="count"/>
+        <xsl:param name="all-name-parts"/>
         <xsl:param name="name-element-name"/>
         <xsl:param name="name-element-type"/>
-        <xsl:param name="delim" select="',\s+'"/>
+        <xsl:param name="next-column" select="$all-name-parts[$count]"/>
+        <xsl:param name="sort"/>
         <xsl:choose>
-            <xsl:when test="contains($next-column, $delim)">
-                <xsl:variable name="substring" select="substring-before($next-column, $delim)"/>
-                <xsl:variable name="before" select="substring-before($name, $substring)"/>
-                <xsl:variable name="after" select="substring-after($name, $substring)"/>
-                <xsl:variable name="name-part-string"
-                    select="substring($name, string-length($before) + 1, string-length($name) - string-length($before) - string-length($after))"/>
-                <xsl:call-template name="name-part-element">
-                    <xsl:with-param name="name">
-                        <xsl:value-of select="$before"/><forename>
-                            <xsl:choose>
-                                <xsl:when test="(string-length($before) = 0) and (string-length($after) > 0)">
-                                    <xsl:attribute name="sort" select="1"/>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:attribute name="sort" select="2"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                            <xsl:if test="string-length($name-element-type)">
-                                <xsl:attribute name="type" select="$name-element-type"/>
-                            </xsl:if>
-                            <xsl:value-of select="$name-part-string"/>
-                        </forename><xsl:value-of select="$after"/>
-                    </xsl:with-param>
-                    <xsl:with-param name="next-column" select="substring-after($next-column, $delim)"/>
-                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
-                    <!--For now -->
-                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
-                    <xsl:with-param name="delim" select="$delim"/>
-                </xsl:call-template>
+            <xsl:when test="count($all-name-parts) >= $count">
+                <xsl:choose>
+                    <xsl:when test="string-length($name-element-name) and string-length(normalize-space($next-column))">
+                        <xsl:analyze-string select="$name" regex="{functx:escape-for-regex($next-column)}" flags="i">
+                            <xsl:matching-substring>
+                                <xsl:call-template name="name-part-element">
+                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                    <xsl:with-param name="sort" select="$sort"/>
+                                </xsl:call-template>
+                            </xsl:matching-substring>
+                            <xsl:non-matching-substring>
+                                <xsl:call-template name="name-part-comma-separated">
+                                    <xsl:with-param name="name" select="."/>
+                                    <xsl:with-param name="count" select="$count + 1"/>
+                                    <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                                    <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                                    <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                                    <xsl:with-param name="sort" select="$sort"/>
+                                </xsl:call-template>
+                            </xsl:non-matching-substring>
+                        </xsl:analyze-string>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:call-template name="name-part-comma-separated">
+                            <xsl:with-param name="name" select="$name"/>
+                            <xsl:with-param name="count" select="$count + 1"/>
+                            <xsl:with-param name="all-name-parts" select="$all-name-parts"/>
+                            <xsl:with-param name="name-element-name" select="$name-element-name"/>
+                            <xsl:with-param name="name-element-type" select="$name-element-type"/>
+                            <xsl:with-param name="sort" select="$sort"/>
+                        </xsl:call-template>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="substring" select="$next-column"/>
-                <xsl:variable name="before" select="substring-before($name, $substring)"/>
-                <xsl:variable name="after" select="substring-after($name, $substring)"/>
-                <xsl:variable name="name-element" as="xs:string"><xsl:element name="{$name-element-name}"><xsl:value-of select="$next-column"/></xsl:element></xsl:variable>
-                <xsl:if test="string-length($name) and string-length($next-column)">
-                    <xsl:copy-of select="replace($name, $next-column, $name-element)"/>
-                </xsl:if>
-                    <!--<xsl:copy-of select="substring-before($full-name, $next-column)"/><xsl:element name="{$name-element-name}">
-                    <xsl:choose>
-                        <xsl:when test="(string-length(substring-before($full-name, $next-column)) = 0) and (string-length(substring-after($full-name, $next-column)) > 0)">
-                            <xsl:attribute name="sort" select="1"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="sort" select="2"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:if test="string-length($name-element-type)">
-                        <xsl:attribute name="type" select="$name-element-type"/>
-                    </xsl:if>
-                    <xsl:copy-of select="substring($full-name, string-length(substring-before($full-name, $next-column)) + 1, string-length($full-name) - string-length(substring-before($full-name, $next-column)) - string-length(substring-after($full-name, $next-column)))"/>
-                </xsl:element><xsl:copy-of select="substring-after($full-name, $next-column)"/>-->
+                <xsl:value-of select="$name"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
     
-    <!--Deprecate this?-->
-    <xd:doc>
-        <xd:desc>
-            <xd:p>Determines which name part should be given precedence in alphabetic lists, using GEDSH, if present.</xd:p>
-        </xd:desc>
-        <xd:param name="sort">Shows which name part should be given precedence in alphabetic lists. Contains "forename", "surname", "title", or empty string.</xd:param>
-        <xd:param name="name-part">Passes in the current name part being processed from the <xd:ref name="name-parts" type="template">name-parts template</xd:ref>.</xd:param>
-    </xd:doc>
-    <xsl:template name="name-parts-sort">
+    <xsl:template name="name-part-element" xmlns="http://www.tei-c.org/ns/1.0">
+        <xsl:param name="name-element-name"/>
+        <xsl:param name="name-element-type"/>
         <xsl:param name="sort"/>
-        <xsl:param name="name-part"/>
-        <xsl:if test="string-length(normalize-space($sort))">
-            <xsl:attribute name="sort">
-                <xsl:choose>
-                    <xsl:when test="matches($sort, $name-part)">0</xsl:when>
-                    <xsl:otherwise>1</xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>
-        </xsl:if>
+        <xsl:element name="{$name-element-name}">
+            <xsl:if test="string-length($name-element-type)">
+                <xsl:attribute name="type" select="$name-element-type"/>
+            </xsl:if>
+            <xsl:if test="string-length(normalize-space($sort))">
+                <xsl:attribute name="sort">
+                    <xsl:choose>
+                        <xsl:when test="matches($sort, $name-element-name)">1</xsl:when>
+                        <xsl:otherwise>2</xsl:otherwise>
+                    </xsl:choose>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:copy-of select="."/>
+        </xsl:element>
     </xsl:template>
+    
+    
+    
+    
+    
+
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
