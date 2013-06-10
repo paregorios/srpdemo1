@@ -337,7 +337,7 @@
                                                 </xsl:call-template>
                                             </death>
                                         </xsl:for-each>
-                                        <xsl:if test="string-length(normalize-space(GEDSH_Reign_Begin)) or string-length(normalize-space(GEDSH_Reign_End)) or string-length(normalize-space(Barsoum_En_Other_Date))">
+                                        <xsl:if test="string-length(normalize-space(GEDSH_Reign_Begin)) or string-length(normalize-space(GEDSH_Reign_End))">
                                             <listEvent>
                                                 <!-- Will we always have both begin and end value for reigns? If not, how do we handle the following so that it creates only one event element for each Begin and End sequence? -->
                                                 <xsl:for-each 
