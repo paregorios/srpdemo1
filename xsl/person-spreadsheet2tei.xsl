@@ -102,23 +102,32 @@
             </xsl:variable>
             
             <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or GEDSH-style.
-            Doesn't work for comma-separated name parts that should be sorted as first. -->
+            Doesn't work for comma-separated name parts that should be sorted as first. 
+            If no name part can be matched with beginning of full name, defaults to given, then family, then titles, if they exist.
+            If no GEDSH or GEDSH-style name exists, defaults to given. -->
             <xsl:variable name="sort">
                 <xsl:choose>
                     <xsl:when test="string-length(normalize-space(GEDSH_Full)) and string-length(normalize-space(concat(GEDSH_Given, GEDSH_Family, GEDSH_Titles)))">
                         <xsl:choose>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Given)">forename</xsl:when>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Family)">surname</xsl:when>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">addName</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Given)">given</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Family)">family</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">titles</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_Given))">given</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_Family))">family</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_Titles))">titles</xsl:when>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:when test="string-length(normalize-space(GS_En_Full)) and string-length(normalize-space(concat(GS_En_Given, GS_En_Family, GS_En_Titles)))">
                         <xsl:choose>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Given)">forename</xsl:when>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Family)">surname</xsl:when>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Titles)">addName</xsl:when>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Given)">given</xsl:when>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Family)">family</xsl:when>
+                            <xsl:when test="starts-with(GS_En_Full, GS_En_Titles)">titles</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_En_Given))">given</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_En_Family))">family</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_En_Titles))">titles</xsl:when>
                         </xsl:choose>
                     </xsl:when>
+                    <xsl:otherwise>given</xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
             
@@ -287,7 +296,7 @@
                                       
                                       <!-- Adds date elements -->
                                         <xsl:for-each 
-                                            select="*[ends-with(name(),'Floruit') and string-length(normalize-space(node()))]">
+                                            select="*[(ends-with(name(),'Floruit') or ends-with(name(), '_Other_Date')) and string-length(normalize-space(node()))]">
                                             <floruit>
                                                 <xsl:call-template name="event-or-date">
                                                     <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
@@ -726,7 +735,7 @@
                 <xsl:variable name="name-element-name">
                     <xsl:choose>
                         <xsl:when test="contains($next-column-name,'_Given')">forename</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Family')">surname</xsl:when>
+                        <xsl:when test="contains($next-column-name,'_Family')">addName</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Titles') or contains($next-column-name,'_Saint_Title') or contains($next-column-name,'_Terms_of_Address')">addName</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Office')">roleName</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Numeric_Title')">genName</xsl:when>
@@ -735,6 +744,7 @@
                 <!-- Might be able to machine-generate title types based on content (e.g., "bishop," "III", etc.) -->
                 <xsl:variable name="name-element-type">
                     <xsl:choose>
+                        <xsl:when test="contains($next-column-name,'_Family')">family</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Titles')">untagged-title</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Saint_Title')">saint-title</xsl:when>
                         <xsl:when test="contains($next-column-name,'_Terms_of_Address')">terms-of-address</xsl:when>
@@ -864,7 +874,14 @@
             <xsl:if test="string-length(normalize-space($sort))">
                 <xsl:attribute name="sort">
                     <xsl:choose>
-                        <xsl:when test="matches($sort, $name-element-name)">1</xsl:when>
+                        <xsl:when test="($name-element-name = 'forename') and ($sort = 'given')">1</xsl:when>
+                        <xsl:when test="($name-element-name = 'addName')">
+                            <xsl:choose>
+                                <xsl:when test="($name-element-type = 'family') and ($sort = 'family')">1</xsl:when>
+                                <xsl:when test="$sort = 'titles'">1</xsl:when>
+                                <xsl:otherwise>2</xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:when>
                         <xsl:otherwise>2</xsl:otherwise>
                     </xsl:choose>
                 </xsl:attribute>
@@ -944,11 +961,6 @@
                 <!-- Is "incumbency" or "term-of-office" better for this? -->
                 <xsl:attribute name="type" select="'reign'"/>
                 <xsl:value-of select="."/>-<xsl:value-of select="following-sibling::*[ends-with(name(), '_End')]"/>
-            </xsl:when>
-            <xsl:when test="contains(name(), '_Other_Date')">
-                <!-- What about using this type? -->
-                <xsl:attribute name="type" select="'untagged'"/>
-                <desc>An event for which no description has been logged.</desc>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="."/>
