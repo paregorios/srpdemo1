@@ -75,31 +75,116 @@
             </xsl:variable>
             <!-- Creates a variable to use as the xml:id for the person element -->
             <xsl:variable name="person-id">person-<xsl:value-of select="SRP_ID"/></xsl:variable>
+            
+            <xsl:variable name="person-name-id">name<xsl:value-of select="SRP_ID"/></xsl:variable>
+            <!-- Assigns numbers to each source to use as base for ids, such as xml:id elements for bib and persName -->
+            
+            <!-- Creates sequence containing all full name elements for the row, so that variables can be created by processing this only once. -->
+            <xsl:variable name="all-full-names">
+                <xsl:copy-of select="*[ends-with(name(), '_Full')]"/>
+            </xsl:variable>
+            
+            <xsl:variable name="ids-base">
+                <xsl:call-template name="ids-base">
+                    <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                    <xsl:with-param name="count" select="1"/>
+                    <xsl:with-param name="same-source-adjustment" select="0"/>
+                </xsl:call-template>
+            </xsl:variable>
+            
+            <!-- Names that will be put in parallel (using @corresp) need variables for their ids? -->
+            <!--<xsl:variable name="gedsh-id-base" select="$ids-base/*[contains(name(), 'GEDSH')]"/>
+            <xsl:variable name="barsoum-en-id-base" select="$ids-base/*[contains(name(), 'Barsoum_En')]"/>
+            <xsl:variable name="barsoum-ar-id-base" select="$ids-base/*[contains(name(), 'Barsoum_Ar')]"/>
+            <xsl:variable name="barsoum-sy-id-base" select="$ids-base/*[contains(name(), 'Barsoum_Sy_NV')]"/>
+            <xsl:variable name="abdisho-ydq-id-base" select="$ids-base/*[contains(name(), 'Abdisho_YdQ_Sy_NV')]"/>
+            <xsl:variable name="abdisho-bo-id-base" select="$ids-base/*[contains(name(), 'Abdisho_BO_Sy_NV')]"/>
+            <xsl:variable name="cbsc-id-base" select="$ids-base/*[contains(name(), 'CBSC')]"/>-->
+            
+            <xsl:variable name="name-ids">
+                <xsl:for-each select="$all-full-names/*">
+                    
+                        <xsl:variable name="name" select="name()"/>
+                        <xsl:element name="{name()}"><xsl:value-of select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/></xsl:element>
+                    
+                </xsl:for-each>
+            </xsl:variable>
+            
+            <xsl:variable name="name-links">
+                <xsl:for-each select="$name-ids/*">
+                    <xsl:variable name="name" select="name()"/>
+                    <!-- If the corresponding full name has content ... -->
+                    <xsl:if test="string-length(normalize-space($all-full-names/*[contains(name(), $name)]))">
+                        <!-- ... create a link to the name id by adding a hash tag to it. -->
+                        <xsl:element name="{name()}">#<xsl:value-of select="."/></xsl:element>
+                    </xsl:if>
+                 </xsl:for-each>
+            </xsl:variable>
+            <!--
+            <!-\- Creates xml:id for persName elements, including # on beginning to use for links. -\->
+            <xsl:variable name="gedsh-name-link" select="$name-links/*[contains(name(), 'GEDSH')]"/>
+            
+            <xsl:variable name="barsoum-en-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_En')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-en-id-base"/></xsl:if>
+            </xsl:variable>
+            <xsl:variable name="barsoum-ar-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_Ar')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-ar-id-base"/></xsl:if>
+            </xsl:variable>
+            <xsl:variable name="barsoum-sy-nv-name-link" select="$name-links/*[contains(name(), 'Barsoum_Sy_NV')]"/>
+            <xsl:variable name="barsoum-sy-v-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-sy-id-base"/>b</xsl:if>
+            </xsl:variable>
+            <xsl:variable name="abdisho-ydq-sy-nv-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_YdQ_Sy_NV')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-ydq-id-base"/>a</xsl:if>
+            </xsl:variable>
+            <xsl:variable name="abdisho-ydq-sy-v-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_YdQ_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-ydq-id-base"/>b</xsl:if>
+            </xsl:variable>
+            <xsl:variable name="abdisho-bo-sy-nv-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_BO_Sy_NV')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-bo-id-base"/>a</xsl:if>
+            </xsl:variable>
+            <xsl:variable name="abdisho-bo-sy-v-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_BO_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-bo-id-base"/>b</xsl:if>
+            </xsl:variable>
+            <xsl:variable name="cbsc-name-link">
+                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'CBSC')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$cbsc-id-base"/></xsl:if>
+            </xsl:variable>-->
+            
             <!-- Creates a variable to use as the base for the xml:id for bib elements -->
             <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
             <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"/></xsl:variable>
+            
+            <xsl:variable name="bib-ids">
+                <xsl:for-each select="$all-full-names/*">
+                    
+                        <xsl:variable name="name" select="name()"/>
+                        <xsl:element name="{name()}"><xsl:value-of select="concat($bib-id, '-', replace($ids-base/*[contains(name(), $name)], 'a|b', ''))"/></xsl:element>
+                    
+                </xsl:for-each>
+            </xsl:variable>
+            
             <!-- Creates variables to use as xml:id for bib elements -->
-            <xsl:variable name="gedsh-id">
-                <xsl:value-of select="concat($bib-id, '-1')"/>
+            <!--<xsl:variable name="gedsh-id">
+                <xsl:value-of select="concat($bib-id, $gedsh-id-base)"/>
             </xsl:variable>
             <xsl:variable name="barsoum-en-id">
-                <xsl:value-of select="concat($bib-id, '-2')"/>
+                <xsl:value-of select="concat($bib-id, $barsoum-en-id-base)"/>
             </xsl:variable>
             <xsl:variable name="barsoum-ar-id">
-                <xsl:value-of select="concat($bib-id, '-3')"/>
+                <xsl:value-of select="concat($bib-id, $barsoum-ar-id-base)"/>
             </xsl:variable>
             <xsl:variable name="barsoum-sy-id">
-                <xsl:value-of select="concat($bib-id, '-4')"/>
+                <xsl:value-of select="concat($bib-id, $barsoum-sy-id-base)"/>
             </xsl:variable>
             <xsl:variable name="abdisho-ydq-id">
-                <xsl:value-of select="concat($bib-id, '-5')"/>
+                <xsl:value-of select="concat($bib-id, $abdisho-ydq-id-base)"/>
             </xsl:variable>
             <xsl:variable name="abdisho-bo-id">
-                <xsl:value-of select="concat($bib-id, '-6')"/>
+                <xsl:value-of select="concat($bib-id, $abdisho-bo-id-base)"/>
             </xsl:variable>
             <xsl:variable name="cbsc-id">
-                <xsl:value-of select="concat($bib-id, '-7')"/>
-            </xsl:variable>
+                <xsl:value-of select="concat($bib-id, $cbsc-id-base)"/>
+            </xsl:variable>-->
             
             <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or GEDSH-style.
             Doesn't work for comma-separated name parts that should be sorted as first. 
@@ -132,9 +217,10 @@
             </xsl:variable>
             
             
-            <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
+            
             <xsl:variable name="filename"
                 select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
+            <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:result-document href="{$filename}" format="xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0">
                     <!-- Need to decide what header should look like. -->
@@ -148,6 +234,7 @@
                                 <funder>The International Balzan Prize Foundation</funder>
                                 <principal>David A. Michelson</principal>
                                 <!-- Are the following correct? -->
+                                <!-- Should I include all of the following for all records, or should I base this on the logs in the spreadsheet? -->
                                 <respStmt>
                                     <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
                                     <resp>English name entry, matching with viaf.org records</resp>
@@ -200,29 +287,27 @@
                         </fileDesc>
                         <encodingDesc>
                             <editorialDecl>
-                                <!-- Should this be inside a normalization tag? -->
+                                
                                 <!-- Need to add how we've done dates, such as "early 8th cent.", etc. -->
-                                <p>Names marked with the type "split" do not include the commas that originally separated the parts of the name. For example, "de Halleux, André" has been split into the parts "de Halleux" and "André" leaving out the comma.</p>
-                                <p>The capitalization of names marked with the type "split" has been normalized.</p>
+                                
                                 <!-- Are there other editorial decisions we need to record here? -->
                             </editorialDecl>
                             <classDecl>
                                 <taxonomy>
-                                    <category xml:id="syriaca-authorized">
+                                    <category xml:id="syriaca-headword">
                                         <!-- Check whether the following is acceptable. -->
-                                        <!-- Do name types "sic" and "split" go here or in ODD file or both?-->
-                                        <catDesc>The name considered authoritative by Syriaca.org for cataloging purposes</catDesc>
+                                        <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                                     </category>
                                 </taxonomy>
                             </classDecl>
                         </encodingDesc>
                         <profileDesc>
-                            <!-- Need to add transliteration codes if we'll be using syr-Latn-x-gedsh etc. -->
                             <langUsage>
                                 <language ident="syr">Unvocalized Syriac of any variety or period</language>
                                 <language ident="syr-Syrj">Vocalized West Syriac</language>
                                 <language ident="syr-Syrn">Vocalized East Syriac</language>
                                 <language ident="en">English</language>
+                                <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
                                 <language ident="ar">Arabic</language>
                                 <language ident="fr">French</language>
                                 <language ident="de">German</language>
@@ -249,20 +334,17 @@
                                     <person xml:id="{$person-id}">
                                         <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
                                         <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
-                                            <persName type="sic">
+                                            <persName>
                                                 <!-- Adds xml:id attribute. -->
-                                                <xsl:call-template name="perName-id"/>                                                
+                                                <xsl:call-template name="perName-id">
+                                                    <xsl:with-param name="name-ids" select="$name-ids"/>
+                                                    <xsl:with-param name="name-links" select="$name-links"/>
+                                                </xsl:call-template>                                                
                                                 <!-- Adds language attributes. -->
                                                 <xsl:call-template name="language"/>
                                                 <!-- Adds source attributes. -->
                                                 <xsl:call-template name="source">
-                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
                                                 <!-- This will need to be changed if capitalization needs to be altered in GEDSH forms. -->
@@ -299,27 +381,14 @@
                                             select="*[(ends-with(name(),'Floruit') or ends-with(name(), '_Other_Date')) and string-length(normalize-space(node()))]">
                                             <floruit>
                                                 <xsl:call-template name="event-or-date">
-                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
-                                                </xsl:call-template>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>                                                </xsl:call-template>
                                             </floruit>
                                         </xsl:for-each>
                                         <xsl:for-each 
                                             select="*[ends-with(name(),'DOB') and string-length(normalize-space(node()))]">
                                             <birth>
                                                 <xsl:call-template name="event-or-date">
-                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                 </xsl:call-template>
                                             </birth>
                                         </xsl:for-each>
@@ -327,13 +396,7 @@
                                             select="*[ends-with(name(),'DOD') and string-length(normalize-space(node()))]">
                                             <death>
                                                 <xsl:call-template name="event-or-date">
-                                                    <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-                                                    <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-                                                    <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-                                                    <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-                                                    <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-                                                    <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-                                                    <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                 </xsl:call-template>
                                             </death>
                                         </xsl:for-each>
@@ -344,13 +407,7 @@
                                                     select="*[(ends-with(name(),'_Begin') or ends-with(name(),'_Other_Date')) and string-length(normalize-space(node()))]">
                                                     <event>
                                                         <xsl:call-template name="event-or-date">
-                                                            <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-                                                            <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-                                                            <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-                                                            <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-                                                            <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-                                                            <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-                                                            <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+                                                            <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                         </xsl:call-template>
                                                     </event>
                                                 </xsl:for-each>
@@ -362,7 +419,7 @@
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
                                             test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
-                                            <bibl xml:id="{$gedsh-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
                                                 <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                                                 <abbr>GEDSH</abbr>
                                                 <ptr target="http://syriaca.org/bibl/1"/>
@@ -385,7 +442,7 @@
                                         <!-- Does the order matter here? -->
                                         <xsl:if
                                             test="string-length(normalize-space(Barsoum_En_Full)) > 0">
-                                            <bibl xml:id="{$barsoum-en-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_En')]}">
                                                 <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (English)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/4"/>
@@ -405,7 +462,7 @@
                                         </xsl:if>
                                         <xsl:if
                                             test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
-                                            <bibl xml:id="{$barsoum-ar-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_Ar')]}">
                                                 <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
                                                     السريانية</title>
                                                 <abbr>Barsoum (Arabic)</abbr>
@@ -427,7 +484,7 @@
                                         </xsl:if>
                                         <xsl:if
                                             test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
-                                            <bibl xml:id="{$barsoum-sy-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_Sy_NV')]}">
                                                 <!-- Is this the actual title? -->
                                                 <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (Syriac)</abbr>
@@ -451,7 +508,7 @@
                                         <!-- Need Abdisho titles -->
                                         <xsl:if
                                             test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Full)) > 0">
-                                            <bibl xml:id="{$abdisho-ydq-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_Sy_NV')]}">
                                                 <title>Abdisho (YdQ)</title>
                                                 <abbr>Abdisho (YdQ)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/6"/>
@@ -465,7 +522,7 @@
                                         </xsl:if>
                                         <xsl:if
                                             test="(string-length(normalize-space(Abdisho_BO_Sy_NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_Sy_V_Full)) > 0)">
-                                            <bibl xml:id="{$abdisho-bo-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_BO_Sy_NV')]}">
                                                 <title>Abdisho (BO)</title>
                                                 <abbr>Abdisho (BO)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/7"/>
@@ -483,7 +540,7 @@
                                             <!-- Should CBSC link go directly to the tag on the CBSC system? 
                                             If so, we'll need to have some way to discern whether it is a  subject heading or an author heading in CBSC.
                                             And should that go under citedRange?-->
-                                            <bibl xml:id="{$cbsc-id}">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'CBSC')]}">
                                                 <title>A Comprehensive Bibliography on Syriac Christianity</title>
                                                 <abbr>CBSC</abbr>
                                                 <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
@@ -552,6 +609,44 @@
             <xd:p></xd:p>
         </xd:desc>
     </xd:doc>
+    
+    
+    <xd:doc>
+        <xd:desc>
+            <xd:p>Cycles through all the full names, assigning each a number that will be used as an id. Vocalized and non-vocalized versions of full-names are given "a" and "b" suffixes.</xd:p>
+        </xd:desc>
+        <xd:param name="all-full-names">All columns ending in "_Full"</xd:param>
+        <xd:param name="count">A counter to cycle through all the columns in all-full-names</xd:param>
+        <xd:param name="same-source-adjustment">Adjusts the number assigned to reflect that vocalized and non-vocalized versions of names from the same source have the same number (but an added suffix).</xd:param>
+        <xd:param name="next-column-name">Gets the name of the column to be processed out of the group of columns in all-full-names</xd:param>
+    </xd:doc>
+    <xsl:template name="ids-base">
+        <xsl:param name="all-full-names"/>
+        <xsl:param name="count"/>
+        <xsl:param name="same-source-adjustment"/>
+        <xsl:param name="next-column-name" select="name($all-full-names/*[$count])"/>
+        <xsl:if test="$next-column-name">
+            <xsl:element name="{$next-column-name}">
+                <xsl:value-of select="$count - $same-source-adjustment"/>
+                <xsl:choose>
+                    <xsl:when test="contains($next-column-name, '_NV_')">a</xsl:when>
+                    <xsl:when test="contains($next-column-name, '_V_')">b</xsl:when>
+                </xsl:choose>
+            </xsl:element>
+            <xsl:call-template name="ids-base">
+                <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                <xsl:with-param name="count" select="$count + 1"/>
+                <xsl:with-param name="same-source-adjustment">
+                    <xsl:choose>
+                        <!-- This test assumes non-vocalized and vocalized columns coming from the same source do not have any intervening columns containing full names from a different source -->
+                        <xsl:when test="matches(replace($next-column-name, '_NV_|_V_', ''), replace(name($all-full-names/*[$count + 1]), '_NV_|_V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
+                        <xsl:otherwise><xsl:value-of select="$same-source-adjustment"/></xsl:otherwise>
+                    </xsl:choose>
+                </xsl:with-param>
+            </xsl:call-template>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template name="language" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:choose>
             <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
@@ -595,109 +690,90 @@
         <xd:param name="abdisho-ydq-id">The xml:id for the Abidsho YdQ bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
         <xd:param name="abdisho-bo-id">The xml:id for the Abdisho BO bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
     </xd:doc>
-    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
-        <xd:desc>
-            <xd:p></xd:p>
-        </xd:desc>
-        <xd:param name="gedsh-id"></xd:param>
-        <xd:param name="barsoum-en-id"></xd:param>
-        <xd:param name="barsoum-sy-id"></xd:param>
-        <xd:param name="barsoum-ar-id"></xd:param>
-        <xd:param name="cbsc-id"></xd:param>
-        <xd:param name="abdisho-ydq-id"></xd:param>
-        <xd:param name="abdisho-bo-id"></xd:param>
-    </xd:doc>
     <xsl:template name="source" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="gedsh-id"/>
-        <xsl:param name="barsoum-en-id"/>
-        <xsl:param name="barsoum-sy-id"/>
-        <xsl:param name="barsoum-ar-id"/>
-        <xsl:param name="cbsc-id"/>
-        <xsl:param name="abdisho-ydq-id"/>
-        <xsl:param name="abdisho-bo-id"/>
-        <xsl:choose>
-            <xsl:when test="contains(name(),'GEDSH')">
-                <xsl:attribute name="source">#<xsl:value-of select="$gedsh-id"/></xsl:attribute>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Ar')">
-                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-ar-id"/></xsl:attribute>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Sy')">
-                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-sy-id"/></xsl:attribute>
-            </xsl:when>
-            <!-- Since Barsoum_Ar and Barsoum_Sy are matched above, anything else with Barsoum is assumed to be from the English version,
-            whether or not marked specifically "EN" (e.g., dates).-->
-            <xsl:when test="contains(name(),'Barsoum')">
-                <xsl:attribute name="source">#<xsl:value-of select="$barsoum-en-id"/></xsl:attribute>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_YdQ')">
-                <xsl:attribute name="source">#<xsl:value-of select="$abdisho-ydq-id"/></xsl:attribute>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_BO')">
-                <xsl:attribute name="source">#<xsl:value-of select="$abdisho-bo-id"/></xsl:attribute>
-            </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En_Full')">
-                <xsl:attribute name="source">#<xsl:value-of select="$cbsc-id"/></xsl:attribute>
-            </xsl:when>
-        </xsl:choose>
-    </xsl:template>
+        <xsl:param name="bib-ids"/>
+        <xsl:param name="column-name" select="name(.)"/>
+        <!-- Remove sourcing for Syriaca-generated names (GS and Syriaca authorized) -->
+        <xsl:attribute name="source" select="concat('#', $bib-ids/*[contains(name(), $column-name)])"/>
+   </xsl:template>
     
-    <!-- The following @corresp doesn't test for whether the referenced persName fields actually exist. Does it need to? -->
+    
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
             <xd:p>This template does the following:
                 <xd:ul>
-                    <xd:li>Creates xml:id attributes for persName elements, generating the ID's by stringing together the SRP ID, a number corresponding to the source, an "a" or "b" for unvocalized/vocalized, and a 0 or 1 for split/unsplit.</xd:li>
+                    <xd:li>Creates xml:id attributes for persName elements, generating the ID's by stringing together the SRP ID, a number corresponding to the source column, an "a" or "b" for unvocalized/vocalized, and a 0 or 1 for split/unsplit.</xd:li>
                     <xd:li>Links the persName to other language/vocalization versions of the name using @corresp.</xd:li>
                 </xd:ul>
             </xd:p>
         </xd:desc>
         <xd:param name="split-id">Designates whether the persName is a split ("-1") or unsplit ("-0") version of the name.</xd:param>
     </xd:doc>
-    <!-- Will we use @corresp or linkGrp to show parallel names? -->
     <xsl:template name="perName-id" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:variable name="person-name-id">name<xsl:value-of select="../SRP_ID"/>-</xsl:variable>
-        <xsl:choose>
+        <xsl:param name="name-ids"/>
+        <xsl:param name="name-links"/>
+        <xsl:param name="current-column-name" select="name()"/>
+        <!--<xsl:param name="barsoum-en-name-link" select="$name-links/*[contains(name(), 'Barsoum_En']"/>
+        <xsl:param name="barsoum-ar-name-link"/>
+        <xsl:param name="barsoum-sy-nv-name-link"/>
+        <xsl:param name="barsoum-sy-v-name-link"/>
+        <xsl:param name="abdisho-ydq-sy-nv-name-link"/>
+        <xsl:param name="abdisho-ydq-sy-v-name-link"/>
+        <xsl:param name="abdisho-bo-sy-nv-name-link"/>
+        <xsl:param name="abdisho-bo-sy-v-name-link"/>
+        <xsl:param name="cbsc-name-link"/>-->
+        
+        <xsl:attribute name="xml:id" select="$name-ids/*[contains(name(), $current-column-name)]"/>
+        <!-- Gets all other name links whose column names start with the same word (e.g., "Barsoum", "Abdisho").
+        Requires that names that should be parallel have column names starting with same word (before underscore)
+        and that names that should not be parallel do not.-->
+        <!-- Is it OK that vocalized and non-vocalized names from different editions are parallel to each other or should I weed these out? -->
+        <xsl:if test="exists($name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))])">
+            <xsl:attribute name="corresp" select="$name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))]"/>
+        </xsl:if>
+        
+        <!--<xsl:choose>
             <xsl:when test="contains(name(),'GEDSH')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>1</xsl:attribute>
+                <xsl:attribute name="xml:id" select="replace($gedsh-name-link, '#', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_En')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>2</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '3', ' #', $person-name-id, '4a', ' #', $person-name-id, '4b')"/>
+                <xsl:attribute name="xml:id" select="replace($barsoum-en-name-link, '#', '')"/>
+                <!-\- Puts all corresponding name ids into a single attribute separated by a space, but removes extra spaces if some are blank. -\->
+                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-sy-nv-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Ar')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>3</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', ' #', $person-name-id, '4a', ' #', $person-name-id, '4b')"/>
+                <xsl:attribute name="xml:id" select="replace($barsoum-ar-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-en-name-link, $barsoum-sy-nv-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Barsoum_Sy_NV')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>4a</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', ' #', $person-name-id, '3', ' #', $person-name-id, '4b')"/>
+                <xsl:attribute name="xml:id" select="replace($barsoum-sy-nv-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-en-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(), 'Barsoum_Sy_V')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>4b</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '2', ' #', $person-name-id, '3', ' #', $person-name-id, '4a')"/>        
+                <xsl:attribute name="xml:id" select="replace($barsoum-sy-v-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-en-name-link, $barsoum-sy-nv-name-link), ' '), '^s|\s\s|\s$', '')"/>        
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ_Sy_NV')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>5a</xsl:attribute>
-                <!-- Should Abdisho YdQ and BO be in parallel to each other too (as here and below) since different editions of same name? -->
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '5b', ' #', $person-name-id, '6a')"/>
+                <xsl:attribute name="xml:id" select="replace($abdisho-ydq-sy-nv-name-link, '#', '')"/>
+                <!-\- Should Abdisho YdQ and BO be in parallel to each other too (as here and below) since different editions of same name? -\->
+                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-ydq-sy-v-name-link, $abdisho-bo-sy-nv-name-link, $abdisho-bo-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_YdQ_Sy_V')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>5b</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '5a', ' #', $person-name-id, '6b')"/>
+                <xsl:attribute name="xml:id" select="replace($abdisho-ydq-sy-v-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-ydq-sy-nv-name-link, $abdisho-bo-sy-nv-name-link, $abdisho-bo-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_BO_Sy_NV')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>6a</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '6b', ' #', $person-name-id, '5a')"/>
+                <xsl:attribute name="xml:id" select="replace($abdisho-bo-sy-nv-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-bo-sy-v-name-link, $abdisho-ydq-sy-nv-name-link, $abdisho-ydq-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'Abdisho_BO_Sy_V')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>6b</xsl:attribute>
-                <xsl:attribute name="corresp" select="concat('#', $person-name-id, '6a', ' #', $person-name-id, '5b')"/>
+                <xsl:attribute name="xml:id" select="replace($abdisho-bo-sy-v-name-link, '#', '')"/>
+                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-bo-sy-nv-name-link, $abdisho-ydq-sy-nv-name-link, $abdisho-ydq-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
             </xsl:when>
             <xsl:when test="contains(name(),'CBSC_En_Full')">
-                <xsl:attribute name="xml:id"><xsl:value-of select="$person-name-id"/>7</xsl:attribute>
+                <xsl:attribute name="xml:id" select="replace($cbsc-name-link, '#', '')"/>
             </xsl:when>
-        </xsl:choose>
+        </xsl:choose>-->
     </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -928,13 +1004,7 @@
         <xd:param name="abdisho-bo-id"></xd:param>
     </xd:doc>
     <xsl:template name="event-or-date" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:param name="gedsh-id"/>
-        <xsl:param name="barsoum-en-id"/>
-        <xsl:param name="barsoum-sy-id"/>
-        <xsl:param name="barsoum-ar-id"/>
-        <xsl:param name="cbsc-id"/>
-        <xsl:param name="abdisho-ydq-id"/>
-        <xsl:param name="abdisho-bo-id"/>
+        <xsl:param name="bib-ids"/>
         
         <!-- Adds machine-readable attributes to date. -->
         <xsl:call-template name="date-attributes">
@@ -946,13 +1016,13 @@
 
         <!-- Adds source attributes. -->
         <xsl:call-template name="source">
-            <xsl:with-param name="gedsh-id" select="$gedsh-id"/>
-            <xsl:with-param name="barsoum-en-id" select="$barsoum-en-id"/>
-            <xsl:with-param name="barsoum-sy-id" select="$barsoum-sy-id"/>
-            <xsl:with-param name="barsoum-ar-id" select="$barsoum-ar-id"/>
-            <xsl:with-param name="cbsc-id" select="$cbsc-id"/>
-            <xsl:with-param name="abdisho-ydq-id" select="$abdisho-ydq-id"/>
-            <xsl:with-param name="abdisho-bo-id" select="$abdisho-bo-id"/>
+            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+            <!-- Change naming of columns so that this works.
+            Needs Sourcename_Edition_Language- rather than Sourcename_Edition_Language_
+            Then could test for '-'
+            This is hanging because "Barsoum" is contained in more than one name - "Barsoum_En_Full", "Barsoum_Ar_Full", etc.
+            -->
+            <xsl:with-param name="column-name" select="substring-before(name(.), '_')"/>
         </xsl:call-template>
         
         <!-- Adds custom type and, if relevant, human-readable date as content of element-->
