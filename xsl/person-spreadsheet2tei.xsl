@@ -49,6 +49,7 @@
             "/>
         
     </xsl:function>
+        
     
     <xsl:template name="main" match="/root">
         <!-- Creates a TEI document for each row (person record). -->
@@ -56,20 +57,20 @@
             <!-- Creates variable to use for displaying the name in titles, headers, etc. -->
             <xsl:variable name="display-name-english">
                 <xsl:choose>
-                    <xsl:when test="string-length(normalize-space(GEDSH_Full))">
-                        <xsl:value-of select="GEDSH_Full"/>
+                    <xsl:when test="string-length(normalize-space(GEDSH_en-Full))">
+                        <xsl:value-of select="GEDSH_en-Full"/>
                     </xsl:when>
-                    <xsl:when test="string-length(normalize-space(GS_En_Full))">
-                        <xsl:value-of select="GS_En_Full"/>
+                    <xsl:when test="string-length(normalize-space(GS_en-Full))">
+                        <xsl:value-of select="GS_en-Full"/>
                     </xsl:when>
-                    <xsl:when test="string-length(normalize-space(Barsoum_En_Full))">
-                        <xsl:value-of select="Barsoum_En_Full"/>
+                    <xsl:when test="string-length(normalize-space(Barsoum_en-Full))">
+                        <xsl:value-of select="Barsoum_en-Full"/>
                     </xsl:when>
-                    <xsl:when test="string-length(normalize-space(CBSC_En_Full))">
-                        <xsl:value-of select="CBSC_En_Full"/>
+                    <xsl:when test="string-length(normalize-space(CBSC_en-Full))">
+                        <xsl:value-of select="CBSC_en-Full"/>
                     </xsl:when>
-                    <xsl:when test="string-length(normalize-space(Other_En_Full))">
-                        <xsl:value-of select="Other_En_Full"/>
+                    <xsl:when test="string-length(normalize-space(Other_en-Full))">
+                        <xsl:value-of select="Other_en-Full"/>
                     </xsl:when>
                 </xsl:choose>
             </xsl:variable>
@@ -192,24 +193,24 @@
             If no GEDSH or GEDSH-style name exists, defaults to given. -->
             <xsl:variable name="sort">
                 <xsl:choose>
-                    <xsl:when test="string-length(normalize-space(GEDSH_Full)) and string-length(normalize-space(concat(GEDSH_Given, GEDSH_Family, GEDSH_Titles)))">
+                    <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) and string-length(normalize-space(concat(GEDSH_en-Given, GEDSH_en-Family, GEDSH_en-Titles)))">
                         <xsl:choose>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Given)">given</xsl:when>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Family)">family</xsl:when>
-                            <xsl:when test="starts-with(GEDSH_Full, GEDSH_Titles)">titles</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GEDSH_Given))">given</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GEDSH_Family))">family</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GEDSH_Titles))">titles</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Given)">given</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Family)">family</xsl:when>
+                            <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Titles)">titles</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_en-Given))">given</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_en-Family))">family</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GEDSH_en-Titles))">titles</xsl:when>
                         </xsl:choose>
                     </xsl:when>
-                    <xsl:when test="string-length(normalize-space(GS_En_Full)) and string-length(normalize-space(concat(GS_En_Given, GS_En_Family, GS_En_Titles)))">
+                    <xsl:when test="string-length(normalize-space(GS_en-Full)) and string-length(normalize-space(concat(GS_en-Given, GS_en-Family, GS_en-Titles)))">
                         <xsl:choose>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Given)">given</xsl:when>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Family)">family</xsl:when>
-                            <xsl:when test="starts-with(GS_En_Full, GS_En_Titles)">titles</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GS_En_Given))">given</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GS_En_Family))">family</xsl:when>
-                            <xsl:when test="string-length(normalize-space(GS_En_Titles))">titles</xsl:when>
+                            <xsl:when test="starts-with(GS_en-Full, GS_en-Given)">given</xsl:when>
+                            <xsl:when test="starts-with(GS_en-Full, GS_en-Family)">family</xsl:when>
+                            <xsl:when test="starts-with(GS_en-Full, GS_en-Titles)">titles</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_en-Given))">given</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_en-Family))">family</xsl:when>
+                            <xsl:when test="string-length(normalize-space(GS_en-Titles))">titles</xsl:when>
                         </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>given</xsl:otherwise>
@@ -347,12 +348,12 @@
                                                     <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                 </xsl:call-template>
                                                 <!-- Shows which name forms are authorized. -->
-                                                <!-- This will need to be changed if capitalization needs to be altered in GEDSH forms. -->
-                                                <xsl:if test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En')) or (contains(name(),'Authorized_Sy'))">
+                                                <!-- Need to test whether this properly overrides GEDSH with GS as headword. -->
+                                                <xsl:if test="contains(name(),'GS_en') or (contains(name(),'GEDSH') and not(string-length(normalize-space(*[contains(name(), 'GS_en')])))) or contains(name(),'Authorized_syr')">
                                                     <xsl:attribute name="syriaca-tags" select="'#syriaca-headword'"/>
                                                 </xsl:if>
                                                 <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source. 
-                                                E.g., "Barsoum_En" for the columns "Barsoum_En_Full", "Barsoum_En_Given", etc.-->
+                                                E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
                                                 <xsl:variable name="group" select="replace(name(), '_Full', '')"/>
                                                 <!-- Adds name parts -->
                                                 <xsl:call-template name="name-parts">
@@ -400,7 +401,7 @@
                                                 </xsl:call-template>
                                             </death>
                                         </xsl:for-each>
-                                        <xsl:if test="string-length(normalize-space(GEDSH_Reign_Begin)) or string-length(normalize-space(GEDSH_Reign_End))">
+                                        <xsl:if test="string-length(normalize-space(GEDSH_en-Reign_Begin)) or string-length(normalize-space(GEDSH_en-Reign_End))">
                                             <listEvent>
                                                 <!-- Will we always have both begin and end value for reigns? If not, how do we handle the following so that it creates only one event element for each Begin and End sequence? -->
                                                 <xsl:for-each 
@@ -418,21 +419,21 @@
                                         <!-- Should languages be declared for English titles or only non-English? -->
                                         <!-- Citation for GEDSH -->
                                         <xsl:if
-                                            test="string-length(normalize-space(concat(GEDSH_Start_Pg,GEDSH_Entry_Num,GEDSH_Full))) > 0">
+                                            test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full))) > 0">
                                             <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
                                                 <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                                                 <abbr>GEDSH</abbr>
                                                 <ptr target="http://syriaca.org/bibl/1"/>
                                                 <xsl:if
-                                                  test="string-length(normalize-space(GEDSH_Entry_Num)) > 0">
+                                                  test="string-length(normalize-space(GEDSH_en-Entry_Num)) > 0">
                                                   <citedRange unit="entry">
-                                                  <xsl:value-of select="GEDSH_Entry_Num"/>
+                                                  <xsl:value-of select="GEDSH_en-Entry_Num"/>
                                                   </citedRange>
                                                 </xsl:if>
                                                 <xsl:if
-                                                  test="string-length(normalize-space(GEDSH_Start_Pg)) > 0">
+                                                  test="string-length(normalize-space(GEDSH_en-Start_Pg)) > 0">
                                                   <citedRange unit="pp">
-                                                  <xsl:value-of select="GEDSH_Start_Pg"/>
+                                                  <xsl:value-of select="GEDSH_en-Start_Pg"/>
                                                   </citedRange>
                                                 </xsl:if>
                                             </bibl>
@@ -441,65 +442,65 @@
                                         <!-- Citations for Barsoum-->
                                         <!-- Does the order matter here? -->
                                         <xsl:if
-                                            test="string-length(normalize-space(Barsoum_En_Full)) > 0">
-                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_En')]}">
+                                            test="string-length(normalize-space(Barsoum_en-Full)) > 0">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_en')]}">
                                                 <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (English)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/4"/>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
                                                     <citedRange unit="entry">
-                                                        <xsl:value-of select="Barsoum_En_Entry_Num"/>
+                                                        <xsl:value-of select="Barsoum_en-Entry_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_En_Page_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_en-Page_Num)) > 0">
                                                     <citedRange unit="pp">
-                                                        <xsl:value-of select="Barsoum_En_Page_Num"/>
+                                                        <xsl:value-of select="Barsoum_en-Page_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                             </bibl>
                                         </xsl:if>
                                         <xsl:if
-                                            test="string-length(normalize-space(Barsoum_Ar_Full)) > 0">
-                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_Ar')]}">
+                                            test="string-length(normalize-space(Barsoum_ar-Full)) > 0">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_ar')]}">
                                                 <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
                                                     السريانية</title>
                                                 <abbr>Barsoum (Arabic)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/2"/>
                                                 <!-- Are entry nums the same for Arabic as for English? -->
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
                                                     <citedRange unit="entry">
-                                                        <xsl:value-of select="Barsoum_En_Entry_Num"/>
+                                                        <xsl:value-of select="Barsoum_en-Entry_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_Ar_Page_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_ar-Page_Num)) > 0">
                                                     <citedRange unit="pp">
-                                                        <xsl:value-of select="Barsoum_Ar_Page_Num"/>
+                                                        <xsl:value-of select="Barsoum_ar-Page_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                             </bibl>
                                         </xsl:if>
                                         <xsl:if
-                                            test="string-length(normalize-space(Barsoum_Sy_NV_Full)) > 0">
-                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_Sy_NV')]}">
+                                            test="string-length(normalize-space(Barsoum_syr-NV_Full)) > 0">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_syr-NV')]}">
                                                 <!-- Is this the actual title? -->
                                                 <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                                 <abbr>Barsoum (Syriac)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/3"/>
                                                 <!-- Are entry nums the same for Syriac as for English? -->
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_En_Entry_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
                                                     <citedRange unit="entry">
-                                                        <xsl:value-of select="Barsoum_En_Entry_Num"/>
+                                                        <xsl:value-of select="Barsoum_en-Entry_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Barsoum_Sy_Page_Num)) > 0">
+                                                    test="string-length(normalize-space(Barsoum_syr-Page_Num)) > 0">
                                                     <citedRange unit="pp">
-                                                        <xsl:value-of select="Barsoum_Sy_Page_Num"/>
+                                                        <xsl:value-of select="Barsoum_syr-Page_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                             </bibl>
@@ -507,35 +508,35 @@
                                         
                                         <!-- Need Abdisho titles -->
                                         <xsl:if
-                                            test="string-length(normalize-space(Abdisho_YdQ_Sy_NV_Full)) > 0">
-                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_Sy_NV')]}">
+                                            test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) > 0">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_syr-NV')]}">
                                                 <title>Abdisho (YdQ)</title>
                                                 <abbr>Abdisho (YdQ)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/6"/>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Abdisho_YdQ_Sy_Page_Num)) > 0">
+                                                    test="string-length(normalize-space(Abdisho_YdQ_syr-Page_Num)) > 0">
                                                     <citedRange unit="pp">
-                                                        <xsl:value-of select="Abdisho_YdQ_Sy_Page_Num"/>
+                                                        <xsl:value-of select="Abdisho_YdQ_syr-Page_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                             </bibl>
                                         </xsl:if>
                                         <xsl:if
-                                            test="(string-length(normalize-space(Abdisho_BO_Sy_NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_Sy_V_Full)) > 0)">
-                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_BO_Sy_NV')]}">
+                                            test="(string-length(normalize-space(Abdisho_BO_syr-NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_syr-V_Full)) > 0)">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_BO_syr-NV')]}">
                                                 <title>Abdisho (BO)</title>
                                                 <abbr>Abdisho (BO)</abbr>
                                                 <ptr target="http://syriaca.org/bibl/7"/>
                                                 <xsl:if
-                                                    test="string-length(normalize-space(Abdisho_BO_Sy_Page_Num)) > 0">
+                                                    test="string-length(normalize-space(Abdisho_BO_syr-Page_Num)) > 0">
                                                     <citedRange unit="pp">
-                                                        <xsl:value-of select="Abdisho_BO_Sy_Page_Num"/>
+                                                        <xsl:value-of select="Abdisho_BO_syr-Page_Num"/>
                                                     </citedRange>
                                                 </xsl:if>
                                             </bibl>
                                         </xsl:if>
                                         <xsl:if
-                                            test="string-length(normalize-space(CBSC_En_Full)) > 0">
+                                            test="string-length(normalize-space(CBSC_en-Full)) > 0">
                                             <!-- Should we include the link to CBSC as an additional @target on the pointer?-->
                                             <!-- Should CBSC link go directly to the tag on the CBSC system? 
                                             If so, we'll need to have some way to discern whether it is a  subject heading or an author heading in CBSC.
@@ -648,8 +649,26 @@
     </xsl:template>
     
     <xsl:template name="language" xmlns="http://www.tei-c.org/ns/1.0">
-        <xsl:choose>
-            <!-- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -->
+        <xsl:param name="column-name" select="name()"/>
+        <!-- If any other language codes are used in the input spreadsheet, add them below. -->
+        <xsl:analyze-string select="name()" regex="_(syr|en|ar|de|fr|lat)-">
+            <xsl:matching-substring>
+                <xsl:attribute name="xml:lang">
+                    <xsl:value-of select="replace(replace(., '_', ''), '-', '')"/>
+                    <!-- Adds script code to vocalized names. -->
+                    <xsl:if test="matches($column-name, '(-|_)V_')">
+                        <xsl:choose>
+                            <xsl:when test="contains($column-name, 'Barsoum_syr-')">-syrj</xsl:when>
+                            <xsl:when test="contains($column-name, 'Abdisho')">-syrn</xsl:when>
+                        </xsl:choose>
+                    </xsl:if>
+                    <xsl:if test="matches($column-name, 'GEDSH_en-|GS_en-')">-x-gedsh</xsl:if>
+                </xsl:attribute>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+        
+        <!--<xsl:choose>
+            <!-\- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -\->
             <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
                 <xsl:attribute name="xml:lang" select="'syr-Latn-x-gedsh'"/>
             </xsl:when>
@@ -674,7 +693,7 @@
             <xsl:when test="contains(name(),'_Ar')">
                 <xsl:attribute name="xml:lang" select="'ar'"/>
             </xsl:when>
-        </xsl:choose>
+        </xsl:choose>-->
     </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -791,7 +810,7 @@
                 </xd:ul>
             </xd:p>
         </xd:desc>
-        <xd:param name="group">Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_Given"). Used to make sure this template loop doesn't proceed to a different set of fields.</xd:param>
+        <xd:param name="group">Field name without the name part on the end (e.g., "GEDSH" is group for "GEDSH_en-Given"). Used to make sure this template loop doesn't proceed to a different set of fields.</xd:param>
         <xd:param name="same-group">Boolean to test whether the next element is in the same group/fieldset.</xd:param>
         <xd:param name="next-element-name">The name of the next element being processed, which is the element immediately following in the source XML.</xd:param>
         <xd:param name="next-element">Content of the next element being processed, which is the element immediately following in the source XML.</xd:param>
@@ -1017,12 +1036,7 @@
         <!-- Adds source attributes. -->
         <xsl:call-template name="source">
             <xsl:with-param name="bib-ids" select="$bib-ids"/>
-            <!-- Change naming of columns so that this works.
-            Needs Sourcename_Edition_Language- rather than Sourcename_Edition_Language_
-            Then could test for '-'
-            This is hanging because "Barsoum" is contained in more than one name - "Barsoum_En_Full", "Barsoum_Ar_Full", etc.
-            -->
-            <xsl:with-param name="column-name" select="substring-before(name(.), '_')"/>
+            <xsl:with-param name="column-name" select="substring-before(name(.), '-')"/>
         </xsl:call-template>
         
         <!-- Adds custom type and, if relevant, human-readable date as content of element-->
@@ -1072,7 +1086,7 @@
         <xsl:param name="count"/>
         <!-- Tests whether the beginning of the field name matches the name of the human-readable field. 
         For this to work, machine-readable date fields need to start with the field name of the corresponding human-readable field.
-        For example, GEDSH_DOB and GEDSH_DOB_Standard -->
+        For example, GEDSH_en-DOB and GEDSH_en-DOB_Standard -->
         <!-- What should be done if a _Begin field or an _End field have notBefore/notAfter attributes? -->
         <xsl:if test="contains($next-element-name, $date-type)">
             <xsl:if test="string-length(normalize-space($next-element))">
