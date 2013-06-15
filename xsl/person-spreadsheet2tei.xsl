@@ -82,7 +82,7 @@
             
             <!-- Creates sequence containing all full name elements for the row, so that variables can be created by processing this only once. -->
             <xsl:variable name="all-full-names">
-                <xsl:copy-of select="*[ends-with(name(), '_Full')]"/>
+                <xsl:copy-of select="*[matches(name(), '(_|-)Full')]"/>
             </xsl:variable>
             
             <xsl:variable name="ids-base">
@@ -333,8 +333,8 @@
                             <listPerson>
                                 <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
                                     <person xml:id="{$person-id}">
-                                        <!-- Selects any non-empty fields ending with "_Full" (i.e., full names) -->
-                                        <xsl:for-each select="*[ends-with(name(),'_Full') and string-length(normalize-space(node()))]">
+                                        <!-- Selects any non-empty fields ending with "_Full" or "-Full" (i.e., full names) -->
+                                        <xsl:for-each select="*[matches(name(),'(_|-)Full') and string-length(normalize-space(node()))]">
                                             <persName>
                                                 <!-- Adds xml:id attribute. -->
                                                 <xsl:call-template name="perName-id">
@@ -354,7 +354,7 @@
                                                 </xsl:if>
                                                 <!--A variable to hold the first part of the column name, which must be the same for all name columns from that source. 
                                                 E.g., "Barsoum_en" for the columns "Barsoum_en", "Barsoum_en-Given", etc.-->
-                                                <xsl:variable name="group" select="replace(name(), '_Full', '')"/>
+                                                <xsl:variable name="group" select="replace(name(), '(_|-)Full', '')"/>
                                                 <!-- Adds name parts -->
                                                 <xsl:call-template name="name-parts">
                                                     <xsl:with-param name="name" select="."/>
@@ -630,8 +630,8 @@
             <xsl:element name="{$next-column-name}">
                 <xsl:value-of select="$count - $same-source-adjustment"/>
                 <xsl:choose>
-                    <xsl:when test="contains($next-column-name, '_NV_')">a</xsl:when>
-                    <xsl:when test="contains($next-column-name, '_V_')">b</xsl:when>
+                    <xsl:when test="matches($next-column-name, '(_|-)NV_')">a</xsl:when>
+                    <xsl:when test="matches($next-column-name, '(_|-)V_')">b</xsl:when>
                 </xsl:choose>
             </xsl:element>
             <xsl:call-template name="ids-base">
@@ -640,7 +640,7 @@
                 <xsl:with-param name="same-source-adjustment">
                     <xsl:choose>
                         <!-- This test assumes non-vocalized and vocalized columns coming from the same source do not have any intervening columns containing full names from a different source -->
-                        <xsl:when test="matches(replace($next-column-name, '_NV_|_V_', ''), replace(name($all-full-names/*[$count + 1]), '_NV_|_V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
+                        <xsl:when test="matches(replace($next-column-name, '(_|-)NV_|(_|-)V_', ''), replace(name($all-full-names/*[$count + 1]), '(_|-)NV_|(_|-)V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
                         <xsl:otherwise><xsl:value-of select="$same-source-adjustment"/></xsl:otherwise>
                     </xsl:choose>
                 </xsl:with-param>
@@ -658,8 +658,8 @@
                     <!-- Adds script code to vocalized names. -->
                     <xsl:if test="matches($column-name, '(-|_)V_')">
                         <xsl:choose>
-                            <xsl:when test="contains($column-name, 'Barsoum_syr-')">-syrj</xsl:when>
-                            <xsl:when test="contains($column-name, 'Abdisho')">-syrn</xsl:when>
+                            <xsl:when test="contains($column-name, 'Barsoum_syr-')">-Syrj</xsl:when>
+                            <xsl:when test="contains($column-name, 'Abdisho')">-Syrn</xsl:when>
                         </xsl:choose>
                     </xsl:if>
                     <xsl:if test="matches($column-name, 'GEDSH_en-|GS_en-')">-x-gedsh</xsl:if>
@@ -817,7 +817,6 @@
         <xd:param name="count">A counter to use for determining the next element to process.</xd:param>
         <xd:param name="sort">Contains the name of the TEI name part element that should be used first in alphabetical lists.</xd:param>
     </xd:doc>
-    <!-- What to do about comma-separated titles? -->
     <xsl:template name="name-parts" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="name"/>
         <xsl:param name="count"/>
@@ -829,22 +828,22 @@
             <xsl:when test="count($all-name-parts)">
                 <xsl:variable name="name-element-name">
                     <xsl:choose>
-                        <xsl:when test="contains($next-column-name,'_Given')">forename</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Family')">addName</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Titles') or contains($next-column-name,'_Saint_Title') or contains($next-column-name,'_Terms_of_Address')">addName</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Office')">roleName</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Numeric_Title')">genName</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Given')">forename</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Family')">addName</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Titles') or matches($next-column-name,'(_|-)Saint_Title') or matches($next-column-name,'(_|-)Terms_of_Address')">addName</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Office')">roleName</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Numeric_Title')">genName</xsl:when>
                     </xsl:choose>
                 </xsl:variable>
                 <!-- Might be able to machine-generate title types based on content (e.g., "bishop," "III", etc.) -->
                 <xsl:variable name="name-element-type">
                     <xsl:choose>
-                        <xsl:when test="contains($next-column-name,'_Family')">family</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Titles')">untagged-title</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Saint_Title')">saint-title</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Terms_of_Address')">terms-of-address</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Office')">office</xsl:when>
-                        <xsl:when test="contains($next-column-name,'_Numeric_Title')">numeric-title</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Family')">family</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Titles')">untagged-title</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Saint_Title')">saint-title</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Terms_of_Address')">terms-of-address</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Office')">office</xsl:when>
+                        <xsl:when test="matches($next-column-name,'(_|-)Numeric_Title')">numeric-title</xsl:when>
                     </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
@@ -898,7 +897,7 @@
                         </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:copy-of select="$name"/>
+                        <xsl:value-of select="$name"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
