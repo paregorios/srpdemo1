@@ -287,10 +287,16 @@
                             </sourceDesc>
                         </fileDesc>
                         <encodingDesc>
+                            <p>Names lacking source attributes are composite forms included for the purpose of disambiguation.</p>
                             <editorialDecl>
-                                
-                                <!-- Need to add how we've done dates, such as "early 8th cent.", etc. -->
-                                
+                                <interpretation>
+                                    <p>Approximate dates described in terms of centuries or partial centuries have been interpreted as in the following example:
+                                    "4th cent." - notBefore="300" notAfter="399".
+                                    "Early 4th cent." - notBefore="300" notAfter="349". 
+                                    "Late 4th cent." - notBefore="350" notAfter="399". 
+                                    "Mid-4th cent." - notBefore="325" notAfter="374". 
+                                    Etc.</p>
+                                </interpretation>                                
                                 <!-- Are there other editorial decisions we need to record here? -->
                             </editorialDecl>
                             <classDecl>
