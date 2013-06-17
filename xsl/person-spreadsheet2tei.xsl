@@ -85,9 +85,17 @@
                 <xsl:copy-of select="*[matches(name(), '(_|-)Full')]"/>
             </xsl:variable>
             
+            <!-- A sequence of one column per source (or two for vocalized/non-vocalized), using full name if available 
+            or another column if information other than a name is derived from the source. -->
+            <!-- Any sources need to have a column represented here. -->
+            <xsl:variable name="sourced-columns">
+                <xsl:copy-of select="$all-full-names"/>
+                <xsl:copy-of select="VIAF-Dates_Raw"/>
+            </xsl:variable>
+            
             <xsl:variable name="ids-base">
                 <xsl:call-template name="ids-base">
-                    <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                    <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
                     <xsl:with-param name="count" select="1"/>
                     <xsl:with-param name="same-source-adjustment" select="0"/>
                 </xsl:call-template>
@@ -156,7 +164,7 @@
             <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"/></xsl:variable>
             
             <xsl:variable name="bib-ids">
-                <xsl:for-each select="$all-full-names/*">
+                <xsl:for-each select="$sourced-columns/*">
                     
                         <xsl:variable name="name" select="name()"/>
                         <xsl:element name="{name()}"><xsl:value-of select="concat($bib-id, '-', replace($ids-base/*[contains(name(), $name)], 'a|b', ''))"/></xsl:element>
@@ -553,6 +561,24 @@
                                                 <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
                                             </bibl>
                                         </xsl:if>
+                                        <!-- Should we put the link to the extended VIAF record as a pointer? -->
+                                        <xsl:if
+                                            test="string-length(normalize-space(VIAF-Dates_Raw)) > 0">
+                                            <bibl xml:id="{$bib-ids/*[contains(name(), 'VIAF')]}">
+                                                <title>Virtual International Authority File</title>
+                                                <abbr>VIAF</abbr>
+                                                <ptr target="http://viaf.org"/>
+                                                <span>Information cited from VIAF may come from any library or agency participating with VIAF.</span>
+                                            </bibl>
+                                        </xsl:if>                                        
+                                        
+                                        <!-- Adds Record Description field as a note. -->
+                                        <xsl:if test="string-length(normalize-space(Record_Description))">
+                                            <note type="record-description">
+                                                <xsl:value-of select="Record_Description"/>
+                                            </note>
+                                        </xsl:if>
+                                        
                                         
                                         
                                         <!-- Adds Record Description field as a note. -->
@@ -561,7 +587,6 @@
                                                 <xsl:value-of select="Record_Description"/>
                                             </note>
                                         </xsl:if>
-                                       
                                         
                                     </person>
                                 
@@ -586,7 +611,7 @@
             </xsl:result-document>
         </xsl:for-each>
 
-        <!-- Create an index file that links to all of the EAC files.
+        <!-- Create an index file that links to all of the TEI files.
         Index does not work for rows lacking a Calculated_Name.-->
         <xsl:result-document href="persons-authorities-spreadsheet-output/index.html" format="html">
             <html>
@@ -628,10 +653,10 @@
         <xd:param name="next-column-name">Gets the name of the column to be processed out of the group of columns in all-full-names</xd:param>
     </xd:doc>
     <xsl:template name="ids-base">
-        <xsl:param name="all-full-names"/>
+        <xsl:param name="sourced-columns"/>
         <xsl:param name="count"/>
         <xsl:param name="same-source-adjustment"/>
-        <xsl:param name="next-column-name" select="name($all-full-names/*[$count])"/>
+        <xsl:param name="next-column-name" select="name($sourced-columns/*[$count])"/>
         <xsl:if test="$next-column-name">
             <xsl:element name="{$next-column-name}">
                 <xsl:value-of select="$count - $same-source-adjustment"/>
@@ -641,12 +666,12 @@
                 </xsl:choose>
             </xsl:element>
             <xsl:call-template name="ids-base">
-                <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
                 <xsl:with-param name="count" select="$count + 1"/>
                 <xsl:with-param name="same-source-adjustment">
                     <xsl:choose>
                         <!-- This test assumes non-vocalized and vocalized columns coming from the same source do not have any intervening columns containing full names from a different source -->
-                        <xsl:when test="matches(replace($next-column-name, '(_|-)NV_|(_|-)V_', ''), replace(name($all-full-names/*[$count + 1]), '(_|-)NV_|(_|-)V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
+                        <xsl:when test="matches(replace($next-column-name, '(_|-)NV_|(_|-)V_', ''), replace(name($sourced-columns/*[$count + 1]), '(_|-)NV_|(_|-)V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
                         <xsl:otherwise><xsl:value-of select="$same-source-adjustment"/></xsl:otherwise>
                     </xsl:choose>
                 </xsl:with-param>
