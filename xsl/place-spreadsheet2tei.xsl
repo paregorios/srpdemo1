@@ -218,10 +218,11 @@
                                                 </xsl:variable>
                                                 <xsl:attribute name="source"><xsl:value-of select="$this_source_attribute"/></xsl:attribute>
                                             </xsl:if>
-                                            
+
+                                            <!-- DEPRECATED: we no longer use @corresp for corresponding place names -->
                                             <!-- finally, if it is a Barsoum name, it needs a @corresp attribute pointing to the other Barsoum names -->
                                             <!-- NOTE: this @corresp generator DOES NOT WORK wherever there is more than one Barsoum name -->
-                                            <xsl:if test="$this_row/Barsoum_Syriac_Name_Vocalized = . or $this_row/Barsoum_Arabic_Name = . or $this_row/Barsoum_English_Name = .">
+                                            <!-- <xsl:if test="$this_row/Barsoum_Syriac_Name_Vocalized = . or $this_row/Barsoum_Arabic_Name = . or $this_row/Barsoum_English_Name = .">
                                                 <xsl:variable name="this_corresp_attribute" as="xs:string*">
                                                     <xsl:choose>
                                                         <xsl:when test="$this_row/Barsoum_Syriac_Name_Vocalized = .">
@@ -234,13 +235,13 @@
                                                             <xsl:sequence select="(concat('#',$name-prefix,index-of($names,$this_row/Barsoum_Syriac_Name_Vocalized)),concat('#',$name-prefix,index-of($names,$this_row/Barsoum_Arabic_Name)))"></xsl:sequence>
                                                         </xsl:when>
                                                     </xsl:choose>
-                                                </xsl:variable>
+                                                </xsl:variable> -->
                                                 <!-- but some Barsoum names might be missing from the record, so figure out which and omit -->
                                                 <!-- a missing Barsoum name will correspond to a $this_corresp_attribute entry ending in '-' -->
-                                                <xsl:choose>
-                                                    <xsl:when test="ends-with($this_corresp_attribute[1],'-') and ends-with($this_corresp_attribute[2],'-')">
+                                                <!-- <xsl:choose>
+                                                    <xsl:when test="ends-with($this_corresp_attribute[1],'-') and ends-with($this_corresp_attribute[2],'-')"> -->
                                                         <!-- NO @corresp attribute, because no corresponding Barsoum names exist -->
-                                                    </xsl:when>
+                                                    <!-- </xsl:when>
                                                     <xsl:when test="ends-with($this_corresp_attribute[1],'-')">
                                                         <xsl:attribute name="corresp"><xsl:value-of select="$this_corresp_attribute[2]"/></xsl:attribute>
                                                     </xsl:when>
@@ -251,7 +252,7 @@
                                                         <xsl:attribute name="corresp"><xsl:value-of select="$this_corresp_attribute"/></xsl:attribute>
                                                     </xsl:otherwise>
                                                 </xsl:choose>
-                                            </xsl:if>
+                                            </xsl:if> -->
                                             
                                             <!-- finally output the value of the <placeName> element, the name form itself -->
                                             <xsl:value-of select="."/>

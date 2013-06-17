@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-16-04:00</date>
+            <date>2013-06-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -50,6 +50,7 @@
             <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
             <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
             <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+            <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -69,7 +70,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -80,18 +81,9 @@
                <placeName xml:id="name418-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܨܐܠܚܝܗ̇</placeName>
-               <placeName xml:id="name418-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib418-1"
-                          corresp="#name418-4 #name418-5">ܨܰܐܠܚܝܗ̇</placeName>
-               <placeName xml:id="name418-4"
-                          xml:lang="ar"
-                          source="#bib418-2"
-                          corresp="#name418-3 #name418-5">الصالحية</placeName>
-               <placeName xml:id="name418-5"
-                          xml:lang="en"
-                          source="#bib418-3"
-                          corresp="#name418-3 #name418-4">Saliḥiyya</placeName>
+               <placeName xml:id="name418-3" xml:lang="syr-Syrj" source="#bib418-1">ܨܰܐܠܚܝܗ̇</placeName>
+               <placeName xml:id="name418-4" xml:lang="ar" source="#bib418-2">الصالحية</placeName>
+               <placeName xml:id="name418-5" xml:lang="en" source="#bib418-3">Saliḥiyya</placeName>
                <desc xml:id="abstract-en-418"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib418-1">ܩܪܝܬܳܐ ܗܝ ܕܒܩܘܪܒܳܐ ܕܐܘܪܗܳܝ ܘܩܰܕܡܳܝܐ ܕܬܰܚܡܗ̇ ܥܰܒܕ ܐܠܡܰܠܟ ܒܰܪ ܨܰܐܠܚ ܐܰܠܗܰܐܫܡܝ. ܟ݂ܰܐܠܕܝ ܕܶܝܢ ܐܶܡܪ ܒܩܘܪܒܐ ܕܪܰܩܗ̇ ܐܝܬ ܠܘܳܬܗ̇ ܒܰܛܝܐܣ ܘܕܰܝܪܳܐ ܕܡܳܪܝ ܙܰܟܰܝ ܩܰܕܡܳܝܐ ܕܫܰܟܠܠ ܩܨܪ̈ܝܗ̇ ܡܗܕܝ</quote>

@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-16-04:00</date>
+            <date>2013-06-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -42,6 +42,7 @@
             <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
             <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
             <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+            <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -61,7 +62,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -69,14 +70,8 @@
          <listPlace>
             <place xml:id="place-336" type="monastery">
                <placeName xml:id="name336-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayr Ibn Jājī</placeName>
-               <placeName xml:id="name336-2"
-                          xml:lang="ar"
-                          source="#bib336-1"
-                          corresp="#name336-3">دير ابن جاجي</placeName>
-               <placeName xml:id="name336-3"
-                          xml:lang="en"
-                          source="#bib336-2"
-                          corresp="#name336-2">Bar Jājī Monastery</placeName>
+               <placeName xml:id="name336-2" xml:lang="ar" source="#bib336-1">دير ابن جاجي</placeName>
+               <placeName xml:id="name336-3" xml:lang="en" source="#bib336-2">Bar Jājī Monastery</placeName>
                <desc xml:id="abstract-en-336"/>
                <desc xml:lang="ar">
                   <quote source="#bib336-1">على النهر اليابس من اعمال ملطية انشأه باسم الشهداء الاربعين الراهب ايليا ابن جاجي التكريتي عام 960 وعلّم فيه الراهب يوحنا تلميذ مارون العلوم اللغوية والحكمية في حدود سنة 980-999 وتخرج فيه ستة عشر حبرا حتى سنة 1105 وفي سنة 1058 تضعضع بغارة شنها ثلاثة آلاف تركي على ملطية فتولاه الخراب</quote>

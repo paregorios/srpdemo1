@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-16-04:00</date>
+            <date>2013-06-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -46,6 +46,7 @@
             <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
             <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
             <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+            <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -65,7 +66,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,14 +80,8 @@
                <placeName xml:id="name347-3" xml:lang="syr-Syrj" source="#bib347-1">ܕܰܝܪ</placeName>
                <placeName xml:id="name347-4" xml:lang="syr-Syrj" source="#bib347-1">ܕܒܶܝ</placeName>
                <placeName xml:id="name347-5" xml:lang="syr-Syrj" source="#bib347-1">ܒܳܬܝ̈ܢ</placeName>
-               <placeName xml:id="name347-6"
-                          xml:lang="ar"
-                          source="#bib347-2"
-                          corresp="#name347-7">دير بيث باتين</placeName>
-               <placeName xml:id="name347-7"
-                          xml:lang="en"
-                          source="#bib347-3"
-                          corresp="#name347-6">Beth Bātīn Monastery</placeName>
+               <placeName xml:id="name347-6" xml:lang="ar" source="#bib347-2">دير بيث باتين</placeName>
+               <placeName xml:id="name347-7" xml:lang="en" source="#bib347-3">Beth Bātīn Monastery</placeName>
                <desc xml:id="abstract-en-347"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib347-1">ܒܚܳܪܢ. ܐܶܬܟܰܢܫܰܬ ܒܗ ܣܘܢܰܗܕܘܣ ܫܢܰܬ  793   ܐܰܦܶܩ ܚܰܕ ܦܰܛܪܝܰܪܟܳܐ ܘܰܬܠܳܬܐ ܐܶܦܝܣܩܘܦ̈ܐ. ܥܕܰܡܳܐ ܠܰܫܢܰܬ  975. </quote>

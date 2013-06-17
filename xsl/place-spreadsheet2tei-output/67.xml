@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-16-04:00</date>
+            <date>2013-06-17-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -46,6 +46,7 @@
             <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
             <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
             <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+            <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -65,7 +66,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -75,17 +76,10 @@
                <placeName xml:id="name67-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib67-1 #bib67-4"
-                          corresp="#name67-3 #name67-4">Dara</placeName>
+                          source="#bib67-1 #bib67-4">Dara</placeName>
                <placeName xml:id="name67-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܪܐ</placeName>
-               <placeName xml:id="name67-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib67-2"
-                          corresp="#name67-4 #name67-1">ܕܳܪܳܐ</placeName>
-               <placeName xml:id="name67-4"
-                          xml:lang="ar"
-                          source="#bib67-3"
-                          corresp="#name67-3 #name67-1">دارا</placeName>
+               <placeName xml:id="name67-3" xml:lang="syr-Syrj" source="#bib67-2">ܕܳܪܳܐ</placeName>
+               <placeName xml:id="name67-4" xml:lang="ar" source="#bib67-3">دارا</placeName>
                <desc xml:id="abstract-en-67"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib67-2">ܡܕܝܺܢܬܐ ܗܝ ܕܒܰܦܫܦܘܽܠܐ ܕܛܘܪܐ ܒܶܝܬ ܢܨܺܝܒܝܺܢ ܠܡܰܪܕܺܝܢ ܐܶܬܝܰܬܒܰܬ ܫܢܰܬ  506  ܘܩܰܘܝܰܬ ܟܘܪܣܝܳܐ ܐܶܦܝܣܩܘܦܳܝܐ ܠܣܘܪ̈ܝܳܝܐ ܥܕܡܐ ܠܡܶܨܥܝ̈ܬܗ ܕܕܳܪܳܐ ܕܝ̄ܒ ܘܝܰܘܡܳܢ ܩܪܺܝܬܳܐ ܗܝ ܙܥܘܽܪܬܐ.</quote>
