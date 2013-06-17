@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,35 +65,39 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-353" type="">
+            <place xml:id="place-353" type="monastery">
                <placeName xml:id="name353-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Daniel of Jolsh</placeName>
                <placeName xml:id="name353-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܕܢܝܐܝܠ ܕܓܠܫ ܥܢܘܝܐ 439</placeName>
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܕܢܝܐܝܠ ܕܓܠܫ ܥܢܘܝܐ</placeName>
                <placeName xml:id="name353-3" xml:lang="syr-Syrj" source="#bib353-1">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name353-4" xml:lang="syr-Syrj" source="#bib353-1">ܕܡܳܪ</placeName>
                <placeName xml:id="name353-5" xml:lang="syr-Syrj" source="#bib353-1">ܕܳܢܝܐܝ</placeName>
                <placeName xml:id="name353-6" xml:lang="syr-Syrj" source="#bib353-1">ܕܓܳܠ</placeName>
-               <placeName xml:id="name353-7" xml:lang="syr-Syrj" source="#bib353-1">ܥܢܘܳܝܳ</placeName>
-               <placeName xml:id="name353-8" xml:lang="syr-Syrj" source="#bib353-1">439</placeName>
-               <placeName xml:id="name353-9" xml:lang="ar" source="#bib353-2">دير مار دانيال الجلشي الناسك 439+</placeName>
-               <placeName xml:id="name353-10" xml:lang="en" source="#bib353-3">Daniel the Jalshian ascetic (d. 439)</placeName>
-               <placeName xml:id="name353-11" xml:lang="en" source="#bib353-3">Monastery of</placeName>
+               <placeName xml:id="name353-7" xml:lang="syr-Syrj" source="#bib353-1">ܥܢܘܳܝܳܐ</placeName>
+               <placeName xml:id="name353-8"
+                          xml:lang="ar"
+                          source="#bib353-2"
+                          corresp="#name353-9">دير مار دانيال الجلشي الناسك</placeName>
+               <placeName xml:id="name353-9"
+                          xml:lang="en"
+                          source="#bib353-3"
+                          corresp="#name353-8">Monastery of Daniel the Jalshian ascetic</placeName>
                <desc xml:id="abstract-en-353"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib353-1">ܒܛܘܪܳܐ ܕܡܬܝܢܝܗ ܘܰܒܓܰܪܒܰܝ ܡܰܪܕܝܢ ܡܰܪܕܶܐ ܡܰܫܩܠܐ ܕܚܰܕ ܝܰܘܡܐ ܡܶܢܗ̇ ܫܰܟܠܠܗ ܝܘܚܰܢܢ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܡܰܪܕܝܢ ܗܘܐ ܫܢܰܬ   1230  ܘܗܐ ܠܗܫܐ ܒܶܢܝ̈ܢܰܘܗܝ ܪܰܘܪܒ̈ܐ ܩܰܝܳܡ̈ܝܢ.</quote>
+                  <quote source="#bib353-1">439 ܒܛܘܪܳܐ ܕܡܬܝܢܝܗ ܘܰܒܓܰܪܒܰܝ ܡܰܪܕܝܢ ܡܰܪܕܶܐ ܡܰܫܩܠܐ ܕܚܰܕ ܝܰܘܡܐ ܡܶܢܗ̇ ܫܰܟܠܠܗ ܝܘܚܰܢܢ ܡܺܝܛܪܘܦܘܠܝܛܳܐ ܕܡܰܪܕܝܢ ܗܘܐ ܫܢܰܬ   1230  ܘܗܐ ܠܗܫܐ ܒܶܢܝ̈ܢܰܘܗܝ ܪܰܘܪܒ̈ܐ ܩܰܝܳܡ̈ܝܢ.</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib353-2">فى جبل المتّينية والشمال الغربي من قرية ديركه شمالي ماردين مرحلة يوم عنها، رمّه يوحنا مطران ماردين وكان عامراً آهلاً عام 1230 ولاتزال رسومه العظيمة ماثلة</quote>
+                  <quote source="#bib353-2">439+ فى جبل المتّينية والشمال الغربي من قرية ديركه شمالي ماردين مرحلة يوم عنها، رمّه يوحنا مطران ماردين وكان عامراً آهلاً عام 1230 ولاتزال رسومه العظيمة ماثلة</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib353-3">in the mountain of Matīniyya, northwest of the village of Dairkah, a day’s journey north of Mardin. It was rebuilt by John, metropolitan of Mardin, and was inhabited until 1230. Its magnificent remains can be seen to this day.</quote>
+                  <quote source="#bib353-3">(d. 439) in the mountain of Matīniyya, northwest of the village of Dairkah, a day’s journey north of Mardin. It was rebuilt by John, metropolitan of Mardin, and was inhabited until 1230. Its magnificent remains can be seen to this day.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/353</idno>

@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,7 +65,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -73,18 +75,22 @@
                <placeName xml:id="name200-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib200-1">Tella</placeName>
+                          source="#bib200-1 #bib200-4">Tella</placeName>
                <placeName xml:id="name200-2" xml:lang="en" source="#bib200-1">Constantina</placeName>
                <placeName xml:id="name200-3"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܬܠܐ ܐܘ ܬܠ ܡܰܘܙܠܬ</placeName>
-               <placeName xml:id="name200-4" xml:lang="syr-Syrj" source="#bib200-2">ܬܠ</placeName>
-               <placeName xml:id="name200-5" xml:lang="syr-Syrj" source="#bib200-2">ܐ</placeName>
-               <placeName xml:id="name200-6" xml:lang="syr-Syrj" source="#bib200-2">ܬܶ</placeName>
-               <placeName xml:id="name200-7" xml:lang="syr-Syrj" source="#bib200-2">ܡܰܘܙܠܰܬ</placeName>
-               <placeName xml:id="name200-8" xml:lang="ar" source="#bib200-3">تلا او تلّ موزلث او تلّ موزن</placeName>
-               <placeName xml:id="name200-9" xml:lang="en" source="#bib200-4">Tella (Tell Mawzalt</placeName>
-               <placeName xml:id="name200-10" xml:lang="en" source="#bib200-4">or Mawzan)</placeName>
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib200-2">ܬܠܐ</placeName>
+               <placeName xml:id="name200-4" xml:lang="syr-Syrj" source="#bib200-2">ܬܶ</placeName>
+               <placeName xml:id="name200-5" xml:lang="syr-Syrj" source="#bib200-2">ܡܰܘܙܠܰܬ</placeName>
+               <placeName xml:id="name200-6" xml:lang="syr-Syrj" source="#bib200-2">ܘܶܝܪܰܐܢܫܰܗܝܪ</placeName>
+               <placeName xml:id="name200-7" xml:lang="ar" source="#bib200-3">تلا</placeName>
+               <placeName xml:id="name200-8" xml:lang="ar" source="#bib200-3">تلّ موزلث</placeName>
+               <placeName xml:id="name200-9" xml:lang="ar" source="#bib200-3">تلّ موزن</placeName>
+               <placeName xml:id="name200-10" xml:lang="ar" source="#bib200-3">ويران شهر</placeName>
+               <placeName xml:id="name200-11" xml:lang="en" source="#bib200-4">Tell Mawzalt</placeName>
+               <placeName xml:id="name200-12" xml:lang="en" source="#bib200-4">Mawzan</placeName>
+               <placeName xml:id="name200-13" xml:lang="en" source="#bib200-4">Wayran Shahr</placeName>
                <desc xml:id="abstract-en-200"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib200-2">ܡܕܝܺܢܬܐ ܗܘܳܬ ܡܫܰܟܠܠܬܐ ܕܒܶܝܬ ܡܰܪܕܝܢ ܠܐܘܪܗܳܝ ܡܰܪܕܶܐ ܬܪܶܝܢ ܡܰܫ̈ܩܠܝܢ ܡܶܢ ܩܰܕܡܳܝܬܐ ܘܝܰܘܡܳܢ ܡܕܝܢܬܽܘܢܳܝܬܳܐ ܗܝ ܕܡܶܬܶܐܡܰܪ ܠܗ̇ ܘܶܝܪܰܐܢܫܰܗܝܪ.</quote>
@@ -102,6 +108,7 @@
                <idno type="URI">http://syriaca.org/place/200</idno>
                <idno type="URI">http://pleiades.stoa.org/places/874324</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Viranşehir</idno>
+               <idno type="URI">http://dbpedia.org/resource/Viranşehir</idno>
                <bibl xml:id="bib200-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Dayro d-Mor Yaʿqub Malpono</title>
+            <title xml:lang="en">Dayro d-Mor Yaʿqub</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -39,7 +39,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -59,42 +61,54 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-470" type="">
-               <placeName xml:id="name470-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayro d-Mor Yaʿqub Malpono</placeName>
+               <placeName xml:id="name470-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib470-1">Dayro d-Mor Yaʿqub</placeName>
                <placeName xml:id="name470-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܝܥܩܘܒ ܡܠܦܢܐ</placeName>
-               <placeName xml:id="name470-3" xml:lang="syr-Syrj" source="#bib470-1">ܕܰܝܪܳ</placeName>
-               <placeName xml:id="name470-4" xml:lang="syr-Syrj" source="#bib470-1">ܕܡܳܪ</placeName>
-               <placeName xml:id="name470-5" xml:lang="syr-Syrj" source="#bib470-1">ܝܰܥܩܘ</placeName>
-               <placeName xml:id="name470-6" xml:lang="syr-Syrj" source="#bib470-1">ܡܰܠܦܳܢܐ</placeName>
-               <placeName xml:id="name470-7" xml:lang="ar" source="#bib470-2">دير مار يعقوب الملفان</placeName>
-               <placeName xml:id="name470-8" xml:lang="en" source="#bib470-3">Jacob</placeName>
-               <placeName xml:id="name470-9" xml:lang="en" source="#bib470-3">the Doctor of the Church</placeName>
-               <placeName xml:id="name470-10" xml:lang="en" source="#bib470-3">Monastery</placeName>
+               <placeName xml:id="name470-3" xml:lang="syr-Syrj" source="#bib470-2">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name470-4" xml:lang="syr-Syrj" source="#bib470-2">ܕܡܳܪ</placeName>
+               <placeName xml:id="name470-5" xml:lang="syr-Syrj" source="#bib470-2">ܝܰܥܩܘ</placeName>
+               <placeName xml:id="name470-6" xml:lang="syr-Syrj" source="#bib470-2">ܡܰܠܦܳܢܐ</placeName>
+               <placeName xml:id="name470-7"
+                          xml:lang="ar"
+                          source="#bib470-3"
+                          corresp="#name470-8">دير مار يعقوب الملفان</placeName>
+               <placeName xml:id="name470-8"
+                          xml:lang="en"
+                          source="#bib470-4"
+                          corresp="#name470-7">Jacob the Doctor of the Church Monastery</placeName>
                <desc xml:id="abstract-en-470"/>
                <desc xml:lang="en">
-                  <quote source="#bib470-3">first mentioned in history in 1165 and still active.</quote>
+                  <quote source="#bib470-4">first mentioned in history in 1165 and still active.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/470</idno>
                <bibl xml:id="bib470-1">
+                  <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
+                  <ptr target="http://syriaca.org/bibl/1"/>
+                  <citedRange unit="pp">375</citedRange>
+               </bibl>
+               <bibl xml:id="bib470-2">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>
                   <citedRange unit="pp">546</citedRange>
                </bibl>
-               <bibl xml:id="bib470-2">
+               <bibl xml:id="bib470-3">
                   <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                   <ptr target="http://syriaca.org/bibl/2"/>
                   <citedRange unit="pp">510</citedRange>
                </bibl>
-               <bibl xml:id="bib470-3">
+               <bibl xml:id="bib470-4">
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">564</citedRange>

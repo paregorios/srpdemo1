@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,7 +65,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,16 +80,13 @@
                <placeName xml:id="name40-3"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib40-2"
-                          corresp="#name40-4 #name40-5">ܒܘܨܪ</placeName>
-               <placeName xml:id="name40-4"
-                          xml:lang="ar"
-                          source="#bib40-3"
-                          corresp="#name40-3 #name40-5">بُصرى</placeName>
-               <placeName xml:id="name40-5"
-                          xml:lang="en"
-                          source="#bib40-4"
-                          corresp="#name40-3 #name40-4">Buṣra</placeName>
+                          source="#bib40-2">ܒܘܨܪ</placeName>
+               <placeName xml:id="name40-4" xml:lang="syr-Syrj" source="#bib40-2">ܐܰܣܟܺ</placeName>
+               <placeName xml:id="name40-5" xml:lang="syr-Syrj" source="#bib40-2">ܫܶܐܡ</placeName>
+               <placeName xml:id="name40-6" xml:lang="ar" source="#bib40-3">بُصرى</placeName>
+               <placeName xml:id="name40-7" xml:lang="ar" source="#bib40-3">اسكي شام</placeName>
+               <placeName xml:id="name40-8" xml:lang="en" source="#bib40-4">Buṣra</placeName>
+               <placeName xml:id="name40-9" xml:lang="en" source="#bib40-4">Eski Shām</placeName>
                <desc xml:id="abstract-en-40"/>
                <desc xml:lang="en">
                   <quote source="#bib40-1">112. Bostra</quote>
@@ -108,6 +107,7 @@
                <idno type="URI">http://syriaca.org/place/40</idno>
                <idno type="URI">http://pleiades.stoa.org/places/678073</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Bosra</idno>
+               <idno type="URI">http://dbpedia.org/resource/Bosra</idno>
                <bibl xml:id="bib40-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

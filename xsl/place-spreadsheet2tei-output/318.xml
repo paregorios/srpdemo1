@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,22 +65,27 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-318" type="">
+            <place xml:id="place-318" type="mountain">
                <placeName xml:id="name318-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Ṭuro Briko</placeName>
                <placeName xml:id="name318-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܛܘܪܐ ܒܪܝܟܐ</placeName>
                <placeName xml:id="name318-3" xml:lang="syr-Syrj" source="#bib318-1">ܛܘܪ</placeName>
                <placeName xml:id="name318-4" xml:lang="syr-Syrj" source="#bib318-1">ܒܪܝܟܳܐ</placeName>
-               <placeName xml:id="name318-5" xml:lang="ar" source="#bib318-2">الجبل المبارك</placeName>
-               <placeName xml:id="name318-6" xml:lang="en" source="#bib318-3">Blessed Mountain</placeName>
-               <placeName xml:id="name318-7" xml:lang="en" source="#bib318-3">The</placeName>
+               <placeName xml:id="name318-5"
+                          xml:lang="ar"
+                          source="#bib318-2"
+                          corresp="#name318-6">الجبل المبارك</placeName>
+               <placeName xml:id="name318-6"
+                          xml:lang="en"
+                          source="#bib318-3"
+                          corresp="#name318-5">The Blessed Mountain</placeName>
                <desc xml:id="abstract-en-318"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib318-1">ܒܰܐܬܪܳܐ ܕܡܝܺܠܝܛܝܢܝ.</quote>
@@ -89,7 +96,6 @@
                <desc xml:lang="en">
                   <quote source="#bib318-3">a mountain in the district of Melitene.</quote>
                </desc>
-               <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/318</idno>
                <bibl xml:id="bib318-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>

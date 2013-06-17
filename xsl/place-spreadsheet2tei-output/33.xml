@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -39,7 +39,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -59,7 +61,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -69,18 +71,12 @@
                <placeName xml:id="name33-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib33-1">Beth Garmai</placeName>
+                          source="#bib33-1 #bib33-4">Beth Garmai</placeName>
                <placeName xml:id="name33-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܒܝܬ ܓܪ̈ܡܝ</placeName>
                <placeName xml:id="name33-3" xml:lang="syr-Syrj" source="#bib33-2">ܒܶܝ</placeName>
                <placeName xml:id="name33-4" xml:lang="syr-Syrj" source="#bib33-2">ܓܰܪ̈ܡܰܝ</placeName>
-               <placeName xml:id="name33-5"
-                          xml:lang="ar"
-                          source="#bib33-3"
-                          corresp="#name33-6">باجرمي</placeName>
-               <placeName xml:id="name33-6"
-                          xml:lang="en"
-                          source="#bib33-4"
-                          corresp="#name33-5">Bajermi (Beth Garmai)</placeName>
+               <placeName xml:id="name33-5" xml:lang="ar" source="#bib33-3">باجرمي</placeName>
+               <placeName xml:id="name33-6" xml:lang="en" source="#bib33-4">Bajermi</placeName>
                <placeName xml:id="name33-7" xml:lang="en" source="#bib33-5">Bet Garmai</placeName>
                <desc xml:id="abstract-en-33"/>
                <desc xml:lang="en">
@@ -90,6 +86,7 @@
                <idno type="URI">http://syriaca.org/place/33</idno>
                <idno type="URI">http://pleiades.stoa.org/places/893999</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Beth_Garmai</idno>
+               <idno type="URI">http://dbpedia.org/resource/Beth_Garmai</idno>
                <bibl xml:id="bib33-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

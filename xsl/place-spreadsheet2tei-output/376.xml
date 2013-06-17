@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Qidr (or Qidar) Monastery</title>
+            <title xml:lang="en">Qidr Monastery</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,29 +69,26 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-376" type="">
+            <place xml:id="place-376" type="monastery">
                <placeName xml:id="name376-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib376-3"
-                          corresp="#name376-7">Qidr (or Qidar) Monastery</placeName>
+                          source="#bib376-3">Qidr Monastery</placeName>
                <placeName xml:id="name376-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܕܪ ܐܘ ܩܝܕܪ</placeName>
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܕܪ</placeName>
                <placeName xml:id="name376-3" xml:lang="syr-Syrj" source="#bib376-1">ܕܰܝܪܳ</placeName>
-               <placeName xml:id="name376-4" xml:lang="syr-Syrj" source="#bib376-1">ܕܩܕ</placeName>
-               <placeName xml:id="name376-5" xml:lang="syr-Syrj" source="#bib376-1">ܐܰ</placeName>
-               <placeName xml:id="name376-6" xml:lang="syr-Syrj" source="#bib376-1">ܩܝܕܪ</placeName>
-               <placeName xml:id="name376-7"
-                          xml:lang="ar"
-                          source="#bib376-2"
-                          corresp="#name376-1">دير قدر او قيدار</placeName>
+               <placeName xml:id="name376-4" xml:lang="syr-Syrj" source="#bib376-1">ܕܩܕܪ</placeName>
+               <placeName xml:id="name376-5" xml:lang="syr-Syrj" source="#bib376-1">ܕܩܝܕܪ</placeName>
+               <placeName xml:id="name376-6" xml:lang="ar" source="#bib376-2">دير قدر</placeName>
+               <placeName xml:id="name376-7" xml:lang="ar" source="#bib376-2">دير قيدار</placeName>
+               <placeName xml:id="name376-8" xml:lang="en" source="#bib376-3">Qidar Monastery</placeName>
                <desc xml:id="abstract-en-376"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib376-1">ܐܰܘ ܩܝܕܪ ܡܶܢ ܕܰܝܪ̈ܳܬܐ ܕܪܝܫ ܥܰܝܢܐ ܕܟܝܪ ܒܡܰܐܬܳܐ ܫܬܺܝܬܳܝܬܐ ܘܡܶܢܗ ܗܘܳܐ ܡܰܟܬܒܳܢܐ ܩܰܫܝܫܐ ܬܳܐܘܡܐ ܫܢܰܬ  636  ܘܐܰܫܩܶܠܘ ܕܰܝܪ̈ܳܝܘܗܝ ܠܕܰܝܪܐ ܕܥܰܡܘܕܐ.</quote>

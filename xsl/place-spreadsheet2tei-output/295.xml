@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Baremmān</title>
+            <title xml:lang="en">Bārimmān</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,29 +65,27 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-295" type="">
-               <placeName xml:id="name295-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib295-3"
-                          corresp="#name295-3 #name295-4">Baremmān</placeName>
+            <place xml:id="place-295" type="settlement">
+               <placeName xml:id="name295-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Bārimmān</placeName>
                <placeName xml:id="name295-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܐܪܡܐܢ</placeName>
                <placeName xml:id="name295-3"
                           xml:lang="syr-Syrj"
                           source="#bib295-1"
-                          corresp="#name295-4 #name295-1">ܒܰܐܪܡܰܐܢ</placeName>
-               <placeName xml:id="name295-4"
-                          xml:lang="ar"
-                          source="#bib295-2"
-                          corresp="#name295-3 #name295-1">بارمّان (بارمّا)</placeName>
+                          corresp="#name295-6">ܒܰܐܪܡܰܐܢ</placeName>
+               <placeName xml:id="name295-4" xml:lang="ar" source="#bib295-2">بارمّان</placeName>
+               <placeName xml:id="name295-5" xml:lang="ar" source="#bib295-2">بارمّا</placeName>
+               <placeName xml:id="name295-6"
+                          xml:lang="en"
+                          source="#bib295-3"
+                          corresp="#name295-3">Baremmān</placeName>
                <desc xml:id="abstract-en-295"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib295-1">ܩܪܺܝܬܐ ܕܰܠܡܰܕܢܚܐ ܕܕܶܩܠܳܬ ܚܳܙܶܐ ܐܢܬ ܚܰܪܒ̈ܬܗ̇ ܡܰܪܕܶܐ ܕܚܰܡܫ ܫܢ̈ܝܢ (ܫܥ̈ܝܢ) ܠܡܰܕܢܚ ܓܰܪܒܰܝ ܡܰܘܨܠ.</quote>

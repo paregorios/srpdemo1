@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -39,7 +39,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -59,7 +61,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -69,18 +71,12 @@
                <placeName xml:id="name39-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib39-1">Beth Zabdai</placeName>
+                          source="#bib39-1 #bib39-4">Beth Zabdai</placeName>
                <placeName xml:id="name39-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܒܝܬ ܙܒܕܝ</placeName>
                <placeName xml:id="name39-3" xml:lang="syr-Syrj" source="#bib39-2">ܒܶܝ</placeName>
                <placeName xml:id="name39-4" xml:lang="syr-Syrj" source="#bib39-2">ܙܰܒܕܰܝ</placeName>
-               <placeName xml:id="name39-5"
-                          xml:lang="ar"
-                          source="#bib39-3"
-                          corresp="#name39-6">بازبدي</placeName>
-               <placeName xml:id="name39-6"
-                          xml:lang="en"
-                          source="#bib39-4"
-                          corresp="#name39-5">Bazabdi (Beth Zabdai)</placeName>
+               <placeName xml:id="name39-5" xml:lang="ar" source="#bib39-3">بازبدي</placeName>
+               <placeName xml:id="name39-6" xml:lang="en" source="#bib39-4">Bazabdi</placeName>
                <desc xml:id="abstract-en-39"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/39</idno>

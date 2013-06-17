@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,21 +79,13 @@
                <placeName xml:id="name86-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib86-1">Gargar</placeName>
+                          source="#bib86-1 #bib86-4">Gargar</placeName>
                <placeName xml:id="name86-2" xml:lang="en" source="#bib86-1">Gerger</placeName>
                <placeName xml:id="name86-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܓܪܓܪ</placeName>
-               <placeName xml:id="name86-4"
-                          xml:lang="syr-Syrj"
-                          source="#bib86-2"
-                          corresp="#name86-5 #name86-6">ܓܰܪܓܰܪ</placeName>
-               <placeName xml:id="name86-5"
-                          xml:lang="ar"
-                          source="#bib86-3"
-                          corresp="#name86-4 #name86-6">كركر او جرجر</placeName>
-               <placeName xml:id="name86-6"
-                          xml:lang="en"
-                          source="#bib86-4"
-                          corresp="#name86-4 #name86-5">Karkar (Gargar)</placeName>
+               <placeName xml:id="name86-4" xml:lang="syr-Syrj" source="#bib86-2">ܓܰܪܓܰܪ</placeName>
+               <placeName xml:id="name86-5" xml:lang="ar" source="#bib86-3">كركر</placeName>
+               <placeName xml:id="name86-6" xml:lang="ar" source="#bib86-3">جرجر</placeName>
+               <placeName xml:id="name86-7" xml:lang="en" source="#bib86-4">Karkar</placeName>
                <desc xml:id="abstract-en-86"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib86-2">ܚܶܣܢܰܐܗܘ ܘܰܡܕܝܢܬܐ ܒܩܘܪܒܳܐ ܕܡܝܺܠܝܺܛܝܢܝ ܒܶܝܬ ܫܰܡܝܫܰܛ ܠܚܰܣܢ ܙܝܰܐܕ ܠܡܰܥܪܒܳܐ ܕܰܦܪܳܬ. ܚܶܪܒܰܬ.</quote>
@@ -109,6 +103,7 @@
                <idno type="URI">http://syriaca.org/place/86</idno>
                <idno type="URI">http://pleiades.stoa.org/places/874353</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Gerger</idno>
+               <idno type="URI">http://dbpedia.org/resource/Gerger</idno>
                <bibl xml:id="bib86-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

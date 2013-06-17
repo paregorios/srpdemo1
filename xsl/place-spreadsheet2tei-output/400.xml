@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,13 +69,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-400" type="">
+            <place xml:id="place-400" type="monastery">
                <placeName xml:id="name400-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Yuḥanon d-Norab</placeName>
                <placeName xml:id="name400-2"
                           xml:lang="syr"
@@ -82,14 +84,10 @@
                <placeName xml:id="name400-4" xml:lang="syr-Syrj" source="#bib400-1">ܕܡܳܪ</placeName>
                <placeName xml:id="name400-5" xml:lang="syr-Syrj" source="#bib400-1">ܝܘܚܰܢ</placeName>
                <placeName xml:id="name400-6" xml:lang="syr-Syrj" source="#bib400-1">ܕܢܐܪܒ</placeName>
-               <placeName xml:id="name400-7"
-                          xml:lang="ar"
-                          source="#bib400-2"
-                          corresp="#name400-8">دير مار يوحنا نيرب او نارب</placeName>
-               <placeName xml:id="name400-8"
-                          xml:lang="en"
-                          source="#bib400-3"
-                          corresp="#name400-7">John Nayrab (Nārab) Monastery</placeName>
+               <placeName xml:id="name400-7" xml:lang="ar" source="#bib400-2">دير مار يوحنا نيرب</placeName>
+               <placeName xml:id="name400-8" xml:lang="ar" source="#bib400-2">دير مار يوحنا نارب</placeName>
+               <placeName xml:id="name400-9" xml:lang="en" source="#bib400-3">John Nayrab Monastery</placeName>
+               <placeName xml:id="name400-10" xml:lang="en" source="#bib400-3">John Nārab Monastery</placeName>
                <desc xml:id="abstract-en-400"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib400-1">ܠܐ ܝܳܕܥܝܢܰܢ ܠܕܘܟܬܗ ܕܟܺܝܪ ܪܝܫܳܢܗ ܐܰܒܐ ܓܶܘܰܪܓܝ ܫܢܰܬ  563  -  569 </quote>

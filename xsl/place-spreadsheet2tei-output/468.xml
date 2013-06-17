@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,19 +79,17 @@
                <placeName xml:id="name468-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib468-3"
-                          corresp="#name468-3 #name468-4">Wank</placeName>
+                          source="#bib468-3">Wank</placeName>
                <placeName xml:id="name468-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܘܐܢܟ</placeName>
-               <placeName xml:id="name468-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib468-1"
-                          corresp="#name468-4 #name468-1">ܘܰܐܢܟ</placeName>
-               <placeName xml:id="name468-4"
-                          xml:lang="ar"
-                          source="#bib468-2"
-                          corresp="#name468-3 #name468-1">ونك</placeName>
+               <placeName xml:id="name468-3" xml:lang="syr-Syrj" source="#bib468-1">ܘܰܐܢܟ</placeName>
+               <placeName xml:id="name468-4" xml:lang="syr-Syrj" source="#bib468-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name468-5" xml:lang="syr-Syrj" source="#bib468-1">ܕܰܐܒ</placeName>
+               <placeName xml:id="name468-6" xml:lang="syr-Syrj" source="#bib468-1">ܓܰܐܠܶܒ</placeName>
+               <placeName xml:id="name468-7" xml:lang="ar" source="#bib468-2">ونك</placeName>
+               <placeName xml:id="name468-8" xml:lang="ar" source="#bib468-2">دير ابو غالب</placeName>
+               <placeName xml:id="name468-9" xml:lang="en" source="#bib468-3">Dayr Abu Ghalib</placeName>
                <desc xml:id="abstract-en-468"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib468-1">ܡܶܢ ܩܘܼܪ̈ܝܳܐ ܕܓܰܪܓܰܪ. ܘܡܶܬܐܡܰܪ ܠܳܗ̇ ܕܰܝܪܳܐ ܕܰܐܒܘ ܓܰܐܠܶܒ.</quote>

@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,13 +65,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-356" type="">
+            <place xml:id="place-356" type="monastery">
                <placeName xml:id="name356-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mar Zakkay</placeName>
                <placeName xml:id="name356-2"
                           xml:lang="syr"
@@ -86,6 +88,7 @@
                           source="#bib356-3"
                           corresp="#name356-6">Zakka Monastery</placeName>
                <placeName xml:id="name356-8" xml:lang="en" source="#bib356-4">monastery of Mar Zakkay</placeName>
+               <placeName xml:id="name356-9" xml:lang="en" source="#bib356-4">Tell Bi'a</placeName>
                <desc xml:id="abstract-en-356"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib356-1">ܒܩܰܠܘܢܝܩܝ ܒܓܶܒ ܢܗܰܪ ܒܰܐܠܚ. ܕܰܝܪܐ ܕܢܰܦܝ̣ܩ ܫܡܗ ܘܒܶܗ ܐܶܬܥܰܢܘܝ̣ ܝܘܚܰܢܢ ܕܬܶܠܐ ܫܢܰܬ  508  ܘܐܶܬܢܰܦܩ ܝܘܚܰܢܢ ܪܒܝܥܳܝܳܐ ܘܐܰܪܒܥܳܐ ܘܥܶܣܪܝܢ ܐܶܦܝܣܩܘܦ̈ܐ ܥܕܰܡܐ ܠܰܫܢܰܬ  954  ܫܪܳܐ ܒܗ ܒܚܰܕ ܝܽܘܡ ܗܰܐܪܘܢ ܪܰܫܝܕ ܘܰܒܣܶܡ ܠܗ ܘܰܥܒܰܕ ܛܳܒ̈ܬܐܠܐܢܳܫ̈ܰܘܗܝ.</quote>

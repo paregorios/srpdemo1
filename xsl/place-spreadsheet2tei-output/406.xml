@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,17 +79,19 @@
                <placeName xml:id="name406-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Rūḥīn</placeName>
                <placeName xml:id="name406-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib406-1"
-                          corresp="#name406-3 #name406-4">ܪܘܝܚܢ</placeName>
+                          syriaca-tags="#syriaca-authorized">ܪܘܚܝܢ</placeName>
                <placeName xml:id="name406-3"
+                          xml:lang="syr-Syrj"
+                          source="#bib406-1"
+                          corresp="#name406-4 #name406-5">ܪܘܝܚܢ</placeName>
+               <placeName xml:id="name406-4"
                           xml:lang="ar"
                           source="#bib406-2"
-                          corresp="#name406-2 #name406-4">روحين</placeName>
-               <placeName xml:id="name406-4"
+                          corresp="#name406-3 #name406-5">روحين</placeName>
+               <placeName xml:id="name406-5"
                           xml:lang="en"
                           source="#bib406-3"
-                          corresp="#name406-2 #name406-3">Ruḥīn</placeName>
+                          corresp="#name406-3 #name406-4">Ruḥīn</placeName>
                <desc xml:id="abstract-en-406"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib406-1">ܡܶܢ ܩܘܪ̈ܝܳܐ  ܕܐܰܢܛܝܘܟܝ ܕܰܚܪ̈ܶܒܝ.</quote>

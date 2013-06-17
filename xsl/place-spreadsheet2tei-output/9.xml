@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -80,12 +82,15 @@
                           source="#bib9-1 #bib9-4">ʿAyn Zarba</placeName>
                <placeName xml:id="name9-2" xml:lang="en" source="#bib9-1">Anazarbos</placeName>
                <placeName xml:id="name9-3" xml:lang="en" source="#bib9-1">Anazarba</placeName>
-               <placeName xml:id="name9-4" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܥܝܢܕܐܒܐ. ܙܢܐܙܪܒܐ</placeName>
+               <placeName xml:id="name9-4" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܥܝܢ ܙܪܒܐ</placeName>
                <placeName xml:id="name9-5" xml:lang="syr-Syrj" source="#bib9-2">ܥܰܝܢܕܰܐܒܐ</placeName>
                <placeName xml:id="name9-6" xml:lang="syr-Syrj" source="#bib9-2">ܙܢܐܙܪܒܐ</placeName>
-               <placeName xml:id="name9-7" xml:lang="ar" source="#bib9-3">عين زربة</placeName>
-               <placeName xml:id="name9-8" xml:lang="ar" source="#bib9-3">انازربة</placeName>
-               <placeName xml:id="name9-9" xml:lang="en" source="#bib9-4">Anāzarba</placeName>
+               <placeName xml:id="name9-7" xml:lang="syr-Syrj" source="#bib9-2">ܐܰܢܐܙܘܪܐ</placeName>
+               <placeName xml:id="name9-8" xml:lang="ar" source="#bib9-3">عين زربة</placeName>
+               <placeName xml:id="name9-9" xml:lang="ar" source="#bib9-3">انازربة</placeName>
+               <placeName xml:id="name9-10" xml:lang="ar" source="#bib9-3">انازروه</placeName>
+               <placeName xml:id="name9-11" xml:lang="en" source="#bib9-4">Anāzarba</placeName>
+               <placeName xml:id="name9-12" xml:lang="en" source="#bib9-4">Anāzūra</placeName>
                <desc xml:id="abstract-en-9"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib9-2">ܡܕܝܢܬܳܐ ܕܰܒܩܝܠܺܝܩܝܰܐ ܣܺܝܡܳܐ ܗܘܳܬ ܥܰܠ ܢܗܰܪ ܓܺܝ̣ܚܘܢ ܘܝܰܘܡܳܢ ܗܘܳܬ ܩܪܺܝܬܳܐ ܕܡܶܬܶܐܡܰܪ ܠܳܗ̇ ܐܰܢܐܙܘܪܐ.</quote>
@@ -103,6 +108,7 @@
                <idno type="URI">http://syriaca.org/place/9</idno>
                <idno type="URI">http://pleiades.stoa.org/places/658378</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Anazarbus</idno>
+               <idno type="URI">http://dbpedia.org/resource/Anazarbus</idno>
                <bibl xml:id="bib9-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

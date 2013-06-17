@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,18 +80,13 @@
                <placeName xml:id="name462-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܡܢܐܙܟܪܕ</placeName>
-               <placeName xml:id="name462-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib462-1"
-                          corresp="#name462-4 #name462-5">ܡܰܢܰܐܙܟܪܕ</placeName>
-               <placeName xml:id="name462-4"
-                          xml:lang="ar"
-                          source="#bib462-2"
-                          corresp="#name462-3 #name462-5">منازكرد</placeName>
-               <placeName xml:id="name462-5"
-                          xml:lang="en"
-                          source="#bib462-3"
-                          corresp="#name462-3 #name462-4">Manazgird (Manzikert)</placeName>
+               <placeName xml:id="name462-3" xml:lang="syr-Syrj" source="#bib462-1">ܡܰܢܰܐܙܟܪܕ</placeName>
+               <placeName xml:id="name462-4" xml:lang="ar" source="#bib462-2">منازكرد</placeName>
+               <placeName xml:id="name462-5" xml:lang="ar" source="#bib462-2">منازجرد</placeName>
+               <placeName xml:id="name462-6" xml:lang="ar" source="#bib462-2">ملاشكرد</placeName>
+               <placeName xml:id="name462-7" xml:lang="en" source="#bib462-3">Manazgird</placeName>
+               <placeName xml:id="name462-8" xml:lang="en" source="#bib462-3">Manzikert</placeName>
+               <placeName xml:id="name462-9" xml:lang="en" source="#bib462-3">Malazgirt</placeName>
                <desc xml:id="abstract-en-462"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib462-1">ܐܰܬܪܐ ܕܰܒܓܰܪܒܰܝ ܝܰܡܬܳܐ ܕܘܰܐܢ.</quote>
@@ -103,6 +100,7 @@
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/462</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Malazgirt</idno>
+               <idno type="URI">http://dbpedia.org/resource/Malazgirt</idno>
                <bibl xml:id="bib462-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>

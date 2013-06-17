@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,13 +69,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-398" type="">
+            <place xml:id="place-398" type="monastery">
                <placeName xml:id="name398-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Yaʿqub Malpono </placeName>
                <placeName xml:id="name398-2"
                           xml:lang="syr"
@@ -82,19 +84,21 @@
                <placeName xml:id="name398-4" xml:lang="syr-Syrj" source="#bib398-1">ܕܡܳܪ</placeName>
                <placeName xml:id="name398-5" xml:lang="syr-Syrj" source="#bib398-1">ܝܰܥܩܘ</placeName>
                <placeName xml:id="name398-6" xml:lang="syr-Syrj" source="#bib398-1">ܡܰܠܦܢܐ</placeName>
-               <placeName xml:id="name398-7" xml:lang="ar" source="#bib398-2">دير مار يعقوب الملفان</placeName>
-               <placeName xml:id="name398-8" xml:lang="en" source="#bib398-3">Jacob</placeName>
-               <placeName xml:id="name398-9" xml:lang="en" source="#bib398-3">the Doctor of the Church</placeName>
-               <placeName xml:id="name398-10" xml:lang="en" source="#bib398-3">Monastery</placeName>
+               <placeName xml:id="name398-7" xml:lang="syr-Syrj" source="#bib398-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name398-8" xml:lang="syr-Syrj" source="#bib398-1">ܕܢܰܦܫ̈ܬܐ</placeName>
+               <placeName xml:id="name398-9" xml:lang="ar" source="#bib398-2">دير مار يعقوب الملفان</placeName>
+               <placeName xml:id="name398-10" xml:lang="ar" source="#bib398-2">دير النواويس</placeName>
+               <placeName xml:id="name398-11" xml:lang="en" source="#bib398-3">Jacob the Doctor of the Church Monastery</placeName>
+               <placeName xml:id="name398-12" xml:lang="en" source="#bib398-3">Nawawīs Monastery</placeName>
                <desc xml:id="abstract-en-398"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib398-1">ܐܰܘ ܕܰܝܪܐ ܕܢܰܦܫ̈ܬܐ. ܒܛܘܪܐ ܕܐܘܪܗܳܝ ܒܬܰܝܡܢܳܗ̇ ܕܰܡܕܝܢܬܐ ܡܰܪܕܶܐ ܫܳܥܳܐ ܘܦܶܠܓܳܐ. ܐܶܬܒܢܝ ܒܡܰܐܬܰܐ ܚܡܝܫܳܝܬܐ ܘܰܕܟܝܪ ܠܗ ܠܝܘܚܰܢܢ ܕܐܶܦܣܘܣ ܫܢܰܬ  519  ܚܰܕܬܗ ܪܝܫܳܢܗ ܕܰܝܪܳܝܐ ܝܘܚܰܢܢ ܣܪܘܓܳܝܳܐ ܗܰܘ ܕܐܶܬܥܰܠܝ ܠܡܰܦܪܝܳܢܘܬܐ ܕܡܰܕܢܚܐ ܫܢܰܬ  1164  ܘܥܰܡܝܪ ܗܘܐ ܫܢܰܬ  1223  ܘܫܶܬܶܐܣܰܘ̈ܗܝ ܩܰܝܳܡ̈ܢ. </quote>
+                  <quote source="#bib398-1">ܒܛܘܪܐ ܕܐܘܪܗܳܝ ܒܬܰܝܡܢܳܗ̇ ܕܰܡܕܝܢܬܐ ܡܰܪܕܶܐ ܫܳܥܳܐ ܘܦܶܠܓܳܐ. ܐܶܬܒܢܝ ܒܡܰܐܬܰܐ ܚܡܝܫܳܝܬܐ ܘܰܕܟܝܪ ܠܗ ܠܝܘܚܰܢܢ ܕܐܶܦܣܘܣ ܫܢܰܬ  519  ܚܰܕܬܗ ܪܝܫܳܢܗ ܕܰܝܪܳܝܐ ܝܘܚܰܢܢ ܣܪܘܓܳܝܳܐ ܗܰܘ ܕܐܶܬܥܰܠܝ ܠܡܰܦܪܝܳܢܘܬܐ ܕܡܰܕܢܚܐ ܫܢܰܬ  1164  ܘܥܰܡܝܪ ܗܘܐ ܫܢܰܬ  1223  ܘܫܶܬܶܐܣܰܘ̈ܗܝ ܩܰܝܳܡ̈ܢ. </quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib398-2">أو دير النواويس في جبل الرها مسيرة ساعة ونصف جنوبي المدينة، شيد بناؤه في المئة الخامسة وذكره يوحنا الافسسي عام 519 جدده رئيسه الراهب يوحنا السروجي الذي رقي الى مفريانية المشرق عام 1164 كان عامرا سنة 1223 ورسومه ماثلة.</quote>
+                  <quote source="#bib398-2">في جبل الرها مسيرة ساعة ونصف جنوبي المدينة، شيد بناؤه في المئة الخامسة وذكره يوحنا الافسسي عام 519 جدده رئيسه الراهب يوحنا السروجي الذي رقي الى مفريانية المشرق عام 1164 كان عامرا سنة 1223 ورسومه ماثلة.</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib398-3">also called the Nawawīs Monastery, in the Mount of Edessa, an hour and a half south of the city. It was built in the fifth century and was mentioned by John of Ephesus in his history in 519.  It was renovated by its abbot, John of Sarug, who was elevated to the office of Maphryono of the East in 1164. It remained inhabited until 1223. Its ruins are still visible.</quote>
+                  <quote source="#bib398-3">in the Mount of Edessa, an hour and a half south of the city. It was built in the fifth century and was mentioned by John of Ephesus in his history in 519.  It was renovated by its abbot, John of Sarug, who was elevated to the office of Maphryono of the East in 1164. It remained inhabited until 1223. Its ruins are still visible.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/398</idno>

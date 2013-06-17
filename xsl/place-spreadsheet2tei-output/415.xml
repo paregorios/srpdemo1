@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,20 +79,15 @@
                <placeName xml:id="name415-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib415-4">Susa</placeName>
+                          source="#bib415-3 #bib415-4">Susa</placeName>
                <placeName xml:id="name415-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib415-1"
-                          corresp="#name415-3 #name415-4">ܫܘܫ</placeName>
-               <placeName xml:id="name415-3"
-                          xml:lang="ar"
-                          source="#bib415-2"
-                          corresp="#name415-2 #name415-4">السوس</placeName>
-               <placeName xml:id="name415-4"
-                          xml:lang="en"
-                          source="#bib415-3"
-                          corresp="#name415-2 #name415-3">Sus</placeName>
+                          source="#bib415-1">ܫܘܫ</placeName>
+               <placeName xml:id="name415-3" xml:lang="syr-Syrj" source="#bib415-1">ܫܘܫܰܢ</placeName>
+               <placeName xml:id="name415-4" xml:lang="ar" source="#bib415-2">السوس</placeName>
+               <placeName xml:id="name415-5" xml:lang="ar" source="#bib415-2">شوشان</placeName>
+               <placeName xml:id="name415-6" xml:lang="en" source="#bib415-3">Sus</placeName>
                <desc xml:id="abstract-en-415"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib415-1">ܐܰܬܪܰܐ ܗܘ ܒܟܳܘܙܣܬܰܐܢ ܐܰܘ ܒܰܐܬܪܐ ܕܗܘܙܳܝ̈ܐ ܘܗܽܘܝܘ ܫܘܫܰܢ ܥܰܬܝܩܬܳܐ.</quote>
@@ -105,6 +102,7 @@
                <idno type="URI">http://syriaca.org/place/415</idno>
                <idno type="URI">http://pleiades.stoa.org/places/912936</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Susa</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Shush,_Iran</idno>
                <bibl xml:id="bib415-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>

@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,18 +80,12 @@
                <placeName xml:id="name449-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܟܢܟܝ</placeName>
-               <placeName xml:id="name449-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib449-1"
-                          corresp="#name449-4 #name449-5">ܟܶܢܟܝ</placeName>
-               <placeName xml:id="name449-4"
-                          xml:lang="ar"
-                          source="#bib449-2"
-                          corresp="#name449-3 #name449-5">كنكي</placeName>
-               <placeName xml:id="name449-5"
-                          xml:lang="en"
-                          source="#bib449-3"
-                          corresp="#name449-3 #name449-4">Kaniq</placeName>
+               <placeName xml:id="name449-3" xml:lang="syr-Syrj" source="#bib449-1">ܟܶܢܟܝ</placeName>
+               <placeName xml:id="name449-4" xml:lang="syr-Syrj" source="#bib449-1">ܩܰܐܢܰܩ</placeName>
+               <placeName xml:id="name449-5" xml:lang="ar" source="#bib449-2">كنكي</placeName>
+               <placeName xml:id="name449-6" xml:lang="ar" source="#bib449-2">قانق</placeName>
+               <placeName xml:id="name449-7" xml:lang="en" source="#bib449-3">Kaniq</placeName>
+               <placeName xml:id="name449-8" xml:lang="en" source="#bib449-3">Qaniq</placeName>
                <desc xml:id="abstract-en-449"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib449-1">ܘܰܒܣܘܪܝܳܝܐ ܩܰܐܢܰܩ ܡܶܢ ܩܘܪ̈ܝܳܐ ܕܰܢܨܝܺܒܝܢ.</quote>

@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,22 +65,25 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-367" type="">
+            <place xml:id="place-367" type="monastery">
                <placeName xml:id="name367-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayr al-Ṣalīb</placeName>
                <placeName xml:id="name367-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܨܠܝܒܐ</placeName>
                <placeName xml:id="name367-3" xml:lang="syr-Syrj" source="#bib367-1">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name367-4" xml:lang="syr-Syrj" source="#bib367-1">ܕܰܨܠܝܒܐ</placeName>
-               <placeName xml:id="name367-5" xml:lang="ar" source="#bib367-2">دير الصليب</placeName>
-               <placeName xml:id="name367-6" xml:lang="en" source="#bib367-3">Cross</placeName>
-               <placeName xml:id="name367-7" xml:lang="en" source="#bib367-3">Monastery of the</placeName>
+               <placeName xml:id="name367-5" xml:lang="syr-Syrj" source="#bib367-1">ܕܰܝܪ</placeName>
+               <placeName xml:id="name367-6" xml:lang="syr-Syrj" source="#bib367-1">ܕܡܰܟ̣ܰܪ</placeName>
+               <placeName xml:id="name367-7" xml:lang="ar" source="#bib367-2">دير الصليب</placeName>
+               <placeName xml:id="name367-8" xml:lang="ar" source="#bib367-2">دير مَخَر</placeName>
+               <placeName xml:id="name367-9" xml:lang="en" source="#bib367-3">Monastery of the Cross</placeName>
+               <placeName xml:id="name367-10" xml:lang="en" source="#bib367-3">Makhr Monastery</placeName>
                <desc xml:id="abstract-en-367"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib367-1">ܕܺܝܕܺܝܥ ܝܰܘܡܳܢ ܕܰܝܪܐ ܕܡܰܟ݂ܰܪ ܗ̄ ܘܰܐܕܺܝ ܟܽܘܪܕܳܐܝܬ. ܕܰܝܪܳܐ ܙܥܘܽܪܐ ܒܓܶܒ ܕܶܦܢܗ ܩܪܺܝܬܐ ܒܐܽܘܪܚܐ ܕܚܰܣܢ ܟܺܐܦܐ. ܐܶܬܒܢܺܝ ܗܰܝܟܠܗ ܒܰܬܚܘ̈ܡܰܝ ܫܢܰܬ  770  ܚܪܶܒ ܒܰܩܪܳܒܐ ܕܰܥܒܰܪ ܒܩܶܛܠܐ ܕܐܰܚܪܳܝܐ ܕܕܰܝܪ̈ܳܝܰܘܗܝ ܩܳܡܘ ܡܢܗ ܬܠܬܐ ܐܶܦܝܣܩܘ̈ܦܐ.</quote>

@@ -93,7 +93,10 @@
                         </fileDesc>
                         <encodingDesc>
                             <editorialDecl>
-                                <p>Normalized capitalization of GEDSH names.</p>
+                                <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+                                <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+                                <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
+                                <p>The <gi>state</gi> element of @type="existence" indicates the period for which this place was in use as a place of its indicated type (e.g. an inhabited settlement, a functioning monastery or church, an administrative province).  Natural features always in existence have no <gi>state</gi> element of @type="existence".</p>
                             </editorialDecl>
                             <classDecl>
                                 <taxonomy>
@@ -306,7 +309,6 @@
                                     -->
                                     
                                     <!-- insert the descriptions, starting with the abstract, which should always be present -->
-                                    <!-- FUTURE: deal with case where spreadsheet export surrounded with quotation marks -->
                                     <desc>
                                         <xsl:attribute name="xml:id">abstract-en-<xsl:value-of select="Place_ID"/></xsl:attribute>
                                         <xsl:value-of select="Abstract"/>
@@ -372,15 +374,18 @@
                                         </state>
                                     </xsl:if>
                                     
-                                    <!-- Insert the ID numbers for Syriaca.org and, if they exist, for Pleiades and Wikipedia -->
+                                    <!-- Insert the ID numbers for Syriaca.org and, if they exist, for Pleiades, Wikipedia, and DBpedia -->
                                     <idno type="URI">http://syriaca.org/place/<xsl:value-of select="Place_ID"/></idno>
                                     <xsl:if test="Pleiades_URI != ''">
                                         <idno type="URI"><xsl:value-of select="Pleiades_URI"/></idno>
                                     </xsl:if>
                                     <xsl:if test="Wikipedia_URI != ''">
                                         <xsl:for-each select="tokenize(Wikipedia_URI,'\s\|\s')">
-                                            <idno type="URI"><xsl:value-of select="current()"/></idno> <!-- FUTURE: split multiple Wikipedia URIs -->
+                                            <idno type="URI"><xsl:value-of select="current()"/></idno>
                                         </xsl:for-each>
+                                    </xsl:if>
+                                    <xsl:if test="DBpedia_URI != ''">
+                                        <idno type="URI"><xsl:value-of select="DBpedia_URI"/></idno>
                                     </xsl:if>
                                     
                                     <!-- Insert the <bibl> elements -->

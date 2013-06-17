@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Sinun (Sinin) Monastery</title>
+            <title xml:lang="en">Dayr Sinun</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,27 +65,23 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-362" type="">
-               <placeName xml:id="name362-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib362-3"
-                          corresp="#name362-5">Sinun (Sinin) Monastery</placeName>
+            <place xml:id="place-362" type="monastery">
+               <placeName xml:id="name362-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayr Sinun</placeName>
                <placeName xml:id="name362-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܣܢܘܢ</placeName>
                <placeName xml:id="name362-3" xml:lang="syr-Syrj" source="#bib362-1">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name362-4" xml:lang="syr-Syrj" source="#bib362-1">ܕܣܢܘܢ</placeName>
-               <placeName xml:id="name362-5"
-                          xml:lang="ar"
-                          source="#bib362-2"
-                          corresp="#name362-1">دير سنون وقيل ايضاً سنين</placeName>
+               <placeName xml:id="name362-5" xml:lang="ar" source="#bib362-2">دير سنون</placeName>
+               <placeName xml:id="name362-6" xml:lang="ar" source="#bib362-2">دير سنين</placeName>
+               <placeName xml:id="name362-7" xml:lang="en" source="#bib362-3">Sinun Monastery</placeName>
+               <placeName xml:id="name362-8" xml:lang="en" source="#bib362-3">Sinin Monastery</placeName>
                <desc xml:id="abstract-en-362"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib362-1">ܒܩܘܪܒܳܐ ܕܐܘܪܗܳܝ. ܕܟܝܺܪ ܫܢܰܝ̈  512  -  565  ܐܰܚܪܒܗ ܥܳܫܘܡܐ ܥܰܒܕܐܠܠܗ ܒܰܪ ܒܰܟܬܰܪܝ  751.  </quote>

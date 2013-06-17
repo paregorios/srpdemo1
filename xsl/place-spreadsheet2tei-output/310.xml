@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Tiflis</title>
+            <title xml:lang="en">Tbilisi</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,29 +65,29 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-310" type="">
-               <placeName xml:id="name310-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib310-3"
-                          corresp="#name310-3 #name310-4">Tiflis</placeName>
+            <place xml:id="place-310" type="settlement">
+               <placeName xml:id="name310-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Tbilisi</placeName>
                <placeName xml:id="name310-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܬܦܠܝܣ</placeName>
                <placeName xml:id="name310-3"
                           xml:lang="syr-Syrj"
                           source="#bib310-1"
-                          corresp="#name310-4 #name310-1">ܬܶܦܠܝܣ</placeName>
+                          corresp="#name310-4 #name310-5">ܬܶܦܠܝܣ</placeName>
                <placeName xml:id="name310-4"
                           xml:lang="ar"
                           source="#bib310-2"
-                          corresp="#name310-3 #name310-1">تفليس</placeName>
+                          corresp="#name310-3 #name310-5">تفليس</placeName>
+               <placeName xml:id="name310-5"
+                          xml:lang="en"
+                          source="#bib310-3"
+                          corresp="#name310-3 #name310-4">Tiflis</placeName>
                <desc xml:id="abstract-en-310"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib310-1">ܡܕܺܝܢܬܐ ܥܰܬܝܩܬܐ ܕܒܰܩܠܝܡܳܐ ܕܐܺܝܒܰܪܝܰܐ ܘܰܠܬܝܡܰܢ ܩܘܽܛܢܘܬܐ ܕܪܘܽܣܝܰܐ.</quote>
@@ -100,6 +102,7 @@
                <idno type="URI">http://syriaca.org/place/310</idno>
                <idno type="URI">http://pleiades.stoa.org/places/863903</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Tbilisi</idno>
+               <idno type="URI">http://dbpedia.org/resource/Tbilisi</idno>
                <bibl xml:id="bib310-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>

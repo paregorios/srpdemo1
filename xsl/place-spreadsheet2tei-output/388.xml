@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,43 +69,39 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-388" type="">
+            <place xml:id="place-388" type="monastery">
                <placeName xml:id="name388-1" xml:lang="en" syriaca-tags="#syriaca-authorized">St. Mark</placeName>
                <placeName xml:id="name388-2" xml:lang="en" source="#bib388-1">Monastery of St. Mark</placeName>
                <placeName xml:id="name388-3"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܡܪܩܘܣ ܐܘܢܓܠܝܣܛܐ ܘܕܡܪܬܝ ܡܪܝܡ ܒܐܘܪܫܠܡ</placeName>
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܡܪܝ ܡܪܩܘܣ ܐܘܢܓܠܝܣܛܐ ܘܕܡܪܬܝ ܡܪܝܡ</placeName>
                <placeName xml:id="name388-4" xml:lang="syr-Syrj" source="#bib388-2">ܕܰܝܪ</placeName>
                <placeName xml:id="name388-5" xml:lang="syr-Syrj" source="#bib388-2">ܕܡܳܪ</placeName>
                <placeName xml:id="name388-6" xml:lang="syr-Syrj" source="#bib388-2">ܡܰܪܩܘ</placeName>
                <placeName xml:id="name388-7" xml:lang="syr-Syrj" source="#bib388-2">ܐܶܘܰܢܓܠܝܣܛ</placeName>
                <placeName xml:id="name388-8" xml:lang="syr-Syrj" source="#bib388-2">ܘܰܕܡܳܪܬ</placeName>
-               <placeName xml:id="name388-9" xml:lang="syr-Syrj" source="#bib388-2">ܡܰܪܝܰ</placeName>
-               <placeName xml:id="name388-10" xml:lang="syr-Syrj" source="#bib388-2">ܒܐܘܪܫܠܡ</placeName>
-               <placeName xml:id="name388-11"
-                          xml:lang="ar"
-                          source="#bib388-3"
-                          corresp="#name388-12">دير مار مرقس الانجيلي و السيدة العذرآء باورشليم</placeName>
-               <placeName xml:id="name388-12"
-                          xml:lang="en"
-                          source="#bib388-4"
-                          corresp="#name388-11">Mark the Evangelist Monastery and the Virgin Monastery</placeName>
-               <placeName xml:id="name388-13" xml:lang="en" source="#bib388-5">monastery of St Mark</placeName>
+               <placeName xml:id="name388-9" xml:lang="syr-Syrj" source="#bib388-2">ܡܰܪܝܰܡ</placeName>
+               <placeName xml:id="name388-10" xml:lang="syr-Syrj" source="#bib388-2">ܕܣܘܪ̈ܝܝܐ</placeName>
+               <placeName xml:id="name388-11" xml:lang="ar" source="#bib388-3">دير مار مرقس الانجيلي و السيدة العذرآء</placeName>
+               <placeName xml:id="name388-12" xml:lang="ar" source="#bib388-3">دير السريان</placeName>
+               <placeName xml:id="name388-13" xml:lang="en" source="#bib388-4">Mark the Evangelist Monastery and the Virgin Monastery</placeName>
+               <placeName xml:id="name388-14" xml:lang="en" source="#bib388-4">Monastery of the Syrians</placeName>
+               <placeName xml:id="name388-15" xml:lang="en" source="#bib388-5">monastery of St Mark</placeName>
                <desc xml:id="abstract-en-388"/>
                <desc xml:lang="en">
                   <quote source="#bib388-1">354. Mark, Monastery of St.</quote>
                </desc>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib388-2">ܘܡܶܬܝܕܥ ܕܰܝܪܐ ܕܣܘܪ̈ܝܝܐ ܕܰܝܪܐ ܥܰܬܝܩܐ. ܣܳܠܶܩ ܒܶܢܝܳܢܗ ܠܕܳܪܐ ܚܡܝܫܳܝܐ ܐܰܘ ܫܬܝܬܳܝܐ ܘܣܳܗܕܐ ܠܗ̇ ܠܗܳܕܐ ܟܬܝܒܬܳܐ ܣܘܪܝܳܝܬܐ ܐܶܣܛܪܰܢܓܶܠܳܝܬܐ ܕܐܶܬܚܰܙܝܰܬ ܒܥܺܕܬܗ ܫܢܰܬ  1940  ܘܗܽܘܝܘ ܝܰܘܡܳܢ ܟܘܪܣܝܳܐ ܕܡܝܛܪܘܦܘܠܝܛܘܬܢ ܘܡܰܥܡܪܐ ܠܕܰܝܪ̈ܳܝܰܝܢ ܡܢ ܫܢܰܬ  1472  ܘܐܝܬ ܒܗ ܒܶܝܬ ܓܙܐ ܕܰܟܬܳܒ̈ܐ ܪ̈ܝܫܳܝܐ ܘܡܰܛܒܥܬܐ ܘܰܗܘܐ ܡܢܗ ܫܰܒܥܐ ܡܝܛܪ̈ܘܦܘܠܝܛܐ</quote>
+                  <quote source="#bib388-2">ܒܐܘܪܫܠܡ ܘܡܶܬܝܕܥ ܕܰܝܪܐ ܕܣܘܪ̈ܝܝܐ ܕܰܝܪܐ ܥܰܬܝܩܐ. ܣܳܠܶܩ ܒܶܢܝܳܢܗ ܠܕܳܪܐ ܚܡܝܫܳܝܐ ܐܰܘ ܫܬܝܬܳܝܐ ܘܣܳܗܕܐ ܠܗ̇ ܠܗܳܕܐ ܟܬܝܒܬܳܐ ܣܘܪܝܳܝܬܐ ܐܶܣܛܪܰܢܓܶܠܳܝܬܐ ܕܐܶܬܚܰܙܝܰܬ ܒܥܺܕܬܗ ܫܢܰܬ  1940  ܘܗܽܘܝܘ ܝܰܘܡܳܢ ܟܘܪܣܝܳܐ ܕܡܝܛܪܘܦܘܠܝܛܘܬܢ ܘܡܰܥܡܪܐ ܠܕܰܝܪ̈ܳܝܰܝܢ ܡܢ ܫܢܰܬ  1472  ܘܐܝܬ ܒܗ ܒܶܝܬ ܓܙܐ ܕܰܟܬܳܒ̈ܐ ܪ̈ܝܫܳܝܐ ܘܡܰܛܒܥܬܐ ܘܰܗܘܐ ܡܢܗ ܫܰܒܥܐ ܡܝܛܪ̈ܘܦܘܠܝܛܐ</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib388-3">ويعرف بدير السريان دير قديم ترقى عمارته الى المئة الخامسة او السادسة يشهد بهذا اثر سرياني اسطرنجيلي ظهر في بيعته عام 1940 وهو اليوم كرسي مطرانيتنا ومسكن رهباننا من سنة 1472 وفيه خزانة كتب نفيسة ومطبعة ونشأ منه سبعة مطارنة.</quote>
+                  <quote source="#bib388-3">باورشليم ويعرف بدير السريان دير قديم ترقى عمارته الى المئة الخامسة او السادسة يشهد بهذا اثر سرياني اسطرنجيلي ظهر في بيعته عام 1940 وهو اليوم كرسي مطرانيتنا ومسكن رهباننا من سنة 1472 وفيه خزانة كتب نفيسة ومطبعة ونشأ منه سبعة مطارنة.</quote>
                </desc>
                <desc xml:lang="en">
                   <quote source="#bib388-4">both located in Jerusalem. St. Mark is also known as the Monastery of the Syrians. It is an old monastery, built in the fifth or sixth century, according to an Estrangelo Syriac inscription on a stone discovered in 1940. Today it is the see of our metropolitan and it has been the home of our monks since 1472. The monastery has a magnificent library and a press. It has produced seven bishops.</quote>

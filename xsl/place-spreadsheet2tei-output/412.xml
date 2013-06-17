@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,29 +69,25 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-412" type="">
-               <placeName xml:id="name412-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Semqe</placeName>
+               <placeName xml:id="name412-1"
+                          xml:lang="en"
+                          syriaca-tags="#syriaca-authorized"
+                          source="#bib412-3">Semqe</placeName>
                <placeName xml:id="name412-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          corresp="#name412-6 #name412-7">ܣܡܩ̈ܐ ܐܘ ܣܡܩ̈ܝ</placeName>
-               <placeName xml:id="name412-3" xml:lang="syr-Syrj" source="#bib412-1">ܣܡܩ̈</placeName>
-               <placeName xml:id="name412-4" xml:lang="syr-Syrj" source="#bib412-1">ܐ</placeName>
-               <placeName xml:id="name412-5" xml:lang="syr-Syrj" source="#bib412-1">ܣܡܩ̈ܝ</placeName>
-               <placeName xml:id="name412-6"
-                          xml:lang="ar"
-                          source="#bib412-2"
-                          corresp="#name412-2 #name412-7">سمقا او سمقي</placeName>
-               <placeName xml:id="name412-7"
-                          xml:lang="en"
-                          source="#bib412-3"
-                          corresp="#name412-2 #name412-6">Semqa (Semqe)</placeName>
+                          source="#bib412-1">ܣܡܩ̈ܐ</placeName>
+               <placeName xml:id="name412-3" xml:lang="syr-Syrj" source="#bib412-1">ܣܡܩ̈ܝ</placeName>
+               <placeName xml:id="name412-4" xml:lang="ar" source="#bib412-2">سمقا</placeName>
+               <placeName xml:id="name412-5" xml:lang="ar" source="#bib412-2">سمقي</placeName>
+               <placeName xml:id="name412-6" xml:lang="en" source="#bib412-3">Semqa</placeName>
                <desc xml:id="abstract-en-412"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib412-1">ܡܶܢ ܩܘܪ̈ܝܘܐ ܕܐܳܡܝܕ ܠܡܰܕܢܰܚ ܓܰܪܒܰܝ ܕܝܠܳܗ̇ܳ ܡܰܪܕܶܐ ܬܰܪܬܝܢ ܫܳܥܝ̈ܢ ܘܰܟܒܰܪ ܗܝ ܡܬܶܩܰܪܝܳܐ ܝܰܘܡܢ ܣܘܡܰܐܩܠܝ.</quote>

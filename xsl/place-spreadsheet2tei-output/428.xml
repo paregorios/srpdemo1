@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Sari Awastir</title>
+            <title xml:lang="en">Sārī</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -39,7 +39,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -59,28 +61,22 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-428" type="">
-               <placeName xml:id="name428-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib428-3"
-                          corresp="#name428-6">Sari Awastir</placeName>
+               <placeName xml:id="name428-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Sārī</placeName>
                <placeName xml:id="name428-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܣܐܪܗ ܐܘ ܐܣܬܝܪ</placeName>
-               <placeName xml:id="name428-3" xml:lang="syr-Syrj" source="#bib428-1">ܣܰܐܪ</placeName>
-               <placeName xml:id="name428-4" xml:lang="syr-Syrj" source="#bib428-1">ܐ</placeName>
-               <placeName xml:id="name428-5" xml:lang="syr-Syrj" source="#bib428-1">ܐܶܣܬܝܪ</placeName>
-               <placeName xml:id="name428-6"
-                          xml:lang="ar"
-                          source="#bib428-2"
-                          corresp="#name428-1">ساري او ستير</placeName>
+                          syriaca-tags="#syriaca-authorized">ܐܣܬܝܪ</placeName>
+               <placeName xml:id="name428-3" xml:lang="syr-Syrj" source="#bib428-1">ܣܰܐܪܗ</placeName>
+               <placeName xml:id="name428-4" xml:lang="syr-Syrj" source="#bib428-1">ܐܶܣܬܝܪ</placeName>
+               <placeName xml:id="name428-5" xml:lang="ar" source="#bib428-2">ساري</placeName>
+               <placeName xml:id="name428-6" xml:lang="ar" source="#bib428-2">ستير</placeName>
+               <placeName xml:id="name428-7" xml:lang="en" source="#bib428-3">Sari Awastir</placeName>
                <desc xml:id="abstract-en-428"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/428</idno>

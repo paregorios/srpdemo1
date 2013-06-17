@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,7 +65,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,11 +80,11 @@
                <placeName xml:id="name159-3" xml:lang="en" source="#bib159-1">Ceyhan</placeName>
                <placeName xml:id="name159-4"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܓܝܚܢ ܐܘ ܓܝܚܘܢ</placeName>
-               <placeName xml:id="name159-5" xml:lang="syr-Syrj" source="#bib159-2">ܓܺܝܚ</placeName>
-               <placeName xml:id="name159-6" xml:lang="syr-Syrj" source="#bib159-2">ܐ</placeName>
-               <placeName xml:id="name159-7" xml:lang="syr-Syrj" source="#bib159-2">ܓܝܺܚܘܽܢ</placeName>
-               <placeName xml:id="name159-8" xml:lang="ar" source="#bib159-3">جَيحان او جيحون</placeName>
+                          syriaca-tags="#syriaca-authorized">ܓܝܚܘܢ</placeName>
+               <placeName xml:id="name159-5" xml:lang="syr-Syrj" source="#bib159-2">ܓܺܝܚܢ</placeName>
+               <placeName xml:id="name159-6" xml:lang="syr-Syrj" source="#bib159-2">ܓܝܺܚܘܽܢ</placeName>
+               <placeName xml:id="name159-7" xml:lang="ar" source="#bib159-3">جَيحان</placeName>
+               <placeName xml:id="name159-8" xml:lang="ar" source="#bib159-3">جيحون</placeName>
                <desc xml:id="abstract-en-159"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib159-2">ܢܰܗܪܰܐ ܗܘ ܕܒܰܡܣܝܺܣܛܐ ܢܳܣܶܟ ܠܩܘܽܒܠܗ ܒܩܺܝܠܺܝܩܝܰܐ ܘܒܰܫܡܗ ܐܶܫܬܰܡܗܰܬ ܡܕܝܢܰܬ ܓܝܺܚܐܰܢ.</quote>
@@ -93,6 +95,7 @@
                <idno type="URI">http://syriaca.org/place/159</idno>
                <idno type="URI">http://pleiades.stoa.org/places/658576</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Ceyhan_River</idno>
+               <idno type="URI">http://dbpedia.org/resource/Ceyhan_River</idno>
                <bibl xml:id="bib159-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

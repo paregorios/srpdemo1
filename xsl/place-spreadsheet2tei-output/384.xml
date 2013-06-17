@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Gugel Monastery</title>
+            <title xml:lang="en">Gawgal</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,27 +69,31 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-384" type="">
-               <placeName xml:id="name384-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib384-3"
-                          corresp="#name384-5">Gugel Monastery</placeName>
+            <place xml:id="place-384" type="monastery">
+               <placeName xml:id="name384-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Gawgal</placeName>
                <placeName xml:id="name384-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܓܘܓܠ</placeName>
+                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܓܘܓܠ</placeName>
                <placeName xml:id="name384-3" xml:lang="syr-Syrj" source="#bib384-1">ܕܰܝܪ</placeName>
-               <placeName xml:id="name384-4" xml:lang="syr-Syrj" source="#bib384-1">ܓܘܓܠ</placeName>
-               <placeName xml:id="name384-5"
-                          xml:lang="ar"
-                          source="#bib384-2"
-                          corresp="#name384-1">دير كوكل</placeName>
+               <placeName xml:id="name384-4" xml:lang="syr-Syrj" source="#bib384-1">ܕܓܘܓܠ</placeName>
+               <placeName xml:id="name384-5" xml:lang="syr-Syrj" source="#bib384-1">ܕܒܶܝ</placeName>
+               <placeName xml:id="name384-6" xml:lang="syr-Syrj" source="#bib384-1">ܓܘܳܓܝ</placeName>
+               <placeName xml:id="name384-7" xml:lang="syr-Syrj" source="#bib384-1">ܕܰܝܪܳ</placeName>
+               <placeName xml:id="name384-8" xml:lang="syr-Syrj" source="#bib384-1">ܕܐܰܒܪܗ</placeName>
+               <placeName xml:id="name384-9" xml:lang="syr-Syrj" source="#bib384-1">ܟܰܫܟܳܪܝܐ</placeName>
+               <placeName xml:id="name384-10" xml:lang="ar" source="#bib384-2">دير كوكل</placeName>
+               <placeName xml:id="name384-11" xml:lang="ar" source="#bib384-2">دير بيت كوكي</placeName>
+               <placeName xml:id="name384-12" xml:lang="ar" source="#bib384-2">دير ابرهيم الكشكري</placeName>
+               <placeName xml:id="name384-13" xml:lang="en" source="#bib384-3">Gugel Monastery</placeName>
+               <placeName xml:id="name384-14" xml:lang="en" source="#bib384-3">Beth Gugi Monastery</placeName>
+               <placeName xml:id="name384-15" xml:lang="en" source="#bib384-3">Monastery of Abraham of Kashkar</placeName>
+               <placeName xml:id="name384-16" xml:lang="en" source="#bib384-4">Bet Gaugal</placeName>
                <desc xml:id="abstract-en-384"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib384-1">ܒܛܘܪܥܰܒܕܝܢ ܡܶܣܬܒܰܪ ܘܡܶܬܐܡܰܪ ܗܘܐ ܠܗ ܕܒܶܝܬ ܓܘܳܓܝ ܘܥܰܡܝܪ ܗܘܳܐ ܒܪܝܫܳܐ ܕܡܰܐܬܐ ܫܬܝܬܳܝܬܐ. ܘܥܰܠ ܫܶܬܶܐܣܰܘ̈ܗܝ ܐܶܬܒܢܺܝ ܕܰܝܪܳܐ ܕܐܰܒܪܗܡ ܟܰܫܟܳܪܝܐ ܢܰܣܛܘܽܪܝܢܳܐ. ܟܶܢ ܐܰܚܕܽܘܗܝ ܣܘܪ̈ܝܳܝܐ ܒܪܝܫܗ ܕܕܳܪܐ ܕܰܬܫܰܥܣܪ ܐܰܟܡܳܐ ܕܐܶܚܰܕܘ ܕܰܝܪܐ ܕܡܳܪܝ ܝܘܚܰܢܢ ܛܰܝܳܝܐ ܕܩܰܪܝܒ ܠܕܰܝܪܐ ܕܡܳܪܝ ܐܰܘܓܝܢ ܒܳܬܪ ܕܐܶܣܬܰܦܰܩܘ ܗܘܰܘ ܘܰܚܪܶܒܘ ܘܫܰܟܠܶܠܘ ܐܢܘܢ</quote>
@@ -115,6 +121,10 @@
                   <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                   <ptr target="http://syriaca.org/bibl/4"/>
                   <citedRange unit="pp">564</citedRange>
+               </bibl>
+               <bibl xml:id="bib384-4">
+                  <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
                </bibl>
             </place>
          </listPlace>

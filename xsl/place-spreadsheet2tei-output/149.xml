@@ -31,7 +31,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -39,7 +39,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -59,7 +61,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -83,13 +85,17 @@
                           corresp="#name149-3 #name149-5">فلسطين</placeName>
                <placeName xml:id="name149-5"
                           xml:lang="en"
-                          source="#bib149-4 #bib149-5"
+                          source="#bib149-4"
                           corresp="#name149-3 #name149-4">Palestine</placeName>
                <placeName xml:id="name149-6" xml:lang="en" source="#bib149-5">Roman Palestine</placeName>
                <desc xml:id="abstract-en-149"/>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/149</idno>
                <idno type="URI">http://pleiades.stoa.org/places/991396</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Syria_Palaestina</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Palaestina_Prima</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Palaestina_Secunda</idno>
+               <idno type="URI">en.wikipedia.org/wiki/Palaestina_Salutaris</idno>
                <bibl xml:id="bib149-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

@@ -10,7 +10,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title xml:lang="en">Bāls (Bālsh)</title>
+            <title xml:lang="en">Bālis</title>
             <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,29 +65,28 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-299" type="">
-               <placeName xml:id="name299-1"
-                          xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib299-3"
-                          corresp="#name299-3 #name299-4">Bāls (Bālsh)</placeName>
+            <place xml:id="place-299" type="settlement">
+               <placeName xml:id="name299-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Bālis</placeName>
                <placeName xml:id="name299-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܒܐܠܫ</placeName>
-               <placeName xml:id="name299-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib299-1"
-                          corresp="#name299-4 #name299-1">ܒܳܐܠܫ</placeName>
-               <placeName xml:id="name299-4"
-                          xml:lang="ar"
-                          source="#bib299-2"
-                          corresp="#name299-3 #name299-1">بالس او بالش</placeName>
+               <placeName xml:id="name299-3" xml:lang="syr-Syrj" source="#bib299-1">ܒܳܐܠܫ</placeName>
+               <placeName xml:id="name299-4" xml:lang="syr-Syrj" source="#bib299-1">ܒܪܒܐܠܝܣܘܣ</placeName>
+               <placeName xml:id="name299-5" xml:lang="syr-Syrj" source="#bib299-1">ܡܰܣܟܢܗ</placeName>
+               <placeName xml:id="name299-6" xml:lang="ar" source="#bib299-2">بالس</placeName>
+               <placeName xml:id="name299-7" xml:lang="ar" source="#bib299-2">بالش</placeName>
+               <placeName xml:id="name299-8" xml:lang="ar" source="#bib299-2">برباليسوس</placeName>
+               <placeName xml:id="name299-9" xml:lang="ar" source="#bib299-2">مسكنة</placeName>
+               <placeName xml:id="name299-10" xml:lang="en" source="#bib299-3">Bāls</placeName>
+               <placeName xml:id="name299-11" xml:lang="en" source="#bib299-3">Bālsh</placeName>
+               <placeName xml:id="name299-12" xml:lang="en" source="#bib299-3">Perpalisos</placeName>
+               <placeName xml:id="name299-13" xml:lang="en" source="#bib299-3">Maskana</placeName>
                <desc xml:id="abstract-en-299"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib299-1">ܐܰܬܪܐ ܕܒܶܝܬ ܚܳܠܳܒ ܠܩܰܐܠܘܢܝܩܝ ܘܐܝܬܘܗܝ ܒܪܒܐܠܝܣܘܣ ܥܰܬܝܩܬܳܐ ܘܡܶܫܬܰܡܰܗ ܝܰܘܡܳܢ ܡܰܣܟܢܗ.</quote>
@@ -100,6 +101,7 @@
                <idno type="URI">http://syriaca.org/place/299</idno>
                <idno type="URI">http://pleiades.stoa.org/places/668208</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Maskanah</idno>
+               <idno type="URI">http://dbpedia.org/resource/Maskanah</idno>
                <bibl xml:id="bib299-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>

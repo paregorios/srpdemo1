@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,7 +65,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,18 +79,11 @@
                <placeName xml:id="name345-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܦܩܝܣܡܐܛ</placeName>
-               <placeName xml:id="name345-3"
-                          xml:lang="syr-Syrj"
-                          source="#bib345-2"
-                          corresp="#name345-4 #name345-5">ܦܰܩܝܣܡܰܐܛ</placeName>
-               <placeName xml:id="name345-4"
-                          xml:lang="ar"
-                          source="#bib345-3"
-                          corresp="#name345-3 #name345-5">باقسماط او فقسماط</placeName>
-               <placeName xml:id="name345-5"
-                          xml:lang="en"
-                          source="#bib345-4"
-                          corresp="#name345-3 #name345-4">Baqismāt (or Phaqismāt) Monastery</placeName>
+               <placeName xml:id="name345-3" xml:lang="syr-Syrj" source="#bib345-2">ܦܰܩܝܣܡܰܐܛ</placeName>
+               <placeName xml:id="name345-4" xml:lang="ar" source="#bib345-3">باقسماط</placeName>
+               <placeName xml:id="name345-5" xml:lang="ar" source="#bib345-3">فقسماط</placeName>
+               <placeName xml:id="name345-6" xml:lang="en" source="#bib345-4">Baqismāt Monastery</placeName>
+               <placeName xml:id="name345-7" xml:lang="en" source="#bib345-4">Phaqismāt Monastery</placeName>
                <desc xml:id="abstract-en-345"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib345-2">ܒܳܣܝܣ ܕܰܒܩܝܠܝܺܩܝܐ. ܥܡܰܪ ܒܗ ܝܘܚܰܢܢ ܕܝ̄ܒ ܫܢܰܬ  1108  ܘܐܰܘܩܕܽܘܗܝ ܦܳܠܚ̈ܐ ܡܶܨܪ̈ܝܐ ܬܠܳܬ ܙܰܒܢ̈ܝܢ ܒܶܝܬ ܫܢܰܬ  1226  -   1279  ܘܩܰܛܠܗ ܒܗ 25  ܕܰܝܪ̈ܝܐ ܘܠܗ ܡܶܬܒܰܝܬܶܐ ܓܪܝܺܓܘܪܺܝܘܣ ܡܶܛܪܘܦܘܠܝܛܐ ܕܣܝܺܣ.</quote>

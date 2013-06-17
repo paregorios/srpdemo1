@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,30 +69,24 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-457" type="">
+            <place xml:id="place-457" type="diocese">
                <placeName xml:id="name457-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib457-4">Marga</placeName>
+                          source="#bib457-3 #bib457-4">Marga</placeName>
                <placeName xml:id="name457-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib457-1"
-                          corresp="#name457-3 #name457-4">ܡܪܓܐ</placeName>
-               <placeName xml:id="name457-3"
-                          xml:lang="ar"
-                          source="#bib457-2"
-                          corresp="#name457-2 #name457-4">مرجا او المرج</placeName>
-               <placeName xml:id="name457-4"
-                          xml:lang="en"
-                          source="#bib457-3"
-                          corresp="#name457-2 #name457-3">Marga (Marj)</placeName>
+                          source="#bib457-1">ܡܪܓܐ</placeName>
+               <placeName xml:id="name457-3" xml:lang="ar" source="#bib457-2">مرجا</placeName>
+               <placeName xml:id="name457-4" xml:lang="ar" source="#bib457-2">المرج</placeName>
+               <placeName xml:id="name457-5" xml:lang="en" source="#bib457-3">Marj</placeName>
                <desc xml:id="abstract-en-457"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib457-1">ܦܢܺܝܬܐ ܕܰܒܓܰܪܒܰܝ ܡܰܕܢܰܚ ܡܘܨܠ ܡܶܢܩܕܺܝܡ ܪܘܣܬܩܳܐ ܪܰܒܐ ܗܘܳܬ.</quote>
@@ -103,6 +99,8 @@
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/457</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Marga_(East_Syrian_diocese)</idno>
+               <idno type="URI">http://dbpedia.org/resource/Marga_(East_Syrian_diocese)</idno>
                <bibl xml:id="bib457-1">
                   <title xml:lang="syr">ܒܪ̈ܘܠܐ ܒܕܝܪ̈ܐ ܕܥܠ ܡܪܕܘܬ ܝܘܠܦܢ̈ܐ ܣܘܪ̈ܝܝܐ ܗܕܝܪ̈ܐ</title>
                   <ptr target="http://syriaca.org/bibl/3"/>

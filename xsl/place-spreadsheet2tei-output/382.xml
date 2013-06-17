@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,13 +69,13 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-382" type="">
+            <place xml:id="place-382" type="monastery">
                <placeName xml:id="name382-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Mor Giwargis</placeName>
                <placeName xml:id="name382-2"
                           xml:lang="syr"
@@ -81,14 +83,9 @@
                <placeName xml:id="name382-3" xml:lang="syr-Syrj" source="#bib382-1">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name382-4" xml:lang="syr-Syrj" source="#bib382-1">ܕܡܳܪ</placeName>
                <placeName xml:id="name382-5" xml:lang="syr-Syrj" source="#bib382-1">ܓܶܘܪܓܝܣ</placeName>
-               <placeName xml:id="name382-6"
-                          xml:lang="ar"
-                          source="#bib382-2"
-                          corresp="#name382-7">دير مار كوركيس (جرجيس)</placeName>
-               <placeName xml:id="name382-7"
-                          xml:lang="en"
-                          source="#bib382-3"
-                          corresp="#name382-6">George Monastery</placeName>
+               <placeName xml:id="name382-6" xml:lang="ar" source="#bib382-2">دير مار كوركيس</placeName>
+               <placeName xml:id="name382-7" xml:lang="ar" source="#bib382-2">دير مار جرجيس</placeName>
+               <placeName xml:id="name382-8" xml:lang="en" source="#bib382-3">George Monastery</placeName>
                <desc xml:id="abstract-en-382"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib382-1">ܠܡܰܥܪܒܐ ܕܡܶܪܕܐ ܫܰܟܠܠܗ ܡܫܰܡܫܳܢܐ ܐܰܒܽܘ ܥܰܠܝ ܪܝܫ ܐܳܣܰܘ̈ܬܐ ܒܕܳܪܐ ܕܰܬܪܶܥܣܪ. ܚܪܶܒ</quote>

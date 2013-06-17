@@ -35,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -43,7 +43,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -63,7 +65,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,9 +79,14 @@
                <placeName xml:id="name68-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܨܠܝܒܐ</placeName>
                <placeName xml:id="name68-3" xml:lang="syr-Syrj" source="#bib68-2">ܕܰܝܪ</placeName>
                <placeName xml:id="name68-4" xml:lang="syr-Syrj" source="#bib68-2">ܕܰܨܠܝܒܐ</placeName>
-               <placeName xml:id="name68-5" xml:lang="ar" source="#bib68-3">دير الصليب</placeName>
-               <placeName xml:id="name68-6" xml:lang="en" source="#bib68-4">Cross</placeName>
-               <placeName xml:id="name68-7" xml:lang="en" source="#bib68-4">Monastery of the</placeName>
+               <placeName xml:id="name68-5"
+                          xml:lang="ar"
+                          source="#bib68-3"
+                          corresp="#name68-6">دير الصليب</placeName>
+               <placeName xml:id="name68-6"
+                          xml:lang="en"
+                          source="#bib68-4"
+                          corresp="#name68-5">Monastery of the Cross</placeName>
                <desc xml:id="abstract-en-68"/>
                <desc xml:lang="en">
                   <quote source="#bib68-1">466. al-Ṣalīb, Dayr</quote>

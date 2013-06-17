@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,36 +69,32 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-379" type="">
+            <place xml:id="place-379" type="monastery">
                <placeName xml:id="name379-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayro d-Qube</placeName>
                <placeName xml:id="name379-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܘܒ̈ܐ</placeName>
                <placeName xml:id="name379-3" xml:lang="syr-Syrj" source="#bib379-1">ܕܰܝܪ</placeName>
                <placeName xml:id="name379-4" xml:lang="syr-Syrj" source="#bib379-1">ܕܩܘܒ̈ܐ</placeName>
-               <placeName xml:id="name379-5"
-                          xml:lang="ar"
-                          source="#bib379-2"
-                          corresp="#name379-6">دير قوبا</placeName>
-               <placeName xml:id="name379-6"
-                          xml:lang="en"
-                          source="#bib379-3"
-                          corresp="#name379-5">Qūbā Monastery</placeName>
+               <placeName xml:id="name379-5" xml:lang="ar" source="#bib379-2">دير قوبا</placeName>
+               <placeName xml:id="name379-6" xml:lang="ar" source="#bib379-2">دير القبب</placeName>
+               <placeName xml:id="name379-7" xml:lang="en" source="#bib379-3">Qūbā Monastery</placeName>
+               <placeName xml:id="name379-8" xml:lang="en" source="#bib379-3">Monastery of the Domes</placeName>
                <desc xml:id="abstract-en-379"/>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib379-1">ܒܰܫܦܘܽܠܐ ܕܛܘܪܐ ܕܐܽܘܪܗܳܝ ܠܬܰܝܡܢ ܥܕܬܐ ܕܡܳܪܝ ܩܘܙܡܐ ܐܶܬܒܢܺܝ ܒܫܘܪܳܝܐ ܕܕܳܪܐ ܚܡܺܝܫܝܐ. ܘܐܰܚܪܒܗ ܒܪܳܐ ܕܒܰܟܬܰܪܝ ܫܢܰܬ  751  ܘܬܶܢܝܳܢܘܬ ܐܶܬܗܦܟ ܒܶܢܝܳܢܗ ܘܢܰܦܩ ܬܠܳܬܐ ܐܶܦܝܣܩܘ̈ܦܐ ܥܕܰܡܐ ܠܰܫܢܬ  873</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib379-2">أو دير القبب في لحف جبل الرها في جنوب بيعة مار قزما، انشئ اوائل القرن الخامس ودمره ابن البختري عام 751 واعيد بناؤه فخرج ثلاثة اساقفة حتى سنة 873.</quote>
+                  <quote source="#bib379-2">في لحف جبل الرها في جنوب بيعة مار قزما، انشئ اوائل القرن الخامس ودمره ابن البختري عام 751 واعيد بناؤه فخرج ثلاثة اساقفة حتى سنة 873.</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib379-3">also called the Monastery of the Domes: in the Mountain of Edessa, south of St. Cosmas Church. Built at the beginning of the fifth century, it was destroyed by Ibn al-Bukhtūrī in 751, but was later restored. By 873 it had produced three bishops.</quote>
+                  <quote source="#bib379-3">in the Mountain of Edessa, south of St. Cosmas Church. Built at the beginning of the fifth century, it was destroyed by Ibn al-Bukhtūrī in 751, but was later restored. By 873 it had produced three bishops.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/379</idno>

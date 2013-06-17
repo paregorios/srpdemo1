@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,36 +69,33 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
-            <place xml:id="place-372" type="">
+            <place xml:id="place-372" type="monastery">
                <placeName xml:id="name372-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Dayr Fusqīn</placeName>
                <placeName xml:id="name372-2"
                           xml:lang="syr"
                           syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܦܣܩܝܢ</placeName>
                <placeName xml:id="name372-3" xml:lang="syr-Syrj" source="#bib372-1">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name372-4" xml:lang="syr-Syrj" source="#bib372-1">ܕܦܳܣܩܝܢ</placeName>
-               <placeName xml:id="name372-5"
-                          xml:lang="ar"
-                          source="#bib372-2"
-                          corresp="#name372-6">دير فُسقين</placeName>
-               <placeName xml:id="name372-6"
-                          xml:lang="en"
-                          source="#bib372-3"
-                          corresp="#name372-5">Fusqīn Monastery</placeName>
+               <placeName xml:id="name372-5" xml:lang="syr-Syrj" source="#bib372-1">ܕܰܫܡܝ̈ܛܳܝܐ</placeName>
+               <placeName xml:id="name372-6" xml:lang="ar" source="#bib372-2">دير فُسقين</placeName>
+               <placeName xml:id="name372-7" xml:lang="ar" source="#bib372-2">دير الحفاة</placeName>
+               <placeName xml:id="name372-8" xml:lang="en" source="#bib372-3">Fusqīn Monastery</placeName>
+               <placeName xml:id="name372-9" xml:lang="en" source="#bib372-3">Barefooted Monastery</placeName>
                <desc xml:id="abstract-en-372"/>
                <desc xml:lang="syr-Syrj">
-                  <quote source="#bib372-1">ܘܡܶܬܶܐܡܰܪ ܠܗ̇ ܕܰܝܪܳܐ ܕܰܫܡܝ̈ܛܳܝܐ. ܥܠ ܣܶܦܰܬ ܦܪܳܬ ܢܰܗܪܐ ܒܩܘܽܪܒܐ ܕܕܰܝܪܐ ܕܡܳܪܝ ܐܰܒܚܰܝ ܒܓܰܪܓܪܰ. ܚܰܕܶܬ ܠܒܶܢܝܳܢܗ ܕܰܝܪܳܝܐ ܕܰܘܝܕ ܘܟܶܢܫܐ ܕܥܶܢܘ̈ܝܐ ܒܪܺܝܫܐ ܕܡܰܐܬܐ ܕܰܚܕܰܥܣܪ̈ܐ ܘܠܗ ܡܬܒܰܝܬܝܢ ܚܰܡܫܐ ܐܶܦܝܣܩܘ̈ܦܐ ܒܕܳܪܗ ܩܰܕܡܳܝܐ ܒܡܰܐܬܐ ܕܰܥܣܪ ܘܰܒܢܳܐ ܗܰܝܟܠܗ ܪܰܒܰܢ ܚܰܒܩܘܩ ܗܘ ܕܰܫܟܝܚ ܗܘܐ ܒܰܫܢܰܬ  1160  ܘܥܰܡܝܪ ܗܘܐ ܫܢܰܬ  1565  ܐܠܐ ܒܳܬܰܪ ܩܰܠܝܠ ܫܢ̈ܝܐ ܠܰܝܬ ܗܘܐ ܒܗ̇ ܥܳܡܘܪ.</quote>
+                  <quote source="#bib372-1">ܥܠ ܣܶܦܰܬ ܦܪܳܬ ܢܰܗܪܐ ܒܩܘܽܪܒܐ ܕܕܰܝܪܐ ܕܡܳܪܝ ܐܰܒܚܰܝ ܒܓܰܪܓܪܰ. ܚܰܕܶܬ ܠܒܶܢܝܳܢܗ ܕܰܝܪܳܝܐ ܕܰܘܝܕ ܘܟܶܢܫܐ ܕܥܶܢܘ̈ܝܐ ܒܪܺܝܫܐ ܕܡܰܐܬܐ ܕܰܚܕܰܥܣܪ̈ܐ ܘܠܗ ܡܬܒܰܝܬܝܢ ܚܰܡܫܐ ܐܶܦܝܣܩܘ̈ܦܐ ܒܕܳܪܗ ܩܰܕܡܳܝܐ ܒܡܰܐܬܐ ܕܰܥܣܪ ܘܰܒܢܳܐ ܗܰܝܟܠܗ ܪܰܒܰܢ ܚܰܒܩܘܩ ܗܘ ܕܰܫܟܝܚ ܗܘܐ ܒܰܫܢܰܬ  1160  ܘܥܰܡܝܪ ܗܘܐ ܫܢܰܬ  1565  ܐܠܐ ܒܳܬܰܪ ܩܰܠܝܠ ܫܢ̈ܝܐ ܠܰܝܬ ܗܘܐ ܒܗ̇ ܥܳܡܘܪ.</quote>
                </desc>
                <desc xml:lang="ar">
-                  <quote source="#bib372-2">ويقال له دير الحفاة على ضفة نهر الفرات بقرب دير مار ابحاي في كركر؛ جدد بناءه الربان داود ورهط من النساك صدر المئة الحادية عشرة، واليه ينسب خمسة اساقفة في حقبته الاولى في المئة العاشرة، وبنى هيكله الربان حبقوق الذي كان موجودا حول سنة 1160 كان عامرا عام 1565 لكنه امسى خاليا بعد سنوات قليلة.</quote>
+                  <quote source="#bib372-2">على ضفة نهر الفرات بقرب دير مار ابحاي في كركر؛ جدد بناءه الربان داود ورهط من النساك صدر المئة الحادية عشرة، واليه ينسب خمسة اساقفة في حقبته الاولى في المئة العاشرة، وبنى هيكله الربان حبقوق الذي كان موجودا حول سنة 1160 كان عامرا عام 1565 لكنه امسى خاليا بعد سنوات قليلة.</quote>
                </desc>
                <desc xml:lang="en">
-                  <quote source="#bib372-3">also called the “Barefooted” Monastery: on the left bank of the Euphrates, near Mor Abḥai Monastery in Karkar. Master David and a group of monks renovated it at the beginning of the eleventh century. To this monastery are attributed five bishops in the tenth century. Its nave was built by the monk Habakkuk (fl. c. 1160). The monastery was still populated in 1565, but was abandoned a few years later.</quote>
+                  <quote source="#bib372-3">on the left bank of the Euphrates, near Mor Abḥai Monastery in Karkar. Master David and a group of monks renovated it at the beginning of the eleventh century. To this monastery are attributed five bishops in the tenth century. Its nave was built by the monk Habakkuk (fl. c. 1160). The monastery was still populated in 1565, but was abandoned a few years later.</quote>
                </desc>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/372</idno>

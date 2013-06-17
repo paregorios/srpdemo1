@@ -39,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-05-21-04:00</date>
+            <date>2013-06-16-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -47,7 +47,9 @@
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
-            <p>Normalized capitalization of GEDSH names.</p>
+            <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
+            <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
+            <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
          </editorialDecl>
          <classDecl>
             <taxonomy>
@@ -67,7 +69,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-05-21-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-16-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,18 +79,13 @@
                <placeName xml:id="name78-1"
                           xml:lang="en"
                           syriaca-tags="#syriaca-authorized"
-                          source="#bib78-1 #bib78-4 #bib78-5"
-                          corresp="#name78-4 #name78-5">Edessa</placeName>
-               <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1">Urfa</placeName>
+                          source="#bib78-1 #bib78-4 #bib78-5">Edessa</placeName>
+               <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1 #bib78-4">Urfa</placeName>
                <placeName xml:id="name78-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܐܘܪܗܝ</placeName>
-               <placeName xml:id="name78-4"
-                          xml:lang="syr-Syrj"
-                          source="#bib78-2"
-                          corresp="#name78-5 #name78-1">ܐܘܪܗܳܝ</placeName>
-               <placeName xml:id="name78-5"
-                          xml:lang="ar"
-                          source="#bib78-3"
-                          corresp="#name78-4 #name78-1">الرها</placeName>
+               <placeName xml:id="name78-4" xml:lang="syr-Syrj" source="#bib78-2">ܐܘܪܗܳܝ</placeName>
+               <placeName xml:id="name78-5" xml:lang="syr-Syrj" source="#bib78-2">ܐܘܪܦܰܗ̈</placeName>
+               <placeName xml:id="name78-6" xml:lang="ar" source="#bib78-3">الرها</placeName>
+               <placeName xml:id="name78-7" xml:lang="ar" source="#bib78-3">اورفه</placeName>
                <desc xml:id="abstract-en-78">A city of Mesopotamia, the capital of the ancient kingdom of Osrhoene, modern Urfa.</desc>
                <desc xml:lang="en">
                   <quote source="#bib78-1">183. Edessa</quote>
@@ -109,6 +106,7 @@
                <idno type="URI">http://syriaca.org/place/78</idno>
                <idno type="URI">http://pleiades.stoa.org/places/658457</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Edessa</idno>
+               <idno type="URI">http://en.wikipedia.org/wiki/Şanlıurfa</idno>
                <bibl xml:id="bib78-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
