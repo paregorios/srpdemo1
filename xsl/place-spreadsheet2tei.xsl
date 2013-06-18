@@ -45,6 +45,7 @@
                 </xsl:processing-instruction>
                 <xsl:value-of select="$n"/>
                 <TEI
+                    xml:lang="en"
                     xmlns:xi="http://www.w3.org/2001/XInclude"
                     xmlns:svg="http://www.w3.org/2000/svg"
                     xmlns:math="http://www.w3.org/1998/Math/MathML"
