@@ -101,15 +101,6 @@
                 </xsl:call-template>
             </xsl:variable>
             
-            <!-- Names that will be put in parallel (using @corresp) need variables for their ids? -->
-            <!--<xsl:variable name="gedsh-id-base" select="$ids-base/*[contains(name(), 'GEDSH')]"/>
-            <xsl:variable name="barsoum-en-id-base" select="$ids-base/*[contains(name(), 'Barsoum_En')]"/>
-            <xsl:variable name="barsoum-ar-id-base" select="$ids-base/*[contains(name(), 'Barsoum_Ar')]"/>
-            <xsl:variable name="barsoum-sy-id-base" select="$ids-base/*[contains(name(), 'Barsoum_Sy_NV')]"/>
-            <xsl:variable name="abdisho-ydq-id-base" select="$ids-base/*[contains(name(), 'Abdisho_YdQ_Sy_NV')]"/>
-            <xsl:variable name="abdisho-bo-id-base" select="$ids-base/*[contains(name(), 'Abdisho_BO_Sy_NV')]"/>
-            <xsl:variable name="cbsc-id-base" select="$ids-base/*[contains(name(), 'CBSC')]"/>-->
-            
             <xsl:variable name="name-ids">
                 <xsl:for-each select="$all-full-names/*">
                     
@@ -129,35 +120,6 @@
                     </xsl:if>
                  </xsl:for-each>
             </xsl:variable>
-            <!--
-            <!-\- Creates xml:id for persName elements, including # on beginning to use for links. -\->
-            <xsl:variable name="gedsh-name-link" select="$name-links/*[contains(name(), 'GEDSH')]"/>
-            
-            <xsl:variable name="barsoum-en-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_En')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-en-id-base"/></xsl:if>
-            </xsl:variable>
-            <xsl:variable name="barsoum-ar-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_Ar')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-ar-id-base"/></xsl:if>
-            </xsl:variable>
-            <xsl:variable name="barsoum-sy-nv-name-link" select="$name-links/*[contains(name(), 'Barsoum_Sy_NV')]"/>
-            <xsl:variable name="barsoum-sy-v-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Barsoum_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$barsoum-sy-id-base"/>b</xsl:if>
-            </xsl:variable>
-            <xsl:variable name="abdisho-ydq-sy-nv-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_YdQ_Sy_NV')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-ydq-id-base"/>a</xsl:if>
-            </xsl:variable>
-            <xsl:variable name="abdisho-ydq-sy-v-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_YdQ_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-ydq-id-base"/>b</xsl:if>
-            </xsl:variable>
-            <xsl:variable name="abdisho-bo-sy-nv-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_BO_Sy_NV')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-bo-id-base"/>a</xsl:if>
-            </xsl:variable>
-            <xsl:variable name="abdisho-bo-sy-v-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'Abdisho_BO_Sy_V')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$abdisho-bo-id-base"/>b</xsl:if>
-            </xsl:variable>
-            <xsl:variable name="cbsc-name-link">
-                <xsl:if test="normalize-space($all-full-names/*[contains(name(), 'CBSC')])">#<xsl:value-of select="$person-name-id"/><xsl:value-of select="$cbsc-id-base"/></xsl:if>
-            </xsl:variable>-->
             
             <!-- Creates a variable to use as the base for the xml:id for bib elements -->
             <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
@@ -171,30 +133,7 @@
                     
                 </xsl:for-each>
             </xsl:variable>
-            
-            <!-- Creates variables to use as xml:id for bib elements -->
-            <!--<xsl:variable name="gedsh-id">
-                <xsl:value-of select="concat($bib-id, $gedsh-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="barsoum-en-id">
-                <xsl:value-of select="concat($bib-id, $barsoum-en-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="barsoum-ar-id">
-                <xsl:value-of select="concat($bib-id, $barsoum-ar-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="barsoum-sy-id">
-                <xsl:value-of select="concat($bib-id, $barsoum-sy-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="abdisho-ydq-id">
-                <xsl:value-of select="concat($bib-id, $abdisho-ydq-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="abdisho-bo-id">
-                <xsl:value-of select="concat($bib-id, $abdisho-bo-id-base)"/>
-            </xsl:variable>
-            <xsl:variable name="cbsc-id">
-                <xsl:value-of select="concat($bib-id, $cbsc-id-base)"/>
-            </xsl:variable>-->
-            
+                        
             <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or GEDSH-style.
             Doesn't work for comma-separated name parts that should be sorted as first. 
             If no name part can be matched with beginning of full name, defaults to given, then family, then titles, if they exist.
@@ -223,80 +162,53 @@
                     </xsl:when>
                     <xsl:otherwise>given</xsl:otherwise>
                 </xsl:choose>
-            </xsl:variable>
-            
-            
-            
+            </xsl:variable>         
+                        
             <xsl:variable name="filename"
                 select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
             <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
             <xsl:result-document href="{$filename}" format="xml">
-                <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                <TEI xmlns="http://www.tei-c.org/ns/1.0">
                     <!-- Need to decide what header should look like. -->
                     <teiHeader>
                         <fileDesc>
                             <titleStmt>
-                                <title xml:lang="en"><xsl:value-of select="$display-name-english"/></title>
+                                <title xml:lang="en"><xsl:value-of select="$display-name-english"/> | The Syriac Prosopography</title>
                                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                                 <!-- Which funders do we include here? -->
-                                <funder>The Andrew W. Mellon Foundation</funder>
                                 <funder>The National Endowment for the Humanities</funder>
                                 <funder>The International Balzan Prize Foundation</funder>
-                                <principal><name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name></principal>
-                                <editor role="creator"><name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name></editor>
-                                    <editor role="creator"><name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name></editor>
-                                        <!-- Put these in alphabetical order -->
-                                        <respStmt>
-                                            <resp>Editing, document design, proofreading, data entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Editing, proofreading, data entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#jnsaint-laurent">Jeanne-Nicole Saint-Laurent</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>English name entry, matching with viaf.org records by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Matching with viaf.org records, data entry, data transformation, conversion to XML by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>editing, Syriac name entry, disambiguation research by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Syriac name entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Arabic name entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#pkirlles">Philemon Kirlles</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Arabic name entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Normalization, matching with viaf.org records by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Date entry by</resp>
-                                            <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>Project managament, english text entry, and proofreading by</resp>
-                                            <name type="person" ref="http://syriaca.org/editors.xml#cjohnson">
-                                                Christopher Johnson</name>
-                                        </respStmt>
-                                        <respStmt>
-                                            <resp>English text entry and proofreading by</resp>
-                                            <name type="org"
-                                                ref="http://syriaca.org/editors.xml#uasyriacresearchgroup">
-                                                the Syriac Research Group, University of Alabama</name>
-                                        </respStmt>
+                                <principal>David A. Michelson</principal>
+                                <!-- Are the following correct? -->
+                                <!-- Should I include all of the following for all records, or should I base this on the logs in the spreadsheet? -->
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#jwalters">James E. Walters</name>
+                                    <resp>English name entry, matching with viaf.org records</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#ngibson">Nathan P. Gibson</name>
+                                    <resp>creator</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+                                    <resp>editing, Syriac name entry, disambiguation research</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
+                                    <resp>Syriac name entry</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#jkaado">Jad Kaado</name>
+                                    <resp>Arabic name entry</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#avawter">Alex Vawter</name>
+                                    <resp>normalization, matching with viaf.org records</resp>
+                                </respStmt>
+                                <respStmt>
+                                    <name ref="http://syriaca.org/editors.xml#rsingh-bischofberger">Ralf Singh-Bischofberger</name>
+                                    <resp>date entry</resp>
+                                </respStmt>
                                 <!-- Should anybody from VIAF or ISAW be added here? -->
                             </titleStmt>
                             <editionStmt>
@@ -320,10 +232,7 @@
                             </sourceDesc>
                         </fileDesc>
                         <encodingDesc>
-                            <p>This record created following the Syriaca.org guidelines. Documentation available at: <ptr target="http://syriaca.org/documentation">
-                                http://syriaca.org/documentation</ptr>.</p>
-                            <p>Headwords or names without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
-                                http://syriaca.org/documentation/headwords</ptr>.</p>
+                            <p>Names lacking source attributes are composite forms included for the purpose of disambiguation.</p>
                             <editorialDecl>
                                 <interpretation>
                                     <p>Approximate dates described in terms of centuries or partial centuries have been interpreted as in the following example:
@@ -338,9 +247,8 @@
                             <classDecl>
                                 <taxonomy>
                                     <category xml:id="syriaca-headword">
-                                        <catDesc>The name used by Syriaca.org for document titles, citation, and disambiguation. While headwords are usually created from primary source citations, those without source attributes may not be attested in extant sources. They are included only to aid the reader for the purpose of disambiguation. These names have been created according to the Syriac.org guidelines for headwords: <ptr target="http://syriaca.org/documentation/headwords">
-                                            http://syriaca.org/documentation/headwords</ptr>.</catDesc>
-                                        <!-- Need to include more types, such as addName types. -->
+                                        <!-- Check whether the following is acceptable. -->
+                                        <catDesc>The name used by Syriaca.org for cataloging purposes</catDesc>
                                     </category>
                                 </taxonomy>
                             </classDecl>
@@ -351,11 +259,11 @@
                                 <language ident="syr-Syrj">Vocalized West Syriac</language>
                                 <language ident="syr-Syrn">Vocalized East Syriac</language>
                                 <language ident="en">English</language>
-                                <language ident="en-x-gedsh">Names or terms Romanized into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
+                                <language ident="en-x-gedsh">Names or terms transliterated or transcribed into English according to the standards adopted by the Gorgias Encyclopedic Dictionary of the Syriac Heritage</language>
                                 <language ident="ar">Arabic</language>
                                 <language ident="fr">French</language>
                                 <language ident="de">German</language>
-                                <language ident="la">Latin</language>
+                                <language ident="lat">Latin</language>
                             </langUsage>
                         </profileDesc>
                         <revisionDesc>
@@ -421,21 +329,39 @@
                                         </xsl:for-each>
                                       
                                       <!-- Adds date elements -->
-                                        <xsl:for-each select="*[ends-with(name(), 'Floruit') or ends-with(name(), 'DOB') or ends-with(name(), 'DOD')]">
-                                            <xsl:call-template name="date-or-event">
-                                                <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                            </xsl:call-template>
+                                        <xsl:for-each 
+                                            select="*[(ends-with(name(),'Floruit') or ends-with(name(), '_Other_Date')) and string-length(normalize-space(node()))]">
+                                            <floruit>
+                                                <xsl:call-template name="event-or-date">
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>                                                </xsl:call-template>
+                                            </floruit>
                                         </xsl:for-each>
-                                        <!-- Add anything that should be processed as an event to the following. -->
-                                        <xsl:if test="string-length(normalize-space(GEDSH_en-Reign))">
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'DOB') and string-length(normalize-space(node()))]">
+                                            <birth>
+                                                <xsl:call-template name="event-or-date">
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                                </xsl:call-template>
+                                            </birth>
+                                        </xsl:for-each>
+                                        <xsl:for-each 
+                                            select="*[ends-with(name(),'DOD') and string-length(normalize-space(node()))]">
+                                            <death>
+                                                <xsl:call-template name="event-or-date">
+                                                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                                </xsl:call-template>
+                                            </death>
+                                        </xsl:for-each>
+                                        <xsl:if test="string-length(normalize-space(GEDSH_en-Reign_Begin)) or string-length(normalize-space(GEDSH_en-Reign_End))">
                                             <listEvent>
+                                                <!-- Will we always have both begin and end value for reigns? If not, how do we handle the following so that it creates only one event element for each Begin and End sequence? -->
                                                 <xsl:for-each 
-                                                    select="*[ends-with(name(),'Reign')]">
-                                                    
-                                                        <xsl:call-template name="date-or-event">
+                                                    select="*[(ends-with(name(),'_Begin') or ends-with(name(),'_Other_Date')) and string-length(normalize-space(node()))]">
+                                                    <event>
+                                                        <xsl:call-template name="event-or-date">
                                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                         </xsl:call-template>
-                                                    
+                                                    </event>
                                                 </xsl:for-each>
                                             </listEvent>
                                         </xsl:if>
@@ -707,35 +633,7 @@
                     <xsl:if test="matches($column-name, 'GEDSH_en-|GS_en-')">-x-gedsh</xsl:if>
                 </xsl:attribute>
             </xsl:matching-substring>
-        </xsl:analyze-string>
-        
-        <!--<xsl:choose>
-            <!-\- Should English entries be @xml:lang="en" or @xml:lang="syr-Latn" plus a transcription scheme? -\->
-            <xsl:when test="(contains(name(),'GEDSH')) or (contains(name(),'GS_En'))">
-                <xsl:attribute name="xml:lang" select="'syr-Latn-x-gedsh'"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_En')">
-                <xsl:attribute name="xml:lang" select="'syr-Latn-x-barsoum'"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En')">
-                <xsl:attribute name="xml:lang" select="'syr-Latn-x-cbsc'"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Other_En')">
-                <xsl:attribute name="xml:lang" select="'en'"/>
-            </xsl:when>
-            <xsl:when test="(contains(name(),'Sy_NV')) or (contains(name(),'Authorized_Sy'))">
-                <xsl:attribute name="xml:lang" select="'syr'"/>
-            </xsl:when>
-            <xsl:when test="(contains(name(),'Barsoum_Sy_V')) or (contains(name(),'BO_Sy_V'))">
-                <xsl:attribute name="xml:lang" select="'syr-Syrj'"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'YdQ_Sy_V')">
-                <xsl:attribute name="xml:lang" select="'syr-Syrn'"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'_Ar')">
-                <xsl:attribute name="xml:lang" select="'ar'"/>
-            </xsl:when>
-        </xsl:choose>-->
+        </xsl:analyze-string>        
     </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -776,15 +674,6 @@
         <xsl:param name="name-ids"/>
         <xsl:param name="name-links"/>
         <xsl:param name="current-column-name" select="name()"/>
-        <!--<xsl:param name="barsoum-en-name-link" select="$name-links/*[contains(name(), 'Barsoum_En']"/>
-        <xsl:param name="barsoum-ar-name-link"/>
-        <xsl:param name="barsoum-sy-nv-name-link"/>
-        <xsl:param name="barsoum-sy-v-name-link"/>
-        <xsl:param name="abdisho-ydq-sy-nv-name-link"/>
-        <xsl:param name="abdisho-ydq-sy-v-name-link"/>
-        <xsl:param name="abdisho-bo-sy-nv-name-link"/>
-        <xsl:param name="abdisho-bo-sy-v-name-link"/>
-        <xsl:param name="cbsc-name-link"/>-->
         
         <xsl:attribute name="xml:id" select="$name-ids/*[contains(name(), $current-column-name)]"/>
         <!-- Gets all other name links whose column names start with the same word (e.g., "Barsoum", "Abdisho").
@@ -794,49 +683,6 @@
         <xsl:if test="exists($name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))])">
             <xsl:attribute name="corresp" select="$name-links/*[matches(substring-before($current-column-name, '_'), substring-before(name(), '_')) and not(contains(name(), $current-column-name))]"/>
         </xsl:if>
-        
-        <!--<xsl:choose>
-            <xsl:when test="contains(name(),'GEDSH')">
-                <xsl:attribute name="xml:id" select="replace($gedsh-name-link, '#', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_En')">
-                <xsl:attribute name="xml:id" select="replace($barsoum-en-name-link, '#', '')"/>
-                <!-\- Puts all corresponding name ids into a single attribute separated by a space, but removes extra spaces if some are blank. -\->
-                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-sy-nv-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Ar')">
-                <xsl:attribute name="xml:id" select="replace($barsoum-ar-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-en-name-link, $barsoum-sy-nv-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Barsoum_Sy_NV')">
-                <xsl:attribute name="xml:id" select="replace($barsoum-sy-nv-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-en-name-link, $barsoum-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(), 'Barsoum_Sy_V')">
-                <xsl:attribute name="xml:id" select="replace($barsoum-sy-v-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($barsoum-ar-name-link, $barsoum-en-name-link, $barsoum-sy-nv-name-link), ' '), '^s|\s\s|\s$', '')"/>        
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_YdQ_Sy_NV')">
-                <xsl:attribute name="xml:id" select="replace($abdisho-ydq-sy-nv-name-link, '#', '')"/>
-                <!-\- Should Abdisho YdQ and BO be in parallel to each other too (as here and below) since different editions of same name? -\->
-                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-ydq-sy-v-name-link, $abdisho-bo-sy-nv-name-link, $abdisho-bo-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_YdQ_Sy_V')">
-                <xsl:attribute name="xml:id" select="replace($abdisho-ydq-sy-v-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-ydq-sy-nv-name-link, $abdisho-bo-sy-nv-name-link, $abdisho-bo-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_BO_Sy_NV')">
-                <xsl:attribute name="xml:id" select="replace($abdisho-bo-sy-nv-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-bo-sy-v-name-link, $abdisho-ydq-sy-nv-name-link, $abdisho-ydq-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'Abdisho_BO_Sy_V')">
-                <xsl:attribute name="xml:id" select="replace($abdisho-bo-sy-v-name-link, '#', '')"/>
-                <xsl:attribute name="corresp" select="replace(string-join(($abdisho-bo-sy-nv-name-link, $abdisho-ydq-sy-nv-name-link, $abdisho-ydq-sy-v-name-link), ' '), '^s|\s\s|\s$', '')"/>
-            </xsl:when>
-            <xsl:when test="contains(name(),'CBSC_En_Full')">
-                <xsl:attribute name="xml:id" select="replace($cbsc-name-link, '#', '')"/>
-            </xsl:when>
-        </xsl:choose>-->
     </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
@@ -1027,13 +873,7 @@
             <xsl:copy-of select="."/>
         </xsl:element>
     </xsl:template>
-    
-    
-    
-    
-    
-
-    
+        
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
             <xd:p>This template processes elements that contain date information, including the following:<xd:ul>
@@ -1045,48 +885,54 @@
                 The template other templates to add date and source attributes, then determines whether and how to add a human-readable value to the element, and which (if any) custom type attribute to use. 
             </xd:p>
         </xd:desc>
+        <xd:param name="gedsh-id">The xml:id for the GEDSH bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-en-id">The xml:id for the Barsoum English bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-sy-id">The xml:id for the Barsoum Syriac bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="barsoum-ar-id">The xml:id for the Barsoum Arabic bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="cbsc-id">The xml:id for the CBSC bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-ydq-id">The xml:id for the Abidsho YdQ bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
+        <xd:param name="abdisho-bo-id">The xml:id for the Abdisho BO bibl element, passed in from the variable in the <xd:ref name="main" type="template">main template</xd:ref>.</xd:param>
     </xd:doc>
-    
-    <!-- Do we need human readable content on all dates (including VIAF)? -->
-    <xsl:template name="date-or-event" xmlns="http://www.tei-c.org/ns/1.0">
+    <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+        <xd:desc>
+            <xd:p></xd:p>
+        </xd:desc>
+        <xd:param name="gedsh-id"></xd:param>
+        <xd:param name="barsoum-en-id"></xd:param>
+        <xd:param name="barsoum-sy-id"></xd:param>
+        <xd:param name="barsoum-ar-id"></xd:param>
+        <xd:param name="cbsc-id"></xd:param>
+        <xd:param name="abdisho-ydq-id"></xd:param>
+        <xd:param name="abdisho-bo-id"></xd:param>
+    </xd:doc>
+    <xsl:template name="event-or-date" xmlns="http://www.tei-c.org/ns/1.0">
         <xsl:param name="bib-ids"/>
-        <xsl:param name="column-name" select="name()"/>
-        <xsl:param name="element-name">
-            <xsl:choose>
-                <xsl:when test="ends-with(name(), 'Floruit')">floruit</xsl:when>
-                <xsl:when test="ends-with(name(), 'DOB')">birth</xsl:when>
-                <xsl:when test="ends-with(name(), 'DOD')">death</xsl:when>
-                <xsl:when test="ends-with(name(), 'Reign')">event</xsl:when>
-            </xsl:choose>
-        </xsl:param>
         
-        <xsl:if test="string-length(normalize-space(.)) or exists(following-sibling::*[contains(name(), $column-name) and string-length(normalize-space(node()))])">
-            <xsl:element name="{$element-name}">
-                <!-- Adds machine-readable attributes to date. -->
-                <xsl:call-template name="date-attributes">
-                    <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
-                    <xsl:with-param name="next-element-name" select="name()"/>
-                    <xsl:with-param name="next-element" select="node()"/>
-                    <xsl:with-param name="count" select="0"/>
-                </xsl:call-template>
+        <!-- Adds machine-readable attributes to date. -->
+        <xsl:call-template name="date-attributes">
+            <xsl:with-param name="date-type" select="replace(replace(name(), '_Begin', ''), '_End', '')"/>
+            <xsl:with-param name="next-element-name" select="name()"/>
+            <xsl:with-param name="next-element" select="node()"/>
+            <xsl:with-param name="count" select="0"/>
+        </xsl:call-template>
+
+        <!-- Adds source attributes. -->
+        <xsl:call-template name="source">
+            <xsl:with-param name="bib-ids" select="$bib-ids"/>
+            <xsl:with-param name="column-name" select="substring-before(name(.), '-')"/>
+        </xsl:call-template>
         
-                <!-- Adds source attributes. -->
-                <xsl:call-template name="source">
-                    <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                    <xsl:with-param name="column-name" select="substring-before(name(.), '-')"/>
-                </xsl:call-template>
-                
-                <!-- Adds custom type and, if relevant, human-readable date as content of element
-                Can add more custom types here based on column name. -->
-                <xsl:choose>
-                    <xsl:when test="contains(name(), 'Reign')">
-                        <!-- Is "incumbency" or "term-of-office" better for this? -->
-                        <xsl:attribute name="type" select="'reign'"/>
-                    </xsl:when>
-                </xsl:choose>
+        <!-- Adds custom type and, if relevant, human-readable date as content of element-->
+        <xsl:choose>
+            <xsl:when test="contains(name(), 'Reign')">
+                <!-- Is "incumbency" or "term-of-office" better for this? -->
+                <xsl:attribute name="type" select="'reign'"/>
+                <xsl:value-of select="."/>-<xsl:value-of select="following-sibling::*[ends-with(name(), '_End')]"/>
+            </xsl:when>
+            <xsl:otherwise>
                 <xsl:value-of select="."/>
-            </xsl:element>
-        </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
