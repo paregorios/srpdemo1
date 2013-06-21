@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,13 +80,13 @@
             <place xml:id="place-4" type="settlement">
                <placeName xml:id="name4-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib4-1">Ṣawro</placeName>
-               <placeName xml:id="name4-2" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܨܘܪܐ</placeName>
+               <placeName xml:id="name4-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܨܘܪܐ</placeName>
                <placeName xml:id="name4-3" xml:lang="syr-Syrj" source="#bib4-2">ܨܰܘܪܐ</placeName>
                <placeName xml:id="name4-4" xml:lang="ar" source="#bib4-3">الصور</placeName>
                <placeName xml:id="name4-5" xml:lang="en" source="#bib4-4">Ṣawr</placeName>
-               <desc xml:id="abstract-en-4"/>
+               <desc xml:id="abstract-en-4">A village in Ṭur ʿAbdin.</desc>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib4-2">ܐܰܬܪܐ ܘܩܶܠܥܳܐ ܕܰܠܓܰܪܒܝ ܡܰܕܢܰܚ ܡܰܪܕܝܢ ܡܰܪܕܶܐ ܝܰܘܡܳܐ</quote>
                </desc>
@@ -102,7 +103,6 @@
                <idno type="URI">http://syriaca.org/place/4</idno>
                <idno type="URI">http://pleiades.stoa.org/places/874686</idno>
                <idno type="URI">http://en.wikipedia.org/wiki/Savur</idno>
-               <idno type="URI">http://dbpedia.org/resource/Savur</idno>
                <bibl xml:id="bib4-1">
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>

@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,7 +32,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -46,8 +47,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -62,7 +63,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -71,8 +72,8 @@
             <place xml:id="place-96" type="settlement">
                <placeName xml:id="name96-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
-                          source="#bib96-1">Hormizd Ardashir</placeName>
+                          syriaca-tags="#syriaca-headword"
+                          source="#bib96-1 #bib96-2">Hormizd Ardashir</placeName>
                <desc xml:id="abstract-en-96"/>
                <location type="gps" source="#bib96-1">
                   <geo>31.31671 48.68438</geo>
@@ -86,6 +87,10 @@
                   <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                   <ptr target="http://syriaca.org/bibl/1"/>
                   <citedRange unit="maps">Map I D3</citedRange>
+               </bibl>
+               <bibl xml:id="bib96-2">
+                  <title xml:lang="en">The Comprehensive Bibliography on Syriac Christianity</title>
+                  <ptr target="http://syriaca.org/bibl/5"/>
                </bibl>
             </place>
          </listPlace>

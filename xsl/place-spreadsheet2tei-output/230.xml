@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,11 +80,9 @@
             <place xml:id="place-230" type="monastery">
                <placeName xml:id="name230-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib230-1 #bib230-5">Qenneshre</placeName>
-               <placeName xml:id="name230-2"
-                          xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܕܝܪܐ ܕܩܢܫܪܝܢ</placeName>
+               <placeName xml:id="name230-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܕܝܪܐ ܕܩܢܫܪܝܢ</placeName>
                <placeName xml:id="name230-3" xml:lang="syr-Syrj" source="#bib230-2">ܕܰܝܪܳ</placeName>
                <placeName xml:id="name230-4" xml:lang="syr-Syrj" source="#bib230-2">ܕܩܶܢܰܫܪܺܝܢ</placeName>
                <placeName xml:id="name230-5" xml:lang="ar" source="#bib230-3">دير قِنَسرين</placeName>

@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -31,7 +32,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -46,8 +47,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -62,17 +63,15 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-428" type="">
-               <placeName xml:id="name428-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Sārī</placeName>
-               <placeName xml:id="name428-2"
-                          xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܐܣܬܝܪ</placeName>
+               <placeName xml:id="name428-1" xml:lang="en" syriaca-tags="#syriaca-headword">Sārī</placeName>
+               <placeName xml:id="name428-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܣܬܝܪ</placeName>
                <placeName xml:id="name428-3" xml:lang="syr-Syrj" source="#bib428-1">ܣܰܐܪܗ</placeName>
                <placeName xml:id="name428-4" xml:lang="syr-Syrj" source="#bib428-1">ܐܶܣܬܝܪ</placeName>
                <placeName xml:id="name428-5" xml:lang="ar" source="#bib428-2">ساري</placeName>
