@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,10 +80,10 @@
             <place xml:id="place-97" type="settlement">
                <placeName xml:id="name97-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib97-1">Qalʿa Rumayta</placeName>
                <placeName xml:id="name97-2" xml:lang="en" source="#bib97-1">Hṙomklay</placeName>
-               <placeName xml:id="name97-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܩܠܥܐ ܪܘܡܝܬܐ</placeName>
+               <placeName xml:id="name97-3" xml:lang="syr" syriaca-tags="#syriaca-headword">ܩܠܥܐ ܪܘܡܝܬܐ</placeName>
                <placeName xml:id="name97-4" xml:lang="syr-Syrj" source="#bib97-2">ܩܶܠܥܳ</placeName>
                <placeName xml:id="name97-5" xml:lang="syr-Syrj" source="#bib97-2">ܪܘܡܳܝܬܐ</placeName>
                <placeName xml:id="name97-6" xml:lang="ar" source="#bib97-3">قلعة الروم</placeName>

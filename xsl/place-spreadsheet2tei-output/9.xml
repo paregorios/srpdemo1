@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,11 +80,11 @@
             <place xml:id="place-9" type="settlement">
                <placeName xml:id="name9-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib9-1 #bib9-4">ʿAyn Zarba</placeName>
                <placeName xml:id="name9-2" xml:lang="en" source="#bib9-1">Anazarbos</placeName>
                <placeName xml:id="name9-3" xml:lang="en" source="#bib9-1">Anazarba</placeName>
-               <placeName xml:id="name9-4" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܥܝܢ ܙܪܒܐ</placeName>
+               <placeName xml:id="name9-4" xml:lang="syr" syriaca-tags="#syriaca-headword">ܥܝܢ ܙܪܒܐ</placeName>
                <placeName xml:id="name9-5" xml:lang="syr-Syrj" source="#bib9-2">ܥܰܝܢܕܰܐܒܐ</placeName>
                <placeName xml:id="name9-6" xml:lang="syr-Syrj" source="#bib9-2">ܙܢܐܙܪܒܐ</placeName>
                <placeName xml:id="name9-7" xml:lang="syr-Syrj" source="#bib9-2">ܐܰܢܐܙܘܪܐ</placeName>
@@ -92,7 +93,7 @@
                <placeName xml:id="name9-10" xml:lang="ar" source="#bib9-3">انازروه</placeName>
                <placeName xml:id="name9-11" xml:lang="en" source="#bib9-4">Anāzarba</placeName>
                <placeName xml:id="name9-12" xml:lang="en" source="#bib9-4">Anāzūra</placeName>
-               <desc xml:id="abstract-en-9"/>
+               <desc xml:id="abstract-en-9">A city in Cilicia, a provincial capital of the Roman Empire and for a time the capital of the Armenian Kingdom of Cilicia.</desc>
                <desc xml:lang="syr-Syrj">
                   <quote source="#bib9-2">ܡܕܝܢܬܳܐ ܕܰܒܩܝܠܺܝܩܝܰܐ ܣܺܝܡܳܐ ܗܘܳܬ ܥܰܠ ܢܗܰܪ ܓܺܝ̣ܚܘܢ ܘܝܰܘܡܳܢ ܗܘܳܬ ܩܪܺܝܬܳܐ ܕܡܶܬܶܐܡܰܪ ܠܳܗ̇ ܐܰܢܐܙܘܪܐ.</quote>
                </desc>

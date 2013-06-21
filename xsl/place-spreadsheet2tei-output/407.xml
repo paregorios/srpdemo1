@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,17 +71,15 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
       <body>
          <listPlace>
             <place xml:id="place-407" type="">
-               <placeName xml:id="name407-1" xml:lang="en" syriaca-tags="#syriaca-authorized">Rūmāniyya</placeName>
-               <placeName xml:id="name407-2"
-                          xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܪܘܡܐܢܝܗ</placeName>
+               <placeName xml:id="name407-1" xml:lang="en" syriaca-tags="#syriaca-headword">Rūmāniyya</placeName>
+               <placeName xml:id="name407-2" xml:lang="syr" syriaca-tags="#syriaca-headword">ܪܘܡܐܢܝܗ</placeName>
                <placeName xml:id="name407-3" xml:lang="syr-Syrj" source="#bib407-1">ܪܘܡܰܐܢܝܗ</placeName>
                <placeName xml:id="name407-4" xml:lang="ar" source="#bib407-2">رومانية</placeName>
                <placeName xml:id="name407-5" xml:lang="en" source="#bib407-3">Romaniya</placeName>

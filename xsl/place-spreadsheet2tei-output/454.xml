@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,11 +80,11 @@
             <place xml:id="place-454" type="">
                <placeName xml:id="name454-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib454-3">Kishir</placeName>
                <placeName xml:id="name454-2"
                           xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib454-1">ܟܝܫܝܪ</placeName>
                <placeName xml:id="name454-3" xml:lang="syr-Syrj" source="#bib454-1">ܓܝܺܫܝܪ</placeName>
                <placeName xml:id="name454-4" xml:lang="ar" source="#bib454-2">كيشير</placeName>

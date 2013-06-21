@@ -6,7 +6,8 @@
      xmlns:math="http://www.w3.org/1998/Math/MathML"
      xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:xs="http://www.w3.org/2001/XMLSchema"
-     xmlns:syriaca="http://syriaca.org">
+     xmlns:syriaca="http://syriaca.org"
+     xml:lang="en">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -39,7 +40,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-17-04:00</date>
+            <date>2013-06-20-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -54,8 +55,8 @@
          </editorialDecl>
          <classDecl>
             <taxonomy>
-               <category xml:id="syriaca-authorized">
-                  <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+               <category xml:id="syriaca-headword">
+                  <catDesc/>
                </category>
             </taxonomy>
          </classDecl>
@@ -70,7 +71,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-17-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -79,13 +80,11 @@
             <place xml:id="place-184" type="settlement">
                <placeName xml:id="name184-1"
                           xml:lang="en"
-                          syriaca-tags="#syriaca-authorized"
+                          syriaca-tags="#syriaca-headword"
                           source="#bib184-1 #bib184-4">Sinjar</placeName>
                <placeName xml:id="name184-2" xml:lang="en" source="#bib184-1">Shiggar</placeName>
                <placeName xml:id="name184-3" xml:lang="en" source="#bib184-1">Singara</placeName>
-               <placeName xml:id="name184-4"
-                          xml:lang="syr"
-                          syriaca-tags="#syriaca-authorized">ܫܝܓܪ</placeName>
+               <placeName xml:id="name184-4" xml:lang="syr" syriaca-tags="#syriaca-headword">ܫܝܓܪ</placeName>
                <placeName xml:id="name184-5" xml:lang="syr-Syrj" source="#bib184-2">ܫܝܓܳܪ</placeName>
                <placeName xml:id="name184-6" xml:lang="ar" source="#bib184-3">سنجار</placeName>
                <placeName xml:id="name184-7" xml:lang="en" source="#bib184-5">Singar</placeName>
