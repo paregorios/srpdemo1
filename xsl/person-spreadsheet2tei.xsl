@@ -195,19 +195,19 @@
                                     <!-- Should languages be declared for English titles or only non-English? -->
                                     <!-- Citation for GEDSH -->
                                     <xsl:if
-                                        test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full))) > 0">
+                                        test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full)))">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
                                             <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                                             <abbr>GEDSH</abbr>
                                             <ptr target="http://syriaca.org/bibl/1"/>
                                             <xsl:if
-                                              test="string-length(normalize-space(GEDSH_en-Entry_Num)) > 0">
+                                              test="string-length(normalize-space(GEDSH_en-Entry_Num))">
                                               <citedRange unit="entry">
                                               <xsl:value-of select="GEDSH_en-Entry_Num"/>
                                               </citedRange>
                                             </xsl:if>
                                             <xsl:if
-                                              test="string-length(normalize-space(GEDSH_en-Start_Pg)) > 0">
+                                              test="string-length(normalize-space(GEDSH_en-Start_Pg))">
                                               <citedRange unit="pp">
                                               <xsl:value-of select="GEDSH_en-Start_Pg"/>
                                               </citedRange>
@@ -218,19 +218,19 @@
                                     <!-- Citations for Barsoum-->
                                     <!-- Does the order matter here? -->
                                     <xsl:if
-                                        test="string-length(normalize-space(Barsoum_en-Full)) > 0">
+                                        test="string-length(normalize-space(Barsoum_en-Full))">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_en')]}">
-                                            <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>
+                                            <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                             <abbr>Barsoum (English)</abbr>
                                             <ptr target="http://syriaca.org/bibl/4"/>
                                             <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
+                                                test="string-length(normalize-space(Barsoum_en-Entry_Num))">
                                                 <citedRange unit="entry">
                                                     <xsl:value-of select="Barsoum_en-Entry_Num"/>
                                                 </citedRange>
                                             </xsl:if>
                                             <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Page_Num)) > 0">
+                                                test="string-length(normalize-space(Barsoum_en-Page_Num))">
                                                 <citedRange unit="pp">
                                                     <xsl:value-of select="Barsoum_en-Page_Num"/>
                                                 </citedRange>
@@ -238,19 +238,12 @@
                                         </bibl>
                                     </xsl:if>
                                     <xsl:if
-                                        test="string-length(normalize-space(Barsoum_ar-Full)) > 0">
+                                        test="string-length(normalize-space(Barsoum_ar-Full))">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_ar')]}">
-                                            <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب
-                                                السريانية</title>
+                                            <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
                                             <abbr>Barsoum (Arabic)</abbr>
                                             <ptr target="http://syriaca.org/bibl/2"/>
-                                            <!-- Are entry nums the same for Arabic as for English? -->
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
-                                                <citedRange unit="entry">
-                                                    <xsl:value-of select="Barsoum_en-Entry_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
+                                            <!-- Does not include entry numbers as these are sometimes different in Arabic from the English. -->
                                             <xsl:if
                                                 test="string-length(normalize-space(Barsoum_ar-Page_Num)) > 0">
                                                 <citedRange unit="pp">
@@ -260,21 +253,15 @@
                                         </bibl>
                                     </xsl:if>
                                     <xsl:if
-                                        test="string-length(normalize-space(Barsoum_syr-NV_Full)) > 0">
+                                        test="string-length(normalize-space(Barsoum_syr-NV_Full))">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_syr-NV')]}">
                                             <!-- Is this the actual title? -->
                                             <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
                                             <abbr>Barsoum (Syriac)</abbr>
                                             <ptr target="http://syriaca.org/bibl/3"/>
-                                            <!-- Are entry nums the same for Syriac as for English? -->
+                                            <!-- Does not include entry numbers as these are sometimes different in Syriac from the English. -->
                                             <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Entry_Num)) > 0">
-                                                <citedRange unit="entry">
-                                                    <xsl:value-of select="Barsoum_en-Entry_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_syr-Page_Num)) > 0">
+                                                test="string-length(normalize-space(Barsoum_syr-Page_Num))">
                                                 <citedRange unit="pp">
                                                     <xsl:value-of select="Barsoum_syr-Page_Num"/>
                                                 </citedRange>
@@ -284,9 +271,9 @@
                                     
                                     <!-- Need Abdisho titles -->
                                     <xsl:if
-                                        test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full)) > 0">
+                                        test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full))">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_syr-NV')]}">
-                                            <title>Abdisho (YdQ)</title>
+                                            <title xml:lang="syr">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
                                             <abbr>Abdisho (YdQ)</abbr>
                                             <ptr target="http://syriaca.org/bibl/6"/>
                                             <xsl:if
@@ -300,7 +287,11 @@
                                     <xsl:if
                                         test="(string-length(normalize-space(Abdisho_BO_syr-NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_syr-V_Full)) > 0)">
                                         <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_BO_syr-NV')]}">
-                                            <title>Abdisho (BO)</title>
+                                            <title level="m" xml:lang="la">De Scriptoribus Syris Nestorianis</title>
+                                            <series>
+                                                <title level="s" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
+                                                <biblScope>vol. 3</biblScope>
+                                            </series>                                            
                                             <abbr>Abdisho (BO)</abbr>
                                             <ptr target="http://syriaca.org/bibl/7"/>
                                             <xsl:if
