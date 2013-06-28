@@ -60,10 +60,14 @@
     <xsl:include href="person-spreadsheet2tei-modules/bibl.xsl"/>
     <!-- Creates relation elements -->
     <xsl:include href="person-spreadsheet2tei-modules/relation.xsl"/>
+    <!-- Creates trait elements -->
+    <xsl:include href="person-spreadsheet2tei-modules/trait.xsl"/>
     
     <!-- Functions -->
     <xsl:include href="person-spreadsheet2tei-modules/functions.xsl"/> 
         
+        
+
     <xd:doc>
         <xd:desc>
             <xd:p>This template matches the root element and processes any templates that should create documents from the entire 
