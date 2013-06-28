@@ -11,15 +11,26 @@
             <xd:p><xd:b>Created on:</xd:b> May 21, 2013</xd:p>
             <xd:p><xd:b>Author:</xd:b>Nathan Gibson</xd:p>
             <xd:p>Transforms XML data imported from the Google Spreadsheet "Author Names from Barsoum..." into Syriaca.org TEI.</xd:p>
+            <xd:p>For information on how to set up a spreadsheet to use this stylesheet, see the "Persons spreadsheet2tei stylesheet guide" doc.
+            For reading or modifying this stylesheet, see the inline comments in this stylesheet.</xd:p>
+            <!-- What is the correct name and URL of the manual? -->
+            <xd:p>For information about Syriaca.org's use of the TEI schema, see the Syriaca TEI manual.</xd:p>
+            <xd:p>This is a master file that uses modules contained in separate xsl files (in the "person-spreadsheet2tei-modules" directory) to process a persons spreadsheet.
+            To create a stylesheet that should process rows differently, such as by adding content to existing records 
+            rather than creating new records from each row, you can duplicate this stylesheet and modify it to create a 
+            new master stylesheet that uses the same modules.</xd:p>
         </xd:desc>
     </xd:doc>
+    
     <xsl:output method="text"/>
+    
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
             <xd:p>Defines an XML format for the transformed data.</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:output method="xml" indent="yes" name="xml"/>
+    
     <xd:doc xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
         <xd:desc>
             <xd:p>Defines an HTML format for the transformed data.</xd:p>
@@ -28,48 +39,80 @@
     <xsl:output method="html" indent="yes" name="html"/>
     
     <!-- Modules -->
-    <!-- HTML index for easily viewing result TEI files -->
+    
+    <!-- Creates an HTML index for easily viewing result TEI files -->
     <xsl:include href="person-spreadsheet2tei-modules/index.xsl"/>
-    <!-- TEI Header -->
+    <!-- Assists creation of @xml:id attributes -->
+    <xsl:include href="person-spreadsheet2tei-modules/ids.xsl"/>
+    <!-- Creates a TEI Header -->
     <xsl:include href="person-spreadsheet2tei-modules/header.xsl"/>
-    <!-- Language tags -->
+    <!-- Adds @xml:lang (language) attributes to elements -->
     <xsl:include href="person-spreadsheet2tei-modules/language.xsl"/>
-    <!-- Source tags -->
+    <!-- Adds @source attributes to elements -->
     <xsl:include href="person-spreadsheet2tei-modules/source.xsl"/>
-    <!-- Personal name elements -->
+    <!-- Creates personal name elements -->
     <xsl:include href="person-spreadsheet2tei-modules/names.xsl"/>
-    <!-- Events or other date-related elements -->
+    <!-- Creates idno elements -->
+    <xsl:include href="person-spreadsheet2tei-modules/idno.xsl"/>
+    <!-- Creates events or other date-related elements -->
     <xsl:include href="person-spreadsheet2tei-modules/events.xsl"/>
+    <!-- Creates bibl elements -->
+    <xsl:include href="person-spreadsheet2tei-modules/bibl.xsl"/>
+    <!-- Creates relation elements -->
+    <xsl:include href="person-spreadsheet2tei-modules/relation.xsl"/>
     
     <!-- Functions -->
     <xsl:include href="person-spreadsheet2tei-modules/functions.xsl"/> 
-    
+        
+    <xd:doc>
+        <xd:desc>
+            <xd:p>This template matches the root element and processes any templates that should create documents from the entire 
+            spreadsheet, such as an index file containing links to the records produced from each row.</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template match="/root">
         <xsl:apply-templates/>
         <xsl:call-template name="index"/>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>
+            <xd:p>This template processes each row (assumed to contain one person per row), creating a TEI record for each row 
+            and naming it by its SRP ID number (e.g., "Aphrahat" is 10.xml).</xd:p>
+            <xd:p>First, it creates several variables to be used by the rest of the stylesheet (e.g., xml:ids). 
+            Then it creates the TEI document, adds the root element, and creates additional content by calling templates 
+            contained in various modules.</xd:p>
+        </xd:desc>
+    </xd:doc>
     <xsl:template name="main" match="row">
         <!-- Variables -->
+        <!-- Creates a variable to use as the id for the person record, which is in turn used for generating @xml:id attributes 
+        of elements contained in the record.-->
+        <xsl:variable name="record-id"><xsl:value-of select="SRP_ID"/></xsl:variable>
+        
         <!-- Creates a variable to use as the xml:id for the person element -->
-        <xsl:variable name="person-id">person-<xsl:value-of select="SRP_ID"/></xsl:variable>
+        <xsl:variable name="person-id">person-<xsl:value-of select="$record-id"/></xsl:variable>
         
-        <xsl:variable name="person-name-id">name<xsl:value-of select="SRP_ID"/></xsl:variable>
-        <!-- Assigns numbers to each source to use as base for ids, such as xml:id elements for bib and persName -->
+        <!-- Creates a variable containing the first part of any persName id. -->
+        <xsl:variable name="person-name-id">name<xsl:value-of select="$record-id"/></xsl:variable>
         
-        <!-- Creates sequence containing all full name elements for the row, so that variables can be created by processing this only once. -->
+        <!-- Creates a sequence variable containing all full name elements for the row, so that variables can be created by processing this only once. -->
         <xsl:variable name="all-full-names">
             <xsl:copy-of select="*[matches(name(), '(_|-)Full')]"/>
         </xsl:variable>
         
-        <!-- A sequence of one column per source (or two for vocalized/non-vocalized), using full name if available 
-        or another column if information other than a name is derived from the source. -->
-        <!-- Any sources need to have a column represented here. -->
+        <!-- Creates a sequence variable of one column per source (or two for vocalized/non-vocalized versions), using full name if available 
+        or another column if information other than a name is derived from the source. 
+        The is the basis for creating sequence variables that contain the same element names as these columns in the spreadsheet, 
+        but have different content, which can be retreived by comparing the name of the element to be processed with the name (or partial name) 
+        of an element in the sequence variable. -->
+        <!-- Use copy-of to add a representative column from a source not used in full names (only one per source). -->
         <xsl:variable name="sourced-columns">
             <xsl:copy-of select="$all-full-names"/>
             <xsl:copy-of select="VIAF-Dates_Raw"/>
         </xsl:variable>
         
+        <!-- Creates a sequence variable containing the part of @xml:id attributes that should be different for columns from different sources. -->
         <xsl:variable name="ids-base">
             <xsl:call-template name="ids-base">
                 <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
@@ -78,261 +121,74 @@
             </xsl:call-template>
         </xsl:variable>
         
-        <xsl:variable name="name-ids">
-            <xsl:for-each select="$all-full-names/*">
-                
-                    <xsl:variable name="name" select="name()"/>
-                    <xsl:element name="{name()}"><xsl:value-of select="concat($person-name-id, '-', $ids-base/*[contains(name(), $name)])"/></xsl:element>
-                
-            </xsl:for-each>
-        </xsl:variable>
-        
-        <xsl:variable name="name-links">
-            <xsl:for-each select="$name-ids/*">
-                <xsl:variable name="name" select="name()"/>
-                <!-- If the corresponding full name has content ... -->
-                <xsl:if test="string-length(normalize-space($all-full-names/*[contains(name(), $name)]))">
-                    <!-- ... create a link to the name id by adding a hash tag to it. -->
-                    <xsl:element name="{name()}">#<xsl:value-of select="."/></xsl:element>
-                </xsl:if>
-             </xsl:for-each>
-        </xsl:variable>
-        
-        <!-- Creates a variable to use as the base for the xml:id for bib elements -->
+        <!-- Creates a sequence variable containing the @xml:id attributes for bibl elements. 
+        This needs to be at beginning so that it can be used by the source module. -->
         <!-- Should this be bibl- instead of bib? (If changed, need to change in places records too.) -->
-        <xsl:variable name="bib-id">bib<xsl:value-of select="SRP_ID"/></xsl:variable>
-        
         <xsl:variable name="bib-ids">
-            <xsl:for-each select="$sourced-columns/*">
-                
-                    <xsl:variable name="name" select="name()"/>
-                    <xsl:element name="{name()}"><xsl:value-of select="concat($bib-id, '-', replace($ids-base/*[contains(name(), $name)], 'a|b', ''))"/></xsl:element>
-                
-            </xsl:for-each>
-        </xsl:variable>
-                    
-        <!-- Determines which name part should be used first in alphabetical lists by consulting the order in GEDSH or GEDSH-style.
-        Doesn't work for comma-separated name parts that should be sorted as first. 
-        If no name part can be matched with beginning of full name, defaults to given, then family, then titles, if they exist.
-        If no GEDSH or GEDSH-style name exists, defaults to given. -->
-        <xsl:variable name="sort">
-            <xsl:choose>
-                <xsl:when test="string-length(normalize-space(GEDSH_en-Full)) and string-length(normalize-space(concat(GEDSH_en-Given, GEDSH_en-Family, GEDSH_en-Titles)))">
-                    <xsl:choose>
-                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Given)">given</xsl:when>
-                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Family)">family</xsl:when>
-                        <xsl:when test="starts-with(GEDSH_en-Full, GEDSH_en-Titles)">titles</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GEDSH_en-Given))">given</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GEDSH_en-Family))">family</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GEDSH_en-Titles))">titles</xsl:when>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:when test="string-length(normalize-space(GS_en-Full)) and string-length(normalize-space(concat(GS_en-Given, GS_en-Family, GS_en-Titles)))">
-                    <xsl:choose>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Given)">given</xsl:when>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Family)">family</xsl:when>
-                        <xsl:when test="starts-with(GS_en-Full, GS_en-Titles)">titles</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Given))">given</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Family))">family</xsl:when>
-                        <xsl:when test="string-length(normalize-space(GS_en-Titles))">titles</xsl:when>
-                    </xsl:choose>
-                </xsl:when>
-                <xsl:otherwise>given</xsl:otherwise>
-            </xsl:choose>
+            <xsl:call-template name="bib-ids">
+                <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
+                <xsl:with-param name="record-id" select="$record-id"/>
+                <xsl:with-param name="ids-base" select="$ids-base"/>
+            </xsl:call-template>
         </xsl:variable>         
-                    
-        <xsl:variable name="filename"
-            select="concat('persons-authorities-spreadsheet-output/',SRP_ID,'.xml')"/>
         
-        <!-- Writes the file to the subdirectory "persons-authorities-spreadsheet-output" and give it the name of the record's SRP ID. -->
+        <!-- Creates a variable containing the path of the file that should be created for this record. -->
+        <xsl:variable name="filename"
+            select="concat('persons-authorities-spreadsheet-output/',$record-id,'.xml')"/>
+        
+        <!-- Writes the file to the path specified in the $filename variable. -->
         <xsl:result-document href="{$filename}" format="xml">
             <TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+                
                 <!-- Adds header -->
-                <xsl:apply-templates select="SRP_ID"/>
+                <xsl:call-template name="header">
+                    <xsl:with-param name="record-id" select="$record-id"/>
+                </xsl:call-template>
+                
                 <text>
                     <body>
                         <listPerson>
                             <!-- Is there any additional way we should mark anonymous writers, other than in the format of the name? -->
                                 <person xml:id="{$person-id}">
+                                    
+                                    <!-- Creates persName elements. -->
                                     <xsl:call-template name="names">
-                                        <xsl:with-param name="name-ids" select="$name-ids"/>
-                                        <xsl:with-param name="name-links" select="$name-links"/>
+                                        <xsl:with-param name="all-full-names" select="$all-full-names"/>
+                                        <xsl:with-param name="person-name-id" select="$person-name-id"/>
+                                        <xsl:with-param name="ids-base" select="$ids-base"/>
                                         <xsl:with-param name="bib-ids" select="$bib-ids"/>
-                                        <xsl:with-param name="sort" select="$sort"/>
                                     </xsl:call-template>
                                     
-                                    
-                                    
                                     <!-- Adds VIAF URLs. -->
-                                    <!--What will our VIAF source ID be? SRP?-->
-                                    <idno type="URI">http://viaf.org/viaf/sourceID/SRP|<xsl:value-of select="SRP_ID"/></idno>
-                                    
-                                    <xsl:for-each select="URL[string-length(normalize-space()) > 0]">
-                                        <idno type="URI">
-                                            <xsl:value-of select="."/>
-                                        </idno>
-                                    </xsl:for-each>
+                                    <xsl:call-template name="idno">
+                                        <xsl:with-param name="record-id" select="$record-id"/>
+                                    </xsl:call-template>
                                   
-                                  <!-- Adds date elements -->
+                                  <!-- Adds birth/death/floruit/event elements -->
                                     <xsl:for-each 
                                         select="*[ends-with(name(),'Floruit') or ends-with(name(),'DOB') or ends-with(name(),'DOD')]">
-                                        <xsl:call-template name="events">
+                                        <xsl:call-template name="event-element">
                                             <xsl:with-param name="bib-ids" select="$bib-ids"/>     
                                         </xsl:call-template>
                                     </xsl:for-each>
+                                    <!-- Tests whether there are any columns with content that will be put into event elements (e.g., "Reign"). 
+                                    If so, creates a listEvent parent element to contain them. 
+                                    Add to the if test and to the for-each the descriptors of any columns that should be put into event elements. -->
                                     <xsl:if test="exists(*[contains(name(), 'Reign') and string-length(normalize-space(node()))])">
                                         <listEvent>
                                             <xsl:for-each 
                                                 select="*[ends-with(name(),'Reign')]">
-                                                    <xsl:call-template name="events">
+                                                    <xsl:call-template name="event-element">
                                                         <xsl:with-param name="bib-ids" select="$bib-ids"/>
                                                     </xsl:call-template>
                                             </xsl:for-each>
                                         </listEvent>
                                     </xsl:if>
                                     
-                                    <!-- Bibl elements -->
-                                    <!-- Should languages be declared for English titles or only non-English? -->
-                                    <!-- Citation for GEDSH -->
-                                    <xsl:if
-                                        test="string-length(normalize-space(concat(GEDSH_en-Start_Pg,GEDSH_en-Entry_Num,GEDSH_en-Full)))">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'GEDSH')]}">
-                                            <title>The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
-                                            <abbr>GEDSH</abbr>
-                                            <ptr target="http://syriaca.org/bibl/1"/>
-                                            <xsl:if
-                                              test="string-length(normalize-space(GEDSH_en-Entry_Num))">
-                                              <citedRange unit="entry">
-                                              <xsl:value-of select="GEDSH_en-Entry_Num"/>
-                                              </citedRange>
-                                            </xsl:if>
-                                            <xsl:if
-                                              test="string-length(normalize-space(GEDSH_en-Start_Pg))">
-                                              <citedRange unit="pp">
-                                              <xsl:value-of select="GEDSH_en-Start_Pg"/>
-                                              </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    
-                                    <!-- Citations for Barsoum-->
-                                    <!-- Does the order matter here? -->
-                                    <xsl:if
-                                        test="string-length(normalize-space(Barsoum_en-Full))">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_en')]}">
-                                            <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
-                                            <abbr>Barsoum (English)</abbr>
-                                            <ptr target="http://syriaca.org/bibl/4"/>
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Entry_Num))">
-                                                <citedRange unit="entry">
-                                                    <xsl:value-of select="Barsoum_en-Entry_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_en-Page_Num))">
-                                                <citedRange unit="pp">
-                                                    <xsl:value-of select="Barsoum_en-Page_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="string-length(normalize-space(Barsoum_ar-Full))">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_ar')]}">
-                                            <title xml:lang="ar">كتاب اللؤلؤ المنثور في تاريخ العلوم والأداب السريانية</title>
-                                            <abbr>Barsoum (Arabic)</abbr>
-                                            <ptr target="http://syriaca.org/bibl/2"/>
-                                            <!-- Does not include entry numbers as these are sometimes different in Arabic from the English. -->
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_ar-Page_Num)) > 0">
-                                                <citedRange unit="pp">
-                                                    <xsl:value-of select="Barsoum_ar-Page_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="string-length(normalize-space(Barsoum_syr-NV_Full))">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'Barsoum_syr-NV')]}">
-                                            <!-- Is this the actual title? -->
-                                            <title>The Scattered Pearls: A History of Syriac Literature and Sciences</title>
-                                            <abbr>Barsoum (Syriac)</abbr>
-                                            <ptr target="http://syriaca.org/bibl/3"/>
-                                            <!-- Does not include entry numbers as these are sometimes different in Syriac from the English. -->
-                                            <xsl:if
-                                                test="string-length(normalize-space(Barsoum_syr-Page_Num))">
-                                                <citedRange unit="pp">
-                                                    <xsl:value-of select="Barsoum_syr-Page_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    
-                                    <!-- Need Abdisho titles -->
-                                    <xsl:if
-                                        test="string-length(normalize-space(Abdisho_YdQ_syr-NV_Full))">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_YdQ_syr-NV')]}">
-                                            <title xml:lang="syr">ܟܬ̣ܵܒ̣ܵܐ ܕܡܸܬ̣ܩܪܸܐ ܡܪܓܢܝܬ̣ܐ ܕܥܲܠ ܫܪܵܪܵܐ ܕܲܟ̣ܪܸܣܛܝܵܢܘܼܬ̣ܵܐ</title>
-                                            <abbr>Abdisho (YdQ)</abbr>
-                                            <ptr target="http://syriaca.org/bibl/6"/>
-                                            <xsl:if
-                                                test="string-length(normalize-space(Abdisho_YdQ_syr-Page_Num)) > 0">
-                                                <citedRange unit="pp">
-                                                    <xsl:value-of select="Abdisho_YdQ_syr-Page_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="(string-length(normalize-space(Abdisho_BO_syr-NV_Full)) > 0) or (string-length(normalize-space(Abdisho_BO_syr-V_Full)) > 0)">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'Abdisho_BO_syr-NV')]}">
-                                            <title level="m" xml:lang="la">De Scriptoribus Syris Nestorianis</title>
-                                            <series>
-                                                <title level="s" xml:lang="la">Bibliotheca Orientalis Clementino-Vaticana</title>
-                                                <biblScope>vol. 3</biblScope>
-                                            </series>                                            
-                                            <abbr>Abdisho (BO)</abbr>
-                                            <ptr target="http://syriaca.org/bibl/7"/>
-                                            <xsl:if
-                                                test="string-length(normalize-space(Abdisho_BO_syr-Page_Num)) > 0">
-                                                <citedRange unit="pp">
-                                                    <xsl:value-of select="Abdisho_BO_syr-Page_Num"/>
-                                                </citedRange>
-                                            </xsl:if>
-                                        </bibl>
-                                    </xsl:if>
-                                    <xsl:if
-                                        test="string-length(normalize-space(CBSC_en-Full)) > 0">
-                                        <!-- Should we include the link to CBSC as an additional @target on the pointer?-->
-                                        <!-- Should CBSC link go directly to the tag on the CBSC system? 
-                                        If so, we'll need to have some way to discern whether it is a  subject heading or an author heading in CBSC.
-                                        And should that go under citedRange?-->
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'CBSC')]}">
-                                            <title>A Comprehensive Bibliography on Syriac Christianity</title>
-                                            <abbr>CBSC</abbr>
-                                            <ptr target="http://syriaca.org/bibl/5 http://www.csc.org.il/db/db.aspx?db=SB"/>
-                                        </bibl>
-                                    </xsl:if>
-                                    <!-- Should we put the link to the extended VIAF record as a pointer? -->
-                                    <xsl:if
-                                        test="string-length(normalize-space(VIAF-Dates_Raw)) > 0">
-                                        <bibl xml:id="{$bib-ids/*[contains(name(), 'VIAF')]}">
-                                            <title>Virtual International Authority File</title>
-                                            <abbr>VIAF</abbr>
-                                            <ptr target="http://viaf.org"/>
-                                            <span>Information cited from VIAF may come from any library or agency participating with VIAF.</span>
-                                        </bibl>
-                                    </xsl:if>                                        
-                                    
-                                    <!-- Adds Record Description field as a note. -->
-                                    <xsl:if test="string-length(normalize-space(Record_Description))">
-                                        <note type="record-description">
-                                            <xsl:value-of select="Record_Description"/>
-                                        </note>
-                                    </xsl:if>
-                                    
-                                    
+                                    <!-- Creates bibl elements -->
+                                    <xsl:call-template name="bibl">
+                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                    </xsl:call-template>                                        
                                     
                                     <!-- Adds Record Description field as a note. -->
                                     <xsl:if test="string-length(normalize-space(Record_Description))">
@@ -343,19 +199,10 @@
                                     
                                 </person>
                             
-                            <!-- Should disambiguation be done as a relation or a note? -->
-                            <xsl:if test="string-length(normalize-space(Disambiguation_URLs))">
-                                <relation 
-                                    type="disambiguation" 
-                                    name="different-from"
-                                    mutual="#{$person-id} {Disambiguation_URLs}">
-                                    <xsl:if test="string-length(normalize-space(Disambiguation))">
-                                        <desc>
-                                            <xsl:value-of select="Disambiguation"/>
-                                        </desc>
-                                    </xsl:if>
-                                </relation>
-                            </xsl:if>
+                            <!-- Create relations. -->
+                            <xsl:call-template name="relation">
+                                <xsl:with-param name="person-id" select="$person-id"/>
+                            </xsl:call-template>
                             </listPerson>
                     </body>
                 </text>
@@ -365,40 +212,9 @@
     
     <xd:doc>
         <xd:desc>
-            <xd:p>Cycles through all the full names, assigning each a number that will be used as an id. Vocalized and non-vocalized versions of full-names are given "a" and "b" suffixes.</xd:p>
+            <xd:p>Prevents any unprocessed elements from being included in the output.</xd:p>
         </xd:desc>
-        <xd:param name="all-full-names">All columns ending in "_Full"</xd:param>
-        <xd:param name="count">A counter to cycle through all the columns in all-full-names</xd:param>
-        <xd:param name="same-source-adjustment">Adjusts the number assigned to reflect that vocalized and non-vocalized versions of names from the same source have the same number (but an added suffix).</xd:param>
-        <xd:param name="next-column-name">Gets the name of the column to be processed out of the group of columns in all-full-names</xd:param>
     </xd:doc>
-    <xsl:template name="ids-base">
-        <xsl:param name="sourced-columns"/>
-        <xsl:param name="count"/>
-        <xsl:param name="same-source-adjustment"/>
-        <xsl:param name="next-column-name" select="name($sourced-columns/*[$count])"/>
-        <xsl:if test="$next-column-name">
-            <xsl:element name="{$next-column-name}">
-                <xsl:value-of select="$count - $same-source-adjustment"/>
-                <xsl:choose>
-                    <xsl:when test="matches($next-column-name, '(_|-)NV_')">a</xsl:when>
-                    <xsl:when test="matches($next-column-name, '(_|-)V_')">b</xsl:when>
-                </xsl:choose>
-            </xsl:element>
-            <xsl:call-template name="ids-base">
-                <xsl:with-param name="sourced-columns" select="$sourced-columns"/>
-                <xsl:with-param name="count" select="$count + 1"/>
-                <xsl:with-param name="same-source-adjustment">
-                    <xsl:choose>
-                        <!-- This test assumes non-vocalized and vocalized columns coming from the same source do not have any intervening columns containing full names from a different source -->
-                        <xsl:when test="matches(replace($next-column-name, '(_|-)NV_|(_|-)V_', ''), replace(name($sourced-columns/*[$count + 1]), '(_|-)NV_|(_|-)V_', ''))"><xsl:value-of select="$same-source-adjustment + 1"/></xsl:when>
-                        <xsl:otherwise><xsl:value-of select="$same-source-adjustment"/></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:with-param>
-            </xsl:call-template>
-        </xsl:if>
-    </xsl:template>
-    
     <xsl:template match="*"/>
     
 </xsl:stylesheet>
