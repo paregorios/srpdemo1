@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <row>
-        <Calculated_Name>Aphrahaṭ</Calculated_Name>
+        <Calculated_Name>Leon of Ḥarran</Calculated_Name>
         <ID_Prefix>SRP</ID_Prefix>
-        <SRP_ID>10</SRP_ID>
-        <Syriaca.org_URI_s>http://syriaca.org/person/10</Syriaca.org_URI_s>
-        <Existing_VIAF_matched___edited>DAM</Existing_VIAF_matched___edited>
-        <Not_found_in_Syriac_VIAF></Not_found_in_Syriac_VIAF>
+        <SRP_ID>596</SRP_ID>
+        <Syriaca.org_URI_s>http://syriaca.org/person/596</Syriaca.org_URI_s>
+        <Existing_VIAF_matched___edited></Existing_VIAF_matched___edited>
+        <Not_found_in_Syriac_VIAF>NG</Not_found_in_Syriac_VIAF>
         <New_Extended_Viaf_Record_Created></New_Extended_Viaf_Record_Created>
-        <VIAF_Record_Exists_>YES</VIAF_Record_Exists_>
-        <Extended_VIAF_URL>http://viaf.org/hosted/syriac/29980</Extended_VIAF_URL>
+        <VIAF_Record_Exists_>NO</VIAF_Record_Exists_>
+        <Extended_VIAF_URL></Extended_VIAF_URL>
         <Is_a_work_></Is_a_work_>
         <Anonymous_></Anonymous_>
         <Shares_attribution_with></Shares_attribution_with>
         <Part_of_pseudonymous_author></Part_of_pseudonymous_author>
-        <Extended_VIAF_ID>29980</Extended_VIAF_ID>
+        <Extended_VIAF_ID></Extended_VIAF_ID>
         <Entry_Notes_Comments></Entry_Notes_Comments>
         <Follow-up></Follow-up>
         <Log></Log>
@@ -23,9 +23,9 @@
         <For_Post-Publication_Review></For_Post-Publication_Review>
         <Record_Description></Record_Description>
         <Questions_about_Comprehensive_VIAF_URL_matching></Questions_about_Comprehensive_VIAF_URL_matching>
-        <Not_found_in_Comprehensive_VIAF></Not_found_in_Comprehensive_VIAF>
-        <URL>http://viaf.org/viaf/37707408</URL>
-        <URL>http://worldcat.org/identities/lccn-n50-41616</URL>
+        <Not_found_in_Comprehensive_VIAF>AV</Not_found_in_Comprehensive_VIAF>
+        <URL></URL>
+        <URL></URL>
         <URL></URL>
         <URL></URL>
         <URL></URL>
@@ -46,16 +46,16 @@
         <URL></URL>
         <Name_split_needs_checking></Name_split_needs_checking>
         <Name_split_checked></Name_split_checked>
-        <GEDSH_en-Start_Pg>24</GEDSH_en-Start_Pg>
-        <GEDSH_en-Raw></GEDSH_en-Raw>
-        <GEDSH_en-Entry_Num></GEDSH_en-Entry_Num>
-        <GEDSH_en-Full>Aphrahaṭ</GEDSH_en-Full>
-        <GEDSH_en-Given>Aphrahaṭ</GEDSH_en-Given>
+        <GEDSH_en-Start_Pg></GEDSH_en-Start_Pg>
+        <GEDSH_en-Raw>328. Leon of Ḥarran</GEDSH_en-Raw>
+        <GEDSH_en-Entry_Num>328</GEDSH_en-Entry_Num>
+        <GEDSH_en-Full>Leon of Ḥarran</GEDSH_en-Full>
+        <GEDSH_en-Given>Leon</GEDSH_en-Given>
         <GEDSH_en-Family></GEDSH_en-Family>
-        <GEDSH_en-Titles></GEDSH_en-Titles>
+        <GEDSH_en-Titles>of Ḥarran</GEDSH_en-Titles>
         <Not_an_author_or_work></Not_an_author_or_work>
-        <No_Barsoum_entry></No_Barsoum_entry>
-        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>in barsoum </Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
+        <No_Barsoum_entry>JW</No_Barsoum_entry>
+        <Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>Mentioned on pp. 352-353 - TAC</Double_Checked_that_there_is_no_corresponding_entry_in_Barsoum>
         <Date_Needs_Checking></Date_Needs_Checking>
         <GEDSH_en-DOB></GEDSH_en-DOB>
         <GEDSH_en-DOB_Standard></GEDSH_en-DOB_Standard>
@@ -69,13 +69,13 @@
         <GEDSH_en-Floruit_Standard></GEDSH_en-Floruit_Standard>
         <GEDSH_en-Floruit_Not_Before></GEDSH_en-Floruit_Not_Before>
         <GEDSH_en-Floruit_Not_After></GEDSH_en-Floruit_Not_After>
-        <GEDSH_en-Reign>275-315</GEDSH_en-Reign>
-        <GEDSH_en-Reign_Begin>275</GEDSH_en-Reign_Begin>
-        <GEDSH_en-Reign_Begin_Standard>0275</GEDSH_en-Reign_Begin_Standard>
+        <GEDSH_en-Reign></GEDSH_en-Reign>
+        <GEDSH_en-Reign_Begin></GEDSH_en-Reign_Begin>
+        <GEDSH_en-Reign_Begin_Standard></GEDSH_en-Reign_Begin_Standard>
         <GEDSH_en-Reign_Begin_Not_Before></GEDSH_en-Reign_Begin_Not_Before>
         <GEDSH_en-Reign_Begin_Not_After></GEDSH_en-Reign_Begin_Not_After>
-        <GEDSH_en-Reign_End>315</GEDSH_en-Reign_End>
-        <GEDSH_en-Reign_End_Standard>0315</GEDSH_en-Reign_End_Standard>
+        <GEDSH_en-Reign_End></GEDSH_en-Reign_End>
+        <GEDSH_en-Reign_End_Standard></GEDSH_en-Reign_End_Standard>
         <GEDSH_en-Reign_End_Not_Before></GEDSH_en-Reign_End_Not_Before>
         <GEDSH_en-Reign_End_Not_After></GEDSH_en-Reign_End_Not_After>
         <GEDSH_en-Name_Place></GEDSH_en-Name_Place>
@@ -84,24 +84,24 @@
         <GEDSH_en-Death_Place_URI></GEDSH_en-Death_Place_URI>
         <GEDSH_en-Other_Place_URI></GEDSH_en-Other_Place_URI>
         <Retroversion_of_Syriac_name_from_GEDSH></Retroversion_of_Syriac_name_from_GEDSH>
-        <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
-        <Barsoum_en-Entry_Num>8</Barsoum_en-Entry_Num>
-        <Barsoum_en-Page_Num>228</Barsoum_en-Page_Num>
-        <Barsoum_en-Raw>Aphrahat the Persian</Barsoum_en-Raw>
-        <Barsoum_en-Full>Aphrahat the Persian</Barsoum_en-Full>
-        <Barsoum_en-Given>Aphrahat</Barsoum_en-Given>
+        <GEDSH_Entry_Entered></GEDSH_Entry_Entered>
+        <Barsoum_en-Entry_Num></Barsoum_en-Entry_Num>
+        <Barsoum_en-Page_Num></Barsoum_en-Page_Num>
+        <Barsoum_en-Raw></Barsoum_en-Raw>
+        <Barsoum_en-Full>Leo, the Malkite bishop of Ḥarran</Barsoum_en-Full>
+        <Barsoum_en-Given>Leo</Barsoum_en-Given>
         <Barsoum_en-Family></Barsoum_en-Family>
-        <Barsoum_en-Titles>the Persian</Barsoum_en-Titles>
-        <Barsoum_ar-Page_Num>195</Barsoum_ar-Page_Num>
-        <Barsoum_ar-Full>افرهاط الفارسي</Barsoum_ar-Full>
-        <Barsoum_ar-Given>افرهاط</Barsoum_ar-Given>
+        <Barsoum_en-Titles>the Malkite bishop of Ḥarran</Barsoum_en-Titles>
+        <Barsoum_ar-Page_Num>308</Barsoum_ar-Page_Num>
+        <Barsoum_ar-Full>لاون اسقف حرَّان الملكي</Barsoum_ar-Full>
+        <Barsoum_ar-Given>لاون</Barsoum_ar-Given>
         <Barsoum_ar-Family></Barsoum_ar-Family>
-        <Barsoum_ar-Titles>الفارسي</Barsoum_ar-Titles>
-        <Barsoum_Ar_Entered>JK </Barsoum_Ar_Entered>
+        <Barsoum_ar-Titles>اسقف حرَّان الملكي</Barsoum_ar-Titles>
+        <Barsoum_Ar_Entered>TAC</Barsoum_Ar_Entered>
         <Barsoum_ar-Notes></Barsoum_ar-Notes>
         <Barsoum_Birthplace></Barsoum_Birthplace>
-        <Barsoum_en-DOD>364</Barsoum_en-DOD>
-        <Barsoum_en-DOD_Standard>0364</Barsoum_en-DOD_Standard>
+        <Barsoum_en-DOD></Barsoum_en-DOD>
+        <Barsoum_en-DOD_Standard></Barsoum_en-DOD_Standard>
         <Barsoum_en-DOD_Not_Before></Barsoum_en-DOD_Not_Before>
         <Barsoum_en-DOD_Not_After></Barsoum_en-DOD_Not_After>
         <Barsoum_en-Floruit></Barsoum_en-Floruit>
@@ -114,41 +114,41 @@
         <Barsoum_en_Birthplace_URI></Barsoum_en_Birthplace_URI>
         <Barsoum_en_Death_Place_URI></Barsoum_en_Death_Place_URI>
         <Barsoum_en_Other_Place_URI></Barsoum_en_Other_Place_URI>
-        <Barsoum_syr-Page_Num>217</Barsoum_syr-Page_Num>
-        <Barsoum_syr-NV_Full>ܐܦܪܗܛ ܦܪܣܝܐ</Barsoum_syr-NV_Full>
-        <Barsoum_syr-NV_Given>ܐܦܪܗܛ</Barsoum_syr-NV_Given>
+        <Barsoum_syr-Page_Num></Barsoum_syr-Page_Num>
+        <Barsoum_syr-NV_Full>ܠܢܙܘܢ ܐܦܝܣܩܘܦܐ ܡܠܟܝܐ ܕܚܪܢ</Barsoum_syr-NV_Full>
+        <Barsoum_syr-NV_Given>ܠܢܙܘܢ</Barsoum_syr-NV_Given>
         <Barsoum_syr-NV_Family></Barsoum_syr-NV_Family>
-        <Barsoum_syr-NV_Titles>ܦܪܣܝܐ</Barsoum_syr-NV_Titles>
-        <Barsoum_syr-V_Full>ܐܰܦܪܗܰܛ ܦܳܪܣܳܝܐ</Barsoum_syr-V_Full>
-        <Barsoum_syr-V_Given>ܐܰܦܪܗܰܛ</Barsoum_syr-V_Given>
+        <Barsoum_syr-NV_Titles>ܐܦܝܣܩܘܦܐ ܡܠܟܝܐ ܕܚܪܢ</Barsoum_syr-NV_Titles>
+        <Barsoum_syr-V_Full>ܠܰܢܙܘܢ ܐܶܦܝܣܩܘܦܐ ܡܰܠܟܳܝܐ ܕܚܳܪܳܢ</Barsoum_syr-V_Full>
+        <Barsoum_syr-V_Given>ܠܰܢܙܘܢ</Barsoum_syr-V_Given>
         <Barsoum_syr-V_Family></Barsoum_syr-V_Family>
-        <Barsoum_syr-V_Titles>ܦܳܪܣܳܝܐ</Barsoum_syr-V_Titles>
-        <Necessary_Corrections></Necessary_Corrections>
-        <Authorized_syr-Source></Authorized_syr-Source>
-        <Authorized_syr-NV_Full>ܐܦܪܗܛ</Authorized_syr-NV_Full>
-        <Authorized_syr-NV_Given>ܐܦܪܗܛ</Authorized_syr-NV_Given>
+        <Barsoum_syr-V_Titles>ܐܶܦܝܣܩܘܦܐ ܡܰܠܟܳܝܐ ܕܚܳܪܳܢ</Barsoum_syr-V_Titles>
+        <Necessary_Corrections>Correct Syriac ܠܢܙܘܢ to ܠܐܘܢ - TAC</Necessary_Corrections>
+        <Authorized_syr-Source>Other</Authorized_syr-Source>
+        <Authorized_syr-NV_Full>ܠܐܘܢ ܕܚܪܢ</Authorized_syr-NV_Full>
+        <Authorized_syr-NV_Given>ܠܐܘܢ</Authorized_syr-NV_Given>
         <Authorized_syr-NV_Family></Authorized_syr-NV_Family>
-        <Authorized_syr-NV_Titles></Authorized_syr-NV_Titles>
+        <Authorized_syr-NV_Titles>ܕܚܪܢ</Authorized_syr-NV_Titles>
         <Authorized_syr-Needs_Review></Authorized_syr-Needs_Review>
-        <Abdisho_YdQ_syr-NV_Full>ܐܦܪܗܛ</Abdisho_YdQ_syr-NV_Full>
-        <Abdisho_YdQ_syr-NV_Given>ܐܦܪܗܛ</Abdisho_YdQ_syr-NV_Given>
+        <Abdisho_YdQ_syr-NV_Full></Abdisho_YdQ_syr-NV_Full>
+        <Abdisho_YdQ_syr-NV_Given></Abdisho_YdQ_syr-NV_Given>
         <Abdisho_YdQ_syr-NV_Family></Abdisho_YdQ_syr-NV_Family>
         <Abdisho_YdQ_syr-NV_Titles></Abdisho_YdQ_syr-NV_Titles>
-        <Abdisho_YdQ_syr-V_Full>ܐܲܦܪܵܗܵܛ</Abdisho_YdQ_syr-V_Full>
-        <Abdisho_YdQ_syr-V_Given>ܐܲܦܪܵܗܵܛ</Abdisho_YdQ_syr-V_Given>
+        <Abdisho_YdQ_syr-V_Full></Abdisho_YdQ_syr-V_Full>
+        <Abdisho_YdQ_syr-V_Given></Abdisho_YdQ_syr-V_Given>
         <Abdisho_YdQ_syr-V_Family></Abdisho_YdQ_syr-V_Family>
         <Abdisho_YdQ_syr-V_Titles></Abdisho_YdQ_syr-V_Titles>
-        <Abdisho_YdQ_syr-Page_Num>71</Abdisho_YdQ_syr-Page_Num>
-        <Abdisho_BO_syr-NV_Full>ܐܦܪܗܛ</Abdisho_BO_syr-NV_Full>
-        <Abdisho_BO_syr-NV_Given>ܐܦܪܗܛ</Abdisho_BO_syr-NV_Given>
+        <Abdisho_YdQ_syr-Page_Num></Abdisho_YdQ_syr-Page_Num>
+        <Abdisho_BO_syr-NV_Full></Abdisho_BO_syr-NV_Full>
+        <Abdisho_BO_syr-NV_Given></Abdisho_BO_syr-NV_Given>
         <Abdisho_BO_syr-NV_Family></Abdisho_BO_syr-NV_Family>
         <Abdisho_BO_syr-NV_Titles></Abdisho_BO_syr-NV_Titles>
         <Abdisho_BO_syr-V_Full></Abdisho_BO_syr-V_Full>
         <Abdisho_BO_syr-V_Given></Abdisho_BO_syr-V_Given>
         <Abdisho_BO_syr-V_Family></Abdisho_BO_syr-V_Family>
         <Abdisho_BO_syr-V_Titles></Abdisho_BO_syr-V_Titles>
-        <Abdisho_BO_syr-Page_Num>85</Abdisho_BO_syr-Page_Num>
-        <Syriac_Entered>TAC</Syriac_Entered>
+        <Abdisho_BO_syr-Page_Num></Abdisho_BO_syr-Page_Num>
+        <Syriac_Entered></Syriac_Entered>
         <GS_en-Full></GS_en-Full>
         <GS_en-Given></GS_en-Given>
         <GS_en-Family></GS_en-Family>
@@ -158,16 +158,16 @@
         <Other_en-Family></Other_en-Family>
         <Other_en-Titles></Other_en-Titles>
         <Extended_VIAF_Updated></Extended_VIAF_Updated>
-        <Extended_VIAF_needs_correction></Extended_VIAF_needs_correction>
-        <CBSC_en-Full>Aphrahat</CBSC_en-Full>
-        <CBSC_en-Link>http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Aphrahat&amp;sT=keywords</CBSC_en-Link>
-        <VIAF-Dates_Raw>270.00.00-350.00.00</VIAF-Dates_Raw>
+        <Extended_VIAF_needs_correction>Need to enter Arabic - TAC 9/17/2012</Extended_VIAF_needs_correction>
+        <CBSC_en-Full>Leo of Harran</CBSC_en-Full>
+        <CBSC_en-Link>http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=L&amp;sK=Leo of Harran&amp;sT=keywords</CBSC_en-Link>
+        <VIAF-Dates_Raw></VIAF-Dates_Raw>
         <VIAF-DOB></VIAF-DOB>
-        <VIAF-DOB_Standard>0270</VIAF-DOB_Standard>
+        <VIAF-DOB_Standard></VIAF-DOB_Standard>
         <VIAF-DOD></VIAF-DOD>
-        <VIAF-DOD_Standard>0350</VIAF-DOD_Standard>
-        <Display_Date>364</Display_Date>
-        <Original_Sort_Order>10</Original_Sort_Order>
-        <Merge_Row_Number>375</Merge_Row_Number>
+        <VIAF-DOD_Standard></VIAF-DOD_Standard>
+        <Display_Date></Display_Date>
+        <Original_Sort_Order>501</Original_Sort_Order>
+        <Merge_Row_Number></Merge_Row_Number>
     </row>
 </root>

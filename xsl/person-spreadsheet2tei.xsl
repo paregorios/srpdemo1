@@ -60,8 +60,8 @@
     <xsl:include href="person-spreadsheet2tei-modules/bibl.xsl"/>
     <!-- Creates relation elements -->
     <xsl:include href="person-spreadsheet2tei-modules/relation.xsl"/>
-    <!-- Creates trait elements -->
-    <xsl:include href="person-spreadsheet2tei-modules/trait.xsl"/>
+    <!-- Creates state elements -->
+    <xsl:include href="person-spreadsheet2tei-modules/state.xsl"/>
     
     <!-- Functions -->
     <xsl:include href="person-spreadsheet2tei-modules/functions.xsl"/> 
@@ -188,6 +188,12 @@
                                             </xsl:for-each>
                                         </listEvent>
                                     </xsl:if>
+                                    
+                                    <!-- Creates states -->
+                                    <xsl:call-template name="state">
+                                        <xsl:with-param name="all-titles" select="*[ends-with(name(), 'Titles') and string-length(normalize-space(node()))]"/>
+                                        <xsl:with-param name="bib-ids" select="$bib-ids"/>
+                                    </xsl:call-template>
                                     
                                     <!-- Creates bibl elements -->
                                     <xsl:call-template name="bibl">
