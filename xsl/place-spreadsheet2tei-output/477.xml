@@ -16,9 +16,12 @@
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
             <principal>David A. Michelson</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
             <respStmt>
+               <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
                <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-               <resp>creator</resp>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -32,7 +35,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-20-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -63,7 +66,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-27-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -78,6 +81,11 @@
                <desc xml:lang="en">
                   <quote source="#bib477-1">484. Seminary of St. John (Mosul)</quote>
                </desc>
+               <location type="geopolitical" source="#bib477-">
+                  <region ref="http://syriaca.org/place/98">Iraq region</region>
+                  <region ref="http://syriaca.org/place/6">Hadyab district</region>
+                  <settlement ref="http://syriaca.org/place/139">Mosul</settlement>
+               </location>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/477</idno>
                <bibl xml:id="bib477-1">

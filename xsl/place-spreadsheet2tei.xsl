@@ -56,25 +56,40 @@
                                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                                 <funder>The National Endowment for the Humanities</funder>
                                 <funder>The International Balzan Prize Foundation</funder>
-                                <!-- FUTURE: figure out how to do credit as Dave wants -->
-                                <principal>David A. Michelson</principal>                    
+                                <principal>David A. Michelson</principal>
+                                <editor role="general-editor" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                                <editor role="general-editor" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                                <!-- Add Luk van Rompay for GEDSH?  Check with him -->
+                                <xsl:if test="(Barsoum_English_Name != '' or Barsoum_Arabic_Name != '') and Place_ID &lt; 470">
+                                    <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                                    <respStmt>
+                                        <resp>Initial Barsoum entry creation by</resp>
+                                        <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                                    </respStmt>
+                                </xsl:if>
                                 <respStmt>
+                                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
                                     <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                                    <resp>creator</resp>
                                 </respStmt>
                                 <xsl:if test="Barsoum_Syriac_Description != ''">
                                     <respStmt>
+                                        <resp>Syriac description entry by</resp>
                                         <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
-                                        <resp>Syriac description entry</resp>
                                     </respStmt>
                                 </xsl:if>
                                 <xsl:if test="Barsoum_Arabic_Description != '' and Barsoum_Arabic_Page[number(text()) &gt; 511]">
                                     <respStmt>
+                                        <resp>Arabic description entry by</resp>
                                         <name  ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
-                                        <resp>Arabic description entry</resp>
                                     </respStmt>
                                 </xsl:if>
-                                <!-- FUTURE: figure out how to credit Tony Davis with Wilmshurst data -->
+                                <xsl:if test="Wilmshurst_Names != ''">
+                                    <respStmt>
+                                        <resp>Wilmshurst index information entry by</resp>
+                                        <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
+                                    </respStmt>
+                                </xsl:if>
                             </titleStmt>
                             <editionStmt>
                                 <edition n="1.0"/>
@@ -95,7 +110,7 @@
                         </fileDesc>
                         <encodingDesc>
                             <editorialDecl>
-                                <!-- FUTURE: add documentation nod -->
+                                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
                                 <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
                                 <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
                                 <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
@@ -104,7 +119,7 @@
                             <classDecl>
                                 <taxonomy>
                                     <category xml:id="syriaca-headword">
-                                        <catDesc><!-- FUTURE: add preferred catDesc text from Dave --></catDesc>
+                                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
                                     </category>
                                 </taxonomy>
                             </classDecl>
@@ -178,7 +193,7 @@
                                             <xsl:sequence select="tokenize(CBSC_Keyword,'; ')"/>
                                         </xsl:if>
                                         <xsl:if test="Wilmshurst_Names != ''">
-                                            <xsl:sequence select="tokenize(Wilmshurst_Names,',\s')"/>
+                                            <xsl:sequence select="tokenize(Wilmshurst_Names,'; ')"/>
                                         </xsl:if>
                                     </xsl:variable>
                                     <xsl:variable name="names" as="xs:string*"><xsl:sequence select="distinct-values($names-with-duplicates)"/></xsl:variable>
@@ -207,7 +222,7 @@
                                             
                                             <!-- if it is from a print source, it needs a @source attribute -->
                                             <!-- to achieve space-separated xml:id references, we create a sequence of references and then print it -->
-                                            <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.)) or exists(index-of(tokenize($this_row/Barsoum_Syriac_Name_Vocalized,'.\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_Arabic_Name,'،\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_English_Name,',\s'), .)) or exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.)) or exists(index-of(tokenize($this_row/Wilmshurst_Names,',\s'), .))">
+                                            <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.)) or exists(index-of(tokenize($this_row/Barsoum_Syriac_Name_Vocalized,'.\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_Arabic_Name,'،\s'), .)) or exists(index-of(tokenize($this_row/Barsoum_English_Name,',\s'), .)) or exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.)) or exists(index-of(tokenize($this_row/Wilmshurst_Names,'; '), .))">
                                                 <xsl:variable name="this_source_attribute" as="xs:string*">
                                                     <xsl:if test="exists(index-of(tokenize($this_row/GEDSH_Name,'/'),.))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'GEDSH')))"/>
@@ -221,10 +236,10 @@
                                                     <xsl:if test="exists(index-of(tokenize($this_row/Barsoum_English_Name,',\s'), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'Barsoum-English')))"/>
                                                     </xsl:if>
-                                                    <xsl:if test="exists(index-of(tokenize($this_row/CBSC_Keyword,'; '),.))">
+                                                    <xsl:if test="exists(index-of(tokenize($this_row/CBSC_Keyword,'; '), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'CBSC-Keyword')))"/>
                                                     </xsl:if>
-                                                    <xsl:if test="exists(index-of(tokenize($this_row/Wilmshurst_Names,',\s'), .))">
+                                                    <xsl:if test="exists(index-of(tokenize($this_row/Wilmshurst_Names,'; '), .))">
                                                         <xsl:sequence select="(concat('#',$bib-prefix,index-of($sources,'Wilmshurst')))"/>
                                                     </xsl:if>
                                                 </xsl:variable>
@@ -367,18 +382,30 @@
                                         </location>
                                     </xsl:if>
                                     
-                                    <!-- FUTURE: Make Wilmshurst locations pull names on the basis of URIs rather than using place names -->
+                                    <!-- Deal with nested Wilmshurst locations -->
                                     <xsl:if test="Containing_Town != '' or Containing_District != '' or Containing_Region != ''">
                                         <location type="geopolitical">
                                             <xsl:attribute name="source">#<xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Wilmshurst')"/></xsl:attribute>
                                             <xsl:if test="Containing_Region != ''">
-                                                <region><xsl:value-of select="Containing_Region"/></region>
+                                                <region>
+                                                    <xsl:variable name="this_region"><xsl:value-of select="Containing_Region"/></xsl:variable>
+                                                    <xsl:attribute name="ref">http://syriaca.org/place/<xsl:value-of select="substring-after(Containing_Region,'-')"/></xsl:attribute>
+                                                    <xsl:value-of select="substring-before(Containing_Region,'-')"/>
+                                                </region>
                                             </xsl:if>
                                             <xsl:if test="Containing_District != ''">
-                                                <region><xsl:value-of select="Containing_District"/></region>
+                                                <region>
+                                                    <xsl:variable name="this_district"><xsl:value-of select="Containing_District"/></xsl:variable>
+                                                    <xsl:attribute name="ref">http://syriaca.org/place/<xsl:value-of select="substring-after(Containing_District,'-')"/></xsl:attribute>
+                                                    <xsl:value-of select="substring-before(Containing_District,'-')"/>
+                                                </region>
                                             </xsl:if>
                                             <xsl:if test="Containing_Town != ''">
-                                                <settlement><xsl:value-of select="Containing_Town"/></settlement>
+                                                <settlement>
+                                                    <xsl:variable name="this_town"><xsl:value-of select="Containing_Town"/></xsl:variable>
+                                                    <xsl:attribute name="ref">http://syriaca.org/place/<xsl:value-of select="substring-after(Containing_Town,'-')"/></xsl:attribute>
+                                                    <xsl:value-of select="substring-before(Containing_Town,'-')"/>
+                                                </settlement>
                                             </xsl:if>
                                         </location>
                                     </xsl:if>
@@ -467,6 +494,7 @@
                                             <xsl:attribute name="xml:id"><xsl:value-of select="$bib-prefix"/><xsl:value-of select="index-of($sources,'Wilmshurst')"/></xsl:attribute>
                                             <author>David Wilmshurst</author>
                                             <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                                            <citedRange unit="pp"><xsl:value-of select="Wilmshurst_Pages"/></citedRange>
                                             <ptr target="http://syriaca.org/bibl/9"/>
                                         </bibl>
                                     </xsl:if>

@@ -14,18 +14,26 @@
                 <sponsor>Syriaca.org: The Syriac Reference Portal</sponsor>
                 <funder>The National Endowment for the Humanities</funder>
                 <funder>The International Balzan Prize Foundation</funder>
-                <principal>David A. Michelson</principal>                    
+                <principal>David A. Michelson</principal>
+                <editor role="general-editor" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="general-editor" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+                <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
                 <respStmt>
+                    <resp>Initial Barsoum entry creation by</resp>
+                    <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
                     <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-                    <resp>creator</resp>
                 </respStmt>
                 <respStmt>
+                    <resp>Syriac description entry by</resp>
                     <name ref="http://syriaca.org/editors.xml#raydin">Robert Aydin</name>
-                    <resp>Syriac description entry</resp>
                 </respStmt>
                 <respStmt>
+                    <resp>Arabic description entry by</resp>
                     <name  ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
-                    <resp>Arabic description entry</resp>
                 </respStmt>
             </titleStmt>
             <editionStmt>
@@ -47,6 +55,7 @@
         </fileDesc>
         <encodingDesc>
             <editorialDecl>
+                <p>This record created following the Syriaca.org guidelines. Documentation available at: <ref target="http://syriaca.org/documentation">http://syriaca.org/documentation</ref>.</p>
                 <p>The capitalization of names from GEDSH (<idno type="URI">http://syriaca.org/bibl/1</idno>) was normalized (i.e. names in ALL-CAPS were replaced by Proper-noun capitalization).</p>
                 <p>The unchanging parts of alternate names from Barsoum (<idno type="URI">http://syriaca.org/bibl/2</idno>, <idno type="URI">http://syriaca.org/bibl/3</idno>, or <idno type="URI">http://syriaca.org/bibl/4</idno>) have been supplied to each alternate.</p>
                 <p>Names from the English translation of Barsoum (<idno type="URI">http://syriaca.org/bibl/4</idno>) were put in sentence word order rather than fronting a dictionary headword.  Any commas in the Barsoum name in English were removed.</p>
@@ -54,8 +63,8 @@
             </editorialDecl>
             <classDecl>
                 <taxonomy>
-                    <category xml:id="syriaca-authorized">
-                        <catDesc>The form of a name preferred by Syriaca.org</catDesc>
+                    <category xml:id="syriaca-headword">
+                        <catDesc><!-- FUTURE: add preferred catDesc text from Dave --></catDesc>
                     </category>
                 </taxonomy>
             </classDecl>
@@ -80,9 +89,9 @@
         <body>
             <listPlace>
                 <place xml:id="place-78" type="city">
-                    <placeName xml:id="name78-1" xml:lang="en" syriaca-tags="#syriaca-authorized" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6" corresp="#name78-4 #name78-5">Edessa</placeName>
+                    <placeName xml:id="name78-1" xml:lang="en" syriaca-tags="#syriaca-headword" source="#bib78-1 #bib78-2 #bib78-5 #bib78-6" corresp="#name78-4 #name78-5">Edessa</placeName>
                     <placeName xml:id="name78-2" xml:lang="en" source="#bib78-1">Urfa</placeName>
-                    <placeName xml:id="name78-3" xml:lang="syr" syriaca-tags="#syriaca-authorized">ܐܘܪܗܝ</placeName>
+                    <placeName xml:id="name78-3" xml:lang="syr" syriaca-tags="#syriaca-headword">ܐܘܪܗܝ</placeName>
                     <placeName xml:id="name78-4" xml:lang="syr-Syrj" source="#bib78-3 #bib78-5" corresp="#name78-1 #name78-5">ܐܘܪܗܳܝ</placeName>
                     <placeName xml:id="name78-5" xml:lang="ar" source="#bib78-4" corresp="#name78-1 #name78-4">الرها</placeName>
                     <desc xml:id="abstract-en-78" xml:lang="en">A city of <placeName ref="http://syriaca.org/place/124">Mesopotamia</placeName>, the capital of the ancient kingdom of <placeName ref="http://syriaca.org/place/145">Osrhoene</placeName>, modern Urfa.</desc>
@@ -130,7 +139,7 @@
                         <title xml:lang="en">The Gorgias Encyclopedic Dictionary of the Syriac Heritage</title>
                         <ptr target="http://syriaca.org/bibl/1"/>
                         <citedRange unit="pp">138-139</citedRange>
-                        <citedRange unit="maps">2</citedRange>
+                        <citedRange unit="maps">I B1, II B1, III</citedRange>
                     </bibl>
                     <bibl xml:id="bib78-2">
                         <title xml:lang="en">The Scattered Pearls: A History of Syriac Literature and Sciences</title>

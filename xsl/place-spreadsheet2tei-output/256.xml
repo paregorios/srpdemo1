@@ -16,9 +16,16 @@
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
             <principal>David A. Michelson</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
             <respStmt>
+               <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
                <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-               <resp>creator</resp>
+            </respStmt>
+            <respStmt>
+               <resp>Wilmshurst index information entry by</resp>
+               <name ref="http://syriaca.org/editors.xml#adavis">Anthony Davis</name>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -32,7 +39,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-20-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -63,7 +70,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-27-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
@@ -77,8 +84,8 @@
                <placeName xml:id="name256-2" xml:lang="en" source="#bib256-2">Arāden</placeName>
                <desc xml:id="abstract-en-256"/>
                <location type="geopolitical" source="#bib256-2">
-                  <region>ʿAmādīyā</region>
-                  <region>Ṣapnā</region>
+                  <region ref="http://syriaca.org/place/"/>
+                  <region ref="http://syriaca.org/place/"/>
                </location>
                <state type="existence"/>
                <idno type="URI">http://syriaca.org/place/256</idno>
@@ -92,6 +99,7 @@
                <bibl xml:id="bib256-2">
                   <author>David Wilmshurst</author>
                   <title xml:lang="en">The Ecclesiastical Organisation of the Church of the East, 1318-1913</title>
+                  <citedRange unit="pp">69, 72, 118, 130, 131, 133, 134, 137, 138-9, 140, 151, 262, 273, 293</citedRange>
                   <ptr target="http://syriaca.org/bibl/9"/>
                </bibl>
             </place>

@@ -16,13 +16,21 @@
             <funder>The National Endowment for the Humanities</funder>
             <funder>The International Balzan Prize Foundation</funder>
             <principal>David A. Michelson</principal>
+            <editor role="general" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="general" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</editor>
+            <editor role="creator" ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</editor>
             <respStmt>
-               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
-               <resp>creator</resp>
+               <resp>Initial Barsoum entry creation by</resp>
+               <name ref="http://syriaca.org/editors.xml#dmichelson">David A. Michelson</name>
             </respStmt>
             <respStmt>
+               <resp>Data merging, Pleiades and Wikipedia linking, and XML by</resp>
+               <name ref="http://syriaca.org/editors.xml#tcarlson">Thomas A. Carlson</name>
+            </respStmt>
+            <respStmt>
+               <resp>Arabic description entry by</resp>
                <name ref="http://syriaca.org/editors.xml#rakhrass">Dayroyo Roger-Youssef Akhrass</name>
-               <resp>Arabic description entry</resp>
             </respStmt>
          </titleStmt>
          <editionStmt>
@@ -36,7 +44,7 @@
                                         Distributed under a Creative Commons Attribution 3.0 Unported License
                                     </licence>
             </availability>
-            <date>2013-06-20-04:00</date>
+            <date>2013-06-27-04:00</date>
          </publicationStmt>
          <sourceDesc>
             <p>Born digital.</p>
@@ -67,7 +75,7 @@
          </langUsage>
       </profileDesc>
       <revisionDesc>
-         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-20-04:00">CREATED: place</change>
+         <change who="http://syriaca.org/editors.xml#tcarlson" when="2013-06-27-04:00">CREATED: place</change>
       </revisionDesc>
    </teiHeader>
    <text>
