@@ -46,7 +46,7 @@
         <URL></URL>
         <Name_split_needs_checking></Name_split_needs_checking>
         <Name_split_checked></Name_split_checked>
-        <GEDSH_en-Start_Pg></GEDSH_en-Start_Pg>
+        <GEDSH_en-Start_Pg>24</GEDSH_en-Start_Pg>
         <GEDSH_en-Raw></GEDSH_en-Raw>
         <GEDSH_en-Entry_Num></GEDSH_en-Entry_Num>
         <GEDSH_en-Full>Aphrahaṭ</GEDSH_en-Full>
@@ -69,14 +69,20 @@
         <GEDSH_en-Floruit_Standard></GEDSH_en-Floruit_Standard>
         <GEDSH_en-Floruit_Not_Before></GEDSH_en-Floruit_Not_Before>
         <GEDSH_en-Floruit_Not_After></GEDSH_en-Floruit_Not_After>
-        <GEDSH_en-Reign_Begin></GEDSH_en-Reign_Begin>
-        <GEDSH_en-Reign_Begin_Standard></GEDSH_en-Reign_Begin_Standard>
+        <GEDSH_en-Reign>275-315</GEDSH_en-Reign>
+        <GEDSH_en-Reign_Begin>275</GEDSH_en-Reign_Begin>
+        <GEDSH_en-Reign_Begin_Standard>0275</GEDSH_en-Reign_Begin_Standard>
         <GEDSH_en-Reign_Begin_Not_Before></GEDSH_en-Reign_Begin_Not_Before>
         <GEDSH_en-Reign_Begin_Not_After></GEDSH_en-Reign_Begin_Not_After>
-        <GEDSH_en-Reign_End></GEDSH_en-Reign_End>
-        <GEDSH_en-Reign_End_Standard></GEDSH_en-Reign_End_Standard>
+        <GEDSH_en-Reign_End>315</GEDSH_en-Reign_End>
+        <GEDSH_en-Reign_End_Standard>0315</GEDSH_en-Reign_End_Standard>
         <GEDSH_en-Reign_End_Not_Before></GEDSH_en-Reign_End_Not_Before>
         <GEDSH_en-Reign_End_Not_After></GEDSH_en-Reign_End_Not_After>
+        <GEDSH_en-Name_Place></GEDSH_en-Name_Place>
+        <GEDSH_en-Name_Place_URI></GEDSH_en-Name_Place_URI>
+        <GEDSH_en-Birth_Place_URI></GEDSH_en-Birth_Place_URI>
+        <GEDSH_en-Death_Place_URI></GEDSH_en-Death_Place_URI>
+        <GEDSH_en-Other_Place_URI></GEDSH_en-Other_Place_URI>
         <Retroversion_of_Syriac_name_from_GEDSH></Retroversion_of_Syriac_name_from_GEDSH>
         <GEDSH_Entry_Entered>JW</GEDSH_Entry_Entered>
         <Barsoum_en-Entry_Num>8</Barsoum_en-Entry_Num>
@@ -93,6 +99,7 @@
         <Barsoum_ar-Titles>الفارسي</Barsoum_ar-Titles>
         <Barsoum_Ar_Entered>JK </Barsoum_Ar_Entered>
         <Barsoum_ar-Notes></Barsoum_ar-Notes>
+        <Barsoum_Birthplace></Barsoum_Birthplace>
         <Barsoum_en-DOD>364</Barsoum_en-DOD>
         <Barsoum_en-DOD_Standard>0364</Barsoum_en-DOD_Standard>
         <Barsoum_en-DOD_Not_Before></Barsoum_en-DOD_Not_Before>
@@ -102,6 +109,11 @@
         <Barsoum_en-Floruit_Not_Before></Barsoum_en-Floruit_Not_Before>
         <Barsoum_en-Floruit_Not_After></Barsoum_en-Floruit_Not_After>
         <Barsoum_en-Century></Barsoum_en-Century>
+        <Barsoum_en_Name_Place></Barsoum_en_Name_Place>
+        <Barsoum_en_Name_Place_URI></Barsoum_en_Name_Place_URI>
+        <Barsoum_en_Birthplace_URI></Barsoum_en_Birthplace_URI>
+        <Barsoum_en_Death_Place_URI></Barsoum_en_Death_Place_URI>
+        <Barsoum_en_Other_Place_URI></Barsoum_en_Other_Place_URI>
         <Barsoum_syr-Page_Num>217</Barsoum_syr-Page_Num>
         <Barsoum_syr-NV_Full>ܐܦܪܗܛ ܦܪܣܝܐ</Barsoum_syr-NV_Full>
         <Barsoum_syr-NV_Given>ܐܦܪܗܛ</Barsoum_syr-NV_Given>
@@ -150,7 +162,9 @@
         <CBSC_en-Full>Aphrahat</CBSC_en-Full>
         <CBSC_en-Link>http://www.csc.org.il/db/browse.aspx?db=SB&amp;sL=A&amp;sK=Aphrahat&amp;sT=keywords</CBSC_en-Link>
         <VIAF-Dates_Raw>270.00.00-350.00.00</VIAF-Dates_Raw>
+        <VIAF-DOB></VIAF-DOB>
         <VIAF-DOB_Standard>0270</VIAF-DOB_Standard>
+        <VIAF-DOD></VIAF-DOD>
         <VIAF-DOD_Standard>0350</VIAF-DOD_Standard>
         <Display_Date>364</Display_Date>
         <Original_Sort_Order>10</Original_Sort_Order>
