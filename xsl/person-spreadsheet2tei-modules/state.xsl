@@ -9,7 +9,7 @@
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Jun 27, 2013</xd:p>
-            <xd:p><xd:b>Author:</xd:b> nathan</xd:p>
+            <xd:p><xd:b>Author:</xd:b>Nathan Gibson</xd:p>
             <xd:p></xd:p>
         </xd:desc>
     </xd:doc>
@@ -33,7 +33,7 @@
         <saint>martyr</saint>
     </xsl:variable>
     
-    <!-- This doesn't work yet. -->
+
     <xsl:template name="state">
         <xsl:param name="all-titles"/>
         <xsl:param name="bib-ids"/>
